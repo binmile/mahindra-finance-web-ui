@@ -316,7 +316,8 @@
         margin-top: 150px;
         background-color: #f4f7fa;
         gap: 15px;
-        border-color: 1px solid #dc3545;
+        border: 1px solid #dc3545;
+        border-radius: 4px;
     }
     
     ul {
@@ -593,6 +594,10 @@
         padding: 0px 10px 10px 10px;
     }
     
+    .btn {
+        width: 100%;
+    }
+    
     .btn_submit {
         width: 100%;
     }
@@ -713,7 +718,7 @@
         background-color: #FFFAFB;
     }
     
-    .newsubmitbtn {
+    .newsubmitbtn_first {
         display: flex;
         justify-content: space-between;
         width: 304px;
@@ -722,12 +727,25 @@
         color: #fff;
         background-color: #e31837;
         border-color: #e31837;
-        box-shadow: #dc3545 0px 3px 18px;
+        /* box-shadow: #dc3545 0px 3px 18px; */
+    }
+    
+    .newsubmitbtn {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 12px;
+        align-items: center;
+        color: #fff;
+        background-color: #e31837;
+        border-color: #e31837;
+        /* box-shadow: #dc3545 0px 3px 18px; */
     }
     
     .geberate_otp {
         width: 100%;
         display: flex;
+        justify-content: space-between;
     }
     
     .form-check-input:checked {
