@@ -1,3 +1,10 @@
+body{
+    font-family: 'Lato';
+}
+p{
+    font-size: 14px;
+}
+
 .leftside {
     background: #000;
 }
@@ -233,6 +240,7 @@ h4{
 }
 .form-control {
     padding: 10px 40px 10px 15px;
+    background: #F4F7FA;
 }
 
 .tab-content {
@@ -246,3 +254,11 @@ label.form-label {
     color: rgb(249, 245, 245);
 }
 
+.textfildicons {
+    position: absolute;
+    right: 14px;
+    top: 42px;
+}
+.textparent {
+    position: relative;
+}
