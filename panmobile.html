@@ -120,8 +120,6 @@
                                                     </div>
                                                     <div class="errorText ">Please enter a valid PAN</div>
                                                 </div>
-
-
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12 jointPanContainer ">
                                                 <div class="form-label ">
@@ -145,7 +143,8 @@
                                                 <ul class="check_kyc ">
 
                                                     <li class="checkInput ">
-                                                        <input class="form-check-input input_data " type="checkbox " value=" " id="flexCheckDefault " />
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+
 
                                                     </li>
                                                     <li class="kyc_data ">
@@ -164,9 +163,6 @@
                                             </button>
 
                                         </div>
-
-
-
 
                                     </form>
 
@@ -228,6 +224,73 @@
                     </div>
                     <div class="modal-footer custom_footer">
                         <div class="geberate_otp">
+                            <button type="button" class="btn btn-danger btn_submit" data-dismiss="modal" id="sub_otp">Submit OTP
+                                <img src="./assets/Image/CTA_arrow.png" alt="Submit" />
+                                </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="modal modal_wrapper" id="exampleModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modal_content_data">
+                    <div class="modal-header custom_header">
+                        <div class="custom_model">
+                            <button type="button" class="close custom_close" data-dismiss="modal" aria-label="Close" id="closeModalBtn">
+                                <img src="./assets/Image/close.png" alt="btn_close" class="button_close_spn" />
+
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="modal-body custom_body">
+                        <div class="custom_model_body">
+                            <div class="enter_otp">
+                                Enter OTP
+                            </div>
+                            <div class="send_mobile">
+                                Please enter the OTP send to your mobile phone XXXXXX345
+                            </div>
+                            <div class="box_container_error">
+
+                                <input type="text" maxlength="1" class="box_div_error " />
+                                <input type="text" maxlength="1" class="box_div_error" />
+                                <input type="text" maxlength="1" class="box_div_error" />
+                                <input type="text" maxlength="1" class="box_div_error" />
+                                <input type="text" maxlength="1" class="box_div_error" />
+
+
+                            </div>
+                            <div class="errorText"> Incorrect OTP. Please try again!</div>
+
+
+                            <div class="otp_msg" id="otp_msg">
+                                <div class="otp_second">
+                                    Resend OTP in
+                                </div>
+                                <div class="timer" id="timer">
+                                    00:59
+                                </div>
+                                <span class="timer"> seconds </span>
+                            </div>
+
+
+                            <div class="resend_otp" id="resend_otp" style="display: none;">
+                                Resend OTP
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer custom_footer">
+                        <div class="geberate_otp">
                             <button type="button" class="btn btn-danger btn_submit" data-dismiss="modal">Submit OTP
                                 <img src="./assets/Image/CTA_arrow.png" alt="Submit" />
                                 </button>
@@ -263,6 +326,18 @@
                 $('#exampleModal').modal('show');
             });
         });
+        $(document).ready(function() {
+            $('#sub_otp').click(function() {
+                $('#exampleModal2').modal('show');
+            });
+        });
+
+
+
+
+
+
+
 
         document.addEventListener("DOMContentLoaded", function() {
 
