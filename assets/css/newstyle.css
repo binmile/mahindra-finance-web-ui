@@ -1,53 +1,65 @@
-body{
+body {
     font-family: 'Lato';
     background: #E6E7E9;
 }
-p{
+
+p {
     font-size: 14px;
 }
 
 .leftside {
+    position: relative;
     /* background: #000; */
 }
+
 .leftcard {
     margin: auto;
 }
+
 .logo {
     width: 200px;
     height: auto;
 }
-    .logo img{
-        width: 100%;
-        height: auto;
-    }
-   
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
 
 .leftcard-contant h1 {
     color: #fff;
 }
+
 .leftcard-contant h1 {
     color: #fff;
 }
+
 .container {
     padding-top: 50px;
     padding-bottom: 20px;
 }
+
 .leftcard-contant p {
     color: #fff;
 }
+
 .leftcard {
     padding: 100px 30px;
-    
+
 }
+
 .footertext {
     margin-top: 20px;
     padding: 10px;
     border-radius: 6px;
 }
+
 .footertext p {
     font-size: 10px;
     text-align: justify;
 }
+
 .card {
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -60,6 +72,7 @@ p{
     border-color: #E31837;
     padding: 18px;
 }
+
 .btn-primary:hover {
     background: blue;
     box-shadow: rgba(255, 20, 106, 0.2) 0px 8px 24px;
@@ -98,18 +111,20 @@ p{
 .wizard,
 .wizard .nav-tabs,
 .wizard .nav-tabs .nav-item {
-	position: relative;
+    position: relative;
 }
+
 .wizard .nav-tabs:after {
-	content: "";
-	width: 80%;
-	border-bottom: solid 2px #ccc;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	top: 38%;
-	z-index: -1;
+    content: "";
+    width: 80%;
+    border-bottom: solid 2px #ccc;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 38%;
+    z-index: -1;
 }
+
 .wizard .nav-tabs .nav-item .nav-link {
     width: 35px;
     height: 35px;
@@ -119,26 +134,29 @@ p{
     color: #000;
     z-index: 10;
 }
+
 .wizard .nav-tabs .nav-item .nav-link:hover {
-	color: #333;
-	border: 2px solid #333;
+    color: #333;
+    border: 2px solid #333;
 }
+
 .wizard .nav-tabs .nav-item .nav-link.active {
-	background: #080808;
-	border: 2px solid #020202;
-	color: #040404;
+    background: #080808;
+    border: 2px solid #020202;
+    color: #040404;
 }
+
 .wizard .nav-tabs .nav-item .nav-link:after {
-	content: " ";
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	opacity: 0;
-	margin: 0 auto;
-	bottom: 0px;
-	border: 5px solid transparent;
-	border-bottom-color: #0dcaf0;
-	transition: 0.1s ease-in-out;
+    content: " ";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #0dcaf0;
+    transition: 0.1s ease-in-out;
 }
 
 .nav-tabs .nav-item .nav-link.active:after {
@@ -154,20 +172,24 @@ p{
     /* border: 10px solid transparent; */
     /* border-bottom-color: #0dcaf0; */
 }
+
 .wizard .nav-tabs .nav-item .nav-link svg {
     font-size: 12px;
     color: #4B4C4D;
     font-weight: 400;
 }
+
 span.steptext {
     margin-left: 20px;
     font-size: 13px;
     font-weight: 400;
     color: #4B4C4D;
 }
+
 .wizard {
     padding-left: 50px;
 }
+
 a.btn.btn-info.next {
     display: flex;
     justify-content: space-between;
@@ -179,24 +201,29 @@ a.btn.btn-info.next {
     border-color: #E31837;
     box-shadow: #dc3545 0px 3px 18px;
 }
+
 .abc {
     margin-left: 87px;
     display: flex;
     align-items: center;
     position: relative;
 }
+
 .abc.second {
     margin-left: 47px;
 
 }
+
 .abc.third {
     margin-left: 97px;
-    
+
 }
+
 .abc.fourth {
     margin-left: 70px;
-  
+
 }
+
 span.steptext.first::before {
     content: "";
     position: absolute;
@@ -205,6 +232,7 @@ span.steptext.first::before {
     left: 111px;
     top: 10px;
 }
+
 span.steptext.second::before {
     content: "";
     position: absolute;
@@ -213,6 +241,7 @@ span.steptext.second::before {
     left: 70px;
     top: 10px;
 }
+
 span.steptext.third::before {
     content: "";
     position: absolute;
@@ -221,23 +250,30 @@ span.steptext.third::before {
     left: 126px;
     top: 10px;
 }
+
 .wizard .nav-tabs .nav-item .nav-link.active .steptext {
     font-weight: 600;
     color: #353334;
 }
-h4{
-   
-    font-size: 20px; font-weight: 400;
+
+h4 {
+
+    font-size: 20px;
+    font-weight: 400;
 }
-.maincontant{
+
+.maincontant {
     padding-top: 20px;
 
 }
-.maincontant p{
-    font-size: 14px; font-weight: 400;
+
+.maincontant p {
+    font-size: 14px;
+    font-weight: 400;
 
 
 }
+
 .form-control {
     padding: 10px 40px 10px 15px;
     background: #F4F7FA;
@@ -246,10 +282,13 @@ h4{
 .tab-content {
     padding-right: 50px;
 }
+
 label.form-label {
     font-size: 16px;
     font-weight: 500;
+    white-space: nowrap;
 }
+
 .wizard .nav-tabs .nav-item .nav-link.active .svg-inline--fa {
     color: rgb(249, 245, 245);
 }
@@ -259,9 +298,11 @@ label.form-label {
     right: 14px;
     top: 42px;
 }
+
 .textparent {
     position: relative;
 }
+
 /* bankDetails css */
 .check_kyc {
     margin-top: 20px;
@@ -308,7 +349,7 @@ label.form-label {
     margin-right: 2%;
 }
 
-.paymentOptions:hover{
+.paymentOptions:hover {
     border-color: black;
     background-color: #F4F7FA;
 }
@@ -337,25 +378,72 @@ label.form-label {
     white-space: nowrap;
 }
 
-.bankDetailsLeftSide{
+.bankDetailsLeftSide {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     text-align-last: start;
     background-color: black;
-    background-image: url("../Image/blur.png"),url('../Image/bank_details_img.png');
+    background-image: url("../Image/blur.png"), url('../Image/bank_details_img.png');
     border-radius: 20px 0px 0px 20px;
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.paymentContent{
+.paymentContent {
     font-size: 0.8rem;
     font-weight: 400;
     color: #221F20;
 }
 
-.paymentContent:hover{
+.paymentContent:hover {
     font-weight: 600;
 }
 
+.logoImgContainer {
+    width: 318px;
+}
+
+.logoImg {
+    border-top-left-radius: 20px;
+    position: relative;
+    left: -12px;
+    width: 100%;
+    height: auto;
+}
+
+.leftColHeading {
+    color: #ffff;
+    font-size: 68px;
+    font-weight: 700;
+}
+
+.leftcard-content {
+    padding-top: 30px;
+}
+
+.leftColContent {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.stampImgContainer {
+    position: absolute;
+    width: 146px;
+    right:0;
+}
+
+.stampImg {
+    width: 100%;
+    height: auto;
+}
+
+/* @media  (min-width: 425px) and (max-width: 767px) {
+    .mobile{
+        display: block !important;
+    }
+    .bankDetailsLeftSide{
+        display: none !important ;
+    }
+  } */
