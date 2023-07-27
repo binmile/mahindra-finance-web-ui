@@ -12,6 +12,9 @@
     <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.css" /> -->
     <link rel="stylesheet" type="text/css" href="./assets/css/newstyle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
     <!-- <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" /> -->
     <style>
@@ -22,14 +25,17 @@
     <div class="container">
         <div class="card">
             <div class="row">
-                <div class="col-md-4 col-lg-4 col-sm-12 bankDetailsLeftSide">
+                <div class="col-md-5 col-lg-5 col-sm-12 bankDetailsLeftSide">
                     <div class="leftside">
-                        <div class="logo">
+                        <div class="logoImgContainer">
                             <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
                         </div>
+                        <div class="stampImgContainer">
+                            <img src="./assets/Image/Highest Safety Stamp.png" alt="brand image" class="stampImg" />
+                        </div>
                         <div class="leftcard">
-                            <div class=" leftcard-contant">
-                                <h1>Your bank
+                            <div class="leftcard-content">
+                                <h1 class="leftColHeading">Your bank
                                     details</h1>
                                 <p class="leftColContent">please provide your bank details to recieve your <br>fix
                                     deposit returns
@@ -38,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 col-lg-8 col-sm-12">
+                <div class="col-md-7 col-lg-7 col-sm-12">
                     <div class="wizard my-3">
                         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                             <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
@@ -185,21 +191,21 @@
                                             <p>select payment options </p>
                                         </div>
                                         <div class="row">
-                                            <div class="col-2 paymentOptions">
+                                            <div class="col-md-3 col-lg-2 col-sm-3 paymentOptions">
                                                 <div class="paymentIconContainer">
                                                     <img src="./assets/Image/PaymentLogoB.svg" alt="steeper image"
                                                         class="paymentIcon" />
                                                 </div>
                                                 <div class="paymentContent"> BillDesk</div>
                                             </div>
-                                            <div class="col-2 paymentOptions">
+                                            <div class="col-md-3 col-lg-2 col-sm-3 paymentOptions">
                                                 <div class="paymentIconContainer">
                                                     <img src="./assets/Image/PaymentLogoA.svg" alt="steeper image"
                                                         class="paymentIcon" />
                                                 </div>
                                                 <div class="paymentContent"> CAMSPay </div>
                                             </div>
-                                            <div class="col-2 paymentOptions">
+                                            <div class="col-md-3 col-lg-2 col-sm-3 paymentOptions">
                                                 <div class="paymentIconContainer">
                                                     <img src="./assets/Image/PaymentLogoC.svg" alt="steeper image"
                                                         class="paymentIcon" />
@@ -250,8 +256,8 @@
                     prohibited.
 
                 </p>
-                <p>
-                    2023 Mahindra Finance | CIN-L65921MH1991PLC059642 | Privacy Policy
+                <p class="footertextparent">
+                    <span class="footertext"> 2023 Mahindra Finance</span> | CIN-L65921MH1991PLC059642 | <span class="footertext">Privacy Policy</span>
                 </p>
             </div>
         </footer>
