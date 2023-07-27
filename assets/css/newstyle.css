@@ -1,5 +1,6 @@
 body{
     font-family: 'Lato';
+    background: #E6E7E9;
 }
 p{
     font-size: 14px;
@@ -40,7 +41,6 @@ p{
 }
 .footertext {
     margin-top: 20px;
-    background: #ccc;
     padding: 10px;
     border-radius: 6px;
 }
@@ -180,7 +180,7 @@ a.btn.btn-info.next {
     box-shadow: #dc3545 0px 3px 18px;
 }
 .abc {
-    margin-left: 94px;
+    margin-left: 87px;
     display: flex;
     align-items: center;
     position: relative;
@@ -190,11 +190,11 @@ a.btn.btn-info.next {
 
 }
 .abc.third {
-    margin-left: 103px;
+    margin-left: 97px;
     
 }
 .abc.fourth {
-    margin-left: 74px;
+    margin-left: 70px;
   
 }
 span.steptext.first::before {
