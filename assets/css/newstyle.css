@@ -45,7 +45,7 @@ p{
     border-radius: 6px;
 }
 .footertext p {
-    font-size: 10px;
+    font-size: 8px;
     text-align: justify;
 }
 .card {
@@ -359,3 +359,10 @@ label.form-label {
     font-weight: 600;
 }
 
+span.copyright {
+    color: #e31837;
+}
+p.copyrightparent{
+    font-size: 12px;
+
+}
