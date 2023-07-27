@@ -1,0 +1,12 @@
+@media screen and (max-width: 991px) {
+    .kyc_data {
+      display: flex;
+    }
+    .form-check-label {
+      width: 100%;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+  

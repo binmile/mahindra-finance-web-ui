@@ -1,0 +1,248 @@
+.leftside {
+    background: #000;
+}
+.leftcard {
+    margin: auto;
+}
+.logo {
+    width: 200px;
+    height: auto;
+}
+    .logo img{
+        width: 100%;
+        height: auto;
+    }
+   
+
+.leftcard-contant h1 {
+    color: #fff;
+}
+.leftcard-contant h1 {
+    color: #fff;
+}
+.container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.leftcard-contant p {
+    color: #fff;
+}
+.leftcard {
+    padding: 100px 30px;
+    
+}
+.footertext {
+    margin-top: 20px;
+    background: #ccc;
+    padding: 10px;
+    border-radius: 6px;
+}
+.footertext p {
+    font-size: 10px;
+    text-align: justify;
+}
+.card {
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #E31837;
+    border-color: #E31837;
+    padding: 18px;
+}
+.btn-primary:hover {
+    background: blue;
+    box-shadow: rgba(255, 20, 106, 0.2) 0px 8px 24px;
+}
+
+/* //////steper///// */
+
+/* .right-side {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+}
+.steper {
+    display: flex;
+    align-items: center;
+}
+.circle {
+    background: red;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+.steptext p {
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+.steptext::before {
+    content: "";
+    border-bottom: 4px solid red;
+    width: 75px;
+    height: 2px;
+    position: absolute;
+    left: 127px;
+    bottom: 10px;
+} */
+.wizard,
+.wizard .nav-tabs,
+.wizard .nav-tabs .nav-item {
+	position: relative;
+}
+.wizard .nav-tabs:after {
+	content: "";
+	width: 80%;
+	border-bottom: solid 2px #ccc;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 38%;
+	z-index: -1;
+}
+.wizard .nav-tabs .nav-item .nav-link {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 30px;
+    background: #f4f7fa;
+    border: 2px solid #f4f7fa;
+    color: #000;
+    z-index: 10;
+}
+.wizard .nav-tabs .nav-item .nav-link:hover {
+	color: #333;
+	border: 2px solid #333;
+}
+.wizard .nav-tabs .nav-item .nav-link.active {
+	background: #080808;
+	border: 2px solid #020202;
+	color: #040404;
+}
+.wizard .nav-tabs .nav-item .nav-link:after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	opacity: 0;
+	margin: 0 auto;
+	bottom: 0px;
+	border: 5px solid transparent;
+	border-bottom-color: #0dcaf0;
+	transition: 0.1s ease-in-out;
+}
+
+.nav-tabs .nav-item .nav-link.active:after {
+    content: " ";
+    position: absolute;
+    left: 23%;
+    border: 2px solid rgb(5, 5, 5);
+    width: 100px;
+    transform: translate(-50%);
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    /* border: 10px solid transparent; */
+    /* border-bottom-color: #0dcaf0; */
+}
+.wizard .nav-tabs .nav-item .nav-link svg {
+    font-size: 12px;
+    color: #4B4C4D;
+    font-weight: 400;
+}
+span.steptext {
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #4B4C4D;
+}
+.wizard {
+    padding-left: 50px;
+}
+a.btn.btn-info.next {
+    display: flex;
+    justify-content: space-between;
+    width: 304px;
+    padding: 12px;
+    align-items: center;
+    color: #fff;
+    background-color: #E31837;
+    border-color: #E31837;
+    box-shadow: #dc3545 0px 3px 18px;
+}
+.abc {
+    margin-left: 94px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.abc.second {
+    margin-left: 47px;
+
+}
+.abc.third {
+    margin-left: 103px;
+    
+}
+.abc.fourth {
+    margin-left: 74px;
+  
+}
+span.steptext.first::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    border: 1px solid #8C989F;
+    left: 111px;
+    top: 10px;
+}
+span.steptext.second::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    border: 1px solid #8C989F;
+    left: 70px;
+    top: 10px;
+}
+span.steptext.third::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    border: 1px solid #8C989F;
+    left: 126px;
+    top: 10px;
+}
+.wizard .nav-tabs .nav-item .nav-link.active .steptext {
+    font-weight: 600;
+    color: #353334;
+}
+h4{
+   
+    font-size: 20px; font-weight: 400;
+}
+.maincontant{
+    padding-top: 20px;
+
+}
+.maincontant p{
+    font-size: 14px; font-weight: 400;
+
+
+}
+.form-control {
+    padding: 10px 40px 10px 15px;
+}
+
+.tab-content {
+    padding-right: 50px;
+}
+label.form-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+.wizard .nav-tabs .nav-item .nav-link.active .svg-inline--fa {
+    color: rgb(249, 245, 245);
+}
+
