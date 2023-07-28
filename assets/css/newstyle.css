@@ -12,6 +12,39 @@ p {
     /* background: #000; */
 }
 
+/* .leftside {
+    background: #000;
+} */
+
+/* change for the investment file */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.leftside {
+    text-align-last: start;
+    background-image:url('../Image/fd_background.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.2px;
+    padding: 0px;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0 ,0.5);
+}
+
+.leftside_overlay{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+
+}
+/* change for the investment file end*/
+
+
 .leftcard {
     margin: auto;
 }
@@ -31,8 +64,21 @@ p {
     color: #fff;
 }
 
+    .logo img{
+        width: 100%;
+        height: auto;
+    }
+   
+/* 
 .leftcard-contant h1 {
     color: #fff;
+} */
+/* change for investment */
+.leftcard-contant h1 {
+    color: #fff;
+    font-weight:700;
+    font-size :68px;
+    line-height :78px;
 }
 
 .container {
@@ -47,6 +93,8 @@ p {
 .leftcard {
     padding: 100px 30px;
 
+    padding: 30px;
+    
 }
 
 .footertext {
@@ -187,7 +235,7 @@ span.steptext {
 }
 
 .wizard {
-    padding-left: 50px;
+    padding-left: 37px;
 }
 
 a.btn.btn-info.next {
@@ -274,6 +322,13 @@ h4 {
 
 }
 
+.maincontant{
+    padding-top: 15px;
+
+}
+/* .maincontant p{
+    font-size: 14px; font-weight: 400;
+} */
 .form-control {
     padding: 10px 40px 10px 15px;
     background: #F4F7FA;
@@ -453,3 +508,701 @@ p.footertextparent {
         display: none !important ;
     }
   } */
+
+
+/* Investment css Start here */
+
+.appliedSection{
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #4BAE4F;
+    padding-left: 10px;
+}
+
+.appliedSection_additional{
+     display: flex; 
+     font-size: small;
+}
+
+.applied_additional{
+    margin-left: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.applied_additional_rate{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.applied_additional_citizens{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.stampImg{
+    text-align-last: center;
+}
+
+.appliedContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 20px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+
+.table thead tr th:first-child{
+    border-top-left-radius: 8px;
+  }
+
+  .table thead tr th:last-child{
+    border-top-right-radius: 8px;
+  }
+
+  .table tbody tr td:first-child{
+    border-bottom-left-radius: 8px;
+  }
+
+  .table tbody tr td:last-child{
+    border-bottom-right-radius: 8px;
+  }
+
+  thead{
+    background-color: #85838396;
+    opacity: 0.9;
+    
+}
+
+
+    tr{
+        border-block-color: #8c8f95;
+    }
+
+    tbody{
+        background-color: #4342427a;
+        opacity: 0.9;
+    }
+    .bestSellerImg{
+        margin-left: 5px;
+}
+
+
+.fixed_Deposit{
+    color: #221F20 ;
+    font-size: 20px ;
+    font-weight: 600 ;
+    line-height: 30px ;
+}
+
+.amountInvested{
+    /* margin-top: 20px; */
+}
+
+.ammountContainer_header{
+    color: #221F20 ;
+    font-size: 16px ;
+    font-weight: 500 ;
+    line-height: 26px ;
+}
+
+
+
+
+
+.image{
+    width: 318px;
+     height: 126.5px
+}
+
+.card{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-body{
+    padding: 0px;
+}
+
+.left_heading{
+    color: #fff;
+    font-weight:700;
+    font-size :68px;
+    line-height :78px;
+}
+  
+.leftsubContainer{
+   padding: 0px 40px;
+}
+
+
+
+.sectionB_Applied_container{
+    display: flex;
+}
+
+.SectionB{
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #4BAE4F;
+    padding-left: 10px;
+}
+ 
+.stump_img_container{
+    text-align-last: right;
+}
+
+.SectionB_Text{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 8px;
+}
+.SectionB_Text2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+.SectionB_Text3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rightContainer{
+    padding-left: 0px;
+}
+
+.rightContainerInner{
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-bottom: 20px;
+}
+
+.rightContainer_header{
+    color: #221F20;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+.ammountContainer{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.ammountContainer_header{
+    color: #221F20;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.ammountContainer_header_text{
+    color: #221F20;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.input-group-text{
+    background-color: #fff;
+    border-left: none;
+}
+
+.my-input{
+    border-right: none;
+    height: 45px;
+}
+
+
+
+.monthsContainer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.monthsContainer_header{
+    color: #221F20;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.monthsContainer_button{
+    width:100%; 
+    padding-bottom: 2px ;
+    text-align-last: justify !important;
+}
+
+.months_button button{
+    width: 15% !important; 
+    padding: 15px !important;
+}
+
+.monthsContainer_button button{
+    width: 18%; 
+    padding: 18px;
+}
+ 
+.monthButton_text{
+    color: #221F20;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.interestContainer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.interestContainer_header{
+    color: #221F20;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+}
+
+.interestContainer_text{
+    color: #626567;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+}
+ 
+.interestContainer_img{
+    width: 10px;
+    height: 13px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.interestContainer_button{
+    width:100%; 
+    padding-bottom: 2px ;
+    text-align-last: justify !important;
+}
+
+.interest_button{
+    width: 15%;
+    padding: 10px; 
+    text-align-last: center;
+}
+
+.interest_button2{
+    width: 15%; 
+    padding: 10px; 
+    margin-left: 25px; 
+    text-align-last: center;
+}
+
+.interest_Button_text{
+    color: #221F20;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+.interestTableContainer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.interestTableContainer_inner{
+    background-color: #4B4C4D;
+    border-radius: 5px;
+
+}
+
+.interestTableContainer_header{
+    display: flex;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.interestTableContainer_text_container{
+    width: 25%;
+    color: #fff;
+}
+
+.interestTableContainer_text_1{
+    color: #E6E7E9;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.interestTableContainer_text_2{
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.interestTableContainer_CheckBox{
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.interestTableContainer_Check{
+    display: flex;
+    margin-top: 10px;
+}
+.vehicle1{
+    color: #221F20;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.jointAccountContainer_header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #221F20;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.jointAccount_Button_container{
+    width:100%; 
+    padding-bottom: 20px;
+}
+
+.jointAccount_Button_container label{
+    width:20%; 
+    text-align-last: start;
+    background-color: #f4f7fa !important;
+}
+
+.button_label{
+    color: #626567 !important;
+    padding: 10px;
+    border-radius: 4px !important;
+    border: 1px solid #8C989F;
+    height: 46px;
+}
+
+.checkbox_button{
+   width: 25%;
+   color: black;
+}
+
+.kycContainer_Button{
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.kyc_Button{
+    padding: 10px;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #E31837;
+    color: white;
+    border-radius: 4px;
+    width: 40%;
+}
+
+  .seeAllButton{
+    padding: 10px;
+    /* width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; */
+    background-color: #E31837;
+    color: white;
+    border-radius: 4px;
+    width: 25%;
+    border: none;
+  }
+
+.kyc_Button_text{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.AlertImg{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+.alertImg{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+
+
+.tooltipText{
+    color: #221F20;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.tooltipText ul{
+    list-style-position: outside;
+    padding-left: 18px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .monthinputContainer{
+    width: 50%;
+   
+    margin-top: 20px;
+  }
+  .monthinput{
+    border-right: 1px solid #cfd5db;
+  }
+
+
+
+
+
+  input[type='radio'] {
+    accent-color: #232323;
+}
+
+input[type='checkbox'] {
+    accent-color: #ffffff;
+    width: 20px;
+}
+
+.error{
+    color: red;
+}
+
+
+
+#myDiv button, #maturityBtn button{
+    background-color: #ffffff;
+    color: #626567;
+    border: 2px solid #8C989F;
+    border-radius: 4px;
+    font-size: 18px;
+    z-index: 9;
+}
+
+#maturityBtn button{
+    text-align: left;
+    position: relative;
+}
+
+#myDiv .active, #maturityBtn .active {
+    background-color: #F4F7FA !important;
+    color: #221F20 !important;
+    border: 2px solid #221F20 !important;
+    font-weight: 700;
+  }
+
+
+  .monthsContainer_button button span:first-child{
+    font-size: 16px;
+    z-index: 0;
+  }
+
+
+  .monthsContainer_button button span:last-child{
+    font-size: 14px;
+    z-index: 0;
+  }
+
+  #maturityBtn button:first-child::before{
+    content: "";
+    width: 12px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background-image: url('../Image/Vector\ 14.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .checked{
+    border: 2px solid black;
+    color: black !important;
+    font-weight: 700;
+  }
+
+
+  .tooltipContainer{
+    position: relative;
+    z-index: 999;
+}
+.tooltipContainer .tooltipContent{
+    position: absolute;
+    bottom: 32px;
+    left: -75px;
+    width: 329px;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid #E6E7E9;
+    color: #221F20;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.tooltipContainer .tooltipContent::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    margin-left: -5px;
+    border-width: 9px;
+    border-style: solid;
+    border-color: #FFFFFF transparent transparent transparent;
+  }
+
+.tooltipContainer .tooltipMain{
+    cursor: pointer;
+}
+
+.tooltipContainer .tooltipContent{
+    display: none;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.tooltipContainer .tooltipMain:hover .tooltipContent{
+    display: block;
+}
+
+.seeAllButton{
+    margin-right: 5px;
+}
+
+.selectdiv{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.selectox{
+    height: 44px;
+}
+
+.form-select{
+    color: #626567;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.selectox option{
+    color: #626567;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.MMFSLcontainer{
+    padding: 10px 10px 5px 10px;
+    background-color: #F4F7FA;
+}
+
+.MMFSLcontainerText{
+    color: #4B4C4D;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.Horizontalline{
+    margin-top: 35px !important;
+    margin-bottom: 35px !important;
+}
+
+
+
+
+.CKYC_Button {
+    padding: 10px;
+    width: 25%;
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 4px;
+    width: 40%;
+}
+
+.CKYC_Button_text{
+    color: #8C989F;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
