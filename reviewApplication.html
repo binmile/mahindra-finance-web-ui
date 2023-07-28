@@ -25,22 +25,20 @@
 
 <body>
     <div class="container">
-        <div class="card assets/css/newstyle.css">
+        <div class="card">
             <div class="row">
                 <div class="col-md-12 col-lg-5 col-sm-12 bankDetailsLeftSide">
                     <div class="leftside">
                         <div class="logoImgContainer">
                             <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
                         </div>
-                        <div class="stampImgConainer">
+                        <div class="stampImgContainer">
                             <img src="./assets/Image/Highest Safety Stamp.png" alt="brand image" class="stampImg" />
                         </div>
                         <div class="leftcard bankDetailsleftcard">
                             <div class="leftcard-content">
-                                <h1 class="leftColHeading">Your bank
-                                    details</h1>
-                                <p class="leftColContent">Please provide your bank details to recieve your <br>fix
-                                    deposit returns
+                                <h1 class="leftColHeading">Review your application</h1>
+                                <p class="leftColContent">Lets check & review all the information once again to be sure.
                                 </p>
                             </div>
                         </div>
@@ -107,12 +105,12 @@
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <label for="exampleInputPassword1" class="form-label bankFormLabel">Account
                                                     number</label>
-                                                <input type="password" class="form-control  bankDetailsFormControl  " id="exampleInputPassword1">
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <label for="exampleInputEmail1" class="form-label bankFormLabel">Re-enter Account
                                                     number</label>
-                                                <input type="email" class="form-control  bankDetailsFormControl  " id="exampleInputEmail1"
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
                                                     aria-describedby="emailHelp">
                                             </div>
                                         </div>
@@ -135,114 +133,28 @@
                                     aria-labelledby="step1-tab">
                                     <div class="maincontant">
                                         <h4>Account Details</h4>
-                                        <p>Please provide us your bank details to receive the repayment amount. </p>
-                                    </div>
-                                    <div class="main-form">
-                                        <form name="form">
-                                            <div class="mb-3 row">
-                                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="textparent">
-                                                        <label for="account_number" class="form-label bankFormLabel">Account
-                                                            number</label>
-                                                        <input type="password" class="form-control  bankDetailsFormControl  " id="account_number">
-                                                        <div class="errorMessage" id="error_account_number">
-                                                            Please enter a valid account number
-                                                        </div>
-                                                        <div class="textfildicons">
-                                                            <img src="./assets/Image/account-number.svg" alt="icons"
-                                                                class="icons" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                                                    <div class="textparent">
-                                                        <label for="re_enter_account_number" class="form-label bankFormLabel">Re-enter
-                                                            account number
-                                                            number</label>
-                                                        <input type="text" class="form-control  bankDetailsFormControl  "
-                                                            id="re_enter_account_number">
-                                                        <div class="errorMessage" id="error_re_enter_account_number">
-                                                            Account number mismatch
-                                                        </div>
-                                                        <div class="textfildicons">
-                                                            <img src="./assets/Image/account-number.svg" alt="icons"
-                                                                class="icons" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                    <div class="textparent">
-                                                        <div class="ifscHeading">
-                                                            <div>
-                                                                <label for="ifsc_code" class="form-label bankFormLabel">IFSC
-                                                                    code</label>
-                                                            </div>
-                                                            <div class="ifscLink">
-                                                                <a href=""> Search IFSC </a>
-                                                            </div>
-                                                        </div>
-                                                        <input type="text" class="form-control  bankDetailsFormControl  " id="ifsc_code">
-                                                        <div class="errorMessage" id="error_ifsc_code">
-                                                            This field is required !
-                                                        </div>
-                                                        <div class="textfildicons">
-                                                            <img src="./assets/Image/Vector.svg" alt="icons"
-                                                                class="icons" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="maincontant">
-                                                    <h4>Fund your fixed deposit</h4>
-                                                    <p>Select payment options </p>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                                        <div class="paymentOptions">
-                                                            <div class="paymentIconContainer">
-                                                                <img src="./assets/Image/PaymentLogoB.svg"
-                                                                    alt="steeper image" class="paymentIcon" />
-                                                            </div>
-                                                            <div class="paymentContent"> BillDesk</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                                        <div class="paymentOptions">
-                                                            <div class="paymentIconContainer">
-                                                                <img src="./assets/Image/PaymentLogoA.svg"
-                                                                    alt="steeper image" class="paymentIcon" />
-                                                            </div>
-                                                            <div class="paymentContent"> CAMSPay </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                                        <div class="paymentOptions">
-                                                            <div class="paymentIconContainer">
-                                                                <img src="./assets/Image/PaymentLogoC.svg"
-                                                                    alt="steeper image" class="paymentIcon" />
-                                                            </div>
-                                                            <div class="paymentContent"> UPI </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="check_kyc">
-                                                    <div class="kyc_data">
-                                                        <input class="form-check-input bankDetailsCheckbox" type="checkbox" value=""
-                                                            id="flexCheckDefault" onclick="checkBox()" />
-                                                        <label class="form-check-label bankFormcheckLabel" for="flexCheckDefault">
-                                                            I/We herby expressly consent to MMFSL to search, download,
-                                                            upload/share with central KYC registry/Digilocker & receive
-                                                            information through SMS/email on the above registered mobile
-                                                            no./email ID for the purpose of KYC compliance
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <button type="button" class="btn btn-danger disabled"
-                                                    onclick="validate_account()" id="continueButton">Continue
-                                                    <img src="./assets/Image/CTA_arrow.png" alt="continue" />
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Dinosaurs are a diverse group of reptiles[note 1] of the clade Dinosauria. They first appeared during the Triassic period, between 245 and 233.23 million years ago (mya), although the exact origin and timing of the evolution of dinosaurs is a subject of active research. They became the dominant terrestrial vertebrates after the Triassic–Jurassic extinction event 201.3 mya and their dominance continued throughout the Jurassic and Cretaceous periods. The fossil record shows that birds are feathered dinosaurs, having evolved from earlier theropods during the Late Jurassic epoch, and are the only dinosaur lineage known to have survived the Cretaceous–Paleogene extinction event approximately 66 mya. Dinosaurs can therefore be divided into avian dinosaurs—birds—and the extinct non-avian dinosaurs, which are all dinosaurs other than birds.
+
+                                                Dinosaurs are varied from taxonomic, morphological and ecological standpoints. Birds, at over 10,700 living species, are among the most diverse groups of vertebrates. Using fossil evidence, paleontologists have identified over 900 distinct genera and more than 1,000 different species of non-avian dinosaurs. Dinosaurs are represented on every continent by both extant species (birds) and fossil remains. Through the first half of the 20th century, before birds were recognized as dinosaurs, most of the scientific community believed dinosaurs to have been sluggish and cold-blooded. Most research conducted since the 1970s, however, has indicated that dinosaurs were active animals with elevated metabolisms and numerous adaptations for social interaction. Some were herbivorous, others carnivorous. Evidence suggests that all dinosaurs were egg-laying, and that nest-building was a trait shared by many dinosaurs, both avian and non-avian.
                                             </div>
-                                        </form>
+                                          </div>
 
                                     </div>
+                                    <div class="check_kyc">
+                                        <div class="kyc_data">
+                                            <input class="form-check-input bankDetailsCheckbox" type="checkbox" value=""
+                                                id="flexCheckDefault" onclick="checkBox()" />
+                                            <label class="form-check-label bankFormcheckLabel" for="flexCheckDefault">
+                                                I understand and agree to all <span><a href="">Terms & conditions</a></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-danger disabled"
+                                        onclick="validate_account()" id="continueButton">Continue
+                                        <img src="./assets/Image/CTA_arrow.png" alt="continue" />
                                 </div>
                                 <!-- <div class="d-flex ">
                                     <a class="btn btn-info next" type="submit"> Continue <i class="fas fa-angle-right"></i></a>
@@ -312,34 +224,6 @@
                 prevTab.show();
             });
         });
-
-        function validate_account() {
-            var account_number = document.getElementById("account_number").value;
-            var re_enter_account_number = document.getElementById("re_enter_account_number").value;
-            var ifsc_code = document.getElementById("ifsc_code").value;
-            if (account_number.length < 9 || account_number === "") {
-                document.getElementById("error_account_number").style.display = "block";
-                document.getElementById("account_number").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_account_number").style.display = "none";
-                document.getElementById("account_number").style.border = "";
-            }
-            if (re_enter_account_number !== account_number || re_enter_account_number === "") {
-                document.getElementById("error_re_enter_account_number").style.display = "block";
-                document.getElementById("re_enter_account_number").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_re_enter_account_number").style.display = "none";
-                document.getElementById("re_enter_account_number").style.border = "";
-            }
-            if (ifsc_code === "") {
-                document.getElementById("error_ifsc_code").style.display = "block";
-                document.getElementById("ifsc_code").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_ifsc_code").style.display = "none";
-                document.getElementById("ifsc_code").style.border = "";
-            }
-        }
-
         function checkBox() {
             var ischecked = document.getElementById("flexCheckDefault").checked;
             var element = document.getElementById("continueButton");

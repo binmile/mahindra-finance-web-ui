@@ -264,6 +264,7 @@ h4 {
 
 .maincontant {
     padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -274,16 +275,26 @@ h4 {
 
 }
 
-.form-control {
+/* .form-control {
     padding: 10px 40px 10px 15px;
     background: #F4F7FA;
+} */
+
+.bankcard {
+    min-height: 777px;
+}
+
+.bankDetailsFormControl {
+    padding: 10px 40px 10px 15px;
+    background: #F4F7FA;
+    margin-bottom: 20px;
 }
 
 .tab-content {
     padding-right: 50px;
 }
 
-label.form-label {
+label.bankFormLabel {
     font-size: 16px;
     font-weight: 500;
     white-space: nowrap;
@@ -315,7 +326,7 @@ label.form-label {
     display: flex;
 }
 
-.form-check-label {
+.bankFormcheckLabel {
     margin-left: 10px;
     /* width: 500px; */
     font-family: "Lato", sans-serif;
@@ -326,12 +337,12 @@ label.form-label {
     text-align: left;
 }
 
-.form-check-input {
+.bankDetailsCheckbox {
     width: 35px;
     height: 17px;
 }
 
-.form-check-input:checked {
+.bankDetailsCheckbox:checked {
     border: 1px solid black;
     background-color: black;
 }
@@ -491,16 +502,18 @@ button:not(:disabled) {
 }
 
 @media (min-width: 320px) and (max-width: 667px) {
-    .form-check-input {
+    .bankDetailsCheckbox {
         width: 35px;
         height: 17px;
     }
-    label.form-label {
+
+    label.bankFormLabel {
         overflow: hidden;
         text-overflow: ellipsis;
         width: 200px;
     }
 }
+
 @media (min-width: 320px) and (max-width: 1100px) {
     .row {
         margin: 0;
@@ -538,15 +551,17 @@ button:not(:disabled) {
     .bankDetailswizard {
         padding-left: 20px;
     }
-    .paymentOptions{
+
+    .paymentOptions {
         margin-bottom: 30px;
     }
-    .form-check-input {
+
+    .bankDetailsCheckbox {
         width: 35px;
         height: 17px;
     }
 
-    label.form-label {
+    label.bankFormLabel {
         overflow: hidden;
         text-overflow: ellipsis;
         width: 200px;
