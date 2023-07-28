@@ -403,8 +403,11 @@ label.form-label {
     margin-top: 150px;
     background-color: #f4f7fa;
     gap: 15px;
-    border: 1px solid #dc3545;
     border-radius: 4px;
+}
+
+.error-border {
+    border-color: red;
 }
 
 ul {
@@ -823,6 +826,10 @@ ul {
     /* box-shadow: #dc3545 0px 3px 18px; */
 }
 
+.first_button {
+    margin-top: 20px;
+}
+
 .newsubmitbtn {
     display: flex;
     justify-content: space-between;
@@ -843,6 +850,7 @@ ul {
 
 .form-check-input:checked {
     background-color: #000;
+    border: 1px solid black;
 }
 
 .form-check-input:focus {
@@ -1063,6 +1071,25 @@ label.form-label {
     display: flex;
 }
 
+.custom-button-data {
+    background-color: #E31837;
+}
+
+.custom-button-data:disabled {
+    background-color: #E6E7E9;
+    border: 1px solid #E6E7E9;
+    color: #8C989F;
+}
+
+.img_tag {
+    color: #8C989F;
+}
+
+svg {
+    color: #8C989F;
+    background-color: #8C989F;
+}
+
 .form-check-label {
     margin-left: 10px;
     /* width: 500px; */
@@ -1078,13 +1105,8 @@ label.form-label {
     width: 35px;
 }
 
-.form-check-input_data {
+.inputPan {
     width: 17px;
-}
-
-.form-check-input:checked {
-    border: 1px solid black;
-    background-color: black;
 }
 
 .paymentOptions {
@@ -1208,3 +1230,17 @@ p.footertextparent {
         display: none !important ;
     }
   } */
+
+
+/*------------Moni---------*/
+
+@media screen and (max-width: 991px) {
+    .fixed_deposit_data {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .invest_in {
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+    }
+}
