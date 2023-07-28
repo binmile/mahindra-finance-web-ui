@@ -7,14 +7,7 @@ p {
     font-size: 14px;
 }
 
-.leftside {
-    position: relative;
-    /* background: #000; */
-}
 
-/* .leftside {
-    background: #000;
-} */
 
 /* change for the investment file */
 *{
@@ -25,23 +18,18 @@ p {
 }
 
 .leftside {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     text-align-last: start;
-    background-image:url('../Image/fd_background.png') ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    opacity: 0.2px;
-    padding: 0px;
+    background-color: black;
+    background-image: url("../Image/blur.png"), url('../Image/fd_background.png');
     border-radius: 20px 0px 0px 20px;
     overflow: hidden;
-    background-color: rgb(0, 0, 0 ,0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.leftside_overlay{
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8) !important;
 
-}
 /* change for the investment file end*/
 
 
@@ -341,6 +329,7 @@ h4 {
 label.form-label {
     font-size: 16px;
     font-weight: 500;
+    line-height: 26px;
     white-space: nowrap;
 }
 
@@ -489,10 +478,10 @@ label.form-label {
     right:0;
 }
 
-.stampImg {
+/* .stampImg {
     width: 100%;
     height: auto;
-}
+} */
 
 span.footertext {
     color: red;
@@ -549,6 +538,7 @@ p.footertextparent {
 
 .stampImg{
     text-align-last: center;
+    height: auto;
 }
 
 .appliedContainer{
@@ -728,7 +718,7 @@ p.footertextparent {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .input-group-text{
@@ -744,8 +734,8 @@ p.footertextparent {
 
 
 .monthsContainer{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .monthsContainer_header{
@@ -760,7 +750,7 @@ p.footertextparent {
     padding-bottom: 2px ;
     text-align-last: justify !important;
 }
-
+ 
 .months_button button{
     width: 15% !important; 
     padding: 15px !important;
@@ -769,6 +759,10 @@ p.footertextparent {
 .monthsContainer_button button{
     width: 18%; 
     padding: 18px;
+}
+
+.monthsContainer_button button:first-child{
+  margin-left: 0px;
 }
  
 .monthButton_text{
@@ -779,8 +773,8 @@ p.footertextparent {
 }
 
 .interestContainer{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .interestContainer_header{
@@ -834,8 +828,8 @@ p.footertextparent {
 }
 
 .interestTableContainer{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .interestTableContainer_inner{
@@ -880,17 +874,11 @@ p.footertextparent {
     display: flex;
     margin-top: 10px;
 }
-.vehicle1{
-    color: #221F20;
-    margin-top: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-}
+
 
 .jointAccountContainer_header{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     color: #221F20;
     font-weight: 500;
     font-size: 14px;
@@ -930,26 +918,27 @@ p.footertextparent {
     padding: 10px;
     width: 25%;
     display: flex;
+    border: none;
+    background-color: #e6e7e9;
     justify-content: space-between;
     align-items: baseline;
-    background-color: #E31837;
-    color: white;
     border-radius: 4px;
     width: 40%;
+    align-items: center;
 }
 
   .seeAllButton{
     padding: 10px;
-    /* width: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline; */
     background-color: #E31837;
     color: white;
+    font-weight: 600;
     border-radius: 4px;
     width: 25%;
     border: none;
   }
+
+
+
 
 .kyc_Button_text{
     color: #FFFFFF;
@@ -1067,8 +1056,8 @@ input[type='checkbox'] {
     color: #221F20 !important;
     border: 2px solid #221F20 !important;
     font-weight: 700;
+    
   }
-
 
   .monthsContainer_button button span:first-child{
     font-size: 16px;
@@ -1152,6 +1141,7 @@ input[type='checkbox'] {
 
 .selectox{
     height: 44px;
+    background-color:#f4f7fa ;
 }
 
 .form-select{
@@ -1197,6 +1187,7 @@ input[type='checkbox'] {
     align-items: baseline;
     border-radius: 4px;
     width: 40%;
+    align-items: center;
 }
 
 .CKYC_Button_text{
@@ -1206,3 +1197,12 @@ input[type='checkbox'] {
     font-weight: 400;
     
 }
+
+
+ .input-group-text{
+   background-color: #f4f7fa;
+ }
+
+ .logoCOntainer{
+    width: 300px;
+ }

@@ -32,10 +32,9 @@
         <div class="card">
             <div class="row">
                 <div class="col-md-5 col-lg-5 col-sm-12 leftside">
-                
-                        <div class="leftside_overlay">
+                        <div class="">
 
-                            <div class="logo">
+                            <div class="logoCOntainer">
                                 <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
                             </div>
 
@@ -46,7 +45,7 @@
 
 
                                 <!-- investment leftHand side Screen start -->
-                                <div class="appliedContainer">
+                                <div class="appliedContainer" style="">
                                     <div class="col-12 col-md-7 col-lg-7 col-sm-12 appliedSection">
                                         <div class="appliedSection_additional">
                                             <div>
@@ -108,10 +107,7 @@
                                         </td>
                                     </tr>    
                                     <tr>
-                                        <td colspan="2" style="border: none;">
-                                            <!-- <button type="button" class="btn btn-danger" value="Show DIV" id="bt" onclick="toggle(this)"> <img
-                                                    src="./assets//Image/Vector_invester.png" alt="vector invester" />
-                                            </button> -->
+                                        <td colspan="2" style="border: none;" class="">
                                             <input type="button" value="See All" class="seeAllButton" id="bt" onclick="toggle(this)" >
                                         </td>
                                         
@@ -179,22 +175,24 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" role="tabpanel" id="step1" aria-labelledby="step1-tab">
 
-                            <form>
+                            <form name="name">
                                 <div class="maincontant">
                                     <h4 class="fixed_Deposit">Customise Fixed Deposit</h4>
                                         <div class="row ">
                                             <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested">
-                                                <h4 class="ammountContainer_header">Enter amount to be invested </h4>
                                                 <div>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control my-input"
-                                                            aria-label="Recipient's username" aria-describedby="basic-addon2" />
-                                                        <span class="input-group-text" id="basic-addon2">
-                                                            <img src="./assets/Image/money.png" alt="Your Image" /></span>
-                                                    </div>
+                                                    <div class="textparent">
+                                                        <label for="exampleInputPassword1" class="form-label">Enter amount to be invested</label>
+                                                        <input type="text" placeholder="Enter Ammount" class="form-control" id="exampleInputPassword1">
+                                                        <div class="textfildicons">
+                                                            <img src="./assets/Image/money.png"  alt="icons" class="icons" />
+                        
+                                                        </div>
+                        
+                                                       </div>
                 
                                                 </div>
-                                                <div class="ammountContainer_header_text error">Min. deposit of ₹ 10,000 and max deposit of ₹
+                                                <div class="ammountContainer_header_text">Min. deposit of ₹ 10,000 and max deposit of ₹
                                                     5 crores</div>
                 
                                             </div>
@@ -207,17 +205,19 @@
                                             Select tenure (in months)
                                         </div>
                                         <div class="months_button monthsContainer_button" id="myDiv">
-                                            <button type="button" onclick="myFunction(event)" id="myDiv">60</button>
-                                            <button type="button" onclick="myFunction(event)" id="myDiv">48</button>
-                                            <button type="button" onclick="myFunction(event)" id="myDiv">36</button>
-                                            <button type="button" onclick="myFunction(event)" id="myDiv">24</button>
-                                            <button type="button" onclick="myFunction(event)" id="myDiv">12</button>
-                                            <button type="button" onclick="showInputBox()" id="myDiv">Custom</button>
+                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">60</button>
+                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">48</button>
+                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">36</button>
+                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">24</button>
+                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">12</button>
+                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)"  id="myDiv">Custom</button>
                                         </div>
                                         <div class="monthinputContainer">
-                                            <input type="text" class="form-control my-input monthinput"
-                                                aria-label="Recipient's username" aria-describedby="basic-addon2" />
-                                            <div class="error">
+                                            <div class="textparent">
+                                                <input type="text" class="form-control" id="exampleInputPassword1">
+                
+                                               </div>
+                                            <div class="">
                                                 Min. 12 months and max. 60 months
                                             </div>
                                         </div>
@@ -246,23 +246,23 @@
                                         </div>
         
                                         <div class="monthsContainer_button"  id="maturityBtn">
-                                            <button type="button" onclick="myMaturityButton(event)">
+                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
                                                 <span>Maturity</span>
                                                 <span>8.30%</span>
                                             </button>
-                                            <button type="button" onclick="myMaturityButton(event)">
+                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
                                                 <span>Yearly</span>
                                                 <span>8.30%</span>
                                             </button>
-                                            <button type="button" onclick="myMaturityButton(event)">
+                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
                                                 <span>Half yearly</span>
                                                 <span>8.14%</span>
                                             </button>
-                                            <button type="button" onclick="myMaturityButton(event)">
+                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
                                                 <span>Quaterly</span>
                                                 <span>8.06%</span>
                                             </button>
-                                            <button type="button" onclick="myMaturityButton(event)">
+                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
                                             <span>Monthly</span>
                                             <span>8.02%</span>
                                             </button>
@@ -270,7 +270,7 @@
         
         
                                         <div class="interestContainer_text">
-                                            <img class="interestContainer_img" alt="flag logo"
+                                            <img class="interestContainer_img" alt="flaglogo"
                                                 src="./assets/Image/Vector 14.png" />
                                             <div>
                                                 Interest rates are best when payout is on maturity
@@ -359,11 +359,11 @@
                                         </div>
                                         <div class="btn-group jointAccount_Button_container" id="elements">
                                             <label class="btn button_label" onclick="changeclr(this)">
-                                                <input class="checkbox_button" type="radio" name="type" value="event"
-                                                    id="elementoption1" autocomplete="off" checked> Yes
+                                                <input class="checkbox_button" type="radio" name="type" value="event1"
+                                                    id="elementoption1" autocomplete="off" > Yes
                                             </label>
                                             <label class="btn button_label" style="margin-left: 20px;" onclick="changeclr(this)">
-                                                <input type="radio" class="checkbox_button" name="type" value="event"
+                                                <input type="radio" class="checkbox_button" name="type" value="event1"
                                                     id="elementoption1" autocomplete="off" checked> No
                                             </label>
         
@@ -376,6 +376,7 @@
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                                     <label for="vehicle1" style="margin-left: 10px;"> Are you/joint holder a tax resident of a country other than india?  </label>
                                 </div>
+
                                 <div class="interestTableContainer_Check">
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                                     <label for="vehicle1" style="margin-left: 10px;"> Are you/joint holder a green card holder?</label>
@@ -384,11 +385,11 @@
                                 <div class="row">
                                     <div class="col-12 kycContainer">
                                         <div class="kycContainer_Button">
-                                            <a href="AdditionalDetails.html"  type="button" class="btn btn-danger kyc_Button">
-                                                <div class="kyc_Button_text">
+                                            <a href="AdditionalDetails.html"  type="button" class="btn  kyc_Button">
+                                                <div class="CKYC_Button_text">
                                                     Continue
                                                 </div>
-                                                <img alt="arrow" src="./assets/Image/arrow.png" />
+                                                <img alt="arrow" src="./assets/Image/greyArrow.png"" />
                                             </a>
         
                                         </div>
