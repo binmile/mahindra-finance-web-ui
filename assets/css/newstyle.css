@@ -311,7 +311,7 @@ label.form-label {
 }
 
 .kyc_data {
-    padding: 10px 16px 10px 16px;
+    padding: 10px 10px 10px 10px;
     display: flex;
 }
 
@@ -328,6 +328,7 @@ label.form-label {
 
 .form-check-input {
     width: 35px;
+    height: 17px;
 }
 
 .form-check-input:checked {
@@ -347,6 +348,7 @@ label.form-label {
     padding: 1rem 2rem 1rem 2rem;
     margin-left: 1.7%;
     margin-right: 2%;
+    margin-bottom: 5px;
 }
 
 .paymentOptions:hover {
@@ -431,7 +433,8 @@ label.form-label {
 .stampImgContainer {
     position: absolute;
     width: 146px;
-    right:0;
+    top: 120px;
+    right: 40px;
 }
 
 .stampImg {
@@ -442,14 +445,95 @@ label.form-label {
 span.footertext {
     color: red;
 }
+
 p.footertextparent {
     font-size: 12px;
 }
-/* @media  (min-width: 425px) and (max-width: 767px) {
-    .mobile{
-        display: block !important;
+
+.continueButtonEnable {
+    display: flex;
+    justify-content: space-between;
+    width: 304px;
+    padding: 12px;
+    align-items: center;
+    color: #fff !important;
+    background-color: #E31837 !important;
+    border-color: #E31837 !important;
+}
+
+
+.btn-danger.disabled img {
+    -webkit-filter: brightness(1) invert(0);
+    filter: brightness(1) invert(0);
+}
+
+.continueButtonEnable img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.btn-danger.disabled,
+button:not(:disabled) {
+    display: flex;
+    justify-content: space-between;
+    width: 304px;
+    padding: 12px;
+    align-items: center;
+    color: #8C989F;
+    background-color: #E6E7E9;
+    border-color: #E6E7E9;
+}
+
+.errorMessage {
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .row {
+        margin: 0;
     }
-    .bankDetailsLeftSide{
-        display: none !important ;
+
+    .bankDetailsLeftSide {
+        border-radius: 0;
     }
-  } */
+
+    .logoImg {
+        border-top-left-radius: 0;
+    }
+
+    .leftColHeading {
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .leftcard-content {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .bankDetailsleftcard {
+        padding: 50px 15px;
+    }
+
+    .stampImgContainer {
+        position: absolute;
+        width: 125px;
+        top: 40px;
+        right: 10px;
+    }
+
+    .bankDetailswizard {
+        padding-left: 20px;
+    }
+    .paymentOptions{
+        margin-bottom: 30px;
+    }
+    .form-check-input {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {}
