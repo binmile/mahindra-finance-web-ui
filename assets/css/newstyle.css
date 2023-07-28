@@ -388,6 +388,7 @@ label.form-label {
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 30px 30px 0px 0px;
 }
 
 .paymentContent {
@@ -453,3 +454,71 @@ p.footertextparent {
         display: none !important ;
     }
   } */
+
+ 
+@media (max-width: 768px) {
+    .wizard {
+        bottom: 0px;
+    }
+
+}
+
+
+
+  @media (max-width: 767px) {
+ 
+    .container {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .leftColHeading {
+        color: #ffff;
+        font-size: 58px;
+        font-weight: 700;
+    }
+    .bankDetailsLeftSide {
+        background-color: black;
+        background-image: url("../Image/blur.png"), url('../Image/bank_details_img.png');
+        border-radius: 20px 20px 0px 0px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px 30px 0px 0px;
+
+    }
+    .stampImgContainer {
+        top: 50px;
+    }
+    .leftcard {
+        padding: 70px 30px;
+    }
+    .leftColHeading {
+        font-size: 58px;
+    }
+    .wizard {
+        padding-left: 50px;
+        bottom: 100px;
+        background: #FFF;
+        border-radius: 8px;
+        padding-left: unset;
+        padding: 30px;
+    }
+    .tab-content {
+        padding-right: unset;
+    }
+    .footertext p {
+        font-size: 8px;
+        text-align: unset;
+    }
+    .footertext {
+        margin-top: 15px;
+        padding: unset;
+        border-radius: unset;
+    }
+    .leftcard-content {
+        padding-top: unset;
+        padding-bottom: 30px;
+    }
+
+  }
