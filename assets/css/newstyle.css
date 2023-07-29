@@ -1105,90 +1105,44 @@
         }
         
         @media screen and (max-width: 767px) {
-            .fixed_deposit_data {
-                font-size: 40px;
-                line-height: 40px;
+            .main_left_div {
+                padding: 0;
             }
-            .invest_in {
-                font-family: "Lato", sans-serif;
-                font-size: 20px;
-            }
-            .in_just {
-                font-family: "Lato", sans-serif;
-                font-size: 11px;
-                font-weight: 400;
-                line-height: 8px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: #ffffff;
-                margin-left: 31px;
-            }
-            .easy_step {
-                font-family: "Lato", sans-serif;
-                font-size: 16px;
+            .img_div {
+                position: absolute;
+                top: -133px;
+                right: 0;
             }
             .circle_info::before {
-                content: "";
-                position: absolute;
-                top: -19px;
-                left: 10%;
-                width: 1px;
-                height: 55%;
-                background-color: #ffffff;
-                z-index: 2;
-                /* content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        width: 1px;
-        height: 55%;
-        background-color: #ffffff;
-        z-index: 2; */
-            }
-            .circle_content {
-                font-size: 10px;
+                left: 7%;
             }
             .check_kyc_data {
                 margin-top: 0;
             }
         }
         
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
+        @media screen and (max-width: 1399px) {
+            .content-data {
+                margin-top: 40px;
+            }
             .fixed_deposit_data {
                 font-size: 40px;
                 line-height: 40px;
             }
             .invest_in {
-                font-family: "Lato", sans-serif;
                 font-size: 20px;
             }
             .in_just {
-                font-family: "Lato", sans-serif;
                 font-size: 11px;
-                font-weight: 400;
-                line-height: 8px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: #ffffff;
-                margin-left: 31px;
             }
             .easy_step {
-                font-family: "Lato", sans-serif;
                 font-size: 16px;
             }
             .circle_content {
                 font-size: 10px;
             }
             .circle_info::before {
-                content: "";
-                position: absolute;
-                top: -19px;
-                left: 10%;
-                width: 1px;
-                height: 55%;
-                background-color: #ffffff;
-                z-index: 2;
+                left: 7%;
             }
             .main_left_div {
                 display: block;
@@ -1197,6 +1151,6 @@
             .img_div {
                 position: absolute;
                 top: -96px;
-                margin-left: 30%;
+                right: 0;
             }
         }
