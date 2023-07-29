@@ -288,6 +288,7 @@
         
         .error-border {
             border-color: red;
+            box-shadow: red;
         }
         
         ul {

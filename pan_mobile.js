@@ -76,16 +76,12 @@ const mobileNumberInput = document.getElementById('mobileNumberInput');
 const panNumberInput = document.getElementById('panNumberInput');
 const submitButton = document.getElementById('submitButton');
 const checkbox = document.getElementById('flexCheckDefault');
-
 const validationMessage_mob = document.getElementById('validationMessage_mob');
 const validationMessage_pan = document.getElementById('validationMessage_pan');
 
-
-// Flags to indicate whether each input field is being edited or not
 let isMobileNumberEditing = false;
 let isPanNumberEditing = false;
 
-// Add 'input' event listeners to the input fields
 mobileNumberInput.addEventListener('input', () => {
     isMobileNumberEditing = true;
     validateInputs();
@@ -97,7 +93,10 @@ panNumberInput.addEventListener('input', () => {
 
 });
 
-// Function to validate the mobile number and enable/disable the submit button
+mobileNumberInput.addEventListener('input', () => {
+    validateMobileNumber();
+});
+
 function validateMobileNumber() {
     const mobileNumberValue = mobileNumberInput.value.trim();
     const mobileNumberRegex = /^\d{10}$/;
@@ -107,18 +106,18 @@ function validateMobileNumber() {
         validationMessage_mob.textContent = "";
         validationMessage_mob.style.color = "";
         mobileNumberInput.classList.remove("error-border"); // Remove the error class
-
+        document.getElementById("mobileNumberInput").style.border = "";
     } else {
         validationMessage_mob.textContent = "Please enter a 10 digit mobile number.";
         validationMessage_mob.style.color = "red";
         mobileNumberInput.classList.add("error-border"); // Remove the error class
-
+        document.getElementById("mobileNumberInput").style.border = "1px solid red";
     }
 
     return mobileNumberIsValid;
 }
 
-// Function to validate the PAN number and enable/disable the submit button
+
 function validatePanNumber() {
     const panNumberValue = panNumberInput.value.trim();
     const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
@@ -128,10 +127,12 @@ function validatePanNumber() {
         validationMessage_pan.textContent = "";
         validationMessage_pan.style.color = "";
         panNumberInput.classList.remove("error-border"); // Add the error class to the PAN input
+        document.getElementById("panNumberInput").style.border = "";
     } else {
         validationMessage_pan.textContent = "Please enter a valid PAN.";
         validationMessage_pan.style.color = "red";
         panNumberInput.classList.add("error-border"); // Add the error class to the PAN input
+        document.getElementById("panNumberInput").style.border = "1px solid red";
     }
 
     return panNumberIsValid;
@@ -141,13 +142,10 @@ checkbox.addEventListener('change', () => {
     validateInputs();
 });
 
-// Function to validate both inputs and enable/disable the submit button
 function validateInputs() {
     const mobileNumberIsValid = isMobileNumberEditing ? validateMobileNumber() : false;
     const panNumberIsValid = isPanNumberEditing ? validatePanNumber() : false;
     const isCheckboxChecked = checkbox.checked;
-
-    // Enable or disable the submit button based on both inputs' validity
     submitButton.disabled = !(mobileNumberIsValid && panNumberIsValid && isCheckboxChecked);
 
 
