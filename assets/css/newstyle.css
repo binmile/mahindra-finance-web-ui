@@ -1110,18 +1110,9 @@
             }
             .img_div {
                 position: absolute;
-                top: -133px;
+                top: 50px;
                 right: 0;
             }
-            .circle_info::before {
-                left: 7%;
-            }
-            .check_kyc_data {
-                margin-top: 0;
-            }
-        }
-        
-        @media screen and (max-width: 1399px) {
             .content-data {
                 margin-top: 40px;
             }
@@ -1142,7 +1133,35 @@
                 font-size: 10px;
             }
             .circle_info::before {
-                left: 7%;
+                left: 17px;
+            }
+            .check_kyc_data {
+                margin-top: 0;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) and (max-width: 1399px) {
+            .content-data {
+                margin-top: 40px;
+            }
+            .fixed_deposit_data {
+                font-size: 40px;
+                line-height: 40px;
+            }
+            .invest_in {
+                font-size: 20px;
+            }
+            .in_just {
+                font-size: 11px;
+            }
+            .easy_step {
+                font-size: 16px;
+            }
+            .circle_content {
+                font-size: 10px;
+            }
+            .circle_info::before {
+                left: 17px;
             }
             .main_left_div {
                 display: block;
