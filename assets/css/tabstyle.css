@@ -1,0 +1,78 @@
+.circleimg {
+    height: 30px;
+    width: 30px;
+    background: red;
+    border-radius: 100%;
+}
+.circleimg {
+    height: 30px;
+    width: 30px;
+    background: #F4F7FA;
+    border-radius: 100%;
+}
+.horizontalline .new1 {
+    border: 2px solid #8C989F;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.tabdesign {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.horizontalline {
+    width: 87px;
+}
+.tabparent {
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 26px;
+}
+.menuname p {
+    margin-bottom: 0px;
+}
+.circleimg img {
+    padding: 5px;
+}
+.menuname p {
+    margin-left: 5px;
+}
+.circleimg.active::before {
+    content: "";
+    border: 2px solid;
+    width: 15%;
+    position: absolute;
+    bottom: -20px;
+}
+.circleimg.active {
+    height: 30px;
+    width: 30px;
+    background: #000;
+    border-radius: 100%;
+}
+@media screen and (max-width:1399px) {
+.tabparent {
+    overflow: auto;
+    margin-right: 50px;
+
+    margin-left: 50px;
+}
+}
+
+@media screen and (max-width:767px) {
+    .wizardnew {
+        padding-left: 50px;
+        bottom: 100px;
+        background: #FFF;
+        border-radius: 8px;
+        padding-left: unset;
+        margin: 30px;
+    }
+}
+@media screen and (max-width:768px) {
+    .wizard {
+        bottom: 0px;
+    }
+}
