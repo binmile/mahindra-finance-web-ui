@@ -1,10 +1,19 @@
-         .leftcard {
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body {
+    background: #E6E7E9;
+    font-family: 'Lato';
+}
+        
+        .leftcard {
              margin: auto;
              padding: 100px 30px;
          }
          
          .logo {
-             width: 200px;
+             width: 318px;
              height: auto;
          }
          
@@ -658,6 +667,9 @@
              white-space: nowrap;
          }
          
+         .leftside {
+            position: relative;
+        }
          .bankDetailsLeftSide {
              border-top-left-radius: 20px;
              border-bottom-left-radius: 20px;
@@ -902,3 +914,8 @@
                  display: block;
              }
          }
+         .maincom {
+            padding-top: 30px;
+            padding-left: 26px;
+            padding-right: 50px;
+        }
