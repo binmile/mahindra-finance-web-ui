@@ -1033,6 +1033,12 @@
             .card_second_content {
                 font-size: 25px;
             }
+            .card_first_content {
+                font-size: 13px;
+            }
+            .wrapper_div {
+                justify-content: left;
+            }
         }
         
         @media only screen and (min-width: 768px) and (max-width: 1399px) {
@@ -1066,5 +1072,15 @@
                 position: absolute;
                 top: -96px;
                 right: 0;
+            }
+            .card_div_data {
+                display: block;
+            }
+            .card_second_content {
+                font-size: 35px;
+            }
+            .wrapper_div {
+                justify-content: left;
+                display: block;
             }
         }
