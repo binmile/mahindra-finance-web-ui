@@ -801,6 +801,9 @@
              letter-spacing: 0px;
              text-align: left;
          }
+         .maincontant-m {
+            padding: 0px 50px;
+        }
          
          @media screen and (max-width: 767px) {
              .main_left_div {
