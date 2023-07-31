@@ -288,6 +288,7 @@
         
         .error-border {
             border-color: red;
+            box-shadow: red;
         }
         
         ul {
@@ -742,191 +743,8 @@
             box-shadow: #dc3545 0px 3px 18px;
         }
         
-        .wizard,
         .wizard .nav-tabs,
         .wizard .nav-tabs .nav-item {
-            position: relative;
-        }
-        
-        .wizard .nav-tabs:after {
-            content: "";
-            width: 80%;
-            border-bottom: solid 2px #ccc;
-            position: absolute;
-            margin-left: auto;
-            margin-right: auto;
-            top: 38%;
-            z-index: -1;
-        }
-        
-        .wizard .nav-tabs .nav-item .nav-link {
-            width: 35px;
-            height: 35px;
-            margin-bottom: 30px;
-            background: #f4f7fa;
-            border: 2px solid #f4f7fa;
-            color: #000;
-            z-index: 10;
-        }
-        
-        .wizard .nav-tabs .nav-item .nav-link:hover {
-            color: #333;
-            border: 2px solid #333;
-        }
-        
-        .wizard .nav-tabs .nav-item .nav-link.active {
-            background: #080808;
-            border: 2px solid #020202;
-            color: #040404;
-        }
-        
-        .wizard .nav-tabs .nav-item .nav-link:after {
-            content: " ";
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-            opacity: 0;
-            margin: 0 auto;
-            bottom: 0px;
-            border: 5px solid transparent;
-            border-bottom-color: #0dcaf0;
-            transition: 0.1s ease-in-out;
-        }
-        
-        .nav-tabs .nav-item .nav-link.active:after {
-            content: " ";
-            position: absolute;
-            left: 23%;
-            border: 2px solid rgb(5, 5, 5);
-            width: 100px;
-            transform: translate(-50%);
-            opacity: 1;
-            margin: 0 auto;
-            bottom: 0px;
-            /* border: 10px solid transparent; */
-            /* border-bottom-color: #0dcaf0; */
-        }
-        
-        .wizard .nav-tabs .nav-item .nav-link svg {
-            font-size: 12px;
-            color: #4B4C4D;
-            font-weight: 400;
-        }
-        
-        span.steptext {
-            margin-left: 20px;
-            font-size: 13px;
-            font-weight: 400;
-            color: #4B4C4D;
-        }
-        
-        .wizard {
-            padding-left: 50px;
-        }
-        
-        a.btn.btn-info.next {
-            display: flex;
-            justify-content: space-between;
-            width: 304px;
-            padding: 12px;
-            align-items: center;
-            color: #fff;
-            background-color: #E31837;
-            border-color: #E31837;
-            box-shadow: #dc3545 0px 3px 18px;
-        }
-        
-        .abc {
-            margin-left: 87px;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-        
-        .abc.second {
-            margin-left: 47px;
-        }
-        
-        .abc.third {
-            margin-left: 97px;
-        }
-        
-        .abc.fourth {
-            margin-left: 70px;
-        }
-        
-        span.steptext.first::before {
-            content: "";
-            position: absolute;
-            width: 70px;
-            border: 1px solid #8C989F;
-            left: 111px;
-            top: 10px;
-        }
-        
-        span.steptext.second::before {
-            content: "";
-            position: absolute;
-            width: 110px;
-            border: 1px solid #8C989F;
-            left: 70px;
-            top: 10px;
-        }
-        
-        span.steptext.third::before {
-            content: "";
-            position: absolute;
-            width: 55px;
-            border: 1px solid #8C989F;
-            left: 126px;
-            top: 10px;
-        }
-        
-        .wizard .nav-tabs .nav-item .nav-link.active .steptext {
-            font-weight: 600;
-            color: #353334;
-        }
-        
-        h4 {
-            font-size: 20px;
-            font-weight: 400;
-        }
-        
-        .maincontant {
-            padding-top: 20px;
-        }
-        
-        .maincontant p {
-            font-size: 14px;
-            font-weight: 400;
-        }
-        
-        .form-control {
-            padding: 10px 40px 10px 15px;
-            background: #F4F7FA;
-        }
-        
-        .tab-content {
-            padding-right: 50px;
-        }
-        
-        label.form-label {
-            font-size: 16px;
-            font-weight: 500;
-            white-space: nowrap;
-        }
-        
-        .wizard .nav-tabs .nav-item .nav-link.active .svg-inline--fa {
-            color: rgb(249, 245, 245);
-        }
-        
-        .textfildicons {
-            position: absolute;
-            right: 14px;
-            top: 42px;
-        }
-        
-        .textparent {
             position: relative;
         }
         /* bankDetails css */
@@ -963,7 +781,6 @@
         
         .form-check-label {
             margin-left: 10px;
-            /* width: 500px; */
             font-family: "Lato", sans-serif;
             font-size: 14px;
             font-weight: 400;
@@ -1103,91 +920,143 @@
             border: 1px solid #ced4da;
         }
         
+        .form-switch-input {
+            background-color: #F4F7FA;
+        }
+        
+        .form-switch-input:checked {
+            background-color: #0094FF;
+            border: #0094FF;
+        }
+        
+        .strapper_div {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card_div_data {
+            display: flex;
+            justify-content: space-between;
+            background-color: #4D4D4F;
+            border-radius: 10px;
+            align-items: center;
+            padding: 1.5rem;
+        }
+        
+        .card_first_content {
+            font-family: "Lato", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        
+        .card_second_content {
+            color: #FFFFFF;
+            font-family: "Lato", sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 56px;
+            letter-spacing: -1px;
+            text-align: left;
+        }
+        
+        .form-control::placeholder {
+            font-family: "Lato", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        
+        .form-switch-label {
+            font-family: "Lato", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        
         @media screen and (max-width: 767px) {
+            .main_left_div {
+                padding: 0;
+            }
+            .img_div {
+                position: absolute;
+                top: 50px;
+                right: 0;
+            }
+            .content-data {
+                margin-top: 40px;
+            }
             .fixed_deposit_data {
                 font-size: 40px;
                 line-height: 40px;
             }
             .invest_in {
-                font-family: "Lato", sans-serif;
                 font-size: 20px;
             }
             .in_just {
-                font-family: "Lato", sans-serif;
                 font-size: 11px;
-                font-weight: 400;
-                line-height: 8px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: #ffffff;
-                margin-left: 31px;
             }
             .easy_step {
-                font-family: "Lato", sans-serif;
                 font-size: 16px;
-            }
-            .circle_info::before {
-                content: "";
-                position: absolute;
-                top: -19px;
-                left: 10%;
-                width: 1px;
-                height: 55%;
-                background-color: #ffffff;
-                z-index: 2;
-                /* content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        width: 1px;
-        height: 55%;
-        background-color: #ffffff;
-        z-index: 2; */
             }
             .circle_content {
                 font-size: 10px;
+            }
+            .circle_info::before {
+                left: 17px;
             }
             .check_kyc_data {
                 margin-top: 0;
             }
+            .strapper_div {
+                margin-top: 40px;
+            }
+            .first_button {
+                margin-bottom: 24px;
+            }
+            .form-switch {
+                margin-bottom: 40px;
+            }
+            .form-switch-label {
+                font-size: 12px;
+            }
+            .card_first_content {
+                font-size: 11px;
+            }
+            .card_second_content {
+                font-size: 25px;
+            }
         }
         
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
+        @media only screen and (min-width: 768px) and (max-width: 1399px) {
+            .content-data {
+                margin-top: 40px;
+            }
             .fixed_deposit_data {
                 font-size: 40px;
                 line-height: 40px;
             }
             .invest_in {
-                font-family: "Lato", sans-serif;
                 font-size: 20px;
             }
             .in_just {
-                font-family: "Lato", sans-serif;
                 font-size: 11px;
-                font-weight: 400;
-                line-height: 8px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: #ffffff;
-                margin-left: 31px;
             }
             .easy_step {
-                font-family: "Lato", sans-serif;
                 font-size: 16px;
             }
             .circle_content {
                 font-size: 10px;
             }
             .circle_info::before {
-                content: "";
-                position: absolute;
-                top: -19px;
-                left: 10%;
-                width: 1px;
-                height: 55%;
-                background-color: #ffffff;
-                z-index: 2;
+                left: 17px;
             }
             .main_left_div {
                 display: block;
@@ -1196,6 +1065,6 @@
             .img_div {
                 position: absolute;
                 top: -96px;
-                margin-left: 30%;
+                right: 0;
             }
         }
