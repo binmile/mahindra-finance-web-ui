@@ -93,92 +93,89 @@
 
                 </div>
                 <div class="col-md-8 col-lg-8 col-sm-12">
-                    <div class="wizard my-3">
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" role="tabpanel" id="step1" aria-labelledby="step1-tab">
-                                <div class="maincontant_data">
-                                    <h2 class="invest_fixed">Invest in fixed deposit</h2>
+                    <div class="maincontant-m">
+                        <div class="maincontant_data">
+                            <h2 class="invest_fixed">Invest in fixed deposit</h2>
 
                         </div>
 <div class="main-form">
 
-                                    <div class="mb-3 row">
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                            <div class="textparent">
-                                                <label for="exampMobile" class="form-label mobileLabel">Mobile
-                                                        no.</label>
-                                                <input type="text" class="form-control" aria-label="Recipient 's username" aria-describedby="basic-addon2" placeholder="Enter your mobile number" id="mobileNumberInput" maxlength="10" autocomplete="off" />
+                            <div class="mb-3 row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="textparent">
+                                        <label for="exampMobile" class="form-label mobileLabel">Mobile
+                                                no.</label>
+                                        <input type="text" class="form-control" aria-label="Recipient 's username" aria-describedby="basic-addon2" placeholder="Enter your mobile number" id="mobileNumberInput" maxlength="10" autocomplete="off">
 
-                                                <div class="textfildicons">
-                                                    <img src="./assets/Image/mobile.svg" alt="icons" class="icons" />
-                                                </div>
-
-                                                <div class="errorText" id="validationMessage_mob"></div>
-                                            </div>
-
+                                        <div class="textfildicons">
+                                            <img src="./assets/Image/mobile.svg" alt="icons" class="icons">
                                         </div>
 
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                            <div class="textparent">
-                                                <label for="exampPan" class="form-label panLabel">PAN</label>
-                                                <input type="text" class="form-control" aria-label="Recipient's pan " aria-describedby="basic-addon2 " placeholder="Enter your pan number " id="panNumberInput" autocomplete="off" />
-                                                <div class="textfildicons ">
-                                                    <img src="./assets/Image/pan.svg " alt="icons " class="icons " />
-                                                </div>
-                                                <div class="errorText" id="validationMessage_pan"></div>
-                                            </div>
+                                        <div class="errorText" id="validationMessage_mob"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="textparent">
+                                        <label for="exampPan" class="form-label panLabel">PAN</label>
+                                        <input type="text" class="form-control" aria-label="Recipient's pan " aria-describedby="basic-addon2 " placeholder="Enter your pan number " id="panNumberInput" autocomplete="off">
+                                        <div class="textfildicons ">
+                                            <img src="./assets/Image/pan.svg " alt="icons " class="icons ">
                                         </div>
-
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                            <div class="textparent">
-                                                <label for="exampSap" class="form-label">SAP Code</label>
-                                                <input type="text" class="form-control" aria-label="Recipient's pan " aria-describedby="basic-addon2 " placeholder="Enter your sap number " id="sapNumberInput" autocomplete="off" />
-                                                <div class="textfildicons ">
-                                                    <img src="./assets/Image/Union.svg " alt="icons " class="icons " />
-                                                </div>
-                                                <div class="errorText" id="validationMessage_sap"></div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input form-switch-input" type="checkbox" id="flexSwitchCheckDefault">
-                                                <label class="form-check-label form-switch-label" for="flexSwitchCheckDefault">I am investing for a minor</label>
-                                            </div>
-                                        </div>
-
-
-                                        <div class=" col-sm-12 col-md-12 ">
-                                            <ul class="check_kyc_data ">
-                                                <li class="checkInput ">
-                                                    <input class="form-check-input inputPan" type="checkbox" value="" id="flexCheckDefault" />
-                                                </li>
-                                                <li class="kyc_data_pan ">
-                                                    <p class="kyc_paragraph ">
-                                                        I/We herby expressly consent to MMFSL to search, download, upload/share with central KYC registry/Digilocker & receive information through SMS/email on the above registered mobile no./email ID for the purpose of KYC compliance
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="geberate_otp first_button">
-                                            <button type="submit" id='submitButton' disabled class="btn btn-danger newsubmitbtn_first custom-button-data">Generate OTP
-                                                <img src="./assets/Image/CTA_arrow.svg " alt="Generate OTP " class="img_tag" />
-                                            </button>
-
-                                        </div>
-
-
-
+                                        <div class="errorText" id="validationMessage_pan"></div>
                                     </div>
                                 </div>
 
-                    </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="textparent">
+                                        <label for="exampSap" class="form-label">SAP Code</label>
+                                        <input type="text" class="form-control" aria-label="Recipient's pan " aria-describedby="basic-addon2 " placeholder="Enter your sap number " id="sapNumberInput" autocomplete="off">
+                                        <div class="textfildicons ">
+                                            <img src="./assets/Image/Union.svg " alt="icons " class="icons ">
+                                        </div>
+                                        <div class="errorText" id="validationMessage_sap"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input form-switch-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label form-switch-label" for="flexSwitchCheckDefault">I am investing for a minor</label>
+                                    </div>
+                                </div>
+
+
+                                <div class=" col-sm-12 col-md-12 ">
+                                    <ul class="check_kyc_data ">
+                                        <li class="checkInput ">
+                                            <input class="form-check-input inputPan" type="checkbox" value="" id="flexCheckDefault">
+                                        </li>
+                                        <li class="kyc_data_pan ">
+                                            <p class="kyc_paragraph ">
+                                                I/We herby expressly consent to MMFSL to search, download, upload/share with central KYC registry/Digilocker &amp; receive information through SMS/email on the above registered mobile no./email ID for the purpose of KYC compliance
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="geberate_otp first_button">
+                                    <button type="submit" id="submitButton" disabled="" class="btn btn-danger newsubmitbtn_first custom-button-data">Generate OTP
+                                        <img src="./assets/Image/CTA_arrow.svg " alt="Generate OTP " class="img_tag">
+                                    </button>
+
+                                </div>
+
+
+
+                            </div>
                         </div>
+
                     </div>
+                   
 
                 </div>
             </div>
