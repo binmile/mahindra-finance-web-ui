@@ -27,11 +27,8 @@
          }
          
          .footertext {
-             margin-top: 20px;
-             background: #ccc;
-             padding: 10px;
-             border-radius: 6px;
-         }
+            margin-top: 20px;
+        }
          
          .footertext p {
              font-size: 10px;
