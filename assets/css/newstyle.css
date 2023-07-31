@@ -34,11 +34,6 @@ body {
     background-size: cover;
 }
 
-
-
-
-
-
 .logo img {
     width: 100%;
     height: auto;
@@ -1599,6 +1594,7 @@ input[type='checkbox'] {
              padding: 0px 10px 10px 10px;
          }
          
+
          .btn_submit {
              width: 100%;
          }
