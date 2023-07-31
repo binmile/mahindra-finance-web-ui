@@ -16,13 +16,11 @@
     <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.css" /> -->
     <link rel="stylesheet" type="text/css" href="./assets/css/newstyle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css" />
-    
-    <title>Document</title>
-    
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" /> -->
-    <style>
 
-    </style>
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" /> -->
+    
 
 </head>
 
@@ -32,98 +30,141 @@
         <div class="card">
             <div class="row">
                 <div class="col-md-5 col-lg-5 col-sm-12 leftside">
-                        <div class="">
 
-                            <div class="logoCOntainer">
-                                <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
-                            </div>
-
-                            <div class="leftcard">
-                                
-                                <div class="leftcard-contant">
-                                    <h1> Fixed deposit Schemes</h1>
+                    <div class="logoImgContainer">
+                        <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
+                    </div>
 
 
-                                <!-- investment leftHand side Screen start -->
-                                <div class="appliedContainer" style="">
-                                    <div class="col-12 col-md-7 col-lg-7 col-sm-12 appliedSection">
-                                        <div class="appliedSection_additional">
-                                            <div>
-                                                <img src="./assets/Image/completed.png" alt="complete_img" />
-                                            </div>
-                                            <div class="applied_additional">
-                                                Applied additional
-                                            </div>
-                                        </div>
-                                        <div class="applied_additional_rate">
-                                            0.25%
-                                        </div>
-                                        <div class="applied_additional_citizens">
-                                            Senior citizens interest rates
-                                        </div>
+
+                    <div class="leftcard">
+
+                        <div class="leftcard-contant">
+                            <h1> Fixed deposit Schemes</h1>
+                        </div>
+
+
+                        <!-- investment leftHand side Screen start -->
+                        <div class="appliedContainer">
+                            <div class="col-12 col-md-12 col-lg-7 col-sm-12 appliedSection">
+                                <div class="appliedSection_additional">
+                                    <div>
+                                        <img src="./assets/Image/completed.png" alt="complete_img" />
                                     </div>
-                                    <div class="col-md-5 col-lg-5 col-sm-12 stampImg">
-                                    <img src="./assets/Image/Highest Safety Stamp.png" alt="stump_img" />
+                                    <div class="applied_additional">
+                                        Applied additional
                                     </div>
-
                                 </div>
-
-                                 
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Tenure (months)</th>
-                                        <th scope="col">Interest rates </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>12 </td>
-                                        <td>Upto 7.40%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>24</td>
-                                        <td>Upto 7.55%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>36 </td>
-                                        <td>
-                                            <span>
-                                                Upto 8.05%
-                                            </span>
-
-                                            <img class="bestSellerImg" alt="bestSeller"
-                                                src="./assets/Image/bestSeller.png" />
-                                        </td>
-                                    </tr>
-                                    <tr style="display:none;" id="cont">
-                                        <td>36 </td>
-                                        <td>
-                                            <span>
-                                                Upto 9.08%
-                                            </span>
-
-                                            
-                                        </td>
-                                    </tr>    
-                                    <tr>
-                                        <td colspan="2" style="border: none;" class="">
-                                            <input type="button" value="See All" class="seeAllButton" id="bt" onclick="toggle(this)" >
-                                        </td>
-                                        
-                                    </tr>
-                                </tbody>
-
-                            </table>
-
+                                <div class="applied_additional_rate">
+                                    0.25%
+                                </div>
+                                <div class="applied_additional_citizens">
+                                    Senior citizens interest rates
+                                </div>
                             </div>
-                                 
-
+                            <div class="col-12 col-md-12 col-lg-5 col-sm-12  stampImg_Container">
+                                <img src="./assets/Image/Highest Safety Stamp.png" alt="stump_img" />
                             </div>
 
                         </div>
 
-                   
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tenure (months)</th>
+                                    <th scope="col">Interest rates </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12 </td>
+                                    <td>
+                                        <span class="tableUpto">Upto</span>
+                                        <span>7.40%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>
+                                        <span class="tableUpto">Upto</span>
+                                        <span>7.55%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>36 </td>
+                                    <td>
+                                        <span class="tableUpto">Upto</span>
+                                        <span>8.05%</span>
+                                        <span class="table_bestSelerImg">
+                                            <img class="bestSellerImg" alt="bestSeller"
+                                                src="./assets/Image/bestSeller.png" />
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr id="cont" class="hidden">
+                                    <td>36 </td>
+                                    <td>
+                                        <span class="tableUpto">
+                                            Upto
+                                        </span>
+                                        <span>
+                                            9.08%
+                                        </span>
+
+
+                                    </td>
+                                </tr>
+                                <tr id="cont" class="hidden">
+                                    <td>60 </td>
+                                    <td>
+                                        <span class="tableUpto">
+                                            Upto
+                                        </span>
+                                        <span>
+                                            9.45%
+                                        </span>
+
+
+                                    </td>
+                                </tr>
+                                <tr id="cont" class="hidden">
+                                    <td colspan="2" class="tableLess_Button" >
+                                        <button type="button" class="btn seeLess_Button">
+                                            <span>
+                                                View Less
+                                            </span>
+                                            <span>
+                                                <img alt="arrow_img" src="./assets/Image/VectorUp.svg" />
+                                            </span>
+                                        </button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td colspan="2"  class="tableLess_Button">
+                                        <button type="button" class="btn seeAll_Button" onclick="showMore()"
+                                            id="showMore">
+                                            <span>
+                                                See All
+                                            </span>
+                                            <span>
+                                                <img alt="arrow_img" src="./assets/Image/dropdown.svg" />
+                                            </span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+
+
+
+                    </div>
+
+
+
 
                 </div>
 
@@ -131,306 +172,407 @@
 
 
                 <div class="col-md-7 col-lg-7 col-sm-12">
-                    
-                <div class="wizard my-3">
-                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                        <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip" data-bs-placement="top" title="Investment">
-                            <a class="nav-link active rounded-circle  d-flex align-items-center justify-content-center" href="#step1" id="step1-tab" data-bs-toggle="tab" role="tab" aria-controls="step1" aria-selected="true">
-                                <div class="abc">
-                                    <i class="fas fa-folder-open"></i>
-                                <span class="steptext first">Investment</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip" data-bs-placement="top" title="KYC">
-                            <a class="nav-link rounded-circle  d-flex align-items-center justify-content-center" href="#step2" id="step2-tab" data-bs-toggle="tab" role="tab" aria-controls="step2" aria-selected="false" title="Step 2">
-                                
-                                <div class="abc second">
-                                    <i class="fas fa-briefcase"></i>
-                                    <span class="steptext second">KYC</span>
-                                </div>
-                                
-                            </a>
-                        </li>
-                        <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip" data-bs-placement="top" title="Review&nbsp;&&nbsp;Pay">
-                            <a class="nav-link rounded-circle  d-flex align-items-center justify-content-center" href="#step3" id="step3-tab" data-bs-toggle="tab" role="tab" aria-controls="step3" aria-selected="false" title="Step 3">
-                                <div class="abc third">
-                                    <i class="fas fa-star"></i>
-                                    <span class="steptext third">Review&nbsp;&&nbsp;Pay</span>
-                                </div>
-                                
-                            </a>
-                        </li>
-                        <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip" data-bs-placement="top" title="All&nbsp;Done">
-                            <a class="nav-link rounded-circle  d-flex align-items-center justify-content-center" href="#step4" id="step4-tab" data-bs-toggle="tab" role="tab" aria-controls="step4" aria-selected="false" title="Step 4">
-                                
-                                <div class="abc fourth">
-                                    <i class="fas fa-flag-checkered"></i>
-                                    <span class="steptext">All&nbsp;Done</span>
-                                </div>
-                            
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" role="tabpanel" id="step1" aria-labelledby="step1-tab">
+                    <div class="wizard my-3">
+                        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Investment">
+                                <a class="nav-link active rounded-circle  d-flex align-items-center justify-content-center"
+                                    href="#step1" id="step1-tab" data-bs-toggle="tab" role="tab" aria-controls="step1"
+                                    aria-selected="true">
+                                    <div class="abc">
+                                        <i class="fas fa-folder-open"></i>
+                                        <span class="steptext first">Investment</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="KYC">
+                                <a class="nav-link rounded-circle  d-flex align-items-center justify-content-center"
+                                    href="#step2" id="step2-tab" data-bs-toggle="tab" role="tab" aria-controls="step2"
+                                    aria-selected="false" title="Step 2">
 
-                            <form name="name">
-                                <div class="maincontant">
-                                    <h4 class="fixed_Deposit">Customise Fixed Deposit</h4>
-                                        <div class="row ">
-                                            <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested">
-                                                <div>
-                                                    <div class="textparent">
-                                                        <label for="exampleInputPassword1" class="form-label">Enter amount to be invested</label>
-                                                        <input type="text" placeholder="Enter Ammount" class="form-control" id="exampleInputPassword1">
-                                                        <div class="textfildicons">
-                                                            <img src="./assets/Image/money.png"  alt="icons" class="icons" />
-                        
+                                    <div class="abc second">
+                                        <i class="fas fa-briefcase"></i>
+                                        <span class="steptext second">KYC</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Review&nbsp;&&nbsp;Pay">
+                                <a class="nav-link rounded-circle  d-flex align-items-center justify-content-center"
+                                    href="#step3" id="step3-tab" data-bs-toggle="tab" role="tab" aria-controls="step3"
+                                    aria-selected="false" title="Step 3">
+                                    <div class="abc third">
+                                        <i class="fas fa-star"></i>
+                                        <span class="steptext third">Review&nbsp;&&nbsp;Pay</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="All&nbsp;Done">
+                                <a class="nav-link rounded-circle  d-flex align-items-center justify-content-center"
+                                    href="#step4" id="step4-tab" data-bs-toggle="tab" role="tab" aria-controls="step4"
+                                    aria-selected="false" title="Step 4">
+
+                                    <div class="abc fourth">
+                                        <i class="fas fa-flag-checkered"></i>
+                                        <span class="steptext">All&nbsp;Done</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" role="tabpanel" id="step1"
+                                aria-labelledby="step1-tab">
+
+                                <form id="signup">
+
+                                    <div class="maincontant">
+                                        <h4 class="Investment_Heading">Customize your fixed deposit</h4>
+
+                                        <div class="ammountInvested_container">
+                                            <div class="col-12 col-md-7` col-lg-7 col-sm-12 ">
+                                                <div class="textparent">
+                                                    <label for="" class="form-label">Enter
+                                                        amount to be invested</label>
+
+                                                    <input type="number" placeholder="Enter Amount"
+                                                        class="form-control" name="amount" autocomplete="off"
+                                                        id="amount">
+
+                                                    <div class="textfildicons">
+                                                        <img src="./assets/Image/money.png" alt="icons" class="icons" />
+                                                    </div>
+                                                    <p class="message_label">Min. deposit of ₹ 10,000 and
+                                                        max deposit of ₹
+                                                        5 crores</p>
+
+                                                    <div class="errorText" id="validationMessage"></div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="tenure_container">
+                                            <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
+
+                                                <label for="" class="form-label">Select tenure (in months)</label>
+
+                                                <div id="">
+                                                        <div class="" data-toggle="buttons" id="tenureEements">
+
+                                                            <label class="boxRadioButton" id="elementoption1">
+                                                                <input type="radio" name="type" value="60" data-tenure="elementoption1" autocomplete="off"> 60
+                                                            </label>
+                                                            <label class="boxRadioButton" id="elementoption2">
+                                                                <input type="radio" name="type" value="48" data-tenure="elementoption2" autocomplete="off"> 48
+                                                            </label>
+                                                            <label class="boxRadioButton" id="elementoption3">
+                                                                <input type="radio" name="type" value="36" data-tenure="elementoption3" autocomplete="off"> 36
+                                                            </label>
+                                                            <label class="boxRadioButton" id="elementoption4">
+                                                                <input type="radio" name="type" value="24" data-tenure="elementoption4" autocomplete="off"> 24
+                                                            </label>
+                                                            <label class="boxRadioButton" id="elementoption5">
+                                                                <input type="radio" name="type" value="12" data-tenure="elementoption5" autocomplete="off"> 12
+                                                            </label>
+                                                            <label class="boxRadioButton" id="elementoption6">
+                                                                <input type="radio" name="type" value="custom" data-tenure="elementoption6" autocomplete="off"> Custom
+                                                            </label>
                                                         </div>
-                        
-                                                       </div>
-                
                                                 </div>
-                                                <div class="ammountContainer_header_text">Min. deposit of ₹ 10,000 and max deposit of ₹
-                                                    5 crores</div>
-                
-                                            </div>
-                                        </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col-12 monthsContainer">
-                                        <div class="monthsContainer_header">
-                                            Select tenure (in months)
-                                        </div>
-                                        <div class="months_button monthsContainer_button" id="myDiv">
-                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">60</button>
-                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">48</button>
-                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">36</button>
-                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">24</button>
-                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)" id="myDiv">12</button>
-                                            <button type="button" class="monthsContainer_button_child" onclick="myFunction(event)"  id="myDiv">Custom</button>
-                                        </div>
-                                        <div class="monthinputContainer">
-                                            <div class="textparent">
-                                                <input type="text" class="form-control" id="exampleInputPassword1">
-                
-                                               </div>
-                                            <div class="">
-                                                Min. 12 months and max. 60 months
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-        
-                                <div class="row">
-                                    <div class="col-12 interestContainer">
-                                        <div class="interestContainer_header">
-                                            <div>
-                                                Select when you wish to receive interest
+
+
+                                        <div class="monthinput_container" id="CustomMonth" >
+                                            <div class=" col-12 col-md-7 col-lg-7 col-sm-12">
+                                                <input type="number" class="form-control" name="month"
+                                                    autocomplete="off" id="month">
+
                                             </div>
-        
-                                            <div class="tooltipContainer">
-                                                <div class="tooltipMain">
-                                                    <img class="AlertImg" src="./assets/Image/Alert.png" alt="alert" />
-        
-                                                    <div class="tooltipContent">
-                                                        <div class="tooltipHeader">Interest payout frequency </div>
-                                                        <div class="tooltipText">The interest on our deposit can be paid out as
-                                                            per your choice. Choose to get payouts at maturity, or on a periodic
-                                                            basis.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            
+
+                                            <div class="errorText" id="validationMessage_month"></div>
+
                                         </div>
-        
-                                        <div class="monthsContainer_button"  id="maturityBtn">
-                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
-                                                <span>Maturity</span>
-                                                <span>8.30%</span>
-                                            </button>
-                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
-                                                <span>Yearly</span>
-                                                <span>8.30%</span>
-                                            </button>
-                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
-                                                <span>Half yearly</span>
-                                                <span>8.14%</span>
-                                            </button>
-                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
-                                                <span>Quaterly</span>
-                                                <span>8.06%</span>
-                                            </button>
-                                            <button type="button" class="monthsContainer_button_child" onclick="myMaturityButton(event)">
-                                            <span>Monthly</span>
-                                            <span>8.02%</span>
-                                            </button>
-                                        </div>
-        
-        
-                                        <div class="interestContainer_text">
-                                            <img class="interestContainer_img" alt="flaglogo"
-                                                src="./assets/Image/Vector 14.png" />
-                                            <div>
-                                                Interest rates are best when payout is on maturity
-                                            </div>
-                                        </div>
-        
-                                    </div>
-                                </div>
-        
-        
-                                <div class="row">
-                                    <div class="col-12 interestTableContainer">
-                                        <div class="interestTableContainer_inner">
-                                            <div class="interestTableContainer_header">
-                                                <div class="interestTableContainer_text_container">
-                                                    <div class="interestTableContainer_text_1">
-                                                        Interest rate
-                                                    </div>
-                                                    <div class="interestTableContainer_text_2">
-                                                        8.30%
-                                                    </div>
-                                                </div>
-                                                <div class="interestTableContainer_text_container">
-                                                    <div class="interestTableContainer_text_1">
-                                                        Interest amount
-                                                    </div>
-                                                    <div class="interestTableContainer_text_2">
-                                                        ₹ 5,835
-                                                    </div>
-                                                </div>
-                                                <div class="interestTableContainer_text_container">
-                                                    <div class="interestTableContainer_text_1">
-                                                        Maturity amount
-                                                    </div>
-                                                    <div class="interestTableContainer_text_2">
-                                                        ₹ 20,835
-                                                    </div>
-                                                </div>
-                                                <div class="interestTableContainer_text_container">
-                                                    <div class="interestTableContainer_text_1">
-                                                        Maturity date
-                                                    </div>
-                                                    <div class="interestTableContainer_text_2">
-                                                        28 Jul 2025
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="interestTableContainer_CheckBox">
-                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                                <label for="vehicle1" style="color: white; margin-left: 10px;"> Auto renewal </label>
-        
-                                                <div class="tooltipContainer">
-                                                    <span class="tooltipMain">
-                                                        <img class="alertImg" src="./assets/Image/alert.png" alt="alert" />
-                                                        <div class="tooltipContent">
-                                                            <div class="tooltipHeader">Auto renewal</div>
-                                                            <div class="tooltipText">
-                                                                <ul>
-                                                                    <li>
-                                                                        Tenure & interest payout would be same as your current FD
-                                                                        scheme.
-                                                                    </li>
-                                                                    <li>
-                                                                        Interest rate of renewed FD will depend on the day of
-                                                                        renewal.
-                                                                    </li>
-                                                                </ul>
+
+
+                                        <div class="receive_interest_container">
+                                            <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
+                                                <div class="interestContainer_header">
+
+                                                    <label for="" class="form-label">Select when you wish to receive
+                                                        interest</label>
+
+                                                    <div class="tooltipContainer">
+                                                        <div class="tooltipMain">
+                                                            <img class="AlertImg" src="./assets/Image/Alert.png"
+                                                                alt="alert" />
+
+                                                            <div class="tooltipContent">
+                                                                <div class="tooltipHeader">Interest payout frequency
+                                                                </div>
+                                                                <div class="tooltipText">The interest on our deposit can
+                                                                    be
+                                                                    paid out as
+                                                                    per your choice. Choose to get payouts at maturity,
+                                                                    or
+                                                                    on a periodic
+                                                                    basis.</div>
                                                             </div>
                                                         </div>
-                                                    </span>
+                                                    </div>
+
                                                 </div>
-        
+                                                
+
+                                              
+
+                                                    <div class="" data-toggle="buttons" id="tenureEement">
+                                                        <label class="boxRadioButton2" id="elementoption11">
+                                                            <input type="radio" name="type"  value="Maturity" data-tenures="elementoption11" autocomplete="off">  
+                                                            
+                                                            Maturity
+
+                                                            8.30%
+                                                        </label>
+
+                                                        <label class="boxRadioButton2" id="elementoption12">
+                                                            <input type="radio" name="type"  value="Yearly" data-tenures="elementoption12" autocomplete="off">  
+                                                        
+                                                            Yearly
+                                                            8.05%
+                                                        </label>
+                                                     
+
+                                                        <label class="boxRadioButton2" id="elementoption13">
+                                                            <input type="radio" name="type"   value="Half yearly" data-tenures="elementoption13" autocomplete="off"> 
+                                                        
+                                                            Half yearly
+                                                            7.89%
+                                                        </label>
+                                                     
+
+                                                        <label class="boxRadioButton2" id="elementoption14">
+                                                            <input type="radio" name="type"  value="Quaterly" data-tenures="elementoption14" autocomplete="off">  
+                                                        
+                                                            Quaterly
+                                                            7.82%
+                                                        </label>
+                                                     
+
+                                                        <label class="boxRadioButton2" id="elementoption15">
+                                                            <input type="radio" name="type"  value="Monthly" data-tenures="elementoption15" autocomplete="off"> 
+                                                         
+                                                            Monthly
+                                                            7.77%
+                                                        </label>
+                                                     
+                                                     
+                                                    </div>
+
+                                                    
+                                           
+
+                                              
+
+
+                                                <div class="interestContainer_text">
+                                                    <img class="interestContainer_img" alt="flaglogo"
+                                                        src="./assets/Image/Vector 14.png" />
+                                                    <p class="message_label">
+                                                        Interest rates are best when payout is on maturity
+                                                    </p>
+                                                </div>
+
                                             </div>
-        
                                         </div>
-        
-        
-        
-                                    </div>
-                                </div>
-        
-                                <div class="row">
-                                    <div class="col-6 jointAccountContainer">
-                                        <div class="jointAccountContainer_header">
-                                            Would you like to add a joint account holder?
-                                        </div>
-                                        <div class="btn-group jointAccount_Button_container" id="elements">
-                                            <label class="btn button_label" onclick="changeclr(this)">
-                                                <input class="checkbox_button" type="radio" name="type" value="event1"
-                                                    id="elementoption1" autocomplete="off" > Yes
-                                            </label>
-                                            <label class="btn button_label" style="margin-left: 20px;" onclick="changeclr(this)">
-                                                <input type="radio" class="checkbox_button" name="type" value="event1"
-                                                    id="elementoption1" autocomplete="off" checked> No
-                                            </label>
-        
-                                        </div>
-                                    </div>
-                               
-                                </div> 
 
-                                <div class="interestTableContainer_Check">
-                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                    <label for="vehicle1" style="margin-left: 10px;"> Are you/joint holder a tax resident of a country other than india?  </label>
-                                </div>
 
-                                <div class="interestTableContainer_Check">
-                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                    <label for="vehicle1" style="margin-left: 10px;"> Are you/joint holder a green card holder?</label>
-                                </div>
-        
-                                <div class="row">
-                                    <div class="col-12 kycContainer">
-                                        <div class="kycContainer_Button">
-                                            <a href="AdditionalDetails.html"  type="button" class="btn  kyc_Button">
-                                                <div class="CKYC_Button_text">
-                                                    Continue
+                                        <div class="interestTable_container">
+                                            <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
+                                                <div class="interestTableContainer_inner">
+                                                    <div class="interest_autorenewal_a" >
+                                                        <div
+                                                            class=" col-12 col-md-3 col-lg-3 col-sm-6 interestTableContainer_text_container">
+                                                            <div class="interestTableContainer_text_1">
+                                                                Interest rate
+                                                            </div>
+                                                            <div class="interestTableContainer_text_2">
+                                                                8.30%
+                                                            </div>
+                                                        </div>
+
+                                                        <div class=" col-12 col-md-3 col-lg-3 col-sm-6 
+                                                    interestTableContainer_text_container">
+                                                            <div class="interestTableContainer_text_1">
+                                                                Interest amount
+                                                            </div>
+                                                            <div class="interestTableContainer_text_2">
+                                                                ₹ 5,835
+                                                            </div>
+                                                        </div>
+
+                                                        <div class=" col-12 col-md-3 col-lg-3 col-sm-6 
+                                                    interestTableContainer_text_container">
+                                                            <div class="interestTableContainer_text_1">
+                                                                Maturity amount
+                                                            </div>
+                                                            <div class="interestTableContainer_text_2">
+                                                                ₹ 20,835
+                                                            </div>
+                                                        </div>
+
+                                                        <div class=" col-12 col-md-3 col-lg-3 col-sm-6 
+                                                    interestTableContainer_text_container">
+                                                            <div class="interestTableContainer_text_1">
+                                                                Maturity date
+                                                            </div>
+                                                            <div class="interestTableContainer_text_2">
+                                                                28 Jul 2025
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="interestTableContainer_CheckBox">
+                                                        <input type="checkbox" value="" id="flexCheckDefault">
+                                                        <label for=""
+                                                           >
+                                                           <span class="autorenewal_text">
+                                                               Auto
+                                                               renewal
+                                                           </span>
+                                                         </label>
+
+                                                        <div class="tooltipContainer">
+                                                            <span class="tooltipMain">
+                                                                <img class="alertImg" src="./assets/Image/alert.png"
+                                                                    alt="alert" />
+                                                                <div class="tooltipContent">
+                                                                    <div class="tooltipHeader">Auto renewal</div>
+                                                                    <div class="tooltipText">
+                                                                        <ul>
+                                                                            <li>
+                                                                                Tenure & interest payout would be same
+                                                                                as
+                                                                                your current FD
+                                                                                scheme.
+                                                                            </li>
+                                                                            <li>
+                                                                                Interest rate of renewed FD will depend
+                                                                                on
+                                                                                the day of
+                                                                                renewal.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+
                                                 </div>
-                                                <img alt="arrow" src="./assets/Image/greyArrow.png"" />
-                                            </a>
-        
+
+
+
+                                            </div>
                                         </div>
-        
+
+                                        <div class="accountHolder_container">
+                                            <div class="col-6 ">
+                                                <label for="" class="form-label"> Would you like to add a joint account
+                                                    holder?</label>
+                                                <div class="btn-group jointAccount_Button_container" id="elements">
+                                                    <label class="btn button_label set-1" onclick="changeclr(this)">
+                                                        <input class="checkbox_button" type="radio" name="type"
+                                                            value="event1" id="elementoption1" autocomplete="off"> Yes
+                                                    </label>
+                                                    <label class="btn button_label " 
+                                                        onclick="changeclr(this)">
+                                                        <input type="radio" class="checkbox_button" name="type"
+                                                            value="event1" id="elementoption1" autocomplete="off"
+                                                            checked>
+                                                        No
+                                                    </label>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="jointSwitch_container">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="flexSwitchCheckDefault">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault">Are
+                                                    I am a joint holder/tax resident outside of india</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="jointSwitch_container">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="flexSwitchCheckDefault">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault">Are
+                                                    I am a joint holder/green card holder</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="Continue_button_container">
+                                            <div class="col-12 ">
+                                                <div class="kycContainer_Button">
+                                                    <button type="button"
+                                                        id='submitButton' disabled
+                                                        class="btn btn-danger newsubmitbtn_first custom-button-data" onclick="redirectPage();">
+
+                                                            Continue
+            
+                                                            
+                                                            <img alt="arrow" src="./assets/Image/greyArrow.png" />
+                                                        </button>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
                                     </div>
+                                </form>
+
+
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="step2" aria-labelledby="step2-tab">
+                                <h3>Step 2</h3>
+                                <p>This is step 2</p>
+                                <div class="d-flex ">
+                                    <a class="btn btn-info next">Continue <i class="fas fa-angle-right"></i></a>
                                 </div>
-                            </form>
-
-                 
-
-                            
-
-
-<!-- 
-                            <div class="d-flex ">
-                                <a class="btn btn-info next">Continue <i class="fas fa-angle-right"></i></a>
-                            </div> -->
-                        </div>
-                        <div class="tab-pane fade" role="tabpanel" id="step2" aria-labelledby="step2-tab">
-                            <h3>Step 2</h3>
-                            <p>This is step 2</p>
-                            <div class="d-flex ">
-                                <a class="btn btn-info next">Continue <i class="fas fa-angle-right"></i></a>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" role="tabpanel" id="step3" aria-labelledby="step3-tab">
-                            <h3>Step 3</h3>
-                            <p>This is step 3</p>
-                            <div class="d-flex ">
-                                <a class="btn btn-info next">Continue <i class="fas fa-angle-right"></i></a>
+                            <div class="tab-pane fade" role="tabpanel" id="step3" aria-labelledby="step3-tab">
+                                <h3>Step 3</h3>
+                                <p>This is step 3</p>
+                                <div class="d-flex ">
+                                    <a class="btn btn-info next">Continue <i class="fas fa-angle-right"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" role="tabpanel" id="step4" aria-labelledby="step4-tab">
-                            <h3>Complete</h3>
-                            <p>You have successfully completed all steps.</p>
-                            <div class="d-flex">
-                                <a class="btn btn-info next">Submit <i class="fas fa-angle-right"></i></a>
+                            <div class="tab-pane fade" role="tabpanel" id="step4" aria-labelledby="step4-tab">
+                                <h3>Complete</h3>
+                                <p>You have successfully completed all steps.</p>
+                                <div class="d-flex">
+                                    <a class="btn btn-info next">Submit <i class="fas fa-angle-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
                 </div>
             </div>
@@ -439,7 +581,17 @@
         <footer>
             <div class="footertext">
                 <p>
-                    The products, services and offers referred to herein are subject to the terms and conditions governing them as specified by Mahindra & Mahindra Financial Services Ltd (MMFSL) on actual Loan Agreement documents. All deposits, associated benefits, features etc stated herein are by way of example and offered at the sole discretion of MMFSL. Nothing contained herein shall constitute or be deemed to constitute an advice, invitation or solicitation to purchase any products/services of MMFSL. Misuse of any intellectual property, or any other content displayed herein is strictly prohibited.
+                    The products, services and offers referred to herein are subject to the terms and
+                    conditions
+                    governing them as specified by Mahindra & Mahindra Financial Services Ltd (MMFSL) on
+                    actual
+                    Loan Agreement documents. All deposits, associated benefits, features etc stated herein
+                    are
+                    by way of example and offered at the sole discretion of MMFSL. Nothing contained herein
+                    shall constitute or be deemed to constitute an advice, invitation or solicitation to
+                    purchase any products/services of MMFSL. Misuse of any intellectual property, or any
+                    other
+                    content displayed herein is strictly prohibited.
 
                 </p>
                 <p>
@@ -450,88 +602,108 @@
         </footer>
 
 
-     </div>
+    </div>
 
     <!-- This script got from frontendfreecode.com -->
 
-   
 
-                                                                            
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-<script>
-  $(document).ready(function () {
-	//Enable Tooltips
-	var tooltipTriggerList = [].slice.call(
-		document.querySelectorAll('[data-bs-toggle="tooltip"]')
-	);
-	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-		return new bootstrap.Tooltip(tooltipTriggerEl);
-	});
 
-	//Advance Tabs
-	$(".next").click(function () {
-		const nextTabLinkEl = $(".nav-tabs .active")
-			.closest("li")
-			.next("li")
-			.find("a")[0];
-		const nextTab = new bootstrap.Tab(nextTabLinkEl);
-		nextTab.show();
-	});
 
-	$(".previous").click(function () {
-		const prevTabLinkEl = $(".nav-tabs .active")
-			.closest("li")
-			.prev("li")
-			.find("a")[0];
-		const prevTab = new bootstrap.Tab(prevTabLinkEl);
-		prevTab.show();
-	});
-});
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Enable Tooltips
+            var tooltipTriggerList = [].slice.call(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
 
- 
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-<script>
-    function myFunction(e) {
-    if (document.querySelector('#myDiv button.active') !== null) {
-        document.querySelector('#myDiv button.active').classList.remove('active');
-    }
-    e.target.className = "active";
-    }
+            //Advance Tabs
+            $(".next").click(function () {
+                const nextTabLinkEl = $(".nav-tabs .active")
+                    .closest("li")
+                    .next("li")
+                    .find("a")[0];
+                const nextTab = new bootstrap.Tab(nextTabLinkEl);
+                nextTab.show();
+            });
 
-    function myMaturityButton(e) {
-    if (document.querySelector('#maturityBtn button.active') !== null) {
-        document.querySelector('#maturityBtn button.active').classList.remove('active');
-        document.querySelector('#maturityBtn button span').classList.remove('active');
-    }
-    e.target.className = "active";
-    document.querySelector('#maturityBtn button span.active').classList.remove('active');
-    event.preventDefault();
-    }
+            $(".previous").click(function () {
+                const prevTabLinkEl = $(".nav-tabs .active")
+                    .closest("li")
+                    .prev("li")
+                    .find("a")[0];
+                const prevTab = new bootstrap.Tab(prevTabLinkEl);
+                prevTab.show();
+            });
+        });
 
-    $('.button_label').click(function() {
-        $('input:not(:checked)').parent().removeClass("checked");
-        $('input:checked').parent().addClass("checked");
-    });
-</script>
-<script>
-    function toggle(ele) {
-        var cont = document.getElementById('cont');
-        if (cont.style.display == 'contents') {
-            cont.style.display = 'none';
 
-            document.getElementById(ele.id).value = 'See All';
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+
+
+
+
+    <script>
+        const trs = document.getElementsByTagName("tr");
+        const startWith = 4;
+
+        function showMore() {
+            for (let i = startWith; i < trs.length; i++) {
+                trs[i].classList.toggle('hidden')
+            }
         }
-        else {
-            cont.style.display = 'contents';
-            document.getElementById(ele.id).value = 'View Less';
-        }
-    }
 
-</script>
+
+
+        $("#tenureEements :input").click(function () {
+            $("#tenureEements :input").each(function() {
+            if ($(this).is(":checked")) {
+                var activeData=$(this).attr('data-tenure');
+	            $('#'+activeData).addClass('active');
+
+                var result = $(this).val();
+                if(result === "custom"){
+                document.getElementById("CustomMonth").style.display = "block";
+                }
+            } else {
+                var activeData=$(this).attr('data-tenure');
+	            $('#'+activeData).removeClass('active');
+                document.getElementById("CustomMonth").style.display = "none";
+            }
+            });
+        });
+
+
+
+        $("#tenureEement :input").click(function () {
+            $("#tenureEement :input").each(function() {
+            if ($(this).is(":checked")) {
+                var activeData=$(this).attr('data-tenures');
+	            $('#'+activeData).addClass('active');
+
+                var result = $(this).val();
+                if(result === "custom"){
+                }
+            } else {
+                var activeData=$(this).attr('data-tenures');
+	            $('#'+activeData).removeClass('active');
+            }
+            });
+        });
+
+    </script>
+
+
+
+    <script src="./assets/js/investment.js"></script>
+
 </body>
 
 </html>

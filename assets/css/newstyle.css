@@ -22,7 +22,7 @@ p {
     border-bottom-left-radius: 20px;
     text-align-last: start;
     background-color: black;
-    background-image: url("../Image/blur.png"), url('../Image/fd_background.png');
+    background-image: url("../Image/blur.png"), url('../Image/fd_scheme_img.png');
     border-radius: 20px 0px 0px 20px;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -30,12 +30,8 @@ p {
 }
 
 
-/* change for the investment file end*/
 
 
-.leftcard {
-    margin: auto;
-}
 
 .logo {
     width: 200px;
@@ -46,28 +42,22 @@ p {
     width: 100%;
     height: auto;
 }
-
-
-.leftcard-contant h1 {
-    color: #fff;
+ 
+.leftcard-contant{
+    margin-bottom: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+   
 }
 
-    .logo img{
-        width: 100%;
-        height: auto;
-    }
-   
-/* 
-.leftcard-contant h1 {
-    color: #fff;
-} */
-/* change for investment */
 .leftcard-contant h1 {
     color: #fff;
     font-weight:700;
     font-size :68px;
     line-height :78px;
+
 }
+   
 
 .container {
     padding-top: 50px;
@@ -79,10 +69,7 @@ p {
 }
 
 .leftcard {
-    padding: 100px 30px;
-
-    padding: 30px;
-    
+    padding: 40px;
 }
 
 .footertext {
@@ -144,6 +131,7 @@ p {
     left: 127px;
     bottom: 10px;
 } */
+
 .wizard,
 .wizard .nav-tabs,
 .wizard .nav-tabs .nav-item {
@@ -223,7 +211,7 @@ span.steptext {
 }
 
 .wizard {
-    padding-left: 37px;
+    padding-left: 38px;
 }
 
 a.btn.btn-info.next {
@@ -298,28 +286,18 @@ h4 {
     font-weight: 400;
 }
 
+
+
 .maincontant {
-    padding-top: 20px;
-
+   padding-top: 15px;
 }
 
-.maincontant p {
-    font-size: 14px;
-    font-weight: 400;
 
 
-}
-
-.maincontant{
-    padding-top: 15px;
-
-}
-/* .maincontant p{
-    font-size: 14px; font-weight: 400;
-} */
 .form-control {
     padding: 10px 40px 10px 15px;
     background: #F4F7FA;
+    width: 100%;
 }
 
 .tab-content {
@@ -330,7 +308,18 @@ label.form-label {
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
+    color: #221F20;
     white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.message_label{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #626567;
+    margin-bottom: 5px;
+
 }
 
 .wizard .nav-tabs .nav-item .nav-link.active .svg-inline--fa {
@@ -360,8 +349,6 @@ label.form-label {
 }
 
 .form-check-label {
-    margin-left: 10px;
-    /* width: 500px; */
     font-family: "Lato", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -445,15 +432,15 @@ label.form-label {
 }
 
 .logoImgContainer {
-    width: 318px;
+    margin-bottom: 15px;
 }
 
 .logoImg {
     border-top-left-radius: 20px;
     position: relative;
     left: -12px;
-    width: 100%;
-    height: auto;
+    height: 126px;
+    width: 318px;
 }
 
 .leftColHeading {
@@ -478,41 +465,28 @@ label.form-label {
     right:0;
 }
 
-/* .stampImg {
-    width: 100%;
-    height: auto;
-} */
-
 span.footertext {
     color: red;
 }
 p.footertextparent {
     font-size: 12px;
 }
-/* @media  (min-width: 425px) and (max-width: 767px) {
-    .mobile{
-        display: block !important;
-    }
-    .bankDetailsLeftSide{
-        display: none !important ;
-    }
-  } */
-
-
-/* Investment css Start here */
 
 .appliedSection{
     align-self: center;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
     border-radius: 10px;
+    background-color: rgba(175, 220, 177, 0.2);    
     border: 1px solid #4BAE4F;
-    padding-left: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 .appliedSection_additional{
      display: flex; 
      font-size: small;
+     margin-bottom: 5px;
 }
 
 .applied_additional{
@@ -524,6 +498,7 @@ p.footertextparent {
 }
 
 .applied_additional_rate{
+    margin-bottom: 5px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 700;
@@ -534,35 +509,69 @@ p.footertextparent {
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
+    margin-bottom: 5px;
 }
 
-.stampImg{
+.stampImg_Container{
     text-align-last: center;
-    height: auto;
+    margin-bottom: 20px;
+}
+
+.stump_img{
+  height: 125px;
+  width: 134px;
 }
 
 .appliedContainer{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.complete_img{
+    height: 11px;
+    width: 11px;
 }
 
 .table{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 20px;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+.table thead tr th{
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+   
 }
 
 
+.table tbody tr td {
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.table tbody tr td .tableUpto{
+    margin-right: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
 .table thead tr th:first-child{
     border-top-left-radius: 8px;
+    
   }
 
   .table thead tr th:last-child{
     border-top-right-radius: 8px;
+
   }
 
   .table tbody tr td:first-child{
@@ -571,6 +580,8 @@ p.footertextparent {
 
   .table tbody tr td:last-child{
     border-bottom-right-radius: 8px;
+    margin-left: 20px;
+
   }
 
   thead{
@@ -578,8 +589,6 @@ p.footertextparent {
     opacity: 0.9;
     
 }
-
-
     tr{
         border-block-color: #8c8f95;
     }
@@ -588,28 +597,159 @@ p.footertextparent {
         background-color: #4342427a;
         opacity: 0.9;
     }
+
     .bestSellerImg{
         margin-left: 5px;
-}
+    }
+
+    .table tbody tr td button {
+      background-color: #E31837;
+      border: 4px;
+      padding: 5px;
+      }
+
+      .hidden {
+        display:none;
+      }
 
 
-.fixed_Deposit{
+    .table tbody tr td button :first-child{
+        margin-right: 5px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+
+      .table tbody tr td button :last-child{
+       height: 10px;
+       width: 10px;
+      }
+   
+      .seeAll_Button{
+        width: 20%;
+      }
+
+      .seeLess_Button{
+        width: 24%;
+      }
+
+      .ammountInvested_container{
+        margin-bottom: 40px;
+      }
+
+      .tenure_container{
+        margin-bottom: 20px;
+      }
+
+      .monthinput_container{
+        margin-bottom: 40px;
+      }
+
+      .receive_interest_container{
+        margin-bottom: 20px;
+      }
+
+
+      .interestTable_container{
+        margin-bottom: 40px;
+      }
+  
+      .accountHolder_container{
+        margin-bottom: 40px;
+      }
+
+
+      .jointSwitch_container{
+        margin-bottom: 20px;
+      }
+    
+      .Continue_button_container{
+        margin-bottom: 40px;
+      }
+
+      .pan_mobile_container{
+        margin-bottom: 40px;
+
+      }
+      .otp_button_container{
+        margin-bottom: 40px;
+       
+      }
+      
+      .otp_button_container button{
+        background-color: #221F20;
+        color: #ffffff;
+        /* width: 132px ;
+        height: 44px; */
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        border-radius: 4px;
+
+      }
+
+
+
+      .tenure_button{
+        /* padding: 0px; */
+        /* padding: 15px 25px 15px 25px; */
+        /* width: 89px;
+        height: 69px; */
+        /* margin-right: 10px;
+        margin-top: 10px; */
+      }
+
+      .interest_Button{
+        /* width: 111px;
+        height: 84px; */
+        /* margin-right: 10px;
+        /* margin-top: 10px; */ 
+      }
+
+      .kyc_Button_container{
+        margin-bottom: 30px;
+        margin-top: 20px;
+      }
+
+      .selectHolder_nomine{
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+
+      .selectHolder_text{
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #626567;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        /* margin-left: 8px; */
+        vertical-align: super;
+      }
+
+
+.Investment_Heading{
     color: #221F20 ;
     font-size: 20px ;
-    font-weight: 600 ;
+    font-weight: 800 ;
     line-height: 30px ;
+    margin-bottom: 20px;
 }
 
-.amountInvested{
-    /* margin-top: 20px; */
-}
 
-.ammountContainer_header{
+
+/* .ammountContainer_header{
     color: #221F20 ;
     font-size: 16px ;
     font-weight: 500 ;
     line-height: 26px ;
-}
+} */
 
 
 
@@ -655,10 +795,6 @@ p.footertextparent {
     padding-left: 10px;
 }
  
-.stump_img_container{
-    text-align-last: right;
-}
-
 .SectionB_Text{
     color: #fff;
     font-weight: 400;
@@ -700,26 +836,11 @@ p.footertextparent {
     font-size: 20px;
     line-height: 30px;
 }
-.ammountContainer{
+/* .ammountContainer{
    margin-top: 20px;
    margin-bottom: 20px;
-}
+} */
 
-.ammountContainer_header{
-    color: #221F20;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 10px;
-}
-
-.ammountContainer_header_text{
-    color: #221F20;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* margin-bottom: 10px; */
-}
 
 .input-group-text{
     background-color: #fff;
@@ -730,6 +851,7 @@ p.footertextparent {
     border-right: none;
     height: 45px;
 }
+
 
 
 
@@ -745,25 +867,25 @@ p.footertextparent {
     line-height: 26px;
 }
 
-.monthsContainer_button{
+/* .monthsContainer_button{
     width:100%; 
     padding-bottom: 2px ;
     text-align-last: justify !important;
-}
+} */
  
-.months_button button{
+/* .months_button button{
     width: 15% !important; 
     padding: 15px !important;
-}
+} */
 
-.monthsContainer_button button{
+/* .monthsContainer_button button{
     width: 18%; 
     padding: 18px;
-}
+} */
 
-.monthsContainer_button button:first-child{
+/* .monthsContainer_button button:first-child{
   margin-left: 0px;
-}
+} */
  
 .monthButton_text{
     color: #221F20;
@@ -807,9 +929,9 @@ p.footertextparent {
 }
 
 .interest_button{
-    width: 15%;
-    padding: 10px; 
-    text-align-last: center;
+    /* width: 15%; */
+    /* padding: 10px;  */
+    /* text-align-last: center; */
 }
 
 .interest_button2{
@@ -827,10 +949,10 @@ p.footertextparent {
 
 }
 
-.interestTableContainer{
+/* .interestTableContainer{
     margin-top: 5px;
     margin-bottom: 5px;
-}
+} */
 
 .interestTableContainer_inner{
     background-color: #4B4C4D;
@@ -838,15 +960,17 @@ p.footertextparent {
 
 }
 
-.interestTableContainer_header{
+/* .interestTableContainer_header{
     display: flex;
     padding: 20px;
     padding-bottom: 10px;
-}
+} */
+
 
 .interestTableContainer_text_container{
-    width: 25%;
+    /* width: 25%; */
     color: #fff;
+    padding: 10px;
 }
 
 .interestTableContainer_text_1{
@@ -866,23 +990,19 @@ p.footertextparent {
 
 .interestTableContainer_CheckBox{
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
     display: flex;
 }
 
 .interestTableContainer_Check{
     display: flex;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+
 }
 
 
-.jointAccountContainer_header{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: #221F20;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
+.jointAccountContainer{
+    margin-bottom: 40px;
 }
 
 .jointAccount_Button_container{
@@ -895,7 +1015,10 @@ p.footertextparent {
     text-align-last: start;
     background-color: #f4f7fa !important;
 }
-
+  
+.set-1{
+    margin-right: 10px;
+}
 .button_label{
     color: #626567 !important;
     padding: 10px;
@@ -909,10 +1032,10 @@ p.footertextparent {
    color: black;
 }
 
-.kycContainer_Button{
+/* .kycContainer_Button{
     margin-top: 10px; 
     margin-bottom: 10px;
-}
+} */
 
 .kyc_Button{
     padding: 10px;
@@ -1024,6 +1147,7 @@ p.footertextparent {
 
   input[type='radio'] {
     accent-color: #232323;
+    border: none;
 }
 
 input[type='checkbox'] {
@@ -1031,19 +1155,41 @@ input[type='checkbox'] {
     width: 20px;
 }
 
-.error{
-    color: red;
+.form-check-input:checked{
+  background-color: #0094FF;
+  border: 1px solid #0094FF
 }
 
 
 
-#myDiv button, #maturityBtn button{
+
+/* #myDiv button, #tenure_button button{
     background-color: #ffffff;
     color: #626567;
     border: 2px solid #8C989F;
     border-radius: 4px;
     font-size: 18px;
     z-index: 9;
+    width: 89px;
+    height: 69px;
+    margin-right: 10px;
+    margin-top: 5px;
+
+} */
+
+#myDiv button, #interest_Button button{
+    background-color: #ffffff;
+    color: #626567;
+    border: 2px solid #8C989F;
+    border-radius: 4px;
+    font-size: 18px;
+    z-index: 9;
+    width: 111px;
+    height: 84px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 5px;
+
 }
 
 #maturityBtn button{
@@ -1051,26 +1197,54 @@ input[type='checkbox'] {
     position: relative;
 }
 
-#myDiv .active, #maturityBtn .active {
+#interest_Button button{
+    text-align: left;
+    position: relative;
+}
+
+/* #myDiv .active, #tenure_button .active {
     background-color: #F4F7FA !important;
     color: #221F20 !important;
     border: 2px solid #221F20 !important;
     font-weight: 700;
+    width: 89px;
+    height: 69px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding-left: 1px;
+    
+  } */
+
+  #myDiv .active, #interest_Button .active {
+    background-color: #F4F7FA !important;
+    color: #221F20 !important;
+    border: 2px solid #221F20 !important;
+    font-weight: 700;
+    width: 111px;
+    height: 84px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
     
   }
 
-  .monthsContainer_button button span:first-child{
+
+  #interest_Button button span:first-child{
     font-size: 16px;
+    line-height: 30px;
+    padding: 5px;
     z-index: 0;
   }
 
 
-  .monthsContainer_button button span:last-child{
+  #interest_Button button span:last-child{
     font-size: 14px;
+    line-height: 24px;
+    padding: 5px;
     z-index: 0;
   }
 
-  #maturityBtn button:first-child::before{
+  #interest_Button button:first-child::before{
     content: "";
     width: 12px;
     height: 15px;
@@ -1082,11 +1256,6 @@ input[type='checkbox'] {
     background-size: contain;
   }
 
-  .checked{
-    border: 2px solid black;
-    color: black !important;
-    font-weight: 700;
-  }
 
 
   .tooltipContainer{
@@ -1135,8 +1304,8 @@ input[type='checkbox'] {
 }
 
 .selectdiv{
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .selectox{
@@ -1161,14 +1330,10 @@ input[type='checkbox'] {
 .MMFSLcontainer{
     padding: 10px 10px 5px 10px;
     background-color: #F4F7FA;
+
 }
 
-.MMFSLcontainerText{
-    color: #4B4C4D;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-}
+
 
 .Horizontalline{
     margin-top: 35px !important;
@@ -1180,13 +1345,14 @@ input[type='checkbox'] {
 
 .CKYC_Button {
     padding: 10px;
-    width: 25%;
+    /* width: 25%; */
     display: flex;
     border: none;
     justify-content: space-between;
     align-items: baseline;
     border-radius: 4px;
-    width: 40%;
+    width: 304px;
+    height: 44px;
     align-items: center;
 }
 
@@ -1203,6 +1369,135 @@ input[type='checkbox'] {
    background-color: #f4f7fa;
  }
 
- .logoCOntainer{
-    width: 300px;
- }
+
+ .errorText {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #e31837;
+    margin-top: 5px;
+}
+
+.error-border {
+    border-color: red;
+}
+
+.newsubmitbtn_first {
+    display: flex;
+    justify-content: space-between;
+    width: 304px;
+    padding: 12px;
+    align-items: center;
+    color: #fff;
+    background-color: #e31837;
+    border-color: #e31837;
+    /* box-shadow: #dc3545 0px 3px 18px; */
+}
+
+.custom-button-data {
+    background-color: #E31837;
+}
+
+.custom-button-data:disabled {
+    background-color: #E6E7E9;
+    border: 1px solid #E6E7E9;
+    color: #8C989F;
+}
+
+#main{
+    display: none;
+}
+
+.tableLess_Button{
+    border: none !important;
+}
+
+#tenureEements{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#tenureEement{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.boxRadioButton{
+    background-color: #ffffff;
+    color: #626567;
+    border: 2px solid #8C989F;
+    border-radius: 4px;
+    font-size: 18px;
+    z-index: 9;
+    width: 89px;
+    height: 69px;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    cursor: pointer;
+}
+
+.boxRadioButton2{
+    background-color: #ffffff;
+    color: #626567;
+    border: 2px solid #8C989F;
+    border-radius: 4px;
+    font-size: 17px;
+    z-index: 9;
+    width: 111px;
+    height: 85px;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    cursor: pointer;
+}
+
+
+
+.boxRadioButton.active{
+    background-color: #F4F7FA;
+    color: #221F20;
+    border: 2px solid #221F20;
+    font-weight: 700;
+}
+.boxRadioButton2.active{
+    background-color: #F4F7FA;
+    color: #221F20;
+    border: 2px solid #221F20;
+    font-weight: 700;
+}
+
+.boxRadioButton input[type="radio"]{
+    opacity: 0;
+  }
+  .boxRadioButton2 input[type="radio"]{
+    opacity: 0;
+  }
+
+  #CustomMonth{
+    display: none;
+  }
+
+
+  .interest_autorenewal_a{
+    display: flex; 
+    flex-wrap: wrap;
+
+  }
+   
+
+  .autorenewal_text{
+      color: white; 
+      margin-left: 10px;
+       border: none !important ;
+  }
