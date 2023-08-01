@@ -28,7 +28,7 @@
         <div class="card">
             <div class="row">
                 <div class="col-md-12 col-lg-4 col-sm-12 d-flex">
-                    <div class="leftside bankDetailsLeftSide">
+                    <div class="leftside bankDetailsLeftSide" id="bankdetailsPageLeftside">
                         <div class="logoImgContainer">
                             <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
                         </div>
@@ -39,7 +39,23 @@
                             <div class="leftcard-content">
                                 <h1 class="leftColHeading">Your bank
                                     details</h1>
-                                <p class="leftColContent">You will receive the repayment amount and interest in this account
+                                <p class="leftColContent">You will receive the repayment amount and interest in this
+                                    account
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftside bankDetailsLeftSide" id="reviewYourApplicationPageLeftside">
+                        <div class="logoImgContainer">
+                            <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
+                        </div>
+                        <div class="stampImgContainer">
+                            <img src="./assets/Image/Highest Safety Stamp.png" alt="brand image" class="stampImg" />
+                        </div>
+                        <div class="leftcard">
+                            <div class="leftcard-content">
+                                <h1 class="leftColHeading">Review your application</h1>
+                                <p class="leftColContent">Lets check & review all the information once again to be sure.
                                 </p>
                             </div>
                         </div>
@@ -92,7 +108,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="maincom">
+                        <div class="maincom" id="bankdetailsPageRightside">
                             <div class="maincontant">
                                 <h4>Please provide your account details</h4>
                                 <p>Please provide us your bank details to receive the repayment amount. </p>
@@ -191,6 +207,27 @@
                                     <img src="./assets/Image/CTA_arrow.png" alt="continue" />
                             </div>
                         </div>
+                        <div class="maincom" id="reviewYourApplicationPageRightside">
+                            <div class="maincontant">
+                                <h4>Review your FD details</h4>
+                            </div>
+
+                            <div class="reviewcard">
+                                fhiuidgdog
+                            </div>
+                            <div class="check_kyc">
+                                <div class="kyc_data">
+                                    <input class="form-check-input bankDetailsCheckbox" type="checkbox" value=""
+                                        id="reviewFlexCheckDefault" onclick="reviewCheckBox()" />
+                                    <label class="form-check-label bankFormcheckLabel" for="flexCheckDefault">
+                                        I understand and agree to all <a href=""> Terms & conditions </a>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-danger disabled" onclick="reviewApplicationContinue()"
+                                id="reviewContinueButton">Continue
+                                <img src="./assets/Image/CTA_arrow.png" alt="continue" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -205,7 +242,6 @@
                     deemed to constitute an advice, invitation or solicitation to purchase any products/services of
                     MMFSL. Misuse of any intellectual property, or any other content displayed herein is strictly
                     prohibited.
-
                 </p>
                 <p class="footertextparent">
                     <span class="footertext"> 2023 Mahindra Finance</span> | CIN-L65921MH1991PLC059642 | <span
@@ -266,6 +302,25 @@
                 element.classList.add("disabled");
                 element.classList.remove("continueButtonEnable");
             }
+        }
+
+        function reviewCheckBox() {
+            var ischecked = document.getElementById("reviewFlexCheckDefault").checked;
+            var element = document.getElementById("reviewContinueButton");
+            if (ischecked) {
+                element.classList.remove("disabled");
+                element.classList.add("continueButtonEnable");
+            } else {
+                element.classList.add("disabled");
+                element.classList.remove("continueButtonEnable");
+            }
+        }
+
+        function reviewApplicationContinue() {
+            document.getElementById("reviewYourApplicationPageLeftside").style.display = "none";
+            document.getElementById("bankdetailsPageLeftside").style.display = "block";
+            document.getElementById("reviewYourApplicationPageRightside").style.display = "none";
+            document.getElementById("bankdetailsPageRightside").style.display = "block";
         }
     </script>
 

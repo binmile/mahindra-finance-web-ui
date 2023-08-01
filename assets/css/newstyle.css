@@ -277,7 +277,7 @@ h4 {
     font-weight: 600;
 }
 
-.paymentOptionsMaincontant h4{
+.paymentOptionsMaincontant h4 {
     font-weight: 400;
 }
 
@@ -321,6 +321,15 @@ label.bankFormLabel {
 }
 
 /* bankDetails css */
+
+#bankdetailsPageLeftside{
+    display: none;
+}
+
+#bankdetailsPageRightside{
+    display: none;
+}
+
 .check_kyc {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -642,9 +651,6 @@ a.btn.btn-info.next {
     border-color: #e31837;
     box-shadow: #dc3545 0px 3px 18px;
 }
-
-
-
 
 .form-control {
     padding: 10px 40px 10px 15px;
@@ -1151,7 +1157,7 @@ ul {
 
 /* show bank detail page on continue and hide review detail */
 
-.bankDetailPage{
+.bankDetailPage {
     display: none;
 }
 
@@ -1522,4 +1528,12 @@ p.footertextparent {
     padding-top: 30px;
     padding-left: 26px;
     padding-right: 50px;
+}
+
+/* review your application page css */
+.reviewcard{
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0px;
+    padding: 15px;
 }
