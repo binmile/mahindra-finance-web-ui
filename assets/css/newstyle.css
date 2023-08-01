@@ -767,11 +767,13 @@ body {
          .card_div_data {
              display: flex;
              justify-content: space-between;
-             background-color: #4D4D4F;
-             border-radius: 10px;
-             align-items: center;
-             padding: 1.5rem;
+             background-color: #3e3e3e75;
+            border-radius: 10px;
+            align-items: center;
+            padding: 1.5rem;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
          }
+       
          
          .card_first_content {
              font-family: "Lato", sans-serif;
