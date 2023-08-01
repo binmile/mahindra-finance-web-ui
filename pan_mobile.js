@@ -10,6 +10,16 @@ $(document).ready(function() {
         $('#exampleModal2').modal('show');
     });
 });
+$(document).ready(function() {
+    $('#closeModalBtn').click(function() {
+        $('#exampleModal').modal('hide');
+    });
+});
+$(document).ready(function() {
+    $('#closeModalBtn2').click(function() {
+        $('#exampleModal2').modal('hide');
+    });
+});
 
 function handleClick() {
     const flexSwitchCheckDefault = document.getElementById('flexSwitchCheckDefault');
@@ -22,6 +32,40 @@ function handleClick() {
     }
 }
 
+$(document).ready(function() {
+    $('.box_div').on('input', function() {
+        const currentIndex = $('.box_div').index(this);
+
+        if ($(this).val().trim() !== '') {
+            if (currentIndex < $('.box_div').length - 1) {
+                $('.box_div').eq(currentIndex + 1).focus();
+            }
+        } else {
+            if (currentIndex > 0) {
+                $('.box_div').eq(currentIndex - 1).focus();
+            }
+        }
+    });
+});
+
+
+$(document).ready(function() {
+    $('.box_div_error').on('input', function() {
+
+        const currentIndex = $('.box_div_error').index(this);
+
+
+        if ($(this).val().trim() !== '') {
+            if (currentIndex < $('.box_div_error').length - 1) {
+                $('.box_div_error').eq(currentIndex + 1).focus();
+            }
+        } else {
+            if (currentIndex > 0) {
+                $('.box_div_error').eq(currentIndex - 1).focus();
+            }
+        }
+    });
+});
 document.addEventListener("DOMContentLoaded", function() {
 
     const timerElement = document.getElementById("timer");
