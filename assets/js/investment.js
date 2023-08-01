@@ -40,7 +40,18 @@ $('.button_label').click(function () {
 });
 
 
-function redirectPage(){
-    window.location.href="./AdditionalDetails.html"
+
+function redirectPage() {
+    if (document.getElementById('invstment')) {
+
+        if (document.getElementById('invstment').style.display == 'none') {
+            document.getElementById('invstment').style.display = 'block';
+            document.getElementById('additionalDetailParent').style.display = 'none';
+        }
+        else {
+            document.getElementById('invstment').style.display = 'none';
+            document.getElementById('additionalDetailParent').style.display = 'block';
+        }
+    }
 }
 
