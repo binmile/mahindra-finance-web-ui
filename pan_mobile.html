@@ -72,7 +72,6 @@
                                         </div>
                                     </div>
 
-
                                 </div>
                                 <div class="strapper_div">
                                     <div class="card_div_data">
@@ -129,22 +128,20 @@
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="textparent">
+                                    <div class="textparent" id="sapNumberInput">
                                         <label for="exampSap" class="form-label">SAP Code</label>
-                                        <input type="text" class="form-control" aria-label="Recipient's pan " aria-describedby="basic-addon2 " placeholder="Enter your sap number " id="sapNumberInput" autocomplete="off">
+                                        <input type="text" class="form-control" aria-label="Recipient's pan " aria-describedby="basic-addon2 " placeholder="Enter your sap number" autocomplete="off">
                                         <div class="textfildicons ">
                                             <img src="./assets/Image/Union.svg " alt="icons " class="icons ">
                                         </div>
                                         <div class="errorText" id="validationMessage_sap"></div>
                                     </div>
                                 </div>
-
-
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input form-switch-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <input class="form-check-input form-switch-input" type="checkbox" id="flexSwitchCheckDefault" onclick="handleClick()">
                                         <label class="form-check-label form-switch-label" for="flexSwitchCheckDefault">I am investing for a minor</label>
                                     </div>
                                 </div>
@@ -176,11 +173,8 @@
                         </div>
 
                     </div>
-
-
                 </div>
             </div>
-
 
             <div class="modal fade modal_wrapper" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
