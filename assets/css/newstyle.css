@@ -4,8 +4,1087 @@
 
 body {
     background: #E6E7E9;
-    font-family: 'Lato';
 }
+
+/* p {
+    font-size: 14px;
+} */
+
+
+
+/* change for the investment file */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.leftside {
+    position: relative;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align-last: start;
+    background-color: black;
+    background-image: url("../Image/blur.png"), url('../Image/fd_scheme_img.png');
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+ 
+.leftcard-contant{
+    margin-bottom: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+   
+}
+
+.leftcard-contant h1 {
+    color: #fff;
+    font-weight:700;
+    font-size :68px;
+    line-height :78px;
+
+}
+   
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.leftcard-contant p {
+    color: #fff;
+}
+
+.footertext {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.footertext p {
+    font-size: 8px;
+    text-align: justify;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0px;
+    width: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #E31837;
+    border-color: #E31837;
+    padding: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-tabs .nav-item .nav-link.active:after {
+    content: " ";
+    position: absolute;
+    left: 23%;
+    border: 2px solid rgb(5, 5, 5);
+    width: 100px;
+    transform: translate(-50%);
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+   
+}
+span.steptext {
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #4B4C4D;
+}
+
+h4 {
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.maincontant {
+   padding-top: 15px;
+}
+
+.form-control {
+    padding: 10px 40px 10px 15px;
+    background: #F4F7FA;
+    width: 100%;
+}
+
+
+
+label.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #221F20;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.message_label{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #626567;
+    margin-bottom: 5px;
+
+}
+
+.textparent {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* bankDetails css */
+
+.kyc_data {
+    padding: 10px 16px 10px 16px;
+    display: flex;
+}
+
+.form-check-label {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.form-check-input {
+    width: 35px;
+}
+
+#flexCheckDefault:checked{
+    border: 1px solid black;
+    background-color: black;
+
+}
+
+.paymentOptions:hover {
+    border-color: black;
+    background-color: #F4F7FA;
+}
+
+.paymentIcon {
+    width: 100%;
+    height: auto;
+}
+
+.ifscHeading {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.ifscLink {
+    white-space: nowrap;
+}
+.bankDetailsLeftSide {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align-last: start;
+    background-color: black;
+    background-image: url("../Image/blur.png"), url('../Image/bank_details_img.png');
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paymentContent {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #221F20;
+}
+.paymentContent:hover {
+    font-weight: 600;
+}
+
+.logoImgContainer {
+    margin-bottom: 15px;
+}
+.leftColContent {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.stampImgContainer {
+    position: absolute;
+    width: 146px;
+    right:0;
+}
+span.footertext {
+    color: red;
+}
+p.footertextparent {
+    font-size: 12px;
+}
+.appliedSection{
+    align-self: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(175, 220, 177, 0.2);    
+    border: 1px solid #4BAE4F;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.appliedSection_additional{
+     display: flex; 
+     font-size: small;
+     margin-bottom: 5px;
+}
+.applied_additional{
+    margin-left: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.applied_additional_rate{
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.applied_additional_citizens{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.stampImg_Container{
+    text-align-last: center;
+    margin-bottom: 20px;
+}
+.stump_img{
+  height: 125px;
+  width: 134px;
+}
+.appliedContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.complete_img{
+    height: 11px;
+    width: 11px;
+}
+.table thead tr th{
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+   
+}
+.table tbody tr td {
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.table tbody tr td .tableUpto{
+    margin-right: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.table thead tr th:first-child{
+    border-top-left-radius: 8px;
+  }
+  .table thead tr th:last-child{
+    border-top-right-radius: 8px;
+  }
+  .table tbody tr td:first-child{
+    border-bottom-left-radius: 8px;
+  }
+  .table tbody tr td:last-child{
+    border-bottom-right-radius: 8px;
+    margin-left: 20px;
+  }
+  thead{
+    background-color: #85838396;
+    opacity: 0.9;
+}
+    tr{
+        border-block-color: #8c8f95;
+    }
+    tbody{
+        background-color: #4342427a;
+        opacity: 0.9;
+    }
+    .bestSellerImg{
+        margin-left: 5px;
+    }
+    .table tbody tr td button {
+      background-color: #E31837;
+      border: 4px;
+      padding: 5px;
+      }
+      .hidden {
+        display:none;
+      }
+    .table tbody tr td button :first-child{
+        margin-right: 5px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      .table tbody tr td button :last-child{
+       height: 10px;
+       width: 10px;
+      }
+      .seeAll_Button{
+        width: 20%;
+      }
+      .seeLess_Button{
+        width: 24%;
+      }
+
+      .ammountInvested_container{
+        margin-bottom: 40px;
+      }
+
+      .tenure_container{
+        margin-bottom: 20px;
+      }
+
+      .monthinput_container{
+        margin-bottom: 40px;
+      }
+
+      .receive_interest_container{
+        margin-bottom: 20px;
+      }
+
+
+      .interestTable_container{
+        margin-bottom: 40px;
+      }
+  
+      .accountHolder_container{
+        margin-bottom: 40px;
+      }
+
+
+      .jointSwitch_container{
+        margin-bottom: 20px;
+      }
+    
+      .Continue_button_container{
+        margin-bottom: 40px;
+      }
+
+      .pan_mobile_container{
+        margin-bottom: 40px;
+
+      }
+      .otp_button_container{
+        margin-bottom: 40px;
+       
+      }
+      
+      .otp_button_container button{
+        background-color: #221F20;
+        color: #ffffff;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        border-radius: 4px;
+
+      }
+
+      .kyc_Button_container{
+        margin-bottom: 30px;
+        margin-top: 20px;
+      }
+
+      .selectHolder_nomine{
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+
+      .selectHolder_text{
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #626567;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        vertical-align: super;
+      }
+
+
+.Investment_Heading{
+    color: #221F20 ;
+    font-size: 20px ;
+    font-weight: 800 ;
+    line-height: 30px ;
+    margin-bottom: 20px;
+}
+.image{
+    width: 318px;
+     height: 126.5px
+}
+
+.card-body{
+    padding: 0px;
+}
+
+.left_heading{
+    color: #fff;
+    font-weight:700;
+    font-size :68px;
+    line-height :78px;
+}
+  
+.leftsubContainer{
+   padding: 0px 40px;
+}
+
+
+
+.sectionB_Applied_container{
+    display: flex;
+}
+
+.SectionB{
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #4BAE4F;
+    padding-left: 10px;
+}
+ 
+.SectionB_Text{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 8px;
+}
+.SectionB_Text2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+.SectionB_Text3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.rightContainer{
+    padding-left: 0px;
+}
+
+.rightContainerInner{
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-bottom: 20px;
+}
+
+.rightContainer_header{
+    color: #221F20;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.input-group-text{
+    background-color: #fff;
+    border-left: none;
+}
+
+.my-input{
+    border-right: none;
+    height: 45px;
+}
+
+.monthsContainer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.monthsContainer_header{
+    color: #221F20;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.monthButton_text{
+    color: #221F20;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.interestContainer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.interestContainer_header{
+    color: #221F20;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+}
+
+.interestContainer_text{
+    color: #626567;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+}
+ 
+.interestContainer_img{
+    width: 10px;
+    height: 13px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.interestContainer_button{
+    width:100%; 
+    padding-bottom: 2px ;
+    text-align-last: justify !important;
+}
+
+
+.interest_button2{
+    width: 15%; 
+    padding: 10px; 
+    margin-left: 25px; 
+    text-align-last: center;
+}
+
+.interest_Button_text{
+    color: #221F20;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+
+.interestTableContainer_inner{
+    background-color: #4B4C4D;
+    border-radius: 5px;
+
+}
+
+
+.interestTableContainer_text_container{
+    color: #fff;
+    padding: 10px;
+}
+
+.interestTableContainer_text_1{
+    color: #E6E7E9;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.interestTableContainer_text_2{
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.interestTableContainer_CheckBox{
+    padding: 10px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.interestTableContainer_Check{
+    display: flex;
+
+}
+
+
+.jointAccountContainer{
+    margin-bottom: 40px;
+}
+
+.jointAccount_Button_container{
+    width:100%; 
+    padding-bottom: 20px;
+}
+
+.jointAccount_Button_container label{
+    width:20%; 
+    text-align-last: start;
+    background-color: #f4f7fa !important;
+}
+  
+.set-1{
+    margin-right: 10px;
+}
+.button_label{
+    color: #626567 !important;
+    padding: 10px;
+    border-radius: 4px !important;
+    border: 1px solid #8C989F;
+    height: 46px;
+}
+
+.checkbox_button{
+   width: 25%;
+   color: black;
+}
+ 
+.investmentParent{
+    padding: 30px 30px 0px 30px
+}
+
+.kyc_Button{
+    padding: 10px;
+    width: 25%;
+    display: flex;
+    border: none;
+    background-color: #e6e7e9;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 4px;
+    width: 40%;
+    align-items: center;
+}
+
+  .seeAllButton{
+    padding: 10px;
+    background-color: #E31837;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 25%;
+    border: none;
+    margin-right: 5px;
+  }
+
+.kyc_Button_text{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.AlertImg{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+.alertImg{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+
+
+.tooltipText{
+    color: #221F20;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.tooltipText ul{
+    list-style-position: outside;
+    padding-left: 18px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .monthinputContainer{
+    width: 50%;
+   
+    margin-top: 20px;
+  }
+  .monthinput{
+    border-right: 1px solid #cfd5db;
+  }
+
+  input[type='radio'] {
+    accent-color: #232323;
+    border: none;
+}
+
+input[type='checkbox'] {
+    accent-color: #ffffff;
+    width: 20px;
+}
+
+.form-check-input:checked{
+  background-color: #0094FF;
+  border: 1px solid #0094FF
+}
+
+#myDiv button, #interest_Button button{
+    background-color: #ffffff;
+    color: #626567;
+    border: 2px solid #8C989F;
+    border-radius: 4px;
+    font-size: 18px;
+    z-index: 9;
+    width: 111px;
+    height: 84px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 5px;
+
+}
+
+#maturityBtn button{
+    text-align: left;
+    position: relative;
+}
+
+#interest_Button button{
+    text-align: left;
+    position: relative;
+}
+
+
+  #myDiv .active, #interest_Button .active {
+    background-color: #F4F7FA !important;
+    color: #221F20 !important;
+    border: 2px solid #221F20 !important;
+    font-weight: 700;
+    width: 111px;
+    height: 84px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    
+  }
+
+
+  #interest_Button button span:first-child{
+    font-size: 16px;
+    line-height: 30px;
+    padding: 5px;
+    z-index: 0;
+  }
+
+
+  #interest_Button button span:last-child{
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px;
+    z-index: 0;
+  }
+
+  #interest_Button button:first-child::before{
+    content: "";
+    width: 12px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background-image: url('../Image/Vector\ 14.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tooltipContainer{
+    position: relative;
+    z-index: 999;
+}
+.tooltipContainer .tooltipContent{
+    position: absolute;
+    bottom: 32px;
+    left: -75px;
+    width: 329px;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid #E6E7E9;
+    color: #221F20;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.tooltipContainer .tooltipContent::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    margin-left: -5px;
+    border-width: 9px;
+    border-style: solid;
+    border-color: #FFFFFF transparent transparent transparent;
+  }
+
+.tooltipContainer .tooltipMain{
+    cursor: pointer;
+}
+
+.tooltipContainer .tooltipContent{
+    display: none;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.tooltipContainer .tooltipMain:hover .tooltipContent{
+    display: block;
+}
+
+
+.selectdiv{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.selectox{
+    height: 44px;
+    background-color:#f4f7fa ;
+}
+
+.form-select{
+    color: #626567;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.selectox option{
+    color: #626567;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.MMFSLcontainer{
+    padding: 10px 10px 5px 10px;
+    background-color: #F4F7FA;
+
+}
+
+.Horizontalline{
+    margin-top: 35px !important;
+    margin-bottom: 35px !important;
+}
+
+.CKYC_Button {
+    padding: 10px;
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 4px;
+    width: 304px;
+    height: 44px;
+    align-items: center;
+}
+
+.CKYC_Button_text{
+    color: #8C989F;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+
+.newsubmitbtn_first {
+    display: flex;
+    justify-content: space-between;
+    width: 304px;
+    padding: 12px;
+    align-items: center;
+    color: #fff;
+    background-color: #e31837;
+    border-color: #e31837;
+}
+
+.custom-button-data:disabled {
+    background-color: #E6E7E9;
+    border: 1px solid #E6E7E9;
+    color: #8C989F;
+}
+
+#main{
+    display: none;
+}
+
+.tableLess_Button{
+    border: none !important;
+}
+
+#tenureEements{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#tenureEement{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.boxRadioButton{
+    background-color: #ffffff;
+    color: #626567;
+    border: 2px solid #8C989F;
+    border-radius: 4px;
+    font-size: 18px;
+    z-index: 9;
+    width: 89px;
+    height: 69px;
+    margin-right: 15px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    cursor: pointer;
+}
+
+.boxRadioButton2{
+    background-color: #ffffff;
+    color: #626567;
+    border: 2px solid #8C989F;
+    border-radius: 4px;
+    font-size: 17px;
+    z-index: 9;
+    width: 111px;
+    height: 85px;
+    margin-right: 15px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    cursor: pointer;
+}
+
+.boxRadioButton.active{
+    background-color: #F4F7FA;
+    color: #221F20;
+    border: 2px solid #221F20;
+    font-weight: 700;
+}
+.boxRadioButton2.active{
+    background-color: #F4F7FA;
+    color: #221F20;
+    border: 2px solid #221F20;
+    font-weight: 700;
+}
+
+.boxRadioButton input[type="radio"]{
+    opacity: 0;
+  }
+  .boxRadioButton2 input[type="radio"]{
+    opacity: 0;
+  }
+
+  #CustomMonth{
+    display: none;
+  }
+
+  .interest_autorenewal_a{
+    display: flex; 
+    flex-wrap: wrap;
+
+  }
+   
+
+  .autorenewal_text{
+      color: white; 
+      margin-left: 10px;
+       border: none !important ;
+  }
+
         
         .leftcard {
              margin: auto;
@@ -15,15 +1094,6 @@ body {
          .logo {
              width: 318px;
              height: auto;
-         }
-         
-         .logo img {
-             width: 100%;
-             height: auto;
-         }
-         
-         .leftcard-contant h1 {
-             color: #fff;
          }
          
          .container {
@@ -44,19 +1114,6 @@ body {
              text-align: justify;
          }
          
-         .card {
-             border-radius: 20px;
-             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-             border: 0px;
-         }
-         
-         .btn-primary {
-             color: #fff;
-             background-color: #e31837;
-             border-color: #e31837;
-             padding: 18px;
-         }
-         
          .btn-primary:hover {
              background: blue;
              box-shadow: rgba(255, 20, 106, 0.2) 0px 8px 24px;
@@ -75,16 +1132,7 @@ body {
              box-shadow: #dc3545 0px 3px 18px;
          }
          
-        
-         
-        
-         .form-control {
-             padding: 10px 40px 10px 15px;
-         }
-         
-         .tab-content {
-             padding-right: 50px;
-         }
+    
          
          label.form-label {
              font-family: "Lato", sans-serif;
@@ -125,11 +1173,6 @@ body {
              position: absolute;
              right: 14px;
              top: 42px;
-         }
-         
-         .textparent {
-             position: relative;
-             margin-bottom: 40px;
          }
          
          .check_kyc_data {
@@ -211,14 +1254,6 @@ body {
          .checkbox_button_data:focus {
              border: 1px solid black;
              box-shadow: none;
-         }
-         
-         .button_label {
-             color: #626567 !important;
-             padding: 10px;
-             border-radius: 4px !important;
-             border: 1px solid #8c989f;
-             height: 46px;
          }
          
          .checkbox_button_data+label {
@@ -398,10 +1433,7 @@ body {
              padding: 0px 10px 10px 10px;
          }
          
-         .btn {
-             width: 100%;
-         }
-         
+
          .btn_submit {
              width: 100%;
          }
@@ -523,18 +1555,6 @@ body {
              background-color: #FFFAFB;
          }
          
-         .newsubmitbtn_first {
-             display: flex;
-             justify-content: space-between;
-             width: 304px;
-             padding: 12px;
-             align-items: center;
-             color: #fff;
-             background-color: #e31837;
-             border-color: #e31837;
-             /* box-shadow: #dc3545 0px 3px 18px; */
-         }
-         
          .first_button {
              margin-top: 20px;
          }
@@ -557,10 +1577,6 @@ body {
              justify-content: space-between;
          }
          
-         .form-check-input:checked {
-             background-color: #000;
-             border: 1px solid black;
-         }
          
          .form-check-input:focus {
              box-shadow: none;
@@ -587,37 +1603,14 @@ body {
              background-color: #F4F7FA;
          }
          
-         .kyc_data {
-             padding: 10px 16px 10px 16px;
-             display: flex;
-         }
          
          .custom-button-data {
              background-color: #E31837;
          }
          
-         .custom-button-data:disabled {
-             background-color: #E6E7E9;
-             border: 1px solid #E6E7E9;
-             color: #8C989F;
-         }
-         
+      
          .img_tag {
              color: #8C989F;
-         }
-         
-         .form-check-label {
-             margin-left: 10px;
-             font-family: "Lato", sans-serif;
-             font-size: 14px;
-             font-weight: 400;
-             line-height: 24px;
-             letter-spacing: 0em;
-             text-align: left;
-         }
-         
-         .form-check-input {
-             width: 35px;
          }
          
          .inputPan {
@@ -651,25 +1644,7 @@ body {
              width: 2rem;
              padding-bottom: 0.5rem;
          }
-         
-         .paymentIcon {
-             width: 100%;
-             height: auto;
-         }
-         
-         .ifscHeading {
-             display: flex;
-             justify-content: space-between;
-             white-space: nowrap;
-         }
-         
-         .ifscLink {
-             white-space: nowrap;
-         }
-         
-         .leftside {
-            position: relative;
-        }
+     
          .bankDetailsLeftSide {
              border-top-left-radius: 20px;
              border-bottom-left-radius: 20px;
@@ -695,7 +1670,6 @@ body {
          .logoImgContainer {
              width: 318px;
          }
-         
          .logoImg {
              border-top-left-radius: 20px;
              position: relative;
@@ -703,38 +1677,31 @@ body {
              width: 100%;
              height: auto;
          }
-         
          .leftColHeading {
              color: #ffff;
              font-size: 68px;
              font-weight: 700;
          }
-         
          .leftcard-content {
              padding-top: 30px;
          }
-         
          .leftColContent {
              color: #ffff;
              font-size: 18px;
              font-weight: 400;
          }
-         
          .stampImgContainer {
              position: absolute;
              width: 146px;
              right: 0;
          }
-         
          .stampImg {
              width: 100%;
              height: auto;
          }
-         
          span.footertext {
              color: red;
          }
-         
          p.footertextparent {
              font-size: 12px;
          }
@@ -772,7 +1739,6 @@ body {
              align-items: center;
              padding: 1.5rem;
          }
-         
          .card_first_content {
              font-family: "Lato", sans-serif;
              font-size: 12px;
@@ -782,7 +1748,6 @@ body {
              text-align: left;
              color: #FFFFFF;
          }
-         
          .card_second_content {
              color: #FFFFFF;
              font-family: "Lato", sans-serif;
@@ -918,4 +1883,7 @@ body {
             padding-top: 30px;
             padding-left: 26px;
             padding-right: 50px;
+        }
+        #additionalDetailParent{
+            display: none;
         }
