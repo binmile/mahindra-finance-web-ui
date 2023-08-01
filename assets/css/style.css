@@ -61,13 +61,13 @@ body{
 }
 
 .logoImgContainer {
-    width: 20rem;
+    /* width: 20rem; */
 }
 
 .logoImg {
     border-top-left-radius: 20px;
     position: relative;
-    left: -12px;
+    /* left: -12px; */
     width: 100%;
     height: auto;
 }
