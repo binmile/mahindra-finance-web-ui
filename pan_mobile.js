@@ -11,13 +11,23 @@ $(document).ready(function() {
     });
 });
 
+function handleClick() {
+    const flexSwitchCheckDefault = document.getElementById('flexSwitchCheckDefault');
+    const sapNumberInput = document.getElementById('sapNumberInput');
+
+    if (flexSwitchCheckDefault.checked) {
+        sapNumberInput.style.display = 'none';
+    } else {
+        sapNumberInput.style.display = 'block';
+    }
+}
 
 document.addEventListener("DOMContentLoaded", function() {
 
     const timerElement = document.getElementById("timer");
 
     const resultElement = document.getElementById("resend_otp");
-    const otpMsgElement = document.querySelector(".otp_msg"); // Add the period to select by class name
+    const otpMsgElement = document.querySelector(".otp_msg");
 
     function startTimer(duration, display) {
         let timer = duration;
