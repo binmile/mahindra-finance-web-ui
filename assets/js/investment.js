@@ -15,8 +15,6 @@ function myFun(event){
     }
 }
 
-
-
 function myFunction(e) {
     if (document.querySelector('#tenure_button button.active') !== null) {
         document.querySelector('#tenure_button button.active').classList.remove('active');
@@ -39,8 +37,6 @@ $('.button_label').click(function () {
     $('input:checked').parent().addClass("checked");
 });
 
-
-
 function redirectPage() {
     if (document.getElementById('invstment')) {
 
@@ -55,7 +51,6 @@ function redirectPage() {
     }
 }
 
-
 function show1(){
     document.getElementById('div1').style.display ='none';
   }
@@ -63,34 +58,15 @@ function show1(){
     document.getElementById('div1').style.display = 'block';
   }
 
-
-
-
-
-
-  function validate_account() {
-    var amount = document.getElementById("amount").value;
-    // var re_enter_account_number = document.getElementById("re_enter_account_number").value;
-    // var ifsc_code = document.getElementById("ifsc_code").value;
-    if (amount < 10000 || amount === "") {
-        document.getElementById("error_account_number").style.display = "block";
-        document.getElementById("account_number").style.border = "1px solid red";
-    } else {
-        document.getElementById("error_account_number").style.display = "none";
-        document.getElementById("account_number").style.border = "";
-    }
-    // if (re_enter_account_number !== account_number || re_enter_account_number === "") {
-    //     document.getElementById("error_re_enter_account_number").style.display = "block";
-    //     document.getElementById("re_enter_account_number").style.border = "1px solid red";
-    // } else {
-    //     document.getElementById("error_re_enter_account_number").style.display = "none";
-    //     document.getElementById("re_enter_account_number").style.border = "";
-    // }
-    // if (ifsc_code === "") {
-    //     document.getElementById("error_ifsc_code").style.display = "block";
-    //     document.getElementById("ifsc_code").style.border = "1px solid red";
-    // } else {
-    //     document.getElementById("error_ifsc_code").style.display = "none";
-    //     document.getElementById("ifsc_code").style.border = "";
-    // }
-}
+//   function validate_account() {
+//     var amount = document.getElementById("amountNo").value;
+//     if (amount < 10000 || amount >= 50000000 || amount === "") {
+//         document.getElementById("error_account_number").style.color = "red";
+//         document.getElementById("amountNo").style.border = "1px solid red";
+//     } 
+//     else {
+//         document.getElementById("error_account_number").style.color = "black";
+//         document.getElementById("amountNo").style.border = "";
+//         redirectPage()
+//     }
+// }
