@@ -119,27 +119,20 @@
                                     </tr>
                                     <tr id="cont" class="hidden">
                                         <td colspan="2" class="tableLess_Button">
-                                            <button type="button" class="btn seeLess_Button">
-                                                <span>
+                                            <button type="button" class="btn theme_button_red" onclick="showMore()">
                                                     View Less
-                                                </span>
-                                                <span>
                                                     <img alt="arrow_img" src="./assets/Image/VectorUp.svg" />
-                                                </span>
                                             </button>
                                         </td>
 
                                     </tr>
                                     <tr>
                                         <td colspan="2" class="tableLess_Button">
-                                            <button type="button" class="btn seeAll_Button" onclick="showMore()"
+                                            <button type="button" class="btn theme_button_red" onclick="showMore()"
                                                 id="showMore">
-                                                <span>
-                                                    See All
-                                                </span>
-                                                <span>
+                                                    See All                                              
                                                     <img alt="arrow_img" src="./assets/Image/Vector(Stroke).svg" />
-                                                </span>
+                                              
                                             </button>
                                         </td>
                                     </tr>
@@ -399,8 +392,8 @@
                                                     </label>
                                                 </div>
                                                 <div class="interestContainer_text">
-                                                    <img class="interestContainer_img" alt="flaglogo"
-                                                        src="./assets/Image/Vector 14.png" />
+                                                    <img class="interestContainer_img interestContainer_img2" alt="flaglogo"
+                                                        src="./assets/icons//mark.svg" />
                                                     <p class="message_label">
                                                         Interest rates are best when payout is on maturity
                                                     </p>
@@ -500,16 +493,16 @@
                                                     holder?</label>
                                                 <div class="btn-group  jointAccount_Button_container"
                                                     id="accountholder_invester">
-                                                    <label class="btn button_label set-1 yesNo_button_invester"
+                                                    <label class="btn button_label set-1 yesNo_button_invester active"
                                                         id="elementoption21">
                                                         <input class="checkbox_button" type="radio"
-                                                            data-tenures="elementoption21" name="type" value="event1"
-                                                            autocomplete="off"> Yes
+                                                            data-tenures="elementoption21" name="type1" value="elementoption21"
+                                                            autocomplete="off"  checked> Yes
                                                     </label>
                                                     <label class="btn button_label yesNo_button_invester"
                                                         id="elementoption22">
-                                                        <input type="radio" class="checkbox_button" name="type"
-                                                            data-tenures="elementoption22" value="event1"
+                                                        <input type="radio" class="checkbox_button" name="type1"
+                                                            data-tenures="elementoption22"   value="elementoption22"
                                                             autocomplete="off">
                                                         No
                                                     </label>
@@ -564,17 +557,17 @@
                                                         account holder?</label>
                                                     <div class="btn-group jointAccount_Button_container"
                                                         id="join_accountholder_invester">
-                                                        <label class="btn button_label set-1 yesNo_button_invester"
+                                                        <label class="btn button_label set-1 yesNo_button_invester active"
                                                             id="elementoption31">
-                                                            <input class="checkbox_button " type="radio" name="type"
-                                                                value="event3" autocomplete="off"
-                                                                data-tenures="elementoption31 "> Yes
+                                                            <input class="checkbox_button" type="radio" name="type2"
+                                                                value="elementoption31" autocomplete="off"
+                                                                data-tenures="elementoption31" for="elementoption31" checked> Yes
                                                         </label>
 
                                                         <label class="btn button_label set-1 yesNo_button_invester"
                                                             id="elementoption32">
-                                                            <input type="radio" class="checkbox_button" name="type"
-                                                                value="event3" autocomplete="off"
+                                                            <input type="radio" class="checkbox_button" name="type2"
+                                                                value="elementoption32" autocomplete="off" for="elementoption32"
                                                                 data-tenures="elementoption32"> No
                                                         </label>
 
@@ -627,14 +620,14 @@
                                                         id="accountholder_invester">
                                                         <label class="btn button_label set-1 yesNo_button_invester"
                                                             onclick="changeclr(this)" id="elementoption41">
-                                                            <input class="checkbox_button" type="radio" name="type2"
+                                                            <input class="checkbox_button" type="radio" name="type3"
                                                                 value="event1" data-tenures="elementoption41"
                                                                 autocomplete="off" onclick="show2()">
                                                             Yes
                                                         </label>
                                                         <label class="btn button_label yesNo_button_invester"
                                                             id="elementoption42">
-                                                            <input type="radio" class="checkbox_button" name="type2"
+                                                            <input type="radio" class="checkbox_button" name="type3"
                                                                 onclick="show1()" value="event2"
                                                                 data-tenures="elementoption42" autocomplete="off"
                                                                 checked> No
