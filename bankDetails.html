@@ -295,15 +295,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script>
         // Add active class to the current button (highlight it)
-        var header = document.getElementById("myDIV");
-        var btns = header.getElementsByClassName("circleimg");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
+        // var header = document.getElementById("myDIV");
+        // var btns = header.getElementsByClassName("circleimg");
+        // for (var i = 0; i < btns.length; i++) {
+        //     btns[i].addEventListener("click", function () {
+        //         var current = document.getElementsByClassName("active");
+        //         current[0].className = current[0].className.replace(" active", "");
+        //         this.className += " active";
+        //     });
+        // }
         function validate_account() {
             var account_number = document.getElementById("account_number").value;
             var re_enter_account_number = document.getElementById("re_enter_account_number").value;
