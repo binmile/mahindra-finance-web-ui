@@ -64,3 +64,14 @@
     font-size: 20px;
     font-weight: 500;
 }
+
+.circleimg.cmpltsvg svg {
+    display: none;
+}
+.completeactive img {
+    height: 30px;
+    width: 30px;
+}
+.circleimg.cmpltsvg {
+    background: #C1EFC3;
+}

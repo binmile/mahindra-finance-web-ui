@@ -12,13 +12,12 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/newstyle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/tabstyle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/bankDetails.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>Bank Details</title>
+    <title>kyc</title>
 
 </head>
 
@@ -27,7 +26,7 @@
         <div class="card">
             <div class="bordertop"></div>
             <div class="row">
-                <div class="col-md-12 col-lg-5 col-sm-12 d-flex">
+                <div class="col-md-12 col-lg-4 col-sm-12 d-flex">
                     <div class="leftside bankDetailsLeftSide" id="bankdetailsPageLeftside">
                         <div class="logoImgContainer">
                             <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
@@ -61,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-7 col-sm-12">
+                <div class="col-md-12 col-lg-8 col-sm-12">
                     <div class="bankmain">
                         <div class="tabparent" id="myDIV">
                             <div class="tabdesign">
@@ -189,87 +188,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <script>
-        // Add active class to the current button (highlight it)
-        // var header = document.getElementById("myDIV");
-        // var btns = header.getElementsByClassName("circleimg");
-        // for (var i = 0; i < btns.length; i++) {
-        //     btns[i].addEventListener("click", function () {
-        //         var current = document.getElementsByClassName("active");
-        //         current[0].className = current[0].className.replace(" active", "");
-        //         this.className += " active";
-        //     });
-        // }
-        function validate_account() {
-            var account_number = document.getElementById("account_number").value;
-            var re_enter_account_number = document.getElementById("re_enter_account_number").value;
-            var ifsc_code = document.getElementById("ifsc_code").value;
-            if (account_number.length < 9 || account_number === "") {
-                document.getElementById("error_account_number").style.display = "block";
-                document.getElementById("account_number").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_account_number").style.display = "none";
-                document.getElementById("account_number").style.border = "";
-            }
-            if (re_enter_account_number !== account_number || re_enter_account_number === "") {
-                document.getElementById("error_re_enter_account_number").style.display = "block";
-                document.getElementById("re_enter_account_number").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_re_enter_account_number").style.display = "none";
-                document.getElementById("re_enter_account_number").style.border = "";
-            }
-            if (ifsc_code === "") {
-                document.getElementById("error_ifsc_code").style.display = "block";
-                document.getElementById("ifsc_code").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_ifsc_code").style.display = "none";
-                document.getElementById("ifsc_code").style.border = "";
-            }
-        }
-
-        function checkBox() {
-            var ischecked = document.getElementById("flexCheckDefault").checked;
-            var element = document.getElementById("continueButton");
-            if (ischecked) {
-                element.classList.remove("disabled");
-                element.classList.add("continueButtonEnable");
-            } else {
-                element.classList.add("disabled");
-                element.classList.remove("continueButtonEnable");
-            }
-        }
-
-        function reviewCheckBox() {
-            var ischecked = document.getElementById("reviewFlexCheckDefault").checked;
-            var element = document.getElementById("reviewContinueButton");
-            if (ischecked) {
-                element.classList.remove("disabled");
-                element.classList.add("continueButtonEnable");
-            } else {
-                element.classList.add("disabled");
-                element.classList.remove("continueButtonEnable");
-            }
-        }
-
-        function reviewApplicationContinue() {
-            document.getElementById("reviewYourApplicationPageLeftside").style.display = "none";
-            document.getElementById("bankdetailsPageLeftside").style.display = "block";
-            document.getElementById("reviewYourApplicationPageRightside").style.display = "none";
-            document.getElementById("bankdetailsPageRightside").style.display = "block";
-        }
-
-        $("#paymentMethod :input").click(function () {
-            $("#paymentMethod :input").each(function () {
-                if ($(this).is(":checked")) {
-                    var activeData = $(this).attr('data-tenure');
-                    $('#' + activeData).addClass('active');
-                } else {
-                    var activeData = $(this).attr('data-tenure');
-                    $('#' + activeData).removeClass('active');
-                }
-            });
-        });
-    </script>
 
 </body>
 
