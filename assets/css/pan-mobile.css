@@ -1,0 +1,89 @@
+            .pan-left {
+                padding: 2px 40px;
+            }
+            
+            .check-kyc-value {
+                margin-top: 60px
+            }
+            
+            .first-button-data {
+                margin-top: 0;
+            }
+            
+            .fixed-deposit-data {
+                width: 250px;
+            }
+            
+            .img-div {
+                top: -19px;
+                right: -28%;
+            }
+            
+            .invest-in {
+                margin-bottom: 0.3rem;
+            }
+            
+            .easy-step {
+                font-family: "Lato", sans-serif;
+                font-size: 40px;
+                font-weight: 600;
+                letter-spacing: 0em;
+                line-height: 50px;
+                text-align: left;
+                color: #ffff;
+                margin-left: 10px;
+            }
+            
+            .in-just {
+                font-family: "Lato", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #ffffff;
+                margin-left: 31px;
+            }
+            
+            .circle-data {
+                margin-top: 23px;
+            }
+            
+            .card-first-content {
+                font-family: "Lato", sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+            }
+            
+            .card-div-data {
+                padding: 0.5rem 1.2rem;
+                gap: 10px;
+            }
+            
+            .card-second-data {
+                font-family: "Lato", sans-serif;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 56px;
+            }
+            
+            .maincontant-right {
+                padding: 0 40px 0 20px;
+            }
+            
+            .error-border {
+                background-color: #FFFAFB;
+            }
+            
+            @media screen and (max-width: 767px) {
+                .pan-left {
+                    padding: 30px 20px;
+                }
+                .strapper-div {
+                    margin-top: 0;
+                }
+                .img-div {
+                    top: 50px;
+                }
+            }
