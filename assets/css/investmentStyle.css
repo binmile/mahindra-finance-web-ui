@@ -100,3 +100,32 @@
     .theme_button_red img{
         margin-left: 5px;
     }
+
+    .jointAccount_Button_container_investment{
+        padding: 0px;
+    }
+    .textparent_mob_investment{
+        margin: 0px;
+    }
+
+    .selectHolder_nomine_investment{
+        margin-bottom: 30px;
+    }
+
+    .selectdiv_investment {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .textparent_nomine_name_investment{
+        margin-bottom: 20px;
+    }
+
+    .MMFsl_investment_cont{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .msg_Investment{
+        margin-top: 5px;
+    }

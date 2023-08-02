@@ -120,8 +120,8 @@
                                     <tr id="cont" class="hidden">
                                         <td colspan="2" class="tableLess_Button">
                                             <button type="button" class="btn theme_button_red" onclick="showMore()">
-                                                    View Less
-                                                    <img alt="arrow_img" src="./assets/Image/VectorUp.svg" />
+                                                View Less
+                                                <img alt="arrow_img" src="./assets/Image/VectorUp.svg" />
                                             </button>
                                         </td>
 
@@ -130,9 +130,9 @@
                                         <td colspan="2" class="tableLess_Button">
                                             <button type="button" class="btn theme_button_red" onclick="showMore()"
                                                 id="showMore">
-                                                    See All                                              
-                                                    <img alt="arrow_img" src="./assets/Image/Vector(Stroke).svg" />
-                                              
+                                                See All
+                                                <img alt="arrow_img" src="./assets/Image/Vector(Stroke).svg" />
+
                                             </button>
                                         </td>
                                     </tr>
@@ -145,11 +145,16 @@
                     <div class="tabparent" id="myDIV">
                         <div class="tabdesign">
                             <div class="circleimg active">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.952148 2.61905H19.0474V15.7143H0.952148V2.61905ZM2.38072 4.04762V14.2857H17.6188V4.04762H2.38072Z" fill="#221F20"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 8.21428C9.47411 8.21428 9.04771 8.64068 9.04771 9.16667C9.04771 9.69265 9.47411 10.119 10.0001 10.119C10.5261 10.119 10.9525 9.69265 10.9525 9.16667C10.9525 8.64068 10.5261 8.21428 10.0001 8.21428ZM7.61914 9.16667C7.61914 7.8517 8.68513 6.78571 10.0001 6.78571C11.3151 6.78571 12.381 7.8517 12.381 9.16667C12.381 10.4816 11.3151 11.5476 10.0001 11.5476C8.68513 11.5476 7.61914 10.4816 7.61914 9.16667Z" fill="#221F20"/>
-                                    </svg>
-                                    
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.952148 2.61905H19.0474V15.7143H0.952148V2.61905ZM2.38072 4.04762V14.2857H17.6188V4.04762H2.38072Z"
+                                        fill="#221F20" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.0001 8.21428C9.47411 8.21428 9.04771 8.64068 9.04771 9.16667C9.04771 9.69265 9.47411 10.119 10.0001 10.119C10.5261 10.119 10.9525 9.69265 10.9525 9.16667C10.9525 8.64068 10.5261 8.21428 10.0001 8.21428ZM7.61914 9.16667C7.61914 7.8517 8.68513 6.78571 10.0001 6.78571C11.3151 6.78571 12.381 7.8517 12.381 9.16667C12.381 10.4816 11.3151 11.5476 10.0001 11.5476C8.68513 11.5476 7.61914 10.4816 7.61914 9.16667Z"
+                                        fill="#221F20" />
+                                </svg>
+
 
                             </div>
                             <div class="menuname">
@@ -241,17 +246,13 @@
                                                     <label for="amountNo" class="form-label invest_form_label">Enter
                                                         amount to be invested</label>
                                                     <input type="text" placeholder="Enter Amount" class="form-control"
-                                                        name="amount" autocomplete="off" id="amount">
+                                                        name="amount" autocomplete="off" id="amountNo">
                                                     <div class="textfildicons">
                                                         <img src="./assets/icons/Union.svg" alt="icons" class="icons" />
                                                     </div>
-                                                    <p class="message_label">Min. deposit of ₹ 10,000 and
+                                                    <p class="message_label msg_Investment" id="error_account_number">Min. deposit of ₹ 10,000 and
                                                         max deposit of ₹
                                                         5 crores</p>
-                                                    <div class="errorMessage" id="error_account_number">
-                                                        Please enter a valid account number
-                                                    </div>
-                                                    <div class="errorText" id="validationMessage"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -262,7 +263,7 @@
                                                     <div class="" data-toggle="buttons" id="tenureEements">
 
                                                         <label class="boxRadioButton" id="elementoption1">
-                                                            <input type="radio" name="type" value="60"
+                                                            <input type="radio" name="type" value="60" 
                                                                 data-tenure="elementoption1" autocomplete="off"> 60
                                                         </label>
                                                         <label class="boxRadioButton" id="elementoption2">
@@ -303,8 +304,8 @@
                                                         interest</label>
                                                     <div class="tooltipContainer">
                                                         <div class="tooltipMain">
-                                                            <img class="AlertImg"
-                                                                src="./assets/icons/alert.svg" alt="alert" />
+                                                            <img class="AlertImg" src="./assets/icons/alert.svg"
+                                                                alt="alert" />
                                                             <div class="tooltipContent">
                                                                 <div class="tooltipHeader tooltipHeader_invester">
                                                                     Interest payout frequency
@@ -384,8 +385,8 @@
                                                     </label>
                                                 </div>
                                                 <div class="interestContainer_text">
-                                                    <img class="interestContainer_img interestContainer_img2" alt="flaglogo"
-                                                        src="./assets/icons//mark.svg" />
+                                                    <img class="interestContainer_img interestContainer_img2"
+                                                        alt="flaglogo" src="./assets/icons//mark.svg" />
                                                     <p class="message_label">
                                                         Interest rates are best when payout is on maturity
                                                     </p>
@@ -488,13 +489,13 @@
                                                     <label class="btn button_label set-1 yesNo_button_invester active"
                                                         id="elementoption21">
                                                         <input class="checkbox_button" type="radio"
-                                                            data-tenures="elementoption21" name="type1" value="elementoption21"
-                                                            autocomplete="off"  checked> Yes
+                                                            data-tenures="elementoption21" name="type1"
+                                                            value="elementoption21" autocomplete="off" checked> Yes
                                                     </label>
                                                     <label class="btn button_label yesNo_button_invester"
                                                         id="elementoption22">
                                                         <input type="radio" class="checkbox_button" name="type1"
-                                                            data-tenures="elementoption22"   value="elementoption22"
+                                                            data-tenures="elementoption22" value="elementoption22"
                                                             autocomplete="off">
                                                         No
                                                     </label>
@@ -523,7 +524,8 @@
                                                 <div class="kycContainer_Button">
                                                     <button type="button" id='submitButton'
                                                         class="btn btn-danger newsubmitbtn_first custom-button-data"
-                                                        onclick="redirectPage();">
+                                                        onclick="redirectPage()"
+                                                        >
 
                                                         Continue
                                                         <img alt="arrow" src="./assets/Image/CTA_arrow.svg" />
@@ -547,20 +549,22 @@
 
                                                     <label for="" class="form-label">Would you like to add a joint
                                                         account holder?</label>
-                                                    <div class="btn-group jointAccount_Button_container"
+                                                    <div class="btn-group jointAccount_Button_container jointAccount_Button_container_investment"
                                                         id="join_accountholder_invester">
-                                                        <label class="btn button_label set-1 yesNo_button_invester active"
+                                                        <label
+                                                            class="btn button_label set-1 yesNo_button_invester active"
                                                             id="elementoption31">
                                                             <input class="checkbox_button" type="radio" name="type2"
                                                                 value="elementoption31" autocomplete="off"
-                                                                data-tenures="elementoption31" for="elementoption31" checked> Yes
+                                                                data-tenures="elementoption31" for="elementoption31"
+                                                                checked> Yes
                                                         </label>
 
                                                         <label class="btn button_label set-1 yesNo_button_invester"
                                                             id="elementoption32">
                                                             <input type="radio" class="checkbox_button" name="type2"
-                                                                value="elementoption32" autocomplete="off" for="elementoption32"
-                                                                data-tenures="elementoption32"> No
+                                                                value="elementoption32" autocomplete="off"
+                                                                for="elementoption32" data-tenures="elementoption32"> No
                                                         </label>
 
                                                     </div>
@@ -569,7 +573,7 @@
                                             </div>
                                             <div class="row pan_mobile_container">
                                                 <div class="col-12 col-md-12 col-lg-6 col-sm-12 ">
-                                                    <div class="textparent">
+                                                    <div class="textparent textparent_mob_investment">
                                                         <label for="exampleInputPassword1" class="form-label">Enter
                                                             joint account holder’s mobile </label>
                                                         <input type="text" placeholder="Enter a 10 digit mobile number"
@@ -582,7 +586,7 @@
                                                 </div>
                                                 <div class="col-12 col-md-12 col-lg-6 col-sm-12 ">
 
-                                                    <div class="textparent">
+                                                    <div class="textparent textparent_mob_investment">
                                                         <label for="exampleInputPassword1" class="form-label">Enter
                                                             joint account holder’s PAN </label>
                                                         <input type="text" placeholder="E.g. CASND30202W"
@@ -597,7 +601,7 @@
                                                 </button>
                                             </div>
                                             <hr class="Horizontalline" />
-                                            <div class="selectHolder_nomine" id="elements">
+                                            <div class="selectHolder_nomine  selectHolder_nomine_investment"  id="elements">
                                                 <label class="selectHolder_text selectHolder_text_invester">
                                                     Nominee
                                                 </label>
@@ -608,16 +612,16 @@
 
                                                     <label for="exampleInputPassword1" class="form-label">Would you like
                                                         to add nominee?</label>
-                                                    <div class="btn-group jointAccount_Button_container nominee_invester"
+                                                    <div class="btn-group jointAccount_Button_container nominee_invester "
                                                         id="accountholder_invester">
-                                                        <label class="btn button_label set-1 yesNo_button_invester"
+                                                        <label class="btn button_label set-1 yesNo_button_invester "
                                                             onclick="changeclr(this)" id="elementoption41">
                                                             <input class="checkbox_button" type="radio" name="type3"
                                                                 value="event1" data-tenures="elementoption41"
                                                                 autocomplete="off" onclick="show2()">
                                                             Yes
                                                         </label>
-                                                        <label class="btn button_label yesNo_button_invester"
+                                                        <label class="btn button_label yesNo_button_invester active"
                                                             id="elementoption42">
                                                             <input type="radio" class="checkbox_button" name="type3"
                                                                 onclick="show1()" value="event2"
@@ -634,7 +638,7 @@
                                                     <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested">
 
 
-                                                        <div class="textparent">
+                                                        <div class="textparent textparent_nomine_name_investment">
                                                             <label for="exampleInputPassword1"
                                                                 class="form-label">Nominee’s
                                                                 name</label>
@@ -650,8 +654,8 @@
 
                                                     </div>
 
-                                                    <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested">
-                                                        <div class="textparent">
+                                                    <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested ">
+                                                        <div class="textparent textparent_nomine_name_investment">
                                                             <label for="exampleInputPassword1"
                                                                 class="form-label">Nominee’s
                                                                 date of birth</label>
@@ -668,7 +672,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row ">
-                                                    <div class="col-12 col-md-6 col-lg-6 col-sm-12 selectdiv">
+                                                    <div class="col-12 col-md-6 col-lg-6 col-sm-12 selectdiv_investment">
                                                         <label for="exampleInputPassword1" class="form-label">Nominee’s
                                                             relation with you</label>
                                                         <div>
@@ -687,7 +691,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="MMFSLcontainer">
+                                                <div class="MMFSLcontainer MMFsl_investment_cont">
                                                     <p class="message_label">
                                                         By proceeding you consent to MMFSL to use your KYC details from
                                                         the
@@ -803,6 +807,7 @@
                 trs[i].classList.toggle('hidden')
             }
         }
+
         $("#tenureEements :input").click(function () {
             $("#tenureEements :input").each(function () {
                 if ($(this).is(":checked")) {
