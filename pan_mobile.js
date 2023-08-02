@@ -161,11 +161,14 @@ function validateMobileNumber() {
         validationMessage_mob.style.color = "";
         mobileNumberInput.classList.remove("error-border"); // Remove the error class
         document.getElementById("mobileNumberInput").style.border = "";
+        document.getElementById("mobileNumberInput").style.backgroundColor = "#F4F7FA";
     } else {
         validationMessage_mob.textContent = "Please enter a 10 digit mobile number.";
         validationMessage_mob.style.color = "red";
         mobileNumberInput.classList.add("error-border"); // Remove the error class
         document.getElementById("mobileNumberInput").style.border = "1px solid red";
+        document.getElementById("mobileNumberInput").style.backgroundColor = "#FFFAFB";
+
     }
 
     return mobileNumberIsValid;
@@ -182,11 +185,15 @@ function validatePanNumber() {
         validationMessage_pan.style.color = "";
         panNumberInput.classList.remove("error-border"); // Add the error class to the PAN input
         document.getElementById("panNumberInput").style.border = "";
+        document.getElementById("panNumberInput").style.backgroundColor = "#F4F7FA";
     } else {
         validationMessage_pan.textContent = "Please enter a valid PAN.";
         validationMessage_pan.style.color = "red";
         panNumberInput.classList.add("error-border"); // Add the error class to the PAN input
         document.getElementById("panNumberInput").style.border = "1px solid red";
+        document.getElementById("panNumberInput").style.backgroundColor = "#FFFAFB";
+
+
     }
 
     return panNumberIsValid;
