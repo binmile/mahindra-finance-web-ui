@@ -153,7 +153,7 @@ mobileNumberInput.addEventListener('input', () => {
 
 function validateMobileNumber() {
     const mobileNumberValue = mobileNumberInput.value.trim();
-    const mobileNumberRegex = /^\d{10}$/;
+    const mobileNumberRegex = /^(?:(?:(?:\+|00)91)|0)?[6-9]\d{9}$/;
     const mobileNumberIsValid = mobileNumberRegex.test(mobileNumberValue);
 
     if (mobileNumberIsValid) {
