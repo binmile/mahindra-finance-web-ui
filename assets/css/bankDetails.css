@@ -1,0 +1,66 @@
+.continueButtonEnable {
+    margin-bottom: 50px;
+}
+
+.bank-details-disabled-button.disabled img {
+    -webkit-filter: brightness(0.7) invert(0);
+    filter: brightness(0.7) invert(0);
+}
+
+.bankDetailsCheckbox {
+    width: 45px !important;
+}
+
+#reviewFlexCheckDefault:checked {
+    border: 1px solid black;
+    background-color: black;
+}
+
+.stampImgContainer {
+    right: 40px;
+    top: 120px;
+    width: auto;
+}
+
+.bankDetailsLeftContent {
+    padding: 100px 40px;
+}
+
+#paymentMethod{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#paymentMethod .paymentRadioButton{
+    width: 111px;
+    height: 78px;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    border: 1px solid #8C989F;
+}
+
+#paymentMethod .paymentRadioButton.active {
+    border: 1.7px solid #221F20
+}
+
+#paymentMethod .paymentRadioButton img{
+    width: 28px;
+    margin-bottom: 5px;
+}
+
+.bank_detail_mainheading{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.bank_detail_subheading{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.paymentOptionsMaincontant{
+    font-size: 20px;
+    font-weight: 500;
+}
