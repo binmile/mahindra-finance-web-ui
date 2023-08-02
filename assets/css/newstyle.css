@@ -4,7 +4,7 @@
   }
   
   .logo {
-      width: 200px;
+      width: 300px;
       height: auto;
   }
   
@@ -23,6 +23,7 @@
   .container {
       padding-top: 50px;
       padding-bottom: 20px;
+      position: relative;
   }
   
   .leftcard-contant p {
@@ -578,6 +579,7 @@
       overflow: hidden;
       background-repeat: no-repeat;
       background-size: cover;
+      position: relative;
   }
   
   .paymentContent {
@@ -634,7 +636,7 @@
   }
   
   p.footertextparent {
-      font-size: 12px;
+      font-size: 12px !important;
   }
   
   .modal-footer {
@@ -721,14 +723,16 @@
   }
   
   @media screen and (max-width: 767px) {
+
+    
       .main_left_div {
           padding: 0;
       }
-      .img_div {
-          position: absolute;
-          top: -103px;
-          right: -50px;
-      }
+     .img_div {
+        position: absolute;
+        top: -100px !important;
+        right: 0;
+    }
       .content-data {
           margin-top: 40px;
       }
@@ -813,10 +817,10 @@
           position: relative;
       }
       .img_div {
-          position: absolute;
-          top: -130px;
-          right: 0;
-      }
+        position: absolute;
+        top: -132px;
+        right: 0;
+    }
       .card_div_data {
           display: block;
       }
@@ -840,7 +844,7 @@
       font-family: 'Lato', sans-serif;
   }
   
-  .leftside {
+  .leftsiderajan {
       position: relative;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
@@ -1060,10 +1064,10 @@
       line-height: 24px;
   }
   
-  .table tbody tr td button :last-child {
+  /* .table tbody tr td button :last-child {
       height: 10px;
       width: 10px;
-  }
+  } */
   
   .seeAll_Button {
       width: 20%;
@@ -1488,9 +1492,11 @@
   }
   
   input[type='checkbox'] {
-      accent-color: #ffffff;
-      width: 20px;
-  }
+    accent-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px !important;
+}
   
   .form-check-input:checked {
       background-color: #0094FF;
@@ -1979,3 +1985,219 @@
   #additionalDetailParent {
       display: none;
   }
+  #bankdetailsPageLeftside{
+    display: none;
+}
+#bankdetailsPageRightside{
+    display: none;
+}
+
+
+.check_kyc {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: #F4F7FA;
+}
+.kyc_data {
+    padding: 10px 16px 10px 16px;
+    display: flex;
+}
+.custom-button-data {
+    background-color: #E31837;
+}
+.custom-button-data:disabled {
+    background-color: #E6E7E9;
+    border: 1px solid #E6E7E9;
+    color: #8C989F;
+}
+.img_tag {
+    color: #8C989F;
+}
+
+.reviewcard{
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0px;
+    padding: 15px;
+}
+
+.continueButtonEnable {
+    display: flex;
+    justify-content: space-between;
+    width: 304px;
+    padding: 12px;
+    align-items: center;
+    color: #fff !important;
+    background-color: #E31837 !important;
+    border-color: #E31837 !important;
+}
+.bank-details-disabled-button.disabled img {
+    -webkit-filter: brightness(1) invert(0);
+    filter: brightness(1) invert(0);
+}
+.continueButtonEnable img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+.bank-details-disabled-button.disabled:not(:disabled) {
+    display: flex;
+    justify-content: space-between;
+    width: 304px;
+    padding: 12px;
+    align-items: center;
+    color: #8C989F;
+    background-color: #E6E7E9;
+    border-color: #E6E7E9;
+    margin-bottom: 50px;
+}
+.errorMessage {
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+
+/* /////////success page /////// */
+
+.sussessicons {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.success-text {
+    text-align: center;
+}
+p.success-textstyle {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.success-text a {
+    color: #000;
+    text-decoration: unset;
+    font-weight: 600;
+}
+.success-contant {
+    padding: 50px;
+}
+
+.btn-success {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px;
+    align-items: center;
+    color: #fff;
+    background-color: #E31837;
+    border-color: #E31837;
+    border: 1px solid #E31837;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+.btn-check:active+.btn-success, .btn-check:checked+.btn-success, .btn-success.active, .btn-success:active, .show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #E31837;
+    border-color: #E31837;
+}
+.btn-check:focus+.btn-success, .btn-success:focus {
+    color: #fff;
+    background-color: #E31837;
+    border-color: #E31837;
+    box-shadow: 0 0 0 .25rem rgba(255, 0, 0, 0.5);
+}
+
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #E31837;
+    border-color: #E31837;
+}
+.pl-0{
+    padding-left: 0px;
+}
+p.btntxt-first {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+p.btntxt-second {
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.paragraphheading {
+    margin-top: 62px;
+    text-align: center;
+}
+.btntxt {
+    text-align: start;
+}
+.smallcardbtn-design{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+
+}
+.smallcardbtntxt p {
+    margin-bottom: 0px;
+}
+.smallcard {
+    padding: 20px;
+}
+.smallcardheading img {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.smallcardheading p {
+    margin: 0px;
+    font-weight: 500;
+}
+.mainshaper{
+    background: #fff;
+    border-radius: 20px;
+}
+.shaper {
+    background: url(../image-main/Group.svg) no-repeat;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-animation: slide 30s linear infinite;
+    animation-duration: 3s;
+    /* animation-iteration-count: 1; */
+}
+@keyframes slide{
+    100% {
+    background-position: 0 0;
+}
+0% {
+    background-position: -10px -800px;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .success-contant {
+    padding: 20px;
+}
+  }
+
+
+
+  .form-switch .form-check-input {
+    width: 38px;
+    border-radius: 2rem !important;
+}
+button.btn-success.btn-successsmaall {
+    width: 120px;
+}
+
+.bordertop {
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 74px;
+    width: 100%;
+}
