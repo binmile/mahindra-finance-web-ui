@@ -15,8 +15,6 @@ function myFun(event){
     }
 }
 
-
-
 function myFunction(e) {
     if (document.querySelector('#tenure_button button.active') !== null) {
         document.querySelector('#tenure_button button.active').classList.remove('active');
@@ -39,8 +37,6 @@ $('.button_label').click(function () {
     $('input:checked').parent().addClass("checked");
 });
 
-
-
 function redirectPage() {
     if (document.getElementById('invstment')) {
 
@@ -55,3 +51,22 @@ function redirectPage() {
     }
 }
 
+function show1(){
+    document.getElementById('div1').style.display ='none';
+  }
+  function show2(){
+    document.getElementById('div1').style.display = 'block';
+  }
+
+//   function validate_account() {
+//     var amount = document.getElementById("amountNo").value;
+//     if (amount < 10000 || amount >= 50000000 || amount === "") {
+//         document.getElementById("error_account_number").style.color = "red";
+//         document.getElementById("amountNo").style.border = "1px solid red";
+//     } 
+//     else {
+//         document.getElementById("error_account_number").style.color = "black";
+//         document.getElementById("amountNo").style.border = "";
+//         redirectPage()
+//     }
+// }

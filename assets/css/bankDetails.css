@@ -230,4 +230,13 @@
 
 ::-webkit-scrollbar {
     display: none;
+.circleimg.cmpltsvg svg {
+    display: none;
+}
+.completeactive img {
+    height: 30px;
+    width: 30px;
+}
+.circleimg.cmpltsvg {
+    background: #C1EFC3;
 }

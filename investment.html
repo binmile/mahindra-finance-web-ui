@@ -17,13 +17,10 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/newstyle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/tabstyle.css" />
-
+    <link rel="stylesheet" type="text/css" href="./assets/css/investmentStyle.css" />
 
     <title>Investment</title>
-
     <!-- <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" /> -->
-
-
 </head>
 
 <body>
@@ -33,28 +30,18 @@
             <div class="bordertop"></div>
             <div class="row">
                 <div class="col-md-5 col-lg-5 col-sm-12 d-flex ">
-
                     <div class="leftside leftsiderajan">
-
                         <div class="logoImgContainer">
                             <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
                         </div>
-
-
-
-                        <div class="leftcard">
-
+                        <div class="leftcard leftcard_investment">
                             <div class="leftcard-contant">
                                 <h1> Fixed deposit Schemes</h1>
                             </div>
-
-
                             <!-- investment leftHand side Screen start -->
                             <div class="appliedContainer">
                                 <div class="col-12 col-md-12 col-lg-7 col-sm-12 ">
-
                                     <div class="appliedSection">
-
                                         <div class="appliedSection_additional">
                                             <div>
                                                 <img src="./assets/Image/completed.svg" alt="complete_img" />
@@ -74,10 +61,7 @@
                                 <div class="col-12 col-md-12 col-lg-5 col-sm-12  stampImg_Container">
                                     <img src="./assets/Image/Highest Safety Stamp.png" alt="stump_img" />
                                 </div>
-
                             </div>
-
-
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -120,8 +104,6 @@
                                             <span>
                                                 9.08%
                                             </span>
-
-
                                         </td>
                                     </tr>
                                     <tr id="cont" class="hidden">
@@ -133,78 +115,46 @@
                                             <span>
                                                 9.45%
                                             </span>
-
-
                                         </td>
                                     </tr>
                                     <tr id="cont" class="hidden">
                                         <td colspan="2" class="tableLess_Button">
-                                            <button type="button" class="btn seeLess_Button">
-                                                <span>
-                                                    View Less
-                                                </span>
-                                                <span>
-                                                    <img alt="arrow_img" src="./assets/Image/VectorUp.svg" />
-                                                </span>
+                                            <button type="button" class="btn theme_button_red" onclick="showMore()">
+                                                View Less
+                                                <img alt="arrow_img" src="./assets/Image/VectorUp.svg" />
                                             </button>
-                                             <!-- <button type="button" class="btn-success btn-successsmaall">
-                                                    <div class="btntxt">
-                                                        <p class="btntxt-first"> View Less</p>
-                                                        
-                        
-                                                    </div>
-                                                    <div class="btnicon">
-                                                        <img src="./assets/Image/CTA_arrow.svg " alt="Generate OTP " class="img_tag">
-                        
-                                                    </div>
-                                                </button> -->
-                                            </td>
+                                        </td>
 
                                     </tr>
                                     <tr>
                                         <td colspan="2" class="tableLess_Button">
-                                            <button type="button" class="btn seeAll_Button" onclick="showMore()"
+                                            <button type="button" class="btn theme_button_red" onclick="showMore()"
                                                 id="showMore">
-                                                <span>
-                                                    See All
-                                                </span>
-                                                <span>
-                                                    <img alt="arrow_img" src="./assets/Image/Vector(Stroke).svg" />
-                                                </span>
+                                                See All
+                                                <img alt="arrow_img" src="./assets/Image/Vector(Stroke).svg" />
+
                                             </button>
-                                            <!-- <button type="button" class="btn-success btn-successsmaall ">
-                                                <div class="btntxt">
-                                                    <p class="btntxt-first"> View Less</p>
-                                                </div>
-                                                <div class="btnicon">
-                                                    <img src="./assets/Image/CTA_arrow.svg " alt="Generate OTP " class="img_tag">
-                    
-                                                </div>
-                                            </button> -->
                                         </td>
                                     </tr>
                                 </tbody>
-
                             </table>
-
-
-
-
                         </div>
                     </div>
-
-
-
-
                 </div>
-
-
                 <div class="col-md-7 col-lg-7 col-sm-12 pl-0 ">
                     <div class="tabparent" id="myDIV">
-
                         <div class="tabdesign">
                             <div class="circleimg active">
-                                <img src="./assets/icons/investment.svg " alt="  Know More" class="img_tag">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.952148 2.61905H19.0474V15.7143H0.952148V2.61905ZM2.38072 4.04762V14.2857H17.6188V4.04762H2.38072Z"
+                                        fill="#221F20" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.0001 8.21428C9.47411 8.21428 9.04771 8.64068 9.04771 9.16667C9.04771 9.69265 9.47411 10.119 10.0001 10.119C10.5261 10.119 10.9525 9.69265 10.9525 9.16667C10.9525 8.64068 10.5261 8.21428 10.0001 8.21428ZM7.61914 9.16667C7.61914 7.8517 8.68513 6.78571 10.0001 6.78571C11.3151 6.78571 12.381 7.8517 12.381 9.16667C12.381 10.4816 11.3151 11.5476 10.0001 11.5476C8.68513 11.5476 7.61914 10.4816 7.61914 9.16667Z"
+                                        fill="#221F20" />
+                                </svg>
+
 
                             </div>
                             <div class="menuname">
@@ -212,14 +162,26 @@
                             </div>
                             <div class="horizontalline">
                                 <hr class="new1">
-
                             </div>
-
                         </div>
                         <div class="tabdesign">
                             <div class="circleimg">
-                                <img src="./assets/icons/kyc.svg " alt="  Know More" class="img_tag">
-                                <!-- <img src="./assets/icons/Steppericons.svg "  alt="  Know More" class="img_tag completeicon"> -->
+
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.83926 14.8775C4.26755 13.5643 7.04779 12.819 10.0006 12.819C12.9533 12.819 15.7336 13.5643 18.1619 14.8775L18.4315 15.0233V18.8476H1.56962V15.0233L1.83926 14.8775ZM2.59819 15.6397V17.819H17.4029V15.6397C15.1859 14.4945 12.6695 13.8476 10.0006 13.8476C7.33163 13.8476 4.81521 14.4945 2.59819 15.6397Z"
+                                        fill="#221F20" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.7713 14.7518C4.21995 13.4276 7.02348 12.6761 10.0006 12.6761C12.9776 12.6761 15.7812 13.4276 18.2298 14.7518L18.5744 14.9382V18.9904H1.42676V14.9382L1.7713 14.7518ZM10.0006 12.9618C7.0721 12.9618 4.31515 13.7009 1.90722 15.0031L1.71247 15.1085V18.7047H18.2887V15.1085L18.0939 15.0031C15.686 13.7009 12.929 12.9618 10.0006 12.9618ZM2.74104 15.727V17.6761H17.2601V15.727C15.0818 14.6167 12.6152 13.9904 10.0006 13.9904C7.38595 13.9904 4.91939 14.6167 2.74104 15.727ZM2.53262 15.5128C4.76944 14.3573 7.30829 13.7047 10.0006 13.7047C12.6928 13.7047 15.2317 14.3573 17.4685 15.5128L17.5458 15.5527V17.9618H2.45533V15.5527L2.53262 15.5128Z"
+                                        fill="#221F20" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.31913 1.98568H14.681V6.66663C14.681 9.25183 12.5853 11.3476 10.0001 11.3476C7.41486 11.3476 5.31913 9.25183 5.31913 6.66663V1.98568ZM6.3477 3.01425V6.66663C6.3477 8.68376 7.98293 10.319 10.0001 10.319C12.0172 10.319 13.6525 8.68376 13.6525 6.66663V3.01425H6.3477Z"
+                                        fill="#221F20" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.17627 1.84282H14.8239V6.66663C14.8239 9.33072 12.6642 11.4904 10.0001 11.4904C7.33596 11.4904 5.17627 9.33072 5.17627 6.66663V1.84282ZM5.46198 2.12853V6.66663C5.46198 9.17293 7.49376 11.2047 10.0001 11.2047C12.5064 11.2047 14.5382 9.17293 14.5382 6.66663V2.12853H5.46198ZM6.20484 2.87139H13.7953V6.66663C13.7953 8.76266 12.0961 10.4619 10.0001 10.4619C7.90403 10.4619 6.20484 8.76266 6.20484 6.66663V2.87139ZM6.49056 3.1571V6.66663C6.49056 8.60487 8.06183 10.1762 10.0001 10.1762C11.9383 10.1762 13.5096 8.60487 13.5096 6.66663V3.1571H6.49056Z"
+                                        fill="#221F20" />
+                                </svg>
 
                             </div>
                             <div class="menuname">
@@ -227,14 +189,19 @@
                             </div>
                             <div class="horizontalline">
                                 <hr class="new1">
-
                             </div>
-
                         </div>
                         <div class="tabdesign">
                             <div class="circleimg">
-                                <img src="./assets/icons/bank.svg " alt="  Know More" class="img_tag">
-
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.70441 2.22126C9.88587 2.10878 10.1141 2.10878 10.2956 2.22126L17.865 6.9134L17.2738 7.89466L10 3.38575L2.72616 7.89466L2.13499 6.9134L9.70441 2.22126ZM5.84304 8.52571V13.6687H4.70932V8.52571H5.84304ZM8.99225 8.52571V13.6687H7.85853V8.52571H8.99225ZM12.1415 8.52571V13.6687H11.0077V8.52571H12.1415ZM15.2907 8.52571V13.6687H14.157V8.52571H15.2907ZM3.92201 15.7131H16.078V16.8631H3.92201V15.7131Z"
+                                        fill="#221F20" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.63403 2.10445C9.8587 1.96518 10.1413 1.96518 10.366 2.10445L17.9354 6.79658C17.999 6.83601 18.019 6.92027 17.9802 6.98479L17.389 7.96605C17.3703 7.99703 17.3403 8.01922 17.3055 8.02774C17.2707 8.03626 17.234 8.03041 17.2035 8.01148L10 3.5462L2.79654 8.01148C2.766 8.03041 2.72929 8.03626 2.69449 8.02774C2.6597 8.01922 2.62966 7.99703 2.611 7.96605L2.01982 6.98479C1.98095 6.92027 2.001 6.83601 2.06461 6.79658L9.63403 2.10445ZM10.2252 2.33808C10.087 2.25238 9.91304 2.25238 9.77479 2.33808L2.32053 6.95883L2.77095 7.70645L9.92962 3.26894C9.97283 3.24216 10.0272 3.24216 10.0704 3.26894L17.2291 7.70645L17.6795 6.95883L10.2252 2.33808ZM4.57435 8.52571C4.57435 8.4501 4.63478 8.3888 4.70932 8.3888H5.84304C5.91758 8.3888 5.978 8.4501 5.978 8.52571V13.6687C5.978 13.7443 5.91758 13.8056 5.84304 13.8056H4.70932C4.63478 13.8056 4.57435 13.7443 4.57435 13.6687V8.52571ZM4.84428 8.66261V13.5318H5.70807V8.66261H4.84428ZM7.72357 8.52571C7.72357 8.4501 7.78399 8.3888 7.85853 8.3888H8.99225C9.06679 8.3888 9.12722 8.4501 9.12722 8.52571V13.6687C9.12722 13.7443 9.06679 13.8056 8.99225 13.8056H7.85853C7.78399 13.8056 7.72357 13.7443 7.72357 13.6687V8.52571ZM7.9935 8.66261V13.5318H8.85728V8.66261H7.9935ZM10.8728 8.52571C10.8728 8.4501 10.9332 8.3888 11.0077 8.3888H12.1415C12.216 8.3888 12.2764 8.4501 12.2764 8.52571V13.6687C12.2764 13.7443 12.216 13.8056 12.1415 13.8056H11.0077C10.9332 13.8056 10.8728 13.7443 10.8728 13.6687V8.52571ZM11.1427 8.66261V13.5318H12.0065V8.66261H11.1427ZM14.022 8.52571C14.022 8.4501 14.0824 8.3888 14.157 8.3888H15.2907C15.3652 8.3888 15.4256 8.4501 15.4256 8.52571V13.6687C15.4256 13.7443 15.3652 13.8056 15.2907 13.8056H14.157C14.0824 13.8056 14.022 13.7443 14.022 13.6687V8.52571ZM14.2919 8.66261V13.5318H15.1557V8.66261H14.2919ZM3.78705 15.7131C3.78705 15.6375 3.84747 15.5762 3.92201 15.5762H16.078C16.1525 15.5762 16.213 15.6375 16.213 15.7131V16.8631C16.213 16.9387 16.1525 17 16.078 17H3.92201C3.84747 17 3.78705 16.9387 3.78705 16.8631V15.7131ZM4.05698 15.85V16.7262H15.943V15.85H4.05698Z"
+                                        fill="#221F20" />
+                                </svg>
                             </div>
                             <div class="menuname">
                                 <p>Review&nbsp;&&nbsp;Pay</p>
@@ -247,19 +214,19 @@
                         </div>
                         <div class="tabdesign">
                             <div class="circleimg">
-                                <img src="./assets/icons/review.svg " alt="  Know More" class="img_tag">
-
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.15186 1.15237H13.8471V1.98568H17.5966V18.8476H2.40137V1.98568H6.15186V1.15237ZM13.8471 5.51428V3.01425H16.568V17.819H3.42994V3.01425H6.15186V5.51428H13.8471ZM7.18043 2.18095V4.48571H12.8185V2.18095H7.18043ZM8.78256 14.7545L13.5615 8.78087L12.5854 8L8.61425 12.9639L6.81348 11.4204L6 12.3695L8.78256 14.7545Z"
+                                        fill="#221F20" />
+                                </svg>
                             </div>
                             <div class="menuname">
                                 <p>All&nbsp;Done</p>
                             </div>
                             <div class="horizontalline">
-
-
                             </div>
-
                         </div>
-
                     </div>
 
                     <div class="investmentParent">
@@ -276,36 +243,27 @@
                                         <div class="ammountInvested_container">
                                             <div class="col-12 col-md-7` col-lg-7 col-sm-12 ">
                                                 <div class="textparent">
-                                                    <label for="" class="form-label">Enter
+                                                    <label for="amountNo" class="form-label invest_form_label">Enter
                                                         amount to be invested</label>
-
-                                                    <input type="number" placeholder="Enter Amount" class="form-control"
-                                                        name="amount" autocomplete="off" id="amount">
-
+                                                    <input type="text" placeholder="Enter Amount" class="form-control"
+                                                        name="amount" autocomplete="off" id="amountNo">
                                                     <div class="textfildicons">
                                                         <img src="./assets/icons/Union.svg" alt="icons" class="icons" />
                                                     </div>
-                                                    <p class="message_label">Min. deposit of ₹ 10,000 and
+                                                    <p class="message_label msg_Investment" id="error_account_number">Min. deposit of ₹ 10,000 and
                                                         max deposit of ₹
                                                         5 crores</p>
-
-                                                    <div class="errorText" id="validationMessage"></div>
-
                                                 </div>
-
                                             </div>
                                         </div>
-
                                         <div class="tenure_container">
                                             <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
-
                                                 <label for="" class="form-label">Select tenure (in months)</label>
-
                                                 <div id="">
                                                     <div class="" data-toggle="buttons" id="tenureEements">
 
                                                         <label class="boxRadioButton" id="elementoption1">
-                                                            <input type="radio" name="type" value="60"
+                                                            <input type="radio" name="type" value="60" 
                                                                 data-tenure="elementoption1" autocomplete="off"> 60
                                                         </label>
                                                         <label class="boxRadioButton" id="elementoption2">
@@ -330,40 +288,30 @@
                                                         </label>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
-
-
                                         <div class="monthinput_container" id="CustomMonth">
                                             <div class=" col-12 col-md-7 col-lg-7 col-sm-12">
                                                 <input type="number" class="form-control" name="month"
                                                     autocomplete="off" id="month">
-
                                             </div>
-
-
                                             <div class="errorText" id="validationMessage_month"></div>
-
                                         </div>
-
-
                                         <div class="receive_interest_container">
                                             <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
                                                 <div class="interestContainer_header">
-
                                                     <label for="" class="form-label">Select when you wish to receive
                                                         interest</label>
-
                                                     <div class="tooltipContainer">
                                                         <div class="tooltipMain">
-                                                            <img class="AlertImg" src="../mahindra-finance-web-ui/assets/Image/alert.png"
+                                                            <img class="AlertImg" src="./assets/icons/alert.svg"
                                                                 alt="alert" />
-
                                                             <div class="tooltipContent">
-                                                                <div class="tooltipHeader">Interest payout frequency
+                                                                <div class="tooltipHeader tooltipHeader_invester">
+                                                                    Interest payout frequency
                                                                 </div>
-                                                                <div class="tooltipText">The interest on our deposit can
+                                                                <div class="tooltipText tooltipText_invester">The
+                                                                    interest on our deposit can
                                                                     be
                                                                     paid out as
                                                                     per your choice. Choose to get payouts at maturity,
@@ -375,76 +323,76 @@
                                                     </div>
 
                                                 </div>
-
-
-
-
-                                                <div class="" data-toggle="buttons" id="tenureEement">
-                                                    <label class="boxRadioButton2" id="elementoption11">
+                                                <div data-toggle="buttons" id="tenureEement" class="tenure_investment">
+                                                    <label class="boxRadioButton2 boxmaturity_radio_investment "
+                                                        id="elementoption11">
                                                         <input type="radio" name="type" value="Maturity"
                                                             data-tenures="elementoption11" autocomplete="off">
-
-                                                        Maturity
-
-                                                        8.30%
+                                                        <span class="maturityBox_tex1_investment">
+                                                            Maturity
+                                                        </span>
+                                                        <span class="maturityBox_tex2_investment">
+                                                            8.30%
+                                                        </span>
                                                     </label>
 
-                                                    <label class="boxRadioButton2" id="elementoption12">
+                                                    <label class="boxRadioButton2 boxmaturity_radio_investment"
+                                                        id="elementoption12">
                                                         <input type="radio" name="type" value="Yearly"
                                                             data-tenures="elementoption12" autocomplete="off">
+                                                        <span class="maturityBox_tex1_investment">
+                                                            Yearly
+                                                        </span>
+                                                        <span class="maturityBox_tex2_investment">
+                                                            8.05%
+                                                        </span>
 
-                                                        Yearly
-                                                        8.05%
                                                     </label>
-
-
-                                                    <label class="boxRadioButton2" id="elementoption13">
+                                                    <label class="boxRadioButton2 boxmaturity_radio_investment"
+                                                        id="elementoption13">
                                                         <input type="radio" name="type" value="Half yearly"
                                                             data-tenures="elementoption13" autocomplete="off">
 
-                                                        Half yearly
-                                                        7.89%
+                                                        <span class="maturityBox_tex1_investment">
+                                                            Half yearly
+                                                        </span>
+                                                        <span class="maturityBox_tex2_investment">
+                                                            7.89%
+                                                        </span>
+
                                                     </label>
-
-
-                                                    <label class="boxRadioButton2" id="elementoption14">
+                                                    <label class="boxRadioButton2 boxmaturity_radio_investment"
+                                                        id="elementoption14">
                                                         <input type="radio" name="type" value="Quaterly"
                                                             data-tenures="elementoption14" autocomplete="off">
-
-                                                        Quaterly
-                                                        7.82%
+                                                        <span class="maturityBox_tex1_investment">
+                                                            Quaterly
+                                                        </span>
+                                                        <span class="maturityBox_tex2_investment">
+                                                            7.82%
+                                                        </span>
                                                     </label>
-
-
-                                                    <label class="boxRadioButton2" id="elementoption15">
+                                                    <label class="boxRadioButton2 boxmaturity_radio_investment"
+                                                        id="elementoption15">
                                                         <input type="radio" name="type" value="Monthly"
                                                             data-tenures="elementoption15" autocomplete="off">
-
-                                                        Monthly
-                                                        7.77%
+                                                        <span class="maturityBox_tex1_investment">
+                                                            Monthly
+                                                        </span>
+                                                        <span class="maturityBox_tex2_investment">
+                                                            7.77%
+                                                        </span>
                                                     </label>
-
-
                                                 </div>
-
-
-
-
-
-
-
                                                 <div class="interestContainer_text">
-                                                    <img class="interestContainer_img" alt="flaglogo"
-                                                        src="./assets/Image/Vector 14.png" />
+                                                    <img class="interestContainer_img interestContainer_img2"
+                                                        alt="flaglogo" src="./assets/icons//mark.svg" />
                                                     <p class="message_label">
                                                         Interest rates are best when payout is on maturity
                                                     </p>
                                                 </div>
-
                                             </div>
                                         </div>
-
-
                                         <div class="interestTable_container">
                                             <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
                                                 <div class="interestTableContainer_inner">
@@ -502,11 +450,12 @@
 
                                                         <div class="tooltipContainer">
                                                             <span class="tooltipMain">
-                                                                <img class="alertImg" src="./assets/Image/alert.png"
+                                                                <img class="alertImg" src="./assets/icons/Union.svg"
                                                                     alt="alert" />
                                                                 <div class="tooltipContent">
-                                                                    <div class="tooltipHeader">Auto renewal</div>
-                                                                    <div class="tooltipText">
+                                                                    <div class="tooltipHeader tooltipHeader_invester">
+                                                                        Auto renewal</div>
+                                                                    <div class="tooltipText tooltipText_invester">
                                                                         <ul>
                                                                             <li>
                                                                                 Tenure & interest payout would be same
@@ -514,6 +463,7 @@
                                                                                 your current FD
                                                                                 scheme.
                                                                             </li>
+
                                                                             <li>
                                                                                 Interest rate of renewed FD will depend
                                                                                 on
@@ -525,13 +475,8 @@
                                                                 </div>
                                                             </span>
                                                         </div>
-
                                                     </div>
-
                                                 </div>
-
-
-
                                             </div>
                                         </div>
 
@@ -539,27 +484,28 @@
                                             <div class="col-6 ">
                                                 <label for="" class="form-label"> Would you like to add a joint account
                                                     holder?</label>
-                                                <div class="btn-group jointAccount_Button_container" id="elements">
-                                                    <label class="btn button_label set-1" onclick="changeclr(this)">
-                                                        <input class="checkbox_button" type="radio" name="type"
-                                                            value="event1" id="elementoption1" autocomplete="off"> Yes
+                                                <div class="btn-group  jointAccount_Button_container"
+                                                    id="accountholder_invester">
+                                                    <label class="btn button_label set-1 yesNo_button_invester active"
+                                                        id="elementoption21">
+                                                        <input class="checkbox_button" type="radio"
+                                                            data-tenures="elementoption21" name="type1"
+                                                            value="elementoption21" autocomplete="off" checked> Yes
                                                     </label>
-                                                    <label class="btn button_label " onclick="changeclr(this)">
-                                                        <input type="radio" class="checkbox_button" name="type"
-                                                            value="event1" id="elementoption1" autocomplete="off"
-                                                            checked>
+                                                    <label class="btn button_label yesNo_button_invester"
+                                                        id="elementoption22">
+                                                        <input type="radio" class="checkbox_button" name="type1"
+                                                            data-tenures="elementoption22" value="elementoption22"
+                                                            autocomplete="off">
                                                         No
                                                     </label>
-
                                                 </div>
                                             </div>
-
                                         </div>
-
                                         <div class="jointSwitch_container">
                                             <div class="form-check form-switch">
                                                 <input class="form-check-input" type="checkbox" role="switch"
-                                                    id="flexSwitchCheckDefault">
+                                                    id="flexSwitchCheckDefault1">
                                                 <label class="form-check-label" for="flexSwitchCheckDefault">Are
                                                     I am a joint holder/tax resident outside of india</label>
                                             </div>
@@ -568,18 +514,18 @@
                                         <div class="jointSwitch_container">
                                             <div class="form-check form-switch">
                                                 <input class="form-check-input" type="checkbox" role="switch"
-                                                    id="flexSwitchCheckDefault">
+                                                    id="flexSwitchCheckDefault2">
                                                 <label class="form-check-label" for="flexSwitchCheckDefault">Are
                                                     I am a joint holder/green card holder</label>
                                             </div>
                                         </div>
-
                                         <div class="Continue_button_container">
                                             <div class="col-12 ">
                                                 <div class="kycContainer_Button">
                                                     <button type="button" id='submitButton'
                                                         class="btn btn-danger newsubmitbtn_first custom-button-data"
-                                                        onclick="redirectPage();">
+                                                        onclick="redirectPage()"
+                                                        >
 
                                                         Continue
                                                         <img alt="arrow" src="./assets/Image/CTA_arrow.svg" />
@@ -589,49 +535,45 @@
 
                                             </div>
                                         </div>
-
                                     </div>
-
                                     <div id="additionalDetailParent">
                                         <div class="maincontant">
                                             <h4 class="Investment_Heading">Additional details</h4>
-
-
-
                                             <div class="selectHolder_nomine" id="elements">
-                                                <label class="selectHolder_text">
+                                                <label class="selectHolder_text selectHolder_text_invester">
                                                     Joint Account Holder
                                                 </label>
                                             </div>
-
-
                                             <div class="jointAccountContainer">
                                                 <div class="col-6 ">
 
                                                     <label for="" class="form-label">Would you like to add a joint
                                                         account holder?</label>
-                                                    <div class="btn-group jointAccount_Button_container" id="elements">
-                                                        <label class="btn button_label set-1" onclick="changeclr(this)">
-                                                            <input class="checkbox_button " type="radio" name="type"
-                                                                value="event" id="elementoption1" autocomplete="off"
+                                                    <div class="btn-group jointAccount_Button_container jointAccount_Button_container_investment"
+                                                        id="join_accountholder_invester">
+                                                        <label
+                                                            class="btn button_label set-1 yesNo_button_invester active"
+                                                            id="elementoption31">
+                                                            <input class="checkbox_button" type="radio" name="type2"
+                                                                value="elementoption31" autocomplete="off"
+                                                                data-tenures="elementoption31" for="elementoption31"
                                                                 checked> Yes
                                                         </label>
-                                                        <label class="btn button_label" 
-                                                            onclick="changeclr(this)">
-                                                            <input type="radio" class="checkbox_button" name="type"
-                                                                value="event" id="elementoption1" autocomplete="off"
-                                                                checked> No
+
+                                                        <label class="btn button_label set-1 yesNo_button_invester"
+                                                            id="elementoption32">
+                                                            <input type="radio" class="checkbox_button" name="type2"
+                                                                value="elementoption32" autocomplete="off"
+                                                                for="elementoption32" data-tenures="elementoption32"> No
                                                         </label>
 
                                                     </div>
                                                 </div>
 
                                             </div>
-
-
                                             <div class="row pan_mobile_container">
                                                 <div class="col-12 col-md-12 col-lg-6 col-sm-12 ">
-                                                    <div class="textparent">
+                                                    <div class="textparent textparent_mob_investment">
                                                         <label for="exampleInputPassword1" class="form-label">Enter
                                                             joint account holder’s mobile </label>
                                                         <input type="text" placeholder="Enter a 10 digit mobile number"
@@ -639,15 +581,12 @@
                                                         <div class="textfildicons">
                                                             <img src="./assets/Image/mobile.svg" alt="icons"
                                                                 class="icons" />
-
                                                         </div>
                                                     </div>
-
                                                 </div>
-
                                                 <div class="col-12 col-md-12 col-lg-6 col-sm-12 ">
 
-                                                    <div class="textparent">
+                                                    <div class="textparent textparent_mob_investment">
                                                         <label for="exampleInputPassword1" class="form-label">Enter
                                                             joint account holder’s PAN </label>
                                                         <input type="text" placeholder="E.g. CASND30202W"
@@ -656,113 +595,111 @@
 
                                                 </div>
                                             </div>
-
-
-
                                             <div class="otp_button_container">
                                                 <button type="button" class="otp_button">
                                                     Generate OTP
                                                 </button>
                                             </div>
-
-
                                             <hr class="Horizontalline" />
-
-
-
-
-                                            <div class="selectHolder_nomine" id="elements">
-                                                <label class="selectHolder_text">
+                                            <div class="selectHolder_nomine  selectHolder_nomine_investment"  id="elements">
+                                                <label class="selectHolder_text selectHolder_text_invester">
                                                     Nominee
                                                 </label>
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-6 jointAccountContainer">
+                                                <div class="col-6 jointAccountContainer ">
 
                                                     <label for="exampleInputPassword1" class="form-label">Would you like
                                                         to add nominee?</label>
-                                                    <div class="btn-group jointAccount_Button_container" id="elements">
-                                                        <label class="btn button_label set-1" onclick="changeclr(this)">
-                                                            <input class="checkbox_button" type="radio" name="type2"
-                                                                value="event1" id="elementoption1" autocomplete="off">
+                                                    <div class="btn-group jointAccount_Button_container nominee_invester "
+                                                        id="accountholder_invester">
+                                                        <label class="btn button_label set-1 yesNo_button_invester "
+                                                            onclick="changeclr(this)" id="elementoption41">
+                                                            <input class="checkbox_button" type="radio" name="type3"
+                                                                value="event1" data-tenures="elementoption41"
+                                                                autocomplete="off" onclick="show2()">
                                                             Yes
                                                         </label>
-                                                        <label class="btn button_label" 
-                                                            onclick="changeclr(this)">
-                                                            <input type="radio" class="checkbox_button" name="type2"
-                                                                value="event2" id="elementoption1" autocomplete="off"
+                                                        <label class="btn button_label yesNo_button_invester active"
+                                                            id="elementoption42">
+                                                            <input type="radio" class="checkbox_button" name="type3"
+                                                                onclick="show1()" value="event2"
+                                                                data-tenures="elementoption42" autocomplete="off"
                                                                 checked> No
                                                         </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="div1" class="Investment_radio_hide">
+
+                                                <div class="row ">
+                                                    <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested">
+
+
+                                                        <div class="textparent textparent_nomine_name_investment">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">Nominee’s
+                                                                name</label>
+                                                            <input type="text" placeholder="Enter name"
+                                                                class="form-control" id="exampleInputPassword1">
+                                                            <div class="textfildicons">
+                                                                <img src="./assets/icons/kyc.svg" alt="icons"
+                                                                    class="icons" />
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested ">
+                                                        <div class="textparent textparent_nomine_name_investment">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">Nominee’s
+                                                                date of birth</label>
+                                                            <input type="text" placeholder="DD/MM/YYYY"
+                                                                class="form-control" id="exampleInputPassword1">
+                                                            <div class="textfildicons">
+                                                                <img src="./assets/icons/calendar.svg" alt="icons"
+                                                                    class="icons" />
+
+                                                            </div>
+
+                                                        </div>
 
                                                     </div>
                                                 </div>
-
-                                            </div>
-
-                                            <div class="row ">
-                                                <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested">
-
-
-                                                    <div class="textparent">
+                                                <div class="row ">
+                                                    <div class="col-12 col-md-6 col-lg-6 col-sm-12 selectdiv_investment">
                                                         <label for="exampleInputPassword1" class="form-label">Nominee’s
-                                                            name</label>
-                                                        <input type="text" placeholder="Enter name" class="form-control"
-                                                            id="exampleInputPassword1">
-                                                        <div class="textfildicons">
-                                                            <img src="./assets/icons/kyc.svg" alt="icons"
-                                                                class="icons" />
+                                                            relation with you</label>
+                                                        <div>
+                                                            <div class="input-group selectCOntainer">
+                                                                <select class="form-select selectox"
+                                                                    aria-label="Default select example">
+                                                                    <option selected> select </option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
 
                                                         </div>
 
                                                     </div>
-
                                                 </div>
 
-                                                <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested">
-                                                    <div class="textparent">
-                                                        <label for="exampleInputPassword1" class="form-label">Nominee’s
-                                                            date of birth</label>
-                                                        <input type="text" placeholder="DD/MM/YYYY" class="form-control"
-                                                            id="exampleInputPassword1">
-                                                        <div class="textfildicons">
-                                                            <img src="./assets/icons/calendar.svg" alt="icons"
-                                                                class="icons" />
-
-                                                        </div>
-
-                                                    </div>
-
+                                                <div class="MMFSLcontainer MMFsl_investment_cont">
+                                                    <p class="message_label">
+                                                        By proceeding you consent to MMFSL to use your KYC details from
+                                                        the
+                                                        CKYC registry/Digilocker to book a fixed deposit
+                                                    </p>
                                                 </div>
+
                                             </div>
-
-                                            <div class="row ">
-                                                <div class="col-12 col-md-6 col-lg-6 col-sm-12 selectdiv">
-                                                    <label for="exampleInputPassword1" class="form-label">Nominee’s
-                                                        relation with you</label>
-                                                    <div>
-                                                        <div class="input-group selectCOntainer">
-                                                            <select class="form-select selectox"
-                                                                aria-label="Default select example">
-                                                                <option selected> select </option>
-                                                                <option value="1">One</option>
-                                                                <option value="2">Two</option>
-                                                                <option value="3">Three</option>
-                                                            </select>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="MMFSLcontainer">
-                                                <p class="message_label">
-                                                    By proceeding you consent to MMFSL to use your KYC details from the
-                                                    CKYC registry/Digilocker to book a fixed deposit
-                                                </p>
-                                            </div>
-
                                             <div class="kyc_Button_container">
                                                 <div class="col-12 ">
                                                     <div class="kycContainer_Button">
@@ -773,22 +710,12 @@
                                                             </div>
                                                             <img alt="arrow" src="./assets/Image/greyArrow.png" />
                                                         </button>
-
                                                     </div>
-
                                                 </div>
                                             </div>
-
                                         </div>
-
                                     </div>
                                 </form>
-
-
-
-
-
-
 
                             </div>
                             <div class="tab-pane fade" role="tabpanel" id="step2" aria-labelledby="step2-tab">
@@ -813,17 +740,9 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
                     </div>
-
-
                 </div>
             </div>
-
         </div>
         <footer>
             <div class="footertext">
@@ -835,22 +754,16 @@
                     deemed to constitute an advice, invitation or solicitation to purchase any products/services of
                     MMFSL. Misuse of any intellectual property, or any other content displayed herein is strictly
                     prohibited.
-
                 </p>
                 <p class="footertextparent">
-                    <span class="footertext"> 2023 Mahindra Finance</span> | CIN-L65921MH1991PLC059642 | <span class="footertext">Privacy Policy</span>
+                    <span class="footertext"> 2023 Mahindra Finance</span> | CIN-L65921MH1991PLC059642 | <span
+                        class="footertext">Privacy Policy</span>
                 </p>
             </div>
         </footer>
-
-
     </div>
 
     <!-- This script got from frontendfreecode.com -->
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
@@ -863,7 +776,6 @@
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl);
             });
-
             //Advance Tabs
             $(".next").click(function () {
                 const nextTabLinkEl = $(".nav-tabs .active")
@@ -883,15 +795,9 @@
                 prevTab.show();
             });
         });
-
-
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-
-
-
-
     <script>
         const trs = document.getElementsByTagName("tr");
         const startWith = 4;
@@ -901,8 +807,6 @@
                 trs[i].classList.toggle('hidden')
             }
         }
-
-
 
         $("#tenureEements :input").click(function () {
             $("#tenureEements :input").each(function () {
@@ -922,8 +826,6 @@
             });
         });
 
-
-
         $("#tenureEement :input").click(function () {
             $("#tenureEement :input").each(function () {
                 if ($(this).is(":checked")) {
@@ -940,10 +842,58 @@
             });
         });
 
+
+
+        $("#accountholder_invester :input").click(function () {
+            $("#accountholder_invester :input").each(function () {
+                if ($(this).is(":checked")) {
+                    var activeData = $(this).attr('data-tenures');
+                    $('#' + activeData).addClass('active');
+
+                    var result = $(this).val();
+                    if (result === "custom") {
+                    }
+                } else {
+                    var activeData = $(this).attr('data-tenures');
+                    $('#' + activeData).removeClass('active');
+                }
+            });
+        });
+
+
+        $("#join_accountholder_invester :input").click(function () {
+            $("#join_accountholder_invester :input").each(function () {
+                if ($(this).is(":checked")) {
+                    var activeData = $(this).attr('data-tenures');
+                    $('#' + activeData).addClass('active');
+
+                    var result = $(this).val();
+                    if (result === "custom") {
+                    }
+                } else {
+                    var activeData = $(this).attr('data-tenures');
+                    $('#' + activeData).removeClass('active');
+                }
+            });
+        });
+
+        $(".nominee_invester :input").click(function () {
+            $(".nominee_invester :input").each(function () {
+                if ($(this).is(":checked")) {
+                    var activeData = $(this).attr('data-tenures');
+                    $('#' + activeData).addClass('active');
+
+                    var result = $(this).val();
+                    if (result === "custom") {
+                    }
+                } else {
+                    var activeData = $(this).attr('data-tenures');
+                    $('#' + activeData).removeClass('active');
+                }
+            });
+        });
     </script>
-
     <script src="./assets/js/investment.js"></script>
-
 </body>
 
 </html>
