@@ -228,7 +228,9 @@
     margin-bottom: 15px;
 }
 
-::-webkit-scrollbar {
+
+
+/* ::-webkit-scrollbar {
     display: none;
 .circleimg.cmpltsvg svg {
     display: none;
@@ -239,4 +241,4 @@
 }
 .circleimg.cmpltsvg {
     background: #C1EFC3;
-}
+} */
