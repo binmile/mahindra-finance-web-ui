@@ -76,3 +76,24 @@
         bottom: 0px;
     }
 }
+
+.circleimg.active path {
+    fill: #FFF;
+}
+.circleimg.active .svg {
+    margin-left: 5px;
+    /* text-align: center; */
+}
+.circleimg svg {
+    margin-left: 5px !important;
+    /* text-align: center; */
+}
+/* .circleimg.active {
+    height: 30px;
+    width: 30px;
+    background: #000;
+    border-radius: 100%;
+}
+.tabdesign svg {
+    margin-left: 5px;
+} */
