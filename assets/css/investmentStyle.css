@@ -32,12 +32,13 @@
     }
     .tenure_investment label:first-child::before {
         content: "";
-        width: 12px;
-        height: 15px;
+        width: 25px;
+        height: 20px;
         position: absolute;
         top: 0;
-        right: 5px;
-        background-image: url('../Image/Vector\ 14.png');
+        right: -5px;
+        /* left: 2px; */
+        background-image: url('../icons/mark.svg');
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -67,3 +68,35 @@
      padding-right: 5px !important;
     }
     
+    .interestContainer_img{
+        width: 30px;
+        height: 15px;
+        margin-right: 0px !important;
+    }
+
+     .seeLess_Button {
+        color: #ffffff;
+        width: 24%;
+    }
+
+    .seeLess_Button_investment{
+        width: auto !important;
+        padding: 0px;
+    }
+
+    .theme_button_red{
+        padding: 0;
+        height: 34px;
+        width: fit-content;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 5px 10px !important;
+    }
+
+    .theme_button_red:hover{
+        color: #FFFFFF;
+    }
+    .theme_button_red img{
+        margin-left: 5px;
+    }
