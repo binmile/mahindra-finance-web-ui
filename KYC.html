@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="tabdesign">
-                                <div class="circleimg">
+                                <div class="circleimg active">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                             <div class="tabdesign">
-                                <div class="circleimg active">
+                                <div class="circleimg ">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -139,126 +139,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="maincom" id="bankdetailsPageRightside">
-                            <div class="maincontant">
-                                <h4 class="bank_detail_mainheading">Please provide your account details</h4>
-                                <p class="bank_detail_subheading">You will receive the repayment amount and interest in this account </p>
-                            </div>
-                            <div class="main-form">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                            <div class="textparent">
-                                                <label for="account_number" class="form-label bankFormLabel">Account
-                                                    number</label>
-                                                <input type="password" class="form-control  bankDetailsFormControl  "
-                                                    id="account_number">
-                                                <div class="errorMessage" id="error_account_number">
-                                                    Please enter a valid account number
-                                                </div>
-                                                <div class="textfildicons">
-                                                    <img src="./assets/Image/account-number.svg" alt="icons"
-                                                        class="icons" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                            <div class="textparent">
-                                                <label for="re_enter_account_number"
-                                                    class="form-label bankFormLabel">Re-enter
-                                                    account number
-                                                    number</label>
-                                                <input type="text" class="form-control  bankDetailsFormControl  "
-                                                    id="re_enter_account_number">
-                                                <div class="errorMessage" id="error_re_enter_account_number">
-                                                    Account number mismatch
-                                                </div>
-                                                <div class="textfildicons">
-                                                    <img src="./assets/Image/account-number.svg" alt="icons"
-                                                        class="icons" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                            <div class="textparent">
-                                                <div class="ifscHeading">
-                                                    <div>
-                                                        <label for="ifsc_code" class="form-label bankFormLabel">IFSC
-                                                            code</label>
-                                                    </div>
-                                                    <div class="ifscLink">
-                                                        <a href=""> Search IFSC </a>
-                                                    </div>
-                                                </div>
-                                                <input type="text" class="form-control  bankDetailsFormControl  "
-                                                    id="ifsc_code">
-                                                <div class="errorMessage" id="error_ifsc_code">
-                                                    This field is required !
-                                                </div>
-                                                <div class="textfildicons">
-                                                    <img src="./assets/Image/Vector.svg" alt="icons" class="icons" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="paymentOptionsMaincontant">Select payment method</div>
+                     
 
-                                <div class="" data-toggle="buttons" id="paymentMethod">
-                                    <label class="boxRadioButton paymentRadioButton" id="paymentOption1">
-                                        <input type="radio" name="type" value="60"
-                                            data-tenure="paymentOption1" autocomplete="off">
-                                            <span><img src="./assets/Image/PaymentLogoA.png" alt="steeper image"
-                                                class="paymentIcon"></span>
-                                                <span>CAMSPay</span>
-                                    </label>
-                                    <label class="boxRadioButton paymentRadioButton" id="paymentOption2">
-                                        <input type="radio" name="type" value="48"
-                                            data-tenure="paymentOption2" autocomplete="off">
-                                            <span><img src="./assets/Image/PaymentRtgsLogo.svg" alt="steeper image"
-                                                class="paymentIcon"></span>
-                                                <span>RTGS/NEFT</span>
-                                    </label>
-                                </div>
 
-                                <div class="check_kyc">
-                                    <div class="kyc_data">
-                                        <input class="form-check-input bankDetailsCheckbox" type="checkbox" value=""
-                                            id="flexCheckDefault" onclick="checkBox()" />
-                                        <label class="form-check-label bankFormcheckLabel" for="flexCheckDefault">
-                                            I/We herby expressly consent to MMFSL to search, download,
-                                            upload/share with central KYC registry/Digilocker & receive
-                                            information through SMS/email on the above registered mobile
-                                            no./email ID for the purpose of KYC compliance
-                                        </label>
-                                    </div>
-                                </div>
-                                <button type="button" class="btn btn-danger bank-details-disabled-button disabled"
-                                    onclick="validate_account()" id="continueButton">Continue
-                                    <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
-                            </div>
-                        </div>
-                        <div class="maincom" id="reviewYourApplicationPageRightside">
-                            <div class="maincontant">
-                                <h4>Review your FD details</h4>
-                            </div>
 
-                            <div class="reviewcard">
-                                fhiuidgdog
-                            </div>
-                            <div class="check_kyc">
-                                <div class="kyc_data">
-                                    <input class="form-check-input" type="checkbox" value="" id="reviewFlexCheckDefault"
-                                        onclick="reviewCheckBox()" />
-                                    <label class="form-check-label bankFormcheckLabel" for="flexCheckDefault">
-                                        I understand and agree to all <a href=""> Terms & conditions </a>
-                                    </label>
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-danger bank-details-disabled-button disabled"
-                                onclick="reviewApplicationContinue()" id="reviewContinueButton">Continue
-                                <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
-                        </div>
+
+
+
+
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
             </div>
