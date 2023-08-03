@@ -21,49 +21,57 @@ $(document).ready(function() {
     });
 });
 
-function handleClick() {
-    const flexSwitchCheckDefault = document.getElementById('flexSwitchCheckDefault');
-    const sapNumberInput = document.getElementById('sapNumberInput');
-
-    if (flexSwitchCheckDefault.checked) {
-        sapNumberInput.style.display = 'none';
-    } else {
-        sapNumberInput.style.display = 'block';
-    }
-}
 
 $(document).ready(function() {
-    $('.box_div').on('input', function() {
+    let prevIndex = -1;
+    $('.box_div').on('keyup', function(e) {
         const currentIndex = $('.box_div').index(this);
-
-        if ($(this).val().trim() !== '') {
-            if (currentIndex < $('.box_div').length - 1) {
-                $('.box_div').eq(currentIndex + 1).focus();
-            }
-        } else {
-            if (currentIndex > 0) {
-                $('.box_div').eq(currentIndex - 1).focus();
+        const inputLength = $(this).val().trim().length;
+        if (e.key === 'Backspace' || (e.keyCode >= 48 && e.keyCode <= 57)) {
+            if (inputLength > 0) {
+                if (currentIndex < $('.box_div').length - 1) {
+                    $('.box_div').eq(currentIndex + 1).focus();
+                    prevIndex = currentIndex + 1;
+                }
+            } else {
+                if (currentIndex > 0) {
+                    $('.box_div').eq(currentIndex - 1).focus();
+                    prevIndex = currentIndex - 1;
+                }
             }
         }
+    });
+
+    $('.box_div').on('click', function() {
+        const currentIndex = $('.box_div').index(this);
+        prevIndex = currentIndex;
     });
 });
 
 
 $(document).ready(function() {
-    $('.box_div_error').on('input', function() {
-
+    let prevIndex = -1;
+    $('.box_div_error').on('keyup', function(e) {
         const currentIndex = $('.box_div_error').index(this);
-
-
-        if ($(this).val().trim() !== '') {
-            if (currentIndex < $('.box_div_error').length - 1) {
-                $('.box_div_error').eq(currentIndex + 1).focus();
-            }
-        } else {
-            if (currentIndex > 0) {
-                $('.box_div_error').eq(currentIndex - 1).focus();
+        const inputLength = $(this).val().trim().length;
+        if (e.key === 'Backspace' || (e.keyCode >= 48 && e.keyCode <= 57)) {
+            if (inputLength > 0) {
+                if (currentIndex < $('.box_div_error').length - 1) {
+                    $('.box_div_error').eq(currentIndex + 1).focus();
+                    prevIndex = currentIndex + 1;
+                }
+            } else {
+                if (currentIndex > 0) {
+                    $('.box_div_error').eq(currentIndex - 1).focus();
+                    prevIndex = currentIndex - 1;
+                }
             }
         }
+    });
+
+    $('.box_div_error').on('click', function() {
+        const currentIndex = $('.box_div_error').index(this);
+        prevIndex = currentIndex;
     });
 });
 document.addEventListener("DOMContentLoaded", function() {
