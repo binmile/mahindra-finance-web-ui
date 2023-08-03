@@ -164,8 +164,11 @@
                                                     number</label>
                                                 <input type="password" class="form-control  bankDetailsFormControl  "
                                                     id="account_number">
-                                                <div class="errorMessage" id="error_account_number">
+                                                <div class="errorMessage" id="error_account_number_not_valid">
                                                     Please enter a valid account number
+                                                </div>
+                                                <div class="errorMessage" id="error_account_number_empty">
+                                                    Please provide Account number
                                                 </div>
                                                 <div class="textfildicons">
                                                     <img src="./assets/Image/account-number.svg" alt="icons"
@@ -181,8 +184,11 @@
                                                     number</label>
                                                 <input type="text" class="form-control  bankDetailsFormControl  "
                                                     id="re_enter_account_number">
-                                                <div class="errorMessage" id="error_re_enter_account_number">
+                                                <div class="errorMessage" id="error_re_enter_account_number_mismatch">
                                                     Account number mismatch
+                                                </div>
+                                                <div class="errorMessage" id="error_re_enter_account_number_empty">
+                                                    Please Re-enter number
                                                 </div>
                                                 <div class="textfildicons">
                                                     <img src="./assets/Image/account-number.svg" alt="icons"
@@ -204,7 +210,7 @@
                                                 <input type="text" class="form-control  bankDetailsFormControl  "
                                                     id="ifsc_code">
                                                 <div class="errorMessage" id="error_ifsc_code">
-                                                    This field is required !
+                                                    Please provide IFSC code
                                                 </div>
                                                 <div class="textfildicons">
                                                     <img src="./assets/Image/Vector.svg" alt="icons" class="icons" />
@@ -443,7 +449,7 @@
         <!-- Edit Modal -->
         <div class="modal fade modalEdit" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content review_modal">
                     <div data-bs-dismiss="modal" aria-label="Close">
                         <img class="review_modal_close_icon" src="./assets/Image/close.png" alt="close">
                     </div>
@@ -456,7 +462,7 @@
                             This will take you to the customize fixed deposit screen, would you like to proceed?
                         </div>
                         <div class="review_button_section">
-                            <button type="button" class="review_edit_modal_button_enable"> yes</button>
+                            <button type="button" class="review_edit_modal_button_enable"> Yes</button>
                             <button type="button" class="review_edit_modal_button_disable" data-bs-dismiss="modal"> No
                             </button>
                         </div>
@@ -468,7 +474,7 @@
         <div class="modal fade TandCmodal" id="termsAndConditionmodal" tabindex="-1"
             aria-labelledby="termsAndConditionmodalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                <div class="modal-content">
+                <div class="modal-content review_modal">
                     <div data-bs-dismiss="modal" aria-label="Close">
                         <img class="review_modal_close_icon" src="./assets/Image/close.png" alt="close">
                     </div>
@@ -624,18 +630,35 @@
             var account_number = document.getElementById("account_number").value;
             var re_enter_account_number = document.getElementById("re_enter_account_number").value;
             var ifsc_code = document.getElementById("ifsc_code").value;
-            if (account_number.length < 9 || account_number === "") {
-                document.getElementById("error_account_number").style.display = "block";
+            if (account_number === ""){
+                document.getElementById("error_account_number_empty").style.display = "block";
+                document.getElementById("error_account_number_not_valid").style.display = "none";
                 document.getElementById("account_number").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_account_number").style.display = "none";
+            }
+            else if (account_number.length < 9 ) {
+                document.getElementById("error_account_number_not_valid").style.display = "block";
+                document.getElementById("error_account_number_empty").style.display = "none";
+                document.getElementById("account_number").style.border = "1px solid red";
+            } 
+            else {
+                // document.getElementById("error_account_number").style.display = "none";
+                document.getElementById("error_account_number_not_valid").style.display = "none";
+                document.getElementById("error_account_number_empty").style.display = "none";
                 document.getElementById("account_number").style.border = "";
             }
-            if (re_enter_account_number !== account_number || re_enter_account_number === "") {
-                document.getElementById("error_re_enter_account_number").style.display = "block";
+            if ( account_number !== "" && account_number.length >= 9  && re_enter_account_number === "") {
+                document.getElementById("error_re_enter_account_number_empty").style.display = "block";
+                document.getElementById("error_re_enter_account_number_mismatch").style.display = "none";
                 document.getElementById("re_enter_account_number").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_re_enter_account_number").style.display = "none";
+            } 
+            else if ( account_number.length >= 9 && re_enter_account_number !== account_number ) {
+                document.getElementById("error_re_enter_account_number_mismatch").style.display = "block";
+                document.getElementById("error_re_enter_account_number_empty").style.display = "none";
+                document.getElementById("account_number").style.border = "1px solid red";
+            } 
+            else {
+                document.getElementById("error_re_enter_account_number_empty").style.display = "none";
+                document.getElementById("error_re_enter_account_number_mismatch").style.display = "none";
                 document.getElementById("re_enter_account_number").style.border = "";
             }
             if (ifsc_code === "") {
