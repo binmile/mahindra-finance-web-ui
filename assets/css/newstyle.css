@@ -2218,3 +2218,20 @@ button.btn-success.btn-successsmaall {
     justify-content: center;
     display: flex;
 }
+
+.completeactive img {
+    height: 30px;
+    width: 30px;
+}
+.circleimg {
+    height: 30px;
+    width: 30px;
+    background: #F4F7FA;
+    border-radius: 100%;
+}
+.circleimg.cmpltsvg svg {
+    display: none;
+}
+.cmpltsvg {
+    background: #C1EFC3 !important;
+}
