@@ -219,12 +219,12 @@
                                         <label for="exampMobile" class="form-label kycLabel">Occupation 
                                             no.</label>
                                         <div class="dropdown-container  drop-container-data">
-                                            <input type="text" class="dropdown-input  drop-input-data" placeholder="Select" onclick="toggleDropdown()">
+                                            <input type="text" class="dropdown-input  drop-input-data drop-input-occupation" placeholder="Select" onclick="toggleDropdownOccupation()">
                                             <div class="input-icon input-icon-data">
                                                 <i class="fas fa-chevron-down" id="dropdown-icon-occupation"></i>
                                             </div>
 
-                                            <div class="custom-dropdown custom-value-data" id="dropdown-options">
+                                            <div class="custom-dropdown custom-value-data custom-dropdown-occupation" id="dropdown-options-occupation">
                                                 <option value="option1 "><i class="fas fa-smile icon "></i>Salaried</option>
                                                 <option value="option2 "><i class="fas fa-heart icon "></i>Self-Employed</option>
                                                 <option value="option3 "><i class="fas fa-star icon "></i>Business</option>
@@ -245,23 +245,24 @@
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-sm-12 ">
-                                    <div class="drop-input-field ">
-                                        <label for="exampPan " class="form-label kycLabel ">Annual income</label>
-                                        <div class="dropdown-container drop-container-data ">
-                                            <input type="text " class="dropdown-input drop-input-data " placeholder="Select ">
-                                            <div class="input-icon input-icon-data ">
-
-                                                <i class="fas fa-chevron-down "></i>
+                                    <div class="drop-input-field">
+                                        <label for="exampMobile" class="form-label kycLabel">Annual income
+                                            </label>
+                                        <div class="dropdown-container drop-container-data-annual">
+                                            <input type="text" class="dropdown-input  drop-input-data drop-input-annual" placeholder="Select" onclick="toggleDropdownannual()">
+                                            <div class="input-icon input-icon-data">
+                                                <i class="fas fa-chevron-down" id="dropdown-icon-annual"></i>
                                             </div>
 
-                                            <div class="custom-dropdown custom-value-data ">
+                                            <div class="custom-dropdown custom-value-data custom-dropdown-annual" id="dropdown-options-annual">
+                                                <option value="option1 "><i class="fas fa-smile icon "></i>7 Lakh</option>
+                                                <option value="option2 "><i class="fas fa-heart icon "></i>5 Lakh</option>
+                                                <option value="option3 "><i class="fas fa-star icon "></i>10 Lakh</option>
 
-                                                <option value="option1 "><i class="fas fa-smile icon "></i>Option 1</option>
-                                                <option value="option2 "><i class="fas fa-heart icon "></i>Option 2</option>
-                                                <option value="option3 "><i class="fas fa-star icon "></i>Option 3</option>
 
                                             </div>
                                         </div>
+
                                     </div>
 
 
@@ -356,7 +357,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="address-details-sec-div">
+                                        <div class="address-details-sec-div ">
                                             <div>
                                                 Is this your current/communication address?
                                             </div>

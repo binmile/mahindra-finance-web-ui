@@ -122,6 +122,15 @@
         width: 100%;
     }
     
+    .drop-container-data-annual {
+        border-radius: 0.25rem;
+        width: 100%;
+    }
+    
+    .drop-container-data-annual:hover .custom-value-data {
+        display: none;
+    }
+    
     .drop-input-data {
         /* padding: 10px 40px 10px 15px; */
         padding: 8px;
