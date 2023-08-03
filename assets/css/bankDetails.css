@@ -63,6 +63,7 @@
 .paymentOptionsMaincontant {
     font-size: 20px;
     font-weight: 500;
+    padding-bottom: 10px;
 }
 
 .reviewcard {
@@ -160,6 +161,9 @@
     font-weight: 800;
     color: #221F20;
     margin-bottom: 18px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
 .reviewModalsubHead {
@@ -167,6 +171,7 @@
     font-weight: 500;
     color: #221F20;
     margin-bottom: 40px;
+    line-height: 24px;
 }
 
 .reviewModalMainsubHead {
@@ -186,13 +191,17 @@
 }
 
 .TandCmodal {
-    margin-top: 5.5%;
     height: 800px;
     overflow: hidden;
 }
 
 .modalEdit{
     overflow: hidden;
+}
+
+.review_modal{
+    border-radius: 8px;
+    margin:auto;
 }
 
 .reviewModalBody{
@@ -228,17 +237,6 @@
     margin-bottom: 15px;
 }
 
-
-
-/* ::-webkit-scrollbar {
-    display: none;
-.circleimg.cmpltsvg svg {
-    display: none;
+.boxRadioButton {
+    margin-right: 24px;
 }
-.completeactive img {
-    height: 30px;
-    width: 30px;
-}
-.circleimg.cmpltsvg {
-    background: #C1EFC3;
-} */
