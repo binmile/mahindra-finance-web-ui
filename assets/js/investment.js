@@ -51,22 +51,87 @@ function redirectPage() {
     }
 }
 
+
+$("#tenureEements :input").click(function () {
+    $("#tenureEements :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).addClass('active');
+            var result = $(this).val();
+            if (result === "custom") {
+                document.getElementById("CustomMonth").style.display = "block";
+            }
+            validate_account();
+        } else {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).removeClass('active');
+            document.getElementById("CustomMonth").style.display = "none";
+        }
+    });
+});
+
+
+$("#interestEement :input").click(function () {
+    $("#interestEement :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenures');
+            $('#' + activeData).addClass('active');
+            var result = $(this).val();
+            validate_account();
+
+        } else {
+            var activeData = $(this).attr('data-tenures');
+            $('#' + activeData).removeClass('active');
+        }
+    });
+});
+
+
+
 function show1(){
-    document.getElementById('div1').style.display ='none';
+    document.getElementById('div1').style.display ='block';
   }
   function show2(){
-    document.getElementById('div1').style.display = 'block';
+    document.getElementById('div1').style.display = 'none';
+  } 
+
+
+  function accountshow1(){
+    document.getElementById('holder1').style.display ='block';
+  }
+  function accountshow2(){
+    document.getElementById('holder1').style.display = 'none';
   }
 
+
+
 //   function validate_account() {
-//     var amount = document.getElementById("amountNo").value;
-//     if (amount < 10000 || amount >= 50000000 || amount === "") {
+//     var amount = parseInt(document.getElementById("amountNo").value);
+//     var tenureValue = document.querySelector('input[name="tenure"]:checked').value;
+//     var interestEementValue = document.querySelector('input[name="interest"]:checked').value;
+
+//     if (amount < 10000 || amount > 50000000 || amount ==="") {
 //         document.getElementById("error_account_number").style.color = "red";
 //         document.getElementById("amountNo").style.border = "1px solid red";
 //     } 
 //     else {
 //         document.getElementById("error_account_number").style.color = "black";
 //         document.getElementById("amountNo").style.border = "";
-//         redirectPage()
+//     }
+
+
+//     if(tenureValue === ""){
+//         alert("not selected month tenure");
+//     }
+
+//     var custommonth = parseInt(document.getElementById("custommonth").value);
+//     if(custommonth < 12 || custommonth > 60 || custommonth ==="")
+//     {
+//         document.getElementById("error_month_number").style.color = "red";
+//         document.getElementById("custommonth").style.border = "1px solid red";
+//     }
+//     else {
+//         document.getElementById("error_month_number").style.color = "black";
+//         document.getElementById("custommonth").style.border = "";
 //     }
 // }

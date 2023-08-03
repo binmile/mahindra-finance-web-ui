@@ -69,7 +69,7 @@
     }
     
     .interestContainer_img{
-        width: 30px;
+        width: 18px;
         height: 15px;
         margin-right: 0px !important;
     }
@@ -122,10 +122,59 @@
     }
 
     .MMFsl_investment_cont{
-        margin-top: 20px;
+        /* margin-top: 20px; */
         margin-bottom: 20px;
     }
 
     .msg_Investment{
         margin-top: 5px;
+    }
+
+    #interestEement {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+  
+    .toggle_investment{
+        cursor: pointer;
+    }
+
+    .customTextfield{
+        padding: 2px;
+        position: absolute;
+        right: auto;
+        top: 40px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+
+    .form-control_amount {
+        padding: 10px 40px 10px 24px;
+        background: #F4F7FA;
+        width: 100%;
+        border: none;
+        
+    }
+
+ 
+    .form-switch .form-check-input:focus:not(:checked) {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
+        border-color: #bbbcbd;
+    }
+
+   
+    input[type='checkbox'] {
+        background-color: #f4f7fa;
+    }
+
+    #holder1{
+        display: none;
+    }
+
+
+    .calender_investment {
+        padding: 10px 1px 10px 15px ;
+        /* background: #F4F7FA;
+        width: 100%; */
     }
