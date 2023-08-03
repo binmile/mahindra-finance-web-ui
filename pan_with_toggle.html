@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/newstyle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/pan-mobile.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/pan_toggle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css" />
 
     <title>Document</title>
@@ -23,12 +24,12 @@
     <div class="container">
         <div class="card">
             <div class="row">
-                <div class="col-md-5 col-lg-5 col-sm-12 d-flex">
+                <div class="col-md-5 col-lg-5 col-sm-12">
                     <div class="leftside leftPanDetails leftPanBackGround">
                         <div class="logo">
                             <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
                         </div>
-                        <div class="leftcard pan-left">
+                        <div class="leftcard pan-toggle">
                             <div class=" leftcard-contant">
                                 <div class="wrapper_div">
                                     <div class="main_left_div">
@@ -68,23 +69,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="img_div img-div">
+                                        <div class="img_div img-div img-div-toggle">
                                             <img src="./assets/Image/highest_safty.png" alt="brand image" class="image_data" />
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="strapper_div strapper-div">
-                                    <div class="card_div_data card-div-data">
-                                        <div class="card_first_content card-first-content">
-                                            Additional interest rates for M&M group company employees, employee relatives, retired employees & their relatives.
-                                        </div>
-                                        <div class="card_second_content card-second-content">
-                                            0.35%
-                                        </div>
-                                    </div>
 
-                                </div>
 
                             </div>
 
@@ -94,9 +85,9 @@
 
                 </div>
                 <div class="col-md-7 col-lg-7 col-sm-12">
-                    <div class="maincontant-m  maincontant-right">
+                    <div class="maincontant-m  maincontant-right toggle-maine-right">
                         <div class="maincontant_data">
-                            <h2 class="invest_fixed">Verify mobile & PAN</h2>
+                            <h2 class="invest_fixed  invest_fixed_toggle">Verify mobile & PAN</h2>
 
                         </div>
                         <div class="main-form">
@@ -127,19 +118,6 @@
                                         <div class="errorText" id="validationMessage_pan"></div>
                                     </div>
                                 </div>
-
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="textparent" id="sapNumberInput">
-                                        <label for="exampSap" class="form-label">SAP Code</label>
-                                        <input type="text" class="form-control form-control-input" aria-label="Recipient's pan " aria-describedby="basic-addon2 " placeholder="Enter your sap number" autocomplete="off">
-                                        <div class="textfildicons ">
-                                            <img src="./assets/Image/Union.svg " alt="icons " class="icons ">
-                                        </div>
-                                        <div class="errorText" id="validationMessage_sap"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-check form-switch">
                                         <input class="form-check-input form-switch-input form-checkbox" type="checkbox" id="flexSwitchCheckDefault">
@@ -147,9 +125,8 @@
                                     </div>
                                 </div>
 
-
                                 <div class=" col-sm-12 col-md-12 ">
-                                    <ul class="check_kyc_data check-kyc-value">
+                                    <ul class="check_kyc_data check-kyc-value pan-toggle-check-kyc">
                                         <li class="checkInput ">
                                             <input class="form-check-input inputPan" type="checkbox" value="" id="flexCheckDefault">
                                         </li>
@@ -161,15 +138,12 @@
                                     </ul>
                                 </div>
 
-                                <div class="geberate_otp first_button first-button-data">
+                                <div class="geberate_otp first_button first-button-data  first-button-data-toggle">
                                     <button type="submit" id="submitButton" class="btn btn-danger newsubmitbtn_first custom-button-data">Generate OTP
                                         <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right-icon" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg>
                                     </button>
 
                                 </div>
-
-
-
                             </div>
                         </div>
 
