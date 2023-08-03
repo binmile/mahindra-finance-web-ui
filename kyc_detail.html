@@ -389,14 +389,13 @@
                                     <div class="drop-input-field ">
                                         <label for="exampMobile " class="form-label kycLabel ">Occupation 
                                             no.</label>
-                                        <div class="dropdown-container drop-container-data ">
-                                            <input type="text " class="dropdown-input drop-input-data " placeholder="Select ">
-                                            <div class="input-icon input-icon-data ">
-
-                                                <i class="fas fa-chevron-down "></i>
+                                        <div class="dropdown-container  drop-container-data">
+                                            <input type="text" class="dropdown-input  drop-input-data drop-input-occupation" placeholder="Select" onclick="toggleDropdownOccupation()">
+                                            <div class="input-icon input-icon-data">
+                                                <i class="fas fa-chevron-down" id="dropdown-icon-occupation"></i>
                                             </div>
 
-                                            <div class="custom-dropdown custom-value-data ">
+                                            <div class="custom-dropdown custom-value-data custom-dropdown-occupation" id="dropdown-options-occupation">
                                                 <option value="option1 "><i class="fas fa-smile icon "></i>Salaried</option>
                                                 <option value="option2 "><i class="fas fa-heart icon "></i>Self-Employed</option>
                                                 <option value="option3 "><i class="fas fa-star icon "></i>Business</option>

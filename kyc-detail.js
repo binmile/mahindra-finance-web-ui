@@ -63,3 +63,35 @@ optionsannual.forEach(option => {
         selectOptionAnnual(this);
     });
 });
+
+
+function toggleDropdownannual2() {
+    var dropdownOptions = document.getElementById("dropdown-options-annual2");
+    var dropdownIcon = document.getElementById("dropdown-icon-annual2");
+
+    dropdownOptions.style.display = "block";
+    dropdownIcon.style.transform = "rotate(180deg)";
+}
+
+function selectOptionAnnual2(option) {
+    const selectedOptionText = option.textContent.trim();
+    const selectedOptionIcon = option.querySelector(".icon").classList.value;
+    const dropdownInput = document.querySelector(".drop-input-annual2");
+    const dropdownIcon = document.getElementById("dropdown-icon-annual2");
+    const dropdownOptions = document.getElementById("dropdown-options-annual2");
+
+    dropdownInput.value = selectedOptionText;
+    dropdownInput.setAttribute("data-icon", selectedOptionIcon);
+
+    dropdownIcon.classList.remove("fa-chevron-up");
+    dropdownIcon.classList.add("fa-chevron-down");
+    dropdownOptions.style.display = "none";
+    dropdownIcon.style.transform = "rotate(0deg)";
+}
+
+const optionsannual2 = document.querySelectorAll(".custom-dropdown-annual2 option");
+optionsannual2.forEach(option => {
+    option.addEventListener("click", function() {
+        selectOptionAnnual2(this);
+    });
+});
