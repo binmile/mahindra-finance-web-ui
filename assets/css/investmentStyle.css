@@ -32,12 +32,13 @@
     }
     .tenure_investment label:first-child::before {
         content: "";
-        width: 12px;
-        height: 15px;
+        width: 25px;
+        height: 20px;
         position: absolute;
         top: 0;
-        right: 5px;
-        background-image: url('../Image/Vector\ 14.png');
+        right: -5px;
+        /* left: 2px; */
+        background-image: url('../icons/mark.svg');
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -67,3 +68,113 @@
      padding-right: 5px !important;
     }
     
+    .interestContainer_img{
+        width: 18px;
+        height: 15px;
+        margin-right: 0px !important;
+    }
+
+     .seeLess_Button {
+        color: #ffffff;
+        width: 24%;
+    }
+
+    .seeLess_Button_investment{
+        width: auto !important;
+        padding: 0px;
+    }
+
+    .theme_button_red{
+        padding: 0;
+        height: 34px;
+        width: fit-content;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 5px 10px !important;
+    }
+
+    .theme_button_red:hover{
+        color: #FFFFFF;
+    }
+    .theme_button_red img{
+        margin-left: 5px;
+    }
+
+    .jointAccount_Button_container_investment{
+        padding: 0px;
+    }
+    .textparent_mob_investment{
+        margin: 0px;
+    }
+
+    .selectHolder_nomine_investment{
+        margin-bottom: 30px;
+    }
+
+    .selectdiv_investment {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .textparent_nomine_name_investment{
+        margin-bottom: 20px;
+    }
+
+    .MMFsl_investment_cont{
+        /* margin-top: 20px; */
+        margin-bottom: 20px;
+    }
+
+    .msg_Investment{
+        margin-top: 5px;
+    }
+
+    #interestEement {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+  
+    .toggle_investment{
+        cursor: pointer;
+    }
+
+    .customTextfield{
+        padding: 2px;
+        position: absolute;
+        right: auto;
+        top: 40px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+
+    .form-control_amount {
+        padding: 10px 40px 10px 24px;
+        background: #F4F7FA;
+        width: 100%;
+        border: none;
+        
+    }
+
+ 
+    .form-switch .form-check-input:focus:not(:checked) {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
+        border-color: #bbbcbd;
+    }
+
+   
+    input[type='checkbox'] {
+        background-color: #f4f7fa;
+    }
+
+    #holder1{
+        display: none;
+    }
+
+
+    .calender_investment {
+        padding: 10px 1px 10px 15px ;
+        /* background: #F4F7FA;
+        width: 100%; */
+    }

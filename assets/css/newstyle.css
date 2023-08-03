@@ -2145,6 +2145,8 @@ p.btntxt-second {
 }
 .smallcard {
     padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 12px 0px #0000001A;
 }
 .smallcardheading img {
     text-align: center;
@@ -2154,7 +2156,8 @@ p.btntxt-second {
 }
 .smallcardheading p {
     margin: 0px;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 20px;
 }
 .mainshaper{
     background: #fff;
@@ -2200,4 +2203,35 @@ button.btn-success.btn-successsmaall {
     position: absolute;
     top: 74px;
     width: 100%;
+}
+
+.leftColHeading.success {
+    color: #ffff;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.leftcardsuccess {
+    margin: auto;
+    padding: 100px 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.completeactive img {
+    height: 30px;
+    width: 30px;
+}
+.circleimg {
+    height: 30px;
+    width: 30px;
+    background: #F4F7FA;
+    border-radius: 100%;
+}
+.circleimg.cmpltsvg svg {
+    display: none;
+}
+.cmpltsvg {
+    background: #C1EFC3 !important;
 }

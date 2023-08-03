@@ -65,7 +65,12 @@
                     <div class="bankmain">
                         <div class="tabparent" id="myDIV">
                             <div class="tabdesign">
-                                <div class="circleimg">
+                                <div class="circleimg cmpltsvg">
+                                    <div class="completeactive">
+                                        <img src="./assets/image-main/completed.svg " alt="  Know More" class="img_tag">
+
+
+                                    </div>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.952148 2.61905H19.0474V15.7143H0.952148V2.61905ZM2.38072 4.04762V14.2857H17.6188V4.04762H2.38072Z" fill="#221F20"/>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 8.21428C9.47411 8.21428 9.04771 8.64068 9.04771 9.16667C9.04771 9.69265 9.47411 10.119 10.0001 10.119C10.5261 10.119 10.9525 9.69265 10.9525 9.16667C10.9525 8.64068 10.5261 8.21428 10.0001 8.21428ZM7.61914 9.16667C7.61914 7.8517 8.68513 6.78571 10.0001 6.78571C11.3151 6.78571 12.381 7.8517 12.381 9.16667C12.381 10.4816 11.3151 11.5476 10.0001 11.5476C8.68513 11.5476 7.61914 10.4816 7.61914 9.16667Z" fill="#221F20"/>
@@ -80,7 +85,12 @@
                                 </div>
                             </div>
                             <div class="tabdesign">
-                                <div class="circleimg">
+                                <div class="circleimg cmpltsvg">
+                                    <div class="completeactive">
+                                        <img src="./assets/image-main/completed.svg " alt="  Know More" class="img_tag">
+
+
+                                    </div>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -142,7 +152,8 @@
                         <div class="maincom" id="bankdetailsPageRightside">
                             <div class="maincontant">
                                 <h4 class="bank_detail_mainheading">Please provide your account details</h4>
-                                <p class="bank_detail_subheading">You will receive the repayment amount and interest in this account </p>
+                                <p class="bank_detail_subheading">You will receive the repayment amount and interest in
+                                    this account </p>
                             </div>
                             <div class="main-form">
                                 <form>
@@ -153,8 +164,11 @@
                                                     number</label>
                                                 <input type="password" class="form-control  bankDetailsFormControl  "
                                                     id="account_number">
-                                                <div class="errorMessage" id="error_account_number">
+                                                <div class="errorMessage" id="error_account_number_not_valid">
                                                     Please enter a valid account number
+                                                </div>
+                                                <div class="errorMessage" id="error_account_number_empty">
+                                                    Please provide Account number
                                                 </div>
                                                 <div class="textfildicons">
                                                     <img src="./assets/Image/account-number.svg" alt="icons"
@@ -170,8 +184,11 @@
                                                     number</label>
                                                 <input type="text" class="form-control  bankDetailsFormControl  "
                                                     id="re_enter_account_number">
-                                                <div class="errorMessage" id="error_re_enter_account_number">
+                                                <div class="errorMessage" id="error_re_enter_account_number_mismatch">
                                                     Account number mismatch
+                                                </div>
+                                                <div class="errorMessage" id="error_re_enter_account_number_empty">
+                                                    Please Re-enter number
                                                 </div>
                                                 <div class="textfildicons">
                                                     <img src="./assets/Image/account-number.svg" alt="icons"
@@ -193,7 +210,7 @@
                                                 <input type="text" class="form-control  bankDetailsFormControl  "
                                                     id="ifsc_code">
                                                 <div class="errorMessage" id="error_ifsc_code">
-                                                    This field is required !
+                                                    Please provide IFSC code
                                                 </div>
                                                 <div class="textfildicons">
                                                     <img src="./assets/Image/Vector.svg" alt="icons" class="icons" />
@@ -206,18 +223,18 @@
 
                                 <div class="" data-toggle="buttons" id="paymentMethod">
                                     <label class="boxRadioButton paymentRadioButton" id="paymentOption1">
-                                        <input type="radio" name="type" value="60"
-                                            data-tenure="paymentOption1" autocomplete="off">
-                                            <span><img src="./assets/Image/PaymentLogoA.png" alt="steeper image"
+                                        <input type="radio" name="type" value="60" data-tenure="paymentOption1"
+                                            autocomplete="off">
+                                        <span><img src="./assets/Image/PaymentLogoA.png" alt="steeper image"
                                                 class="paymentIcon"></span>
-                                                <span>CAMSPay</span>
+                                        <span>CAMSPay</span>
                                     </label>
                                     <label class="boxRadioButton paymentRadioButton" id="paymentOption2">
-                                        <input type="radio" name="type" value="48"
-                                            data-tenure="paymentOption2" autocomplete="off">
-                                            <span><img src="./assets/Image/PaymentRtgsLogo.svg" alt="steeper image"
+                                        <input type="radio" name="type" value="48" data-tenure="paymentOption2"
+                                            autocomplete="off">
+                                        <span><img src="./assets/Image/PaymentRtgsLogo.svg" alt="steeper image"
                                                 class="paymentIcon"></span>
-                                                <span>RTGS/NEFT</span>
+                                        <span>RTGS/NEFT</span>
                                     </label>
                                 </div>
 
@@ -238,20 +255,186 @@
                                     <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
                             </div>
                         </div>
-                        <div class="maincom" id="reviewYourApplicationPageRightside">
+                        <div class="maincom " id="reviewYourApplicationPageRightside">
                             <div class="maincontant">
-                                <h4>Review your FD details</h4>
+                                <h4 class="bank_detail_mainheading">Review your FD details</h4>
                             </div>
-
                             <div class="reviewcard">
-                                fhiuidgdog
+                                <div class="row">
+                                    <div class="reviewCardbadgesRow">
+                                        <div class="reviewCardbadge">
+                                            Investment details
+                                        </div>
+                                        <button class="reviewCardEdit" type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#editModal">
+                                            <img src="./assets/Image/editIcon.svg" alt="edit"> Edit
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-6 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Approved amount
+                                            </div>
+                                            <div class="reviewCardLargeContent">
+                                                <img src="./assets/icons/money.svg" alt="edit"
+                                                    class="review_tab_img">₹15,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-6 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Maturity amount
+                                            </div>
+                                            <div class="reviewCardLargeContent">
+                                                <img src="./assets/icons/money.svg" alt="edit"
+                                                    class="review_tab_img">₹20,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-sm-6 d-flex mb-3">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Tenure
+                                            </div>
+                                            <div class="reviewCardSmallContent">
+                                                <img src="./assets/icons/tenure.svg" alt="tabimg"
+                                                    class="review_tab_img"> 48 Months
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-6 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Rate of interest
+                                            </div>
+                                            <div class="reviewCardSmallContent">
+                                                <img src="./assets/icons/interest.svg" alt="tabimg"
+                                                    class="review_tab_img"> 8.30%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-6 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Interest payout
+                                            </div>
+                                            <div class="reviewCardSmallContent">
+                                                <img src="./assets/icons/interest_maturity.svg" alt="tabimg"
+                                                    class="review_tab_img"> On maturity
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-6 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Maturity date
+                                            </div>
+                                            <div class="reviewCardSmallContent">
+                                                <img src="./assets/icons/calendar.svg" alt="tabimg"
+                                                    class="review_tab_img"> 28 Jul 2027
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-6 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Maturity instructions
+                                            </div>
+                                            <div class="reviewCardSmallContent">
+                                                <img src="./assets/icons/auto_renewal.svg" alt="tabimg"
+                                                    class="review_tab_img"> Auto renewal
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviewcard">
+                                <div class="row">
+                                    <div class="reviewCardbadgesRow">
+                                        <div class="reviewCardbadge">
+                                            Nominee details
+                                        </div>
+                                        <button class="reviewCardEdit" type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#editModal">
+                                            <img src="./assets/Image/editIcon.svg" alt="edit"> Edit
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-4 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Nominee name
+                                            </div>
+                                            <div class="reviewCardSmallContent">
+                                                <img src="./assets/icons/kyc.svg" alt="edit" class="review_tab_img">Ved
+                                                Prakash Sahu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-4 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Relation
+                                            </div>
+                                            <div class="reviewCardSmallContent">
+                                                <img src="./assets/icons/kyc.svg" alt="edit"
+                                                    class="review_tab_img">Father
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-4 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Date of birth
+                                            </div>
+                                            <div class="reviewCardSmallContent">
+                                                <img src="./assets/icons/calendar.svg" alt="edit"
+                                                    class="review_tab_img">15 may 1990
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviewcard">
+                                <div class="row">
+                                    <div class="reviewCardbadgesRow">
+                                        <div class="reviewCardbadge">
+                                            Contact details
+                                        </div>
+                                        <button class="reviewCardEdit" type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#editModal">
+                                            <img src="./assets/Image/editIcon.svg" alt="edit"> Edit
+                                        </button>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8 col-sm-8 d-flex">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Email
+                                            </div>
+                                            <div class="reviewCardSmallContent">
+                                                <img src="./assets/icons/email.svg" alt="edit"
+                                                    class="review_tab_img">vikram.sahu@gmail.com
+                                            </div>
+                                            <div class="reviewCardHead ">
+                                                Your fixed deposit receipt will be sent to this email ID
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="check_kyc">
                                 <div class="kyc_data">
                                     <input class="form-check-input" type="checkbox" value="" id="reviewFlexCheckDefault"
                                         onclick="reviewCheckBox()" />
                                     <label class="form-check-label bankFormcheckLabel" for="flexCheckDefault">
-                                        I understand and agree to all <a href=""> Terms & conditions </a>
+                                        I understand and agree to all
+                                        <button class="reviewCardEdit" type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#termsAndConditionmodal"> Terms &
+                                            conditions
+                                        </button>
                                     </label>
                                 </div>
                             </div>
@@ -263,13 +446,160 @@
                 </div>
             </div>
         </div>
+        <!-- Edit Modal -->
+        <div class="modal fade modalEdit" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content review_modal">
+                    <div data-bs-dismiss="modal" aria-label="Close">
+                        <img class="review_modal_close_icon" src="./assets/Image/close.png" alt="close">
+                    </div>
+                    <div class="modal-body reviewModalBody">
+                        <div class="reviewModalHead">
+                            <img src="./assets/icons/alert.svg" alt="edit" class="review_tab_img">Edit fixed deposit
+                            details
+                        </div>
+                        <div class="reviewModalsubHead">
+                            This will take you to the customize fixed deposit screen, would you like to proceed?
+                        </div>
+                        <div class="review_button_section">
+                            <button type="button" class="review_edit_modal_button_enable"> Yes</button>
+                            <button type="button" class="review_edit_modal_button_disable" data-bs-dismiss="modal"> No
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Terms and condition  Modal -->
+        <div class="modal fade TandCmodal" id="termsAndConditionmodal" tabindex="-1"
+            aria-labelledby="termsAndConditionmodalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content review_modal">
+                    <div data-bs-dismiss="modal" aria-label="Close">
+                        <img class="review_modal_close_icon" src="./assets/Image/close.png" alt="close">
+                    </div>
+                    <div class="modal-body reviewModalBody">
+                        <div class="reviewModalHead">Terms & conditions governing fixed deposit schemes</div>
+                        <div class="reviewModalMainsubHead">
+                            ACCEPTANCE OF DEPOSITS:
+                        </div>
+                        <div class="reviewModalsubHead_TandC">
+                            The minimumamount, period and rate of interest scheme is indicated on the cover page. The
+                            Company will not entertain any request for change once the scheme is selected. Where the
+                            scheme choice is not indicated in
+                            the Application Form, the deposit will be treated as place in Cumulative Scheme for the
+                            highest tenure. Senior Citizen"' (60 year and above), will get an additional rate of 0.25%
+                            per annum and Employee/ Employees'
+                            relatives and Retired Employees/ Retired Employees' relatives will get an additional rate of
+                            0.35% per annum (All M&M Group Company Employees.)<br />
+
+                            Interest on Fixed Deposits will commence from the date of realisation of cheque/ demand
+                            draft/ Amount by the Company.The third party cheque/fund transfers are not allowed. Funds
+                            received from third party, on
+                            identification, shall be transferred back to the same account without interest & no FDR
+                            willbecreated for such applications.<br />
+
+                            Any Change in Name, Address, Bank Mandate, Bank Particulars etc. should be lodged with the
+                            offices of the fixed deposit processing centre, atleast 15 days before thedate on which any
+                            payment falls due toavoid delay for
+                            dispatching FDR/interest/MaturityPayment.<br />
+                            Interest onthe Fixed Deposit will cease toaccrue from the maturity date of the
+                            deposit.<br />
+
+                            The Board of Directors of the Company reserves the right to change /alter /modify all or any
+                            of the Fixed Deposit schemes without prior notice.<br />
+
+                            MICR Code and NEFT are mandatory for all deposit and a copy of Personalized cancelled cheque
+                            copy is to be attached along with the
+
+                            application. In case of deposit cheque being from adifferent bank account other than that of
+                            the firstdepositor, Personalized cancelled cheque copy of the first depositor bank account
+                            to be furnished.<br />
+
+                            If the KYC documents are incomplete then, the forms will be rejected and returned without
+                            interest within 30 days, so please provide thecorrect document proofs. Please provide your
+                            mobile number and E-mail JD for
+                            faster communication,KYC documents of alt the deposit holders should
+
+                            beattached and should beself attested
+
+                            i) Kindly send all your documents to our FD processing centre at Chennai office for faster
+                            response. Please do not send any of your FD related documents to any other address. Company
+                            will not be responsible for any
+                            delay or misplacement of documents which are sent to other office/ branch addresses of the
+                            Company.
+
+                            Prevailing FD rates are displayed on our website www.mahindrafinance.comyou are advised to
+                            visit our website to know more details.<br />
+                        </div>
+                        <div class="reviewModalMainsubHead">
+                            INDENTIFICATION OF DEPOSITORS:
+                        </div>
+                        <div class="reviewModalsubHead_TandC">
+                            The minimumamount, period and rate of interest scheme is indicated on the cover page. The
+                            Company will not entertain any request for change once the scheme is selected. Where the
+                            scheme choice is not indicated in
+                            the Application Form, the deposit will be treated as place in Cumulative Scheme for the
+                            highest tenure. Senior Citizen"' (60 year and above), will get an additional rate of 0.25%
+                            per annum and Employee/ Employees'
+                            relatives and Retired Employees/ Retired Employees' relatives will get an additional rate of
+                            0.35% per annum (All M&M Group Company Employees.)<br />
+
+                            Interest on Fixed Deposits will commence from the date of realisation of cheque/ demand
+                            draft/ Amount by the Company.The third party cheque/fund transfers are not allowed. Funds
+                            received from third party, on
+                            identification, shall be transferred back to the same account without interest & no FDR
+                            willbecreated for such applications.<br />
+
+                            Any Change in Name, Address, Bank Mandate, Bank Particulars etc. should be lodged with the
+                            offices of the fixed deposit processing centre, atleast 15 days before thedate on which any
+                            payment falls due toavoid delay for
+                            dispatching FDR/interest/MaturityPayment.<br />
+                            Interest onthe Fixed Deposit will cease toaccrue from the maturity date of the
+                            deposit.<br />
+
+                            The Board of Directors of the Company reserves the right to change /alter /modify all or any
+                            of the Fixed Deposit schemes without prior notice.<br />
+
+                            MICR Code and NEFT are mandatory for all deposit and a copy of Personalized cancelled cheque
+                            copy is to be attached along with the
+
+                            application. In case of deposit cheque being from adifferent bank account other than that of
+                            the firstdepositor, Personalized cancelled cheque copy of the first depositor bank account
+                            to be furnished.<br />
+
+                            If the KYC documents are incomplete then, the forms will be rejected and returned without
+                            interest within 30 days, so please provide thecorrect document proofs. Please provide your
+                            mobile number and E-mail JD for
+                            faster communication,KYC documents of alt the deposit holders should
+
+                            beattached and should beself attested
+
+                            i) Kindly send all your documents to our FD processing centre at Chennai office for faster
+                            response. Please do not send any of your FD related documents to any other address. Company
+                            will not be responsible for any
+                            delay or misplacement of documents which are sent to other office/ branch addresses of the
+                            Company.
+
+                            Prevailing FD rates are displayed on our website www.mahindrafinance.comyou are advised to
+                            visit our website to know more details.<br />
+                        </div>
+                    </div>
+                    <div class="modal-footer review_button_section_TandC">
+                        <button type="button" class="review_edit_modal_button_enable_TandC" data-bs-dismiss="modal">I
+                            Understand</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <div class="footertext">
                 <p>
                     The products, services and offers referred to herein are subject to the terms and conditions
                     governing them as specified by Mahindra & Mahindra Financial Services Ltd (MMFSL) on actual Loan
                     Agreement documents. All deposits, associated benefits, features etc stated herein are by way of
-                    example and offered at the sole discretion of MMFSL. Nothing contained herein shall constitute or be
+                    example and offered at the sole discretion of MMFSL. Nothing contained herein shall constitute
+                    or be
                     deemed to constitute an advice, invitation or solicitation to purchase any products/services of
                     MMFSL. Misuse of any intellectual property, or any other content displayed herein is strictly
                     prohibited.
@@ -300,18 +630,35 @@
             var account_number = document.getElementById("account_number").value;
             var re_enter_account_number = document.getElementById("re_enter_account_number").value;
             var ifsc_code = document.getElementById("ifsc_code").value;
-            if (account_number.length < 9 || account_number === "") {
-                document.getElementById("error_account_number").style.display = "block";
+            if (account_number === ""){
+                document.getElementById("error_account_number_empty").style.display = "block";
+                document.getElementById("error_account_number_not_valid").style.display = "none";
                 document.getElementById("account_number").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_account_number").style.display = "none";
+            }
+            else if (account_number.length < 9 ) {
+                document.getElementById("error_account_number_not_valid").style.display = "block";
+                document.getElementById("error_account_number_empty").style.display = "none";
+                document.getElementById("account_number").style.border = "1px solid red";
+            } 
+            else {
+                // document.getElementById("error_account_number").style.display = "none";
+                document.getElementById("error_account_number_not_valid").style.display = "none";
+                document.getElementById("error_account_number_empty").style.display = "none";
                 document.getElementById("account_number").style.border = "";
             }
-            if (re_enter_account_number !== account_number || re_enter_account_number === "") {
-                document.getElementById("error_re_enter_account_number").style.display = "block";
+            if ( account_number !== "" && account_number.length >= 9  && re_enter_account_number === "") {
+                document.getElementById("error_re_enter_account_number_empty").style.display = "block";
+                document.getElementById("error_re_enter_account_number_mismatch").style.display = "none";
                 document.getElementById("re_enter_account_number").style.border = "1px solid red";
-            } else {
-                document.getElementById("error_re_enter_account_number").style.display = "none";
+            } 
+            else if ( account_number.length >= 9 && re_enter_account_number !== account_number ) {
+                document.getElementById("error_re_enter_account_number_mismatch").style.display = "block";
+                document.getElementById("error_re_enter_account_number_empty").style.display = "none";
+                document.getElementById("account_number").style.border = "1px solid red";
+            } 
+            else {
+                document.getElementById("error_re_enter_account_number_empty").style.display = "none";
+                document.getElementById("error_re_enter_account_number_mismatch").style.display = "none";
                 document.getElementById("re_enter_account_number").style.border = "";
             }
             if (ifsc_code === "") {
