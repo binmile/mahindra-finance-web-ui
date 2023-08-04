@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/newstyle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/pan-mobile.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css" />
-
     <title>Document</title>
 
 </head>
@@ -110,9 +109,14 @@
                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                     <div class="textparent">
                                         <label for="exampMobile" class="form-label mobileLabel">Mobile
-                                                no.</label>
+                                                    no.</label>
                                         <input type="text" class="form-control form-control-input" aria-label="Recipient 's username" aria-describedby="basic-addon2" placeholder="Enter your mobile number" id="mobileNumberInput" maxlength="10" autocomplete="off">
-
+                                        <div class="errorMessage" id="error_mobile_number_not_valid">
+                                            Please enter a valid mobile number
+                                        </div>
+                                        <div class="errorMessage" id="error_mobile_number_empty">
+                                            Please enter a 10 digit mobile number
+                                        </div>
                                         <div class="textfildicons">
                                             <img src="./assets/Image/mobile.svg" alt="icons" class="icons">
                                         </div>
@@ -126,6 +130,13 @@
                                     <div class="textparent">
                                         <label for="exampPan" class="form-label panLabel">PAN</label>
                                         <input type="text" class="form-control form-control-input" aria-label="Recipient's pan " maxlength="10" aria-describedby="basic-addon2 " placeholder="Enter your pan number " id="panNumberInput" autocomplete="off">
+                                        <div class="errorMessage" id="error_pan_number_not_valid">
+                                            Please enter a valid PAN
+                                        </div>
+                                        <div class="errorMessage" id="error_pan_number_empty">
+                                            Please enter a valid PAN
+                                        </div>
+
                                         <div class="textfildicons ">
                                             <img src="./assets/Image/pan.svg " alt="icons " class="icons ">
                                         </div>
@@ -154,7 +165,7 @@
                                 <div class=" col-sm-12 col-md-12 ">
                                     <ul class="check_kyc_data check-kyc-value">
                                         <li class="checkInput ">
-                                            <input class="form-check-input inputPan" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input inputPan" type="checkbox" value="" id="flexCheckDefault" onclick="checkBox()">
                                         </li>
                                         <li class="kyc_data_pan ">
                                             <p class="kyc_paragraph ">
@@ -165,15 +176,14 @@
                                 </div>
 
                                 <div class="geberate_otp first_button first-button-data">
-                                    <button type="submit" id="submitButton" disabled="" class="btn btn-danger newsubmitbtn_first custom-button-data custom-button-data-minor">Generate OTP
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right-icon" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg>
-                                    </button>
-
+                                    <button type="submit" id="submitButton" class="btn  newsubmitbtn_first custom-button-data custom-button-data-minor" disabled="" onclick="validate_form()">Generate OTP
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right-icon" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg>
+                                        </button>
                                 </div>
 
-
-
                             </div>
+
+
                         </div>
 
                     </div>
@@ -327,12 +337,9 @@
 
         <script src="./pan_mobile.js ">
         </script>
+
+
+
 </body>
-
-</html>
-
-</html>
-
-</html>
 
 </html>

@@ -16,7 +16,15 @@
                         margin-top: 20px;
                     }
                     
-                    .error-border {
+                    .custom-button-data:hover {
+                        color: #ffffff;
+                    }
+                    
+                    .custom-button-data:focus {
+                        box-shadow: none;
+                    }
+                    
+                    .cudt .error-border {
                         border: 1px solid red;
                         background-color: pink;
                     }
