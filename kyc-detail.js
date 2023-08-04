@@ -95,3 +95,42 @@ optionsannual2.forEach(option => {
         selectOptionAnnual2(this);
     });
 });
+
+function AddNewAddressFieldClose() {
+    document.getElementById("AddNewAddressDropDown").style.display = "none";
+}
+
+function AddNewAddressFieldOpen() {
+    document.getElementById("AddNewAddressDropDown").style.display = "block";
+    var selectedvalue = $("#selectNewAddress").val();
+    if (selectedvalue === "DigiLocker"){
+        $(".drivingLicense").css({"display": "none"});
+        $(".voterId").css({"display": "none"});
+        $(".enterPassport").css({"display": "none"});
+    }
+}
+
+function AddNewAddressFunctionality() {
+    var selectedvalue = $("#selectNewAddress").val();
+    console.log("down",selectedvalue)
+    if (selectedvalue === "DigiLocker"){
+        $(".drivingLicense").css({"display": "none"});
+        $(".voterId").css({"display": "none"});
+        $(".enterPassport").css({"display": "none"});
+    }
+    if (selectedvalue === "Driving License"){
+        $(".drivingLicense").css({"display": "block"});
+        $(".voterId").css({"display": "none"});
+        $(".enterPassport").css({"display": "none"});
+    }
+    if (selectedvalue === "Voter ID"){
+        $(".drivingLicense").css({"display": "none"});
+        $(".voterId").css({"display": "block"});
+        $(".enterPassport").css({"display": "none"});
+    }
+    if (selectedvalue === "Passport Number"){
+        $(".drivingLicense").css({"display": "none"});
+        $(".voterId").css({"display": "none"});
+        $(".enterPassport").css({"display": "block"});
+    }
+}
