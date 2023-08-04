@@ -1,9 +1,9 @@
-$(document).ready(function() {
-    $('#submitButton').click(function() {
-        $('#exampleModal').modal('show');
+// $(document).ready(function() {
+//     $('#submitButton').click(function() {
+//         $('#exampleModal').modal('show');
 
-    });
-});
+//     });
+// });
 
 $(document).ready(function() {
     $('#sub_otp').click(function() {
@@ -134,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
     startTimer(59, timerElement);
 });
 
+
 const mobileNumberInput = document.getElementById('mobileNumberInput');
 const panNumberInput = document.getElementById('panNumberInput');
 const submitButton = document.getElementById('submitButton');
@@ -144,19 +145,24 @@ const validationMessage_pan = document.getElementById('validationMessage_pan');
 let isMobileNumberEditing = false;
 let isPanNumberEditing = false;
 
-mobileNumberInput.addEventListener('input', () => {
+mobileNumberInput.addEventListener('focus', () => {
     isMobileNumberEditing = true;
-    validateInputs();
+    clearErrorMessage(validationMessage_mob);
 });
 
-panNumberInput.addEventListener('input', () => {
+panNumberInput.addEventListener('focus', () => {
     isPanNumberEditing = true;
-    validateInputs();
-
+    clearErrorMessage(validationMessage_pan);
 });
 
-mobileNumberInput.addEventListener('input', () => {
+mobileNumberInput.addEventListener('blur', () => {
+    isMobileNumberEditing = false;
     validateMobileNumber();
+});
+
+panNumberInput.addEventListener('blur', () => {
+    isPanNumberEditing = false;
+    validatePanNumber();
 });
 
 function validateMobileNumber() {
@@ -166,22 +172,14 @@ function validateMobileNumber() {
 
     if (mobileNumberIsValid) {
         validationMessage_mob.textContent = "";
-        validationMessage_mob.style.color = "";
-        mobileNumberInput.classList.remove("error-border"); // Remove the error class
-        document.getElementById("mobileNumberInput").style.border = "";
-        document.getElementById("mobileNumberInput").style.backgroundColor = "#F4F7FA";
+        mobileNumberInput.classList.remove("error-border");
     } else {
-        validationMessage_mob.textContent = "Please enter a 10 digit mobile number.";
-        validationMessage_mob.style.color = "red";
-        mobileNumberInput.classList.add("error-border"); // Remove the error class
-        document.getElementById("mobileNumberInput").style.border = "1px solid red";
-        document.getElementById("mobileNumberInput").style.backgroundColor = "#FFFAFB";
-
+        validationMessage_mob.textContent = "Please enter a 10-digit mobile number.";
+        mobileNumberInput.classList.add("error-border");
     }
 
     return mobileNumberIsValid;
 }
-
 
 function validatePanNumber() {
     const panNumberValue = panNumberInput.value.trim();
@@ -190,21 +188,22 @@ function validatePanNumber() {
 
     if (panNumberIsValid) {
         validationMessage_pan.textContent = "";
-        validationMessage_pan.style.color = "";
-        panNumberInput.classList.remove("error-border"); // Add the error class to the PAN input
-        document.getElementById("panNumberInput").style.border = "";
-        document.getElementById("panNumberInput").style.backgroundColor = "#F4F7FA";
+        panNumberInput.classList.remove("error-border");
     } else {
         validationMessage_pan.textContent = "Please enter a valid PAN.";
-        validationMessage_pan.style.color = "red";
-        panNumberInput.classList.add("error-border"); // Add the error class to the PAN input
-        document.getElementById("panNumberInput").style.border = "1px solid red";
-        document.getElementById("panNumberInput").style.backgroundColor = "#FFFAFB";
-
-
+        panNumberInput.classList.add("error-border");
     }
 
     return panNumberIsValid;
+}
+
+function clearErrorMessage(validationMessage) {
+    validationMessage.textContent = "";
+    if (validationMessage === validationMessage_mob) {
+        mobileNumberInput.classList.remove("error-border");
+    } else if (validationMessage === validationMessage_pan) {
+        panNumberInput.classList.remove("error-border");
+    }
 }
 
 checkbox.addEventListener('change', () => {
@@ -212,10 +211,16 @@ checkbox.addEventListener('change', () => {
 });
 
 function validateInputs() {
-    const mobileNumberIsValid = isMobileNumberEditing ? validateMobileNumber() : false;
-    const panNumberIsValid = isPanNumberEditing ? validatePanNumber() : false;
+    const mobileNumberIsValid = validateMobileNumber();
+    const panNumberIsValid = validatePanNumber();
     const isCheckboxChecked = checkbox.checked;
     submitButton.disabled = !(mobileNumberIsValid && panNumberIsValid && isCheckboxChecked);
 
+    $(document).ready(function() {
+        $('#submitButton').click(function() {
+            $('#exampleModal').modal('show');
+
+        });
+    });
 
 }

@@ -16,6 +16,11 @@
                         margin-top: 20px;
                     }
                     
+                    .error-border {
+                        border: 1px solid red;
+                        background-color: pink;
+                    }
+                    
                     .first-button-data {
                         margin-top: 20px;
                     }
