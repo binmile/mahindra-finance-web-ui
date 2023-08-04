@@ -1,5 +1,5 @@
                     .pan-left {
-                        padding: 2px 40px 20px 40px;
+                        padding: 2px 40px 0px 40px;
                     }
                     
                     .invest_fixed_pan {
@@ -17,7 +17,7 @@
                     }
                     
                     .first-button-data {
-                        margin-top: 20px;
+                        margin-top: 10px;
                     }
                     
                     .fixed-deposit-data {
@@ -44,9 +44,9 @@
                     .vertical-border {
                         position: absolute;
                         border: 1px solid #fff;
-                        height: 200px;
+                        height: 180px;
                         left: 17px;
-                        top: 2px;
+                        top: 0;
                     }
                     
                     .invest-in {
@@ -103,7 +103,7 @@
                     }
                     
                     .maincontant-right {
-                        padding: 50px 40px 50px 20px;
+                        padding: 50px 40px 0px 20px;
                     }
                     
                     .error-border {
@@ -139,6 +139,13 @@
                         letter-spacing: 0px;
                         text-align: left;
                         width: 70%;
+                        white-space: nowrap;
+                    }
+                    
+                    @media screen and (max-width: 450px) {
+                        .circle_content_pan {
+                            white-space: normal;
+                        }
                     }
                     
                     @media screen and (max-width: 767px) {
@@ -151,6 +158,9 @@
                         .img-div {
                             top: 50px;
                             right: 0;
+                        }
+                        .check-kyc-value {
+                            margin-top: 0;
                         }
                     }
                     

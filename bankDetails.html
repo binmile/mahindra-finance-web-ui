@@ -20,6 +20,10 @@
         rel="stylesheet">
     <title>Bank Details</title>
 
+    <style>
+
+    </style>
+
 </head>
 
 <body>
@@ -27,7 +31,7 @@
         <div class="card">
             <div class="bordertop"></div>
             <div class="row">
-                <div class="col-md-12 col-lg-5 col-sm-12 d-flex">
+                <div class="col-md-12 col-lg-5 col-sm-12 custome-d-flex">
                     <div class="leftside bankDetailsLeftSide" id="bankdetailsPageLeftside">
                         <div class="logoImgContainer">
                             <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
@@ -219,22 +223,44 @@
                                         </div>
                                     </div>
                                 </form>
-                                <div class="paymentOptionsMaincontant">Select payment method</div>
+                                <div class="paymentOptionsMaincontant newtopborder">Select payment method</div>
 
                                 <div class="" data-toggle="buttons" id="paymentMethod">
+                                    <!-- <input type="radio" name="type" value="60" data-tenure="paymentOption1"
+                                            autocomplete="off">
                                     <label class="boxRadioButton paymentRadioButton" id="paymentOption1">
-                                        <input type="radio" name="type" value="60" data-tenure="paymentOption1"
-                                            autocomplete="off">
-                                        <span><img src="./assets/Image/PaymentLogoA.png" alt="steeper image"
-                                                class="paymentIcon"></span>
-                                        <span>CAMSPay</span>
+                                        
+                                        <img src="./assets/Image/PaymentLogoA.png" alt="steeper image"
+                                                class="paymentIcon">
+                                        CAMSPay
                                     </label>
+
+
+                                    <input type="radio" name="type" value="48" data-tenure="paymentOption2"
+                                    autocomplete="off">
                                     <label class="boxRadioButton paymentRadioButton" id="paymentOption2">
-                                        <input type="radio" name="type" value="48" data-tenure="paymentOption2"
-                                            autocomplete="off">
+                                       
                                         <span><img src="./assets/Image/PaymentRtgsLogo.svg" alt="steeper image"
                                                 class="paymentIcon"></span>
                                         <span>RTGS/NEFT</span>
+                                    </label> -->
+
+
+
+
+                                    
+
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-1" checked>
+                                    <label class="for-checkbox-tools" for="tool-1">
+                                        <img src="./assets/Image/PaymentLogoA.png" alt="steeper image"
+                                        class="paymentIcon"><br>
+                                        CAMSPay
+                                    </label>
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-2">
+                                    <label class="for-checkbox-tools" for="tool-2">
+                                        <img src="./assets/Image/PaymentRtgsLogo.svg" alt="steeper image"
+                                                class="paymentIcon">
+                                                RTGS/NEFT
                                     </label>
                                 </div>
 

@@ -1,5 +1,5 @@
 .continueButtonEnable {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .bank-details-disabled-button.disabled img {
@@ -23,17 +23,17 @@
 }
 
 .bankDetailsLeftContent {
-    padding: 100px 40px;
+    padding: 100px 25px;
 }
 
 #paymentMethod {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 }
 
 #paymentMethod .paymentRadioButton {
     width: 111px;
-    height: 78px;
+    height: 60px;
     flex-direction: column;
     font-size: 12px;
     font-weight: 600;
@@ -239,4 +239,48 @@
 
 .boxRadioButton {
     margin-right: 24px;
+}
+
+[type="radio"]:checked, [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.checkbox-tools:checked + label {
+    /* background-color: transparent; */
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+    border: 1.5px solid #221F20 !important;
+}
+.checkbox-tools:checked + label, .checkbox-tools:not(:checked) + label {
+    position: relative;
+    display: inline-block;
+    padding: 6px;
+    width: 111px;
+    font-size: 14px;
+    height: 60px;
+    line-height: 20px;
+    margin-right: 24px;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--white);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    border: 1.5px solid #8C989F;
+}
+.paymentIcon {
+    width: 26px;
+    height: auto;
+}
+.newtopborder {
+    border-top: 2px solid #8c989f;
+    padding-top: 20px;
+}
+
+.custome-d-flex{
+display: flex;
 }

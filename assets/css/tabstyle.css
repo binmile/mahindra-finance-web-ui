@@ -1,3 +1,6 @@
+.tabparent::-webkit-scrollbar{
+    display: none;
+  }
 .circleimg {
     height: 30px;
     width: 30px;
@@ -26,7 +29,7 @@
 }
 .tabparent {
     display: flex;
-    margin-top: 20px;
+    margin-top: 15px;
     position: relative;
     margin-left: 26px;
 }
@@ -44,7 +47,7 @@
     border: 2px solid;
     width: 15%;
     position: absolute;
-    bottom: -20px;
+    bottom: -15px;
 }
 .circleimg.active {
     height: 30px;
@@ -53,12 +56,12 @@
     border-radius: 100%;
 }
 @media screen and (max-width:1399px) {
-.tabparent {
-    overflow: auto;
-    margin-right: 50px;
-
-    margin-left: 50px;
-}
+    .tabparent {
+        overflow-x: auto;
+        margin-right: 50px;
+        /* margin-left: 50px; */
+        overflow-y: hidden;
+    }
 }
 
 @media screen and (max-width:767px) {
