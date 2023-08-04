@@ -2264,3 +2264,8 @@
   .cmpltsvg {
       background: #C1EFC3 !important;
   }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1600px) {
+    body {zoom: 90%;}
+} 
