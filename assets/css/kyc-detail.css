@@ -196,6 +196,36 @@
             width: 180px;
         }
         
+        .minor-detail {
+            border-radius: 4px;
+            background-color: #626567;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 102px;
+            margin-top: 35px;
+        }
+        
+        .aadhar_div {
+            margin-top: 30px;
+        }
+        
+        .form-control-input::placeholder {
+            font-size: 16px;
+        }
+        
+        .aadhar_div .btn {
+            padding: 10px 10px 10px 10px;
+            width: 60%;
+            background-color: #E6E7E9;
+            border-color: #E6E7E9;
+            color: #8C989F;
+        }
+        
+        .first_button-minor {
+            margin-top: 0;
+        }
+        
         .account-holder-data {
             font-family: "Lato", sans-serif;
             font-size: 14px;
@@ -350,6 +380,9 @@
                 width: 100%;
             }
             .primary-detail {
+                width: 100%;
+            }
+            .minor-detail {
                 width: 100%;
             }
             .custom-dropdown {
