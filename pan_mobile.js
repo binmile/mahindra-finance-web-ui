@@ -1,10 +1,3 @@
-// $(document).ready(function() {
-//     $('#submitButton').click(function() {
-//         $('#exampleModal').modal('show');
-
-//     });
-// });
-
 $(document).ready(function() {
     $('#sub_otp').click(function() {
         $('#exampleModal2').modal('show');
@@ -155,14 +148,17 @@ panNumberInput.addEventListener('focus', () => {
     clearErrorMessage(validationMessage_pan);
 });
 
+
 mobileNumberInput.addEventListener('blur', () => {
     isMobileNumberEditing = false;
     validateMobileNumber();
+    validateInputs();
 });
 
 panNumberInput.addEventListener('blur', () => {
     isPanNumberEditing = false;
     validatePanNumber();
+    validateInputs();
 });
 
 function validateMobileNumber() {
