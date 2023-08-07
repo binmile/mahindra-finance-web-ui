@@ -10,7 +10,7 @@
         flex-direction: column;
         align-content:center;
         justify-content:space-evenly;
-        justify-items:start;
+        justify-items:center;
         text-align-last: center;
     }
         .boxmaturity_radio_investment input[type='radio'] {
@@ -64,10 +64,18 @@
     .selectHolder_text_invester {
         padding: 0px !important;
      height: 24px !important;
-     padding-left: 5px !important;
-     padding-right: 5px !important;
+     padding-left: 10px !important;
+     padding-right: 10px !important;
+     color: #FFFFFF;
+     font-size: 14px;
+     font-weight: 400px;
+     line-height: 24px;
     }
-    
+      
+    .headingAdditional{
+     margin-top: 3px;
+    }
+
     .interestContainer_img{
         width: 18px;
         height: 15px;
@@ -102,30 +110,33 @@
     }
 
     .jointAccount_Button_container_investment{
-        padding: 0px;
+        padding: 0px !important;
     }
     .textparent_mob_investment{
-        margin: 0px;
+        margin-bottom: 18px;
     }
 
-    .selectHolder_nomine_investment{
-        margin-bottom: 30px;
+    .selectHolder_nomine_container_investment{
+        margin-bottom: 20px;
     }
 
     .selectdiv_investment {
-        margin-top: 20px;
+        margin-top: 13px;
         margin-bottom: 20px;
     }
 
     .textparent_nomine_name_investment{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .MMFsl_investment_cont{
-        /* margin-top: 20px; */
+       margin-top: 30px;
+        margin-bottom: 10px;
+    }
+     
+    .Continue_button_container_investment{
         margin-bottom: 20px;
     }
-
     .msg_Investment{
         margin-top: 5px;
     }
@@ -144,20 +155,19 @@
         padding: 2px;
         position: absolute;
         right: auto;
-        top: 40px;
+        top: 41px;
         padding-left: 12px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .form-control_amount {
         padding: 10px 40px 10px 24px;
         background: #F4F7FA;
         width: 100%;
-        border: none;
-        
+        border: 1px solid #ced4da;
     }
+    
 
- 
     .form-switch .form-check-input:focus:not(:checked) {
         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
         border-color: #bbbcbd;
@@ -174,7 +184,189 @@
 
 
     .calender_investment {
-        padding: 10px 1px 10px 15px ;
-        /* background: #F4F7FA;
-        width: 100%; */
+        padding: 10px 12px 10px 15px ;
     }
+
+    .receive_interest_container_investment{
+        margin-top: 20px ;
+        margin-bottom: 15px ;
+    }
+
+    .tenure_container_investment{
+        padding-bottom: 16px;
+    }
+    .interestTableContainer_inner_investment{
+        padding-top: 10px;
+        padding-bottom: 13px;
+    }
+
+    .addHolder_radio_investment{
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .jointSwitch_container_investment1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .jointSwitch_container_investment2{
+        margin-bottom: 20px;
+    }
+
+    .cutom_inputcontainer_investment{
+        padding-bottom: 20px;
+    }
+
+   .continue_button_investment{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #E31837;
+    box-shadow: 0px 6px 8px 0px #E3183740;
+    border-radius: 4px;
+   } 
+    
+   .OTP_button_investment{
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #E31837;
+    box-shadow: 0px 6px 8px 0px #E3183740;
+    border-radius: 4px;
+   }
+
+   .interestTableContainer_text_2_investment {
+    color: #FFFFFF;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.kyc_button_investment{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #E31837;
+    box-shadow: 0px 6px 8px 0px #E3183740;
+    border-radius: 4px;
+   } 
+
+.pan_mobile_container_investment{
+    margin-bottom: 30px;
+}
+
+.horizontalLinr_investment{
+    margin-bottom: 20px;
+}
+.accountHolderYessNo_investment{
+    margin-bottom: 21px;
+}
+
+.nomineeInputContainer_investment{
+    margin-bottom: 4px;
+}
+
+.tab-content{
+    padding-right: 0px !important;
+}
+
+.togle_lable_investment{
+    font-size: 16px;
+}
+
+.btn-group{
+    width: 100%;
+} 
+
+
+ 
+.boxRadioButton {
+    background-color: #ffffff;
+    color: #626567;
+    border: 2px solid #8C989F;
+    border-radius: 4px;
+    font-size: 18px;
+    z-index: 9;
+    padding-left: 10px;
+    width: 65px;
+    height: 50px;
+    margin-right: 15px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    cursor: pointer;
+}
+
+.boxRadioButton2 {
+    background-color: #ffffff;
+    color: #626567;
+    border: 2px solid #8C989F;
+    border-radius: 4px;
+    font-size: 17px;
+    z-index: 9;
+    width: 104px;
+    height: 77px;
+    margin-right: 15px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.boxRadioButton.active {
+    background-color: #221f20;
+    color: #ffffff;
+    border: 1px solid #221F20;
+    font-weight: 700;
+}
+
+.boxRadioButton2.active {
+    background-color: #221f20;
+    color: #ffffff;
+    border: 1px solid #221F20;
+    font-weight: 700;
+}
+
+.boxRadioButton input[type="radio"] {
+    opacity: 0;
+}
+
+.boxRadioButton2 input[type="radio"] {
+    opacity: 0;
+}
+ 
+
+.btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn {
+    width: 100%;
+}
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+    width: 100%;
+}
+
+/* INVESTMENT MOBILE view */
+
+
+@media screen and (max-width: 768px) {
+    .form-label{
+        font-size: 14px !important;  
+    }
+  }
+
+  /* @media only screen and (min-width: 768px) and (max-width: 1399px) {
+    
+     } */
+   
+  
+  

@@ -191,7 +191,8 @@
 }
 
 .TandCmodal {
-    height: 800px;
+    width: 100%;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -241,7 +242,7 @@
     margin-right: 24px;
 }
 
-[type="radio"]:checked, [type="radio"]:not(:checked) {
+.bankDeatilsRadio[type="radio"]:checked, .bankDeatilsRadio[type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
     width: 0;
