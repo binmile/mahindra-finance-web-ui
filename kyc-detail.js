@@ -112,7 +112,6 @@ function AddNewAddressFieldOpen() {
 
 function AddNewAddressFunctionality() {
     var selectedvalue = $("#selectNewAddress").val();
-    console.log("down",selectedvalue)
     if (selectedvalue === "DigiLocker"){
         $(".drivingLicense").css({"display": "none"});
         $(".voterId").css({"display": "none"});
@@ -133,4 +132,10 @@ function AddNewAddressFunctionality() {
         $(".voterId").css({"display": "none"});
         $(".enterPassport").css({"display": "block"});
     }
+}
+
+function afterAdhaarVerficationAction() {
+    $("#afterAdharVarification").css({"display": "block"});
+    $("#beforeAdharVarification").css({"display": "none"});
+    $(".custom-button-data").removeClass("disabled");
 }
