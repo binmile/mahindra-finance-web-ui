@@ -235,34 +235,33 @@
                             <div class="tab-pane fade show active" role="tabpanel" id="step1"
                                 aria-labelledby="step1-tab">
 
-                                <form id="signup">
-
+                                <form name="investmentForm">
                                     <div class="" id="invstment">
                                         <h4 class="Investment_Heading">Customize your fixed deposit</h4>
 
                                         <div class="row">
                                             <div class="col-12 col-md-8 col-lg-7 col-sm-12 ">
                                                 <div class="textparent">
-                                                    <label for="amountNo" class="form-label invest_form_label">Enter
+                                                    <label  class="form-label invest_form_label">Enter
                                                         amount to be invested</label>
                                                         <div class="customTextfield">
                                                             &#x20B9;
                                                         </div>
-                                                            <input type="text" placeholder="Enter Amount" class="form-control form-control_amount"
-                                                                name="amount" autocomplete="off" id="amountNo" value="15000">
+                                                            <input type="text" placeholder="Enter Amount" class="form-control form-control_amount" 
+                                                                name="amountNo" autocomplete="off" id="amountNo" value="15,000" oninput="formatAmount(this)" >
                                                             <div class="textfildicons">
                                                                 <img src="./assets/icons/money.svg" alt="icons" class="icons" />
                                                             </div>
                                                        
                                                     <p class="message_label msg_Investment" id="error_account_number">Min. deposit of ₹ 10,000 and
                                                         max deposit of ₹
-                                                        5 crores</p>
+                                                        2 crores</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="tenure_container_investment">
                                             <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
-                                                <label for="month class="form-label">Select tenure (in months)</label>
+                                                <label for="month class="form-label">Select tenure (in years)</label>
                                                <div id="">
                                                     <div class="" data-toggle="buttons" id="tenureEements">
 
@@ -520,7 +519,7 @@
                                                 <div class="">
                                                     <button type="button" id='reviewContinueButton'
                                                         class="btn btn-danger  continue_button_investment"
-                                                        onclick="validate_account()">
+                                                        onclick="validate_continue()">
                                                         Continue
                                                         <img alt="arrow" src="./assets/Image/CTA_arrow.svg" class="img_tag" />
                                                     </button>
@@ -530,7 +529,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                </form>
 
+                                <form >
                                     <div id="additionalDetailParent">
                                         <div class="">
                                             <h4 class="Investment_Heading headingAdditional">Additional details</h4>
@@ -553,49 +554,51 @@
                                                                 data-tenures="elementoption31" for="elementoption31"
                                                                 checked> No
                                                         </label>
-
+    
                                                         <label class="btn button_label set-1 yesNo_button_invester"
                                                             id="elementoption32">
                                                             <input type="radio" class="checkbox_button" name="type2"
                                                                 value="elementoption32" autocomplete="off" onclick="accountshow1()"
                                                                 for="elementoption32" data-tenures="elementoption32"> Yes
                                                         </label>
-
+    
                                                     </div>
                                                 </div>
-
+    
                                             </div>
-
+    
                                             <div class="" id="holder1">
                                                 <div class="row pan_mobile_container_investment">
                                                     <div class="col-12 col-md-6 col-lg-6 col-sm-12 ">
                                                         <div class="textparent textparent_mob_investment">
-                                                            <label for="exampleInputPassword1" class="form-label">Enter
+                                                            <label for="" class="form-label">Enter
                                                                 joint account holder’s mobile </label>
-                                                            <input type="text" placeholder="Enter a 10 digit mobile number"
-                                                                class="form-control" id="exampleInputPassword1">
+                                                            <input type="text" placeholder="Enter a 10 digit mobile number" required
+                                                                class="form-control" id="mobile">
                                                             <div class="textfildicons">
                                                                 <img src="./assets/Image/mobile.svg" alt="icons"
                                                                     class="icons" />
                                                             </div>
+                                                            <div id="error-message"></div>
                                                         </div>
+
                                                     </div>
                                                     <div class="col-12 col-md-6 col-lg-6 col-sm-12 ">
     
                                                         <div class="textparent textparent_mob_investment">
-                                                            <label for="exampleInputPassword1" class="form-label">Enter
+                                                            <label for="" class="form-label">Enter
                                                                 joint account holder’s PAN </label>
-                                                            <input type="text" placeholder="E.g. CASND30202W"
-                                                                class="form-control" id="exampleInputPassword1">
+                                                            <input type="text" placeholder="E.g. CASND30202W" required
+                                                                class="form-control" id="PAN">  
+                                                                <div id="error-message_pan"></div>
                                                         </div>
-    
                                                     </div>
                                                 </div>
                                                 <div class="Continue_button_container_investment">
                                                     <div class=" col-12 col-md-4 col-lg-4 col-sm-12 ">
                                                         
                                                             <button type="button"
-                                                                class="btn btn-danger  OTP_button_investment">
+                                                                class="btn btn-danger  OTP_button_investment" onclick="generateOtp()">
                                                                 Generate OTP
                                                             </button>
                                                        
@@ -604,17 +607,17 @@
                                                 </div>
                                                
                                             </div>
-
+    
                                             <hr class="horizontalLinr_investment" />
                                             <div class="selectHolder_nomine  selectHolder_nomine_investment"  id="elements">
                                                 <label class="selectHolder_text selectHolder_text_invester">
                                                     Nominee
                                                 </label>
                                             </div>
-
+    
                                             <div class="row nomineeInputContainer_investment">
                                                 <div class="col-6 ">
-
+    
                                                     <label for="exampleInputPassword1" class="form-label">Would you like
                                                         to add nominee?</label>
                                                     <div class=" btn-group jointAccount_Button_container nominee_invester "
@@ -638,38 +641,41 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+    
                                             <div id="div1" class="Investment_radio_hide">
-
+    
                                                 <div class="row ">
                                                     <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested">
-
-
+    
+    
                                                         <div class="textparent textparent_nomine_name_investment">
-                                                            <label for="exampleInputPassword1"
+                                                            <label for=""
                                                                 class="form-label">Nominee’s
                                                                 name</label>
                                                             <input type="text" placeholder="Enter name"
-                                                                class="form-control" id="exampleInputPassword1">
+                                                                class="form-control" id="nomineeName" required>
                                                             <div class="textfildicons">
                                                                 <img src="./assets/icons/kyc.svg" alt="icons"
                                                                     class="icons" />
-
+    
                                                             </div>
-
+                                                            <div id="error-message_nomenieeName"></div>
+    
                                                         </div>
-
+    
                                                     </div>
-
+    
                                                     <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested ">
                                                         <div class="textparent textparent_nomine_name_investment">
-                                                            <label for="exampleInputPassword1"
+                                                            <label for=""
                                                                 class="form-label">Nominee’s
                                                                 date of birth</label>
                                                             <input type="date" placeholder="DD/MM/YYYY"
-                                                                class="form-control calender_investment" id="exampleInputPassword1" onfocus="this.showPicker()" >
+                                                                class="form-control calender_investment" id="nominee_DOB" onfocus="this.showPicker()"  required>
+                                                                <div id="error-message_nomenieeDOB"></div>
                                                         </div>
 
+    
                                                     </div>
                                                 </div>
                                                 <div class="row ">
@@ -679,32 +685,40 @@
                                                         <div>
                                                             <div class="input-group selectCOntainer">
                                                                 <select class="form-select selectox"
-                                                                    aria-label="Default select example">
-                                                                    <option selected> select </option>
-                                                                    <option value="1">One</option>
-                                                                    <option value="2">Two</option>
-                                                                    <option value="3">Three</option>
+                                                                    aria-label="Default select example" id="nomenieeRelation"
+                                                                    aria-placeholder="Select"
+                                                                    >
+                                                                    <option selected>  </option>
+                                                                    <option value="Father">Father</option>
+                                                                    <option value="Mother">Mother</option>
+                                                                    <option value="Sister">Sister</option>
                                                                 </select>
+                                                               
                                                             </div>
+                                                        <div id="error-message_nomenieeRelation"></div>
 
+    
                                                         </div>
-
+    
                                                     </div>
                                                 </div>
-
+    
                                             </div>
-                                            <div class="MMFSLcontainer MMFsl_investment_cont">
-                                                <p class="message_label">
-                                                    By proceeding you consent to MMFSL to use your KYC details from
-                                                    the
-                                                    CKYC registry/Digilocker to book a fixed deposit
-                                                </p>
+                                            <div class="row ">
+                                                <div class="col-12 col-md-9 col-lg-9 col-sm-12 MMFSLcontainer MMFsl_investment_cont">
+                                                    <p class="message_label">
+                                                        By proceeding you consent to MMFSL to use your KYC details from
+                                                        the
+                                                        CKYC registry/Digilocker to book a fixed deposit
+                                                    </p>
+                                                </div>
                                             </div>
                                             <div class="Continue_button_container_investment">
                                                 <div class=" col-12 col-md-5 col-lg-5 col-sm-12 ">
                                                     <div class="">
                                                         <button type="button" 
                                                             class="btn btn-danger kyc_button_investment"
+                                                            onclick="KYC_registery()"
                                                           >
                                                           Get KYC from CKYC registry
                                                             <img alt="arrow" src="./assets/Image/CTA_arrow.svg" class="img_tag" />
@@ -717,6 +731,8 @@
                                         </div>
                                     </div>
                                 </form>
+
+                                
 
                             </div>
                             <div class="tab-pane fade" role="tabpanel" id="step2" aria-labelledby="step2-tab">

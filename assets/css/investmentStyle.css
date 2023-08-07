@@ -1,3 +1,8 @@
+::placeholder{
+    font-size: 16px !important;
+    
+}
+
 .Investment_radio_hide {
     display: none;
     }
@@ -29,6 +34,8 @@
     }
     .tenure_investment label{
         position: relative;
+        align-items: self-start;
+        padding-left: 10px;
     }
     .tenure_investment label:first-child::before {
         content: "";
@@ -37,7 +44,6 @@
         position: absolute;
         top: 0;
         right: -5px;
-        /* left: 2px; */
         background-image: url('../icons/mark.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -167,13 +173,11 @@
         border: 1px solid #ced4da;
     }
     
-
     .form-switch .form-check-input:focus:not(:checked) {
         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
         border-color: #bbbcbd;
     }
 
-   
     input[type='checkbox'] {
         background-color: #f4f7fa;
     }
@@ -181,7 +185,6 @@
     #holder1{
         display: none;
     }
-
 
     .calender_investment {
         padding: 10px 12px 10px 15px ;
@@ -287,8 +290,6 @@
     width: 100%;
 } 
 
-
- 
 .boxRadioButton {
     background-color: #ffffff;
     color: #626567;
@@ -347,26 +348,43 @@
     opacity: 0;
 }
  
-
 .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn {
     width: 100%;
 }
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle){
     width: 100%;
 }
-
-/* INVESTMENT MOBILE view */
-
-
-@media screen and (max-width: 768px) {
-    .form-label{
-        font-size: 14px !important;  
-    }
+   
+  #error-message{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
   }
 
-  /* @media only screen and (min-width: 768px) and (max-width: 1399px) {
-    
-     } */
-   
-  
-  
+  #error-message_pan{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
+  }
+  #error-message_nomenieeName{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
+  }
+
+  #error-message_nomenieeDOB{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
+  }
+  #error-message_nomenieeRelation{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
+  }
+
