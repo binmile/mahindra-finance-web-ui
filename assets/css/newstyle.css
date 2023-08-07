@@ -2085,8 +2085,8 @@
   }
   
   .success-contant {
-      padding: 50px;
-  }
+    padding: 40px 40px 20px 40px;
+}
   
   .btn-success {
       display: flex;
@@ -2141,7 +2141,7 @@
   }
   
   .paragraphheading {
-      margin-top: 62px;
+      margin-top: 40px;
       text-align: center;
   }
   
@@ -2166,14 +2166,13 @@
   }
   
   .smallcard {
-      padding: 20px;
-      border-radius: 4px;
-      box-shadow: 0px 4px 12px 0px #0000001A;
-  }
-  
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 12px 0px #0000001A;
+}
   .smallcardheading img {
       text-align: center;
-      padding-top: 20px;
+      padding-top: 10px;
       padding-bottom: 20px;
       width: 100%;
   }
@@ -2266,6 +2265,6 @@
   }
 
 
-  @media only screen and (min-width: 768px) and (max-width: 1300px) {
+  @media only screen and (min-width: 768px) and (max-width: 1600px) {
     body {zoom: 90%;}
 } 
