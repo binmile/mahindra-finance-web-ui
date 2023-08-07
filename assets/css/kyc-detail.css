@@ -15,6 +15,20 @@
             background-position: top;
         }
         
+        .form-control-input {
+            background-color: #F4F7FA;
+        }
+        
+        .form-control-input::placeholder {
+            font-family: "Lato", sans-serif;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #221F20;
+            font-weight: 400;
+        }
+        
         .leftkycHeading {
             font-family: "Lato", sans-serif;
             font-size: 68px;
@@ -410,6 +424,7 @@
             }
         }
         /* shraddha css */
+        
         .kycDropDown {
             padding: 8px;
             background-color: #F4F7FA;
@@ -417,49 +432,59 @@
             width: 100%;
             border-radius: 0.25rem;
             padding-right: 5px;
-            color:#221F20;
+            color: #221F20;
         }
+        
         .kycDropDown option {
-           font-size: 17px;
-           font-weight: 500;
-           color:#221F20;
-          }
+            font-size: 17px;
+            font-weight: 500;
+            color: #221F20;
+        }
+        
         .kycDropDown:focus {
-            outline:none !important;
+            outline: none !important;
             outline-width: 0 !important;
             box-shadow: none;
             -moz-box-shadow: none;
             -webkit-box-shadow: none;
             border: solid 1.5px #8C989F;
         }
-        .kycVerifyButton{
-            background-color:#221F20;
+        
+        .kycVerifyButton {
+            background-color: #221F20;
             color: #FFFFFF;
             padding: 10px 47px;
             border-radius: 4px;
             width: 145px;
             margin-bottom: 40px;
         }
-        #AddNewAddressDropDown{
+        
+        #AddNewAddressDropDown {
             display: none;
         }
-        .AddNewAddressSubDiv{
+        
+        .AddNewAddressSubDiv {
             display: flex;
         }
-        .AddNewAddressImgContainer{
-           height: auto;
-           margin-bottom: 20px;
+        
+        .AddNewAddressImgContainer {
+            height: auto;
+            margin-bottom: 20px;
         }
-        .AddNewAddressImg{
+        
+        .AddNewAddressImg {
             width: 100%;
             height: 13rem;
         }
-        .drivingLicense{
+        
+        .drivingLicense {
             display: none;
         }
-        .voterId{
+        
+        .voterId {
             display: none;
         }
-        .enterPassport{
+        
+        .enterPassport {
             display: none;
         }
