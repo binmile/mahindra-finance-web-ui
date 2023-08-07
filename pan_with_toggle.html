@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1, user-scalable=0">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -60,7 +61,7 @@
                                                 <div class="circle_info circle_info_pan">
                                                     <div class="circle">3</div>
                                                     <div class="circle_content circle_content_pan">
-                                                        Fill in your details OR Provide your details
+                                                        Fill in your details
                                                     </div>
                                                 </div>
                                                 <div class="circle_info circle_info_pan">
@@ -112,7 +113,7 @@
                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                     <div class="textparent">
                                         <label for="exampPan" class="form-label panLabel">PAN</label>
-                                        <input type="text" class="form-control form-control-input" aria-label="Recipient's pan " aria-describedby="basic-addon2 " placeholder="Enter your pan number " id="panNumberInput" autocomplete="off">
+                                        <input type="text" class="form-control form-control-input" aria-label="Recipient's pan " maxlength="10" aria-describedby="basic-addon2 " placeholder="Enter your pan number " id="panNumberInput" autocomplete="off">
                                         <div class="textfildicons ">
                                             <img src="./assets/Image/pan.svg " alt="icons " class="icons ">
                                         </div>
@@ -141,8 +142,9 @@
                                 </div>
 
                                 <div class="geberate_otp first_button first-button-data">
-                                    <button type="submit" id="submitButton" class="btn btn-danger newsubmitbtn_first custom-button-data">Generate OTP
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right-icon" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg>
+                                    <button type="submit" id="submitButton" disabled="" class="btn btn-danger newsubmitbtn_first custom-button-data">Generate OTP
+                                        <svg xmlns="http://www.w3.org/2000/svg " class="arrow-right-icon " width="16 " height="16 " fill="currentColor " class="bi bi-arrow-right " viewBox="0 0 16 16 "> <path fill-rule="evenodd " d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5
+                                        0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z "/> </svg>
                                     </button>
 
                                 </div>
@@ -156,58 +158,58 @@
                 </div>
             </div>
 
-            <div class="modal fade modal_wrapper" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content modal_content_data">
+            <div class="modal fade modal_wrapper " id="exampleModal" tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+                <div class="modal-dialog ">
+                    <div class="modal-content modal_content_data ">
                         <div class="modal-header custom_header ">
                             <div class="custom_model ">
-                                <button type="button" class="close custom_close" data-dismiss="modal" aria-label="Close" id="closeModalBtn">
+                                <button type="button" class="close custom_close " data-dismiss="modal " aria-label="Close " id="closeModalBtn">
                             <img src="./assets/Image/close.png " alt="btn_close " class="button_close_spn " />
                 
                         </button>
                             </div>
 
                         </div>
-                        <div class="modal-body custom-body">
+                        <div class="modal-body custom-body ">
                             <div class="custom_model_body ">
                                 <div class="enter_otp ">
                                     Enter OTP
                                 </div>
-                                <div class="send_mobile ">
+                                <div class="send_mobile">
                                     Please enter the OTP send to your mobile phone XXXXXX345
                                 </div>
                                 <div class="box_container">
 
-                                    <input type="text" maxlength="1" class="box_div" />
-                                    <input type="text" maxlength="1" class="box_div" />
-                                    <input type="text" maxlength="1" class="box_div" />
-                                    <input type="text" maxlength="1" class="box_div" />
-                                    <input type="text" maxlength="1" class="box_div" />
-                                    <input type="text" maxlength="1" class="box_div" />
+                                    <input type="text " maxlength="1 " class="box_div " />
+                                    <input type="text " maxlength="1 " class="box_div " />
+                                    <input type="text " maxlength="1 " class="box_div " />
+                                    <input type="text " maxlength="1 " class="box_div " />
+                                    <input type="text " maxlength="1 " class="box_div " />
+                                    <input type="text " maxlength="1 " class="box_div " />
                                 </div>
-                                <div class="otp_msg " id="otp_msg">
+                                <div class="otp_msg" id="otp_msg">
                                     <div class="otp_second ">
                                         Resend OTP in
                                     </div>
                                     <div class="timer" id="timer">
                                         00:59
                                     </div>
-                                    <span class="timer "> seconds </span>
+                                    <span class="timer"> seconds </span>
                                 </div>
 
 
-                                <div class="resend_otp" id="resend_otp" style="display: none; ">
-                                    <a href="#" class="stretched-link">Resend OTP</a>
+                                <div class="resend_otp" id="resend_otp" style="display: none;">
+                                    <a href="# " class="stretched-link ">Resend OTP</a>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="modal-footer custom-footer">
+                        <div class="modal-footer custom-footer ">
                             <div class="geberate_otp">
                                 <button type="button" class="btn btn-danger newsubmitbtn btn_submit " id="sub_otp">Submit
                                 OTP
                         
-                                <img src="./assets/Image/CTA_arrow.svg " alt="Submit " />
+                                <img src="./assets/Image/CTA_arrow.svg" alt="Submit" />
                         
                         
                             </button>
@@ -217,19 +219,19 @@
                 </div>
             </div>
 
-            <div class="modal fade modal_wrapper" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content modal_content_data">
+            <div class="modal fade modal_wrapper" id="exampleModal2" tabindex="-1 " aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content modal_content_data ">
                         <div class="modal-header custom_header ">
                             <div class="custom_model">
-                                <button type="button" class="close custom_close" data-dismiss="modal" aria-label="Close" id="closeModalBtn2">
-                            <img src="./assets/Image/close.png" alt="btn_close" class="button_close_spn" />
+                                <button type="button " class="close custom_close" data-dismiss="modal" aria-label="Close " id="closeModalBtn2">
+                            <img src="./assets/Image/close.png " alt="btn_close " class="button_close_spn " />
                 
                         </button>
                             </div>
 
                         </div>
-                        <div class="modal-body custom-body">
+                        <div class="modal-body custom-body ">
                             <div class="custom_model_body ">
                                 <div class="enter_otp ">
                                     Enter OTP
@@ -239,40 +241,40 @@
                                 </div>
                                 <div class="box_container_error ">
 
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
+                                    <input type="text " maxlength="1 " class="box_div_error " />
+                                    <input type="text " maxlength="1 " class="box_div_error " />
+                                    <input type="text " maxlength="1 " class="box_div_error " />
+                                    <input type="text " maxlength="1 " class="box_div_error " />
+                                    <input type="text " maxlength="1 " class="box_div_error " />
+                                    <input type="text " maxlength="1 " class="box_div_error " />
 
 
                                 </div>
-                                <div class="errorText "> Incorrect OTP. Please try again!</div>
+                                <div class="errorText"> Incorrect OTP. Please try again!</div>
 
 
-                                <div class="otp_msg " id="otp_msg ">
-                                    <div class="otp_second ">
+                                <div class="otp_msg" id="otp_msg">
+                                    <div class="otp_second">
                                         Resend OTP in
                                     </div>
-                                    <div class="timer " id="timer1 ">
+                                    <div class="timer" id="timer1">
                                         00:59
                                     </div>
-                                    <span class="timer "> seconds </span>
+                                    <span class="timer"> seconds </span>
                                 </div>
 
 
-                                <div class="resend_otp " id="resend_otp1 " style="display: none; ">
-                                    <a href="#" class="stretched-link">Resend OTP</a>
+                                <div class="resend_otp" id="resend_otp1" style="display: none; ">
+                                    <a href="# " class="stretched-link ">Resend OTP</a>
                                 </div>
 
                             </div>
                         </div>
                         <div class="modal-footer custom-footer">
-                            <div class="geberate_otp">
-                                <button type="button " class="btn btn-danger newsubmitbtn btn_submit " data-dismiss="modal">Submit
+                            <div class="geberate_otp ">
+                                <button type="button" class="btn btn-danger newsubmitbtn btn_submit" data-dismiss="modal">Submit
                         OTP
-                        <img src="./assets/Image/CTA_arrow.svg " alt="Submit " />
+                        <img src="./assets/Image/CTA_arrow.svg" alt="Submit" />
                     </button>
                             </div>
                         </div>
@@ -282,24 +284,24 @@
 
         </div>
         <footer>
-            <div class="footertext">
+            <div class="footertext ">
                 <p>
                     The products, services and offers referred to herein are subject to the terms and conditions governing them as specified by Mahindra & Mahindra Financial Services Ltd (MMFSL) on actual Loan Agreement documents. All deposits, associated benefits, features
                     etc stated herein are by way of example and offered at the sole discretion of MMFSL. Nothing contained herein shall constitute or be deemed to constitute an advice, invitation or solicitation to purchase any products/services of MMFSL.
                     Misuse of any intellectual property, or any other content displayed herein is strictly prohibited.
 
                 </p>
-                <p class="footertextparent">
-                    <span class="footertext"> 2023 Mahindra Finance</span> | CIN-L65921MH1991PLC059642 | <span class="footertext">Privacy Policy</span>
+                <p class="footertextparent ">
+                    <span class="footertext "> 2023 Mahindra Finance</span> | CIN-L65921MH1991PLC059642 | <span class="footertext ">Privacy Policy</span>
                 </p>
             </div>
         </footer>
         <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js "></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 
         <script src="./pan_mobile.js ">
         </script>

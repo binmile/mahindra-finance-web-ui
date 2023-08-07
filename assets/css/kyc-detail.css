@@ -1,459 +1,465 @@
-    .kycDetailsLeftContent {
-        padding: 10px 40px;
-    }
-
-    .kycdetail {
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        text-align-last: start;
-        background-color: black;
-        background-image: url("../Image/blur.png"), url('../Image/about_img.png');
-        border-radius: 20px 0px 0px 20px;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-    .leftkycHeading {
-        font-family: "Lato", sans-serif;
-        font-size: 68px;
-        font-weight: 700;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .kycLeftCard {
-        padding: 100px 40px;
-    }
-
-    .leftcolkycHeading {
-        font-family: "Lato", sans-serif;
-        font-size: 68px;
-        font-weight: 700;
-        line-height: 78px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .leftcolkycContent {
-        font-family: "Lato", sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-top: 5px;
-    }
-
-    .kyccard {
-        padding: 50px 40px;
-    }
-
-    .right-side-div {
-        padding: 37px 30px 10px 50px;
-    }
-
-    .right-side-div h1 {
-        font-family: "Lato", sans-serif;
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 30px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .dropdown-container {
-        position: relative;
-        display: inline-block;
-    }
-
-    /* Styles for the input field */
-
-    .dropdown-input {
-        padding: 8px 30px 8px 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        width: 200px;
-    }
-
-    /* Styles for the icon inside the input field */
-
-    .input-icon {
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-        pointer-events: none;
-    }
-
-    /* Styles for the custom dropdown menu */
-
-    .custom-dropdown {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-top: none;
-        width: 200px;
-        z-index: 1;
-        display: none;
-    }
-
-    /* Show the dropdown when the parent is hovered */
-
-    .dropdown-container:hover .custom-dropdown {
-        display: block;
-    }
-
-    /* Style each option with icon and padding */
-
-    .custom-dropdown option {
-        padding: 5px;
-        display: flex;
-        align-items: center;
-    }
-
-    /* Styles for the icons */
-
-    .custom-dropdown .icon {
-        margin-right: 5px;
-    }
-
-    .drop-container-data {
-        border-radius: 0.25rem;
-        width: 100%;
-    }
-
-    .drop-container-data-annual {
-        border-radius: 0.25rem;
-        width: 100%;
-    }
-
-    .drop-container-data-annual:hover .custom-value-data {
-        display: none;
-    }
-
-    .drop-input-data {
-        /* padding: 10px 40px 10px 15px; */
-        padding: 8px;
-        background: #F4F7FA;
-        border: 1px solid #ced4da;
-        width: 100%;
-        border-radius: 0.25rem;
-        padding-right: 5px;
-        appearance: none;
-    }
-
-    .custom-value-data {
-        width: 100%;
-        box-shadow: 0px 4px 8px 0px #00000026;
-        border-radius: 0.25rem;
-        padding: 0.5rem;
-    }
-
-    .input-icon-data {
-        right: 15px;
-    }
-
-    .input-icon-data svg {
-        width: 14px;
-        height: 14px;
-        color: #221F20;
-    }
-
-    .kycLabel {
-        font-family: "Lato", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 26px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #221F20
-    }
-
-    .drop-input-field {
-        margin-bottom: 40px;
-    }
-
-    .email-icon {
-        height: 14px;
-        width: 14px;
-    }
-
-    .card-div-data {
-        box-shadow: 0px 4px 12px 0px #0000001A;
-        margin-top: 20px;
-    }
-
-    .first-account-holder-detail {
-        padding: 1.5rem 1.3rem;
-    }
-
-    .primary-detail {
-        border-radius: 4px;
-        background-color: #626567;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 180px;
-    }
-
-    .account-holder-data {
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #ffffff;
-    }
-
-    .CKYC-detail {
-        width: 461px;
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #4B4C4D;
-        margin-top: 12px;
-    }
-
-    .name-data {
-        font-family: "Lato", sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .profile-details {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .sec-col-div img {
-        border-radius: 8px;
-    }
-
-    .naming-details {
-        display: flex;
-        gap: 15px;
-    }
-
-    .first-child-div {
-        margin-top: 13px;
-    }
-
-    .heading-data {
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #4B4C4D;
-    }
-
-    .sub-heading-data {
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #221F20;
-    }
-
-    .custom-hr {
-        background-color: #8C989F;
-    }
-
-    .address-detail {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .address-detail-blog {
-        width: 240px;
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .Communication-address {
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .cheking-button-data {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-    }
-
-    .custom-button {
-        background: #F4F7FA;
-        border-radius: 4px;
-        border: 1px solid #8C989F;
-    }
-
-    .custom-button-first {
-        padding: 10px 50px 10px 15px;
-    }
-
-    .custom-button-sec {
-        padding: 10px 15px 10px 25px;
-    }
-
-    .radio-button-data {
-        margin-left: 5px;
-    }
-
-    .textparentdata {
-        margin-bottom: 8px;
-    }
-
-    .fixed-deposit {
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #626567
-    }
-
-    .card-div-data-sec {
-        margin-top: 30px;
-    }
-
-    .drop-container-data:hover .custom-value-data {
-        display: none;
-    }
-
-    @media screen and (max-width: 767px) {
+        .kycDetailsLeftContent {
+            padding: 10px 40px;
+        }
+        
+        .kycdetail {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            text-align-last: start;
+            background-color: black;
+            background-image: url("../Image/blur.png"), url('../Image/about_img.png');
+            border-radius: 20px 0px 0px 20px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+        
+        .leftkycHeading {
+            font-family: "Lato", sans-serif;
+            font-size: 68px;
+            font-weight: 700;
+            line-height: 78px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        
+        .kycLeftCard {
+            padding: 100px 40px;
+        }
+        
+        .leftcolkycHeading {
+            font-family: "Lato", sans-serif;
+            font-size: 68px;
+            font-weight: 700;
+            line-height: 78px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        
+        .leftcolkycContent {
+            font-family: "Lato", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 5px;
+        }
+        
+        .kyccard {
+            padding: 50px 40px;
+        }
+        
+        .right-side-div {
+            padding: 37px 50px 50px 32px;
+        }
+        
+        .right-side-div h1 {
+            font-family: "Lato", sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+        /* Styles for the input field */
+        
         .dropdown-input {
-            width: 100%;
+            padding: 8px 30px 8px 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 200px;
         }
-
-        .address-detail-blog {
-            width: 100%;
+        /* Styles for the icon inside the input field */
+        
+        .input-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
         }
-
-        .CKYC-detail {
-            width: 100%;
-        }
-
-        .primary-detail {
-            width: 100%;
-        }
-
+        /* Styles for the custom dropdown menu */
+        
         .custom-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            width: 200px;
+            z-index: 1;
+            display: none;
+        }
+        /* Show the dropdown when the parent is hovered */
+        
+        .dropdown-container:hover .custom-dropdown {
+            display: block;
+        }
+        /* Style each option with icon and padding */
+        
+        .custom-dropdown option {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+        }
+        /* Styles for the icons */
+        
+        .custom-dropdown .icon {
+            margin-right: 5px;
+        }
+        
+        .drop-container-data {
+            border-radius: 0.25rem;
             width: 100%;
         }
-
-        .profile-details {
-            display: block;
+        
+        .drop-container-data-annual {
+            border-radius: 0.25rem;
+            width: 100%;
         }
-
-        .sec-col-div {
-            margin-top: 10px;
-            justify-content: center;
+        
+        .drop-container-data-annual:hover .custom-value-data {
+            display: none;
+        }
+        
+        .drop-input-data {
+            /* padding: 10px 40px 10px 15px; */
+            padding: 8px;
+            background: #F4F7FA;
+            border: 1px solid #ced4da;
+            width: 100%;
+            border-radius: 0.25rem;
+            padding-right: 5px;
+            appearance: none;
+        }
+        
+        .custom-value-data {
+            width: 100%;
+            box-shadow: 0px 4px 8px 0px #00000026;
+            border-radius: 0.25rem;
+            padding: 0.5rem;
+        }
+        
+        .input-icon-data {
+            right: 15px;
+        }
+        
+        .input-icon-data svg {
+            width: 14px;
+            height: 14px;
+            color: #221F20;
+        }
+        
+        .kycLabel {
+            font-family: "Lato", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #221F20
+        }
+        
+        .drop-input-field {
+            margin-bottom: 40px;
+        }
+        
+        .email-icon {
+            height: 14px;
+            width: 14px;
+        }
+        
+        .card-div-data {
+            box-shadow: 0px 4px 12px 0px #0000001A;
+            margin-top: 20px;
+        }
+        
+        .first-account-holder-detail {
+            padding: 1.5rem 1.3rem;
+        }
+        
+        .primary-detail {
+            border-radius: 4px;
+            background-color: #626567;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
         }
-
+        
+        .minor-detail {
+            border-radius: 4px;
+            background-color: #626567;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 102px;
+            margin-top: 35px;
+        }
+        
+        .aadhar_div {
+            margin-top: 30px;
+        }
+        
+        .form-control-input::placeholder {
+            font-size: 16px;
+        }
+        
+        .aadhar_div .btn {
+            padding: 10px 10px 10px 10px;
+            width: 60%;
+            background-color: #E6E7E9;
+            border-color: #E6E7E9;
+            color: #8C989F;
+        }
+        
+        .first_button-minor {
+            margin-top: 0;
+        }
+        
+        .account-holder-data {
+            font-family: "Lato", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #ffffff;
+        }
+        
+        .CKYC-detail {
+            width: 461px;
+            font-family: "Lato", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #4B4C4D;
+            margin-top: 12px;
+        }
+        
+        .name-data {
+            font-family: "Lato", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        
+        .profile-details {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .sec-col-div img {
+            border-radius: 8px;
+        }
+        
+        .naming-details {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .first-child-div {
+            margin-top: 13px;
+        }
+        
+        .heading-data {
+            font-family: "Lato", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #4B4C4D;
+        }
+        
+        .sub-heading-data {
+            font-family: "Lato", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #221F20;
+        }
+        
+        .custom-hr {
+            background-color: #8C989F;
+        }
+        
         .address-detail {
-            display: block;
+            display: flex;
+            justify-content: space-between;
         }
-
-        .address-details-sec-div {
-            margin-top: 10px;
+        
+        .address-detail-blog {
+            width: 240px;
+            font-family: "Lato", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
         }
-
+        
+        .Communication-address {
+            font-family: "Lato", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        
         .cheking-button-data {
             display: flex;
-            justify-content: center;
-            flex-direction: column;
-            gap: 20px;
+            justify-content: space-between;
+            margin-top: 10px;
         }
-    }
-
-    /* shraddha css */
-
-    .kycDropDown {
-        padding: 8px;
-        background-color: #F4F7FA;
-        border: 1px solid #ced4da;
-        width: 100%;
-        border-radius: 0.25rem;
-        padding-right: 5px;
-        color:#221F20;
-    }
-
-    .kycDropDown option {
-       font-size: 17px;
-       font-weight: 500;
-       color:#221F20;
-      }
-
-    .kycDropDown:focus {
-        outline:none !important;
-        outline-width: 0 !important;
-        box-shadow: none;
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
-        border: solid 1.5px #8C989F;
-    }
-    
-    .kycVerifyButton{
-        background-color:#221F20;
-        color: #ffffff;
-        padding: 10px 47px;
-        border-radius: 4px;
-        width: 145px;
-        margin-bottom: 40px;
-    }
-
-    #AddNewAddressDropDown{
-        display: none;
-    }
-
-    .AddNewAddressSubDiv{
-        display: flex;
-    }
-
-    .AddNewAddressImgContainer{
-       height: auto;
-       margin-bottom: 20px;
-    }
-
-    .AddNewAddressImg{
-        width: 100%;
-        height: 13rem;
-    }
-
-    .drivingLicense{
-        display: none;
-    }
-
-    .voterId{
-        display: none;
-    }
-
-    .enterPassport{
-        display: none;
-    }
+        
+        .custom-button {
+            background: #F4F7FA;
+            border-radius: 4px;
+            border: 1px solid #8C989F;
+        }
+        
+        .custom-button-first {
+            padding: 10px 50px 10px 15px;
+        }
+        
+        .custom-button-sec {
+            padding: 10px 15px 10px 25px;
+        }
+        
+        .radio-button-data {
+            margin-left: 5px;
+        }
+        
+        .textparentdata {
+            margin-bottom: 8px;
+        }
+        
+        .fixed-deposit {
+            font-family: "Lato", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #626567
+        }
+        
+        .card-div-data-sec {
+            margin-top: 30px;
+        }
+        
+        .drop-container-data:hover .custom-value-data {
+            display: none;
+        }
+        
+        @media screen and (max-width: 767px) {
+            .dropdown-input {
+                width: 100%;
+            }
+            .address-detail-blog {
+                width: 100%;
+            }
+            .CKYC-detail {
+                width: 100%;
+            }
+            .primary-detail {
+                width: 100%;
+            }
+            .minor-detail {
+                width: 100%;
+            }
+            .custom-dropdown {
+                width: 100%;
+            }
+            .profile-details {
+                display: block;
+            }
+            .sec-col-div {
+                margin-top: 10px;
+                justify-content: center;
+                display: flex;
+            }
+            .address-detail {
+                display: block;
+            }
+            .address-details-sec-div {
+                margin-top: 10px;
+            }
+            .cheking-button-data {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        /* shraddha css */
+        .kycDropDown {
+            padding: 8px;
+            background-color: #F4F7FA;
+            border: 1px solid #CED4DA;
+            width: 100%;
+            border-radius: 0.25rem;
+            padding-right: 5px;
+            color:#221F20;
+        }
+        .kycDropDown option {
+           font-size: 17px;
+           font-weight: 500;
+           color:#221F20;
+          }
+        .kycDropDown:focus {
+            outline:none !important;
+            outline-width: 0 !important;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            border: solid 1.5px #8C989F;
+        }
+        .kycVerifyButton{
+            background-color:#221F20;
+            color: #FFFFFF;
+            padding: 10px 47px;
+            border-radius: 4px;
+            width: 145px;
+            margin-bottom: 40px;
+        }
+        #AddNewAddressDropDown{
+            display: none;
+        }
+        .AddNewAddressSubDiv{
+            display: flex;
+        }
+        .AddNewAddressImgContainer{
+           height: auto;
+           margin-bottom: 20px;
+        }
+        .AddNewAddressImg{
+            width: 100%;
+            height: 13rem;
+        }
+        .drivingLicense{
+            display: none;
+        }
+        .voterId{
+            display: none;
+        }
+        .enterPassport{
+            display: none;
+        }

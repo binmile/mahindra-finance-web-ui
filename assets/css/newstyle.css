@@ -21,8 +21,8 @@
   }
   
   .container {
-      padding-top: 50px;
-      padding-bottom: 20px;
+      padding-top: 30px;
+      padding-bottom: 0px;
       position: relative;
   }
   
@@ -863,6 +863,7 @@
   .footertext p {
       font-size: 8px;
       text-align: justify;
+      margin-bottom: 5px;
   }
   
   .nav-tabs .nav-item .nav-link.active:after {
@@ -890,7 +891,7 @@
   }
   
   .maincontant {
-      padding-top: 15px;
+      /* padding-top: 15px; */
   }
   
   label.form-label {
@@ -912,7 +913,7 @@
   
   .textparent {
       position: relative;
-      margin-bottom: 40px;
+      margin-bottom: 33px;
   }
   /* bankDetails css */
   
@@ -1745,6 +1746,7 @@
   
   .boxRadioButton input[type="radio"] {
       opacity: 0;
+      /* display: none; */
   }
   
   .boxRadioButton2 input[type="radio"] {
@@ -1972,11 +1974,11 @@
   } */
   
   .maincom {
-      padding-top: 30px;
-      padding-left: 26px;
-      padding-right: 50px;
-  }
-  
+    /* padding-top: 30px; */
+    padding-left: 26px;
+    padding-right: 50px;
+    margin-top: 40px;
+}
   #additionalDetailParent {
       display: none;
   }
@@ -1991,7 +1993,7 @@
   
   .check_kyc {
       margin-top: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
       background-color: #F4F7FA;
   }
   
@@ -2051,7 +2053,7 @@
       color: #8C989F;
       background-color: #E6E7E9;
       border-color: #E6E7E9;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
   }
   
   .errorMessage {
@@ -2225,7 +2227,7 @@
   .bordertop {
       border: 1px solid #ccc;
       position: absolute;
-      top: 74px;
+      top: 64px;
       width: 100%;
   }
   
@@ -2262,3 +2264,8 @@
   .cmpltsvg {
       background: #C1EFC3 !important;
   }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1600px) {
+    body {zoom: 90%;}
+} 
