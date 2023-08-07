@@ -231,9 +231,9 @@
                     .aadhar_div .btn {
                         padding: 10px 10px 10px 10px;
                         width: 60%;
-                        background-color: #E6E7E9;
-                        border-color: #E6E7E9;
-                        color: #8C989F;
+                        background-color: #221F20;
+                        border-color: #221F20;
+                        color: #FFFFFF;
                     }
                     
                     .first_button-minor {
@@ -327,6 +327,15 @@
                         letter-spacing: 0em;
                         text-align: left;
                     }
+                    .address-detail-blog-adhar {
+                        width: 100%;
+                        font-family: "Lato", sans-serif;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
                     
                     .Communication-address {
                         font-family: "Lato", sans-serif;
@@ -381,6 +390,21 @@
                     
                     .drop-container-data:hover .custom-value-data {
                         display: none;
+                    }
+
+                    #afterAdharVarification{
+                        display: none;
+                        margin-bottom: 40px;
+                        margin-top: 40px;
+                    }
+                    .custom-button-data.btn-danger.disabled {
+                        color: #8C989F;
+                        background-color: #E6E7E9;
+                        border-color: #E6E7E9;
+                    }
+
+                    .custom-button-data.btn-danger.disabled svg {
+                        fill:#8C989F;
                     }
                     
                     @media screen and (max-width: 767px) {
