@@ -1,0 +1,113 @@
+.continueButtonEnable {
+    margin-bottom: 20px;
+}
+
+.stampImgContainer {
+    right: 40px;
+    top: 120px;
+    width: auto;
+}
+
+.bankDetailsLeftContent {
+    padding: 100px 25px;
+}
+
+#paymentMethod {
+    display: flex;
+    margin-bottom: 34px;
+}
+
+.bank_detail_mainheading {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.bank_detail_subheading {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.paymentOptionsMaincontant {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.reviewCardHead {
+    color: #4B4C4D;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.reviewCardLargeContent {
+    color: #221F20;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+.review_button_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.newtopborder {
+    border-top: 2px solid #8c989f;
+    padding-top: 20px;
+}
+
+.custome-d-flex {
+    display: flex;
+}
+
+.reviewcard{
+    border-radius: 8px;
+}
+
+.green_box_data{
+    font-weight: 400;
+    border: solid 1px #1c7944;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #D2E9DA;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #208B4E;
+    font-size: 12px;
+}
+
+.green_box_display{
+    display: flex;
+}
+
+.green_box_data_head{
+    color: #221F20;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.completed_img_container{
+    width: 150px;
+    padding-right: 15px;
+}
+
+.completed_img{
+    width: 100%;
+    height: auto;
+}
+
+.boldDataGreen{
+    font-weight: 600;
+    color:#1c7944;
+    font-size: 13px;
+}
+
+.green_box_ul{
+    display: block;
+    list-style-type: disc;
+    padding-left: 15px;
+}

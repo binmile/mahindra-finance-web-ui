@@ -281,6 +281,7 @@
 
 .checkbox-tools:checked+label {
     border: 1.5px solid #221F20 !important;
+    background-color: #F4F7FA !important;
 }
 
 .checkbox-tools:checked+label,

@@ -73,11 +73,16 @@
 
 
                                     </div>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.952148 2.61905H19.0474V15.7143H0.952148V2.61905ZM2.38072 4.04762V14.2857H17.6188V4.04762H2.38072Z" fill="#221F20"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 8.21428C9.47411 8.21428 9.04771 8.64068 9.04771 9.16667C9.04771 9.69265 9.47411 10.119 10.0001 10.119C10.5261 10.119 10.9525 9.69265 10.9525 9.16667C10.9525 8.64068 10.5261 8.21428 10.0001 8.21428ZM7.61914 9.16667C7.61914 7.8517 8.68513 6.78571 10.0001 6.78571C11.3151 6.78571 12.381 7.8517 12.381 9.16667C12.381 10.4816 11.3151 11.5476 10.0001 11.5476C8.68513 11.5476 7.61914 10.4816 7.61914 9.16667Z" fill="#221F20"/>
-                                        </svg>
-                                        
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.952148 2.61905H19.0474V15.7143H0.952148V2.61905ZM2.38072 4.04762V14.2857H17.6188V4.04762H2.38072Z"
+                                            fill="#221F20" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.0001 8.21428C9.47411 8.21428 9.04771 8.64068 9.04771 9.16667C9.04771 9.69265 9.47411 10.119 10.0001 10.119C10.5261 10.119 10.9525 9.69265 10.9525 9.16667C10.9525 8.64068 10.5261 8.21428 10.0001 8.21428ZM7.61914 9.16667C7.61914 7.8517 8.68513 6.78571 10.0001 6.78571C11.3151 6.78571 12.381 7.8517 12.381 9.16667C12.381 10.4816 11.3151 11.5476 10.0001 11.5476C8.68513 11.5476 7.61914 10.4816 7.61914 9.16667Z"
+                                            fill="#221F20" />
+                                    </svg>
+
                                 </div>
                                 <div class="menuname">
                                     <p>Investment</p>
@@ -223,17 +228,19 @@
                                 </form>
                                 <div class="paymentOptionsMaincontant newtopborder">Select payment method</div>
                                 <div class="" data-toggle="buttons" id="paymentMethod">
-                                    <input class="checkbox-tools bankDeatilsRadio" type="radio" name="tools" id="tool-1" checked>
+                                    <input class="checkbox-tools bankDeatilsRadio" type="radio" name="tools" id="tool-1"
+                                        checked>
                                     <label class="for-checkbox-tools" for="tool-1">
                                         <img src="./assets/Image/PaymentLogoA.png" alt="steeper image"
-                                        class="paymentIcon"><br>
+                                            class="paymentIcon"><br>
                                         CAMSPay
                                     </label>
-                                    <input class="checkbox-tools bankDeatilsRadio" type="radio" name="tools" id="tool-2">
+                                    <input class="checkbox-tools bankDeatilsRadio" type="radio" name="tools"
+                                        id="tool-2">
                                     <label class="for-checkbox-tools" for="tool-2">
                                         <img src="./assets/Image/PaymentRtgsLogo.svg" alt="steeper image"
-                                                class="paymentIcon">
-                                                RTGS/NEFT
+                                            class="paymentIcon">
+                                        RTGS/NEFT
                                     </label>
                                 </div>
                                 <div class="check_kyc">
@@ -445,7 +452,8 @@
             </div>
         </div>
         <!-- Edit Modal -->
-        <div class="modal fade modalEdit" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal fade modalEdit" id="editModal" tabindex="-1" aria-labelledby="editModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content review_modal">
                     <div data-bs-dismiss="modal" aria-label="Close">
@@ -628,32 +636,31 @@
             var account_number = document.getElementById("account_number").value;
             var re_enter_account_number = document.getElementById("re_enter_account_number").value;
             var ifsc_code = document.getElementById("ifsc_code").value;
-            if (account_number === ""){
+            if (account_number === "") {
                 document.getElementById("error_account_number_empty").style.display = "block";
                 document.getElementById("error_account_number_not_valid").style.display = "none";
                 document.getElementById("account_number").style.border = "1px solid red";
             }
-            else if (account_number.length < 9 ) {
+            else if (account_number.length < 9) {
                 document.getElementById("error_account_number_not_valid").style.display = "block";
                 document.getElementById("error_account_number_empty").style.display = "none";
                 document.getElementById("account_number").style.border = "1px solid red";
-            } 
+            }
             else {
-                // document.getElementById("error_account_number").style.display = "none";
                 document.getElementById("error_account_number_not_valid").style.display = "none";
                 document.getElementById("error_account_number_empty").style.display = "none";
                 document.getElementById("account_number").style.border = "";
             }
-            if ( account_number !== "" && account_number.length >= 9  && re_enter_account_number === "") {
+            if (account_number !== "" && account_number.length >= 9 && re_enter_account_number === "") {
                 document.getElementById("error_re_enter_account_number_empty").style.display = "block";
                 document.getElementById("error_re_enter_account_number_mismatch").style.display = "none";
                 document.getElementById("re_enter_account_number").style.border = "1px solid red";
-            } 
-            else if ( account_number.length >= 9 && re_enter_account_number !== account_number ) {
+            }
+            else if (account_number.length >= 9 && re_enter_account_number !== account_number) {
                 document.getElementById("error_re_enter_account_number_mismatch").style.display = "block";
                 document.getElementById("error_re_enter_account_number_empty").style.display = "none";
                 document.getElementById("account_number").style.border = "1px solid red";
-            } 
+            }
             else {
                 document.getElementById("error_re_enter_account_number_empty").style.display = "none";
                 document.getElementById("error_re_enter_account_number_mismatch").style.display = "none";
@@ -662,11 +669,13 @@
             if (ifsc_code === "") {
                 document.getElementById("error_ifsc_code").style.display = "block";
                 document.getElementById("ifsc_code").style.border = "1px solid red";
-            } else {
+            }
+            else {
                 document.getElementById("error_ifsc_code").style.display = "none";
                 document.getElementById("ifsc_code").style.border = "";
             }
         }
+
 
         function checkBox() {
             var ischecked = document.getElementById("flexCheckDefault").checked;
@@ -711,8 +720,12 @@
             });
         });
     </script>
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 
 </body>
 
