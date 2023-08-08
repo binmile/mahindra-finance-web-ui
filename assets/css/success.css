@@ -97,3 +97,50 @@
     background: linear-gradient(to bottom right, #4bae4f, #4bae4f);
    
 }
+
+
+
+
+.snowparent {
+    position: relative;
+}
+.snow {
+    width: 100%;
+    height: 180px;
+    
+    background-image: url("../image-main/Group.svg");
+    background-position: 0px 0px;
+    animation: animatedBackground 10s linear infinite;
+    position: absolute;
+    top: 0;
+}
+.snow2 {
+    width: 100%;
+    height: 100vh;
+   
+    background-image: url("../image-main/Group.svg");
+    background-position: 0px 0px;
+    animation: animatedBackground 10s linear infinite;
+    position: absolute;
+    top: 0;
+    
+}
+
+.snow div {
+  width: 100%;
+  height: 100%;
+  background-image: url("../image-main/Group.svg");
+  background-position: 0px 0px;
+  animation: animatedBackground 15s linear infinite;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0px 300px;
+  }
+}
+
+      

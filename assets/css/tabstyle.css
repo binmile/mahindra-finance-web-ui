@@ -25,7 +25,7 @@
     justify-content: space-around;
 }
 .horizontalline {
-    width: 87px;
+    width: 88px;
 }
 .tabparent {
     display: flex;
@@ -55,14 +55,13 @@
     background: #000;
     border-radius: 100%;
 }
-@media screen and (max-width:1399px) {
+/* @media screen and (max-width:1399px) {
     .tabparent {
         overflow-x: auto;
         margin-right: 50px;
-        /* margin-left: 50px; */
         overflow-y: hidden;
     }
-}
+} */
 
 @media screen and (max-width:767px) {
     .wizardnew {
@@ -100,3 +99,4 @@
 .tabdesign svg {
     margin-left: 5px;
 } */
+
