@@ -176,7 +176,7 @@
     }
     .img-div {
         right: 0;
-        left: 150px;
+        left: 90px;
     }
     .circle-data {
         display: none !important;
@@ -193,6 +193,7 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 44px;
+        margin-top: 70px;
     }
     .wrapper_div-mob {
         justify-content: center;
