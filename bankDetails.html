@@ -228,16 +228,15 @@
                                 </form>
                                 <div class="paymentOptionsMaincontant newtopborder">Select payment method</div>
                                 <div class="" data-toggle="buttons" id="paymentMethod">
-                                    <input class="checkbox-tools bankDeatilsRadio" type="radio" name="tools" id="tool-1"
+                                    <input class="checkbox-tools bankDeatilsRadio" type="radio" name="tools" id="camsPay"
                                         checked>
-                                    <label class="for-checkbox-tools" for="tool-1">
+                                    <label class="for-checkbox-tools" for="camsPay">
                                         <img src="./assets/Image/PaymentLogoA.png" alt="steeper image"
                                             class="paymentIcon"><br>
                                         CAMSPay
                                     </label>
-                                    <input class="checkbox-tools bankDeatilsRadio" type="radio" name="tools"
-                                        id="tool-2">
-                                    <label class="for-checkbox-tools" for="tool-2">
+                                    <input class="checkbox-tools bankDeatilsRadio" id="rtgs" type="radio" name="tools">
+                                    <label class="for-checkbox-tools" for="rtgs">
                                         <img src="./assets/Image/PaymentRtgsLogo.svg" alt="steeper image"
                                             class="paymentIcon">
                                         RTGS/NEFT
@@ -246,7 +245,7 @@
                                 <div class="check_kyc">
                                     <div class="kyc_data">
                                         <input class="form-check-input bankDetailsCheckbox" type="checkbox" value=""
-                                            id="flexCheckDefault" onclick="checkBox()" />
+                                            id="flexCheckDefault" onchange="checkBox()" />
                                         <label class="form-check-label bankFormcheckLabel" for="flexCheckDefault">
                                             I/We herby expressly consent to MMFSL to search, download,
                                             upload/share with central KYC registry/Digilocker & receive
@@ -255,8 +254,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-danger bank-details-disabled-button disabled"
-                                    onclick="validate_account()" id="continueButton">Continue
+                                <button type="button" onclick="continueButtonAction()" class="btn btn-danger bank-details-disabled-button disabled" id="continueButton">Continue
                                     <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
                             </div>
                         </div>
@@ -445,6 +443,87 @@
                             </div>
                             <button type="button" class="btn btn-danger bank-details-disabled-button disabled"
                                 onclick="reviewApplicationContinue()" id="reviewContinueButton">Continue
+                                <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
+                        </div>
+                        <div class="maincom" id="rtgspageRightSide">
+                            <div class="maincontant">
+                                <h4 class="bank_detail_mainheading">Payment transfer details</h4>
+                            </div>
+                            <div class="green_box_data green_box_display">
+                                <div class="completed_img_container">
+                                    <img src="./assets/Image/completed.svg" alt="completed" class="completed_img">
+                                </div>
+                                <div>
+                                    <h1 class="green_box_data_head">Transaction successful!</h1>
+                                    <div>Your registration for Fixed Deposit additional purchase bearing application no.
+                                        <span class="boldDataGreen">FMEMFS23D353A15</span> through RTGS/NEFT mode is
+                                        successful. Kindly transfer the investment amount in a single transfer to the
+                                        below mentioned account quoting your application number in the Remarks for us to
+                                        create your Fixed Deposit </div>
+                                </div>
+                            </div>
+                            <div class="reviewcard">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6 col-sm-6">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Benificiary name
+                                            </div>
+                                            <div class="reviewCardLargeContent">MMFSL FIXED DEPOSIT ACCOUNT
+                                            </div>
+                                        </div>
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Bank
+                                            </div>
+                                            <div class="reviewCardLargeContent">Axis bank, Mumbai branch
+                                            </div>
+                                        </div>
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                IFSC code
+                                            </div>
+                                            <div class="reviewCardLargeContent">UTIB0000004
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-sm-6">
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Account number
+                                            </div>
+                                            <div class="reviewCardLargeContent">912020040597254
+                                            </div>
+                                        </div>
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                Account number
+                                            </div>
+                                            <div class="reviewCardLargeContent">400211002
+                                            </div>
+                                        </div>
+                                        <div class="reviewContentDiv">
+                                            <div class="reviewCardHead ">
+                                                FDR amount
+                                            </div>
+                                            <div class="reviewCardLargeContent">₹ 10,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="green_box_data">
+                                <ul class="green_box_ul">
+                                    <li>You will receive your E-FDR on your registered Email ID within 7 working days
+                                        subject to verification of your KYC documents and realization of amount by the
+                                        company.
+                                    </li>
+                                    <li>Kindly send a mail confirmation after transfer of your investment amount quoting
+                                        application reference number <a href="">mfinfd@mahindra.com</a></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-danger continueButtonEnable"
+                                id="reviewContinueButton">Continue
                                 <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
                         </div>
                     </div>
@@ -678,6 +757,7 @@
 
 
         function checkBox() {
+            var validIput = validate_account();
             var ischecked = document.getElementById("flexCheckDefault").checked;
             var element = document.getElementById("continueButton");
             if (ischecked) {
@@ -686,6 +766,14 @@
             } else {
                 element.classList.add("disabled");
                 element.classList.remove("continueButtonEnable");
+            }
+        }
+
+        function continueButtonAction(){
+            var ischecked = document.getElementById("rtgs").checked;
+            if(ischecked){
+                $("#bankdetailsPageRightside").css('display','none')
+                $("#rtgspageRightSide").css('display','block')
             }
         }
 
