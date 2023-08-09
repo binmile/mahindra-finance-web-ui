@@ -106,8 +106,9 @@
     font-size: 13px;
 }
 
-.green_box_ul{
+.green_box_ul {
     display: block;
     list-style-type: disc;
     padding-left: 15px;
+    margin-bottom: 0px;
 }

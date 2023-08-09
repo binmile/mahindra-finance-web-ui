@@ -100,3 +100,229 @@
     margin-left: 5px;
 } */
 
+.tabdesign p {
+    font-size: 14px;
+}
+
+@media screen and (min-width:1200px) and (max-width:1399px){
+    .horizontalline {
+        width: 60px;
+    }
+
+ }
+ @media screen and (min-width:992px) and (max-width:1199px){
+    .horizontalline {
+        width: 35px;
+    }
+
+ }
+ @media screen and (min-width:576px) and (max-width:991px){
+    
+    .circleimg.active::before {
+        content: "";
+        bottom: 0px;
+    }
+    .circleimg {
+        margin-left: 66px;
+        margin-bottom: 5px;
+    }
+    .tabdesign p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .bordertop::after {
+        content: "";
+        position: absolute;
+        border: 2px solid #8C989F;
+        width: 69%;
+        left: 112px;
+        top: 344px;
+    }
+    .circleimg.active::before {
+        content: "";
+        display: none;
+    }
+    .tabdesign.active::after {
+        position: absolute;
+        content: "";
+        width: 25%;
+        border: 2px solid #000;
+        bottom: 0px;
+    }
+
+    .horizontalline {
+        display: none;
+    }
+    .tabdesign {
+        display: block;
+    }
+  
+
+ }
+
+ @media screen and (min-width:576px) and (max-width:767px){
+  
+    .circleimg.active::before {
+        content: "";
+        bottom: 0px;
+    }
+    .circleimg {
+        margin-left: 42px;
+        margin-bottom: 5px;
+    }
+    .tabdesign p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .bordertop::after {
+        content: "";
+        position: absolute;
+        border: 2px solid #8C989F;
+        width: 69%;
+        left: 112px;
+        top: 344px;
+    }
+  
+
+    .horizontalline {
+        display: none;
+    }
+    .tabdesign {
+        display: block;
+    }
+  
+    .circleimg.active::before {
+        content: "";
+        bottom: 0px;
+    }
+
+ }
+
+ @media screen and (min-width:320px) and (max-width:992px){
+    .tabparent {
+        display: flex;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 20px 20px 0px 20px;
+        padding: 20px;
+        border-radius: 4px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+ @media screen and (min-width:1400px){
+    .horizontalline {
+        width: 87px;
+    }
+    .tabdesign p {
+        font-size: 14px;
+    }
+
+ }
+
+ @media screen and (min-width:423px) and (max-width:575px){
+    .circleimg {
+        margin-left: 31px;
+        margin-bottom: 5px;
+    }
+    .tabdesign {
+        display: block;
+    }
+    .horizontalline .new1 {
+        display:none;
+    }
+    
+    .tabdesign.active::after {
+        position: absolute;
+        content: "";
+        width: 25%;
+        border: 2px solid #000;
+        bottom: 0px;
+    }
+    .horizontalline {
+        display: none;
+    }
+    .tabdesign p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .circleimg.active::before {
+        content: "";
+        display: none;
+    }
+
+
+ }
+
+@media screen and (min-width:375px) and (max-width:422px){
+    .tabdesign {
+        display: block;
+    }
+    .horizontalline .new1 {
+        display:none;
+    }
+    
+    .tabdesign.active::after {
+        position: absolute;
+        content: "";
+        width: 25%;
+        border: 2px solid #000;
+        bottom: 0px;
+    }
+    .horizontalline {
+        display: none;
+    }
+    .circleimg {
+        margin-left: 26px;
+        margin-bottom: 5px;
+    }
+    .tabdesign p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .circleimg.active::before {
+        content: "";
+        display: none;
+    }
+
+ }
+ @media screen and (min-width:320px) and (max-width:374px){
+    .tabdesign {
+        display: block;
+    }
+    .horizontalline .new1 {
+        display:none;
+    }
+    
+    .tabdesign.active::after {
+        position: absolute;
+        content: "";
+        width: 25%;
+        border: 2px solid #000;
+        bottom: 0px;
+    }
+    .horizontalline {
+        display: none;
+    }
+    .circleimg {
+        margin-left: 26px;
+        margin-bottom: 5px;
+    }
+    .tabdesign p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .circleimg.active::before {
+        content: "";
+        display: none;
+    }
+
+ }

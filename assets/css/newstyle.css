@@ -2265,7 +2265,7 @@
   }
 
 
-  @media only screen and (min-width: 768px) and (max-width: 1600px) {
+  @media only screen and (min-width: 992px) and (max-width: 1600px) {
     body {zoom: 90%;}
 } 
 .panmobilefix .modal-backdrop {
@@ -2283,10 +2283,5 @@
 }
 
 
-@media screen and (min-width:991px) and (max-width:1399px){
-    .horizontalline {
-        width: 50px !important;
-    }
 
- }
  
