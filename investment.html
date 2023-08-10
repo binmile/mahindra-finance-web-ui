@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,19 +15,128 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/tabstyle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/investmentStyle.css" />
-
     <title>Investment</title>
     <!-- <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" /> -->
 </head>
-
 <body>
-
-    <div class="container">
+    <div class="container showelement">
         <div class="card">
-            <div class="bordertop"></div>
+            <!-- <div class="bordertop"></div> -->
             <div class="row">
-                <div class=" col-12 col-md-12 col-lg-5 col-sm-12 d-flex ">
-                    <div class="leftside leftsiderajan">
+                <div class=" col-12 col-md-12 col-lg-5 col-sm-12 mobile_investment">
+                    <div class="leftsiderajan">
+                        <div class="row">
+                            <div class=" col-8 col-md-8 col-lg-8 col-sm-8 ">
+                                <img src="./assets/Image/Branding.png" alt="brand image"
+                                    class="mobile_investment_logo" />
+                            </div>
+                            <div class="col-4 col-md-4 col-lg-4 col-sm-4  mobile_investment_stampCnt_ ">
+                                <img src="./assets/Image/Highest Safety Stamp.png" alt="stamp"
+                                    class="mobile_investment_stamp" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
+                            <P class="mobile_investment_header">
+                                Fixed deposit
+                            </P>
+                            <p class="mobile_investment_subheaders">
+                                Now invest in just 4 easy steps.
+                            </p>
+                        </div>
+                        <div class="appliedContainer">
+                            <div class="col-7 col-md-7 col-lg-7 col-sm-7 ">
+                                <div class="appliedSection">
+                                    <div class="appliedSection_additional">
+                                        <div>
+                                            <img src="./assets/Image/completed.svg" alt="complete_img"
+                                                class="mobile_investment_cmpl" />
+                                        </div>
+                                        <div class="applied_additional_citizens">
+                                            0.25% Senior citizens interest rates
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 col-md-5 col-lg-5 col-sm-5 ">
+                                <div class="mobile_investment_btn">
+                                    <button type="button" class="btn btn-danger"  onclick="showMobileInterestRates()">
+                                        View interest rates
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!---------mobile popup start---------->
+                    <div id="darkBackground"></div>
+                    <div class="mobile_interest_rate_container" id="mobile_interest_rate">
+                        <div class="mobile_popup">
+                            <div class="closeBtn_txt">Interest rates</div>
+                            <div class="closeBtn" onclick="hideMobileInterestRates()"><img src="./assets/icons/close.svg" alt="closebtn"></div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tenure (in years)</th>
+                                    <th scope="col">Interest rates </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 </td>
+                                    <td>
+                                        <span class="tableUpto">Upto</span>
+                                        <span>7.40%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <span class="tableUpto">Upto</span>
+                                        <span>7.55%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <span class="tableUpto">Upto</span>
+                                        <span>8.05%</span>
+                                        <span class="table_bestSelerImg">
+                                            <img class="bestSellerImg" alt="bestSeller"
+                                                src="./assets/Image/bestSeller.png" />
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 4</td>
+                                    <td>
+                                        <span class="tableUpto">
+                                            Upto
+                                        </span>
+                                        <span>
+                                            9.08%
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <span class="tableUpto">
+                                            Upto
+                                        </span>
+                                        <span>
+                                            9.45%
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!---------mobile popup end---------->
+                </div>
+
+                <div class=" col-12 col-md-12 col-lg-5 col-sm-12 desktop_investment">
+                    <div class="leftside leftsiderajan ">
                         <div class="logoImgContainer">
                             <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
                         </div>
@@ -38,7 +144,6 @@
                             <div class="leftcard-contant">
                                 <h1> Fixed deposit Schemes</h1>
                             </div>
-                            <!-- investment leftHand side Screen start -->
                             <div class="appliedContainer">
                                 <div class="col-7 col-md-7 col-lg-7 col-sm-7 ">
                                     <div class="appliedSection">
@@ -228,32 +333,31 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="investmentParent">
-
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" role="tabpanel" id="step1"
                                 aria-labelledby="step1-tab">
-
-                                <form name="investmentForm">
+                                <form>
                                     <div class="" id="invstment">
                                         <h4 class="Investment_Heading">Customize your fixed deposit</h4>
-
                                         <div class="row">
                                             <div class="col-12 col-md-8 col-lg-7 col-sm-12 ">
                                                 <div class="textparent">
-                                                    <label  class="form-label invest_form_label">Enter
+                                                    <label class="form-label invest_form_label">Enter
                                                         amount to be invested</label>
-                                                        <div class="customTextfield">
-                                                            &#x20B9;
-                                                        </div>
-                                                            <input type="text" placeholder="Enter Amount" class="form-control form-control_amount" 
-                                                                name="amountNo" autocomplete="off" id="amountNo" value="15,000" oninput="formatAmount(this)" >
-                                                            <div class="textfildicons">
-                                                                <img src="./assets/icons/money.svg" alt="icons" class="icons" />
-                                                            </div>
-                                                       
-                                                    <p class="message_label msg_Investment" id="error_account_number">Min. deposit of ₹ 10,000 and
+                                                    <div class="customTextfield">
+                                                        &#x20B9;
+                                                    </div>
+                                                    <input type="text" placeholder="Enter Amount"
+                                                        class="form-control form-control_amount" name="amountNo"
+                                                        autocomplete="off" id="amountNo" value="15,000"
+                                                        oninput="formatAmount(this)">
+                                                    <div class="textfildicons">
+                                                        <img src="./assets/icons/money.svg" alt="icons" class="icons" />
+                                                    </div>
+
+                                                    <p class="message_label msg_Investment" id="error_account_number">
+                                                        Min. deposit of ₹ 10,000 and
                                                         max deposit of ₹
                                                         2 crores</p>
                                                 </div>
@@ -261,10 +365,9 @@
                                         </div>
                                         <div class="tenure_container_investment">
                                             <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
-                                                <label for="month class="form-label">Select tenure (in years)</label>
-                                               <div id="">
+                                                <label for="month" class="form-label">Select tenure (in years)</label>
+                                                <div id="">
                                                     <div class="" data-toggle="buttons" id="tenureEements">
-
                                                         <label class="boxRadioButton" id="elementoption1">
                                                             <input type="radio" name="type" value="1"
                                                                 data-tenure="elementoption1" autocomplete="off"> 1
@@ -289,8 +392,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                   
-                                        
                                         <div class="receive_interest_container_investment">
                                             <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
                                                 <div class="interestContainer_header">
@@ -315,7 +416,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </div>
                                                 <div data-toggle="buttons" id="tenureEement" class="tenure_investment">
                                                     <label class="boxRadioButton2 boxmaturity_radio_investment "
@@ -329,7 +429,6 @@
                                                             8.30%
                                                         </span>
                                                     </label>
-
                                                     <label class="boxRadioButton2 boxmaturity_radio_investment"
                                                         id="elementoption12">
                                                         <input type="radio" name="type" value="Yearly"
@@ -340,7 +439,6 @@
                                                         <span class="maturityBox_tex2_investment">
                                                             8.05%
                                                         </span>
-
                                                     </label>
                                                     <label class="boxRadioButton2 boxmaturity_radio_investment"
                                                         id="elementoption13">
@@ -353,7 +451,6 @@
                                                         <span class="maturityBox_tex2_investment">
                                                             7.89%
                                                         </span>
-
                                                     </label>
                                                     <label class="boxRadioButton2 boxmaturity_radio_investment"
                                                         id="elementoption14">
@@ -393,7 +490,7 @@
                                                 <div class="interestTableContainer_inner">
                                                     <div class="interest_autorenewal_a">
                                                         <div
-                                                            class=" col-12 col-md-3 col-lg-3 col-sm-6 interestTableContainer_text_container">
+                                                            class=" col-6 col-md-3 col-lg-3 col-sm-6 interestTableContainer_text_container">
                                                             <div class="interestTableContainer_text_1">
                                                                 Interest rate
                                                             </div>
@@ -401,8 +498,7 @@
                                                                 8.30%
                                                             </div>
                                                         </div>
-
-                                                        <div class=" col-12 col-md-3 col-lg-3 col-sm-6 
+                                                        <div class=" col-6 col-md-3 col-lg-3 col-sm-6 
                                                     interestTableContainer_text_container">
                                                             <div class="interestTableContainer_text_1">
                                                                 Interest amount
@@ -411,8 +507,7 @@
                                                                 ₹ 5,835
                                                             </div>
                                                         </div>
-
-                                                        <div class=" col-12 col-md-3 col-lg-3 col-sm-6 
+                                                        <div class=" col-6 col-md-3 col-lg-3 col-sm-6 
                                                     interestTableContainer_text_container">
                                                             <div class="interestTableContainer_text_1">
                                                                 Maturity amount
@@ -421,8 +516,7 @@
                                                                 ₹ 20,835
                                                             </div>
                                                         </div>
-
-                                                        <div class=" col-12 col-md-3 col-lg-3 col-sm-6 
+                                                        <div class=" col-6 col-md-3 col-lg-3 col-sm-6 
                                                     interestTableContainer_text_container">
                                                             <div class="interestTableContainer_text_1">
                                                                 Maturity date
@@ -431,18 +525,16 @@
                                                                 28 Jul 2025
                                                             </div>
                                                         </div>
-
                                                     </div>
-
                                                     <div class="interestTableContainer_CheckBox">
-                                                        <input type="checkbox" value="" id="reviewFlexCheckDefault" onclick="checkBox_renewal()" checked >
+                                                        <input type="checkbox" value="" id="reviewFlexCheckDefault"
+                                                            onclick="checkBox_renewal()" checked>
                                                         <label for="">
                                                             <span class="autorenewal_text">
                                                                 Auto
                                                                 renewal
                                                             </span>
                                                         </label>
-
                                                         <div class="tooltipContainer">
                                                             <span class="tooltipMain">
                                                                 <img class="alertImg" src="./assets/icons/Union.svg"
@@ -458,7 +550,6 @@
                                                                                 your current FD
                                                                                 scheme.
                                                                             </li>
-
                                                                             <li>
                                                                                 Interest rate of renewed FD will depend
                                                                                 on
@@ -474,9 +565,8 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="addHolder_radio_investment">
-                                            <div class="col-6 ">
+                                            <div class="col-11 col-md-6 col-lg-5 col-sm-10">
                                                 <label for="" class="form-label"> Would you like to add a joint account
                                                     holder?</label>
                                                 <div class="btn-group  jointAccount_Button_container"
@@ -499,39 +589,37 @@
                                         </div>
                                         <div class="jointSwitch_container_investment1">
                                             <div class="form-check form-switch">
-                                                <input class="form-check-input toggle_investment" type="checkbox" role="switch"
-                                                    id="flexSwitchCheckDefault1">
-                                                <label class="form-check-label togle_lable_investment" for="flexSwitchCheckDefault">
+
+                                                <input class="form-check-input toggle_investment" type="checkbox"
+                                                    role="switch" id="flexSwitchCheckDefault1">
+                                                <label class="form-check-label togle_lable_investment"
+                                                    for="flexSwitchCheckDefault">
                                                     I am a joint holder/tax resident outside of india</label>
                                             </div>
                                         </div>
-
                                         <div class="jointSwitch_container_investment2">
                                             <div class="form-check form-switch">
-                                                <input class="form-check-input toggle_investment " type="checkbox" role="switch"
-                                                    id="flexSwitchCheckDefault2">
-                                                <label class="form-check-label togle_lable_investment" for="flexSwitchCheckDefault">
+                                                <input class="form-check-input toggle_investment " type="checkbox"
+                                                    role="switch" id="flexSwitchCheckDefault2">
+                                                <label class="form-check-label togle_lable_investment"
+                                                    for="flexSwitchCheckDefault">
                                                     I am a joint holder/green card holder</label>
                                             </div>
                                         </div>
                                         <div class="Continue_button_container">
-                                            <div class=" col-12 col-md-5 col-lg-5 col-sm-12 ">
+                                            <div class=" col-12 col-md-5 col-lg-5 col-sm-12">
                                                 <div class="">
                                                     <button type="button" id='reviewContinueButton'
                                                         class="btn btn-danger  continue_button_investment"
                                                         onclick="validate_continue()">
                                                         Continue
-                                                        <img alt="arrow" src="./assets/Image/CTA_arrow.svg" class="img_tag" />
+                                                        <img alt="arrow" src="./assets/Image/CTA_arrow.svg"
+                                                            class="img_tag" />
                                                     </button>
-
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-
-                                <form >
                                     <div id="additionalDetailParent">
                                         <div class="">
                                             <h4 class="Investment_Heading headingAdditional">Additional details</h4>
@@ -541,7 +629,7 @@
                                                 </label>
                                             </div>
                                             <div class="accountHolderYessNo_investment">
-                                                <div class="col-6 ">
+                                                <div class="col-11 col-md-6 col-lg-5 col-sm-10">
                                                     <label for="" class="form-label">Would you like to add a joint
                                                         account holder?</label>
                                                     <div class="btn-group jointAccount_Button_container jointAccount_Button_container_investment"
@@ -550,30 +638,29 @@
                                                             class="btn button_label set-1 yesNo_button_invester active"
                                                             id="elementoption31">
                                                             <input class="checkbox_button" type="radio" name="type2"
-                                                                value="elementoption31" autocomplete="off" onclick="accountshow2()"
-                                                                data-tenures="elementoption31" for="elementoption31"
-                                                                checked> No
+                                                                value="elementoption31" autocomplete="off"
+                                                                onclick="accountshow2()" data-tenures="elementoption31"
+                                                                for="elementoption31" checked> No
                                                         </label>
-    
+
                                                         <label class="btn button_label set-1 yesNo_button_invester"
                                                             id="elementoption32">
                                                             <input type="radio" class="checkbox_button" name="type2"
-                                                                value="elementoption32" autocomplete="off" onclick="accountshow1()"
-                                                                for="elementoption32" data-tenures="elementoption32"> Yes
+                                                                value="elementoption32" autocomplete="off"
+                                                                onclick="accountshow1()" for="elementoption32"
+                                                                data-tenures="elementoption32"> Yes
                                                         </label>
-    
                                                     </div>
                                                 </div>
-    
                                             </div>
-    
                                             <div class="" id="holder1">
                                                 <div class="row pan_mobile_container_investment">
                                                     <div class="col-12 col-md-6 col-lg-6 col-sm-12 ">
                                                         <div class="textparent textparent_mob_investment">
                                                             <label for="" class="form-label">Enter
                                                                 joint account holder’s mobile </label>
-                                                            <input type="text" placeholder="Enter a 10 digit mobile number" required
+                                                            <input type="text"
+                                                                placeholder="Enter a 10 digit mobile number" required
                                                                 class="form-control" id="mobile">
                                                             <div class="textfildicons">
                                                                 <img src="./assets/Image/mobile.svg" alt="icons"
@@ -581,55 +668,50 @@
                                                             </div>
                                                             <div id="error-message"></div>
                                                         </div>
-
                                                     </div>
                                                     <div class="col-12 col-md-6 col-lg-6 col-sm-12 ">
-    
                                                         <div class="textparent textparent_mob_investment">
                                                             <label for="" class="form-label">Enter
                                                                 joint account holder’s PAN </label>
                                                             <input type="text" placeholder="E.g. CASND30202W" required
-                                                                class="form-control" id="PAN">  
-                                                                <div id="error-message_pan"></div>
+                                                                class="form-control" id="PAN">
+                                                            <div id="error-message_pan"></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="Continue_button_container_investment">
                                                     <div class=" col-12 col-md-4 col-lg-4 col-sm-12 ">
-                                                        
-                                                            <button type="button"
-                                                                class="btn btn-danger  OTP_button_investment" onclick="generateOtp()">
-                                                                Generate OTP
-                                                            </button>
-                                                       
-        
+                                                        <button type="button"
+                                                            class="btn btn-danger  OTP_button_investment"
+                                                            onclick="generateOtp()">
+                                                            Generate OTP
+                                                        </button>
                                                     </div>
                                                 </div>
-                                               
                                             </div>
-    
                                             <hr class="horizontalLinr_investment" />
-                                            <div class="selectHolder_nomine  selectHolder_nomine_investment"  id="elements">
+                                            <div class="selectHolder_nomine  selectHolder_nomine_investment"
+                                                id="elements">
                                                 <label class="selectHolder_text selectHolder_text_invester">
                                                     Nominee
                                                 </label>
                                             </div>
-    
                                             <div class="row nomineeInputContainer_investment">
-                                                <div class="col-6 ">
-    
+                                                <div class="col-11 col-md-6 col-lg-5 col-sm-10">
+
                                                     <label for="exampleInputPassword1" class="form-label">Would you like
                                                         to add nominee?</label>
                                                     <div class=" btn-group jointAccount_Button_container nominee_invester "
                                                         id="accountholder_invester">
-                                                        
-                                                        <label class="btn button_label set-1 yesNo_button_invester active"
-                                                        id="elementoption42">
-                                                        <input type="radio" class="checkbox_button" name="type3"
-                                                            onclick="show2()" value="event2"
-                                                            data-tenures="elementoption42" autocomplete="off"
-                                                            checked> No
-                                                       </label>
+
+                                                        <label
+                                                            class="btn button_label set-1 yesNo_button_invester active"
+                                                            id="elementoption42">
+                                                            <input type="radio" class="checkbox_button" name="type3"
+                                                                onclick="show2()" value="event2"
+                                                                data-tenures="elementoption42" autocomplete="off"
+                                                                checked> No
+                                                        </label>
                                                         <label class="btn button_label  yesNo_button_invester "
                                                             onclick="changeclr(this)" id="elementoption41">
                                                             <input class="checkbox_button" type="radio" name="type3"
@@ -637,75 +719,59 @@
                                                                 autocomplete="off" onclick="show1()">
                                                             Yes
                                                         </label>
-                                                     
                                                     </div>
                                                 </div>
                                             </div>
-    
                                             <div id="div1" class="Investment_radio_hide">
-    
                                                 <div class="row ">
                                                     <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested">
-    
-    
                                                         <div class="textparent textparent_nomine_name_investment">
-                                                            <label for=""
-                                                                class="form-label">Nominee’s
+                                                            <label for="" class="form-label">Nominee’s
                                                                 name</label>
                                                             <input type="text" placeholder="Enter name"
                                                                 class="form-control" id="nomineeName" required>
                                                             <div class="textfildicons">
                                                                 <img src="./assets/icons/kyc.svg" alt="icons"
                                                                     class="icons" />
-    
                                                             </div>
                                                             <div id="error-message_nomenieeName"></div>
-    
                                                         </div>
-    
                                                     </div>
-    
                                                     <div class="col-12 col-md-6 col-lg-6 col-sm-12 amountInvested ">
                                                         <div class="textparent textparent_nomine_name_investment">
-                                                            <label for=""
-                                                                class="form-label">Nominee’s
+                                                            <label for="" class="form-label">Nominee’s
                                                                 date of birth</label>
                                                             <input type="date" placeholder="DD/MM/YYYY"
-                                                                class="form-control calender_investment" id="nominee_DOB" onfocus="this.showPicker()"  required>
-                                                                <div id="error-message_nomenieeDOB"></div>
+                                                                class="form-control calender_investment"
+                                                                id="nominee_DOB" onfocus="this.showPicker()" required>
+                                                            <div id="error-message_nomenieeDOB"></div>
                                                         </div>
-
-    
                                                     </div>
                                                 </div>
                                                 <div class="row ">
-                                                    <div class="col-12 col-md-6 col-lg-6 col-sm-12 selectdiv_investment">
+                                                    <div
+                                                        class="col-12 col-md-6 col-lg-6 col-sm-12 selectdiv_investment">
                                                         <label for="exampleInputPassword1" class="form-label">Nominee’s
                                                             relation with you</label>
                                                         <div>
                                                             <div class="input-group selectCOntainer">
                                                                 <select class="form-select selectox"
-                                                                    aria-label="Default select example" id="nomenieeRelation"
-                                                                    aria-placeholder="Select"
-                                                                    >
-                                                                    <option selected>  </option>
+                                                                    aria-label="Default select example"
+                                                                    id="nomenieeRelation" aria-placeholder="Select">
+                                                                    <option selected> </option>
                                                                     <option value="Father">Father</option>
                                                                     <option value="Mother">Mother</option>
                                                                     <option value="Sister">Sister</option>
                                                                 </select>
-                                                               
                                                             </div>
-                                                        <div id="error-message_nomenieeRelation"></div>
-
-    
+                                                            <div id="error-message_nomenieeRelation"></div>
                                                         </div>
-    
                                                     </div>
                                                 </div>
-    
                                             </div>
                                             <div class="row ">
-                                                <div class="col-12 col-md-9 col-lg-9 col-sm-12 MMFSLcontainer MMFsl_investment_cont">
+                                                <div
+                                                    class="col-12 col-md-9 col-lg-9 col-sm-12 MMFSLcontainer MMFsl_investment_cont">
                                                     <p class="message_label">
                                                         By proceeding you consent to MMFSL to use your KYC details from
                                                         the
@@ -716,24 +782,19 @@
                                             <div class="Continue_button_container_investment">
                                                 <div class=" col-12 col-md-5 col-lg-5 col-sm-12 ">
                                                     <div class="">
-                                                        <button type="button" 
+                                                        <button type="button"
                                                             class="btn btn-danger kyc_button_investment"
-                                                            onclick="KYC_registery()"
-                                                          >
-                                                          Get KYC from CKYC registry
-                                                            <img alt="arrow" src="./assets/Image/CTA_arrow.svg" class="img_tag" />
+                                                            onclick="KYC_registery()">
+                                                            Get KYC from CKYC registry
+                                                            <img alt="arrow" src="./assets/Image/CTA_arrow.svg"
+                                                                class="img_tag" />
                                                         </button>
-    
                                                     </div>
-    
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </form>
-
-                                
-
                             </div>
                             <div class="tab-pane fade" role="tabpanel" id="step2" aria-labelledby="step2-tab">
                                 <h3>Step 2</h3>
@@ -780,10 +841,21 @@
         </footer>
     </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
             //Enable Tooltips
@@ -802,7 +874,6 @@
                 const nextTab = new bootstrap.Tab(nextTabLinkEl);
                 nextTab.show();
             });
-
             $(".previous").click(function () {
                 const prevTabLinkEl = $(".nav-tabs .active")
                     .closest("li")
@@ -818,15 +889,30 @@
     <script>
         const trs = document.getElementsByTagName("tr");
         const startWith = 4;
-
         function showMore() {
             for (let i = startWith; i < trs.length; i++) {
                 trs[i].classList.toggle('hidden')
             }
         }
-  
+        function showMobileInterestRates() {
+            var x = document.getElementById("mobile_interest_rate");
+            var y = document.getElementById("darkBackground");
+
+                // x.style.display = "block";
+                y.style.display = "block";
+                document.body.style.overflowY = "hidden";
+                x.style.transform = "translate(0px, 0px)";
+        }
+        function hideMobileInterestRates(){
+            var x = document.getElementById("mobile_interest_rate");
+
+            var y = document.getElementById("darkBackground");
+                // x.style.display = "none";
+                y.style.display = "none";
+                document.body.style.overflowY = "initial";
+                x.style.transform = "translate(0px, 370px)";
+        }
     </script>
     <script src="./assets/js/investment.js"></script>
 </body>
-
 </html>
