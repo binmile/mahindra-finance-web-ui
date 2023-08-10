@@ -397,11 +397,19 @@
     color: red;
   } 
 
+ /* investment mobile responsive screen 992 */
+ @media only screen and (max-width: 992px) {
+   .desktop_investment{
+      display: inline-block;
+   }
 
-
-  /* investment mobile responsive screen 768 - screen down all */
-  
- @media only screen and (max-width: 768px) {
+    .leftcard-contant h1 {
+        font-size: 62px;
+    }
+    
+ }
+  /* investment mobile responsive screen 767 - screen down all */
+ @media only screen and (max-width: 767px) {
 
     .desktop_investment{
         display: none;
@@ -867,3 +875,6 @@ tbody {
     }
     
 }
+
+/* tablet view from screen to screen */
+
