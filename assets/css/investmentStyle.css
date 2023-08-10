@@ -769,13 +769,114 @@ tbody {
     font-size: 16px;
 }
  
-.modal-header{
-    border-bottom: none;
-    padding-bottom: 0px;
+
+.tooltipContainer .tooltipContent {
+    position: absolute;
+    bottom: 32px;
+    left: -50px;
+    width: 229px;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid #E6E7E9;
+    color: #221F20;
+    padding: 15px;
+    border-radius: 4px;
 }
 
-.modal-body{
-    padding-top: 0px;
+/****************mobile interest rate popup start here******************/
+.mobile_investment{
+    position: relative;
 }
 
+#darkBackground{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mobile_interest_rate_container{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #FFFFFF;
+    padding: 30px;
+    transform: translate(0px, 370px);
+    transition: all 0.3s ease-in-out;
+    border-top-left-radius : 8px;
+    border-top-right-radius : 8px;
+}
+.mobile_popup{
+   display: flex;
+   justify-content: space-between;
+}
+.closeBtn_txt{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+/****************mobile interest rate popup end here******************/
+
+}
+
+
+@media only screen and (max-width: 448px){
+   
+    .tooltipContainer .tooltipContent {
+        position: absolute;
+        bottom: 32px;
+        left: -107px;
+        width: 170px;
+        height: auto;
+        background-color: #ffffff;
+        border: 1px solid #E6E7E9;
+        color: #221F20;
+        padding: 15px;
+        border-radius: 4px;
+    }
+    .tooltipContainer .tooltipContent::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 67%;
+        margin-left: -5px;
+        border-width: 9px;
+        border-style: solid;
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    
+}
+
+@media only screen and (max-width: 395px){
+   
+    .tooltipContainer .tooltipContent {
+        position: absolute;
+        bottom: 32px;
+        left: -84px;
+        width: 140px;
+        height: auto;
+        background-color: #ffffff;
+        border: 1px solid #E6E7E9;
+        color: #221F20;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    .tooltipContainer .tooltipContent::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 67%;
+        margin-left: -5px;
+        border-width: 9px;
+        border-style: solid;
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    
 }
