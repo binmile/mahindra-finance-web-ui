@@ -209,7 +209,23 @@
                         align-items: center;
                         width: 180px;
                     }
-                    
+                    .secondary-detail {
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        border-radius: 4px;
+                        border-top-right-radius: 0;
+                        border-bottom-left-radius: 0;
+                        background-color: #626567;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 180px;
+                    }
+                    .seconadry_accordion_button_head{
+                        margin-top: 20px;
+                    }
+
                     .minor-detail {
                         border-radius: 4px;
                         background-color: #626567;
@@ -392,10 +408,19 @@
                         display: none;
                     }
 
-                    #afterAdharVarification{
+                    .afterAdharVarificationDesktop{
                         display: none;
                         margin-bottom: 40px;
                         margin-top: 40px;
+                    }
+                    .afterAdharVarificationMobile{
+                        display: none;
+                        margin-bottom: 0px;
+                        margin-top: -20px;
+                    }
+
+                    .beforeAdharVarificationMobile{
+                        padding: 10px;
                     }
                     .custom-button-data.btn-danger.disabled {
                         color: #8C989F;
@@ -417,17 +442,11 @@
                         .CKYC-detail {
                             width: 100%;
                         }
-                        .primary-detail {
-                            width: 100%;
-                        }
                         .minor-detail {
                             width: 100%;
                         }
                         .custom-dropdown {
                             width: 100%;
-                        }
-                        .profile-details {
-                            display: block;
                         }
                         .sec-col-div {
                             margin-top: 10px;
@@ -439,6 +458,13 @@
                         }
                         .address-details-sec-div {
                             margin-top: 10px;
+                        }
+                        .sec-col-div img {
+                            width: 100px;
+                            height: 104px
+                        }
+                        .name-data{
+                            font-size: 14px;
                         }
                     }
                     /* shraddha css */
@@ -506,7 +532,38 @@
                     .enterPassport {
                         display: none;
                     }
-                    
+
+                    .kyc_accordion_item{
+                        box-shadow: 0px 4px 12px 0px #0000001A;
+                    }
+
+                    .kyc_accordion_button{
+                        position: relative;
+                        color: #221F20;
+                    }
+                
+                    .kyc_accordion_button:not(.collapsed) {
+                        color: #221F20;
+                        background-color: #FFFF;
+                        box-shadow: unset;
+                    }
+                    .kyc_accordion_button:not(.collapsed):after {
+                       filter: invert(30%);
+                    }
+                    .second-account-holder-detail{
+                        margin-top: -12%;
+                        padding: 1.5rem 1.3rem;
+                    }
+                    .kyc_accordion_body{
+                        padding: 0%;
+                    }
+
+                    .secondary_account_mobile{
+                        display: none;
+                    }
+                    .secondary_account_desktop{
+                        display: block;
+                    }
                     @media only screen and (min-width: 768px) and (max-width: 991px) {
                         .kycdetail {
                             width: 100%;
@@ -518,15 +575,53 @@
                             width: 100%
                         }
                     }
+
+                    @media only screen and (min-width: 200px) and (max-width: 567px) {
+                        .heading-data{
+                            font-size: 12px;
+                        }
+                        .sub-heading-data{
+                            font-size: 12px;
+                        }
+                    }
                     
                     @media only screen and (min-width: 200px) and (max-width: 1399px) {
                         .cheking-button-data {
                             width: 100%;
                             display: flex;
-                            flex-direction: column;
+                            flex-direction: row;
                             gap: 10px;
+                        }
+                        .custom-button{
+                            width:100%;
                         }
                         .custom-button-sec {
                             padding: 10px 15px 10px 16px;
+                        }
+                        .secondary_account_mobile{
+                            display: block;
+                        }
+                        .secondary_account_desktop{
+                            display: none;
+                        }
+                        .address-detail{
+                            display: block;
+                        }
+                        .address-detail-blog{
+                            width: 100%;
+                        }
+                        .card-div-data{
+                            position: relative;
+                        }
+                        .primary-detail{
+                            position: absolute;
+                            top:0;
+                            left:0;
+                            border-top-right-radius: 0;
+                            border-bottom-left-radius: 0;
+                        }
+                        .aadhar_div {
+                            margin-top: 0px;
+                            margin-bottom: 30px;
                         }
                     }
