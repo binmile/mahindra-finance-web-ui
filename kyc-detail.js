@@ -134,8 +134,14 @@ function AddNewAddressFunctionality() {
     }
 }
 
-function afterAdhaarVerficationAction() {
-    $("#afterAdharVarification").css({"display": "block"});
-    $("#beforeAdharVarification").css({"display": "none"});
+function afterAdhaarVerficationActionMobile() {
+    $(".afterAdharVarificationMobile").css({"display": "block"});
+    $(".beforeAdharVarificationMobile").css({"display": "none"});
+    $(".custom-button-data").removeClass("disabled");
+}
+
+function afterAdhaarVerficationActionDesktop() {
+    $(".afterAdharVarificationDesktop").css({"display": "block"});
+    $(".beforeAdharVarificationDesktop").css({"display": "none"});
     $(".custom-button-data").removeClass("disabled");
 }
