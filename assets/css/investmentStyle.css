@@ -404,7 +404,10 @@
    }
 
     .leftcard-contant h1 {
-        font-size: 62px;
+        font-size: 50px;
+    }
+    .leftcard_investment{
+        padding: 0px 30px;
     }
     
  }
