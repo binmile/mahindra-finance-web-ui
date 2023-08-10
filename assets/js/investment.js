@@ -17,6 +17,9 @@ function myFun(event){
 } 
 
 
+
+
+
 $("#tenureEements :input").click(function () {
     $("#tenureEements :input").each(function () {
         if ($(this).is(":checked")) {
@@ -152,7 +155,7 @@ function show1(){
   function show2(){
     document.getElementById('div1').style.display = 'none';
   } 
-
+  
   function accountshow1(){
     document.getElementById('holder1').style.display ='block';
   }
@@ -276,3 +279,5 @@ inputDate.addEventListener("focus",function (evt) {
     this.showPicker();
   }
 });
+
+
