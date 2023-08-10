@@ -528,11 +528,7 @@
         line-height: 16px;
         margin-left: 0px;
     } 
-
-    .jointSwitch_container_investment2{
-        /* display: flex; */
-    }
-    
+  
     .form-switch {
         margin-bottom: 40px;
     }
@@ -769,7 +765,6 @@ tbody {
     font-size: 16px;
 }
  
-
 .tooltipContainer .tooltipContent {
     position: absolute;
     bottom: 32px;
@@ -782,8 +777,6 @@ tbody {
     padding: 15px;
     border-radius: 4px;
 }
-
-/****************mobile interest rate popup start here******************/
 .mobile_investment{
     position: relative;
 }
@@ -821,10 +814,7 @@ tbody {
     font-weight: 700;
     line-height: 24px;
 }
-/****************mobile interest rate popup end here******************/
-
 }
-
 
 @media only screen and (max-width: 448px){
    
@@ -850,11 +840,9 @@ tbody {
         border-style: solid;
         border-color: #FFFFFF transparent transparent transparent;
     }
-    
 }
 
 @media only screen and (max-width: 395px){
-   
     .tooltipContainer .tooltipContent {
         position: absolute;
         bottom: 32px;
@@ -867,7 +855,6 @@ tbody {
         padding: 15px;
         border-radius: 4px;
     }
-
     .tooltipContainer .tooltipContent::after {
         content: "";
         position: absolute;
