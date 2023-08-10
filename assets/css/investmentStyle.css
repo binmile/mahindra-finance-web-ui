@@ -257,7 +257,6 @@
     font-size: 18px;
     line-height: 28px;
 }
-
 .kyc_button_investment{
     padding-top: 20px;
     display: flex;
@@ -348,29 +347,24 @@
     border: 1px solid #221F20;
     font-weight: 700;
 }
-
 .boxRadioButton input[type="radio"] {
     opacity: 0;
 }
-
 .boxRadioButton2 input[type="radio"] {
     opacity: 0;
 }
- 
 .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn {
     width: 100%;
 }
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle){
     width: 100%;
-}
-   
+} 
   #error-message{
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: red;
   }
-
   #error-message_pan{
     font-size: 14px;
     font-weight: 400;
@@ -383,7 +377,6 @@
     line-height: 24px;
     color: red;
   }
-
   #error-message_nomenieeDOB{
     font-size: 14px;
     font-weight: 400;
@@ -399,27 +392,48 @@
 
 
 
-  /* investment mobile responsive screen 768 - screen down all */
-  
- @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1199px){
+    .tooltipContainer .tooltipContent {
+        width: 240px;
+    }
+    .tooltipContainer .tooltipContent::after {
+        left: 35%;
+    }
+    
+}
+
+ /* investment mobile responsive screen 992 */
+ @media only screen and (max-width: 992px) {
+    .pl-0 {
+        padding-left: 12px;
+    }
+   .desktop_investment{
+      display: inline-block;
+   }
+    .leftcard-contant h1 {
+        font-size: 50px;
+    }
+    .leftcard_investment{
+        padding: 0px 30px;
+    }
+    
+ }
+  /* investment mobile responsive screen 767 - screen down all */
+ @media only screen and (max-width: 767px) {
 
     .desktop_investment{
         display: none;
     }
-
     .mobile_investment{
         display: block;
       }
-     
     .pl-0 {
-        padding-left: none;
+        padding-left: 12px;
     }
-
     .investmentParent {
-        padding: 20px 20px 0px 30px;
+        padding: 20px 20px 0px 20px;
         position: relative;
     }
-
     .Investment_Heading {
         color: #221F20;
         font-size: 16px;
@@ -427,7 +441,6 @@
         line-height: 26px;
         margin-bottom: 8px;
     }
-
     label.form-label {
         font-size: 12px;
         font-weight: 700;
@@ -436,11 +449,9 @@
         white-space: nowrap;
         margin-bottom: 4px;
     }
-
     .msg_Investment{
         margin-top: 4px;
     }
-
     .message_label {
         font-size: 12px;
         font-weight: 400;
@@ -448,11 +459,9 @@
         color: #626567;
         margin-bottom: 4px;
     }
-
     .textparent {
         margin-bottom: 12px;
     }
-
     .boxRadioButton {
         border-radius: 4px;
         font-size: 14px;
@@ -460,9 +469,8 @@
         width: 42px;
         height: 42px;
         margin-right: 12px;
-        margin-top: 4px;
+        margin-top: 10px;
     }
-
     .receive_interest_container_investment{
         margin-top: 15px ;
         margin-bottom: 1px ;
@@ -470,11 +478,9 @@
     .tenure_container_investment{
         padding-bottom: 1px;
     }
-
     .interestContainer_header{
         align-items: baseline;
     }
-   
     .boxRadioButton2 {
         border-radius: 4px;
         font-size: 14px;
@@ -482,28 +488,24 @@
         height: 76px;
         margin-right: 10px;
         margin-top: 5px;
-        padding-top: 10px;
+        padding-top: 16px;
     }
-
     .maturityBox_tex1_investment   {
         font-size: 14px;
         font-weight: 700;
        line-height: 24px;
     }
-   
     .maturityBox_tex2_investment   {
         font-size: 12px;
         font-weight: 600;
        line-height: 20px;
     }
-
     .interestTableContainer_text_1 {
         color: #E6E7E9;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
     }
-    
     .interestTableContainer_text_2 {
         color: #FFFFFF;
         margin-top: 10px;
@@ -511,33 +513,27 @@
         font-size: 18px;
         line-height: 28px;
     }
-    
     .interestTableContainer_inner_investment{
         padding-top: 15px;
         padding-bottom: 13px;
     }
-    
     .addHolder_radio_investment{
         margin-top: 7px;
         margin-bottom: 40px;
     }
-
     .togle_lable_investment{
         font-size: 14px;
         font-weight: 500;
         line-height: 16px;
         margin-left: 0px;
     } 
-  
     .form-switch {
         margin-bottom: 40px;
     }
-
     .jointSwitch_container_investment1{
         margin-top: 0px;
         margin-bottom: 20px;
     }
-
     .form-switch {
           margin-bottom: 10px;
           display: flex;
@@ -545,20 +541,15 @@
           padding-left: 0px;
           align-self: self-end;
     }
-
     .jointSwitch_container_investment2{
         margin-bottom: 25px;
     }
-   
     .toggle_investment{
         margin: 0px;
     }
-
     .form-switch .form-check-input {
         margin: 0px;
     }
-
-     
     .leftsiderajan {
         position: relative;
         border-top-left-radius: 20px;
@@ -571,23 +562,19 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-
    .mobile_investment_logo{
       width: 250px;
       height: 70px;
    }
-
    .mobile_investment_stamp{
      width: 54px;
      height: 50px;
    }
-   
    .mobile_investment_stampCnt_{
        text-align-last: end;
        margin-left: -20px;
        align-self: center;
    } 
-
    .mobile_investment_header{
     font-size: 20px;
     font-weight: 700;
@@ -595,7 +582,6 @@
     text-align-last: center;
     color: #ffffff;
    }
-
    .mobile_investment_subheaders{
     font-size: 12px;
     font-weight: 400;
@@ -604,25 +590,20 @@
     color: #ffffff;
     margin-bottom: 20px;
    }
-
    .appliedContainer {
     margin-bottom: 0px;
     padding: 12px;
   }
-
   .mobile_investment_cmpl{
     height: 14px;
     width: 14px;
     margin-right: 5px;
   }
-    
   .appliedSection_additional {
    
     margin-bottom: 0px;
     padding: 8px;
 }
-
-
   .appliedSection {
     align-self: center;
     padding: 0px !important;
@@ -633,7 +614,6 @@
     padding-left: 0px;
     margin-bottom: 0px;
 }
-
   .applied_additional_citizens{
     font-size: 10px;
     font-weight: 700;
@@ -642,14 +622,12 @@
     margin-bottom: 0px;
     align-self: center;
   } 
-
   .mobile_investment_btn{
     height: 30px;
     padding: 0px;
     border-radius: 4px;
 
   }
-    
   .mobile_investment_btn button{
     color: #ffffff;
     padding: 10px;
@@ -660,8 +638,6 @@
     width: 95%;
     margin-left: 10px;
   }
-  
-
   .mobile_table_container_invst{
     z-index: 999;
     padding-left: 20px;
@@ -678,8 +654,6 @@
     transform: translate(0, 83%);
     transition-duration: 1s;
   }
-  
-
   .table thead tr th {
     padding: 10px;
     color: #FFFFFF;
@@ -688,7 +662,6 @@
     line-height: 20px;
     border: none;
 }
-
 .table tbody tr td {
     padding: 10px;
     color: #4B4C4D;
@@ -696,7 +669,6 @@
     font-weight: 600;
     line-height: 24px;
 }
-
 .table tbody tr td .tableUpto {
     margin-right: 5px;
     color: #4B4C4D;
@@ -704,58 +676,48 @@
     font-weight: 400;
     line-height: 20px;
 } 
-
 .table thead tr th {
    
     font-size: 12px;
     line-height: 20px;
     font-weight: 400px;
 }
-
 thead {
     background-color: #4B4C4D;
    
 }
-
 tbody {
     background-color: #ffffff;
 }
-
  .mobile_investment_tableimgCnt{
     text-align-last: end;
     align-self: self-end;
   
  }
-
  .mobile_investment_tableHeaderCnt{
     text-align-last: start;
     align-self: self-end;
    
  }
-
  .mobile_investment_tableHeader1{
     margin: 0px;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
  }
-
  .btn-close{
     height: 15px !important;
     width: 15px !important;
  }
-
  .intrestTableHide_btn{
     border: none;
     background-color: #ffffff;
     cursor: pointer;
  }
-
    .bestSellerImg {
    height: 15px;
    width: 76px;
 } 
-
 .customTextfield{
     padding: 0px;
     position: absolute;
@@ -764,7 +726,6 @@ tbody {
     padding-left: 12px;
     font-size: 16px;
 }
- 
 .tooltipContainer .tooltipContent {
     position: absolute;
     bottom: 32px;
@@ -780,7 +741,6 @@ tbody {
 .mobile_investment{
     position: relative;
 }
-
 #darkBackground{
     display: none;
     width: 100%;
@@ -817,7 +777,6 @@ tbody {
 }
 
 @media only screen and (max-width: 448px){
-   
     .tooltipContainer .tooltipContent {
         position: absolute;
         bottom: 32px;
@@ -840,7 +799,8 @@ tbody {
         border-style: solid;
         border-color: #FFFFFF transparent transparent transparent;
     }
-}
+}  
+
 
 @media only screen and (max-width: 395px){
     .tooltipContainer .tooltipContent {
@@ -867,3 +827,4 @@ tbody {
     }
     
 }
+
