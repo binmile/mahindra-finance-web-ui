@@ -552,12 +552,12 @@
     }
     .leftsiderajan {
         position: relative;
-        border-top-left-radius: 20px;
+        border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         text-align-last: start;
         background-color: black;
         background-image: url("../Image/blur.png"), url('../Image/fd_scheme_img.png');
-        border-radius: 20px 0px 0px 0px;
+        border-radius: 0px 0px 0px 0px;
         overflow: hidden;
         background-repeat: no-repeat;
         background-size: cover;
@@ -737,7 +737,20 @@ tbody {
     color: #221F20;
     padding: 15px;
     border-radius: 4px;
+} 
+  
+.tooltipContainer .tooltipContent::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 27%;
+    margin-left: -5px;
+    border-width: 9px;
+    border-style: solid;
+    border-color: #FFFFFF transparent transparent transparent;
 }
+
+
 .mobile_investment{
     position: relative;
 }
