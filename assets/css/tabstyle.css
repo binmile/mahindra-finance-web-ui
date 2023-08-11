@@ -122,10 +122,10 @@
         content: "";
         bottom: 0px;
     }
-    .circleimg {
+    /* .circleimg {
         margin-left: 66px;
         margin-bottom: 5px;
-    }
+    } */
     .tabdesign p {
         font-size: 12px;
         text-align: center;
@@ -148,6 +148,7 @@
         width: 25%;
         border: 2px solid #000;
         bottom: 0px;
+        border-radius: 25px;
     }
 
     .horizontalline {
@@ -166,10 +167,10 @@
         content: "";
         bottom: 0px;
     }
-    .circleimg {
+    /* .circleimg {
         margin-left: 42px;
         margin-bottom: 5px;
-    }
+    } */
     .tabdesign p {
         font-size: 12px;
         text-align: center;
@@ -229,10 +230,10 @@
  }
 
  @media screen and (min-width:423px) and (max-width:575px){
-    .circleimg {
+    /* .circleimg {
         margin-left: 31px;
         margin-bottom: 5px;
-    }
+    } */
     .tabdesign {
         display: block;
     }
@@ -246,6 +247,7 @@
         width: 25%;
         border: 2px solid #000;
         bottom: 0px;
+        border-radius: 25px;
     }
     .horizontalline {
         display: none;
@@ -280,10 +282,10 @@
     .horizontalline {
         display: none;
     }
-    .circleimg {
+    /* .circleimg {
         margin-left: 26px;
         margin-bottom: 5px;
-    }
+    } */
     .tabdesign p {
         font-size: 12px;
         text-align: center;
@@ -308,14 +310,15 @@
         width: 25%;
         border: 2px solid #000;
         bottom: 0px;
+        border-radius: 25px;
     }
     .horizontalline {
         display: none;
     }
-    .circleimg {
+    /* .circleimg {
         margin-left: 26px;
         margin-bottom: 5px;
-    }
+    } */
     .tabdesign p {
         font-size: 12px;
         text-align: center;
@@ -326,3 +329,24 @@
     }
 
  }
+ .tabdesign.active .menuname p {
+    font-weight: 800;
+}
+@media screen and (min-width:576px) and (max-width:991px){
+.circleimg {
+    margin-left: 42%;
+    margin-bottom: 5px;
+}
+}
+@media screen and (min-width:425px) and (max-width:575px){
+    .circleimg {
+        margin-left: 40%;
+        margin-bottom: 5px;
+    }
+    }
+    @media screen and (min-width:320px) and (max-width:424px){
+        .circleimg {
+            margin-left: 30%;
+            margin-bottom: 5px;
+        }
+        }
