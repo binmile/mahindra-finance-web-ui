@@ -134,6 +134,9 @@
   animation: animatedBackground 15s linear infinite;
 }
 
+.cardparent {
+    display: flex;
+}
 @keyframes animatedBackground {
   0% {
     background-position: 0 0;
@@ -143,4 +146,46 @@
   }
 }
 
+@media screen and (max-width:991px){
+    .smallcardheading p {
+        font-size: 12px !important;
+        text-align: center;
+    }
+    p.smallcardbtntxt-first {
+        font-size: 12px !important;
+    }
+    p.btntxt-first {
+        display: none;
+    }
+    p.btntxt-second {
+        margin-bottom: 0px;
+        font-size: 14px !important;
+    }
+    p.success-textstyle {
+        font-size: 14px;
+    }
+    .paragraphheading p {
+        font-size: 16px;
+    }
+
+}
       
+@media screen and (min-width:320px) and (max-width:991px){
+.cardparent {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.smallcard {
+    padding: 12px 12px !important;
+    margin: 0px 6px;
+}
+}
+
+@media screen and (max-width:667px){
+.smallcardbtn-design {
+    min-width: 108px;
+}
+.smallcard {
+    min-width: 182px;
+}
+}
