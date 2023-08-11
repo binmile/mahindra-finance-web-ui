@@ -167,6 +167,10 @@
     .paragraphheading p {
         font-size: 16px;
     }
+    .cardparent::-webkit-scrollbar{
+        display: none;
+      }
+    
 
 }
       
@@ -175,17 +179,56 @@
     overflow-y: hidden;
     overflow-x: auto;
 }
+.pl-0 {
+    padding-left: 12px;
+}
+
 .smallcard {
     padding: 12px 12px !important;
     margin: 0px 6px;
 }
 }
 
-@media screen and (max-width:667px){
+@media screen and (max-width:767px){
 .smallcardbtn-design {
     min-width: 108px;
 }
 .smallcard {
     min-width: 182px;
 }
+.btnicon img {
+    height: 14px;
+    width: 14px;
+}
+.leftColHeading.success {
+    font-size: 20px;
+}
+.leftColContent {
+    font-size: 12px;
+}
+.leftcardsuccess {
+    padding: 0px 30px;
+}
+.leftcard-content {
+    padding-top: 0px;
+    padding-bottom: 49px;
+}
+.cust-d-flex{
+    display:block;
+}
+}
+
+@media screen and (min-width:767px){
+.cust-d-flex{
+    display:flex;
+}
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .leftColHeading.success {
+        font-size: 33px;
+    }
+    .success-contant {
+        padding: 40px 20px 20px 20px;
+    }
+
 }
