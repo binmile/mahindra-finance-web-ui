@@ -749,9 +749,7 @@
       .circle_content {
           font-size: 10px;
       }
-      /* .circle_info::before {
-          left: 17px;
-      } */
+     
       .check_kyc_data {
           margin-top: 0;
       }
@@ -785,50 +783,7 @@
           height: 35px;
       }
   }
-  /* @media only screen and (min-width: 768px) and (max-width: 1399px) {
-      .content-data {
-          margin-top: 40px;
-      }
-      .fixed_deposit_data {
-          font-size: 40px;
-          line-height: 40px;
-      }
-      .invest_in {
-          font-size: 20px;
-      }
-      .in_just {
-          font-size: 11px;
-      }
-      .easy_step {
-          font-size: 16px;
-      }
-      .circle_content {
-          font-size: 9px;
-      }
-      .circle_info::before {
-          left: 17px;
-      }
-      .main_left_div {
-          display: block;
-          position: relative;
-      }
-      .img_div {
-        position: absolute;
-        top: -132px;
-        right: 0;
-    }
-      .card_div_data {
-          display: block;
-      }
-      .card_second_content {
-          font-size: 35px;
-      }
-      .wrapper_div {
-          justify-content: left;
-          display: block;
-      }
-  }
-   */
+  
   
   body {
       background: #E6E7E9;
@@ -1901,9 +1856,7 @@
       .circle_content {
           font-size: 10px;
       }
-      /* .circle_info::before {
-          left: 17px;
-      } */
+      
       .check_kyc_data {
           margin-top: 0;
       }
@@ -1929,52 +1882,9 @@
           justify-content: left;
       }
   }
-  /* @media only screen and (min-width: 768px) and (max-width: 1399px) {
-      .content-data {
-          margin-top: 40px;
-      }
-      .fixed_deposit_data {
-          font-size: 40px;
-          line-height: 40px;
-      }
-      .invest_in {
-          font-size: 20px;
-      }
-      .in_just {
-          font-size: 11px;
-      }
-      .easy_step {
-          font-size: 16px;
-      }
-      .circle_content {
-          font-size: 10px;
-      }
-      .circle_info::before {
-          left: 17px;
-      }
-      .main_left_div {
-          display: block;
-          position: relative;
-      }
-      .img_div {
-          position: absolute;
-          top: -96px;
-          right: 0;
-      }
-      .card_div_data {
-          display: block;
-      }
-      .card_second_content {
-          font-size: 35px;
-      }
-      .wrapper_div {
-          justify-content: left;
-          display: block;
-      }
-  } */
+ 
   
   .maincom {
-    /* padding-top: 30px; */
     padding-left: 26px;
     padding-right: 50px;
     margin-top: 40px;
@@ -2281,10 +2191,6 @@
     border-radius: 4px;
     color: #4B4C4D;
 }
-
-
-
- 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
    
     footer {
