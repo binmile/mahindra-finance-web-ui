@@ -55,13 +55,6 @@
     background: #000;
     border-radius: 100%;
 }
-/* @media screen and (max-width:1399px) {
-    .tabparent {
-        overflow-x: auto;
-        margin-right: 50px;
-        overflow-y: hidden;
-    }
-} */
 
 @media screen and (max-width:767px) {
     .wizardnew {
@@ -84,22 +77,11 @@
 }
 .circleimg.active .svg {
     margin-left: 5px;
-    /* text-align: center; */
 }
 .circleimg svg {
     margin-left: 5px !important;
     MARGIN-TOP: 3PX;
 }
-/* .circleimg.active {
-    height: 30px;
-    width: 30px;
-    background: #000;
-    border-radius: 100%;
-}
-.tabdesign svg {
-    margin-left: 5px;
-} */
-
 .tabdesign p {
     font-size: 14px;
 }
@@ -122,10 +104,6 @@
         content: "";
         bottom: 0px;
     }
-    /* .circleimg {
-        margin-left: 66px;
-        margin-bottom: 5px;
-    } */
     .tabdesign p {
         font-size: 12px;
         text-align: center;
@@ -167,10 +145,6 @@
         content: "";
         bottom: 0px;
     }
-    /* .circleimg {
-        margin-left: 42px;
-        margin-bottom: 5px;
-    } */
     .tabdesign p {
         font-size: 12px;
         text-align: center;
@@ -199,7 +173,7 @@
 
  }
 
- @media screen and (min-width:320px) and (max-width:992px){
+ @media screen and (min-width:320px) and (max-width:991px){
     .tabparent {
         display: flex;
         position: relative;
@@ -210,15 +184,6 @@
     }
     
 }
-
-
-
-
-
-
-
-
-
  @media screen and (min-width:1400px){
     .horizontalline {
         width: 87px;
@@ -230,10 +195,7 @@
  }
 
  @media screen and (min-width:423px) and (max-width:575px){
-    /* .circleimg {
-        margin-left: 31px;
-        margin-bottom: 5px;
-    } */
+  
     .tabdesign {
         display: block;
     }
@@ -260,8 +222,6 @@
         content: "";
         display: none;
     }
-
-
  }
 
 @media screen and (min-width:375px) and (max-width:422px){
@@ -282,10 +242,7 @@
     .horizontalline {
         display: none;
     }
-    /* .circleimg {
-        margin-left: 26px;
-        margin-bottom: 5px;
-    } */
+    
     .tabdesign p {
         font-size: 12px;
         text-align: center;
@@ -315,10 +272,7 @@
     .horizontalline {
         display: none;
     }
-    /* .circleimg {
-        margin-left: 26px;
-        margin-bottom: 5px;
-    } */
+ 
     .tabdesign p {
         font-size: 12px;
         text-align: center;
@@ -349,4 +303,4 @@
             margin-left: 30%;
             margin-bottom: 5px;
         }
-        }
+}
