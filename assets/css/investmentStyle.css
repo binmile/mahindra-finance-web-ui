@@ -526,6 +526,7 @@
         font-weight: 500;
         line-height: 16px;
         margin-left: 0px;
+        margin-right: 20px;
     } 
     .form-switch {
         margin-bottom: 40px;
@@ -787,6 +788,15 @@ tbody {
     font-weight: 700;
     line-height: 24px;
 }
+
+.tooltipHeader_invester{
+    font-weight: 700;
+    font-size: 14px;
+}
+.tooltipText_invester{
+    font-weight: 500;
+    font-size: 11.5px;
+}
 }
 
 @media only screen and (max-width: 448px){
@@ -794,7 +804,7 @@ tbody {
         position: absolute;
         bottom: 32px;
         left: -107px;
-        width: 170px;
+        width: 220px;
         height: auto;
         background-color: #ffffff;
         border: 1px solid #E6E7E9;
@@ -806,7 +816,7 @@ tbody {
         content: "";
         position: absolute;
         top: 100%;
-        left: 67%;
+        left: 52.5%;
         margin-left: -5px;
         border-width: 9px;
         border-style: solid;
@@ -819,8 +829,8 @@ tbody {
     .tooltipContainer .tooltipContent {
         position: absolute;
         bottom: 32px;
-        left: -84px;
-        width: 140px;
+        left: -131px;
+        width: 210px;
         height: auto;
         background-color: #ffffff;
         border: 1px solid #E6E7E9;
@@ -841,3 +851,24 @@ tbody {
     
 }
 
+@media only screen and (max-width: 369px){
+.boxRadioButton2 {
+    border-radius: 4px;
+    font-size: 14px;
+    width: 91px ;
+    height: 74px ;
+    margin-right: 7px;
+    margin-top: 5px;
+    padding-top: 16px;
+}
+
+.togle_lable_investment{
+    margin-right: 20px;
+} 
+
+.tenure_investment label {
+    position: relative;
+    align-items: self-start;
+    padding-left: 7px;
+}
+}
