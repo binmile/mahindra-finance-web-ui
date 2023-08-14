@@ -237,7 +237,6 @@
                                                 id="showMore">
                                                 See All
                                                 <img alt="arrow_img" src="./assets/Image/Vector(Stroke).svg" />
-
                                             </button>
                                         </td>
                                     </tr>
@@ -882,12 +881,13 @@
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <script>
         const trs = document.getElementsByTagName("tr");
-        const startWith = 4;
+        const startWith = 10;
         function showMore() {
             for (let i = startWith; i < trs.length; i++) {
                 trs[i].classList.toggle('hidden')
             }
         }
+
         function showMobileInterestRates() {
             var x = document.getElementById("mobile_interest_rate");
             var y = document.getElementById("darkBackground");
