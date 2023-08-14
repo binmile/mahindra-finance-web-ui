@@ -1,14 +1,20 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .continueButtonEnable {
     margin-bottom: 20px;
+}
+
+.maincom{
+    padding-left: 26px;
+    padding-right: 26px
 }
 
 .bank-details-disabled-button.disabled img {
     -webkit-filter: brightness(0.7) invert(0);
     filter: brightness(0.7) invert(0);
-}
-
-.bankDetailsCheckbox {
-    width: 45px !important;
 }
 
 #reviewFlexCheckDefault:checked {
@@ -289,7 +295,7 @@
 }
 
 .checkbox-tools:checked+label {
-    border: 1.5px solid #221F20 !important;
+    border: 2px solid #221F20 !important;
     background-color: #F4F7FA !important;
 }
 
@@ -429,7 +435,8 @@
     }
 
     .leftColContent {
-        font-size: 14px;
+        font-size: 12px;
+        text-align: center
     }
 
     .bankDetailsLeftContent {
@@ -466,11 +473,12 @@
         font-size: 12px;
     }
     .reviewCardLargeContent{
-        font-size: 13px;
+        font-size: 14px;
         white-space: wrap;
+        margin-bottom: 0px;
     }
     .reviewCardSmallContent{
-        font-size: 12px;
+        font-size: 14px;
     }
     .reviewcard {
         position: relative;
@@ -484,12 +492,14 @@
         border-bottom-left-radius: 0;
     }
     .reviewCardEdit{
-        right: 15px;
-        top: 15px;
+        font-size: 12px;
+        right: 10px;
+        top: 10px;
         position: absolute;
     }
     .form-check-label{
-        font-size: 12px;
+        margin-top: 1%;
+        font-size: 10px;
     }
     .reviewCardTandC {
         font-size: 10px;
