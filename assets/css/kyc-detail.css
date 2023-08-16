@@ -78,7 +78,7 @@
                     }
                     
                     .right-side-div {
-                        padding: 37px 50px 50px 32px;
+                        padding: 37px 32px 50px 32px;
                     }
                     
                     .right-side-div h1 {
@@ -400,7 +400,7 @@
                     }
                     
                     .textparentdata {
-                        margin-bottom: 8px;
+                        margin-bottom: 0px;
                     }
                     
                     .fixed-deposit {
@@ -443,42 +443,6 @@
 
                     .custom-button-data.btn-danger.disabled svg {
                         fill:#8C989F;
-                    }
-                    
-                    @media screen and (max-width: 767px) {
-                        .dropdown-input {
-                            width: 100%;
-                        }
-                        .address-detail-blog {
-                            width: 100%;
-                        }
-                        .CKYC-detail {
-                            width: 100%;
-                        }
-                        .minor-detail {
-                            width: 100%;
-                        }
-                        .custom-dropdown {
-                            width: 100%;
-                        }
-                        .sec-col-div {
-                            margin-top: 10px;
-                            justify-content: center;
-                            display: flex;
-                        }
-                        .address-detail {
-                            display: block;
-                        }
-                        .address-details-sec-div {
-                            margin-top: 10px;
-                        }
-                        .sec-col-div img {
-                            width: 100px;
-                            height: 104px
-                        }
-                        .name-data{
-                            font-size: 14px;
-                        }
                     }
                     /* shraddha css */
                     
@@ -553,10 +517,11 @@
                     .kyc_accordion_button{
                         position: relative;
                         color: #221F20;
+                        border-radius: 4px;
                     }
                     .kyc_accordion_button:not(.collapsed) {
                         color: #221F20;
-                        background-color: #FFFF;
+                        background-color: transparent;
                         box-shadow: unset;
                     }
                     .kyc_accordion_button .collapsed.seconadry_accordion_button_head {
@@ -564,6 +529,9 @@
                     }
                     .kyc_accordion_button:not(.collapsed):after {
                        filter: invert(30%);
+                       position: absolute;
+                       top: 14px;
+                       right: 10px;
                     }
                     .second-account-holder-detail{
                         margin-top: -12%;
@@ -579,63 +547,24 @@
                     .secondary_account_desktop{
                         display: block;
                     }
-                    @media only screen and (min-width: 768px) and (max-width: 991px) {
-                        .kycdetail {
-                            width: 100%;
-                        }
-                    }
-                    
-                    @media only screen and (min-width: 992px) and (max-width: 1399px) {
-                        .CKYC-detail {
-                            width: 100%
-                        }
-                    }
-
-                    @media only screen and (min-width: 320px) and (max-width: 1399px) {
-                        .cheking-button-data {
-                            width: 100%;
-                            display: flex;
-                            flex-direction: row;
-                            gap: 10px;
-                        }
-                        .custom-button{
-                            width:100%;
-                        }
-                        .custom-button-sec {
-                            padding: 10px 15px 10px 16px;
-                        }
-                        .secondary_account_mobile{
-                            display: block;
-                        }
-                        .secondary_account_desktop{
-                            display: none;
-                        }
-                        .address-detail{
-                            display: block;
-                        }
-                        .address-detail-blog{
-                            width: 100%;
+                    @media only screen and (min-width: 320px) and (max-width: 567px) {
+                        .right-side-div h1{
+                            font-size: 14px;
                         }
                         .card-div-data{
-                            position: relative;
+                            margin-top: 10px;
                         }
-                        .aadhar_div {
-                            margin-top: 0px;
-                            margin-bottom: 30px;
-                        }
-                        .stampImgContainer {
-                            right: 20px;
-                            top: 40px;
-                            width: auto;
-                        }
-                    }
-
-                    @media only screen and (min-width: 320px) and (max-width: 567px) {
-                        .heading-data{
+                        .account-holder-data{
                             font-size: 12px;
+                        }
+                        .CKYC-detail{
+                            font-size: 10px;
+                        }
+                        .heading-data{
+                            font-size: 14px;
                         }
                         .sub-heading-data{
-                            font-size: 12px;
+                            font-size: 14px;
                         }
                         .leftcolkycHeading{
                             font-size: 20px;
@@ -691,9 +620,30 @@
                         .custom-button-first{
                             padding: 10px;
                         }
+                        .Communication-address{
+                            font-size: 12px;
+                        }
+                        .address_label{
+                            font-size: 12px;
+                        }
+                        label.form-label{
+                            font-size: 12px;
+                        }
+                        .form-select{
+                            font-size: 14px;
+                        }
+                        .fixed-deposit{
+                            font-size: 10px;
+                        }
+                        .drop-input-field{
+                            margin-bottom: 16px;
+                        }
+                        .second-account-holder-detail{
+                            margin-top: -12%;
+                            padding: 0 1.3rem 1.5rem 1.3rem;
+                        }
 
                     }
-
                     @media only screen and (min-width: 567px) and (max-width: 961px) {
                         .leftcolkycHeading{
                             font-size: 50px;
@@ -727,5 +677,85 @@
                             left:0;
                             border-top-right-radius: 0;
                             border-bottom-left-radius: 0;
+                        }
+                        .kycdetail {
+                            width: 100%;
+                        }
+                    }
+                    @media only screen and (min-width: 992px) and (max-width: 1399px) {
+                        .CKYC-detail {
+                            width: 100%
+                        }
+                    }
+
+                    @media only screen and (min-width: 320px) and (max-width: 1399px) {
+                        .cheking-button-data {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            gap: 10px;
+                        }
+                        .custom-button{
+                            width:100%;
+                        }
+                        .custom-button-sec {
+                            padding: 10px 15px 10px 16px;
+                        }
+                        .secondary_account_mobile{
+                            display: block;
+                        }
+                        .secondary_account_desktop{
+                            display: none;
+                        }
+                        .address-detail{
+                            display: block;
+                        }
+                        .address-detail-blog{
+                            width: 100%;
+                        }
+                        .card-div-data{
+                            position: relative;
+                        }
+                        .aadhar_div {
+                            margin-top: 0px;
+                            margin-bottom: 30px;
+                        }
+                        .stampImgContainer {
+                            right: 20px;
+                            top: 40px;
+                            width: auto;
+                        }
+                        .dropdown-input {
+                            width: 100%;
+                        }
+                        .address-detail-blog {
+                            width: 100%;
+                        }
+                        .CKYC-detail {
+                            width: 100%;
+                        }
+                        .minor-detail {
+                            width: 100%;
+                        }
+                        .custom-dropdown {
+                            width: 100%;
+                        }
+                        .sec-col-div {
+                            margin-top: 10px;
+                            justify-content: center;
+                            display: flex;
+                        }
+                        .address-detail {
+                            display: block;
+                        }
+                        .address-details-sec-div {
+                            margin-top: 10px;
+                        }
+                        .sec-col-div img {
+                            width: 100px;
+                            height: 104px
+                        }
+                        .name-data{
+                            font-size: 16px;
                         }
                     }
