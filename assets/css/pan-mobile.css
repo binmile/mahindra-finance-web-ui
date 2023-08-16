@@ -2,6 +2,8 @@
     padding: 2px 40px 0px 40px;
 }
 
+
+
 .invest_fixed_pan {
     margin-top: 0;
     margin-bottom: 40px;
@@ -140,6 +142,18 @@
 
 .circle_info_pan {
     width: 100%;
+} 
+
+.leftPanDetails_mobile {
+    opacity: 0.2px;
+    position: relative;
+    text-align-last: start;
+    background-color: black;
+    background-image: url("../Image/blur.png"), url('../Image/fd_img.svg');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 160px;
 }
 
 .circle_content_pan {
@@ -155,6 +169,14 @@
 
 .easy-text-mob {
     display: none;
+} 
+
+.mobile_pan_Container{
+    display: none;
+}
+
+.desktop_mobile_pan{
+   display: block;
 }
 
 @media screen and (max-width: 450px) {
@@ -163,87 +185,149 @@
     }
 }
 
+
 @media (max-width: 767px) {
-    .img-div-mob {
-        margin-top: 16px;
+    .mobile_pan_Container{
+        display: block;
     }
-    .wrapper_div {
-        justify-content: center;
+    
+    .desktop_mobile_pan{
+       display: none;
     }
-    .strapper-div {
-        margin-top: 0;
-        display: none;
+   
+    .mobile_panToggle_container{
+        text-align-last: center;
+        padding-bottom: 44px;
     }
-    .img-div {
-        right: 0;
-        left: 90px;
+    .mobile_panToggle_container2{
+        text-align-last: center;
+        padding-bottom: 15px;
     }
-    .circle-data {
-        display: none !important;
+
+    .mobile_pan_interest{
+        padding-bottom: 25px;
+        margin-top: 0px;
     }
-    .circle_data {
-        display: none;
+
+    .mobile_panToggle_header{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #ffffff;
     }
-    .main_left_div {
-        justify-content: initial;
+    .mobile_panToggle_text{
+        font-size: 12px ;
+        font-weight: 400;
+        line-height: 10px;
+        color: #ffffff;
     }
-    .content-data-mob {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 44px;
-        margin-top: 70px;
+
+    .mobile_pan_logo{
+        width: 250px;
+        height: 70px;
     }
-    .wrapper_div-mob {
-        justify-content: center;
-    }
-    .fixed-deposit-data {
-        width: 100%;
-        font-size: 25px;
-        font-weight: 800;
-        text-align: center;
-        line-height: 32px;
-        display: contents;
-    }
-    .in-just {
-        display: none;
-    }
-    .easy-step {
-        display: none;
-    }
-    .form-switch {
+     
+    .mobile_pan_stampCnt_{
+        text-align-last: end;
+        margin-left: -20px;
+        align-self: center;
+    } 
+
+     .mobile_pan_stamp{
+       width: 54px;
+       height: 50px;
+     }
+    
+     .card_div_data {
         display: flex;
         justify-content: space-between;
-        flex-direction: row-reverse;
-        padding-left: 0.5rem;
-        margin-bottom: 0;
+        border-radius: 10px;
+        align-items: center;
+        padding: 0.5rem 0.9rem;
+        opacity: 0.9;
     }
-    .form-switch-label {
-        margin-left: 0;
-        font-size: 14px;
+    
+    .card_first_content {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+        color: #FFFFFF;
     }
-    .easy-text-mob {
-        display: block;
-        color: #ffffff;
-        font-family: "Lato", sans-serif;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 38px;
-        letter-spacing: 0em;
-        text-align: center;
+    
+    .card_second_content {
+        color: #FFFFFF;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        line-height: 30px !important;
     }
-    .invest-in {
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 23px;
-    }
-    .first-button-data {
-        margin-top: 20px;
-    }
-}
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .mobile_pan_textCont{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+      .maincontant-right {
+        padding: 22px 20px 0px 20px;
+    }
+
+    .invest_fixed {
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 26px;
+    }
+
+    .invest_fixed_pan {
+        margin-bottom: 8px;
+    }
+
+    label.form-label {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    ::placeholder{
+        font-size: 14px !important; 
+    }
+
+    .textparent {
+        margin-bottom: 8px;
+    }
+
+    .mobileFatka_cont{
+        margin-top: 13px;
+    }
+    
+    .MobileFatka_text{
+        font-size: 14px !important;
+    }
+
+    .mobileFatka_cont{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 0px;
+        align-self: self-end;
+    }
+
+    .check-kyc-value {
+        margin-top: 55px;
+        margin-bottom: 10px;
+    }
+
+    .kyc_paragraph {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    .form-control-input {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+} 
+/* @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .img-div {
         top: -22px;
         right: -48px;
@@ -254,13 +338,13 @@
     .img-div {
         right: -134px;
     }
-}
+} */
 
 
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
-    .maincontant-right {
+    /* .maincontant-right {
         padding: 50px 20px 0px 20px;
-    }
+    } */
    
 }
