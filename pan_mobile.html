@@ -24,7 +24,45 @@
     <div class="container">
         <div class="card">
             <div class="row">
-                <div class="col-md-12 col-lg-5 col-sm-12">
+                <div class=" col-12 col-md-12 col-lg-5 col-sm-12 mobile_pan_Container">
+                    <div class="leftPanDetails_mobile">
+                        <div class="row">
+                            <div class=" col-8 col-md-8 col-lg-8 col-sm-8 ">
+                                <img src="./assets/Image/Branding.png" alt="brand image"
+                                    class="mobile_pan_logo" />
+                            </div>
+                            <div class="col-4 col-md-4 col-lg-4 col-sm-4  mobile_pan_stampCnt_">
+                                <img src="./assets/Image/Highest Safety Stamp.png" alt="stamp"
+                                    class="mobile_pan_stamp" />
+                            </div>
+                        </div> 
+                        <div class="mobile_pan_textCont">
+                            <div class="col-12 col-md-12 col-lg-12 col-sm-12  mobile_panToggle_container2">
+                                <p class="mobile_panToggle_text">
+                                    Now you can invest in 
+                                </p>
+                                <P class="mobile_panToggle_header">
+                                    Fixed deposit
+                                </P>
+                                <p class="mobile_panToggle_text">
+                                    in just 4 easy steps.
+                                </p>
+                            </div>
+                            <div class="strapper_div strapper-div mobile_pan_interest">
+                                <div class="card_div_data card-div-data">
+                                    <div class="card_first_content card-first-content">
+                                        Additional interest rates for M&M group company employees, employee relatives, retired employees & their relatives.
+                                    </div>
+                                    <div class="card_second_content card-second-content">
+                                        0.35%
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-5 col-sm-12 desktop_mobile_pan">
                     <div class="leftside leftPanDetails leftPanBackGround">
                         <div class="logo">
                             <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
@@ -102,11 +140,10 @@
                     </div>
 
                 </div>
-                <div class="col-md-12 col-lg-7 col-sm-12">
+                <div class=" col-12 col-md-12 col-lg-7 col-sm-12">
                     <div class="maincontant-m  maincontant-right">
                         <div class="maincontant_data">
                             <h2 class="invest_fixed invest_fixed_pan">Verify mobile & PAN</h2>
-
                         </div>
                         <div class="main-form">
 
@@ -114,7 +151,7 @@
                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                     <div class="textparent">
                                         <label for="exampMobile" class="form-label mobileLabel">Mobile
-                                                no.</label>
+                                                number</label>
                                         <input type="text" class="form-control form-control-input" aria-label="Recipient 's username" aria-describedby="basic-addon2" placeholder="Enter your mobile number" id="mobileNumberInput" maxlength="10" autocomplete="off">
 
                                         <div class="textfildicons">
@@ -147,18 +184,11 @@
                                         <div class="errorText" id="validationMessage_sap"></div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12">
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12">
-                                    <div class="form-check form-switch">
-                                        <div>
+                               
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-switch mobileFatka_cont">
                                             <input class="form-check-input switchbox-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-
-                                        </div>
-                                        <div>
-                                            <label class="form-check-label form-switch-label" for="flexSwitchCheckDefault">I am investing for a minor</label>
-
-                                        </div>
+                                            <label class="form-check-label form-switch-label MobileFatka_text" for="flexSwitchCheckDefault">I am investing for a minor</label>
                                     </div>
                                 </div>
                                 <div class=" col-sm-12 col-md-12 ">
@@ -273,23 +303,23 @@
                                 </div>
                                 <div class="box_container_error ">
 
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
-                                    <input type="text " maxlength="1 " class="box_div_error" />
+                                    <input type="text" maxlength="1" class="box_div_error"/>
+                                    <input type="text" maxlength="1" class="box_div_error"/>
+                                    <input type="text" maxlength="1" class="box_div_error"/>
+                                    <input type="text" maxlength="1" class="box_div_error"/>
+                                    <input type="text" maxlength="1" class="box_div_error"/>
+                                    <input type="text" maxlength="1" class="box_div_error"/>
 
 
                                 </div>
                                 <div class="errorText"> Incorrect OTP. Please try again!</div>
 
 
-                                <div class="otp_msg" id="otp_msg ">
-                                    <div class="otp_second ">
+                                <div class="otp_msg" id="otp_msg">
+                                    <div class="otp_second">
                                         Resend OTP in
                                     </div>
-                                    <div class="timer" id="timer1 ">
+                                    <div class="timer" id="timer1">
                                         00:59
                                     </div>
                                     <span class="timer"> seconds </span>
@@ -338,11 +368,5 @@
         <script src="./pan_mobile.js ">
         </script>
 </body>
-
-</html>
-
-</html>
-
-</html>
 
 </html>
