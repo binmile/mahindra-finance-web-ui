@@ -2,7 +2,7 @@
     font-size: 16px !important;
     
 }
-
+ 
 .mobile_investment{
     display: none;
   }
@@ -503,9 +503,22 @@
     .interestTableContainer_text_1 {
         color: #E6E7E9;
         font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .interestTableContainer_text_2_investment {
+        color: #E6E7E9;
+        font-weight: 600;
         font-size: 14px;
         line-height: 24px;
     }
+    .autorenewal_text{
+        color: #E6E7E9;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
     .interestTableContainer_text_2 {
         color: #FFFFFF;
         margin-top: 10px;
@@ -773,7 +786,7 @@ tbody {
     right: 0;
     z-index: 9999;
     background-color: #FFFFFF;
-    padding: 30px;
+    padding: 14px;
     transform: translate(0px, 370px);
     transition: all 0.3s ease-in-out;
     border-top-left-radius : 8px;

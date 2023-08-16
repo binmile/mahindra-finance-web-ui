@@ -2,7 +2,10 @@
     padding: 2px 40px 0px 40px;
 }
 
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .invest_fixed_pan {
     margin-top: 0;
