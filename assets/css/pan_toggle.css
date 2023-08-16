@@ -17,9 +17,3 @@
 .first-button-data-toggle {
     margin-top: 20px;
 }
-
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
