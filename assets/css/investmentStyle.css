@@ -652,6 +652,11 @@
     width: 95%;
     margin-left: 10px;
   }
+   
+  .Mobile_table_scr{
+    border-bottom: none;
+  }
+
   .mobile_table_container_invst{
     z-index: 999;
     padding-left: 20px;
@@ -786,7 +791,7 @@ tbody {
     right: 0;
     z-index: 9999;
     background-color: #FFFFFF;
-    padding: 14px;
+    padding: 16px;
     transform: translate(0px, 370px);
     transition: all 0.3s ease-in-out;
     border-top-left-radius : 8px;
@@ -813,6 +818,18 @@ tbody {
 }
 
 @media only screen and (max-width: 448px){
+    .interestTableContainer_text_1 {
+        color: #E6E7E9;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .interestTableContainer_text_2_investment {
+        color: #E6E7E9;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+    }
     .tooltipContainer .tooltipContent {
         position: absolute;
         bottom: 32px;
@@ -839,6 +856,18 @@ tbody {
 
 
 @media only screen and (max-width: 395px){
+    .interestTableContainer_text_1 {
+        color: #E6E7E9;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .interestTableContainer_text_2_investment {
+        color: #E6E7E9;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+    }
     .tooltipContainer .tooltipContent {
         position: absolute;
         bottom: 32px;
@@ -865,6 +894,18 @@ tbody {
 }
 
 @media only screen and (max-width: 369px){
+    .interestTableContainer_text_1 {
+        color: #E6E7E9;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .interestTableContainer_text_2_investment {
+        color: #E6E7E9;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+    }
 .boxRadioButton2 {
     border-radius: 4px;
     font-size: 14px;
