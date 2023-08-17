@@ -1,4 +1,4 @@
-`html, body {
+html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -535,6 +535,9 @@ input[type='checkbox'] {
     .review_modal_close_icon_TandC{
         margin-left: 91.5%;
         margin-top: 4.7%;
+    }
+    .review_button_section_TandC {
+        bottom: 0;
     }
 }
 
