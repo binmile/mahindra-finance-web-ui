@@ -15,58 +15,120 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
-    let prevIndex = -1;
-    $('.box_div').on('keyup', function(e) {
-        const currentIndex = $('.box_div').index(this);
-        const inputLength = $(this).val().trim().length;
-        if (e.key === 'Backspace' || (e.keyCode >= 48 && e.keyCode <= 57)) {
-            if (inputLength > 0) {
-                if (currentIndex < $('.box_div').length - 1) {
-                    $('.box_div').eq(currentIndex + 1).focus();
-                    prevIndex = currentIndex + 1;
-                }
-            } else {
-                if (currentIndex > 0) {
-                    $('.box_div').eq(currentIndex - 1).focus();
-                    prevIndex = currentIndex - 1;
-                }
-            }
-        }
-    });
+// $(document).ready(function() {
+//     let prevIndex = -1;
+//     $('.box_div').on('keyup', function(e) {
+//         const currentIndex = $('.box_div').index(this);
+//         const inputLength = $(this).val().trim().length;
+//         if (e.key === 'Backspace' || (e.keyCode >= 48 && e.keyCode <= 57)) {
+//             if (inputLength > 0) {
+//                 if (currentIndex < $('.box_div').length - 1) {
+//                     $('.box_div').eq(currentIndex + 1).focus();
+//                     prevIndex = currentIndex + 1;
+//                 }
+//             } else {
+//                 if (currentIndex > 0) {
+//                     $('.box_div').eq(currentIndex - 1).focus();
+//                     prevIndex = currentIndex - 1;
+//                 }
+//             }
+//         }
+//     });
 
-    $('.box_div').on('click', function() {
-        const currentIndex = $('.box_div').index(this);
-        prevIndex = currentIndex;
-    });
-});
+//     $('.box_div').on('click', function() {
+//         const currentIndex = $('.box_div').index(this);
+//         prevIndex = currentIndex;
+//     });
+// });
 
 
-$(document).ready(function() {
-    let prevIndex = -1;
-    $('.box_div_error').on('keyup', function(e) {
-        const currentIndex = $('.box_div_error').index(this);
-        const inputLength = $(this).val().trim().length;
-        if (e.key === 'Backspace' || (e.keyCode >= 48 && e.keyCode <= 57)) {
-            if (inputLength > 0) {
-                if (currentIndex < $('.box_div_error').length - 1) {
-                    $('.box_div_error').eq(currentIndex + 1).focus();
-                    prevIndex = currentIndex + 1;
-                }
-            } else {
-                if (currentIndex > 0) {
-                    $('.box_div_error').eq(currentIndex - 1).focus();
-                    prevIndex = currentIndex - 1;
-                }
-            }
-        }
-    });
+var otp_inputs = document.querySelectorAll(".box_div")
+var mykey = "0123456789".split("")
+otp_inputs.forEach((_)=>{
+  _.addEventListener("keyup", handle_next_input)
+})
+function handle_next_input(event){
+  let current = event.target
+  let index = parseInt(current.classList[1].split("__")[2])
+  current.value = event.key
+  
+  if(event.keyCode == 8 && index > 1){
+    current.previousElementSibling.focus()
+  }
+  if(index < 6 && mykey.indexOf(""+event.key+"") != -1){
+    var next = current.nextElementSibling;
+    next.focus()
+  }
+  var _finalKey = ""
+  for(let {value} of otp_inputs){
+      _finalKey += value
+  }
+  if(_finalKey.length == 6){
+    document.querySelector("#_otp").classList.replace("_notok", "_ok")
+    document.querySelector("#_otp").innerText = _finalKey
+  }else{
+    document.querySelector("#_otp").classList.replace("_ok", "_notok")
+    document.querySelector("#_otp").innerText = _finalKey
+  }
+}
 
-    $('.box_div_error').on('click', function() {
-        const currentIndex = $('.box_div_error').index(this);
-        prevIndex = currentIndex;
-    });
-});
+
+// $(document).ready(function() {
+//     let prevIndex = -1;
+//     $('.box_div_error').on('keyup', function(e) {
+//         const currentIndex = $('.box_div_error').index(this);
+//         const inputLength = $(this).val().trim().length;
+//         if (e.key === 'Backspace' || (e.keyCode >= 48 && e.keyCode <= 57)) {
+//             if (inputLength > 0) {
+//                 if (currentIndex < $('.box_div_error').length - 1) {
+//                     $('.box_div_error').eq(currentIndex + 1).focus();
+//                     prevIndex = currentIndex + 1;
+//                 }
+//             } else {
+//                 if (currentIndex > 0) {
+//                     $('.box_div_error').eq(currentIndex - 1).focus();
+//                     prevIndex = currentIndex - 1;
+//                 }
+//             }
+//         }
+//     });
+
+//     $('.box_div_error').on('click', function() {
+//         const currentIndex = $('.box_div_error').index(this);
+//         prevIndex = currentIndex;
+//     });
+// });
+
+var otp_inputs = document.querySelectorAll(".box_div_error")
+var mykey = "0123456789".split("")
+otp_inputs.forEach((_)=>{
+  _.addEventListener("keyup", handle_next_input)
+})
+function handle_next_input(event){
+  let current = event.target
+  let index = parseInt(current.classList[1].split("__")[2])
+  current.value = event.key
+  
+  if(event.keyCode == 8 && index > 1){
+    current.previousElementSibling.focus()
+  }
+  if(index < 6 && mykey.indexOf(""+event.key+"") != -1){
+    var next = current.nextElementSibling;
+    next.focus()
+  }
+  var _finalKey = ""
+  for(let {value} of otp_inputs){
+      _finalKey += value
+  }
+  if(_finalKey.length == 6){
+    document.querySelector("#_otp").classList.replace("_notok", "_ok")
+    document.querySelector("#_otp").innerText = _finalKey
+  }else{
+    document.querySelector("#_otp").classList.replace("_ok", "_notok")
+    document.querySelector("#_otp").innerText = _finalKey
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
 
     const timerElement = document.getElementById("timer");
