@@ -1,9 +1,7 @@
 const divContainer = document.querySelector('#main')
 let isClicked = false;
 var radioValue = '';
-
 function myFun(event){
-
     if(isClicked){
         divContainer.style.diplay = 'none';
        isClicked = true;
@@ -12,13 +10,8 @@ function myFun(event){
         isClicked = false;
         divContainer.style.display = 'block';
        myFunction(event);
-
     }
 } 
-
-
-
-
 
 $("#tenureEements :input").click(function () {
     $("#tenureEements :input").each(function () {
@@ -33,25 +26,18 @@ $("#tenureEements :input").click(function () {
     });
 });
 
-
-
-
 $("#tenureEement :input").click(function () {
     $("#tenureEement :input").each(function () {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).addClass('active');
             var result = $(this).val();
-
-          
         } else {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).removeClass('active');
         }
     });
 });
-
-
 
 $("#accountholder_invester :input").click(function () {
     $("#accountholder_invester :input").each(function () {
@@ -67,7 +53,6 @@ $("#accountholder_invester :input").click(function () {
         }
     });
 });
-
 
 $("#join_accountholder_invester :input").click(function () {
     $("#join_accountholder_invester :input").each(function () {
@@ -98,8 +83,6 @@ $(".nominee_invester :input").click(function () {
         }
     });
 });
-
-
 
 function checkBox_renewal() {
     var ischecked = document.getElementById("reviewFlexCheckDefault");
@@ -273,7 +256,6 @@ function generateOtp(){
 
 //  for show calender onClick
 const inputDate = document.getElementById("inputId");
-
 inputDate.addEventListener("focus",function (evt) {
   if (this.getAttribute("type")==="date") {
     this.showPicker();
