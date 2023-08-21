@@ -14,7 +14,6 @@ $(document).ready(function() {
     });
 });
 
-
 // $(document).ready(function() {
 //     let prevIndex = -1;
 //     $('.box_div').on('keyup', function(e) {
@@ -40,7 +39,6 @@ $(document).ready(function() {
 //         prevIndex = currentIndex;
 //     });
 // });
-
 
 var otp_inputs = document.querySelectorAll(".box_div")
 var mykey = "0123456789".split("")
@@ -71,7 +69,6 @@ function handle_next_input(event){
     document.querySelector("#_otp").innerText = _finalKey
   }
 }
-
 
 // $(document).ready(function() {
 //     let prevIndex = -1;
@@ -183,10 +180,8 @@ const submitButton = document.getElementById('submitButton');
 const checkbox = document.getElementById('flexCheckDefault');
 const validationMessage_mob = document.getElementById('validationMessage_mob');
 const validationMessage_pan = document.getElementById('validationMessage_pan');
-
 let isMobileNumberEditing = false;
 let isPanNumberEditing = false;
-
 mobileNumberInput.addEventListener('focus', () => {
     isMobileNumberEditing = true;
     clearErrorMessage(validationMessage_mob);
@@ -196,7 +191,6 @@ panNumberInput.addEventListener('focus', () => {
     isPanNumberEditing = true;
     clearErrorMessage(validationMessage_pan);
 });
-
 
 mobileNumberInput.addEventListener('blur', () => {
     isMobileNumberEditing = false;
@@ -214,7 +208,6 @@ function validateMobileNumber() {
     const mobileNumberValue = mobileNumberInput.value.trim();
     const mobileNumberRegex = /^(?:(?:(?:\+|00)91)|0)?[6-9]\d{9}$/;
     const mobileNumberIsValid = mobileNumberRegex.test(mobileNumberValue);
-
     if (mobileNumberIsValid) {
         validationMessage_mob.textContent = "";
         mobileNumberInput.classList.remove("error-border");
@@ -222,15 +215,12 @@ function validateMobileNumber() {
         validationMessage_mob.textContent = "Please enter a 10-digit mobile number.";
         mobileNumberInput.classList.add("error-border");
     }
-
     return mobileNumberIsValid;
 }
-
 function validatePanNumber() {
     const panNumberValue = panNumberInput.value.trim();
     const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
     const panNumberIsValid = panNumberRegex.test(panNumberValue);
-
     if (panNumberIsValid) {
         validationMessage_pan.textContent = "";
         panNumberInput.classList.remove("error-border");
@@ -238,7 +228,6 @@ function validatePanNumber() {
         validationMessage_pan.textContent = "Please enter a valid PAN.";
         panNumberInput.classList.add("error-border");
     }
-
     return panNumberIsValid;
 }
 
@@ -260,7 +249,6 @@ function validateInputs() {
     const panNumberIsValid = validatePanNumber();
     const isCheckboxChecked = checkbox.checked;
     submitButton.disabled = !(mobileNumberIsValid && panNumberIsValid && isCheckboxChecked);
-
     $(document).ready(function() {
         $('#submitButton').click(function() {
             $('#exampleModal').modal('show');
