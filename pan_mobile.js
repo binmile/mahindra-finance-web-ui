@@ -130,32 +130,19 @@ function handle_next_input(event){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-
     const timerElement = document.getElementById("timer");
-
     const resultElement = document.getElementById("resend_otp");
     const otpMsgElement = document.querySelector(".otp_msg");
-
     function startTimer(duration, display) {
         let timer = duration;
         let minutes, seconds;
-
         let interval = setInterval(function() {
-
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
-
-
             minutes = minutes < 10 ? "0" + minutes : minutes;
             seconds = seconds < 10 ? "0" + seconds : seconds;
-
-
             display.textContent = minutes + ":" + seconds;
-
-
             timer--;
-
-
             if (timer < 0) {
                 clearInterval(interval);
                 showHTMLText();
