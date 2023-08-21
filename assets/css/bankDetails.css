@@ -9,7 +9,7 @@ input[type='checkbox'] {
     margin-bottom: 20px;
 }
 
-.maincom{
+.maincom {
     padding-left: 20px;
     padding-right: 20px
 }
@@ -24,7 +24,7 @@ input[type='checkbox'] {
     background-color: black;
 }
 
-#flexCheckDefault{
+#flexCheckDefault {
     height: 23px;
     width: 50px;
 }
@@ -435,7 +435,7 @@ input[type='checkbox'] {
         display: block !important;
     }
 
-    #flexCheckDefault{
+    #flexCheckDefault {
         height: 20px;
         width: 20px;
     }
@@ -475,62 +475,74 @@ input[type='checkbox'] {
         border-top-left-radius: 0px
     }
 
-    .leftcard-content{
+    .leftcard-content {
         padding-top: 0px;
     }
 
-    .bordertop{
+    .bordertop {
         display: none;
     }
 
     .bank_detail_mainheading {
         font-size: 16px;
     }
-    .reviewCardHead{
+
+    .reviewCardHead {
         font-size: 12px;
     }
-    .reviewCardLargeContent{
+
+    .reviewCardLargeContent {
         font-size: 14px;
         white-space: wrap;
         margin-bottom: 0px;
     }
-    .reviewCardSmallContent{
+
+    .reviewCardSmallContent {
         font-size: 14px;
     }
+
     .reviewcard {
         position: relative;
     }
-    .reviewCardbadge{
+
+    .reviewCardbadge {
         font-size: 12px;
-        left:0;
-        top:0;
+        left: 0;
+        top: 0;
         position: absolute;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0;
     }
-    .reviewCardEdit{
+
+    .reviewCardEdit {
         font-size: 12px;
         right: 10px;
         top: 10px;
         position: absolute;
     }
-    .form-check-label{
+
+    .form-check-label {
         margin-top: 1%;
         font-size: 10px;
     }
+
     .reviewCardTandC {
         font-size: 10px;
     }
+
     #paymentMethod {
         justify-content: space-between;
     }
+
     .bank-details-disabled-button.disabled:not(:disabled) {
         width: 100%;
     }
-    .review_modal_close_icon_TandC{
+
+    .review_modal_close_icon_TandC {
         margin-left: 91.5%;
         margin-top: 4.7%;
     }
+
     .review_button_section_TandC {
         bottom: 0;
     }
@@ -543,7 +555,7 @@ input[type='checkbox'] {
         border-radius: 0;
     }
 
-    #flexCheckDefault{
+    #flexCheckDefault {
         height: 20px;
         width: 20px;
     }
@@ -578,43 +590,53 @@ input[type='checkbox'] {
         width: auto;
     }
 
-    .leftcard-content{
+    .leftcard-content {
         padding-top: 0px;
     }
-    .bordertop{
+
+    .bordertop {
         display: none;
     }
+
     .bank_detail_mainheading {
         font-size: 18px;
     }
-    .reviewCardHead{
+
+    .reviewCardHead {
         font-size: 12px;
     }
-    .reviewCardLargeContent{
+
+    .reviewCardLargeContent {
         font-size: 14px;
     }
-    .reviewCardSmallContent{
+
+    .reviewCardSmallContent {
         font-size: 13px;
     }
+
     .reviewcard {
         position: relative;
     }
-    .reviewCardbadge{
+
+    .reviewCardbadge {
         font-size: 12px;
-        left:0;
-        top:0;
+        left: 0;
+        top: 0;
         position: absolute;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0;
     }
-    .reviewCardEdit{
+
+    .reviewCardEdit {
         right: 15px;
         top: 15px;
         position: absolute;
     }
+
     .reviewCardTandC {
         font-size: 13px;
     }
+
     .bank-details-disabled-button.disabled:not(:disabled) {
         width: 100%;
     }
@@ -625,21 +647,25 @@ input[type='checkbox'] {
         font-size: 55px;
     }
 
-    #flexCheckDefault{
+    #flexCheckDefault {
         height: 23px;
         width: 65px;
     }
+
     .reviewCardLargeContent {
         font-size: 16px;
     }
+
     .reviewCardSmallContent {
         font-size: 14px;
     }
-    .reviewCardLargeContent{
+
+    .reviewCardLargeContent {
         font-size: 14px;
         white-space: wrap;
     }
-    .reviewCardSmallContent{
+
+    .reviewCardSmallContent {
         font-size: 12px;
     }
 }
