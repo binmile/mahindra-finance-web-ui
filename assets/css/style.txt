@@ -1,0 +1,71 @@
+.reviewcard {
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0px;
+    padding: 0px 15px 15px 12px;
+}
+.reviewCardbadge p {
+    margin-bottom: 0px;
+}
+
+.reviewCardbadge {
+    background-color: #626567;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    width: auto;
+}
+.reviewCardbadgesRow {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.reviewCardbadgesRow {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.interestTableContainer_inner {
+      background-color: #333333;
+      border-radius: 5px;
+      padding: 10px;
+  }
+  .stampImgContainer {
+    right: 40px;
+    top: 40px;
+    width: auto;
+    position: absolute;
+}
+.stampImg {
+    width: 100%;
+    height: auto;
+}
+.bottomfix {
+    margin-top: 52%;
+    margin-bottom: 20px;
+}
+ .Continue_button_container {
+      margin-bottom: 20px;
+  }
+   .right-side-div {
+                        padding: 37px 20px 20px 20px;
+                    }
+
+ /* .pan-left {
+    padding: 2px 40px 20px 40px;
+} */
+ 
+  /* .check-kyc-value {
+    margin-top: 80px;
+    margin-bottom: 0;
+} */
+.circle-data {
+    margin-top: 23px;
+    position: relative;
+    margin-bottom: 83px;
+}

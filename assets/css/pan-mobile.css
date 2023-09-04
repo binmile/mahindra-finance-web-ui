@@ -1,16 +1,16 @@
-.pan-left {
-    padding: 2px 40px 0px 40px;
-}
+/* .pan-left {
+    padding: 2px 40px 20px 40px;
+} */
 
 .invest_fixed_pan {
     margin-top: 0;
     margin-bottom: 40px;
 }
 
-.check-kyc-value {
-    margin-top: 75px;
+/* .check-kyc-value {
+    margin-top: 80px;
     margin-bottom: 0;
-}
+} */
 
 .strapper-div {
     margin-top: 20px;
@@ -83,6 +83,7 @@
 .circle-data {
     margin-top: 23px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 .card-first-content {
@@ -108,7 +109,7 @@
 }
 
 .maincontant-right {
-    padding: 50px 40px 0px 20px;
+    padding: 50px 40px 20px 20px;
 }
 
 .error-border {
@@ -157,7 +158,7 @@
 .circle_content_pan {
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 30px;
     letter-spacing: 0px;
     text-align: left;

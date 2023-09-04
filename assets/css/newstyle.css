@@ -1,6 +1,6 @@
   .leftcard {
       margin: auto;
-      padding: 100px 30px;
+      padding: 20px 30px 0px 20px;
   }
   
   .logo {
@@ -161,8 +161,9 @@
   }
   
   .leftPanBackGround {
-      background-image: url("../Image/blur.png"), url("../Image/fd_img _background.png");
-  }
+    background-image: url("../Image/blur.png"), url("../Image/fd_img _background.png");
+    border-radius: 20px 0px 0px 20px;
+}
   
   .wrapper_div {
       display: flex;
@@ -1058,7 +1059,7 @@
   }
   
   .Continue_button_container {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
   }
   
   .pan_mobile_container {
@@ -1267,8 +1268,9 @@
   }
   
   .interestTableContainer_inner {
-      background-color: #4B4C4D;
+      background-color: #333333;
       border-radius: 5px;
+      padding: 10px;
   }
   
   .interestTableContainer_text_container {
@@ -1927,11 +1929,14 @@
   }
   
   .reviewcard {
-      border-radius: 4px;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      border: 0px;
-      padding: 15px;
-  }
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0px;
+    padding: 0px 15px 15px 12px;
+}
+.reviewCardbadge p {
+    margin-bottom: 0px;
+}
   
   .continueButtonEnable {
       display: flex;
@@ -2251,4 +2256,14 @@
 .circleimg {
     height: 30px;
     width: 30px;
+}
+
+.reviewCardbadge {
+    background-color: #626567;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    width: auto;
 }

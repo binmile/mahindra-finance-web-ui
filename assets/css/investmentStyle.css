@@ -926,3 +926,20 @@ tbody {
     padding-left: 7px;
 }
 }
+
+
+.stampImgContainer {
+    right: 40px;
+    top: 40px;
+    width: auto;
+    position: absolute;
+}
+.stampImg {
+    width: 100%;
+    height: auto;
+}
+
+.bottomfix {
+    margin-top: 52%;
+    margin-bottom: 20px;
+}
