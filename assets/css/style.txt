@@ -7,6 +7,9 @@
 .reviewCardbadge p {
     margin-bottom: 0px;
 }
+////////newStyle.css///////
+
+////////newStyle.css///////
 
 .reviewCardbadge {
     background-color: #626567;
@@ -17,12 +20,7 @@
     font-weight: 600;
     width: auto;
 }
-.reviewCardbadgesRow {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 15px;
-    margin-top: 5px;
-}
+////////newStyle.css///////
 
 .reviewCardbadgesRow {
     display: flex;
@@ -30,42 +28,55 @@
     margin-bottom: 0px;
     margin-top: 5px;
 }
+////////Bankdetails.css///////
+
 .interestTableContainer_inner {
       background-color: #333333;
       border-radius: 5px;
       padding: 10px;
   }
+
+////////newStyle.css///////
+
   .stampImgContainer {
     right: 40px;
     top: 40px;
     width: auto;
     position: absolute;
 }
+////////investmentStyle.css///////
+
 .stampImg {
     width: 100%;
     height: auto;
 }
+////////investmentStyle.css///////
+
 .bottomfix {
     margin-top: 52%;
     margin-bottom: 20px;
 }
+////////investmentStyle.css///////
+
  .Continue_button_container {
       margin-bottom: 20px;
   }
+  /* //////new style.css////// */
    .right-side-div {
                         padding: 37px 20px 20px 20px;
                     }
 
+/* //////kyc details.css////// */
+
  /* .pan-left {
     padding: 2px 40px 20px 40px;
 } */
+
+/* //////pan mobile .css////// */
  
   /* .check-kyc-value {
     margin-top: 80px;
     margin-bottom: 0;
 } */
-.circle-data {
-    margin-top: 23px;
-    position: relative;
-    margin-bottom: 83px;
-}
+
+/* //////pan mobile .css////// */
