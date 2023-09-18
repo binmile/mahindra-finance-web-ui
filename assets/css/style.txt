@@ -80,3 +80,15 @@
 } */
 
 /* //////pan mobile .css////// */
+
+
+
+
+
+
+/* //////18-sep new update  new style////// */
+.inner-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 90vh;
+}

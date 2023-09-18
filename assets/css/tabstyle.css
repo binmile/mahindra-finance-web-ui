@@ -27,11 +27,13 @@
 .horizontalline {
     width: 88px;
 }
+/* new update 18 sep */
 .tabparent {
     display: flex;
     margin-top: 15px;
     position: relative;
     margin-left: 26px;
+    padding-bottom: 14px;
 }
 .menuname p {
     margin-bottom: 0px;
@@ -42,12 +44,14 @@
 .menuname p {
     margin-left: 5px;
 }
+
+/* new update 18 sep */
 .circleimg.active::before {
     content: "";
     border: 2px solid;
     width: 15%;
     position: absolute;
-    bottom: -15px;
+    bottom: 0px;
 }
 .circleimg.active {
     height: 30px;
