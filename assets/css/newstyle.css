@@ -2275,3 +2275,6 @@
     overflow-y: auto;
     height: 90vh;
 }
+body {
+    overflow: hidden;
+}
