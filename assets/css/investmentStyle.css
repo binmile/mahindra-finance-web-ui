@@ -14,10 +14,14 @@
 .Investment_radio_hide {
     display: none;
     }
+    /* new update 18sep */
     .leftcard_investment{
         margin: auto;
-        padding: 40.5px 30px;
+        padding: 40.5px 30px 20px;
     }
+     /* new update 18sep close */
+
+     
      .boxmaturity_radio_investment{
         display: grid;
         flex-direction: column;
@@ -927,10 +931,11 @@ tbody {
 }
 }
 
+/* new update sep-18 */
 
 .stampImgContainer {
     right: 40px;
-    top: 40px;
+    top: 30px;
     width: auto;
     position: absolute;
 }

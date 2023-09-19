@@ -2137,13 +2137,14 @@
   button.btn-success.btn-successsmaall {
       width: 120px;
   }
-  
+  /* new update 18sep open */
   .bordertop {
       border: 1px solid #ccc;
       position: absolute;
-      top: 64px;
+      top: 62px;
       width: 100%;
   }
+  /* new update 18sep close */
   
   .leftColHeading.success {
       color: #ffff;
@@ -2275,7 +2276,57 @@
     overflow-y: auto;
     height: 80vh;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .inner-scroll::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  .inner-scroll::-webkit-scrollbar-thumb {
+    background:transparent; 
+  }
+  
+  /* Handle on hover */
+  .inner-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 body {
     overflow: hidden;
-    height: 100vh;
+}
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+    .leftcard-contant h1 {
+        font-size: 50px ;
+        line-height: 58px;
+    }
+    .leftcard_investment {
+        padding: 25.5px 30px 0px;
+    }
+
+    .appliedContainer {
+        margin-bottom: 0px;
+    }
+    .table {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .appliedSection {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    
+    .table tbody tr td {
+        padding: 10px 10px 5px 10px;
+        line-height: 20px;
+    }
+    .inner-scroll {
+        height: 84vh;
+    }
+    
 }
