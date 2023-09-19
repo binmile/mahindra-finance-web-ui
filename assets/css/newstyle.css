@@ -2303,7 +2303,7 @@ body {
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
     .leftcard-contant h1 {
         font-size: 50px ;
-        line-height: 58px;
+        line-height: 48px;
     }
     .leftcard_investment {
         padding: 25.5px 30px 0px;
