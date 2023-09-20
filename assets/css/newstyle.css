@@ -2329,4 +2329,31 @@ body {
         height: 84vh;
     }
     
+    .fixed_deposit_data {
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .circle-data {
+        margin-bottom: 0px !important;
+    }
+    .card_second_content {
+        font-size: 30px;
+    }
+    .easy-step {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .check_kyc_data {
+        margin-top: 70px;
+    }
+    .img_div {
+        margin-top: -102px;
+    }
+    .img-div {
+        top: -19px;
+        right: -17px;
+    }
+    .fixed-deposit-data {
+        width: auto !important;
+    }
 }

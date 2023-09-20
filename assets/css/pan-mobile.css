@@ -79,12 +79,13 @@
     color: #ffffff;
     margin-left: 31px;
 }
-
+/* new update sep-18 open */
 .circle-data {
     margin-top: 23px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
+/* new update sep-18 close */
 
 .card-first-content {
     font-family: "Lato", sans-serif;
