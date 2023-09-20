@@ -308,6 +308,11 @@ input[type='checkbox'] {
     display: none;
 }
 
+.drop-investment-field {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
 .horizontalLinr_investment {
     margin-bottom: 20px;
 }
