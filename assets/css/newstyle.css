@@ -2294,7 +2294,7 @@
   
   /* Handle on hover */
   .inner-scroll::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #ccc; 
   }
 
 body {
