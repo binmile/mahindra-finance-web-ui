@@ -1,238 +1,255 @@
-::placeholder{
+::placeholder {
     font-size: 16px !important;
-    
 }
- 
-.mobile_investment{
+
+.mobile_investment {
     display: none;
-  }
- 
-  .desktop_investment{
+}
+
+.desktop_investment {
     display: flex;
 }
 
 .Investment_radio_hide {
     display: none;
-    }
-    /* new update 18sep */
-    .leftcard_investment{
-        margin: auto;
-        padding: 40.5px 30px 20px;
-    }
-     /* new update 18sep close */
+}
 
-     
-     .boxmaturity_radio_investment{
-        display: grid;
-        flex-direction: column;
-        align-content:center;
-        justify-content:space-evenly;
-        justify-items:center;
-        text-align-last: center;
-    }
-        .boxmaturity_radio_investment input[type='radio'] {
-            display: none;
-        }
-  
-    .maturityBox_tex1_investment   {
-        font-size: 16px;
-        font-weight: 700;
-       line-height: 30px;
-    }
 
-    .maturityBox_tex2_investment   {
-        font-size: 14px;
-        font-weight: 700;
-       line-height: 24px;
-    }
-    .tenure_investment label{
-        position: relative;
-        align-items: self-start;
-        padding-left: 10px;
-    }
-    .tenure_investment label:first-child::before {
-        content: "";
-        width: 25px;
-        height: 20px;
-        position: absolute;
-        top: 0;
-        right: -5px;
-        background-image: url('../icons/mark.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .tooltipHeader_invester{
-         font-weight: 700;
-         font-size: 18px;
-    }
-    .tooltipText_invester{
-        font-weight: 500;
-        font-size: 14px;
-    }
-    .tooltipText_invester ul{
-        display: flex;
-        list-style: inherit;
-        flex-direction: column;
-    }
-    .yesNo_button_invester.active {
-        background-color: #F4F7FA;
-        color: #221F20;
-        border: 2px solid #221F20;
-        font-weight: 700;
-    }
-    .selectHolder_text_invester {
-        padding: 0px !important;
-     height: 24px !important;
-     padding-left: 10px !important;
-     padding-right: 10px !important;
-     color: #FFFFFF;
-     font-size: 14px;
-     font-weight: 400px;
-     line-height: 24px;
-    }
-      
-    .headingAdditional{
-     margin-top: 3px;
-    }
+/* new update 18sep */
 
-    .interestContainer_img{
-        width: 18px;
-        height: 15px;
-        margin-right: 0px !important;
-    }
+.leftcard_investment {
+    margin: auto;
+    padding: 40.5px 30px 20px;
+}
 
-     .seeLess_Button {
-        color: #ffffff;
-        width: 24%;
-    }
 
-    .seeLess_Button_investment{
-        width: auto !important;
-        padding: 0px;
-    }
+/* new update 18sep close */
 
-    .theme_button_red{
-        padding: 0;
-        height: 34px;
-        width: fit-content;
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 5px 10px !important;
-    }
+.boxmaturity_radio_investment {
+    display: grid;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align-last: center;
+}
 
-    .theme_button_red:hover{
-        color: #FFFFFF;
-    }
-    .theme_button_red img{
-        margin-left: 5px;
-    }
+.boxmaturity_radio_investment input[type='radio'] {
+    display: none;
+}
 
-    .jointAccount_Button_container_investment{
-        padding: 0px !important;
-    }
-    .textparent_mob_investment{
-        margin-bottom: 18px;
-    }
+.maturityBox_tex1_investment {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+}
 
-    .selectHolder_nomine_container_investment{
-        margin-bottom: 20px;
-    }
+.maturityBox_tex2_investment {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
 
-    .selectdiv_investment {
-        margin-top: 13px;
-        margin-bottom: 20px;
-    }
+.tenure_investment label {
+    position: relative;
+    align-items: self-start;
+    padding-left: 10px;
+}
 
-    .textparent_nomine_name_investment{
-        margin-bottom: 10px;
-    }
+.tenure_investment label:first-child::before {
+    content: "";
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    background-image: url('../icons/mark.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
-    .MMFsl_investment_cont{
-       margin-top: 30px;
-        margin-bottom: 10px;
-    }
-     
-    .Continue_button_container_investment{
-        margin-bottom: 20px;
-    }
-    .msg_Investment{
-        margin-top: 5px;
-    }
+.tooltipHeader_invester {
+    font-weight: 700;
+    font-size: 18px;
+}
 
-    #interestEement {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-  
-    .toggle_investment{
-        cursor: pointer;
-    }
+.tooltipText_invester {
+    font-weight: 500;
+    font-size: 14px;
+}
 
-    .customTextfield{
-        padding: 2px;
-        position: absolute;
-        right: auto;
-        top: 41px;
-        padding-left: 12px;
-        font-size: 16px;
-    }
+.tooltipText_invester ul {
+    display: flex;
+    list-style: inherit;
+    flex-direction: column;
+}
 
-    .form-control_amount {
-        padding: 10px 40px 10px 24px;
-        background: #F4F7FA;
-        width: 100%;
-        border: 1px solid #ced4da;
-    }
-    
-    .form-switch .form-check-input:focus:not(:checked) {
-        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
-        border-color: #bbbcbd;
-    }
+.yesNo_button_invester.active {
+    background-color: #F4F7FA;
+    color: #221F20;
+    border: 2px solid #221F20;
+    font-weight: 700;
+}
 
-    input[type='checkbox'] {
-        background-color: #f4f7fa;
-    }
+.selectHolder_text_invester {
+    padding: 0px !important;
+    height: 24px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 24px;
+}
 
-    #holder1{
-        display: none;
-    }
+.headingAdditional {
+    margin-top: 3px;
+}
 
-    .calender_investment {
-        padding: 10px 12px 10px 15px ;
-    }
+.interestContainer_img {
+    width: 18px;
+    height: 15px;
+    margin-right: 0px !important;
+}
 
-    .receive_interest_container_investment{
-        margin-top: 20px ;
-        margin-bottom: 15px ;
-    }
+.seeLess_Button {
+    color: #ffffff;
+    width: 24%;
+}
 
-    .tenure_container_investment{
-        padding-bottom: 16px;
-    }
-    .interestTableContainer_inner_investment{
-        padding-top: 10px;
-        padding-bottom: 13px;
-    }
+.seeLess_Button_investment {
+    width: auto !important;
+    padding: 0px;
+}
 
-    .addHolder_radio_investment{
-        margin-top: 20px;
-        margin-bottom: 60px;
-    }
-    .jointSwitch_container_investment1{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .jointSwitch_container_investment2{
-        margin-bottom: 20px;
-    }
+.theme_button_red {
+    padding: 0;
+    height: 34px;
+    width: fit-content;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 10px !important;
+}
 
-    .cutom_inputcontainer_investment{
-        padding-bottom: 20px;
-    }
+.theme_button_red:hover {
+    color: #FFFFFF;
+}
 
-   .continue_button_investment{
+.theme_button_red img {
+    margin-left: 5px;
+}
+
+.jointAccount_Button_container_investment {
+    padding: 0px !important;
+}
+
+.textparent_mob_investment {
+    margin-bottom: 18px;
+}
+
+.selectHolder_nomine_container_investment {
+    margin-bottom: 20px;
+}
+
+.selectdiv_investment {
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+.textparent_nomine_name_investment {
+    margin-bottom: 10px;
+}
+
+.MMFsl_investment_cont {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.Continue_button_container_investment {
+    margin-bottom: 20px;
+}
+
+.msg_Investment {
+    margin-top: 5px;
+}
+
+#interestEement {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.toggle_investment {
+    cursor: pointer;
+}
+
+.customTextfield {
+    padding: 2px;
+    position: absolute;
+    right: auto;
+    top: 41px;
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+.form-control_amount {
+    padding: 10px 40px 10px 24px;
+    background: #F4F7FA;
+    width: 100%;
+    border: 1px solid #ced4da;
+}
+
+.form-switch .form-check-input:focus:not(:checked) {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
+    border-color: #bbbcbd;
+}
+
+input[type='checkbox'] {
+    background-color: #f4f7fa;
+}
+
+#holder1 {
+    display: none;
+}
+
+.calender_investment {
+    padding: 10px 12px 10px 15px;
+}
+
+.receive_interest_container_investment {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.tenure_container_investment {
+    padding-bottom: 16px;
+}
+
+.interestTableContainer_inner_investment {
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+
+.addHolder_radio_investment {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.jointSwitch_container_investment1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jointSwitch_container_investment2 {
+    margin-bottom: 20px;
+}
+
+.cutom_inputcontainer_investment {
+    padding-bottom: 20px;
+}
+
+.continue_button_investment {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -243,25 +260,26 @@
     background: #E31837;
     box-shadow: 0px 6px 8px 0px #E3183740;
     border-radius: 4px;
-   } 
-    
-   .OTP_button_investment{
+}
+
+.OTP_button_investment {
     font-size: 14px;
     font-weight: 700;
     color: #ffffff;
     background: #E31837;
     box-shadow: 0px 6px 8px 0px #E3183740;
     border-radius: 4px;
-   }
+}
 
-   .interestTableContainer_text_2_investment {
+.interestTableContainer_text_2_investment {
     color: #FFFFFF;
     margin-top: 5px;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
 }
-.kyc_button_investment{
+
+.kyc_button_investment {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -273,34 +291,46 @@
     background: #E31837;
     box-shadow: 0px 6px 8px 0px #E3183740;
     border-radius: 4px;
-   } 
+}
 
-.pan_mobile_container_investment{
+.pan_mobile_container_investment {
     margin-bottom: 30px;
 }
 
-.horizontalLinr_investment{
+
+/* 20 sept 2023 investement-new-features-added */
+
+#addnewdrop {
+    display: none;
+}
+
+#nomineedropdownid {
+    display: none;
+}
+
+.horizontalLinr_investment {
     margin-bottom: 20px;
 }
-.accountHolderYessNo_investment{
+
+.accountHolderYessNo_investment {
     margin-bottom: 21px;
 }
 
-.nomineeInputContainer_investment{
+.nomineeInputContainer_investment {
     margin-bottom: 4px;
 }
 
-.tab-content{
+.tab-content {
     padding-right: 0px !important;
 }
 
-.togle_lable_investment{
+.togle_lable_investment {
     font-size: 16px;
 }
 
-.btn-group{
+.btn-group {
     width: 100%;
-} 
+}
 
 .boxRadioButton {
     background-color: #ffffff;
@@ -351,86 +381,98 @@
     border: 1px solid #221F20;
     font-weight: 700;
 }
+
 .boxRadioButton input[type="radio"] {
     opacity: 0;
 }
+
 .boxRadioButton2 input[type="radio"] {
     opacity: 0;
 }
-.btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn {
+
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:nth-child(n+3),
+.btn-group>:not(.btn-check)+.btn {
     width: 100%;
 }
-.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+
+.btn-group>.btn-group:not(:last-child)>.btn,
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
     width: 100%;
-} 
-  #error-message{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: red;
-  }
-  #error-message_pan{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: red;
-  }
-  #error-message_nomenieeName{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: red;
-  }
-  #error-message_nomenieeDOB{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: red;
-  }
-  #error-message_nomenieeRelation{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: red;
-  } 
+}
 
+#error-message {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
+}
 
+#error-message_pan {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
+}
 
-@media only screen and (max-width: 1199px){
+#error-message_nomenieeName {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
+}
+
+#error-message_nomenieeDOB {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
+}
+
+#error-message_nomenieeRelation {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: red;
+}
+
+@media only screen and (max-width: 1199px) {
     .tooltipContainer .tooltipContent {
         width: 240px;
     }
     .tooltipContainer .tooltipContent::after {
         left: 35%;
     }
-    
 }
 
- /* investment mobile responsive screen 992 */
- @media only screen and (max-width: 992px) {
+
+/* investment mobile responsive screen 992 */
+
+@media only screen and (max-width: 992px) {
     .pl-0 {
         padding-left: 12px;
     }
-   .desktop_investment{
-      display: inline-block;
-   }
+    .desktop_investment {
+        display: inline-block;
+    }
     .leftcard-contant h1 {
         font-size: 50px;
     }
-    .leftcard_investment{
+    .leftcard_investment {
         padding: 0px 30px;
     }
-    
- }
-  /* investment mobile responsive screen 767 - screen down all */
- @media only screen and (max-width: 767px) {
+}
 
-    .desktop_investment{
+
+/* investment mobile responsive screen 767 - screen down all */
+
+@media only screen and (max-width: 767px) {
+    .desktop_investment {
         display: none;
     }
-    .mobile_investment{
+    .mobile_investment {
         display: block;
-      }
+    }
     .pl-0 {
         padding-left: 12px;
     }
@@ -453,7 +495,7 @@
         white-space: nowrap;
         margin-bottom: 4px;
     }
-    .msg_Investment{
+    .msg_Investment {
         margin-top: 4px;
     }
     .message_label {
@@ -475,14 +517,14 @@
         margin-right: 12px;
         margin-top: 10px;
     }
-    .receive_interest_container_investment{
-        margin-top: 15px ;
-        margin-bottom: 1px ;
+    .receive_interest_container_investment {
+        margin-top: 15px;
+        margin-bottom: 1px;
     }
-    .tenure_container_investment{
+    .tenure_container_investment {
         padding-bottom: 1px;
     }
-    .interestContainer_header{
+    .interestContainer_header {
         align-items: baseline;
     }
     .boxRadioButton2 {
@@ -494,15 +536,15 @@
         margin-top: 5px;
         padding-top: 16px;
     }
-    .maturityBox_tex1_investment   {
+    .maturityBox_tex1_investment {
         font-size: 14px;
         font-weight: 700;
-       line-height: 24px;
+        line-height: 24px;
     }
-    .maturityBox_tex2_investment   {
+    .maturityBox_tex2_investment {
         font-size: 12px;
         font-weight: 600;
-       line-height: 20px;
+        line-height: 20px;
     }
     .interestTableContainer_text_1 {
         color: #E6E7E9;
@@ -516,13 +558,12 @@
         font-size: 14px;
         line-height: 24px;
     }
-    .autorenewal_text{
+    .autorenewal_text {
         color: #E6E7E9;
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
     }
-
     .interestTableContainer_text_2 {
         color: #FFFFFF;
         margin-top: 10px;
@@ -530,39 +571,39 @@
         font-size: 18px;
         line-height: 28px;
     }
-    .interestTableContainer_inner_investment{
+    .interestTableContainer_inner_investment {
         padding-top: 15px;
         padding-bottom: 13px;
     }
-    .addHolder_radio_investment{
+    .addHolder_radio_investment {
         margin-top: 7px;
         margin-bottom: 40px;
     }
-    .togle_lable_investment{
+    .togle_lable_investment {
         font-size: 14px;
         font-weight: 500;
         line-height: 16px;
         margin-left: 0px;
         margin-right: 20px;
-    } 
+    }
     .form-switch {
         margin-bottom: 40px;
     }
-    .jointSwitch_container_investment1{
+    .jointSwitch_container_investment1 {
         margin-top: 0px;
         margin-bottom: 20px;
     }
     .form-switch {
-          margin-bottom: 10px;
-          display: flex;
-          flex-direction: row-reverse;
-          padding-left: 0px;
-          align-self: self-end;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 0px;
+        align-self: self-end;
     }
-    .jointSwitch_container_investment2{
+    .jointSwitch_container_investment2 {
         margin-bottom: 25px;
     }
-    .toggle_investment{
+    .toggle_investment {
         margin: 0px;
     }
     .form-switch .form-check-input {
@@ -580,248 +621,236 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-   .mobile_investment_logo{
-      width: 169px;
-      height: 64px;
-   }
-   .mobile_investment_stamp{
-     width: 54px;
-     height: 50px;
-   }
-   .mobile_investment_stampCnt_{
-       text-align-last: end;
-       margin-left: -20px;
-       align-self: center;
-   } 
-   .mobile_investment_header{
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 10px;
-    text-align-last: center;
-    color: #ffffff;
-   }
-   .mobile_investment_subheaders{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align-last: center;
-    color: #ffffff;
-    margin-bottom: 20px;
-   }
-   .appliedContainer {
-    margin-bottom: 0px;
-    padding: 12px;
-  }
-  .mobile_investment_cmpl{
-    height: 14px;
-    width: 14px;
-    margin-right: 5px;
-  }
-  .appliedSection_additional {
-   
-    margin-bottom: 0px;
-    padding: 8px;
-}
-  .appliedSection {
-    align-self: center;
-    padding: 0px !important;
-    border-radius: 4px;
-    align-self: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    margin-bottom: 0px;
-}
-  .applied_additional_citizens{
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 14px;
-    margin-right: 2px;
-    margin-bottom: 0px;
-    align-self: center;
-  } 
-  .mobile_investment_btn{
-    height: 30px;
-    padding: 0px;
-    border-radius: 4px;
-
-  }
-  .mobile_investment_btn button{
-    color: #ffffff;
-    padding: 10px;
-    font-size: 10px;
-    font-weight: 700;
-    background-color: #E31837;
-    text-align-last: center;
-    width: 95%;
-    margin-left: 10px;
-  }
-   
-  .Mobile_table_scr{
-    border-bottom: none;
-  }
-
-  .mobile_table_container_invst{
-    z-index: 999;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    position:fixed;
-    top:0;
-    left:0;
-    text-align:center;
-    background-color: #ffffff;
-    width:100%;
-    bottom: 0;
-    max-height: 500px;
-    transform: translate(0, 83%);
-    transition-duration: 1s;
-  }
-  .table thead tr th {
-    padding: 10px;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    border: none;
-}
-.table tbody tr td {
-    padding: 10px;
-    color: #4B4C4D;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 24px;
-}
-.table tbody tr td .tableUpto {
-    margin-right: 5px;
-    color: #4B4C4D;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-} 
-.table thead tr th {
-   
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 400px;
-}
-thead {
-    background-color: #4B4C4D;
-   
-}
-tbody {
-    background-color: #ffffff;
-}
- .mobile_investment_tableimgCnt{
-    text-align-last: end;
-    align-self: self-end;
-  
- }
- .mobile_investment_tableHeaderCnt{
-    text-align-last: start;
-    align-self: self-end;
-   
- }
- .mobile_investment_tableHeader1{
-    margin: 0px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
- }
- .btn-close{
-    height: 15px !important;
-    width: 15px !important;
- }
- .intrestTableHide_btn{
-    border: none;
-    background-color: #ffffff;
-    cursor: pointer;
- }
-   .bestSellerImg {
-   height: 15px;
-   width: 76px;
-} 
-.customTextfield{
-    padding: 0px;
-    position: absolute;
-    right: auto;
-    top: 41px;
-    padding-left: 12px;
-    font-size: 16px;
-}
-.tooltipContainer .tooltipContent {
-    position: absolute;
-    bottom: 32px;
-    left: -50px;
-    width: 229px;
-    height: auto;
-    background-color: #ffffff;
-    border: 1px solid #E6E7E9;
-    color: #221F20;
-    padding: 15px;
-    border-radius: 4px;
-} 
-  
-.tooltipContainer .tooltipContent::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 27%;
-    margin-left: -5px;
-    border-width: 9px;
-    border-style: solid;
-    border-color: #FFFFFF transparent transparent transparent;
-}
-
-
-.mobile_investment{
-    position: relative;
-}
-#darkBackground{
-    display: none;
-    width: 100%;
-    height: 100vh;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.mobile_interest_rate_container{
-    display: block;
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background-color: #FFFFFF;
-    padding: 16px;
-    transform: translate(0px, 370px);
-    transition: all 0.3s ease-in-out;
-    border-top-left-radius : 8px;
-    border-top-right-radius : 8px;
-}
-.mobile_popup{
-   display: flex;
-   justify-content: space-between;
-}
-.closeBtn_txt{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
+    .mobile_investment_logo {
+        width: 169px;
+        height: 64px;
+    }
+    .mobile_investment_stamp {
+        width: 54px;
+        height: 50px;
+    }
+    .mobile_investment_stampCnt_ {
+        text-align-last: end;
+        margin-left: -20px;
+        align-self: center;
+    }
+    .mobile_investment_header {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 10px;
+        text-align-last: center;
+        color: #ffffff;
+    }
+    .mobile_investment_subheaders {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align-last: center;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+    .appliedContainer {
+        margin-bottom: 0px;
+        padding: 12px;
+    }
+    .mobile_investment_cmpl {
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+    }
+    .appliedSection_additional {
+        margin-bottom: 0px;
+        padding: 8px;
+    }
+    .appliedSection {
+        align-self: center;
+        padding: 0px !important;
+        border-radius: 4px;
+        align-self: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+    .applied_additional_citizens {
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 14px;
+        margin-right: 2px;
+        margin-bottom: 0px;
+        align-self: center;
+    }
+    .mobile_investment_btn {
+        height: 30px;
+        padding: 0px;
+        border-radius: 4px;
+    }
+    .mobile_investment_btn button {
+        color: #ffffff;
+        padding: 10px;
+        font-size: 10px;
+        font-weight: 700;
+        background-color: #E31837;
+        text-align-last: center;
+        width: 95%;
+        margin-left: 10px;
+    }
+    .Mobile_table_scr {
+        border-bottom: none;
+    }
+    .mobile_table_container_invst {
+        z-index: 999;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background-color: #ffffff;
+        width: 100%;
+        bottom: 0;
+        max-height: 500px;
+        transform: translate(0, 83%);
+        transition-duration: 1s;
+    }
+    .table thead tr th {
+        padding: 10px;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        border: none;
+    }
+    .table tbody tr td {
+        padding: 10px;
+        color: #4B4C4D;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    .table tbody tr td .tableUpto {
+        margin-right: 5px;
+        color: #4B4C4D;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .table thead tr th {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400px;
+    }
+    thead {
+        background-color: #4B4C4D;
+    }
+    tbody {
+        background-color: #ffffff;
+    }
+    .mobile_investment_tableimgCnt {
+        text-align-last: end;
+        align-self: self-end;
+    }
+    .mobile_investment_tableHeaderCnt {
+        text-align-last: start;
+        align-self: self-end;
+    }
+    .mobile_investment_tableHeader1 {
+        margin: 0px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .btn-close {
+        height: 15px !important;
+        width: 15px !important;
+    }
+    .intrestTableHide_btn {
+        border: none;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+    .bestSellerImg {
+        height: 15px;
+        width: 76px;
+    }
+    .customTextfield {
+        padding: 0px;
+        position: absolute;
+        right: auto;
+        top: 41px;
+        padding-left: 12px;
+        font-size: 16px;
+    }
+    .tooltipContainer .tooltipContent {
+        position: absolute;
+        bottom: 32px;
+        left: -50px;
+        width: 229px;
+        height: auto;
+        background-color: #ffffff;
+        border: 1px solid #E6E7E9;
+        color: #221F20;
+        padding: 15px;
+        border-radius: 4px;
+    }
+    .tooltipContainer .tooltipContent::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 27%;
+        margin-left: -5px;
+        border-width: 9px;
+        border-style: solid;
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .mobile_investment {
+        position: relative;
+    }
+    #darkBackground {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .mobile_interest_rate_container {
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background-color: #FFFFFF;
+        padding: 16px;
+        transform: translate(0px, 370px);
+        transition: all 0.3s ease-in-out;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .mobile_popup {
+        display: flex;
+        justify-content: space-between;
+    }
+    .closeBtn_txt {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .tooltipHeader_invester {
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .tooltipText_invester {
+        font-weight: 500;
+        font-size: 11.5px;
+    }
 }
 
-.tooltipHeader_invester{
-    font-weight: 700;
-    font-size: 14px;
-}
-.tooltipText_invester{
-    font-weight: 500;
-    font-size: 11.5px;
-}
-}
-
-@media only screen and (max-width: 448px){
+@media only screen and (max-width: 448px) {
     .interestTableContainer_text_1 {
         color: #E6E7E9;
         font-weight: 400;
@@ -856,10 +885,9 @@ tbody {
         border-style: solid;
         border-color: #FFFFFF transparent transparent transparent;
     }
-}  
+}
 
-
-@media only screen and (max-width: 395px){
+@media only screen and (max-width: 395px) {
     .interestTableContainer_text_1 {
         color: #E6E7E9;
         font-weight: 400;
@@ -894,10 +922,9 @@ tbody {
         border-style: solid;
         border-color: #FFFFFF transparent transparent transparent;
     }
-    
 }
 
-@media only screen and (max-width: 369px){
+@media only screen and (max-width: 369px) {
     .interestTableContainer_text_1 {
         color: #E6E7E9;
         font-weight: 400;
@@ -910,26 +937,25 @@ tbody {
         font-size: 14px;
         line-height: 24px;
     }
-.boxRadioButton2 {
-    border-radius: 4px;
-    font-size: 14px;
-    width: 91px ;
-    height: 74px ;
-    margin-right: 7px;
-    margin-top: 5px;
-    padding-top: 16px;
+    .boxRadioButton2 {
+        border-radius: 4px;
+        font-size: 14px;
+        width: 91px;
+        height: 74px;
+        margin-right: 7px;
+        margin-top: 5px;
+        padding-top: 16px;
+    }
+    .togle_lable_investment {
+        margin-right: 20px;
+    }
+    .tenure_investment label {
+        position: relative;
+        align-items: self-start;
+        padding-left: 7px;
+    }
 }
 
-.togle_lable_investment{
-    margin-right: 20px;
-} 
-
-.tenure_investment label {
-    position: relative;
-    align-items: self-start;
-    padding-left: 7px;
-}
-}
 
 /* new update sep-18 */
 
@@ -939,6 +965,7 @@ tbody {
     width: auto;
     position: absolute;
 }
+
 .stampImg {
     width: 100%;
     height: auto;

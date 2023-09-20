@@ -1,20 +1,20 @@
 const divContainer = document.querySelector('#main')
 let isClicked = false;
 var radioValue = '';
-function myFun(event){
-    if(isClicked){
+
+function myFun(event) {
+    if (isClicked) {
         divContainer.style.diplay = 'none';
-       isClicked = true;
-    }
-    else{
+        isClicked = true;
+    } else {
         isClicked = false;
         divContainer.style.display = 'block';
-       myFunction(event);
+        myFunction(event);
     }
-} 
+}
 
-$("#tenureEements :input").click(function () {
-    $("#tenureEements :input").each(function () {
+$("#tenureEements :input").click(function() {
+    $("#tenureEements :input").each(function() {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenure');
             $('#' + activeData).addClass('active');
@@ -26,8 +26,8 @@ $("#tenureEements :input").click(function () {
     });
 });
 
-$("#tenureEement :input").click(function () {
-    $("#tenureEement :input").each(function () {
+$("#tenureEement :input").click(function() {
+    $("#tenureEement :input").each(function() {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).addClass('active');
@@ -39,14 +39,14 @@ $("#tenureEement :input").click(function () {
     });
 });
 
-$("#accountholder_invester :input").click(function () {
-    $("#accountholder_invester :input").each(function () {
+$("#accountholder_invester :input").click(function() {
+    $("#accountholder_invester :input").each(function() {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).addClass('active');
 
             var result = $(this).val();
-          
+
         } else {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).removeClass('active');
@@ -54,14 +54,14 @@ $("#accountholder_invester :input").click(function () {
     });
 });
 
-$("#join_accountholder_invester :input").click(function () {
-    $("#join_accountholder_invester :input").each(function () {
+$("#join_accountholder_invester :input").click(function() {
+    $("#join_accountholder_invester :input").each(function() {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).addClass('active');
 
             var result = $(this).val();
-          
+
         } else {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).removeClass('active');
@@ -69,14 +69,14 @@ $("#join_accountholder_invester :input").click(function () {
     });
 });
 
-$(".nominee_invester :input").click(function () {
-    $(".nominee_invester :input").each(function () {
+$(".nominee_invester :input").click(function() {
+    $(".nominee_invester :input").each(function() {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).addClass('active');
 
             var result = $(this).val();
-          
+
         } else {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).removeClass('active');
@@ -113,7 +113,7 @@ function myMaturityButton(e) {
     event.preventDefault();
 }
 
-$('.button_label').click(function () {
+$('.button_label').click(function() {
     $('input:not(:checked)').parent().removeClass("checked");
     $('input:checked').parent().addClass("checked");
 });
@@ -124,54 +124,66 @@ function redirectPage() {
         if (document.getElementById('invstment').style.display == 'none') {
             document.getElementById('invstment').style.display = 'block';
             document.getElementById('additionalDetailParent').style.display = 'none';
-        }
-        else {
+        } else {
             document.getElementById('invstment').style.display = 'none';
             document.getElementById('additionalDetailParent').style.display = 'block';
         }
     }
 }
+/* 20 sept 2023 investement-new-features-added */
 
-function show1(){
-    document.getElementById('div1').style.display ='block';
-  }
-  function show2(){
+function show1() {
+    document.getElementById('div1').style.display = 'block';
+    document.getElementById('nomineedropdownid').style.display = 'block';
+
+
+}
+/* 20 sept 2023 investement-new-features-added */
+
+function show2() {
     document.getElementById('div1').style.display = 'none';
-  } 
-  
-  function accountshow1(){
-    document.getElementById('holder1').style.display ='block';
-  }
-  function accountshow2(){
+    document.getElementById('nomineedropdownid').style.display = 'none';
+
+}
+
+function accountshow1() {
+    document.getElementById('holder1').style.display = 'block';
+    document.getElementById('addnewdrop').style.display = 'block';
+
+
+}
+
+function accountshow2() {
     document.getElementById('holder1').style.display = 'none';
-  }
-  
+    document.getElementById('addnewdrop').style.display = 'none';
+
+}
+
 //  add comma on amount field
-  function formatAmount(input) {
+function formatAmount(input) {
     let value = input.value.replace(/,/g, '');
     value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     input.value = value;
 }
 
 // validation on addtional page on continue button
-  function validate_continue() {
-    var amount = parseInt(document.getElementById("amountNo").value.replace(/,/g, '')); 
-    if (amount < 10000 || amount > 20000000 || amount ==="") {
+function validate_continue() {
+    var amount = parseInt(document.getElementById("amountNo").value.replace(/,/g, ''));
+    if (amount < 10000 || amount > 20000000 || amount === "") {
         document.getElementById("error_account_number").style.color = "red";
         document.getElementById("amountNo").style.border = "1px solid red";
-    } else if(!/^\d+$/.test(amount)) {
+    } else if (!/^\d+$/.test(amount)) {
         document.getElementById("error_account_number").style.color = "red";
         document.getElementById("amountNo").style.border = "1px solid red";
-    }
-    else {
+    } else {
         document.getElementById("error_account_number").style.color = "black";
         document.getElementById("amountNo").style.border = "";
         redirectPage();
     }
- }
+}
 
 // validation on addtional page on Generate otp button
-function generateOtp(){
+function generateOtp() {
     var mobileNumber = document.getElementById("mobile").value;
     var panNumber = document.getElementById("PAN").value;
 
@@ -181,35 +193,33 @@ function generateOtp(){
     const err_mobileNo = document.getElementById('error-message');
     const err_PANnumber = document.getElementById('error-message_pan');
 
-    if(mobileNumber === ""){
+    if (mobileNumber === "") {
         document.getElementById("mobile").style.border = "1px solid red";
-         err_mobileNo.textContent = "Please enter a mobile number.";
-    }else 
-    if(!mobilePattern.test(mobileNumber)) {
+        err_mobileNo.textContent = "Please enter a mobile number.";
+    } else
+    if (!mobilePattern.test(mobileNumber)) {
         document.getElementById("mobile").style.border = "1px solid red";
         err_mobileNo.textContent = "Invalid mobile number.";
-    }
-     else {
+    } else {
         document.getElementById("mobile").style.border = "";
         err_mobileNo.textContent = "";
     }
 
-     if(panNumber === ""){
+    if (panNumber === "") {
         document.getElementById("PAN").style.border = "1px solid red";
         err_PANnumber.textContent = "Please enter a PAN number.";
-    }else 
-    if(!panPattern.test(panNumber)) {
+    } else
+    if (!panPattern.test(panNumber)) {
         document.getElementById("PAN").style.border = "1px solid red";
         err_PANnumber.textContent = "Invalid PAN number.";
-    }
-     else {
+    } else {
         document.getElementById("PAN").style.border = "";
         err_PANnumber.textContent = "";
     }
 }
 
 // validation on addtional page on kyc button
-  function KYC_registery(){
+function KYC_registery() {
     var nomineeName = document.getElementById("nomineeName").value;
     var nominee_DOB = document.getElementById("nominee_DOB").value;
     var nomenieeRelation = document.getElementById("nomenieeRelation").value;
@@ -217,49 +227,44 @@ function generateOtp(){
     const err_nominee_DOB = document.getElementById('error-message_nomenieeDOB');
     const err_nomenieeRelation = document.getElementById('error-message_nomenieeRelation');
     const namePattern = /^[A-Za-z\s]+$/;
-    if(nomineeName === ""){
+    if (nomineeName === "") {
         document.getElementById("nomineeName").style.border = "1px solid red";
         err_nomineeName.textContent = "Please enter a nominee Name.";
 
-    }else 
-    if(!namePattern.test(nomineeName)) {
+    } else
+    if (!namePattern.test(nomineeName)) {
         document.getElementById("nomineeName").style.border = "1px solid red";
         err_nomineeName.textContent = "Please enter a valid name.";
 
-    }
-     else {
+    } else {
         document.getElementById("nomineeName").style.border = "";
         err_nomineeName.textContent = "";
 
     }
 
-     if(nominee_DOB === ""){
+    if (nominee_DOB === "") {
         document.getElementById("nominee_DOB").style.border = "1px solid red";
         err_nominee_DOB.textContent = "Please enter a nominee DOB.";
 
-    }
-     else {
+    } else {
         document.getElementById("nominee_DOB").style.border = "";
         err_nominee_DOB.textContent = "";
 
     }
-    if(nomenieeRelation === ""){
+    if (nomenieeRelation === "") {
         document.getElementById("nomenieeRelation").style.border = "1px solid red";
         err_nomenieeRelation.textContent = "Please select a nomeniee relation."
-    }
-     else {
+    } else {
         document.getElementById("nomenieeRelation").style.border = "";
         err_nomenieeRelation.textContent = ""
 
     }
-  }
+}
 
 //  for show calender onClick
 const inputDate = document.getElementById("inputId");
-inputDate.addEventListener("focus",function (evt) {
-  if (this.getAttribute("type")==="date") {
-    this.showPicker();
-  }
+inputDate.addEventListener("focus", function(evt) {
+    if (this.getAttribute("type") === "date") {
+        this.showPicker();
+    }
 });
-
-
