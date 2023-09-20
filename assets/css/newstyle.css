@@ -2357,3 +2357,14 @@ body {
         width: auto !important;
     }
 }
+
+@media only screen and (max-width: 991px) {
+body {
+    overflow: auto;
+}
+.inner-scroll {
+    overflow-x: unset;
+    overflow-y: unset;
+    height: unset;
+}
+}
