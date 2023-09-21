@@ -95,8 +95,6 @@ input[type='checkbox'] {
     margin-top: 5px;
 }
 
-
-
 .review_tab_img {
     height: auto;
     width: 30px;
@@ -151,13 +149,11 @@ input[type='checkbox'] {
 .review_modal_close_icon_edit {
     margin-left: 93%;
     margin-top: 3%;
-
 }
 
 .review_modal_close_icon_TandC {
     margin-left: 96.5%;
     margin-top: 1.7%;
-
 }
 
 .review_edit_modal_button_enable {
@@ -223,23 +219,31 @@ input[type='checkbox'] {
     overflow: hidden;
 }
 
+
 /* width */
+
 .scroll_modal ::-webkit-scrollbar {
     width: 4px;
 }
 
+
 /* Track */
+
 .scroll_modal ::-webkit-scrollbar-track {
     background: #bfc1c2;
 }
 
+
 /* Handle */
+
 .scroll_modal ::-webkit-scrollbar-thumb {
     background: #626567;
     border-radius: 20px;
 }
 
+
 /* Handle on hover */
+
 .scroll_modal ::-webkit-scrollbar-thumb:hover {
     background: #626567;
 }
@@ -358,7 +362,6 @@ input[type='checkbox'] {
     margin-bottom: 15px;
 }
 
-
 .review_button_section {
     display: flex;
     flex-direction: row;
@@ -423,81 +426,97 @@ input[type='checkbox'] {
     margin-bottom: 0px
 }
 
+
+/*//////20-sep new update  new style//////*/
+
+.kycDropDown {
+    padding: 8px;
+    background-color: #F4F7FA;
+    border: 1px solid #CED4DA;
+    width: 100%;
+    border-radius: 0.25rem;
+    padding-right: 5px;
+    color: #221F20;
+}
+
+.kycDropDown option {
+    font-size: 17px;
+    font-weight: 500;
+    color: #221F20;
+}
+
+.kycDropDown:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: solid 1.5px #8C989F;
+}
+
+.kycDropDown option[value=""][disabled] {
+    display: none;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 567px) {
     .custome-d-flex {
         display: block !important;
     }
-
     #flexCheckDefault {
         height: 20px;
         width: 20px;
     }
-
     .bankDetailsLeftSide {
         border-radius: 0;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         text-align-last: center;
     }
-
     .leftColHeading {
         font-size: 20px;
     }
-
     .leftColContent {
         font-size: 12px;
         text-align: center
     }
-
     .bankDetailsLeftContent {
         padding: 10px;
     }
-
     .stampImg {
         width: 60%;
         height: auto
     }
-
     .stampImgContainer {
         right: 10px;
         top: 50px;
         width: auto;
     }
-
     .kycdetail {
         border-top-left-radius: 0px
     }
-
     .leftcard-content {
         padding-top: 0px;
     }
-
     .bordertop {
         display: none;
     }
-
     .bank_detail_mainheading {
         font-size: 16px;
     }
-
     .reviewCardHead {
         font-size: 12px;
     }
-
     .reviewCardLargeContent {
         font-size: 14px;
         white-space: wrap;
         margin-bottom: 0px;
     }
-
     .reviewCardSmallContent {
         font-size: 14px;
     }
-
     .reviewcard {
         position: relative;
     }
-
     .reviewCardbadge {
         font-size: 12px;
         left: 0;
@@ -506,111 +525,88 @@ input[type='checkbox'] {
         border-top-right-radius: 0;
         border-bottom-left-radius: 0;
     }
-
     .reviewCardEdit {
         font-size: 12px;
         right: 10px;
         top: 10px;
         position: absolute;
     }
-
     .form-check-label {
         margin-top: 1%;
         font-size: 10px;
     }
-
     .reviewCardTandC {
         font-size: 10px;
     }
-
     #paymentMethod {
         justify-content: space-between;
     }
-
     .bank-details-disabled-button.disabled:not(:disabled) {
         width: 100%;
     }
-
     .review_modal_close_icon_TandC {
         margin-left: 91.5%;
         margin-top: 4.7%;
     }
-
     .review_button_section_TandC {
         bottom: 0;
     }
 }
-
 
 @media only screen and (min-width: 567px) and (max-width: 991px) {
     .custome-d-flex {
         display: block !important;
         border-radius: 0;
     }
-
     #flexCheckDefault {
         height: 20px;
         width: 20px;
     }
-
     .bankDetailsLeftSide {
         border-radius: 0;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         text-align-last: center;
     }
-
     .leftColHeading {
         font-size: 48px;
     }
-
     .leftColContent {
         font-size: 16px;
     }
-
     .bankDetailsLeftContent {
         padding: 10px;
     }
-
     .stampImg {
         width: 80%;
         height: auto
     }
-
     .stampImgContainer {
         right: 30px;
         top: 40px;
         width: auto;
     }
-
     .leftcard-content {
         padding-top: 0px;
     }
-
     .bordertop {
         display: none;
     }
-
     .bank_detail_mainheading {
         font-size: 18px;
     }
-
     .reviewCardHead {
         font-size: 12px;
     }
-
     .reviewCardLargeContent {
         font-size: 14px;
     }
-
     .reviewCardSmallContent {
         font-size: 13px;
     }
-
     .reviewcard {
         position: relative;
     }
-
     .reviewCardbadge {
         font-size: 12px;
         left: 0;
@@ -619,17 +615,14 @@ input[type='checkbox'] {
         border-top-right-radius: 0;
         border-bottom-left-radius: 0;
     }
-
     .reviewCardEdit {
         right: 15px;
         top: 15px;
         position: absolute;
     }
-
     .reviewCardTandC {
         font-size: 13px;
     }
-
     .bank-details-disabled-button.disabled:not(:disabled) {
         width: 100%;
     }
@@ -639,25 +632,20 @@ input[type='checkbox'] {
     .leftColHeading {
         font-size: 55px;
     }
-
     #flexCheckDefault {
         height: 23px;
         width: 65px;
     }
-
     .reviewCardLargeContent {
         font-size: 16px;
     }
-
     .reviewCardSmallContent {
         font-size: 14px;
     }
-
     .reviewCardLargeContent {
         font-size: 14px;
         white-space: wrap;
     }
-
     .reviewCardSmallContent {
         font-size: 12px;
     }
