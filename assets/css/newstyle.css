@@ -161,9 +161,9 @@
   }
   
   .leftPanBackGround {
-    background-image: url("../Image/blur.png"), url("../Image/fd_img _background.png");
-    border-radius: 20px 0px 0px 20px;
-}
+      background-image: url("../Image/blur.png"), url("../Image/fd_img _background.png");
+      border-radius: 20px 0px 0px 20px;
+  }
   
   .wrapper_div {
       display: flex;
@@ -750,7 +750,6 @@
       .circle_content {
           font-size: 10px;
       }
-     
       .check_kyc_data {
           margin-top: 0;
       }
@@ -784,7 +783,6 @@
           height: 35px;
       }
   }
-  
   
   body {
       background: #E6E7E9;
@@ -940,7 +938,7 @@
       width: 11px;
   }
   
-  .table thead tr th {
+  .table-container thead tr th {
       padding: 10px;
       color: #FFFFFF;
       font-size: 12px;
@@ -949,7 +947,7 @@
       border: none;
   }
   
-  .table tbody tr td {
+  .table-container tbody tr td {
       padding: 10px;
       color: #FFFFFF;
       font-size: 14px;
@@ -957,7 +955,7 @@
       line-height: 24px;
   }
   
-  .table tbody tr td .tableUpto {
+  .table-container tbody tr td .tableUpto {
       margin-right: 5px;
       color: #FFFFFF;
       font-size: 12px;
@@ -965,33 +963,33 @@
       line-height: 20px;
   }
   
-  .table thead tr th:first-child {
+  .table-container thead tr th:first-child {
       border-top-left-radius: 8px;
   }
   
-  .table thead tr th:last-child {
+  .table-container thead tr th:last-child {
       border-top-right-radius: 8px;
   }
   
-  .table tbody tr td:first-child {
+  .table-container tbody tr td:first-child {
       border-bottom-left-radius: 8px;
   }
   
-  .table tbody tr td:last-child {
+  .table-container tbody tr td:last-child {
       border-bottom-right-radius: 8px;
       margin-left: 20px;
   }
   
-  thead {
+  .table-container thead {
       background-color: #85838396;
       opacity: 0.9;
   }
   
-  tr {
+  .table-container tr {
       border-block-color: #8c8f95;
   }
   
-  tbody {
+  .table-container tbody {
       background-color: #4342427a;
       opacity: 0.9;
   }
@@ -1000,7 +998,7 @@
       margin-left: 5px;
   }
   
-  .table tbody tr td button {
+  .table-container tbody tr td button {
       background-color: #E31837;
       border: 4px;
       padding: 5px;
@@ -1010,7 +1008,7 @@
       display: none;
   }
   
-  .table tbody tr td button :first-child {
+  .table-container tbody tr td button :first-child {
       margin-right: 5px;
       color: #FFFFFF;
       font-size: 14px;
@@ -1167,7 +1165,7 @@
       line-height: 30px;
   }
   
-  .table {
+  .table-container {
       margin-top: 10px;
       margin-bottom: 10px;
       color: #FFFFFF;
@@ -1858,7 +1856,6 @@
       .circle_content {
           font-size: 10px;
       }
-      
       .check_kyc_data {
           margin-top: 0;
       }
@@ -1884,13 +1881,13 @@
           justify-content: left;
       }
   }
- 
   
   .maincom {
-    padding-left: 26px;
-    padding-right: 50px;
-    margin-top: 40px;
-}
+      padding-left: 26px;
+      padding-right: 50px;
+      margin-top: 40px;
+  }
+  
   #additionalDetailParent {
       display: none;
   }
@@ -1929,14 +1926,15 @@
   }
   
   .reviewcard {
-    border-radius: 4px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border: 0px;
-    padding: 0px 15px 15px 12px;
-}
-.reviewCardbadge p {
-    margin-bottom: 0px;
-}
+      border-radius: 4px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border: 0px;
+      padding: 0px 15px 15px 12px;
+  }
+  
+  .reviewCardbadge p {
+      margin-bottom: 0px;
+  }
   
   .continueButtonEnable {
       display: flex;
@@ -2000,8 +1998,8 @@
   }
   
   .success-contant {
-    padding: 40px 40px 20px 40px;
-}
+      padding: 40px 40px 20px 40px;
+  }
   
   .btn-success {
       display: flex;
@@ -2081,10 +2079,11 @@
   }
   
   .smallcard {
-    padding: 10px 20px;
-    border-radius: 4px;
-    box-shadow: 0px 4px 12px 0px #0000001A;
-}
+      padding: 10px 20px;
+      border-radius: 4px;
+      box-shadow: 0px 4px 12px 0px #0000001A;
+  }
+  
   .smallcardheading img {
       text-align: center;
       padding-top: 10px;
@@ -2138,6 +2137,7 @@
       width: 120px;
   }
   /* new update 18sep open */
+  
   .bordertop {
       border: 1px solid #ccc;
       position: absolute;
@@ -2179,192 +2179,189 @@
   .cmpltsvg {
       background: #C1EFC3 !important;
   }
-
-
+  
   @media only screen and (min-width: 992px) and (max-width: 1600px) {
-    body {zoom: 90%;}
-} 
-.panmobilefix .modal-backdrop {
-  
-    width: 100%;
-    height: 100%;
-}
-
-.btn-secondary-dropdown {
-    padding: 10px 10px;
-    background: #F4F7FA;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    color: #4B4C4D;
-}
-@media only screen and (min-width: 320px) and (max-width: 991px) {
-   
-    footer {
-        display: none;
-    }
-    .card {
-        border-radius: 0px;
-    }
-    .container, .container-md, .container-sm {
-        max-width: 100%;
-        margin: 0px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-  
-}
-
-@media only screen and (max-width: 768px) {
-   
-   
-    .container, .container-md, .container-sm {
-        max-width: 100%;
-        margin: 0px;
-        padding-top: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-    }
-}
-
-
-.tabbar {
-    position: relative;
-}
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-   
-    .tabbar::before {
-        content: "";
-        width: 64%;
-        border: 1px solid #353334;
-        position: absolute;
-        top: 54px;
-        left: 18%;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 991px) {
-    .tabbar::before {
-        content: "";
-        width: 64%;
-        border: 1px solid #353334;
-        position: absolute;
-        top: 54px;
-        left: 18%;
-    }
-
-}
-
-.circleimg {
-    height: 30px;
-    width: 30px;
-}
-
-.reviewCardbadge {
-    background-color: #626567;
-    padding: 3px 10px;
-    border-radius: 4px;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 600;
-    width: auto;
-}
-
-/* //////18-sep new update////// */
-
-.inner-scroll {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 80vh;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
+      body {
+          zoom: 90%;
+      }
   }
   
+  .panmobilefix .modal-backdrop {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .btn-secondary-dropdown {
+      padding: 10px 10px;
+      background: #F4F7FA;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      color: #4B4C4D;
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 991px) {
+      footer {
+          display: none;
+      }
+      .card {
+          border-radius: 0px;
+      }
+      .container,
+      .container-md,
+      .container-sm {
+          max-width: 100%;
+          margin: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+      }
+  }
+  
+  @media only screen and (max-width: 768px) {
+      .container,
+      .container-md,
+      .container-sm {
+          max-width: 100%;
+          margin: 0px;
+          padding-top: 0px;
+          padding: 0px;
+          overflow-x: hidden;
+      }
+  }
+  
+  .tabbar {
+      position: relative;
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 575px) {
+      .tabbar::before {
+          content: "";
+          width: 64%;
+          border: 1px solid #353334;
+          position: absolute;
+          top: 54px;
+          left: 18%;
+      }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 991px) {
+      .tabbar::before {
+          content: "";
+          width: 64%;
+          border: 1px solid #353334;
+          position: absolute;
+          top: 54px;
+          left: 18%;
+      }
+  }
+  
+  .circleimg {
+      height: 30px;
+      width: 30px;
+  }
+  
+  .reviewCardbadge {
+      background-color: #626567;
+      padding: 3px 10px;
+      border-radius: 4px;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 600;
+      width: auto;
+  }
+  /* //////18-sep new update////// */
+  
+  .inner-scroll {
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 80vh;
+  }
+  /* width */
+  
+   ::-webkit-scrollbar {
+      width: 10px;
+  }
   /* Track */
+  
   .inner-scroll::-webkit-scrollbar-track {
-    background: transparent; 
+      background: transparent;
   }
-   
   /* Handle */
+  
   .inner-scroll::-webkit-scrollbar-thumb {
-    background:transparent; 
+      background: transparent;
+  }
+  /* Handle on hover */
+  
+  .inner-scroll::-webkit-scrollbar-thumb:hover {
+      background: #ccc;
   }
   
-  /* Handle on hover */
-  .inner-scroll::-webkit-scrollbar-thumb:hover {
-    background: #ccc; 
+  body {
+      overflow: hidden;
   }
-
-body {
-    overflow: hidden;
-}
-@media only screen and (min-width: 992px) and (max-width: 1399px) {
-    .leftcard-contant h1 {
-        font-size: 50px ;
-        line-height: 48px;
-    }
-    .leftcard_investment {
-        padding: 25.5px 30px 0px;
-    }
-
-    .appliedContainer {
-        margin-bottom: 0px;
-    }
-    .table {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .appliedSection {
-        padding-top: 10px;
-        padding-bottom: 0px;
-    }
-    
-    .table tbody tr td {
-        padding: 10px 10px 5px 10px;
-        line-height: 20px;
-    }
-    .inner-scroll {
-        height: 84vh;
-    }
-    
-    .fixed_deposit_data {
-        font-size: 50px;
-        line-height: 40px;
-    }
-    .circle-data {
-        margin-bottom: 0px !important;
-    }
-    .card_second_content {
-        font-size: 30px;
-    }
-    .easy-step {
-        font-size: 35px;
-        line-height: 40px;
-    }
-    .check_kyc_data {
-        margin-top: 70px;
-    }
-    .img_div {
-        margin-top: -102px;
-    }
-    .img-div {
-        top: -19px;
-        right: -17px;
-    }
-    .fixed-deposit-data {
-        width: auto !important;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-body {
-    overflow: auto;
-}
-.inner-scroll {
-    overflow-x: unset;
-    overflow-y: unset;
-    height: unset;
-}
-}
+  
+  @media only screen and (min-width: 992px) and (max-width: 1399px) {
+      .leftcard-contant h1 {
+          font-size: 50px;
+          line-height: 48px;
+      }
+      .leftcard_investment {
+          padding: 25.5px 30px 0px;
+      }
+      .appliedContainer {
+          margin-bottom: 0px;
+      }
+      .table-container {
+          margin-top: 0px;
+          margin-bottom: 0px;
+      }
+      .appliedSection {
+          padding-top: 10px;
+          padding-bottom: 0px;
+      }
+      .table-container tbody tr td {
+          padding: 10px 10px 5px 10px;
+          line-height: 20px;
+      }
+      .inner-scroll {
+          height: 84vh;
+      }
+      .fixed_deposit_data {
+          font-size: 50px;
+          line-height: 40px;
+      }
+      .circle-data {
+          margin-bottom: 0px !important;
+      }
+      .card_second_content {
+          font-size: 30px;
+      }
+      .easy-step {
+          font-size: 35px;
+          line-height: 40px;
+      }
+      .check_kyc_data {
+          margin-top: 70px;
+      }
+      .img_div {
+          margin-top: -102px;
+      }
+      .img-div {
+          top: -19px;
+          right: -17px;
+      }
+      .fixed-deposit-data {
+          width: auto !important;
+      }
+  }
+  
+  @media only screen and (max-width: 991px) {
+      body {
+          overflow: auto;
+      }
+      .inner-scroll {
+          overflow-x: unset;
+          overflow-y: unset;
+          height: unset;
+      }
+  }
