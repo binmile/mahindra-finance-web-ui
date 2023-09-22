@@ -14,6 +14,10 @@ input[type='checkbox'] {
     padding-right: 20px
 }
 
+.bank-details-disabled-button{
+    font-weight: bold;
+}
+
 .bank-details-disabled-button.disabled img {
     -webkit-filter: brightness(0.7) invert(0);
     filter: brightness(0.7) invert(0);
@@ -456,6 +460,32 @@ input[type='checkbox'] {
 
 .kycDropDown option[value=""][disabled] {
     display: none;
+}
+/*//////22-sep new update  new style//////*/
+.buttonContainer{
+   display: flex;
+}
+
+.backButton{
+    display: flex;
+ }
+
+ .backButton {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 132px;
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+    color: #E31837;
+    border-color: #E31837;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.back_img_tag{
+    padding-right: 20px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 567px) {

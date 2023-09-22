@@ -259,8 +259,18 @@
                                         </label>
                                     </div>
                                 </div>
-                                <button type="button" onclick="continueButtonAction()" class="btn btn-danger bank-details-disabled-button disabled" id="continueButton">Continue
-                                    <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
+                                <div class="buttonContainer">
+                                    <div>
+                                        <button type="button" onclick="backButtonAction()" class="btn backButton">
+                                            <img src="./assets/icons/CTA_backarrow.svg " alt="continue" class="back_img_tag"> Back
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" onclick="continueButtonAction()" class="btn btn-danger bank-details-disabled-button disabled" id="continueButton">Continue
+                                            <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="maincom inner-scroll" id="reviewYourApplicationPageRightside">
@@ -439,8 +449,18 @@
                                     </label>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-danger bank-details-disabled-button disabled" onclick="reviewApplicationContinue()" id="reviewContinueButton">Continue
+                    <div class="buttonContainer">
+                        <div>
+                            <button type="button" onclick="backButtonAction()" class="btn backButton">
+                                <img src="./assets/icons/CTA_backarrow.svg " alt="continue" class="back_img_tag"> Back
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-danger bank-details-disabled-button disabled" onclick="reviewApplicationContinue()" id="reviewContinueButton">Continue
                                 <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
+                            </button>
+                        </div>
+                    </div>
                         </div>
                         <div class="maincom" id="rtgspageRightSide">
                             <div class="maincontant">
@@ -520,9 +540,17 @@
                                         application reference number <a href="">mfinfd@mahindra.com</a></li>
                                 </ul>
                             </div>
-                            <button type="button" class="btn btn-danger continueButtonEnable"
-                                id="reviewContinueButton">Continue
-                                <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
+                            <div class="buttonContainer">
+                                <div>
+                                    <button type="button" onclick="backButtonAction()" class="btn backButton">
+                                        <img src="./assets/icons/CTA_backarrow.svg " alt="continue" class="back_img_tag"> Back
+                                    </button>
+                                </div>
+                                <button type="button" class="btn btn-danger continueButtonEnable" id="reviewContinueButton">Continue
+                                    <img src="./assets/Image/CTA_arrow.svg " alt="continue" class="img_tag">
+                                </button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -693,6 +721,10 @@
                 $("#bankdetailsPageRightside").css('display', 'none')
                 $("#rtgspageRightSide").css('display', 'block')
             }
+        }
+
+        function backButtonAction() {
+            window.history.back()
         }
 
         function reviewCheckBox() {
