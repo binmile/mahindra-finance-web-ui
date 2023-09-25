@@ -1,3 +1,64 @@
+/* New upadte 18 sep */
+.starcontainer {
+  display: flex;
+  justify-content: center;
+}
+.custome-wrapper {
+  text-align: center;
+}
+.star-container.inactive {
+  padding:  20px 5px;
+}
+.star-container.active {
+  padding:  20px 5px;
+}
+
+.fa-star {
+  font-size: 1.5em;
+  color: #ffd700;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  width: 304px;
+  padding: 12px;
+  align-items: center;
+  color: #fff;
+  background-color: #e31837;
+  border-color: #e31837;
+  cursor: pointer;
+  border: 1px solid #e31837;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+#submit:disabled {
+    cursor: not-allowed;
+    background: #ccc;
+    border-color: #ccc;
+}
+#message {
+  text-align: center;
+  margin-bottom: 2em;
+}
+#submit-section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  place-items: center;
+  border-radius: 0.5em;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: grid;
+}
+
+
 .check-container {
     width: 6.25rem;
     height: 7.5rem;
@@ -235,3 +296,9 @@
 
 }
 
+.success-submit {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

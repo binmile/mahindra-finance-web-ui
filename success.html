@@ -13,10 +13,17 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/success.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>success</title>
-   
-   
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+/>   
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+rel="stylesheet"
+/>
+
+<title>success</title>
+
 </head>
 
 <body>
@@ -71,6 +78,9 @@
 
                     </div>
 
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 mx-auto">
+
                     <div class="successbutton">
                         <button type="button" class="btn-success">
                             <div class="btntxt">
@@ -87,92 +97,43 @@
                         </button>
                         
                     </div>
-                    <div class="paragraphheading">
-                        <p>Explore more products</p>
 
-                    </div>
-                    <div class="row">
-                        <div class="cardparent">
-
-                       
-                        <div class="col-md-4 col-lg-4 col-sm-6">
-                            <div class="smallcard">
-                                <div class="smallcardheading">
-                                    <p>
-                                        Mutual Funds
-                                    </p>
-                                    <img src="./assets/image-main/Frame.webp" alt="frame image" class="frame" />
-                                   </div>
-                                   <div class="smallcardbtn">
-                                    <button type="button" class="smallcardbtn-design">
-                                        <div class="smallcardbtntxt">
-                                            <p class="smallcardbtntxt-first">Know More</p>
-                                        </div>
-                                        <div class="btnicon">
-                                            <img src="./assets/Image/CTA_arrow.svg " alt="  Know More" class="img_tag">
-            
-                                        </div>
-                                    </button>
-
-                                   </div>
-
-
-                            </div>
 
                         </div>
-                        <div class="col-md-4 col-lg-4 col-sm-6">
-                            <div class="smallcard">
-                                <div class="smallcardheading">
-                                    <p>
-                                        Insurance
-                                    </p>
-                                    <img src="./assets/image-main/Frame2.webp" alt="frame image" class="frame" />
-                                   </div>
-                                   <div class="smallcardbtn">
-                                    <button type="button" class="smallcardbtn-design">
-                                        <div class="smallcardbtntxt">
-                                            <p class="smallcardbtntxt-first">Know More</p>
-                                        </div>
-                                        <div class="btnicon">
-                                            <img src="./assets/Image/CTA_arrow.svg " alt="  Know More" class="img_tag">
-            
-                                        </div>
-                                    </button>
 
-                                   </div>
-
-
-                            </div>
-
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-sm-6">
-                            <div class="smallcard">
-                                <div class="smallcardheading">
-                                    <p>
-                                        Vehicle Loan
-                                    </p>
-                                    <img src="./assets/image-main/vichal.webp" alt="frame image" class="frame" />
-                                   </div>
-                                   <div class="smallcardbtn">
-                                    <button type="button" class="smallcardbtn-design">
-                                        <div class="smallcardbtntxt">
-                                            <p class="smallcardbtntxt-first">Know More</p>
-                                        </div>
-                                        <div class="btnicon">
-                                            <img src="./assets/Image/CTA_arrow.svg " alt="  Know More" class="img_tag">
-            
-                                        </div>
-                                    </button>
-
-                                   </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
                     </div>
 
+                    <hr>
+                    <div class="custome-wrapper">
+                        <h4>Please rate your experience with us</h4>
+                        <div class="starcontainer">
+                          <div class="star-container inactive">
+                            <i class="fa-regular fa-star"></i>
+                            
+                          </div>
+                          <div class="star-container inactive">
+                            <i class="fa-regular fa-star"></i>
+                            
+                          </div>
+                          <div class="star-container inactive">
+                            <i class="fa-regular fa-star"></i>
+                           
+                          </div>
+                          <div class="star-container inactive">
+                            <i class="fa-regular fa-star"></i>
+                            
+                          </div>
+                          <div class="star-container inactive">
+                            <i class="fa-regular fa-star"></i>
+                            
+                          </div>
+                        </div>
+                        <div class="success-submit first_button first-button-data">
+                            <button type="submit" id="submit" disabled class="btn btn-danger newsubmitbtn_first custom-button-data">Submit</button>
+                        </div>
+                        
+                      </div>
+                  
                   </div>
                 </div>
             </div>
@@ -199,6 +160,76 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script>
+        let starContainer = document.querySelectorAll(".star-container");
+const submitButton = document.querySelector("#submit");
+const message = document.querySelector("#message");
+const submitSection = document.querySelector("#submit-section");
+
+//Events For touch and mouse
+let events = {
+  mouse: {
+    over: "click",
+  },
+  touch: {
+    over: "touchstart",
+  },
+};
+
+let deviceType = "";
+//Detect touch device
+const isTouchDevice = () => {
+  try {
+    //We try to create TouchEvent (it would fail for desktops and throw error)
+    document.createEvent("TouchEvent");
+    deviceType = "touch";
+    return true;
+  } catch (e) {
+    deviceType = "mouse";
+    return false;
+  }
+};
+
+isTouchDevice();
+
+starContainer.forEach((element, index) => {
+  element.addEventListener(events[deviceType].over, () => {
+    submitButton.disabled = false;
+    if (element.classList.contains("inactive")) {
+      //Fill Star
+      ratingUpdate(0, index, true);
+    } else {
+      //Regular stars (remove color)
+      ratingUpdate(index, starContainer.length - 1, false);
+    }
+  });
+});
+
+const ratingUpdate = (start, end, active) => {
+  for (let i = start; i <= end; i++) {
+    if (active) {
+      starContainer[i].classList.add("active");
+      starContainer[i].classList.remove("inactive");
+      starContainer[i].firstElementChild.className = "fa-star fa-solid";
+    } else {
+      starContainer[i].classList.remove("active");
+      starContainer[i].classList.add("inactive");
+      starContainer[i].firstElementChild.className = "fa-star fa-regular";
+    }
+  }
+  
+};
+
+submitButton.addEventListener("click", () => {
+  submitSection.classList.remove("hide");
+  submitSection.classList.add("show");
+  submitButton.disabled = true;
+});
+window.onload = () => {
+  submitButton.disabled = true;
+  submitSection.classList.add("hide");
+};
+    </script>
 
 </body>
 

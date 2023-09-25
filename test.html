@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Rating</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      
+.wrapper {
+  font-size: 1.2ee;
+  width: 16em;
+}
+
+.fa-star {
+  font-size: 1.5em;
+  color: #ffd700;
+}
+
+#submit {
+  display: block;
+  position: relative;
+  background: linear-gradient(#fe3b5a, #fd7914);
+  border: none;
+  padding: 0.8em 2em;
+  color: #ffffff;
+  font-size: 1.2em;
+  border-radius: 2em;
+  margin: 1em auto 0 auto;
+  cursor: pointer;
+}
+#submit:disabled {
+  cursor: not-allowed;
+}
+#message {
+  text-align: center;
+  margin-bottom: 2em;
+}
+#submit-section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  place-items: center;
+  border-radius: 0.5em;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: grid;
+}
+    </style>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <p id="message">Rate Your Experience</p>
+      <div class="star-container">
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+          
+        </div>
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+          
+        </div>
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+         
+        </div>
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+          
+        </div>
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+          
+        </div>
+      </div>
+      <button id="submit" disabled>Submit</button>
+      <div id="submit-section" class="hide">
+        <p id="submit-message">Thanks for your feedback</p>
+      </div>
+    </div>
+    <!-- Script -->
+    <script>
+        let starContainer = document.querySelectorAll(".star-container");
+const submitButton = document.querySelector("#submit");
+const message = document.querySelector("#message");
+const submitSection = document.querySelector("#submit-section");
+
+//Events For touch and mouse
+let events = {
+  mouse: {
+    over: "click",
+  },
+  touch: {
+    over: "touchstart",
+  },
+};
+
+let deviceType = "";
+//Detect touch device
+const isTouchDevice = () => {
+  try {
+    //We try to create TouchEvent (it would fail for desktops and throw error)
+    document.createEvent("TouchEvent");
+    deviceType = "touch";
+    return true;
+  } catch (e) {
+    deviceType = "mouse";
+    return false;
+  }
+};
+
+isTouchDevice();
+
+starContainer.forEach((element, index) => {
+  element.addEventListener(events[deviceType].over, () => {
+    submitButton.disabled = false;
+    if (element.classList.contains("inactive")) {
+      //Fill Star
+      ratingUpdate(0, index, true);
+    } else {
+      //Regular stars (remove color)
+      ratingUpdate(index, starContainer.length - 1, false);
+    }
+  });
+});
+
+const ratingUpdate = (start, end, active) => {
+  for (let i = start; i <= end; i++) {
+    if (active) {
+      starContainer[i].classList.add("active");
+      starContainer[i].classList.remove("inactive");
+      starContainer[i].firstElementChild.className = "fa-star fa-solid";
+    } else {
+      starContainer[i].classList.remove("active");
+      starContainer[i].classList.add("inactive");
+      starContainer[i].firstElementChild.className = "fa-star fa-regular";
+    }
+  }
+  
+};
+
+submitButton.addEventListener("click", () => {
+  submitSection.classList.remove("hide");
+  submitSection.classList.add("show");
+  submitButton.disabled = true;
+});
+window.onload = () => {
+  submitButton.disabled = true;
+  submitSection.classList.add("hide");
+};
+    </script>
+  </body>
+</html>
