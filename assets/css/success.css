@@ -2,6 +2,7 @@
 .starcontainer {
   display: flex;
   justify-content: center;
+  margin-bottom: 109px;
 }
 .custome-wrapper {
   text-align: center;
