@@ -248,8 +248,8 @@
            border-radius: 4px;
        }
        .main-text-button-div {
-         /* margin-top: 200px; */
-         margin-top: 260px;
+       
+         margin-top: 188px;
          margin-bottom: 8px;
      }
        .OTP_button_investment {
@@ -955,10 +955,7 @@
            display: flex;
            gap: 10px
        }
-       .main-text-button-div {
-           margin-top: 260px;
-           margin-bottom: 20px;
-       }
+     
        .stampImgContainerinvest {
            right: 40px;
            top: 30px;
