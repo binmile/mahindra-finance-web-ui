@@ -1,28 +1,35 @@
        ::placeholder {
-                                                                                      font-size: 16px !important;
+           font-size: 16px !important;
        }
+
        .mobile_investment {
            display: none;
        }
+
        .desktop_investment {
            display: flex;
        }
+
        .Investment_radio_hide {
            display: none;
        }
+
        /* new update 18sep */
        .leftcard_investment {
            margin: auto;
            padding: 40.5px 30px 20px;
        }
+
        /* new update 18sep close */
        .check-investement {
            display: flex;
        }
+
        .message_invest {
            margin-left: 10px;
            width: 100%
        }
+
        .boxmaturity_radio_investment {
            display: grid;
            flex-direction: column;
@@ -31,27 +38,33 @@
            justify-items: center;
            text-align-last: center;
        }
+
        .set-principal {
            margin-right: 15px;
        }
+
        .boxmaturity_radio_investment input[type="radio"] {
            display: none;
        }
+
        .maturityBox_tex1_investment {
            font-size: 16px;
            font-weight: 700;
            line-height: 30px;
        }
+
        .maturityBox_tex2_investment {
            font-size: 14px;
            font-weight: 700;
            line-height: 24px;
        }
+
        .tenure_investment label {
            position: relative;
            align-items: self-start;
            padding-left: 10px;
        }
+
        .tenure_investment label:first-child::before {
            content: "";
            width: 25px;
@@ -63,29 +76,35 @@
            background-repeat: no-repeat;
            background-size: contain;
        }
+
        .tooltipHeader_invester {
            font-weight: 700;
            font-size: 18px;
        }
+
        .tooltipText_invester {
            font-weight: 500;
            font-size: 14px;
        }
+
        .tooltipText_invester ul {
            display: flex;
            list-style: inherit;
            flex-direction: column;
        }
+
        .yesNo_button_invester-data {
            display: flex;
            gap: 8px;
        }
+
        .yesNo_button_invester-data.active {
            background-color: #f4f7fa;
            color: #221f20;
            border: 2px solid #221f20;
            font-weight: 700;
        }
+
        .principal-data {
            white-space: nowrap;
            color: #626567;
@@ -96,12 +115,14 @@
            letter-spacing: 0px;
            text-align: left;
        }
+
        .yesNo_button_invester.active {
            background-color: #f4f7fa;
            color: #221f20;
            border: 2px solid #221f20;
            font-weight: 700;
        }
+
        .selectHolder_text_invester {
            padding: 0px !important;
            height: 24px !important;
@@ -112,22 +133,27 @@
            font-weight: 400px;
            line-height: 24px;
        }
+
        .headingAdditional {
            margin-top: 3px;
        }
+
        .interestContainer_img {
            width: 18px;
            height: 15px;
            margin-right: 0px !important;
        }
+
        .seeLess_Button {
            color: #ffffff;
            width: 24%;
        }
+
        .seeLess_Button_investment {
            width: auto !important;
            padding: 0px;
        }
+
        .theme_button_red {
            padding: 0;
            height: 34px;
@@ -137,46 +163,59 @@
            font-weight: 700;
            padding: 5px 10px !important;
        }
+
        .theme_button_red:hover {
            color: #ffffff;
        }
+
        .theme_button_red img {
            margin-left: 5px;
        }
+
        .jointAccount_Button_container_investment {
            padding: 0px !important;
        }
+
        .textparent_mob_investment {
            margin-bottom: 18px;
        }
+
        .selectHolder_nomine_container_investment {
            margin-bottom: 20px;
        }
+
        .selectdiv_investment {
            margin-top: 13px;
            margin-bottom: 20px;
        }
+
        .textparent_nomine_name_investment {
            margin-bottom: 10px;
        }
+
        .MMFsl_investment_cont {
            margin-top: 0px;
            margin-bottom: 10px;
        }
+
        .Continue_button_container_investment {
            margin-bottom: 20px;
        }
+
        .msg_Investment {
            margin-top: 5px;
        }
+
        #interestEement {
            display: flex;
            flex-wrap: wrap;
            flex-direction: row;
        }
+
        .toggle_investment {
            cursor: pointer;
        }
+
        .customTextfield {
            padding: 2px;
            position: absolute;
@@ -185,61 +224,75 @@
            padding-left: 12px;
            font-size: 16px;
        }
+
        .form-control_amount {
            padding: 10px 40px 10px 24px;
            background: #f4f7fa;
            width: 100%;
            border: 1px solid #ced4da;
        }
+
        .form-switch .form-check-input:focus:not(:checked) {
            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
            border-color: #bbbcbd;
        }
+
        input[type="checkbox"] {
            background-color: #f4f7fa;
        }
+
        .jointAccount_Button_container:focus {
            border-color: grey;
        }
+
        #holder1 {
            display: none;
        }
+
        .calender_investment {
            padding: 10px 12px 10px 15px;
        }
+
        .receive_interest_container_investment {
            margin-top: 20px;
            margin-bottom: 15px;
        }
+
        .tenure_container_investment {
            padding-bottom: 16px;
        }
+
        .interestTableContainer_inner_investment {
            padding-top: 10px;
            padding-bottom: 13px;
        }
+
        .addHolder_radio_investment {
            margin-top: 20px;
            /* margin-bottom: 60px; */
            margin-bottom: 8px;
        }
+
        .jointSwitch_container_investment1 {
            /* margin-top: 20px; */
            margin-bottom: 20px;
        }
+
        .jointSwitch_container_investment2 {
            /* margin-bottom: 20px; */
            margin-bottom: 30px;
        }
+
        .cutom_inputcontainer_investment {
            padding-bottom: 20px;
        }
+
        .continue_button_investment {
            display: flex;
            justify-content: space-between;
            align-items: stretch;
            padding: 10px;
-          
+
            font-size: 14px;
            font-weight: 700;
            color: #ffffff;
@@ -247,12 +300,15 @@
            box-shadow: 0px 6px 8px 0px #e3183740;
            border-radius: 4px;
        }
+
        .main-text-button-div {
-       
-         margin-top: 200px;
-         margin-bottom: 8px;
-     }
+
+           margin-top: 200px;
+           margin-bottom: 8px;
+       }
+
        .OTP_button_investment {
+           padding: 12px 21px 12px 21px;
            font-size: 14px;
            font-weight: 700;
            color: #ffffff;
@@ -260,6 +316,7 @@
            box-shadow: 0px 6px 8px 0px #e3183740;
            border-radius: 4px;
        }
+
        .interestTableContainer_text_2_investment {
            color: #ffffff;
            margin-top: 5px;
@@ -267,6 +324,7 @@
            font-size: 18px;
            line-height: 28px;
        }
+
        .kyc_button_investment {
            padding-top: 20px;
            display: flex;
@@ -280,10 +338,11 @@
            box-shadow: 0px 6px 8px 0px #e3183740;
            border-radius: 4px;
        }
+
        .kyc_button_investment-back {
            padding-top: 20px;
            display: flex;
-           justify-content: initial;
+           justify-content: space-between;
            align-items: center;
            gap: 15px;
            padding: 10px;
@@ -294,38 +353,49 @@
            /* box-shadow: 0px 6px 8px 0px #e3183740; */
            border-radius: 4px;
        }
+
        .pan_mobile_container_investment {
            margin-bottom: 30px;
        }
+
        /* 20 sept 2023 investement-new-features-added */
        #addnewdrop {
            display: none;
        }
+
        #nomineedropdownid {
            display: none;
        }
+
        .drop-investment-field {
-           margin-bottom: 40px;
+           /* margin-bottom: 40px; */
            margin-top: 0;
        }
+
        .horizontalLinr_investment {
            margin-bottom: 20px;
        }
+
        .accountHolderYessNo_investment {
-           margin-bottom: 21px;
+           margin-bottom: 30px;
        }
+
        .nomineeInputContainer_investment {
            margin-bottom: 4px;
        }
+
        .tab-content {
            padding-right: 0px !important;
        }
+
        .togle_lable_investment {
            font-size: 16px;
        }
+
        .btn-group {
            width: 100%;
        }
+
        .boxRadioButton {
            background-color: #ffffff;
            color: #626567;
@@ -343,6 +413,7 @@
            place-items: center;
            cursor: pointer;
        }
+
        .boxRadioButton2 {
            background-color: #ffffff;
            color: #626567;
@@ -360,84 +431,107 @@
            cursor: pointer;
            padding-top: 10px;
        }
+
        .boxRadioButton.active {
            background-color: #221f20;
            color: #ffffff;
            border: 1px solid #221f20;
            font-weight: 700;
        }
+
        .boxRadioButton2.active {
            background-color: #221f20;
            color: #ffffff;
            border: 1px solid #221f20;
            font-weight: 700;
        }
+
        .boxRadioButton input[type="radio"] {
            opacity: 0;
        }
+
        .boxRadioButton2 input[type="radio"] {
            opacity: 0;
        }
+
        .btn-group>.btn-group:not(:first-child)>.btn,
        .btn-group>.btn:nth-child(n+3),
        .btn-group> :not(.btn-check)+.btn {
            width: 100%;
        }
+
        .btn-group>.btn-group:not(:last-child)>.btn,
        .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
            width: 100%;
        }
+
        #error-message {
            font-size: 14px;
            font-weight: 400;
            line-height: 24px;
            color: red;
        }
+
        #error-message_pan {
            font-size: 14px;
            font-weight: 400;
            line-height: 24px;
            color: red;
        }
+
        #error-message_nomenieeName {
            font-size: 14px;
            font-weight: 400;
            line-height: 24px;
            color: red;
        }
+
        #error-message_nomenieeDOB {
            font-size: 14px;
            font-weight: 400;
            line-height: 24px;
            color: red;
        }
+
        #error-message_nomenieeRelation {
            font-size: 14px;
            font-weight: 400;
            line-height: 24px;
            color: red;
        }
+
+       .kyc_button_investment-back:hover {
+           color: #bb2d3b !important;
+           background-color: unset !important;
+           border-color: unset !important;
+       }
+
        @media only screen and (max-width: 1199px) {
            .tooltipContainer .tooltipContent {
                width: 240px;
            }
+
            .tooltipContainer .tooltipContent::after {
                left: 35%;
            }
        }
+
        /* investment mobile responsive screen 992 */
        @media only screen and (min-width:992p) {
            .desktop_investment {
                display: flex;
            }
        }
+
        @media only screen and (max-width: 992px) {
            .pl-0 {
                padding-left: 12px;
            }
+
            .leftcard-contant h1 {
                font-size: 50px;
            }
+
            .leftcard_investment {
                padding: 0px 30px;
            }
@@ -449,37 +543,58 @@
            .main-text-button-div {
                margin-top: 0 !important;
            }
+
+           .accountHolderYessNo_investment {
+               margin-bottom: 10px;
+
+           }
+
+           .drop-investment-field {
+               margin-top: 10px;
+
+           }
+
            .desktop_investment {
                display: none;
            }
+
            .mobile_investment {
                display: block;
            }
+
            .formobile-tooltip {
                vertical-align: super;
            }
+
            .bottomfix-first {
                width: 50%;
            }
+
            .bottomfix-second {
                width: 50%;
            }
+
            .desktop_investment {
                display: none;
            }
+
            .mobile_investment {
                display: block;
            }
+
            .formobile-tooltip {
                vertical-align: super;
            }
+
            .pl-0 {
                padding-left: 12px;
            }
+
            .investmentParent {
                padding: 20px 20px 0px 20px;
                position: relative;
            }
+
            .Investment_Heading {
                color: #221f20;
                font-size: 16px;
@@ -487,6 +602,7 @@
                line-height: 26px;
                margin-bottom: 8px;
            }
+
            label.form-label {
                font-size: 12px;
                font-weight: 700;
@@ -496,9 +612,11 @@
                white-space: nowrap;
                margin-bottom: 4px;
            }
+
            .msg_Investment {
                margin-top: 4px;
            }
+
            .message_label {
                font-size: 12px;
                font-weight: 400;
@@ -506,9 +624,11 @@
                color: #626567;
                margin-bottom: 4px;
            }
+
            .textparent {
                margin-bottom: 12px;
            }
+
            .boxRadioButton {
                border-radius: 4px;
                font-size: 14px;
@@ -518,16 +638,20 @@
                margin-right: 12px;
                margin-top: 10px;
            }
+
            .receive_interest_container_investment {
                margin-top: 15px;
                margin-bottom: 1px;
            }
+
            .tenure_container_investment {
                padding-bottom: 1px;
            }
+
            .interestContainer_header {
                align-items: baseline;
            }
+
            .boxRadioButton2 {
                border-radius: 4px;
                font-size: 14px;
@@ -537,34 +661,40 @@
                margin-top: 5px;
                padding-top: 16px;
            }
+
            .maturityBox_tex1_investment {
                font-size: 14px;
                font-weight: 700;
                line-height: 24px;
            }
+
            .maturityBox_tex2_investment {
                font-size: 12px;
                font-weight: 600;
                line-height: 20px;
            }
+
            .interestTableContainer_text_1 {
                color: #e6e7e9;
                font-weight: 400;
                font-size: 12px;
                line-height: 24px;
            }
+
            .interestTableContainer_text_2_investment {
                color: #e6e7e9;
                font-weight: 600;
                font-size: 14px;
                line-height: 24px;
            }
+
            .autorenewal_text {
                color: #e6e7e9;
                font-weight: 500;
                font-size: 14px;
                line-height: 24px;
            }
+
            .interestTableContainer_text_2 {
                color: #ffffff;
                margin-top: 10px;
@@ -572,15 +702,18 @@
                font-size: 18px;
                line-height: 28px;
            }
+
            .interestTableContainer_inner_investment {
                padding-top: 15px;
                padding-bottom: 13px;
            }
+
            .addHolder_radio_investment {
                margin-top: 7px;
                /* margin-bottom: 40px; */
                margin-bottom: 6px;
            }
+
            .togle_lable_investment {
                font-size: 14px;
                font-weight: 500;
@@ -588,9 +721,11 @@
                margin-left: 0px;
                margin-right: 20px;
            }
+
            .form-switch {
                margin-bottom: 40px;
            }
+
            .form-switch {
                margin-bottom: 10px;
                display: flex;
@@ -598,15 +733,19 @@
                padding-left: 0px;
                align-self: self-end;
            }
+
            .jointSwitch_container_investment2 {
                margin-bottom: 25px;
            }
+
            .toggle_investment {
                margin: 0px;
            }
+
            .form-switch .form-check-input {
                margin: 0px;
            }
+
            .leftsiderajan {
                position: relative;
                border-top-left-radius: 0px;
@@ -619,19 +758,23 @@
                background-repeat: no-repeat;
                background-size: cover;
            }
+
            .mobile_investment_logo {
                width: 169px;
                height: 64px;
            }
+
            .mobile_investment_stamp {
                width: 54px;
                height: 50px;
            }
+
            .mobile_investment_stampCnt_ {
                text-align-last: end;
                margin-left: -20px;
                align-self: center;
            }
+
            .mobile_investment_header {
                font-size: 20px;
                font-weight: 700;
@@ -639,6 +782,7 @@
                text-align-last: center;
                color: #ffffff;
            }
+
            .mobile_investment_subheaders {
                font-size: 12px;
                font-weight: 400;
@@ -647,19 +791,23 @@
                color: #ffffff;
                margin-bottom: 20px;
            }
+
            .appliedContainer {
                margin-bottom: 0px;
                padding: 12px;
            }
+
            .mobile_investment_cmpl {
                height: 14px;
                width: 14px;
                margin-right: 5px;
            }
+
            .appliedSection_additional {
                margin-bottom: 0px;
                padding: 8px;
            }
+
            .appliedSection {
                align-self: center;
                padding: 0px !important;
@@ -670,6 +818,7 @@
                padding-left: 0px;
                margin-bottom: 0px;
            }
+
            .applied_additional_citizens {
                font-size: 10px;
                font-weight: 700;
@@ -678,11 +827,13 @@
                margin-bottom: 0px;
                align-self: center;
            }
+
            .mobile_investment_btn {
                height: 30px;
                padding: 0px;
                border-radius: 4px;
            }
+
            .mobile_investment_btn button {
                color: #ffffff;
                padding: 10px;
@@ -693,9 +844,11 @@
                width: 95%;
                margin-left: 10px;
            }
+
            .Mobile_table_scr {
                border-bottom: none;
            }
+
            .mobile_table_container_invst {
                z-index: 999;
                padding-left: 20px;
@@ -712,6 +865,7 @@
                transform: translate(0, 83%);
                transition-duration: 1s;
            }
+
            .table thead tr th {
                padding: 10px;
                color: #ffffff;
@@ -720,6 +874,7 @@
                line-height: 20px;
                border: none;
            }
+
            .table tbody tr td {
                padding: 10px;
                color: #4b4c4d;
@@ -727,6 +882,7 @@
                font-weight: 600;
                line-height: 24px;
            }
+
            .table tbody tr td .tableUpto {
                margin-right: 5px;
                color: #4b4c4d;
@@ -734,44 +890,54 @@
                font-weight: 400;
                line-height: 20px;
            }
+
            .table thead tr th {
                font-size: 12px;
                line-height: 20px;
                font-weight: 400px;
            }
+
            thead {
                background-color: #4b4c4d;
            }
+
            tbody {
                background-color: #ffffff;
            }
+
            .mobile_investment_tableimgCnt {
                text-align-last: end;
                align-self: self-end;
            }
+
            .mobile_investment_tableHeaderCnt {
                text-align-last: start;
                align-self: self-end;
            }
+
            .mobile_investment_tableHeader1 {
                margin: 0px;
                font-size: 14px;
                font-weight: 700;
                line-height: 24px;
            }
+
            .btn-close {
                height: 15px !important;
                width: 15px !important;
            }
+
            .intrestTableHide_btn {
                border: none;
                background-color: #ffffff;
                cursor: pointer;
            }
+
            .bestSellerImg {
                height: 15px;
                width: 76px;
            }
+
            .customTextfield {
                padding: 0px;
                position: absolute;
@@ -780,6 +946,7 @@
                padding-left: 12px;
                font-size: 16px;
            }
+
            .tooltipContainer .tooltipContent {
                position: absolute;
                bottom: 32px;
@@ -792,6 +959,7 @@
                padding: 15px;
                border-radius: 4px;
            }
+
            .tooltipContainer .tooltipContent::after {
                content: "";
                position: absolute;
@@ -802,9 +970,11 @@
                border-style: solid;
                border-color: #ffffff transparent transparent transparent;
            }
+
            .mobile_investment {
                position: relative;
            }
+
            #darkBackground {
                display: none;
                width: 100%;
@@ -815,6 +985,7 @@
                top: 0;
                left: 0;
            }
+
            .mobile_interest_rate_container {
                display: block;
                position: fixed;
@@ -829,24 +1000,29 @@
                border-top-left-radius: 8px;
                border-top-right-radius: 8px;
            }
+
            .mobile_popup {
                display: flex;
                justify-content: space-between;
            }
+
            .closeBtn_txt {
                font-size: 14px;
                font-weight: 700;
                line-height: 24px;
            }
+
            .tooltipHeader_invester {
                font-weight: 700;
                font-size: 14px;
            }
+
            .tooltipText_invester {
                font-weight: 500;
                font-size: 11.5px;
            }
        }
+
        @media only screen and (max-width: 448px) {
            .interestTableContainer_text_1 {
                color: #e6e7e9;
@@ -854,12 +1030,14 @@
                font-size: 12px;
                line-height: 24px;
            }
+
            .interestTableContainer_text_2_investment {
                color: #e6e7e9;
                font-weight: 600;
                font-size: 14px;
                line-height: 24px;
            }
+
            .tooltipContainer .tooltipContent {
                position: absolute;
                bottom: 32px;
@@ -872,6 +1050,7 @@
                padding: 15px;
                border-radius: 4px;
            }
+
            .tooltipContainer .tooltipContent::after {
                content: "";
                position: absolute;
@@ -883,6 +1062,7 @@
                border-color: #ffffff transparent transparent transparent;
            }
        }
+
        @media only screen and (max-width: 395px) {
            .interestTableContainer_text_1 {
                color: #e6e7e9;
@@ -890,12 +1070,14 @@
                font-size: 12px;
                line-height: 24px;
            }
+
            .interestTableContainer_text_2_investment {
                color: #e6e7e9;
                font-weight: 600;
                font-size: 14px;
                line-height: 24px;
            }
+
            .tooltipContainer .tooltipContent {
                position: absolute;
                bottom: 32px;
@@ -908,6 +1090,7 @@
                padding: 15px;
                border-radius: 4px;
            }
+
            .tooltipContainer .tooltipContent::after {
                content: "";
                position: absolute;
@@ -919,6 +1102,7 @@
                border-color: #ffffff transparent transparent transparent;
            }
        }
+
        @media only screen and (max-width: 369px) {
            .interestTableContainer_text_1 {
                color: #e6e7e9;
@@ -926,12 +1110,14 @@
                font-size: 12px;
                line-height: 24px;
            }
+
            .interestTableContainer_text_2_investment {
                color: #e6e7e9;
                font-weight: 600;
                font-size: 14px;
                line-height: 24px;
            }
+
            .boxRadioButton2 {
                border-radius: 4px;
                font-size: 14px;
@@ -941,42 +1127,43 @@
                margin-top: 5px;
                padding-top: 16px;
            }
+
            .togle_lable_investment {
                margin-right: 20px;
            }
+
            .tenure_investment label {
                position: relative;
                align-items: self-start;
                padding-left: 7px;
            }
        }
+
        /* new update sep-18 */
        .investment_renewal_tooltip_warpper {
            display: flex;
            gap: 10px
        }
-     
+
        .stampImgContainerinvest {
            right: 40px;
            top: 30px;
            width: auto;
            position: absolute;
        }
+
        .stampImg {
            width: 100%;
            height: auto;
        }
+
        .bottomfix {
            margin-top: 0;
            margin-bottom: 20px;
        }
+
        @media only screen and (min-width: 768px) and (max-width: 991px) {
-       .desktop_investment {
-           display: block;
+           .desktop_investment {
+               display: block;
+           }
        }
-     }
-     .btn-danger:hover {
-         color: #bb2d3b !important;
-         background-color: unset !important;
-             border-color: unset !important;
-         }

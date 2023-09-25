@@ -731,6 +731,10 @@
           padding: 0;
       }
 
+      #tenureEement {
+          flex-wrap: wrap;
+      }
+
       .img_div {
           position: absolute;
           top: -100px !important;
@@ -1671,7 +1675,7 @@
 
   #tenureEement {
       display: flex;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       flex-direction: row;
   }
 
@@ -2231,6 +2235,12 @@
       }
   }
 
+  @media only screen and (min-width: 992px) and (max-width: 1255px) {
+      #tenureEement {
+          flex-wrap: wrap;
+      }
+  }
+
   .panmobilefix .modal-backdrop {
 
       width: 100%;
@@ -2248,8 +2258,8 @@
   .footertextparent-for-mobile {
       display: none;
   }
-  
- /*-----------------------25sept 2023--------------------*/
+
+  /*-----------------------25sept 2023--------------------*/
 
   @media only screen and (min-width: 320px) and (max-width: 991px) {
 
