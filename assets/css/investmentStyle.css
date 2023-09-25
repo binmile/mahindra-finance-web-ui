@@ -10,6 +10,12 @@
            display: flex;
        }
 
+       .logoImgContainer {
+           padding-left: 18px;
+       }
+.mobile_investment_logo{
+  
+}
        .Investment_radio_hide {
            display: none;
        }
@@ -302,8 +308,7 @@
        }
 
        .main-text-button-div {
-
-           margin-top: 200px;
+           margin-top: 220px;
            margin-bottom: 8px;
        }
 
