@@ -7,11 +7,17 @@ input[type='checkbox'] {
 
 .continueButtonEnable {
     margin-bottom: 20px;
+    width: 304px;
 }
 
 .maincom {
     padding-left: 20px;
     padding-right: 20px
+}
+
+.bank-details-disabled-button{
+    font-weight: bold;
+    width: 304px;
 }
 
 .bank-details-disabled-button.disabled img {
@@ -46,7 +52,7 @@ input[type='checkbox'] {
 
 #paymentMethod {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 113px;
 }
 
 #paymentMethod .paymentRadioButton {
@@ -315,7 +321,7 @@ input[type='checkbox'] {
     padding: 6px;
     width: 111px;
     font-size: 14px;
-    height: 60px;
+    padding: 13px 15px;
     line-height: 20px;
     margin-right: 24px;
     text-align: center;
@@ -457,8 +463,45 @@ input[type='checkbox'] {
 .kycDropDown option[value=""][disabled] {
     display: none;
 }
+/*//////22-sep new update  new style//////*/
+.buttonContainer{
+   display: flex;
+}
+
+.backButton{
+    display: flex;
+ }
+
+ .backButton {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 132px;
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+    color: #E31837;
+    border-color: #E31837;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.back_img_tag{
+    padding-right: 20px;
+}
+
+.kyc_data{
+    margin-bottom: 20px;
+}
+
+.logoImg{
+    left: 0px;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 567px) {
+    .backButton{
+        width: 132px
+     }
     .custome-d-flex {
         display: block !important;
     }
