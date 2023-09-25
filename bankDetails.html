@@ -261,7 +261,7 @@
                                 </div>
                                 <div class="buttonContainer">
                                     <div>
-                                        <button type="button" onclick="backButtonAction()" class="btn backButton">
+                                        <button type="button" onclick="backButtontwoAction()" class="btn backButton">
                                             <img src="./assets/icons/CTA_backarrow.svg " alt="continue" class="back_img_tag"> Back
                                         </button>
                                     </div>
@@ -542,7 +542,7 @@
                             </div>
                             <div class="buttonContainer">
                                 <div>
-                                    <button type="button" onclick="backButtonAction()" class="btn backButton">
+                                    <button type="button" onclick="backButtonthreeAction()" class="btn backButton">
                                         <img src="./assets/icons/CTA_backarrow.svg " alt="continue" class="back_img_tag"> Back
                                     </button>
                                 </div>
@@ -725,6 +725,17 @@
 
         function backButtonAction() {
             window.history.back()
+        }
+
+        function backButtontwoAction() {
+            $("#bankdetailsPageRightside").css('display', 'none');
+            document.getElementById("reviewYourApplicationPageRightside").style.display = "block";
+        }
+
+        function backButtonthreeAction() {
+            $("#rtgspageRightSide").css('display', 'none');
+            $("#bankdetailsPageRightside").css('display', 'block');
+            document.getElementById("reviewYourApplicationPageRightside").style.display = "none";
         }
 
         function reviewCheckBox() {

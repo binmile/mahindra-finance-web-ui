@@ -488,6 +488,14 @@ input[type='checkbox'] {
     padding-right: 20px;
 }
 
+.kyc_data{
+    margin-bottom: 20px;
+}
+
+.logoImg{
+    left: 0px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 567px) {
     .custome-d-flex {
         display: block !important;
