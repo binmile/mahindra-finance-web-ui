@@ -2,57 +2,57 @@
       margin: auto;
       padding: 20px 30px 0px 20px;
   }
-  
+
   .logo {
       width: 300px;
       height: auto;
   }
-  
+
   .logo img {
       width: 100%;
       height: auto;
   }
-  
+
   .leftcard-contant h1 {
       color: #fff;
       font-weight: 700;
       font-size: 68px;
       line-height: 78px;
   }
-  
+
   .container {
       padding-top: 30px;
       padding-bottom: 0px;
       position: relative;
   }
-  
+
   .leftcard-contant p {
       color: #fff;
   }
-  
+
   .footertext {
       margin-top: 20px;
   }
-  
+
   .card {
       border-radius: 20px;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       border: 0px;
       width: 100%;
   }
-  
+
   .btn-primary {
       color: #fff;
       background-color: #e31837;
       border-color: #e31837;
       padding: 18px;
   }
-  
+
   .btn-primary:hover {
       background: blue;
       box-shadow: rgba(255, 20, 106, 0.2) 0px 8px 24px;
   }
-  
+
   a.btn.btn-info.next {
       display: flex;
       justify-content: space-between;
@@ -64,17 +64,17 @@
       border-color: #e31837;
       box-shadow: #dc3545 0px 3px 18px;
   }
-  
+
   .form-control {
       padding: 10px 40px 10px 15px;
       background: #F4F7FA;
       width: 100%;
   }
-  
+
   .tab-content {
       padding-right: 50px;
   }
-  
+
   label.form-label {
       font-family: "Lato", sans-serif;
       font-size: 16px;
@@ -84,7 +84,7 @@
       text-align: left;
       margin-bottom: 5px;
   }
-  
+
   .jointPanContainer_header {
       margin-bottom: 10px;
       color: #221f20;
@@ -94,21 +94,21 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .checkbox_button_data {
       width: 15%;
   }
-  
+
   .checkbox_button_data:checked {
       border: 1px solid black;
       background-color: black !important;
   }
-  
+
   .checkbox_button_data:focus {
       border: 1px solid black;
       box-shadow: none;
   }
-  
+
   .button_label {
       color: #626567 !important;
       padding: 10px;
@@ -116,14 +116,14 @@
       border: 1px solid #8c989f;
       height: 46px;
   }
-  
+
   .checkbox_button_data+label {
       position: relative;
       padding-left: 25px;
       cursor: pointer;
       line-height: 1.5;
   }
-  
+
   .checkbox_button_data+label:before {
       content: "";
       position: absolute;
@@ -135,7 +135,7 @@
       border: 2px solid black;
       border-radius: 50%;
   }
-  
+
   .checkbox_button_data:checked+label:after {
       content: "";
       position: absolute;
@@ -147,7 +147,7 @@
       background-color: black;
       border-radius: 50%;
   }
-  
+
   .leftPanDetails {
       text-align-last: start;
       background-image: url("../Image/blur.png"), url("../Image/fd_img.png");
@@ -159,23 +159,23 @@
       border-radius: 10px 0px 0px 10px;
       overflow: hidden;
   }
-  
+
   .leftPanBackGround {
-    background-image: url("../Image/blur.png"), url("../Image/fd_img _background.png");
-    border-radius: 20px 0px 0px 20px;
-}
-  
+      background-image: url("../Image/blur.png"), url("../Image/fd_img _background.png");
+      border-radius: 20px 0px 0px 20px;
+  }
+
   .wrapper_div {
       display: flex;
       justify-content: left;
   }
-  
+
   .main_left_div {
       position: relative;
       display: flex;
       justify-content: space-evenly;
   }
-  
+
   .in_just {
       font-family: "Lato", sans-serif;
       font-size: 18px;
@@ -186,7 +186,7 @@
       color: #ffffff;
       margin-left: 31px;
   }
-  
+
   .easy_step {
       font-family: "Lato", sans-serif;
       font-size: 27px;
@@ -196,19 +196,19 @@
       color: #ffff;
       margin-left: 10px;
   }
-  
+
   .img_div {
       position: absolute;
       top: -20px;
       right: 5%;
       margin-top: -25px;
   }
-  
+
   .circle_content,
   .fixed_deposit_data {
       color: #ffffff;
   }
-  
+
   .circle_content {
       font-family: "Lato", sans-serif;
       font-size: 14px;
@@ -217,27 +217,27 @@
       letter-spacing: 0px;
       text-align: left;
   }
-  
+
   .first_div {
       display: flex;
       justify-content: center;
       align-items: center;
   }
-  
+
   .circle_info {
       display: flex;
       gap: 20px;
       margin-bottom: 15px;
       position: relative;
   }
-  
+
   .circle_data {
       margin-top: 20px;
       display: flex;
       justify-content: left;
       flex-direction: column;
   }
-  
+
   .circle {
       width: 34px;
       height: 34px;
@@ -249,6 +249,7 @@
       position: relative;
       z-index: 1;
   }
+
   /* .circle_info::before {
       content: "";
       position: absolute;
@@ -259,7 +260,7 @@
       background-color: #ffffff;
       z-index: 2;
   } */
-  
+
   .invest_in {
       font-family: "Lato", sans-serif;
       font-size: 18px;
@@ -268,7 +269,7 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .fixed_deposit_data {
       font-family: "Lato", sans-serif;
       font-size: 68px;
@@ -277,56 +278,56 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .custom_header {
       border-bottom: 0;
       display: flex;
       justify-content: end;
   }
-  
+
   .custom_footer {
       border-top: 0;
       display: flex;
       justify-content: center;
       padding: 0rem 2rem 3rem 2rem;
   }
-  
+
   .custom_model,
   .custom_model_body {
       padding: 0px 10px 10px 10px;
   }
-  
+
   .btn {
       width: 100%;
   }
-  
+
   .btn_submit {
       width: 100%;
   }
-  
+
   .custom_model {
       display: flex;
       justify-content: right;
       background-color: #ffffff;
       box-sizing: 0;
   }
-  
+
   .custom_close {
       background: #ffffff;
       border: none;
   }
-  
+
   .button_close_spn {
       background-color: #ffffff;
       width: 16px;
       height: 16px;
   }
-  
+
   .custom-body,
   .custom-footer {
       padding: 0rem 2rem 2rem 2rem;
   }
-  
+
   .enter_otp {
       font-family: "Lato", sans-serif;
       font-size: 20px;
@@ -335,7 +336,7 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .send_mobile {
       font-family: "Lato", sans-serif;
       font-size: 14px;
@@ -345,34 +346,34 @@
       text-align: left;
       color: #221f20;
   }
-  
+
   .box_container {
       display: flex;
       justify-content: space-between;
       margin: 20px 0 20px;
   }
-  
+
   .box_container_error {
       display: flex;
       justify-content: space-between;
       margin: 20px 0 10px 0px;
   }
-  
+
   .modal-dialog {
       display: flex;
       align-items: center;
       min-height: calc(100% - 1rem);
   }
-  
+
   .modal_content_data {
       border-radius: 8px;
   }
-  
+
   .otp_msg {
       display: flex;
       gap: 4px;
   }
-  
+
   .otp_second {
       font-family: "Lato", sans-serif;
       font-size: 14px;
@@ -381,7 +382,7 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .timer {
       font-family: "Lato", sans-serif;
       font-size: 14px;
@@ -390,7 +391,7 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .resend_otp {
       font-family: "Lato", sans-serif;
       font-size: 14px;
@@ -400,7 +401,7 @@
       text-align: left;
       color: #0094ff;
   }
-  
+
   .box_div {
       display: flex;
       text-align: center;
@@ -411,7 +412,7 @@
       border: 1px solid #8c989f;
       background-color: #f4f7fa;
   }
-  
+
   .box_div_error {
       display: flex;
       text-align: center;
@@ -422,7 +423,7 @@
       border: 1px solid #e31837;
       background-color: #FFFAFB;
   }
-  
+
   .newsubmitbtn_first {
       display: flex;
       justify-content: space-between;
@@ -434,11 +435,11 @@
       border-color: #e31837;
       /* box-shadow: #dc3545 0px 3px 18px; */
   }
-  
+
   .first_button {
       margin-top: 20px;
   }
-  
+
   .newsubmitbtn {
       display: flex;
       justify-content: space-between;
@@ -450,22 +451,22 @@
       border-color: #e31837;
       /* box-shadow: #dc3545 0px 3px 18px; */
   }
-  
+
   .geberate_otp {
       width: 100%;
       display: flex;
       justify-content: space-between;
   }
-  
+
   .form-check-input:checked {
       background-color: #000;
       border: 1px solid black;
   }
-  
+
   .form-check-input:focus {
       box-shadow: none;
   }
-  
+
   .newsubmitbtn.sec_btn {
       display: flex;
       justify-content: space-between;
@@ -477,37 +478,38 @@
       border-color: #e31837;
       box-shadow: #dc3545 0px 3px 18px;
   }
+
   /* bankDetails css */
-  
+
   .check_kyc {
       margin-top: 20px;
       margin-bottom: 40px;
       background-color: #F4F7FA;
   }
-  
+
   .kyc_data {
       padding: 10px 16px 10px 16px;
       display: flex;
   }
-  
+
   .custom-button-data {
       background-color: #E31837;
   }
-  
+
   .custom-button-data .arrow-right-icon {
       fill: #fff;
   }
-  
+
   .custom-button-data:disabled {
       background-color: #E6E7E9;
       border: 1px solid #E6E7E9;
       color: #8C989F;
   }
-  
+
   .custom-button-data:disabled .arrow-right-icon {
       fill: #8C989F
   }
-  
+
   .form-check-label {
       margin-left: 10px;
       font-family: "Lato", sans-serif;
@@ -517,15 +519,15 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .form-check-input {
       width: 35px;
   }
-  
+
   .inputPan {
       width: 17px;
   }
-  
+
   .paymentOptions {
       border: solid #8C989F 1.5px;
       border-radius: 4px;
@@ -539,12 +541,12 @@
       margin-left: 1.7%;
       margin-right: 2%;
   }
-  
+
   .paymentOptions:hover {
       border-color: black;
       background-color: #F4F7FA;
   }
-  
+
   .paymentIconContainer {
       display: flex;
       flex-direction: column;
@@ -553,22 +555,22 @@
       width: 2rem;
       padding-bottom: 0.5rem;
   }
-  
+
   .paymentIcon {
       width: 100%;
       height: auto;
   }
-  
+
   .ifscHeading {
       display: flex;
       justify-content: space-between;
       white-space: nowrap;
   }
-  
+
   .ifscLink {
       white-space: nowrap;
   }
-  
+
   .bankDetailsLeftSide {
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
@@ -581,21 +583,21 @@
       background-size: cover;
       position: relative;
   }
-  
+
   .paymentContent {
       font-size: 0.8rem;
       font-weight: 400;
       color: #221F20;
   }
-  
+
   .paymentContent:hover {
       font-weight: 600;
   }
-  
+
   .logoImgContainer {
       width: 318px;
   }
-  
+
   .logoImg {
       border-top-left-radius: 20px;
       position: relative;
@@ -603,68 +605,68 @@
       width: 100%;
       height: auto;
   }
-  
+
   .leftColHeading {
       color: #ffff;
       font-size: 68px;
       font-weight: 700;
   }
-  
+
   .leftcard-content {
       padding-top: 30px;
   }
-  
+
   .leftColContent {
       color: #ffff;
       font-size: 18px;
       font-weight: 400;
   }
-  
+
   .stampImgContainer {
       position: absolute;
       width: 146px;
       right: 0;
   }
-  
+
   .stampImg {
       width: 100%;
       height: auto;
   }
-  
+
   span.footertext {
       color: red;
   }
-  
+
   p.footertextparent {
       font-size: 12px !important;
   }
-  
+
   .modal-footer {
       border-top: none;
   }
-  
+
   .form-control:focus {
       color: #212529;
       outline: 0;
       box-shadow: none;
       border: 1px solid #ced4da;
   }
-  
+
   .form-switch-input {
       background-color: #F4F7FA;
   }
-  
+
   .form-switch-input:checked {
       background-color: #0094FF;
       border: #0094FF;
   }
-  
+
   .strapper_div {
       display: flex;
       justify-content: center;
       margin-top: 10px;
   }
-  
+
   .card_div_data {
       display: flex;
       justify-content: space-between;
@@ -674,7 +676,7 @@
       padding: 0.5rem 0.9rem;
       opacity: 0.9;
   }
-  
+
   .card_first_content {
       font-family: "Lato", sans-serif;
       font-size: 10px;
@@ -684,7 +686,7 @@
       text-align: left;
       color: #FFFFFF;
   }
-  
+
   .card_second_content {
       color: #FFFFFF;
       font-family: "Lato", sans-serif;
@@ -694,7 +696,7 @@
       letter-spacing: -1px;
       text-align: left;
   }
-  
+
   .form-control::placeholder {
       font-family: "Lato", sans-serif;
       font-size: 12px;
@@ -703,7 +705,7 @@
       letter-spacing: 0px;
       text-align: left;
   }
-  
+
   .form-switch-label {
       font-family: "Lato", sans-serif;
       font-size: 16px;
@@ -712,91 +714,109 @@
       letter-spacing: 0px;
       text-align: left;
   }
-  
+
   .maincontant-m {
       padding: 0px 50px;
   }
-  
+
   .model-div-conatiner {
       display: flex;
       justify-content: center;
   }
-  
+
+  /*-----------------------25sept 2023--------------------*/
+
   @media screen and (max-width: 767px) {
       .main_left_div {
           padding: 0;
       }
+
       .img_div {
           position: absolute;
           top: -100px !important;
           right: 0;
       }
+
       .content-data {
           margin-top: 40px;
       }
+
       .fixed_deposit_data {
           font-size: 40px;
           line-height: 40px;
       }
+
       .invest_in {
           font-size: 20px;
       }
+
       .in_just {
           font-size: 11px;
       }
+
       .easy_step {
           font-size: 16px;
       }
+
       .circle_content {
           font-size: 10px;
       }
-     
+
       .check_kyc_data {
           margin-top: 0;
       }
+
       .strapper_div {
           margin-top: 40px;
       }
+
       .first_button {
           margin-bottom: 24px;
       }
+
       .form-switch {
           margin-bottom: 40px;
       }
+
       .form-switch-label {
           font-size: 12px;
       }
+
       .card_second_content {
           font-size: 25px;
       }
+
       .card_first_content {
           font-size: 12px;
       }
+
       .wrapper_div {
           justify-content: left;
       }
+
       .box_div {
           width: 35px;
           height: 35px;
       }
+
       .box_div_error {
           width: 35px;
           height: 35px;
       }
   }
-  
-  
+
+
   body {
       background: #E6E7E9;
   }
-  
+
   * {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
       font-family: 'Lato', sans-serif;
   }
-  
+
   .leftsiderajan {
       position: relative;
       border-top-left-radius: 20px;
@@ -809,19 +829,19 @@
       background-repeat: no-repeat;
       background-size: cover;
   }
-  
+
   .leftcard-contant {
       margin-bottom: 20px;
       /* margin-left: 20px;
     margin-right: 20px; */
   }
-  
+
   .footertext p {
       font-size: 8px;
       text-align: justify;
       margin-bottom: 5px;
   }
-  
+
   .nav-tabs .nav-item .nav-link.active:after {
       content: " ";
       position: absolute;
@@ -833,23 +853,23 @@
       margin: 0 auto;
       bottom: 0px;
   }
-  
+
   span.steptext {
       margin-left: 20px;
       font-size: 13px;
       font-weight: 400;
       color: #4B4C4D;
   }
-  
+
   h4 {
       font-size: 20px;
       font-weight: 400;
   }
-  
+
   .maincontant {
       /* padding-top: 15px; */
   }
-  
+
   label.form-label {
       font-size: 16px;
       font-weight: 500;
@@ -858,7 +878,7 @@
       white-space: nowrap;
       margin-bottom: 5px;
   }
-  
+
   .message_label {
       font-size: 14px;
       font-weight: 400;
@@ -866,18 +886,19 @@
       color: #626567;
       margin-bottom: 5px;
   }
-  
+
   .textparent {
       position: relative;
       margin-bottom: 33px;
   }
+
   /* bankDetails css */
-  
+
   #flexCheckDefault:checked {
       border: 1px solid black;
       background-color: black;
   }
-  
+
   .appliedSection {
       align-self: center;
       padding-top: 20px;
@@ -888,13 +909,13 @@
       padding-left: 20px;
       margin-bottom: 20px;
   }
-  
+
   .appliedSection_additional {
       display: flex;
       font-size: small;
       margin-bottom: 5px;
   }
-  
+
   .applied_additional {
       margin-left: 5px;
       color: #ffffff;
@@ -902,7 +923,7 @@
       font-weight: 400;
       line-height: 24px;
   }
-  
+
   .applied_additional_rate {
       margin-bottom: 5px;
       color: #ffffff;
@@ -910,7 +931,7 @@
       font-weight: 700;
       line-height: 30px;
   }
-  
+
   .applied_additional_citizens {
       color: #ffffff;
       font-size: 16px;
@@ -918,28 +939,28 @@
       line-height: 30px;
       margin-bottom: 5px;
   }
-  
+
   .stampImg_Container {
       text-align-last: center;
       margin-bottom: 20px;
   }
-  
+
   .stump_img {
       height: 125px;
       width: 134px;
   }
-  
+
   .appliedContainer {
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 20px;
   }
-  
+
   .complete_img {
       height: 11px;
       width: 11px;
   }
-  
+
   .table thead tr th {
       padding: 10px;
       color: #FFFFFF;
@@ -948,7 +969,7 @@
       line-height: 20px;
       border: none;
   }
-  
+
   .table tbody tr td {
       padding: 10px;
       color: #FFFFFF;
@@ -956,7 +977,7 @@
       font-weight: 600;
       line-height: 24px;
   }
-  
+
   .table tbody tr td .tableUpto {
       margin-right: 5px;
       color: #FFFFFF;
@@ -964,52 +985,52 @@
       font-weight: 400;
       line-height: 20px;
   }
-  
+
   .table thead tr th:first-child {
       border-top-left-radius: 8px;
   }
-  
+
   .table thead tr th:last-child {
       border-top-right-radius: 8px;
   }
-  
+
   .table tbody tr td:first-child {
       border-bottom-left-radius: 8px;
   }
-  
+
   .table tbody tr td:last-child {
       border-bottom-right-radius: 8px;
       margin-left: 20px;
   }
-  
+
   thead {
       background-color: #85838396;
       opacity: 0.9;
   }
-  
+
   tr {
       border-block-color: #8c8f95;
   }
-  
+
   tbody {
       background-color: #4342427a;
       opacity: 0.9;
   }
-  
+
   .bestSellerImg {
       margin-left: 5px;
   }
-  
+
   .table tbody tr td button {
       background-color: #E31837;
       border: 4px;
       padding: 5px;
   }
-  
+
   .hidden {
       display: none;
   }
-  
+
   .table tbody tr td button :first-child {
       margin-right: 5px;
       color: #FFFFFF;
@@ -1017,59 +1038,60 @@
       font-weight: 700;
       line-height: 24px;
   }
+
   /* .table tbody tr td button :last-child {
       height: 10px;
       width: 10px;
   } */
-  
+
   .seeAll_Button {
       width: 20%;
   }
-  
+
   .seeLess_Button {
       width: 24%;
   }
-  
+
   .ammountInvested_container {
       margin-bottom: 40px;
   }
-  
+
   .tenure_container {
       margin-bottom: 20px;
   }
-  
+
   .monthinput_container {
       margin-bottom: 40px;
   }
-  
+
   .receive_interest_container {
       margin-bottom: 20px;
   }
-  
+
   .interestTable_container {
       margin-bottom: 40px;
   }
-  
+
   .accountHolder_container {
       margin-bottom: 40px;
   }
-  
+
   .jointSwitch_container {
       margin-bottom: 20px;
   }
-  
+
   .Continue_button_container {
       margin-bottom: 20px;
   }
-  
+
   .pan_mobile_container {
       margin-bottom: 40px;
   }
-  
+
   .otp_button_container {
       margin-bottom: 40px;
   }
-  
+
   .otp_button_container button {
       background-color: #221F20;
       color: #ffffff;
@@ -1081,17 +1103,17 @@
       line-height: 24px;
       border-radius: 4px;
   }
-  
+
   .kyc_Button_container {
       margin-bottom: 30px;
       margin-top: 20px;
   }
-  
+
   .selectHolder_nomine {
       color: #FFFFFF;
       margin-bottom: 20px;
   }
-  
+
   .selectHolder_text {
       padding: 5px;
       padding-left: 10px;
@@ -1103,7 +1125,7 @@
       line-height: 24px;
       vertical-align: super;
   }
-  
+
   .Investment_Heading {
       color: #221F20;
       font-size: 20px;
@@ -1111,31 +1133,31 @@
       line-height: 30px;
       margin-bottom: 20px;
   }
-  
+
   .image {
       width: 318px;
       height: 126.5px
   }
-  
+
   .card-body {
       padding: 0px;
   }
-  
+
   .left_heading {
       color: #fff;
       font-weight: 700;
       font-size: 68px;
       line-height: 78px;
   }
-  
+
   .leftsubContainer {
       padding: 0px 40px;
   }
-  
+
   .sectionB_Applied_container {
       display: flex;
   }
-  
+
   .SectionB {
       align-self: center;
       padding-top: 10px;
@@ -1144,7 +1166,7 @@
       border: 1px solid #4BAE4F;
       padding-left: 10px;
   }
-  
+
   .SectionB_Text {
       color: #fff;
       font-weight: 400;
@@ -1152,78 +1174,78 @@
       line-height: 24px;
       margin-left: 8px;
   }
-  
+
   .SectionB_Text2 {
       color: #fff;
       font-weight: 700;
       font-size: 20px;
       line-height: 30px;
   }
-  
+
   .SectionB_Text3 {
       color: #fff;
       font-weight: 700;
       font-size: 16px;
       line-height: 30px;
   }
-  
+
   .table {
       margin-top: 10px;
       margin-bottom: 10px;
       color: #FFFFFF;
   }
-  
+
   .rightContainer {
       padding-left: 0px;
   }
-  
+
   .rightContainerInner {
       padding-left: 30px;
       padding-right: 30px;
       padding-bottom: 20px;
   }
-  
+
   .rightContainer_header {
       color: #221F20;
       font-weight: 600;
       font-size: 20px;
       line-height: 30px;
   }
-  
+
   .input-group-text {
       background-color: #fff;
       border-left: none;
   }
-  
+
   .my-input {
       border-right: none;
       height: 45px;
   }
-  
+
   .monthsContainer {
       margin-top: 10px;
       margin-bottom: 10px;
   }
-  
+
   .monthsContainer_header {
       color: #221F20;
       font-weight: 400;
       font-size: 16px;
       line-height: 26px;
   }
-  
+
   .monthButton_text {
       color: #221F20;
       font-weight: 700;
       font-size: 18px;
       line-height: 28px;
   }
-  
+
   .interestContainer {
       margin-top: 10px;
       margin-bottom: 10px;
   }
-  
+
   .interestContainer_header {
       color: #221F20;
       font-weight: 400;
@@ -1231,7 +1253,7 @@
       line-height: 26px;
       display: flex;
   }
-  
+
   .interestContainer_text {
       color: #626567;
       font-weight: 400;
@@ -1239,52 +1261,52 @@
       line-height: 24px;
       display: flex;
   }
-  
+
   .interestContainer_img {
       width: 10px;
       height: 13px;
       margin-top: 5px;
       margin-right: 5px;
   }
-  
+
   .interestContainer_button {
       width: 100%;
       padding-bottom: 2px;
       text-align-last: justify !important;
   }
-  
+
   .interest_button2 {
       width: 15%;
       padding: 10px;
       margin-left: 25px;
       text-align-last: center;
   }
-  
+
   .interest_Button_text {
       color: #221F20;
       font-weight: 700;
       font-size: 16px;
       line-height: 30px;
   }
-  
+
   .interestTableContainer_inner {
       background-color: #333333;
       border-radius: 5px;
       padding: 10px;
   }
-  
+
   .interestTableContainer_text_container {
       color: #fff;
       padding: 10px;
   }
-  
+
   .interestTableContainer_text_1 {
       color: #E6E7E9;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
   }
-  
+
   .interestTableContainer_text_2 {
       color: #FFFFFF;
       margin-top: 10px;
@@ -1292,36 +1314,36 @@
       font-size: 18px;
       line-height: 28px;
   }
-  
+
   .interestTableContainer_CheckBox {
       padding: 10px;
       padding-left: 10px;
       display: flex;
   }
-  
+
   .interestTableContainer_Check {
       display: flex;
   }
-  
+
   .jointAccountContainer {
       margin-bottom: 40px;
   }
-  
+
   .jointAccount_Button_container {
       width: 100%;
       padding-bottom: 20px;
   }
-  
+
   .jointAccount_Button_container label {
       width: 20%;
       text-align-last: start;
       background-color: #f4f7fa !important;
   }
-  
+
   .set-1 {
       margin-right: 10px;
   }
-  
+
   .button_label {
       color: #626567 !important;
       padding: 10px;
@@ -1329,16 +1351,16 @@
       border: 1px solid #8C989F;
       height: 46px;
   }
-  
+
   .checkbox_button {
       width: 25%;
       color: black;
   }
-  
+
   .investmentParent {
       padding: 30px 30px 0px 30px
   }
-  
+
   .kyc_Button {
       padding: 10px;
       width: 25%;
@@ -1351,7 +1373,7 @@
       width: 40%;
       align-items: center;
   }
-  
+
   .seeAllButton {
       padding: 10px;
       background-color: #E31837;
@@ -1362,7 +1384,7 @@
       border: none;
       margin-right: 5px;
   }
-  
+
   .kyc_Button_text {
       color: #FFFFFF;
       font-weight: 700;
@@ -1370,37 +1392,37 @@
       line-height: 24px;
       text-decoration: none;
   }
-  
+
   .AlertImg {
       width: 15px;
       height: 15px;
       margin-left: 5px;
   }
-  
+
   .alertImg {
       width: 15px;
       height: 15px;
       margin-left: 5px;
   }
-  
+
   .tooltipText {
       color: #221F20;
       font-weight: 500;
       font-size: 14px;
       line-height: 24px;
   }
-  
+
   .tooltipText ul {
       list-style-position: outside;
       padding-left: 18px;
   }
-  
+
   .tooltip {
       position: relative;
       display: inline-block;
       border-bottom: 1px dotted black;
   }
-  
+
   .tooltip .tooltiptext {
       visibility: hidden;
       width: 120px;
@@ -1415,7 +1437,7 @@
       left: 50%;
       margin-left: -60px;
   }
-  
+
   .tooltip .tooltiptext::after {
       content: "";
       position: absolute;
@@ -1426,37 +1448,37 @@
       border-style: solid;
       border-color: black transparent transparent transparent;
   }
-  
+
   .tooltip:hover .tooltiptext {
       visibility: visible;
   }
-  
+
   .monthinputContainer {
       width: 50%;
       margin-top: 20px;
   }
-  
+
   .monthinput {
       border-right: 1px solid #cfd5db;
   }
-  
+
   input[type='radio'] {
       accent-color: #232323;
       border: none;
   }
-  
+
   input[type='checkbox'] {
       accent-color: #ffffff;
       width: 20px;
       height: 20px;
       border-radius: 4px !important;
   }
-  
+
   .form-check-input:checked {
       background-color: #0094FF;
       border: 1px solid #0094FF
   }
-  
+
   #myDiv button,
   #interest_Button button {
       background-color: #ffffff;
@@ -1471,17 +1493,17 @@
       margin-top: 5px;
       padding: 5px;
   }
-  
+
   #maturityBtn button {
       text-align: left;
       position: relative;
   }
-  
+
   #interest_Button button {
       text-align: left;
       position: relative;
   }
-  
+
   #myDiv .active,
   #interest_Button .active {
       background-color: #F4F7FA !important;
@@ -1494,21 +1516,21 @@
       margin-right: 10px;
       margin-top: 5px;
   }
-  
+
   #interest_Button button span:first-child {
       font-size: 16px;
       line-height: 30px;
       padding: 5px;
       z-index: 0;
   }
-  
+
   #interest_Button button span:last-child {
       font-size: 14px;
       line-height: 24px;
       padding: 5px;
       z-index: 0;
   }
-  
+
   #interest_Button button:first-child::before {
       content: "";
       width: 12px;
@@ -1520,12 +1542,12 @@
       background-repeat: no-repeat;
       background-size: contain;
   }
-  
+
   .tooltipContainer {
       position: relative;
       z-index: 999;
   }
-  
+
   .tooltipContainer .tooltipContent {
       position: absolute;
       bottom: 32px;
@@ -1538,7 +1560,7 @@
       padding: 15px;
       border-radius: 4px;
   }
-  
+
   .tooltipContainer .tooltipContent::after {
       content: "";
       position: absolute;
@@ -1549,54 +1571,54 @@
       border-style: solid;
       border-color: #FFFFFF transparent transparent transparent;
   }
-  
+
   .tooltipContainer .tooltipMain {
       cursor: pointer;
   }
-  
+
   .tooltipContainer .tooltipContent {
       display: none;
       box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
   }
-  
+
   .tooltipContainer .tooltipMain:hover .tooltipContent {
       display: block;
   }
-  
+
   .selectdiv {
       margin-top: 40px;
       margin-bottom: 40px;
   }
-  
+
   .selectox {
       height: 44px;
       background-color: #f4f7fa;
   }
-  
+
   .form-select {
       color: #626567;
       font-weight: 400;
       font-size: 16px;
       line-height: 26px;
   }
-  
+
   .selectox option {
       color: #626567;
       font-weight: 400;
       font-size: 16px;
       line-height: 26px;
   }
-  
+
   .MMFSLcontainer {
       padding: 10px 10px 5px 10px;
       background-color: #F4F7FA;
   }
-  
+
   .Horizontalline {
       margin-top: 35px !important;
       margin-bottom: 35px !important;
   }
-  
+
   .CKYC_Button {
       padding: 10px;
       display: flex;
@@ -1608,14 +1630,14 @@
       height: 44px;
       align-items: center;
   }
-  
+
   .CKYC_Button_text {
       color: #8C989F;
       line-height: 24px;
       font-size: 14px;
       font-weight: 400;
   }
-  
+
   .newsubmitbtn_first {
       display: flex;
       justify-content: space-between;
@@ -1626,33 +1648,33 @@
       background-color: #e31837;
       border-color: #e31837;
   }
-  
+
   .custom-button-data:disabled {
       background-color: #E6E7E9;
       border: 1px solid #E6E7E9;
       color: #8C989F;
   }
-  
+
   #main {
       display: none;
   }
-  
+
   .tableLess_Button {
       border: none !important;
   }
-  
+
   #tenureEements {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
   }
-  
+
   #tenureEement {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
   }
-  
+
   .boxRadioButton {
       background-color: #ffffff;
       color: #626567;
@@ -1669,7 +1691,7 @@
       place-items: center;
       cursor: pointer;
   }
-  
+
   .boxRadioButton2 {
       background-color: #ffffff;
       color: #626567;
@@ -1686,46 +1708,47 @@
       place-items: center;
       cursor: pointer;
   }
-  
+
   .boxRadioButton.active {
       background-color: #F4F7FA;
       color: #221F20;
       border: 2px solid #221F20;
       font-weight: 700;
   }
-  
+
   .boxRadioButton2.active {
       background-color: #F4F7FA;
       color: #221F20;
       border: 2px solid #221F20;
       font-weight: 700;
   }
-  
+
   .boxRadioButton input[type="radio"] {
       opacity: 0;
       /* display: none; */
   }
-  
+
   .boxRadioButton2 input[type="radio"] {
       opacity: 0;
   }
-  
+
   #CustomMonth {
       display: none;
   }
-  
+
   .interest_autorenewal_a {
       display: flex;
       flex-wrap: wrap;
   }
-  
+
   .autorenewal_text {
       color: white;
       margin-left: 10px;
       border: none !important;
   }
+
   /*-----------MoniCss-------------*/
-  
+
   .errorText {
       font-family: "Lato", sans-serif;
       font-size: 14px;
@@ -1736,7 +1759,7 @@
       color: #e31837;
       margin-top: 5px;
   }
-  
+
   .invest_fixed {
       font-family: "Lato", sans-serif;
       font-size: 20px;
@@ -1747,13 +1770,13 @@
       margin-bottom: 30px;
       margin-top: 50px;
   }
-  
+
   .textfildicons {
       position: absolute;
       right: 14px;
       top: 42px;
   }
-  
+
   .check_kyc_data {
       padding: 15px 16px 15px 16px;
       margin-top: 150px;
@@ -1761,17 +1784,17 @@
       gap: 15px;
       border-radius: 4px;
   }
-  
+
   .error-border {
       border-color: red;
       box-shadow: red;
   }
-  
+
   ul {
       display: flex;
       list-style: none;
   }
-  
+
   .kyc_paragraph {
       font-family: "Lato", sans-serif;
       font-size: 14px;
@@ -1780,11 +1803,11 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .kyc_data_pan {
       display: flex;
   }
-  
+
   .form-check-label_data {
       margin-left: 10px;
       font-family: "Lato", sans-serif;
@@ -1794,23 +1817,23 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .input_data {
       width: 20px;
       height: 20px;
       border-radius: 5px;
   }
-  
+
   .input_data:checked {
       border: 1px solid black;
       background-color: black;
   }
-  
+
   .input_data:focus {
       border: 1px solid black;
       box-shadow: none;
   }
-  
+
   .jointPanContainer_header {
       margin-bottom: 10px;
       color: #221f20;
@@ -1820,124 +1843,140 @@
       letter-spacing: 0em;
       text-align: left;
   }
-  
+
   .circle_info:first-child::before {
       display: none;
   }
-  
+
   .custom_model,
   .custom_model_body {
       padding: 0px 10px 10px 10px;
   }
-  
+
   @media screen and (max-width: 767px) {
       .main_left_div {
           padding: 0;
       }
+
       .img_div {
           position: absolute;
           top: 50px;
           right: 0;
       }
+
       .content-data {
           margin-top: 40px;
       }
+
       .fixed_deposit_data {
           font-size: 40px;
           line-height: 40px;
       }
+
       .invest_in {
           font-size: 20px;
       }
+
       .in_just {
           font-size: 11px;
       }
+
       .easy_step {
           font-size: 16px;
       }
+
       .circle_content {
           font-size: 10px;
       }
-      
+
       .check_kyc_data {
           margin-top: 0;
       }
+
       .strapper_div {
           margin-top: 40px;
       }
+
       .first_button {
           margin-bottom: 24px;
       }
+
       .form-switch {
           margin-bottom: 40px;
       }
+
       .form-switch-label {
           font-size: 12px;
       }
+
       .card_second_content {
           font-size: 25px;
       }
+
       .card_first_content {
           font-size: 12px;
       }
+
       .wrapper_div {
           justify-content: left;
       }
   }
- 
-  
+
+
   .maincom {
-    padding-left: 26px;
-    padding-right: 50px;
-    margin-top: 40px;
-}
+      padding-left: 26px;
+      padding-right: 50px;
+      margin-top: 40px;
+  }
+
   #additionalDetailParent {
       display: none;
   }
-  
+
   #bankdetailsPageLeftside {
       display: none;
   }
-  
+
   #bankdetailsPageRightside {
       display: none;
   }
-  
+
   .check_kyc {
       margin-top: 20px;
       margin-bottom: 10px;
       background-color: #F4F7FA;
   }
-  
+
   .kyc_data {
       padding: 10px 16px 10px 16px;
       display: flex;
   }
-  
+
   .custom-button-data {
       background-color: #E31837;
   }
-  
+
   .custom-button-data:disabled {
       background-color: #E6E7E9;
       border: 1px solid #E6E7E9;
       color: #8C989F;
   }
-  
+
   .img_tag {
       color: #8C989F;
   }
-  
+
   .reviewcard {
-    border-radius: 4px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border: 0px;
-    padding: 0px 15px 15px 12px;
-}
-.reviewCardbadge p {
-    margin-bottom: 0px;
-}
-  
+      border-radius: 4px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border: 0px;
+      padding: 0px 15px 15px 12px;
+  }
+
+  .reviewCardbadge p {
+      margin-bottom: 0px;
+  }
+
   .continueButtonEnable {
       display: flex;
       justify-content: space-between;
@@ -1948,17 +1987,17 @@
       background-color: #E31837 !important;
       border-color: #E31837 !important;
   }
-  
+
   .bank-details-disabled-button.disabled img {
       -webkit-filter: brightness(1) invert(0);
       filter: brightness(1) invert(0);
   }
-  
+
   .continueButtonEnable img {
       -webkit-filter: brightness(0) invert(1);
       filter: brightness(0) invert(1);
   }
-  
+
   .bank-details-disabled-button.disabled:not(:disabled) {
       display: flex;
       justify-content: space-between;
@@ -1970,39 +2009,40 @@
       border-color: #E6E7E9;
       margin-bottom: 20px;
   }
-  
+
   .errorMessage {
       display: none;
       color: red;
       font-size: 14px;
   }
+
   /* /////////success page /////// */
-  
+
   .sussessicons {
       width: 100px;
       height: auto;
       margin-bottom: 10px;
   }
-  
+
   .success-text {
       text-align: center;
   }
-  
+
   p.success-textstyle {
       font-size: 16px;
       margin-bottom: 0px;
   }
-  
+
   .success-text a {
       color: #000;
       text-decoration: unset;
       font-weight: 600;
   }
-  
+
   .success-contant {
-    padding: 40px 40px 20px 40px;
-}
-  
+      padding: 40px 40px 20px 40px;
+  }
+
   .btn-success {
       display: flex;
       justify-content: space-between;
@@ -2016,7 +2056,7 @@
       border-radius: 4px;
       margin-top: 30px;
   }
-  
+
   .btn-check:active+.btn-success,
   .btn-check:checked+.btn-success,
   .btn-success.active,
@@ -2026,7 +2066,7 @@
       background-color: #E31837;
       border-color: #E31837;
   }
-  
+
   .btn-check:focus+.btn-success,
   .btn-success:focus {
       color: #fff;
@@ -2034,36 +2074,36 @@
       border-color: #E31837;
       box-shadow: 0 0 0 .25rem rgba(255, 0, 0, 0.5);
   }
-  
+
   .btn-success:hover {
       color: #fff;
       background-color: #E31837;
       border-color: #E31837;
   }
-  
+
   .pl-0 {
       padding-left: 0px;
   }
-  
+
   p.btntxt-first {
       font-size: 14px;
       margin-bottom: 0px;
   }
-  
+
   p.btntxt-second {
       margin-bottom: 0px;
       font-size: 20px;
   }
-  
+
   .paragraphheading {
       margin-top: 40px;
       text-align: center;
   }
-  
+
   .btntxt {
       text-align: start;
   }
-  
+
   .smallcardbtn-design {
       display: flex;
       justify-content: space-between;
@@ -2075,34 +2115,35 @@
       border: 1px solid #000;
       border-radius: 4px;
   }
-  
+
   .smallcardbtntxt p {
       margin-bottom: 0px;
   }
-  
+
   .smallcard {
-    padding: 10px 20px;
-    border-radius: 4px;
-    box-shadow: 0px 4px 12px 0px #0000001A;
-}
+      padding: 10px 20px;
+      border-radius: 4px;
+      box-shadow: 0px 4px 12px 0px #0000001A;
+  }
+
   .smallcardheading img {
       text-align: center;
       padding-top: 10px;
       padding-bottom: 20px;
       width: 100%;
   }
-  
+
   .smallcardheading p {
       margin: 0px;
       font-weight: 700;
       font-size: 20px;
   }
-  
+
   .mainshaper {
       background: #fff;
       border-radius: 20px;
   }
-  
+
   .shaper {
       background: url(../image-main/Group.svg) no-repeat;
       width: 100%;
@@ -2113,30 +2154,32 @@
       animation-duration: 3s;
       /* animation-iteration-count: 1; */
   }
-  
+
   @keyframes slide {
       100% {
           background-position: 0 0;
       }
+
       0% {
           background-position: -10px -800px;
       }
   }
-  
+
   @media screen and (max-width: 767px) {
       .success-contant {
           padding: 20px;
       }
   }
-  
+
   .form-switch .form-check-input {
       width: 38px;
       border-radius: 2rem !important;
   }
-  
+
   button.btn-success.btn-successsmaall {
       width: 120px;
   }
+
   /* new update 18sep open */
   .bordertop {
       border: 1px solid #ccc;
@@ -2144,14 +2187,15 @@
       top: 62px;
       width: 100%;
   }
+
   /* new update 18sep close */
-  
+
   .leftColHeading.success {
       color: #ffff;
       font-size: 54px;
       font-weight: 700;
   }
-  
+
   .leftcardsuccess {
       margin: auto;
       padding: 100px 30px;
@@ -2159,253 +2203,285 @@
       justify-content: center;
       display: flex;
   }
-  
+
   .completeactive img {
       height: 30px;
       width: 30px;
   }
-  
+
   .circleimg {
       height: 30px;
       width: 30px;
       background: #F4F7FA;
       border-radius: 100%;
   }
-  
+
   .circleimg.cmpltsvg svg {
       display: none;
   }
-  
+
   .cmpltsvg {
       background: #C1EFC3 !important;
   }
 
 
   @media only screen and (min-width: 992px) and (max-width: 1600px) {
-    body {zoom: 90%;}
-} 
-.panmobilefix .modal-backdrop {
+      body {
+          zoom: 90%;
+      }
+  }
+
+  .panmobilefix .modal-backdrop {
+
+      width: 100%;
+      height: 100%;
+  }
+
+  .btn-secondary-dropdown {
+      padding: 10px 10px;
+      background: #F4F7FA;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      color: #4B4C4D;
+  }
+
+  .footertextparent-for-mobile {
+      display: none;
+  }
   
-    width: 100%;
-    height: 100%;
-}
+ /*-----------------------25sept 2023--------------------*/
 
-.btn-secondary-dropdown {
-    padding: 10px 10px;
-    background: #F4F7FA;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    color: #4B4C4D;
-}
+  @media only screen and (min-width: 320px) and (max-width: 991px) {
 
-.footertextparent-for-mobile {
-    display: none;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 991px) {
-    /* footer {
+      /* footer {
       display: none;
   } */
-    .card {
-        border-radius: 0px;
-        box-shadow: none;
-    }
-    .footertextparent {
-        display: none;
-    }
-    .footertextparent-for-mobile {
-        display: block;
-    }
-    .footertext {
-        padding: 0 1rem 0 1rem;
-    }
-    .footertext-Privacy span {
-        color: #E4415B;
-    }
-    .footertext-cin {
-        font-size: 10px;
-    }
-    .footertext-cin h6 {
-        font-size: 8px;
-        color: 00000;
-    }
-    .footerDiv {
-        background: #F4F7FA;
-        padding: 10px 0 5px 0;
-    }
-    .footertext {
-        margin-top: 0px;
-    }
-    .container,
-    .container-md,
-    .container-sm {
-        max-width: 100%;
-        margin: 0px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-}
+      .card {
+          border-radius: 0px;
+          box-shadow: none;
+      }
 
+      .footertextparent {
+          display: none;
+      }
 
-@media only screen and (max-width: 768px) {
-   
-   
-    .container, .container-md, .container-sm {
-        max-width: 100%;
-        margin: 0px;
-        padding-top: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-    }
-}
+      .footertextparent-for-mobile {
+          display: block;
+      }
 
+      .footertext {
+          padding: 0 1rem 0 1rem;
+      }
 
-.tabbar {
-    position: relative;
-}
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-   
-    .tabbar::before {
-        content: "";
-        width: 64%;
-        border: 1px solid #353334;
-        position: absolute;
-        top: 54px;
-        left: 18%;
-    }
-}
+      .footertext-Privacy span {
+          color: #E4415B;
+      }
 
-@media only screen and (min-width: 576px) and (max-width: 991px) {
-    .tabbar::before {
-        content: "";
-        width: 64%;
-        border: 1px solid #353334;
-        position: absolute;
-        top: 54px;
-        left: 18%;
-    }
+      .footertext-cin {
+          font-size: 10px;
+      }
 
-}
+      .footertext-cin h6 {
+          font-size: 8px;
+          color: 00000;
+      }
 
-.circleimg {
-    height: 30px;
-    width: 30px;
-}
+      .footerDiv {
+          background: #F4F7FA;
+          padding: 10px 0 5px 0;
+      }
 
-.reviewCardbadge {
-    background-color: #626567;
-    padding: 3px 10px;
-    border-radius: 4px;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 600;
-    width: auto;
-}
+      .footertext {
+          margin-top: 0px;
+      }
 
-/* //////18-sep new update////// */
-
-.inner-scroll {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 80vh;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
+      .container,
+      .container-md,
+      .container-sm {
+          max-width: 100%;
+          margin: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+      }
   }
-  
+
+
+  @media only screen and (max-width: 768px) {
+
+
+      .container,
+      .container-md,
+      .container-sm {
+          max-width: 100%;
+          margin: 0px;
+          padding-top: 0px;
+          padding: 0px;
+          overflow-x: hidden;
+      }
+  }
+
+
+  .tabbar {
+      position: relative;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 575px) {
+
+      .tabbar::before {
+          content: "";
+          width: 64%;
+          border: 1px solid #353334;
+          position: absolute;
+          top: 54px;
+          left: 18%;
+      }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 991px) {
+      .tabbar::before {
+          content: "";
+          width: 64%;
+          border: 1px solid #353334;
+          position: absolute;
+          top: 54px;
+          left: 18%;
+      }
+
+  }
+
+  .circleimg {
+      height: 30px;
+      width: 30px;
+  }
+
+  .reviewCardbadge {
+      background-color: #626567;
+      padding: 3px 10px;
+      border-radius: 4px;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 600;
+      width: auto;
+  }
+
+  /* //////18-sep new update////// */
+
+  .inner-scroll {
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 80vh;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+
   /* Track */
   .inner-scroll::-webkit-scrollbar-track {
-    background: transparent; 
+      background: transparent;
   }
-   
+
   /* Handle */
   .inner-scroll::-webkit-scrollbar-thumb {
-    background:transparent; 
+      background: transparent;
   }
-  
+
   /* Handle on hover */
   .inner-scroll::-webkit-scrollbar-thumb:hover {
-    background: #ccc; 
+      background: #ccc;
   }
 
-body {
-    overflow: hidden;
-}
-@media only screen and (min-width: 992px) and (max-width: 1399px) {
-    .leftcard-contant h1 {
-        font-size: 50px ;
-        line-height: 48px;
-    }
-    .leftcard_investment {
-        padding: 25.5px 30px 0px;
-    }
+  body {
+      overflow: hidden;
+  }
 
-    .appliedContainer {
-        margin-bottom: 0px;
-    }
-    .table {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .appliedSection {
-        padding-top: 10px;
-        padding-bottom: 0px;
-    }
-    
-    .table tbody tr td {
-        padding: 10px 10px 5px 10px;
-        line-height: 20px;
-    }
-    .inner-scroll {
-        height: 84vh;
-    }
-    
-    .fixed_deposit_data {
-        font-size: 50px;
-        line-height: 40px;
-    }
-    .circle-data {
-        margin-bottom: 0px !important;
-    }
-    .card_second_content {
-        font-size: 30px;
-    }
-    .easy-step {
-        font-size: 35px;
-        line-height: 40px;
-    }
-    .check_kyc_data {
-        margin-top: 70px;
-    }
-    .img_div {
-        margin-top: -102px;
-    }
-    .img-div {
-        top: -19px;
-        right: -17px;
-    }
-    .fixed-deposit-data {
-        width: auto !important;
-    }
-}
+  @media only screen and (min-width: 992px) and (max-width: 1399px) {
+      .leftcard-contant h1 {
+          font-size: 50px;
+          line-height: 48px;
+      }
 
-@media only screen and (max-width: 991px) {
-body {
-    overflow: auto;
-}
-.inner-scroll {
-    overflow-x: unset;
-    overflow-y: unset;
-    height: unset;
-}
-}
+      .leftcard_investment {
+          padding: 25.5px 30px 0px;
+      }
 
-.newlogo {
-    margin-left: 20px;
-}
-.newlogo img {
-    width: 100%;
-    height: auto;
-}
+      .appliedContainer {
+          margin-bottom: 0px;
+      }
+
+      .table {
+          margin-top: 0px;
+          margin-bottom: 0px;
+      }
+
+      .appliedSection {
+          padding-top: 10px;
+          padding-bottom: 0px;
+      }
+
+      .table tbody tr td {
+          padding: 10px 10px 5px 10px;
+          line-height: 20px;
+      }
+
+      .inner-scroll {
+          height: 84vh;
+      }
+
+      .fixed_deposit_data {
+          font-size: 50px;
+          line-height: 40px;
+      }
+
+      .circle-data {
+          margin-bottom: 0px !important;
+      }
+
+      .card_second_content {
+          font-size: 30px;
+      }
+
+      .easy-step {
+          font-size: 35px;
+          line-height: 40px;
+      }
+
+      .check_kyc_data {
+          margin-top: 70px;
+      }
+
+      .img_div {
+          margin-top: -102px;
+      }
+
+      .img-div {
+          top: -19px;
+          right: -17px;
+      }
+
+      .fixed-deposit-data {
+          width: auto !important;
+      }
+  }
+
+  @media only screen and (max-width: 991px) {
+      body {
+          overflow: auto;
+      }
+
+      .inner-scroll {
+          overflow-x: unset;
+          overflow-y: unset;
+          height: unset;
+      }
+  }
+
+  .newlogo {
+      margin-left: 20px;
+  }
+
+  .newlogo img {
+      width: 100%;
+      height: auto;
+  }

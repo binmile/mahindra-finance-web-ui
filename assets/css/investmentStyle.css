@@ -442,6 +442,8 @@
                padding: 0px 30px;
            }
        }
+
+       /*-----------------------25sept 2023--------------------*/
        /* investment mobile responsive screen 767 - screen down all */
        @media only screen and (max-width: 767px) {
            .main-text-button-div {
