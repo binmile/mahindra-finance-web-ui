@@ -217,7 +217,20 @@ function generateOtp() {
         err_PANnumber.textContent = "";
     }
 }
+//backRedirect
 
+function backClick() {
+    if (document.getElementById('invstment')) {
+        if (document.getElementById('invstment').style.display == 'block') {
+            document.getElementById('invstment').style.display = 'none';
+            document.getElementById('additionalDetailParent').style.display = 'block';
+        } else {
+            document.getElementById('invstment').style.display = 'block';
+            document.getElementById('additionalDetailParent').style.display = 'none';
+        }
+    }
+
+}
 // validation on addtional page on kyc button
 function KYC_registery() {
     var nomineeName = document.getElementById("nomineeName").value;

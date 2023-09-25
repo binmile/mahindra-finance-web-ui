@@ -542,43 +542,84 @@
                                             </div>
                                         </div>
                                         <div class="addHolder_radio_investment">
-                                            <div class="col-11 col-md-6 col-lg-5 col-sm-10">
-                                                <label for="" class="form-label"> Would you like to add a joint account
-                                                    holder?</label>
+                                            <div class="col-9 col-md-9 col-lg-9 col-sm-10">
+                                                <div class="investment_renewal_tooltip_warpper ">
+                                                    <label for="" class="form-label"> Select renewal for </label>
+                                                    <div class="tooltipContainer">
+                                                        <span class="tooltipMain formobile-tooltip">
+                                                            <img class="AlertImg" src="./assets/icons/alert.svg" alt="alert" />
+                                                                <div class="tooltipContent">
+                                                                    <div class="tooltipHeader tooltipHeader_invester">
+                                                                        Auto renewal</div>
+                                                                    <div class="tooltipText tooltipText_invester">
+                                                                        <ul>
+                                                                            <li>
+                                                                                Tenure & interest payout would be same
+                                                                                as
+                                                                                your current FD
+                                                                                scheme.
+                                                                            </li>
+                                                                            <li>
+                                                                                Interest rate of renewed FD will depend
+                                                                                on
+                                                                                the day of
+                                                                                renewal.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                    </div>
+                                                </div>
+
                                                 <div class="btn-group  jointAccount_Button_container" id="accountholder_invester">
-                                                    <label class="btn button_label set-1 yesNo_button_invester active" id="elementoption21">
-                                                        <input class="checkbox_button" type="radio"
+                                                    <label class="btn button_label set-principal yesNo_button_invester-data active" id="elementoption21">
+                                                        <input class="checkbox_button_principal" type="radio"
                                                             data-tenures="elementoption21" name="type1"
-                                                            value="elementoption21" autocomplete="off" checked> No
+                                                            value="elementoption21" autocomplete="off" checked> 
+                                                            <span class="principal-data">Principal</span>
                                                     </label>
-                                                    <label class="btn button_label yesNo_button_invester" id="elementoption22">
-                                                        <input type="radio" class="checkbox_button" name="type1"
+                                                    <label class="btn button_label yesNo_button_invester-data" id="elementoption22">
+                                                        <input type="radio" class=" checkbox_button_principal" name="type1"
                                                             data-tenures="elementoption22" value="elementoption22"
                                                             autocomplete="off">
-                                                        Yes
+                                                          <span class="principal-data">Principal + Interest</span>
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="jointSwitch_container_investment1">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input toggle_investment" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
-                                                <label class="form-check-label togle_lable_investment" for="flexSwitchCheckDefault">
-                 <!-- ////changes on 1sep open//// -->
-                                                    Are you/joint holder a tax resident of a country other than India?</label>
+                                        <div class="switch-container">
+                                            <div class="jointSwitch_container_investment1">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input toggle_investment" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
+                                                    <label class="form-check-label togle_lable_investment" for="flexSwitchCheckDefault">
+                     <!-- ////changes on 1sep open//// -->
+                                                        Are you/joint holder a tax resident of a country other than India?</label>
+                                                </div>
+                                                <!-- ////changes on 1sep close//// -->
                                             </div>
-                                            <!-- ////changes on 1sep close//// -->
-                                        </div>
-                                        <div class="jointSwitch_container_investment2">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input toggle_investment " type="checkbox" role="switch" id="flexSwitchCheckDefault2">
-                                                <!-- ////changes on 1sep open//// -->
-                                                <label class="form-check-label togle_lable_investment" for="flexSwitchCheckDefault">
-                                                    Are you/joint holder a green card holder?</label>
+                                            <div class="jointSwitch_container_investment2">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input toggle_investment " type="checkbox" role="switch" id="flexSwitchCheckDefault2">
+                                                    <!-- ////changes on 1sep open//// -->
+                                                    <label class="form-check-label togle_lable_investment" for="flexSwitchCheckDefault">
+                                                        Are you/joint holder a green card holder?</label>
+                                                </div>
+                                                <!-- ////changes on 1sep close//// -->
                                             </div>
-                                            <!-- ////changes on 1sep close//// -->
+
                                         </div>
                                         <div class="Continue_button_container">
+                                            <div class="col-12 col-md-12 col-lg-12 col-sm-12 MMFSLcontainer MMFsl_investment_cont">
+                                                <div class="check-investement">
+                                                    <input class="form-check-input inputPan" type="checkbox" value="" id="flexCheckDefault">
+
+                                                    <p class="message_label message_invest">
+                                                        I/We hereby declare that KYC documents and address provided initially at the time of placing the investment linked to my folio number has not changed and is same.
+                                                    </p>
+                                                </div>
+
+                                            </div>
                                             <div class=" col-12 col-md-5 col-lg-5 col-sm-12">
                                                 <div class="">
                                                     <button type="button" id='reviewContinueButton' class="btn btn-danger  continue_button_investment" onclick="validate_continue()">
@@ -620,7 +661,7 @@
                                                 <!--  /* 20 sept 2023 investement-new-features-added */-->
                                                 <div class="col-md-6 col-sm-12" id="addnewdrop">
                                                     <div class=" drop-investment-field">
-                                                        <label for="exampMobile" class="form-label kycLabel">Quick select</label>
+                                                        <label for="exampMobile" class="form-label kycLabel">Select joint account holder</label>
                                                         <select id="accountNew" class="form-select kycDropDown">
                                                             <option value="" disabled hidden selected>Select</option>
                                                             <option value="new">Add New</option>
@@ -749,25 +790,40 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="">
-                                                <div class="col-12 col-md-9 col-lg-9 col-sm-12 MMFSLcontainer MMFsl_investment_cont">
+                                            <div class=" main-text-button-div">
+
+                                                <div class="col-12 col-md-12 col-lg-12 col-sm-12 MMFSLcontainer MMFsl_investment_cont">
                                                     <p class="message_label">
                                                         By proceeding you consent to MMFSL to use your KYC details from the CKYC registry/Digilocker to book a fixed deposit
                                                     </p>
                                                 </div>
-                                            </div>
-                                            <!-- ////changes on 1sep open//// -->
-                                            <div class="Continue_button_container_investment">
-                                                <div class=" col-12 col-md-6 col-lg-6 col-sm-12 ">
-                                                    <div class="bottomfix">
-                                                        <button type="button" class="btn btn-danger kyc_button_investment" onclick="KYC_registery()">
-                                                            Get KYC from CKYC registry
-                                                            <img alt="arrow" src="./assets/Image/CTA_arrow.svg"
-                                                                class="img_tag" />
-                                                        </button>
+
+                                                <!-- ////changes on 1sep open//// -->
+                                                <div class="row Continue_button_container_investment">
+                                                    <div class="col-12 col-md-3">
+                                                        <div class="bottomfix">
+                                                            <button type="button" class="btn btn-danger kyc_button_investment-back" onclick="backClick()">
+                                                                <img alt="arrow" src="./assets/Image/back-icon.svg"
+                                                                    class="img_tag" />
+                                                              
+                                                                Back
+                                                              
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-5">
+                                                        <div class="bottomfix">
+                                                            <button type="button" class="btn btn-danger kyc_button_investment" onclick="KYC_registery()">
+                                                                <!-- Get KYC from CKYC registry -->
+                                                                Continue
+                                                                <img alt="arrow" src="./assets/Image/CTA_arrow.svg"
+                                                                    class="img_tag" />
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <!-- ////changes on 1sep close//// -->
                                         </div>
                                     </div>
