@@ -2372,7 +2372,7 @@
 .inner-scroll {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 80vh;
+    height: 90vh;
 }
 
 /* width */
