@@ -723,6 +723,10 @@
   }
   
   @media screen and (max-width: 767px) {
+
+    .Continue_button_container {
+        margin-bottom: 40px !important;
+    }
       .main_left_div {
           padding: 0;
       }
