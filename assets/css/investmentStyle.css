@@ -5,7 +5,6 @@
        .mobile_investment {
            display: none;
        }
-
        .desktop_investment {
            display: flex;
        }
@@ -13,13 +12,20 @@
        .logoImgContainer {
            padding-left: 18px;
        }
-.mobile_investment_logo{
-  
-}
+
+       .mobile_investment_logo {}
+
        .Investment_radio_hide {
            display: none;
        }
 
+
+ /* new update 26sep inner-scrollinf-left-side */
+       .scrolling-left-side{
+         height:45vh;
+         overflow: auto;
+
+       }
        /* new update 18sep */
        .leftcard_investment {
            margin: auto;
@@ -201,7 +207,7 @@
 
        .MMFsl_investment_cont {
            margin-top: 0px;
-           margin-bottom: 10px;
+           margin-bottom: 20px;
        }
 
        .Continue_button_container_investment {
@@ -347,7 +353,7 @@
        .kyc_button_investment-back {
            padding-top: 20px;
            display: flex;
-           justify-content: space-between;
+           justify-content:initial;
            align-items: center;
            gap: 15px;
            padding: 10px;
@@ -547,6 +553,14 @@
        @media only screen and (max-width: 767px) {
            .main-text-button-div {
                margin-top: 0 !important;
+           }
+           .scrolling-left-side{
+            height:auto;
+            overflow: unset;
+   
+          }
+           .kyc_button_investment-back {
+               justify-content: space-between;
            }
 
            .accountHolderYessNo_investment {
