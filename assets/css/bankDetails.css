@@ -518,9 +518,12 @@ input[type='checkbox'] {
         height: auto
     }
     .stampImgContainer {
-        right: 10px;
-        top: 50px;
+        right: -10px;
+        top: 20px;
         width: auto;
+    }
+    .logoImgContainer{
+        width: 250px;
     }
     .kycdetail {
         border-top-left-radius: 0px
