@@ -5,7 +5,6 @@
        .mobile_investment {
            display: none;
        }
-
        .desktop_investment {
            display: flex;
        }
@@ -20,6 +19,13 @@
            display: none;
        }
 
+
+ /* new update 26sep inner-scrollinf-left-side */
+       .scrolling-left-side{
+         height:45vh;
+         overflow: auto;
+
+       }
        /* new update 18sep */
        .leftcard_investment {
            margin: auto;
@@ -548,7 +554,11 @@
            .main-text-button-div {
                margin-top: 0 !important;
            }
-
+           .scrolling-left-side{
+            height:auto;
+            overflow: unset;
+   
+          }
            .kyc_button_investment-back {
                justify-content: space-between;
            }
