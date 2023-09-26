@@ -2475,4 +2475,9 @@ body {
     height: auto;
 }
 
-
+@media only screen and (max-width: 1400px) {
+.inner-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 80vh;
+}}
