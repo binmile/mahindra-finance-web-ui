@@ -2,10 +2,21 @@
 .starcontainer {
   display: flex;
   justify-content: center;
-  margin-bottom: 109px;
+  margin-bottom: 20px;
+}
+textarea#w3review {
+  color: #ccc;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #8C989F;
+  border-radius: 6px;
+}
+img.successback {
+  padding-right: 6px;
 }
 .custome-wrapper {
   text-align: center;
+  margin-top: 60px;
 }
 .star-container.inactive {
   padding:  20px 5px;
@@ -302,4 +313,46 @@
   display: flex;
   text-align: center;
   justify-content: center;
+}
+button.btn-back {
+  height: 37px;
+  width: 78px;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+}
+.bottomfix {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.custome-wrapper h4 {
+  font-size: 18px;
+}
+
+
+@media screen and (max-width:767px){
+  button.btn-back {
+    width: 304px;
+}
+
+footer.footerDiv {
+  display: none;
+}
+.bottomfix {
+  padding: 20px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  position: absolute;
+  bottom: 0px;
+  justify-content: center;
+}
+.success-submit {
+  padding-bottom: 35px;
+}
+.btn-success {
+  margin-bottom: 20px;
+}
 }
