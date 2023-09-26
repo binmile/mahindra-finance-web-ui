@@ -2477,7 +2477,6 @@ body {
 
 @media only screen and (min-width: 1400px) {
 .inner-scroll {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 80vh;
+  
+    height: 80vh !important;
 }}
