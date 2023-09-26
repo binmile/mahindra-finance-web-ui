@@ -593,11 +593,12 @@
   .paymentContent:hover {
       font-weight: 600;
   }
-
   .logoImgContainer {
-      width: 318px;
-  }
-
+    margin-left: 20px;
+    width: 318px;
+    margin-top: 16px;
+    margin-bottom: 13px;
+}
   .logoImg {
       border-top-left-radius: 20px;
       position: relative;

@@ -356,3 +356,38 @@ footer.footerDiv {
   margin-bottom: 20px;
 }
 }
+.stamonmob {
+  position: relative;
+}
+.stampsec {
+  position: absolute;
+  right: 20px;
+  top: -40px;
+  width: 54px;
+  height: auto;
+}
+.stampsec img {
+ 
+  width: 54px;
+  height: auto;
+}
+
+.success-contant {
+  height: 85vh;
+  overflow: auto;
+}
+@media screen and (min-width:992px){
+  .stampsec img {
+ 
+    width: 100%;
+    height: auto;
+  }
+  .stampsec {
+    position: absolute;
+    right: 20px;
+    top: -40px;
+    width: 134px;
+    height: auto;
+  }
+
+}
