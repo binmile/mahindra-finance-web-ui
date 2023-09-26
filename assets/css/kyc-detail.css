@@ -10,7 +10,7 @@
                         text-align-last: start;
                         background-color: black;
                         background-image: url("../Image/blur.png"), url('../Image/about_img.png');
-                        border-radius: 20px 0px 0px 0px;
+                        border-radius: 20px 0px 0px 20px;
                         overflow: hidden;
                         background-repeat: no-repeat;
                         background-size: cover;
