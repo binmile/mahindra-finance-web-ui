@@ -514,12 +514,12 @@ input[type='checkbox'] {
         padding: 10px;
     }
     .stampImg {
-        width: 60%;
+        width: 52%;
         height: auto
     }
     .stampImgContainer {
-        right: 10px;
-        top: 50px;
+        right: -17px;
+        top: 15px;
         width: auto;
     }
     .kycdetail {
@@ -582,6 +582,10 @@ input[type='checkbox'] {
      }
      #paymentMethod {
         margin-bottom: 20px;
+    }
+    .logoImgContainer {
+        width: 285px;
+        height: 75px;
     }
 }
 
