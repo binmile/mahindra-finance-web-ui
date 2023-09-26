@@ -4,10 +4,12 @@ input[type='checkbox'] {
     height: 20px;
     border-radius: 4px !important;
 }
-
+/*//////26-sep new update  new style//////*/
 .continueButtonEnable {
     margin-bottom: 20px;
-    width: 304px;
+}
+.bank-details-disabled-button.disabled:not(:disabled) {
+    width: 100%;
 }
 
 .maincom {
@@ -17,9 +19,7 @@ input[type='checkbox'] {
 
 .bank-details-disabled-button{
     font-weight: bold;
-    width: 304px;
 }
-
 .bank-details-disabled-button.disabled img {
     -webkit-filter: brightness(0.7) invert(0);
     filter: brightness(0.7) invert(0);
@@ -464,18 +464,9 @@ input[type='checkbox'] {
     display: none;
 }
 /*//////22-sep new update  new style//////*/
-.buttonContainer{
-   display: flex;
-}
-
-.backButton{
-    display: flex;
- }
-
  .backButton {
     display: flex;
-    /* justify-content: space-between; */
-    width: 132px;
+    /* width: 132px; */
     padding: 12px;
     text-align: center;
     align-items: center;
@@ -499,9 +490,6 @@ input[type='checkbox'] {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 567px) {
-    .backButton{
-        width: 132px
-     }
     .custome-d-flex {
         display: block !important;
     }
@@ -581,18 +569,19 @@ input[type='checkbox'] {
     .reviewCardTandC {
         font-size: 10px;
     }
-    #paymentMethod {
-        justify-content: space-between;
-    }
-    .bank-details-disabled-button.disabled:not(:disabled) {
-        width: 100%;
-    }
     .review_modal_close_icon_TandC {
         margin-left: 91.5%;
         margin-top: 4.7%;
     }
     .review_button_section_TandC {
         bottom: 0;
+    }
+     /*//////26-sep new update  new style//////*/
+     .backButton{
+        justify-content: space-between;
+     }
+     #paymentMethod {
+        margin-bottom: 20px;
     }
 }
 
@@ -666,9 +655,13 @@ input[type='checkbox'] {
     .reviewCardTandC {
         font-size: 13px;
     }
-    .bank-details-disabled-button.disabled:not(:disabled) {
-        width: 100%;
+     /*//////26-sep new update  new style//////*/
+    #paymentMethod {
+        margin-bottom: 20px;
     }
+    .backButton{
+        justify-content: space-between;
+     }
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1399px) {
