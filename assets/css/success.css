@@ -242,6 +242,8 @@ img.successback {
     .paragraphheading p {
         font-size: 16px;
     }
+    /* 27sept 2023 new-update */
+
     .cardparent::-webkit-scrollbar{
         display: none;
       }
