@@ -20,7 +20,7 @@
        }
 
 
- /* new update 26sep inner-scrollinf-left-side */
+ /* new update 27sep 2023 new-update inner-scrollinf-left-side */
        .scrolling-left-side{
          height:45vh;
          overflow: auto;
@@ -548,7 +548,7 @@
            }
        }
 
-       /*-----------------------25sept 2023--------------------*/
+       /*-----------------------27sept 2023 new-update--------------------*/
        /* investment mobile responsive screen 767 - screen down all */
        @media only screen and (max-width: 767px) {
            .main-text-button-div {

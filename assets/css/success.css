@@ -338,6 +338,10 @@ button.btn-back {
   button.btn-back {
     width: 304px;
 }
+.success-contant {
+  height: auto !important;
+  overflow: hidden !important;
+}
 
 footer.footerDiv {
   display: none;
@@ -345,9 +349,11 @@ footer.footerDiv {
 .bottomfix {
   padding: 20px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   justify-content: center;
+  z-index: 999;
+  background: #fff;
 }
 .success-submit {
   padding-bottom: 35px;
@@ -355,4 +361,39 @@ footer.footerDiv {
 .btn-success {
   margin-bottom: 20px;
 }
+}
+.stamonmob {
+  position: relative;
+}
+.stampsec {
+  position: absolute;
+  right: 20px;
+  top: -40px;
+  width: 54px;
+  height: auto;
+}
+.stampsec img {
+ 
+  width: 54px;
+  height: auto;
+}
+
+.success-contant {
+  height: 85vh;
+  overflow: auto;
+}
+@media screen and (min-width:992px){
+  .stampsec img {
+ 
+    width: 100%;
+    height: auto;
+  }
+  .stampsec {
+    position: absolute;
+    right: 20px;
+    top: -40px;
+    width: 134px;
+    height: auto;
+  }
+
 }

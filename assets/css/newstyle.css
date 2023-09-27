@@ -593,11 +593,12 @@
   .paymentContent:hover {
       font-weight: 600;
   }
-
   .logoImgContainer {
-      width: 318px;
-  }
-
+    margin-left: 20px;
+    width: 318px;
+    margin-top: 16px;
+    margin-bottom: 13px;
+}
   .logoImg {
       border-top-left-radius: 20px;
       position: relative;
@@ -724,7 +725,7 @@
       justify-content: center;
   }
 
-  /*-----------------------25sept 2023--------------------*/
+  /*-----------------------27sept 2023--new-update------------------*/
 
   @media screen and (max-width: 767px) {
 
@@ -2264,10 +2265,9 @@
       display: none;
   }
 
-  /*-----------------------25sept 2023--------------------*/
+  /*-----------------------27sept 2023--new-update------------------*/
 
   @media only screen and (min-width: 320px) and (max-width: 991px) {
-
       /* footer {
       display: none;
   } */
@@ -2475,7 +2475,8 @@ body {
     height: auto;
 }
 
-      
+/*-----------------------27sept 2023--new-update------------------*/
+  
 @media only screen and (min-width: 1400px) {
 .inner-scroll {
     height: 80vh !important;

@@ -4,7 +4,7 @@ input[type='checkbox'] {
     height: 20px;
     border-radius: 4px !important;
 }
-/*//////26-sep new update  new style//////*/
+ /*//////27-sep new update  new style//////*/
 .continueButtonEnable {
     margin-bottom: 20px;
 }
@@ -433,7 +433,7 @@ input[type='checkbox'] {
 }
 
 
-/*//////20-sep new update  new style//////*/
+ /*//////27-sep new update  new style//////*/
 
 .kycDropDown {
     padding: 8px;
@@ -463,10 +463,9 @@ input[type='checkbox'] {
 .kycDropDown option[value=""][disabled] {
     display: none;
 }
-/*//////22-sep new update  new style//////*/
+ /*//////27-sep new update  new style//////*/
  .backButton {
     display: flex;
-    /* width: 132px; */
     padding: 12px;
     text-align: center;
     align-items: center;
@@ -576,9 +575,10 @@ input[type='checkbox'] {
     .review_button_section_TandC {
         bottom: 0;
     }
-     /*//////26-sep new update  new style//////*/
+     /*//////27-sep new update  new style//////*/
      .backButton{
         justify-content: space-between;
+        padding: 8px;
      }
      #paymentMethod {
         margin-bottom: 20px;
@@ -586,6 +586,12 @@ input[type='checkbox'] {
     .logoImgContainer {
         width: 285px;
         height: 75px;
+    }
+    .continueButtonEnable{
+        padding: 8px;
+    }
+    .bank-details-disabled-button.disabled:not(:disabled) {
+        padding: 8px;
     }
 }
 
@@ -659,7 +665,7 @@ input[type='checkbox'] {
     .reviewCardTandC {
         font-size: 13px;
     }
-     /*//////26-sep new update  new style//////*/
+    /*//////27-sep new update  new style//////*/
     #paymentMethod {
         margin-bottom: 20px;
     }
