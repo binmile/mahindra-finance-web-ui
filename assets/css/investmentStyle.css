@@ -519,6 +519,26 @@
            border-color: unset !important;
        }
 
+
+
+       /*-----------------------27sept 2023 new-update--------------------*/
+
+       @media only screen and (min-width: 992px) and (max-width: 1900px) {
+           .main-text-button-div {
+               margin-top: 45px;
+
+           }
+
+           .scrolling-left-side {
+               height: 30vh;
+           }
+
+           .scroll-for-right-side {
+               height: 82vh !important;
+           }
+
+       }
+
        @media only screen and (max-width: 1199px) {
            .tooltipContainer .tooltipContent {
                width: 240px;
@@ -530,7 +550,7 @@
        }
 
        /* investment mobile responsive screen 992 */
-       @media only screen and (min-width:992p) {
+       @media only screen and (min-width:992px) {
            .desktop_investment {
                display: flex;
            }
