@@ -130,7 +130,7 @@ function redirectPage() {
         }
     }
 }
-/* 20 sept 2023 investement-new-features-added */
+/* 27 sept 2023 new-update investement-new-features-added */
 
 function show1() {
     document.getElementById('div1').style.display = 'block';
@@ -138,7 +138,7 @@ function show1() {
 
 
 }
-/* 20 sept 2023 investement-new-features-added */
+/* 27 sept 2023 new-update investement-new-features-added */
 
 function show2() {
     document.getElementById('div1').style.display = 'none';
