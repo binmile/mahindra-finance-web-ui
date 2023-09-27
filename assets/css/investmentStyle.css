@@ -5,6 +5,7 @@
        .mobile_investment {
            display: none;
        }
+
        .desktop_investment {
            display: flex;
        }
@@ -20,12 +21,13 @@
        }
 
 
- /* new update 27sep 2023 new-update inner-scrollinf-left-side */
-       .scrolling-left-side{
-         height:45vh;
-         overflow: auto;
+       /* new update 27sep 2023 new-update inner-scrollinf-left-side */
+       .scrolling-left-side {
+           height: 45vh;
+           overflow: auto;
 
        }
+
        /* new update 18sep */
        .leftcard_investment {
            margin: auto;
@@ -319,7 +321,7 @@
        }
 
        .OTP_button_investment {
-           padding: 12px 21px 12px 21px;
+           height: 44px;
            font-size: 14px;
            font-weight: 700;
            color: #ffffff;
@@ -353,7 +355,7 @@
        .kyc_button_investment-back {
            padding-top: 20px;
            display: flex;
-           justify-content:initial;
+           justify-content: initial;
            align-items: center;
            gap: 15px;
            padding: 10px;
@@ -554,11 +556,13 @@
            .main-text-button-div {
                margin-top: 0 !important;
            }
-           .scrolling-left-side{
-            height:auto;
-            overflow: unset;
-   
-          }
+
+           .scrolling-left-side {
+               height: auto;
+               overflow: unset;
+
+           }
+
            .kyc_button_investment-back {
                justify-content: space-between;
            }
@@ -1186,6 +1190,3 @@
                display: block;
            }
        }
-
-
-       
