@@ -42,7 +42,7 @@ input[type='checkbox'] {
 
 .stampImgContainer {
     right: 40px;
-    top: 90px;
+    top: 70px;
     width: auto;
 }
 
@@ -432,6 +432,16 @@ input[type='checkbox'] {
     margin-bottom: 0px
 }
 
+.stampImg {
+    width: 100%;
+    height: auto
+}
+.stampImgContainer {
+    right: 30px;
+    top: 50px;
+    width: 134px;
+}
+
 
  /*//////27-sep new update  new style//////*/
 
@@ -513,12 +523,12 @@ input[type='checkbox'] {
         padding: 10px;
     }
     .stampImg {
-        width: 52%;
+        width: 54px;
         height: auto
     }
     .stampImgContainer {
-        right: -17px;
-        top: 15px;
+        right: 17px;
+        top: 18px;
         width: auto;
     }
     .kycdetail {
@@ -578,20 +588,22 @@ input[type='checkbox'] {
      /*//////27-sep new update  new style//////*/
      .backButton{
         justify-content: space-between;
-        padding: 8px;
+        padding: 10px;
      }
      #paymentMethod {
         margin-bottom: 20px;
     }
     .logoImgContainer {
-        width: 285px;
-        height: 75px;
+        margin-left: 20px;
+        width: 18px;
+        margin-top: 16px;
+        margin-bottom: 13px
     }
     .continueButtonEnable{
-        padding: 8px;
+        padding: 10px;
     }
     .bank-details-disabled-button.disabled:not(:disabled) {
-        padding: 8px;
+        padding: 10px;
     }
 }
 
@@ -620,13 +632,13 @@ input[type='checkbox'] {
         padding: 10px;
     }
     .stampImg {
-        width: 80%;
+        width: 100%;
         height: auto
     }
     .stampImgContainer {
         right: 30px;
         top: 40px;
-        width: auto;
+        width: 85px;
     }
     .leftcard-content {
         padding-top: 0px;
@@ -694,5 +706,14 @@ input[type='checkbox'] {
     }
     .reviewCardSmallContent {
         font-size: 12px;
+    }
+    .stampImg {
+        width: 100%;
+        height: auto
+    }
+    .stampImgContainer {
+        right: 30px;
+        top: 30px;
+        width: 134px;
     }
 }

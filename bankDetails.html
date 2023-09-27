@@ -30,7 +30,7 @@
                 <div class="col-md-12 col-lg-5 col-sm-12 custome-d-flex">
                     <div class="leftside bankDetailsLeftSide" id="bankdetailsPageLeftside">
                         <div class="logoImgContainer">
-                            <img src="./assets/Image/Branding.png" alt="brand image" class="logoImg" />
+                            <img src="./assets/Image/new_logo.svg" alt="brand image" />
                         </div>
                         <div class="stampImgContainer">
                             <img src="./assets/Image/Highest Safety Stamp.png" alt="brand image" class="stampImg" />
@@ -45,7 +45,9 @@
                         </div>
                     </div>
                     <div class="leftside bankDetailsLeftSide" id="reviewYourApplicationPageLeftside">
-                        
+                        <div class="logoImgContainer">
+                            <img src="./assets/Image/new_logo.svg" alt="brand image" />
+                        </div>
                         <div class="stampImgContainer">
                             <img src="./assets/Image/Highest Safety Stamp.png" alt="brand image" class="stampImg" />
                         </div>
@@ -741,6 +743,8 @@
         function backButtontwoAction() {
             $("#bankdetailsPageRightside").css('display', 'none');
             document.getElementById("reviewYourApplicationPageRightside").style.display = "block";
+            document.getElementById("reviewYourApplicationPageLeftside").style.display = "block";
+            document.getElementById("bankdetailsPageLeftside").style.display = "none";
         }
 
         function backButtonthreeAction() {
