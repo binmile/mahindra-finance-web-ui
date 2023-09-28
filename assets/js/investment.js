@@ -13,8 +13,8 @@ function myFun(event) {
     }
 }
 
-$("#tenureEements :input").click(function() {
-    $("#tenureEements :input").each(function() {
+$("#tenureEements :input").click(function () {
+    $("#tenureEements :input").each(function () {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenure');
             $('#' + activeData).addClass('active');
@@ -26,8 +26,8 @@ $("#tenureEements :input").click(function() {
     });
 });
 
-$("#tenureEement :input").click(function() {
-    $("#tenureEement :input").each(function() {
+$("#tenureEement :input").click(function () {
+    $("#tenureEement :input").each(function () {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).addClass('active');
@@ -39,23 +39,8 @@ $("#tenureEement :input").click(function() {
     });
 });
 
-$("#accountholder_invester :input").click(function() {
-    $("#accountholder_invester :input").each(function() {
-        if ($(this).is(":checked")) {
-            var activeData = $(this).attr('data-tenures');
-            $('#' + activeData).addClass('active');
-
-            var result = $(this).val();
-
-        } else {
-            var activeData = $(this).attr('data-tenures');
-            $('#' + activeData).removeClass('active');
-        }
-    });
-});
-
-$("#join_accountholder_invester :input").click(function() {
-    $("#join_accountholder_invester :input").each(function() {
+$("#accountholder_invester :input").click(function () {
+    $("#accountholder_invester :input").each(function () {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).addClass('active');
@@ -69,8 +54,23 @@ $("#join_accountholder_invester :input").click(function() {
     });
 });
 
-$(".nominee_invester :input").click(function() {
-    $(".nominee_invester :input").each(function() {
+$("#join_accountholder_invester :input").click(function () {
+    $("#join_accountholder_invester :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenures');
+            $('#' + activeData).addClass('active');
+
+            var result = $(this).val();
+
+        } else {
+            var activeData = $(this).attr('data-tenures');
+            $('#' + activeData).removeClass('active');
+        }
+    });
+});
+
+$(".nominee_invester :input").click(function () {
+    $(".nominee_invester :input").each(function () {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenures');
             $('#' + activeData).addClass('active');
@@ -113,7 +113,7 @@ function myMaturityButton(e) {
     event.preventDefault();
 }
 
-$('.button_label').click(function() {
+$('.button_label').click(function () {
     $('input:not(:checked)').parent().removeClass("checked");
     $('input:checked').parent().addClass("checked");
 });
@@ -127,9 +127,13 @@ function redirectPage() {
         } else {
             document.getElementById('invstment').style.display = 'none';
             document.getElementById('additionalDetailParent').style.display = 'block';
+
+
+
         }
     }
 }
+
 /* 27 sept 2023 new-update investement-new-features-added */
 
 function show1() {
@@ -166,7 +170,8 @@ function formatAmount(input) {
     input.value = value;
 }
 
-// validation on addtional page on continue button
+//* 28 sept 2023 new-updatead joint scroll-to-top added*/
+
 function validate_continue() {
     var amount = parseInt(document.getElementById("amountNo").value.replace(/,/g, ''));
     if (amount < 10000 || amount > 20000000 || amount === "") {
@@ -179,6 +184,21 @@ function validate_continue() {
         document.getElementById("error_account_number").style.color = "black";
         document.getElementById("amountNo").style.border = "";
         redirectPage();
+        document.getElementById("reviewContinueButton").addEventListener("click", function () {
+            scrollToTop();
+        });
+
+    }
+}
+
+function scrollToTop() {
+    const content = document.querySelector(".investmentParent");
+    if (content) {
+        content.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
     }
 }
 
@@ -197,25 +217,25 @@ function generateOtp() {
         document.getElementById("mobile").style.border = "1px solid red";
         err_mobileNo.textContent = "Please enter a mobile number.";
     } else
-    if (!mobilePattern.test(mobileNumber)) {
-        document.getElementById("mobile").style.border = "1px solid red";
-        err_mobileNo.textContent = "Invalid mobile number.";
-    } else {
-        document.getElementById("mobile").style.border = "";
-        err_mobileNo.textContent = "";
-    }
+        if (!mobilePattern.test(mobileNumber)) {
+            document.getElementById("mobile").style.border = "1px solid red";
+            err_mobileNo.textContent = "Invalid mobile number.";
+        } else {
+            document.getElementById("mobile").style.border = "";
+            err_mobileNo.textContent = "";
+        }
 
     if (panNumber === "") {
         document.getElementById("PAN").style.border = "1px solid red";
-        err_PANnumber.textContent = "Please enter a PAN number.";
+        err_PANnumber.textContent = "Please enter a pan number.";
     } else
-    if (!panPattern.test(panNumber)) {
-        document.getElementById("PAN").style.border = "1px solid red";
-        err_PANnumber.textContent = "Invalid PAN number.";
-    } else {
-        document.getElementById("PAN").style.border = "";
-        err_PANnumber.textContent = "";
-    }
+        if (!panPattern.test(panNumber)) {
+            document.getElementById("PAN").style.border = "1px solid red";
+            err_PANnumber.textContent = "Invalid pan number.";
+        } else {
+            document.getElementById("PAN").style.border = "";
+            err_PANnumber.textContent = "";
+        }
 }
 //backRedirect
 
@@ -231,6 +251,31 @@ function backClick() {
     }
 
 }
+
+/* 27 sept 2023 new-updatead joint account holder if yes then*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accountNew = document.getElementById("accountNew");
+    const mobileInput = document.getElementById("mobile");
+    const panInput = document.getElementById("PAN");
+
+    // Add an event listener to the select dropdown
+    accountNew.addEventListener("change", function () {
+        const selectedOption = accountNew.value;
+        if (selectedOption === "Sudhir Rana") {
+            // Fill the input fields with hardcoded data
+            mobileInput.value = "6789097856";
+            panInput.value = "ABCDE1234F";
+        } else {
+            // Clear the input fields
+            mobileInput.value = "";
+            panInput.value = "";
+        }
+    });
+});
+
+
+
 // validation on addtional page on kyc button
 function KYC_registery() {
     var nomineeName = document.getElementById("nomineeName").value;
@@ -242,22 +287,22 @@ function KYC_registery() {
     const namePattern = /^[A-Za-z\s]+$/;
     if (nomineeName === "") {
         document.getElementById("nomineeName").style.border = "1px solid red";
-        err_nomineeName.textContent = "Please enter a nominee Name.";
+        err_nomineeName.textContent = "Please enter a nominee name.";
 
     } else
-    if (!namePattern.test(nomineeName)) {
-        document.getElementById("nomineeName").style.border = "1px solid red";
-        err_nomineeName.textContent = "Please enter a valid name.";
+        if (!namePattern.test(nomineeName)) {
+            document.getElementById("nomineeName").style.border = "1px solid red";
+            err_nomineeName.textContent = "Please enter a valid name.";
 
-    } else {
-        document.getElementById("nomineeName").style.border = "";
-        err_nomineeName.textContent = "";
+        } else {
+            document.getElementById("nomineeName").style.border = "";
+            err_nomineeName.textContent = "";
 
-    }
+        }
 
     if (nominee_DOB === "") {
         document.getElementById("nominee_DOB").style.border = "1px solid red";
-        err_nominee_DOB.textContent = "Please enter a nominee DOB.";
+        err_nominee_DOB.textContent = "Please enter a nominee dob.";
 
     } else {
         document.getElementById("nominee_DOB").style.border = "";
@@ -266,7 +311,7 @@ function KYC_registery() {
     }
     if (nomenieeRelation === "") {
         document.getElementById("nomenieeRelation").style.border = "1px solid red";
-        err_nomenieeRelation.textContent = "Please select a nomeniee relation."
+        err_nomenieeRelation.textContent = "Please select a nominee relation."
     } else {
         document.getElementById("nomenieeRelation").style.border = "";
         err_nomenieeRelation.textContent = ""
@@ -276,7 +321,7 @@ function KYC_registery() {
 
 //  for show calender onClick
 const inputDate = document.getElementById("inputId");
-inputDate.addEventListener("focus", function(evt) {
+inputDate.addEventListener("focus", function (evt) {
     if (this.getAttribute("type") === "date") {
         this.showPicker();
     }
