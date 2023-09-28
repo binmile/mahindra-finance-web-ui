@@ -1251,15 +1251,6 @@
                 overflow: hidden !important;
                 height: auto !important;
             }
-
-
-            .custposs {
-                position: relative !important;
-                bottom: unset !important;
-            }
-            .MMFsl_investment_cont {
-                width: auto !important;
-            }
         }
 
 /* 
@@ -1280,11 +1271,5 @@
            /* .main-text-button-div2 {
             position: relative;
         } */
-        .custposs {
-            position: absolute;
-            bottom: 0px;
-        }
-        .MMFsl_investment_cont {
-            width: 94%;
-        }
-
+      
+        
