@@ -2367,13 +2367,14 @@
     width: auto;
 }
 
-
+/*-----------------------27sept 2023--new-update------------------*/
 
 .inner-scroll {
     overflow-x: hidden;
     overflow-y: auto;
     height: 90vh;
 }
+
 
 /* width */
 ::-webkit-scrollbar {

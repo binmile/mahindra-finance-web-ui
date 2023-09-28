@@ -42,7 +42,7 @@ input[type='checkbox'] {
 
 .stampImgContainer {
     right: 40px;
-    top: 120px;
+    top: 70px;
     width: auto;
 }
 
@@ -234,7 +234,7 @@ input[type='checkbox'] {
 
 
 /* Track */
-
+/* 27sept 2023 new-update */
 .scroll_modal ::-webkit-scrollbar-track {
     background: #bfc1c2;
 }
@@ -432,6 +432,16 @@ input[type='checkbox'] {
     margin-bottom: 0px
 }
 
+.stampImg {
+    width: 100%;
+    height: auto
+}
+.stampImgContainer {
+    right: 30px;
+    top: 50px;
+    width: 134px;
+}
+
 
  /*//////27-sep new update  new style//////*/
 
@@ -513,12 +523,12 @@ input[type='checkbox'] {
         padding: 10px;
     }
     .stampImg {
-        width: 60%;
+        width: 54px;
         height: auto
     }
     .stampImgContainer {
-        right: 10px;
-        top: 50px;
+        right: 17px;
+        top: 18px;
         width: auto;
     }
     .kycdetail {
@@ -583,6 +593,12 @@ input[type='checkbox'] {
      #paymentMethod {
         margin-bottom: 20px;
     }
+    .logoImgContainer {
+        margin-left: 20px;
+        width: 18px;
+        margin-top: 16px;
+        margin-bottom: 13px
+    }
     .continueButtonEnable{
         padding: 10px;
     }
@@ -616,13 +632,13 @@ input[type='checkbox'] {
         padding: 10px;
     }
     .stampImg {
-        width: 80%;
+        width: 100%;
         height: auto
     }
     .stampImgContainer {
         right: 30px;
         top: 40px;
-        width: auto;
+        width: 85px;
     }
     .leftcard-content {
         padding-top: 0px;
@@ -690,5 +706,14 @@ input[type='checkbox'] {
     }
     .reviewCardSmallContent {
         font-size: 12px;
+    }
+    .stampImg {
+        width: 100%;
+        height: auto
+    }
+    .stampImgContainer {
+        right: 30px;
+        top: 30px;
+        width: 134px;
     }
 }

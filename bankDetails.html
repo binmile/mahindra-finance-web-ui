@@ -30,7 +30,11 @@
                 <div class="col-md-12 col-lg-5 col-sm-12 custome-d-flex">
                     <div class="leftside bankDetailsLeftSide" id="bankdetailsPageLeftside">
                         <div class="logoImgContainer">
+<<<<<<< HEAD
                             <img src="./assets/Image/new_logo.svg" alt="brand image" class="logoImg" />
+=======
+                            <img src="./assets/Image/new_logo.svg" alt="brand image" />
+>>>>>>> 9d65e2cb3e096da925177377fbfda0d04716560e
                         </div>
                         <div class="stampImgContainer">
                             <img src="./assets/Image/Highest Safety Stamp.png" alt="brand image" class="stampImg" />
@@ -45,7 +49,9 @@
                         </div>
                     </div>
                     <div class="leftside bankDetailsLeftSide" id="reviewYourApplicationPageLeftside">
-                        
+                        <div class="logoImgContainer">
+                            <img src="./assets/Image/new_logo.svg" alt="brand image" />
+                        </div>
                         <div class="stampImgContainer">
                             <img src="./assets/Image/Highest Safety Stamp.png" alt="brand image" class="stampImg" />
                         </div>
@@ -462,6 +468,7 @@
                         </div>
                     </div>
                         </div>
+                        <!-- 27sept 2023 new-update -->
                         <div class="maincom inner-scroll" id="rtgspageRightSide">
                             <div class="maincontant">
                                 <h4 class="bank_detail_mainheading">Payment transfer details</h4>
@@ -741,6 +748,8 @@
         function backButtontwoAction() {
             $("#bankdetailsPageRightside").css('display', 'none');
             document.getElementById("reviewYourApplicationPageRightside").style.display = "block";
+            document.getElementById("reviewYourApplicationPageLeftside").style.display = "block";
+            document.getElementById("bankdetailsPageLeftside").style.display = "none";
         }
 
         function backButtonthreeAction() {
