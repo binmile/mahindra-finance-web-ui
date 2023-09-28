@@ -1246,10 +1246,19 @@
             height: 80vh;
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
             .investmentParent.inner-scroll2 {
                 overflow: hidden !important;
                 height: auto !important;
+            }
+
+
+            .custposs {
+                position: relative;
+                bottom: unset;
+            }
+            .MMFsl_investment_cont {
+                width: auto;
             }
         }
 
@@ -1278,3 +1287,4 @@
         .MMFsl_investment_cont {
             width: 94%;
         }
+
