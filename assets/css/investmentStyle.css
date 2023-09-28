@@ -522,7 +522,7 @@
 
 
        /*-----------------------27sept 2023 new-update--------------------*/
-
+/* 
        @media only screen and (min-width: 992px) and (max-width: 1800px) {
            .main-text-button-div {
                margin-top: 45px;
@@ -537,7 +537,7 @@
                height: 82vh !important;
            }
 
-       }
+       } */
 
        @media only screen and (max-width: 1199px) {
            .tooltipContainer .tooltipContent {
@@ -1205,8 +1205,23 @@
            margin-bottom: 20px;
        }
 
+       /* 27 sept 2023 investement-new-features-added */
+
        @media only screen and (min-width: 768px) and (max-width: 991px) {
            .desktop_investment {
                display: block;
+               border-radius: none !important;
+           }
+
+           .investement-left-side-desktop {
+               border-top-left-radius: 0px;
+               border-bottom-left-radius: 0px;
+           }
+       }
+
+       @media only screen and (min-width: 576px) and (max-width: 767px) {
+
+           .bordertop-investment {
+               display: none;
            }
        }
