@@ -2,6 +2,10 @@
            font-size: 16px !important;
        }
 
+       .main-text-button-div2{
+        margin-top:100px;
+
+       }
        .mobile_investment {
            display: none;
        }
@@ -27,6 +31,12 @@
            overflow: auto;
 
        }
+       .scrolling-left-side2 {
+        height: auto;
+        overflow: hidden;
+
+    }
+
 
        /* new update 18sep */
        .leftcard_investment {
@@ -1225,3 +1235,12 @@
                display: none;
            }
        }
+       @media only screen and (min-width: 1400px) {
+        .inner-scroll2 {
+            height: 75vh !important;
+            overflow: auto;
+        }
+        .main-text-button-div2{
+            margin-top:100px;
+        }
+        }

@@ -2480,6 +2480,6 @@ body {
   
 @media only screen and (min-width: 1400px) {
 .inner-scroll {
-    height: 80vh !important;
+    height: 70vh !important;
 }
 }
