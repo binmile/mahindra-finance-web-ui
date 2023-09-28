@@ -1243,7 +1243,7 @@
         }
         .investmentParent.inner-scroll2 {
             overflow: auto;
-            height: 84vh;
+            height: 80vh;
         }
 
         @media screen and (max-width: 767px) {
