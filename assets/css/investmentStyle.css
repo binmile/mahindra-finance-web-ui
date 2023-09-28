@@ -1236,10 +1236,7 @@
            }
        }
        @media only screen and (min-width: 1400px) {
-        .inner-scroll2 {
-            height: 75vh !important;
-            overflow: auto;
-        }
+        
         .main-text-button-div2{
             margin-top:100px;
         }
@@ -1248,3 +1245,23 @@
             overflow: auto;
             height: 84vh;
         }
+
+        @media screen and (max-width: 767px) {
+            .investmentParent.inner-scroll2 {
+                overflow: hidden !important;
+                height: auto !important;
+            }
+        }
+
+/* 
+        @media only screen and (max-width:991) {
+            .investmentParent.inner-scroll2 {
+                overflow: hidden !important;
+                height: auto !important;
+            }
+            .inner-scroll2 {
+                height: auto !important;
+                overflow: hidden !important;
+            }
+            
+           } */
