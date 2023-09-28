@@ -1254,11 +1254,11 @@
 
 
             .custposs {
-                position: relative;
-                bottom: unset;
+                position: relative !important;
+                bottom: unset !important;
             }
             .MMFsl_investment_cont {
-                width: auto;
+                width: auto !important;
             }
         }
 
