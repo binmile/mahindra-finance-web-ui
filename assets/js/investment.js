@@ -184,6 +184,7 @@ function validate_continue() {
         document.getElementById("error_account_number").style.color = "black";
         document.getElementById("amountNo").style.border = "";
         redirectPage();
+        scrollToTop();
         document.getElementById("reviewContinueButton").addEventListener("click", function () {
             scrollToTop();
         });
@@ -201,6 +202,8 @@ function scrollToTop() {
         });
     }
 }
+window.addEventListener("load", scrollToTop);
+
 
 // validation on addtional page on Generate otp button
 function generateOtp() {
