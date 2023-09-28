@@ -1244,3 +1244,7 @@
             margin-top:100px;
         }
         }
+        .investmentParent.inner-scroll2 {
+            overflow: auto;
+            height: 84vh;
+        }
