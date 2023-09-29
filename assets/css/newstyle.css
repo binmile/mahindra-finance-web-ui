@@ -2459,7 +2459,7 @@ body {
 @media only screen and (max-width: 991px) {
 
     .container {
-        padding-top: 30px !important;
+        padding-top: 0px !important;
         padding-bottom: 0px !important;
         
         position: relative !important;
