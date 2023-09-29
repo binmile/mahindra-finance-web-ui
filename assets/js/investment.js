@@ -157,7 +157,7 @@ function redirectPage() {
 
 }
 
-/* 27 sept 2023 new-update investement-new-features-added */
+/* new update 29 Sep */
 
 function show1() {
     document.getElementById('div1').style.display = 'block';
@@ -165,7 +165,7 @@ function show1() {
 
 
 }
-/* 27 sept 2023 new-update investement-new-features-added */
+/* new update 29 Sep */
 
 function show2() {
     document.getElementById('div1').style.display = 'none';
@@ -193,7 +193,7 @@ function formatAmount(input) {
     input.value = value;
 }
 
-//* 28 sept 2023 new-updatead joint scroll-to-top added*/
+/* new update 29 Sep */
 
 function validate_continue() {
     var amount = parseInt(document.getElementById("amountNo").value.replace(/,/g, ''));
@@ -296,7 +296,7 @@ function backClick() {
 
 }
 
-/* 27 sept 2023 new-updatead joint account holder if yes then*/
+/* new update 29 Sep */
 
 document.addEventListener("DOMContentLoaded", function () {
     const accountNew = document.getElementById("accountNew");

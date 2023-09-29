@@ -19,7 +19,7 @@
       font-size: 68px;
       line-height: 78px;
   }
-
+/* new update 29 Sep */
   /* .container {
       padding-top: 30px;
       padding-bottom: 0px;
@@ -725,8 +725,7 @@
       justify-content: center;
   }
 
-  /*-----------------------27sept 2023--new-update------------------*/
-
+  /* new update 29 Sep */
   @media screen and (max-width: 767px) {
 
     .Continue_button_container {
@@ -2265,7 +2264,7 @@
       display: none;
   }
 
-  /*-----------------------27sept 2023--new-update------------------*/
+  /* new update 29 Sep */
 
   @media only screen and (min-width: 320px) and (max-width: 991px) {
       /* footer {
@@ -2367,7 +2366,7 @@
     width: auto;
 }
 
-/*-----------------------27sept 2023--new-update------------------*/
+/* new update 29 Sep */
 
 .inner-scroll {
     overflow-x: hidden;
@@ -2458,6 +2457,17 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+
+    .container {
+        padding-top: 30px !important;
+        padding-bottom: 0px !important;
+        
+        position: relative !important;
+        top: unset !important;
+        left: unset !important;
+        transform: translate(unset) !important;
+        
+    }
 body {
     overflow: auto;
 }
@@ -2476,7 +2486,7 @@ body {
     height: auto;
 }
 
-/*-----------------------27sept 2023--new-update------------------*/
+/* new update 29 Sep */
   
 /* @media only screen and (min-width: 1400px) {
 .inner-scroll {
@@ -2491,7 +2501,5 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transform: -webkit-translate(-50%, -50%);
-    transform: -moz-translate(-50%, -50%);
-    transform: -ms-translate(-50%, -50%);
+    
 }
