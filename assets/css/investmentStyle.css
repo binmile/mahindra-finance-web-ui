@@ -6,6 +6,9 @@
         margin-top:100px;
 
        }
+       #secondButton{
+        display: none;
+       }
        .mobile_investment {
            display: none;
        }

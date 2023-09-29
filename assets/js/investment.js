@@ -124,18 +124,37 @@ function redirectPage() {
         if (document.getElementById('invstment').style.display == 'none') {
             document.getElementById('invstment').style.display = 'block';
             document.getElementById('additionalDetailParent').style.display = 'none';
-            document.getElementById('secpagebtn').style.display = 'none';
+            // document.getElementById('secondpagebtn').style.display = 'none';
+            // document.getElementById('firstpagebtn').style.display = 'block';
 
-            
-           
-        } else {
-            document.getElementById('invstment').style.display = 'none';
-            document.getElementById('additionalDetailParent').style.display = 'block';
-            document.getElementById('secpagebtn').style.display = 'block';
+
 
 
         }
+
+        else {
+            document.getElementById('invstment').style.display = 'none';
+            document.getElementById('additionalDetailParent').style.display = 'block';
+            // document.getElementById('secondpagebtn').style.display = 'block';
+            // document.getElementById('firstpagebtn').style.display = 'none';
+
+
+
+        }
+        var firstButton = document.getElementById("firstButton");
+        var secondButton = document.getElementById("secondButton");
+        if (firstButton.style.display === "block" || firstButton.style.display === "") {
+            // Hide the first button and show the second button
+            firstButton.style.display = "none";
+            secondButton.style.display = "block";
+        } else {
+            // Show the first button and hide the second button
+            firstButton.style.display = "block";
+            secondButton.style.display = "none";
+        }
+
     }
+
 }
 
 /* 27 sept 2023 new-update investement-new-features-added */
@@ -195,6 +214,9 @@ function validate_continue() {
         });
 
     }
+
+
+
 }
 
 function scrollToTop() {
@@ -248,15 +270,29 @@ function generateOtp() {
 //backRedirect
 
 function backClick() {
+    var firstButton = document.getElementById("firstButton");
+    var secondButton = document.getElementById("secondButton");
+    var backButton = document.getElementById("backButton");
     if (document.getElementById('invstment')) {
         if (document.getElementById('invstment').style.display == 'block') {
             document.getElementById('invstment').style.display = 'none';
             document.getElementById('additionalDetailParent').style.display = 'block';
+
+
         } else {
             document.getElementById('invstment').style.display = 'block';
             document.getElementById('additionalDetailParent').style.display = 'none';
+
+
         }
     }
+
+
+    firstButton.style.display = "block";
+    secondButton.style.display = "none";
+    backButton.style.display = "none";
+
+
 
 }
 
