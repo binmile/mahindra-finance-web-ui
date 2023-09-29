@@ -48,6 +48,10 @@
            margin: auto;
            padding: 0px 30px 20px;
        }
+       .investmentParent.inner {
+        height: 68vh;
+        overflow: auto;
+    }
        .appliedContainer-hide{
         display: none !important;
        }
