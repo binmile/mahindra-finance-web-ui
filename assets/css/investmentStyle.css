@@ -9,6 +9,9 @@
        #secondButton{
         display: none;
        }
+       .Continue_button_container-investment{
+        margin:0 25px 20px 25px;
+       }
        .mobile_investment {
            display: none;
        }
@@ -592,7 +595,9 @@
            .main-text-button-div {
                margin-top: 0 !important;
            }
-
+           .Continue_button_container-investment{
+            margin: 0px 20px 20px 20px;
+           }
            .scrolling-left-side {
                height: auto;
                overflow: unset;
@@ -1238,7 +1243,7 @@
        @media only screen and (min-width: 576px) and (max-width: 767px) {
 
            .bordertop-investment {
-               display: none;
+               display: none !important;
            }
        }
        @media only screen and (min-width: 1400px) {
