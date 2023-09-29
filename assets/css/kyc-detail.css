@@ -771,3 +771,7 @@
                         }
                     }
 
+                    /* new update 18 sep  */
+                    footer.footerDiv {
+                        display: none !important;
+                    } 

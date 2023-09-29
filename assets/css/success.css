@@ -409,3 +409,6 @@ button.btn-back:hover {
 svg.svg-inline--fa.fa-home.fa-w-18 {
   margin-right: 5px;
 }
+footer.footerDiv {
+  display: none !important;
+}

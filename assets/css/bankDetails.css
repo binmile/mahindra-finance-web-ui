@@ -717,3 +717,7 @@ input[type='checkbox'] {
         width: 134px;
     }
 }
+
+footer.footerDiv {
+    display: none !important;
+}
