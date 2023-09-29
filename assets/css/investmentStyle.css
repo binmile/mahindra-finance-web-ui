@@ -1272,6 +1272,10 @@
                 overflow: hidden !important;
                 height: auto !important;
             }
+            .investmentParent.inner {
+                overflow: hidden !important;
+                height: auto !important;
+            }
         }
 
 /* 
