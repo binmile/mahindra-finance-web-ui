@@ -2465,7 +2465,7 @@ body {
         position: relative !important;
         top: unset !important;
         left: unset !important;
-        transform: translate(unset) !important;
+        transform:unset!important;
         
     }
 body {
