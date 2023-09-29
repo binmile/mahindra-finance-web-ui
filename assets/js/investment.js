@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const accountNew = document.getElementById("accountNew");
     const mobileInput = document.getElementById("mobile");
     const panInput = document.getElementById("PAN");
-
+    var container = document.querySelector(".Continue_button_container_investment");
     // Add an event listener to the select dropdown
     accountNew.addEventListener("change", function () {
         const selectedOption = accountNew.value;
@@ -269,10 +269,15 @@ document.addEventListener("DOMContentLoaded", function () {
             // Fill the input fields with hardcoded data
             mobileInput.value = "6789097856";
             panInput.value = "ABCDE1234F";
+
+            container.style.display = "none";
+
+
         } else {
             // Clear the input fields
             mobileInput.value = "";
             panInput.value = "";
+            container.style.display = "block";
         }
     });
 });
