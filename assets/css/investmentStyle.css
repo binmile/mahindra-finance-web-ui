@@ -23,11 +23,11 @@
        .Investment_radio_hide {
            display: none;
        }
-
+÷
 
        /* new update 27sep 2023 new-update inner-scrollinf-left-side */
        .scrolling-left-side {
-           height: 58vh;
+           height: 68vh;
            overflow: auto;
 
        }
@@ -41,8 +41,11 @@
        /* new update 18sep */
        .leftcard_investment {
            margin: auto;
-           padding: 40.5px 30px 20px;
+           padding: 0px 30px 20px;
        }
+       .leftcard-contant h1 {
+        line-height: 60px !important;
+    }
 
        /* new update 18sep close */
        .check-investement {

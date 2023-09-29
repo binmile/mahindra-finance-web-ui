@@ -907,7 +907,7 @@
       border: 1px solid black;
       background-color: black;
   }
-
+/* new update 18sep */
   .appliedSection {
       align-self: center;
       padding-top: 20px;
@@ -916,7 +916,7 @@
       background-color: rgba(175, 220, 177, 0.2);
       border: 1px solid #4BAE4F;
       padding-left: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
   }
 
   .appliedSection_additional {

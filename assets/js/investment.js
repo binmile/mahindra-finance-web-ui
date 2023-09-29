@@ -124,10 +124,14 @@ function redirectPage() {
         if (document.getElementById('invstment').style.display == 'none') {
             document.getElementById('invstment').style.display = 'block';
             document.getElementById('additionalDetailParent').style.display = 'none';
+            document.getElementById('secpagebtn').style.display = 'none';
+
+            
+           
         } else {
             document.getElementById('invstment').style.display = 'none';
             document.getElementById('additionalDetailParent').style.display = 'block';
-
+            document.getElementById('secpagebtn').style.display = 'block';
 
 
         }
@@ -183,6 +187,7 @@ function validate_continue() {
     } else {
         document.getElementById("error_account_number").style.color = "black";
         document.getElementById("amountNo").style.border = "";
+        // document.getElementById(".custbt").style.border = "none";
         redirectPage();
         scrollToTop();
         document.getElementById("reviewContinueButton").addEventListener("click", function () {
