@@ -1221,12 +1221,13 @@
            height: auto;
        }
 
-       .bottomfix {
-           margin-top: 0;
-           margin-bottom: 20px;
-       }
+      
 
        /* 27 sept 2023 investement-new-features-added */
+       .bottomfix {
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
 
        @media only screen and (min-width: 768px) and (max-width: 991px) {
            .desktop_investment {
