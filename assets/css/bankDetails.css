@@ -4,7 +4,7 @@ input[type='checkbox'] {
     height: 20px;
     border-radius: 4px !important;
 }
- /*//////27-sep new update  new style//////*/
+ /*//////29-sep new update  new style//////*/
 .continueButtonEnable {
     margin-bottom: 20px;
 }
@@ -443,7 +443,7 @@ input[type='checkbox'] {
 }
 
 
- /*//////27-sep new update  new style//////*/
+ /*//////29-sep new update  new style//////*/
 
 .kycDropDown {
     padding: 8px;
@@ -473,7 +473,7 @@ input[type='checkbox'] {
 .kycDropDown option[value=""][disabled] {
     display: none;
 }
- /*//////27-sep new update  new style//////*/
+ /*//////29-sep new update  new style//////*/
  .backButton {
     display: flex;
     padding: 12px;
@@ -585,7 +585,7 @@ input[type='checkbox'] {
     .review_button_section_TandC {
         bottom: 0;
     }
-     /*//////27-sep new update  new style//////*/
+     /*//////29-sep new update  new style//////*/
      .backButton{
         justify-content: space-between;
         padding: 10px;
@@ -677,7 +677,7 @@ input[type='checkbox'] {
     .reviewCardTandC {
         font-size: 13px;
     }
-    /*//////27-sep new update  new style//////*/
+    /*//////29-sep new update  new style//////*/
     #paymentMethod {
         margin-bottom: 20px;
     }
