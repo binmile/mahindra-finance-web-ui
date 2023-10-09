@@ -1,0 +1,15 @@
+
+.check_kyc_data_copy{
+    margin-top:275px;
+}
+.strapper-div-copy{
+    margin-top:180px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+    .strapper-div-copy{
+        margin-top:230px;
+    }
+    .check_kyc_data_copy{
+        margin-top:220px;
+    }
+}
