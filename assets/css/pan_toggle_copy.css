@@ -1,0 +1,8 @@
+.check_kyc_data_toggle{
+    margin-top:380px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+    .check_kyc_data_toggle{
+        margin-top:350px;
+    }
+}
