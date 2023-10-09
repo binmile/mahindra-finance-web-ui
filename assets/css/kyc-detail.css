@@ -1,16 +1,12 @@
                     .kycDetailsLeftContent {
                         padding: 10px 40px;
                     }
-                    
+                      /*//////29-sep new update  new style//////*/
                     .kycdetail {
-                        border-top-left-radius: 20px;
                         position: relative;
-                        border-top-left-radius: 20px;
-                        border-bottom-left-radius: 0px;
                         text-align-last: start;
                         background-color: black;
                         background-image: url("../Image/blur.png"), url('../Image/about_img.png');
-                        border-radius: 20px 0px 0px 20px;
                         overflow: hidden;
                         background-repeat: no-repeat;
                         background-size: cover;
@@ -61,6 +57,7 @@
                         line-height: 78px;
                         letter-spacing: 0em;
                         text-align: left;
+                        margin-top: 25%;  /*//////29-sep new update  new style//////*/
                     }
                     
                     .leftcolkycContent {
@@ -670,17 +667,15 @@
                         .d-flex{
                             display: block !important;
                         }
-                        .stampImgContainer {
-                            right: -20px;
-                            top: 30px;
-                            width: auto;
-                        }
+                          /*//////29-sep new update  new style//////*/
                         .stampImg {
-                            width: 60%;
+                            width: 54px;
                             height: auto
                         }
-                        .kycdetail{
-                            border-top-left-radius: 0px
+                        .stampImgContainer {
+                            right: 17px;
+                            top: 19px;
+                            width: auto;
                         }
                         .primary-detail{
                             position: absolute;
@@ -750,9 +745,7 @@
                             width: 80%;
                             height: auto
                         }
-                        .kycdetail{
-                            border-top-left-radius: 0px
-                        }
+                          /*//////29-sep new update  new style//////*/
                         .primary-detail{
                             position: absolute;
                             top:0;
