@@ -2441,9 +2441,9 @@ body {
         font-size: 35px;
         line-height: 40px;
     }
-    /* .check_kyc_data {
-        margin-top: 70px;
-    } */
+    .check_kyc_data {
+        margin-top: unset;
+    }
     .img_div {
         margin-top: -102px;
     }
