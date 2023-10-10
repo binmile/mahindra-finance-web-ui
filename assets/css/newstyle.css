@@ -1787,7 +1787,7 @@
 
   .check_kyc_data {
       padding: 15px 16px 15px 16px;
-      margin-top: 150px;
+      /* margin-top: 150px; */
       background-color: #f4f7fa;
       gap: 15px;
       border-radius: 4px;
@@ -2442,7 +2442,7 @@ body {
         line-height: 40px;
     }
     .check_kyc_data {
-        margin-top: 70px;
+        margin-top: unset;
     }
     .img_div {
         margin-top: -102px;
@@ -2458,6 +2458,7 @@ body {
 
 @media only screen and (max-width: 991px) {
 
+    /* new update 29 sep  */
     .container {
         padding-top: 0px !important;
         padding-bottom: 0px !important;
@@ -2502,4 +2503,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     
+}
+
+.fixdesign {
+    height: 57vh;
+    overflow: auto;
+
+
 }
