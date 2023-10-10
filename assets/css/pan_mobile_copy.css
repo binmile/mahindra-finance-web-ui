@@ -1,15 +1,23 @@
-
+/* changes 9oct 10oct */
 .check_kyc_data_copy{
     margin-top:275px;
 }
 .strapper-div-copy{
     margin-top:180px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1399px) {
+@media only screen and (min-width: 992px) and (max-width: 1625px) {
+    .strapper-div-copy{
+        margin-top:100px;
+    }
+    .check_kyc_data_copy{
+        margin-top:100px;
+    }
+}
+@media screen and (width: 1366px) {
     .strapper-div-copy{
         margin-top:230px;
     }
     .check_kyc_data_copy{
-        margin-top:220px;
+        margin-top:230px;
     }
 }
