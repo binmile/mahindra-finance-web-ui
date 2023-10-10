@@ -1,10 +1,16 @@
+/* changes 9oct 10oct */
 /* new update oct 9 */
 
 .check_kyc_data_toggle{
     margin-top:380px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1399px) {
+@media only screen and (min-width: 992px) and (max-width: 1625px) {
     .check_kyc_data_toggle{
-        margin-top:350px;
+        margin-top:320px;
+    }
+}
+@media screen and (width: 1366px) {
+    .check_kyc_data_toggle{
+        margin-top:370px;
     }
 }
