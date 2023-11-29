@@ -1,0 +1,513 @@
+@import "./variable";
+@import "./mixin";
+@import "./components";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $primaryFont;
+}
+
+body {
+    min-height: calc(100vh - 60px);
+    padding-top: 4.5rem;
+    color: $color_black_light;
+    background-color: $color_light_bg;
+}
+.all-center{
+    @include allCenter;
+}
+.font-bolder {
+    font-weight: 700 !important;
+}
+
+.font-bold {
+    font-weight: 600 !important;
+}
+
+.dark-green-font {
+    color: $color_green_dark !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.wd-8 {
+    width: 8%;
+}
+
+.wd-11 {
+    width: 11%;
+}
+
+.wd-12 {
+    width: 12%;
+}
+
+.wd-13 {
+    width: 13%;
+}
+
+.wd-15 {
+    width: 15%;
+}
+
+.wd-14 {
+    width: 14%;
+}
+
+.wd-50{
+    width: 50%;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+
+/*********Header Start****************/
+nav {
+    box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
+
+    .navbar-brand {
+        @include allCenter;
+    }
+
+    .navbar-nav {
+        li.nav-item {
+            margin-left: 24px;
+
+            a.nav-link {
+                @include custom-font(16px, 500, normal, normal);
+                color: $color_white;
+                &:after {
+                    @include dropdown-toggle(0);
+                  }
+                  &:hover{
+                    color: $color_white;
+                    &:after {
+                        transform: scaleX(1);
+                    }
+                  }
+            }
+            a.dropdown-toggle{
+                img.toggle-icon{
+                    width: 16px;
+                    height: 16px;
+                    transition: transform 250ms ease-in-out;
+                }
+            }
+            a.dropdown-toggle.show{
+                img{
+                    transform: rotate(180deg);
+                }
+                &:after {
+                    @include dropdown-toggle(1);
+                  }
+            }
+            ul.dropdown-menu{
+                border-radius: 8px;
+                top: 47px;
+                left: auto;
+                right: 0;
+                padding: 0px;
+                border: none;
+                overflow: hidden;
+                box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06), 0px 2px 6px 0px rgba($color_black, 0.06);
+                li{
+                    padding: 0px 24px;
+                    a{
+                        border-bottom: 1px solid $color_light_border;
+                        padding: 16px 0px;
+                        font-weight: 500;
+                        color: $color_black_light;
+                        &:hover{
+                            background-color: $color_light_gray;
+                        }
+                        img{
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 12px;
+                        }
+                    }
+                    &:hover{
+                        background-color: $color_light_gray !important;
+                    }
+                    &:last-child{
+                        a{
+                            border-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .userAvatar {
+        @include allCenter;
+        img {
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+        }
+    }
+}
+
+/*********Header End****************/
+
+/************Button Start ***********************/
+.themeRedBtn {
+    width: fit-content;
+    background-color: $color_red;
+    color: $color_white;
+    height: 27px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 0 12px 0 12px;
+    @include custom-font(12px, 700, 32px, normal);
+    @include allCenter;
+    cursor: pointer;
+    img {
+        margin-left: 8px;
+        transition: transform 250ms ease-in-out;
+    }
+    &:hover{
+        background-color: $color_red_dark;
+    }
+}
+
+/************Button End ***********************/
+
+/********************Dashboard Start*********************/
+.dashboardCard {
+    box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
+    background-color: $color_white;
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 129px;
+
+    .cardIcons {
+        width: 36px;
+        height: 36px;
+        background-color: $color_light_bg;
+        border-radius: 50%;
+        @include allCenter;
+        margin-bottom: 5px;
+    }
+
+    .cardUserName {
+        margin-bottom: 5px;
+        @include custom-font(16px, 500, 24px, normal);
+    }
+
+    .cardLabel {
+        color: $color_light_text;
+        @include custom-font(14px, 500, 24px, normal);
+    }
+
+    .cardLabelValue {
+        color: $color_black_light;
+        @include custom-font(24px, 600, 32px, normal);
+    }
+}
+
+.dashboardDarkCard {
+    position: relative;
+    background-color: $color_black_light;
+    color: $color_white;
+    box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
+    border-radius: 8px;
+    padding: 16px;
+    overflow: hidden;
+    min-height: 129px;
+
+    .cardLabelHeading {
+        @include custom-font(20px, 600, 26px, 0.15px);
+    }
+
+    .cardLabelList {
+        ul {
+            margin-bottom: 5px;
+            list-style-type: square;
+            padding-left: 16px;
+
+            li {
+                @include custom-font(13px, 500, normal, 0.1px);
+                span {
+                    color: $color_green;
+                }
+            }
+        }
+    }
+
+    .newFdImage {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.listTable {
+    .listTableHead {
+        background-color: $color_black_light;
+        color: $color_white;
+        @include allCenter;
+        height: 48px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        @include custom-font(14px, 400, 24px, 0.25px);
+    }
+
+    .listTableBody {
+        .listTabledata {
+            display: flex;
+            justify-content: center;
+            place-items: center;
+            background-color: $color_white;
+            &:hover{
+                background-color: $color_light_gray;
+            }
+            .tableData {
+                height: 52px;
+                border-bottom: 1px solid $color_border;
+                @include custom-font(16px, 400, 52px, 0.15px);
+                .form-switch {
+                    padding-left: 0px;
+                    @include allCenter;
+                }
+            }
+        }
+    }
+    .showMoreBtn{
+        @include moreDataList(flex);
+    }
+    .hideMoreBtn{
+        @include moreDataList(none);
+        img{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.info-icon{
+    margin-left: 6px;
+}
+
+.red-bg-label{
+    @include statusLabel($color_red, $color_light_red);
+}
+
+.green-bg-label{
+    @include statusLabel($color_green_dark, $color_light_green);
+}
+
+.fdAvailBanner{
+    padding: 32px 28px;
+    height: 316px;
+    .cardLabelHeading{
+        margin-bottom: 8px;
+        @include custom-font(24px, 400, 32px, normal);
+    }
+    .cardLabelList{
+        margin-bottom: 16px;
+        ul {
+            li {
+                @include custom-font(16px, 400, 24px, normal);
+            }
+        }
+    }
+    .themeRedBtn {
+        height: 44px;
+        @include custom-font(14px, 400, 16px, 1.25px);
+    }
+}
+
+.custom-dropdown{
+    button{
+        border: none;
+        outline: none;
+        &::after{
+            display: none;
+        }
+    }
+    button.show{
+        img{
+            transform: rotate(180deg);
+        }
+    }
+    ul{
+        padding: 0;
+        box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06), 0px 2px 6px 0px rgba($color_black, 0.06);
+        border: none;
+        overflow: hidden;
+        li{
+            padding: 0px 12px;
+            a{
+                border-bottom: 1px solid $color_light_border;
+                padding: 5px 0px;
+                @include custom-font(14px, 500, 20px, normal);
+                span{
+                    display: block;
+                    @include custom-font(12px, 400, 16px, 0.4px);
+                }
+                &:hover{
+                    background-color: $color_light_gray;
+                }
+            }
+            &:hover{
+                background-color: $color_light_gray;
+            }
+            &:last-child{
+                a{
+                    border-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+#moreListData{
+    display: none;
+}
+/********************Dashboard End*********************/
+
+/********************Chart Start*********************/
+#chartContainer{
+    padding: 18px;
+    width: 100%;
+    background-color: $color_white;
+    height: 316px;
+    border-radius: 8px;
+    canvas{
+        width: 100%;
+        max-height: 280px;
+    }
+    a.canvasjs-chart-credit{
+        display: none;
+    }
+}
+/********************Chart End*********************/
+
+/***************Modal Start**************************/
+.modal{
+    .modal-content{
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06), 0px 2px 6px 0px rgba($color_black, 0.06);
+        border: none;
+        .modal-body{
+            padding: 40px 24px;
+            .btn-close{
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                background: none;
+                @include allCenter;
+                padding: 0px;
+                opacity: 1;
+            }
+            .info-heading{
+                @include custom-font(24px, 600, 32px, -0.18px);
+                text-align: center;
+                img{
+                    margin-right: 12px;
+                }
+            }
+            .info-content{
+                @include custom-font(16px, 400, 24px, 0.5px);
+                text-align: center;
+                margin: 12px 0px 20px 0px;
+            }
+            .info-button{
+                @include allCenter;
+                button{
+                    outline: none;
+                    border: none;
+                    height: 44px;
+                    @include custom-font(14px, 700, 16px, 1.25px);
+                    padding: 0 50px;
+                }
+            }
+        }
+    }
+}
+/***************Modal End**************************/
+
+/********************Preclosure FD Start******************/
+.commonBackBtn{
+    text-decoration: none;
+    @include custom-font(14px, 500, 24px, 0.1px);
+    color: $color_light_blue;
+    cursor: pointer;
+    &:hover{
+        color: $color_light_blue;
+        opacity: 0.9;
+    }
+    img{
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+    }
+}
+
+.commonHeading{
+    @include custom-font(24px, 600, 32px, -0.18px);
+    margin: 16px 0 20px 0;
+}
+
+.tableBodyWithHeight{
+    min-height: calc(100vh - 460px);
+    background-color: $color_white;
+}
+
+.descriptionContainer{
+    background-color: $color_white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0px;
+    .descriptionBox{
+        width: 96%;
+        display: flex;
+        justify-content: flex-start;
+        place-items: center;
+        background-image: url('../img/abstract-blue-geometric-shapes-background.svg');
+        background-repeat: no-repeat;
+        padding: 20px 24px;
+        background-size: cover;
+        background-position: right;
+        background-color: $color_light_bg;
+        border-radius: 8px;
+        .descriptionImage{
+            width: fit-content;
+            margin-right: 12px;
+        }
+        .descriptionContent{
+            p{
+                margin: 0;
+                @include custom-font(16px, 400, 24px, 0.15px);
+                color: $color_light_text;
+            }
+        }
+    }
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: flex-end;
+    place-items: center;
+    padding: 24px 0px;
+    button.themeRedBtn{
+        height: 44px;
+        padding: 0 24px;
+        @include custom-font(14px, 700, 16px, 1.25px);
+    }
+}
+/********************Preclosure FD End********************/
+// @import "./responsive.scss";

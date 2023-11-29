@@ -1,0 +1,82 @@
+@import "./variable";
+@import "./mixin";
+
+/********************Toggle Switch Start**********************/
+.form-check-input {
+    position: relative;
+    border: 1px solid $color_black_light_1;
+    width: 37px !important;
+    height: 18px !important;
+    background-image: url('../img/icons/circle.svg') !important;
+    cursor: pointer;
+    transition: background-position .3s ease-in-out !important;
+    float: none !important;
+    margin-left: 0px !important;
+}
+
+.form-check-input:focus {
+    border-color: $color_black_light_1;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input:checked:focus {
+    border-color: $color_green_dark;
+}
+
+.form-check-input::before {
+    content: "NO";
+    font-size: 8px;
+    font-weight: 400;
+    position: absolute;
+    left: 19px;
+    right: 0;
+    top: auto;
+    bottom: -18px;
+    opacity: 1;
+    color: $color_black_light_1;
+}
+
+.form-check-input::after {
+    content: "YES";
+    font-size: 9px;
+    position: absolute;
+    left: 4px;
+    right: auto;
+    top: auto;
+    bottom: -18px;
+    opacity: 0;
+    color: $color_green_dark;
+}
+
+.form-check-input:checked {
+    background-image: url('../img/icons/circle-green.svg') !important;
+    border: 1px solid $color_green_dark;
+    background-color: $color_white;
+}
+
+.form-check-input:checked::before {
+    opacity: 0;
+}
+
+.form-check-input:checked::after {
+    opacity: 1;
+}
+/********************Toggle Switch End**********************/
+
+
+/***************Tooltip Start**********************/
+.custom-tooltip{
+    position: relative;
+    cursor: pointer;
+    .tooltip-text{
+        @include custom-tooltip-text(auto, 24px, -25px, auto);
+    }
+    .tooltip-textTableData{
+        @include custom-tooltip-text(auto, 40px, -26px, auto);
+    }
+    &:hover .tooltip-text, &:hover .tooltip-textTableData{
+        display: block;
+    }
+}
+/***************Tooltip End**********************/
