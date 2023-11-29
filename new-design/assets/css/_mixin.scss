@@ -1,0 +1,87 @@
+@mixin allCenter {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+@mixin statusLabel($textColor, $backgroundColor) {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    height: 24px !important;
+    @include allCenter;
+    width: 100%;
+    border-radius: 5px;
+    color: $textColor;
+    background-color: $backgroundColor;
+
+    img {
+        margin-right: 5px;
+    }
+}
+
+@mixin custom-tooltip-text($top, $bottom, $left, $right) {
+    background-color: $color_black_dark;
+    border-radius: 8px;
+    color: $color_white;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    padding: 16px;
+    display: none;
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    width: max-content;
+    z-index: 99;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 98%;
+        left: 12%;
+        margin-left: -7px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: $color_black_dark transparent transparent transparent;
+    }
+}
+
+@mixin dropdown-toggle($scaleX) {
+    display:block;
+    content: '';
+    border-bottom: solid 1px $color_white;
+    transform: scaleX($scaleX);
+    transition: transform 250ms ease-in-out;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin-left: 0px;
+}
+
+@mixin moreDataList($display){
+    display: $display;
+    justify-content: center;
+    place-items: center;
+    height: 48px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    background-color: $color_white;
+    a{
+        color: $color_light_blue;
+        text-decoration: none;
+    }
+}
+
+@mixin custom-font($fontSize, $fontWeight, $lineHeight, $letterSpacing){
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
