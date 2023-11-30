@@ -4,6 +4,24 @@
     place-items: center;
 }
 
+@mixin setDisplayProperty($display, $justifyContent, $placeItems, $direction:row) {
+    display: $display;
+    justify-content: $justifyContent;
+    place-items: $placeItems;
+    flex-direction: $direction;
+}
+
+@mixin setPosition($top, $right, $bottom, $left, $width, $height, $content: "", $position:absolute){
+    content: $content;
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    width: $width;
+    height: $height;
+}
+
 @mixin statusLabel($textColor, $backgroundColor) {
     font-size: 12px !important;
     font-weight: 400 !important;
