@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 /********************Toggle Switch Start**********************/
 .form-check-input {
   position: relative;
@@ -25,7 +24,7 @@
 
 .form-check-input::before {
   content: "NO";
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 400;
   position: absolute;
   left: 19px;
@@ -139,7 +138,7 @@
 }
 
 body {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh + 5px);
   padding-top: 4.5rem;
   color: #231F20;
   background-color: #F3F4F6;
@@ -260,7 +259,7 @@ nav .navbar-nav li.nav-item a.dropdown-toggle.show:after {
 }
 nav .navbar-nav li.nav-item ul.dropdown-menu {
   border-radius: 8px;
-  top: 47px;
+  top: 42px;
   left: auto;
   right: 0;
   padding: 0px;
@@ -333,11 +332,14 @@ nav .userAvatar img {
 }
 
 /************Button End ***********************/
-/********************Dashboard Start*********************/
-.dashboardCard {
+.cardContainer {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
   background-color: #FFFFFF;
   border-radius: 8px;
+}
+
+/********************Dashboard Start*********************/
+.dashboardCard {
   padding: 16px;
   min-height: 129px;
 }
@@ -601,9 +603,7 @@ nav .userAvatar img {
 #chartContainer {
   padding: 18px;
   width: 100%;
-  background-color: #FFFFFF;
   height: 316px;
-  border-radius: 8px;
 }
 #chartContainer canvas {
   width: 100%;
@@ -708,6 +708,8 @@ nav .userAvatar img {
   border-bottom-right-radius: 8px;
   display: flex;
   justify-content: center;
+  place-items: center;
+  flex-direction: row;
   padding: 24px 0px;
 }
 .descriptionContainer .descriptionBox {
@@ -715,6 +717,7 @@ nav .userAvatar img {
   display: flex;
   justify-content: flex-start;
   place-items: center;
+  flex-direction: row;
   background-image: url("../img/abstract-blue-geometric-shapes-background.svg");
   background-repeat: no-repeat;
   padding: 20px 24px;
@@ -741,6 +744,7 @@ nav .userAvatar img {
   display: flex;
   justify-content: flex-end;
   place-items: center;
+  flex-direction: row;
   padding: 24px 0px;
 }
 .buttonContainer button.themeRedBtn {
@@ -752,4 +756,145 @@ nav .userAvatar img {
   letter-spacing: 1.25px;
 }
 
-/********************Preclosure FD End********************//*# sourceMappingURL=styles.css.map */
+/********************Preclosure FD End********************/
+/********************** Quick Action Start******************/
+.darkGreenText {
+  color: #17823E;
+}
+
+.fdDetailsBox {
+  padding: 24px 32px 36px 32px;
+}
+.fdDetailsBox .fdHeader {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  flex-direction: row;
+}
+.fdDetailsBox .fdHeader .fdNumber {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+.fdDetailsBox .fdHeader .fdTenure {
+  background-color: #F3F4F6;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+  padding: 4px 8px;
+}
+.fdDetailsBox .fdHeader .fdTenure img {
+  margin-right: 4px;
+}
+.fdDetailsBox .fdMainContent {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  flex-direction: row;
+  padding: 24px 0px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.fdDetailsBox .fdMainContent .fdInvestment {
+  display: flex;
+  justify-content: flex-start;
+  place-items: flex-start;
+  flex-direction: column;
+}
+.fdDetailsBox .fdMainContent .fdInvestment .bigText {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+}
+.fdDetailsBox .fdMainContent .fdInvestment .lightText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+  margin-top: 8px;
+}
+.fdDetailsBox .fdMainContent .fdTenure {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  position: relative;
+}
+.fdDetailsBox .fdMainContent .fdTenure::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  bottom: 0;
+  left: -45px;
+  width: 38px;
+  height: 9px;
+  background-color: #D6D6D6;
+}
+.fdDetailsBox .fdMainContent .fdTenure::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: -46px;
+  bottom: 0;
+  left: auto;
+  width: 38px;
+  height: 23px;
+  background-image: url("../img/icons/Union.svg");
+  background-repeat: no-repeat;
+}
+.fdDetailsBox .fdContents {
+  display: flex;
+  justify-content: space-between;
+  place-items: baseline;
+  flex-direction: row;
+  margin-top: 24px;
+}
+.fdDetailsBox .fdContents .fdDetails {
+  display: block;
+  position: relative;
+}
+.fdDetailsBox .fdContents .fdDetails::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -18px;
+  bottom: auto;
+  left: auto;
+  width: 1px;
+  height: 35px;
+  background-color: #E8E8E8;
+}
+.fdDetailsBox .fdContents .fdDetails:last-child::after {
+  display: none;
+}
+.fdDetailsBox .fdContents .fdDetails .label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #6B7280;
+  margin-bottom: 4px;
+}
+.fdDetailsBox .fdContents .fdDetails .value {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.fdDetailsBox .fdContents .fdDetails .value img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  filter: invert(0) brightness(0);
+}
+
+/********************** Quick Action End*******************//*# sourceMappingURL=styles.css.map */

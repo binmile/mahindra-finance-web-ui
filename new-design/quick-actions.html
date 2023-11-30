@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahindra Finance :: Preclosure</title>
+    <title>Mahindra Finance :: Quick Actions</title>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
@@ -137,92 +137,58 @@
 <div class="container mb-20">
     <div class="row">
         <div class="col col-md-12"><a href="#" class="commonBackBtn"><img src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
-        <div class="col col-md-12"><div class="commonHeading">Select fixed deposit to pre close</div></div>
-        <div class="col col-md-12">
-            <div class="listTable">
-                <div class="listTableHead">
-                    <div class="wd-8">Select</div>
-                    <div class="wd-13">FD number</div>
-                    <div class="wd-13">Investment date</div>
-                    <div class="wd-13">Maturity date</div>
-                    <div class="wd-11">Tenure (years)</div>
-                    <div class="wd-13">Investment amount</div>
-                    <div class="wd-13 d-flex">
-                        Maturity amount
-                        <div class="info-icon custom-tooltip">
-                            <img src="./assets/img/round-info-white.svg"
-                                alt="icon" />
-                            <div class="tooltip-text">Total expected
-                                balance at term end</div>
-                        </div>
+        <div class="col col-md-7 mt-20">
+            <div class="cardContainer">
+                <div class="fdDetailsBox">
+                    <div class="fdHeader">
+                        <div class="fdNumber">FD - R2022009D</div>
+                        <div class="fdTenure"><img src="./assets/img/icons/calendar-icon.svg" alt="icon" /> Remaining tenure : 2 years 3 months</div>
                     </div>
-                    <div class="wd-12">Status</div>
-                </div>
-                <div class="listTableBody tableBodyWithHeight">
-                    <div class="listTabledata">
-                        <div class="tableData wd-8">
-                            <input type="radio" name="preclosure" />
+                    <div class="fdMainContent">
+                        <div class="fdInvestment">
+                            <div class="bigText">₹ 20,000</div>
+                            <div class="lightText">Invested amount</div>
                         </div>
-                        <div class="tableData wd-13">N2003901F</div>
-                        <div class="tableData wd-13">28 Sept 2021</div>
-                        <div class="tableData wd-13">28 Sept 2026</div>
-                        <div class="tableData wd-11">5</div>
-                        <div class="tableData wd-13 font-bolder">₹ 35,000</div>
-                        <div
-                            class="tableData wd-13 font-bolder dark-green-font">₹
-                            22,656</div>
-                        <div class="tableData wd-12 all-center">
-                            <div class="green-bg-label">
-                                <img
-                                    src="./assets/img/icons/round-tick.svg"
-                                    alt="icon" />
-                                Active
+                        <div class="fdTenure">Tenure : 5 years</div>
+                        <div class="fdInvestment align-items-end">
+                            <div class="bigText darkGreenText">₹ 20,000</div>
+                            <div class="lightText d-flex">Maturity amount
+                                <div class="info-icon custom-tooltip">
+                                    <img src="./assets/img/icons/info-icon-black.svg"
+                                        alt="icon" />
+                                    <div class="tooltip-text">Total expected
+                                        balance at term end</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="listTabledata">
-                        <div class="tableData wd-8">
-                            <input type="radio" name="preclosure" />
+                    <div class="fdContents">
+                        <div class="fdDetails">
+                            <div class="label">Investment date </div>
+                            <div class="value"><img src="./assets/img/icons/calendar-icon.svg" alt="icon" /> 18 Sept 2020</div>
                         </div>
-                        <div class="tableData wd-13">C2032231F</div>
-                        <div class="tableData wd-13">17 July 2021</div>
-                        <div class="tableData wd-13">17 July 2023</div>
-                        <div class="tableData wd-11">3</div>
-                        <div class="tableData wd-13 font-bolder">₹ 35,000</div>
-                        <div
-                            class="tableData wd-13 font-bolder dark-green-font">₹
-                            59,456</div>
-                        <div class="tableData wd-12 all-center">
-                            <div class="green-bg-label">
-                                <img
-                                    src="./assets/img/icons/round-tick.svg"
-                                    alt="icon" />
-                                Active
-                            </div>
+                        <div class="fdDetails">
+                            <div class="label">Interest rate </div>
+                            <div class="value"><img src="./assets/img/icons/percent.svg" alt="icon" /> 8.05%</div>
                         </div>
-                    </div>
-
-                </div>
-                <div class="descriptionContainer">
-                    <div class="descriptionBox">
-                        <div class="descriptionImage">
-                            <img src="./assets/img/icons/home-desc.svg" alt="icon" />
+                        <div class="fdDetails">
+                            <div class="label">Interest amount </div>
+                            <div class="value"><img src="./assets/img/icons/cash.svg" alt="icon" /> ₹ 9,456</div>
                         </div>
-                        <div class="descriptionContent">
-                            <p>Invest in certainty, reap the rewards of patience. Our fixed deposits: your future's solid foundation. </p>
-                            <p>Safe, secure, and steadily growing. Choose stability today for a brighter tomorrow.</p>
+                        <div class="fdDetails">
+                            <div class="label">Interest payout </div>
+                            <div class="value"><img src="./assets/img/icons/percent.svg" alt="icon" /> On maturity</div>
+                        </div>
+                        <div class="fdDetails">
+                            <div class="label">Maturity date </div>
+                            <div class="value"><img src="./assets/img/icons/calendar-icon.svg" alt="icon" /> 18 Sept 2025</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="cardContainer mt-20" id="chartContainer"></div>
         </div>
-        <div class="col col-md-12">
-            <div class="buttonContainer">
-                <button class="themeRedBtn">Continue
-                <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
-            </div>
-        </div>
+        <div class="col col-md-5"></div>
     </div>
  </div>
 
