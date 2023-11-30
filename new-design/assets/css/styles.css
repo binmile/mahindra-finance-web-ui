@@ -762,6 +762,13 @@ nav .userAvatar img {
   color: #17823E;
 }
 
+.boldTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
 .fdDetailsBox {
   padding: 24px 32px 36px 32px;
 }
@@ -770,12 +777,6 @@ nav .userAvatar img {
   justify-content: space-between;
   place-items: center;
   flex-direction: row;
-}
-.fdDetailsBox .fdHeader .fdNumber {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.15px;
 }
 .fdDetailsBox .fdHeader .fdTenure {
   background-color: #F3F4F6;
@@ -895,6 +896,95 @@ nav .userAvatar img {
   height: 20px;
   margin-right: 4px;
   filter: invert(0) brightness(0);
+}
+
+.quickActionBox {
+  padding: 24px 32px;
+}
+.quickActionBox .quickActionTabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.quickActionBox .quickActionTabs label {
+  width: 48%;
+  display: flex;
+  justify-content: flex-start;
+  place-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  border-radius: 8px;
+  padding: 4px 12px 16px 12px;
+  cursor: pointer;
+}
+.quickActionBox .quickActionTabs label:nth-child(even) {
+  margin-right: 0px;
+}
+.quickActionBox .quickActionTabs label img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+.quickActionBox .quickActionTabs label .quickActionLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.boxRadioButton input[type=radio] {
+  opacity: 0;
+}
+
+.boxRadioButton.active {
+  background-color: #231F20;
+  color: #FFFFFF;
+  transition: all 0.2s linear;
+}
+.boxRadioButton.active img {
+  filter: invert(1) brightness(100);
+}
+
+.quickActionBanner {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+.quickActionBanner .cardLabelHeading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin-bottom: 16px;
+}
+.quickActionBanner .cardLabelList {
+  margin-bottom: 28px;
+}
+.quickActionBanner .cardLabelList ul {
+  padding: 0;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.quickActionBanner .cardLabelList ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.quickActionBanner img.newFdImage {
+  position: absolute;
+  top: auto;
+  right: -30px;
+  bottom: -40px;
+}
+
+.quickActionGraph {
+  height: 364px !important;
+}
+.quickActionGraph canvas {
+  max-height: 320px !important;
 }
 
 /********************** Quick Action End*******************//*# sourceMappingURL=styles.css.map */
