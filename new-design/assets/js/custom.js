@@ -56,3 +56,16 @@ window.onload = function () {
             }
         });
     }
+
+    $("#quickActionElements :input").click(function () {
+        $("#quickActionElements :input").each(function () {
+            if ($(this).is(":checked")) {
+                var activeData = $(this).attr('data-tenure');
+                $('#' + activeData).addClass('active');
+                var result = $(this).val();
+            } else {
+                var activeData = $(this).attr('data-tenure');
+                $('#' + activeData).removeClass('active');
+            }
+        });
+    });
