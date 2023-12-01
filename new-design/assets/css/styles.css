@@ -1048,7 +1048,7 @@ nav .userAvatar img {
   color: #DC2626;
 }
 
-.stricks {
+.strike {
   text-decoration: line-through;
 }
 
@@ -1063,6 +1063,10 @@ nav .userAvatar img {
   margin-right: 0px;
 }
 
+.customChangeWidth.active {
+  border: 1px solid #231F20;
+}
+
 .bottomDescription .descriptionContent {
   border-top: 1px solid #D6D6D6;
   padding: 24px 0px 0px 0px;
@@ -1074,7 +1078,7 @@ nav .userAvatar img {
 }
 
 .fDList {
-  height: calc(100vh - 425px);
+  min-height: 500px;
 }
 .fDList ul {
   padding: 0;

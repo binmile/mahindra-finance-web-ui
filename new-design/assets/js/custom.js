@@ -88,3 +88,15 @@ $("#quickActionElements :input").click(function () {
     });
 });
 /*****************Quick Action Box Select End***************/
+
+function handleClickRadio(ele1, ele2) {
+    var checkedValue = document.querySelector('input[name="preclosure-flow"]:checked').value;
+    if(checkedValue === ele1){
+        $('#'+ele1).addClass('active');
+        $('#'+ele2).removeClass('active');
+    } else {
+        $('#'+ele1).removeClass('active');
+        $('#'+ele2).addClass('active');
+    }
+}
+
