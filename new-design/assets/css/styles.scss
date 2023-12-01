@@ -70,6 +70,10 @@ body {
     margin-bottom: 20px;
 }
 
+.wd-100{
+    width: 100%;
+}
+
 /*********Header Start****************/
 nav {
     box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
@@ -673,4 +677,75 @@ nav {
 }
 /********************** Quick Action End*******************/
 
+/********************Preclosure Flow Start******************/
+.errorText{
+    color: $color_red_error;
+}
+.stricks{
+    text-decoration: line-through;
+}
+.customChangeWidth{
+    width: 49%;
+    display: inline-flex;
+    margin-right: 20px;
+    place-items: center;
+    justify-content: center;
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.bottomDescription{
+    .descriptionContent{
+        border-top: 1px solid $color_light_border;
+        padding: 24px 0px 0px 0px;
+        @include custom-font(14px, 400, 24px, 0.25px);
+        color: $color_light_text;
+    }
+}
+
+.fDList{
+    height: calc(100vh - 425px);
+    ul{
+        padding: 0;
+        list-style: none;
+        li{
+            display: flex;
+            justify-content: space-between;
+            place-items: center;
+            border-bottom: 1px solid #E8E8E8;
+            padding: 12px 0px;
+            .fDListContent{
+                @include allCenter;
+                .roundBackgroundIcon{
+                    background-color: #F3F4F6;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-right: 16px;
+                    @include allCenter;
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                label{
+                    @include custom-font(16px, 500, 24px, normal);
+                }
+            }
+            .fDListValue{
+                @include custom-font(16px, 700, 24px, normal);
+                span{
+                    @include custom-font(14px, 500, 20px, normal);
+                    background-color: $color_green_light;
+                    color: $color_green_dark;
+                    border-radius: 8px;
+                    padding: 3px 7px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+/********************Preclosure Flow End******************/
 // @import "./responsive.scss";
