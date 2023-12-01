@@ -269,8 +269,6 @@ nav {
     }
 
     .listTableBody {
-        min-height: 52px;
-        transition: all 3s linear;
         .listTabledata {
             @include allCenter;
             background-color: $color_white;
