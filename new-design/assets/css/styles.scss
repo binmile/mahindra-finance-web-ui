@@ -681,7 +681,7 @@ nav {
 .errorText{
     color: $color_red_error;
 }
-.stricks{
+.strike{
     text-decoration: line-through;
 }
 .customChangeWidth{
@@ -695,6 +695,10 @@ nav {
     }
 }
 
+.customChangeWidth.active{
+    border: 1px solid $color_black_light;
+}
+
 .bottomDescription{
     .descriptionContent{
         border-top: 1px solid $color_light_border;
@@ -705,7 +709,7 @@ nav {
 }
 
 .fDList{
-    height: calc(100vh - 425px);
+    min-height: 500px;
     ul{
         padding: 0;
         list-style: none;

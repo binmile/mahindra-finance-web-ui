@@ -139,12 +139,12 @@
         <div class="col col-md-12"><a href="#" class="commonBackBtn"><img src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
         <div class="col col-md-12"><div class="commonHeading">Need funds? Discover the benefits of loan against your FD.</div></div>
         <div class="col col-md-12">
-            <div class="cardContainer customChangeWidth">
+            <div class="cardContainer customChangeWidth" id="option1">
                 <div class="fdDetailsBox wd-100">
                     <div class="fdHeader">
                         <div class="boldTitle">Premature closure of FD</div>
                             <label class="checkbox-container">
-                                <input type="radio" name="preclosure-flow">
+                                <input type="radio" name="preclosure-flow" checked="checked" onclick="handleClickRadio(this.value, 'option2')" value="option1">
                                 <span class="checkmark"></span>
                               </label>
                     </div>
@@ -170,7 +170,7 @@
                                     <label>ROI applicable due to premature closure</label>
                                 </div>
                                 <div class="fDListValue errorText">
-                                    <span class="stricks">@ 8.05%</span> 5.75%
+                                    <span class="strike">@ 8.05%</span> 5.75%
                                 </div>
                             </li>
 
@@ -206,12 +206,12 @@
                     </div>
                 </div>
             </div>
-            <div class="cardContainer customChangeWidth">
+            <div class="cardContainer customChangeWidth" id="option2">
                 <div class="fdDetailsBox wd-100">
                     <div class="fdHeader">
                         <div class="boldTitle">Borrow funds against your FD</div>
                         <label class="checkbox-container">
-                            <input type="radio" name="preclosure-flow">
+                            <input type="radio" name="preclosure-flow" onclick="handleClickRadio(this.value, 'option1')" value="option2">
                             <span class="checkmark"></span>
                         </label>
                     </div>
