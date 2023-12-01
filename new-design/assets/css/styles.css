@@ -205,6 +205,8 @@ body {
 /*********Header Start****************/
 nav {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+  padding: 0 !important;
+  height: 52px;
 }
 nav .navbar-brand {
   display: flex;
@@ -217,8 +219,9 @@ nav .navbar-nav li.nav-item {
 nav .navbar-nav li.nav-item a.nav-link {
   font-size: 16px;
   font-weight: 500;
-  line-height: normal;
+  line-height: 33px;
   letter-spacing: normal;
+  height: 51px;
   color: #FFFFFF;
 }
 nav .navbar-nav li.nav-item a.nav-link:after {
@@ -243,23 +246,9 @@ nav .navbar-nav li.nav-item a.dropdown-toggle img.toggle-icon {
   height: 16px;
   transition: transform 250ms ease-in-out;
 }
-nav .navbar-nav li.nav-item a.dropdown-toggle.show img {
-  transform: rotate(180deg);
-}
-nav .navbar-nav li.nav-item a.dropdown-toggle.show:after {
-  display: block;
-  content: "";
-  border-bottom: solid 1px #FFFFFF;
-  transform: scaleX(1);
-  transition: transform 250ms ease-in-out;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  margin-left: 0px;
-}
 nav .navbar-nav li.nav-item ul.dropdown-menu {
   border-radius: 8px;
-  top: 42px;
+  top: 51px;
   left: auto;
   right: 0;
   padding: 0px;
@@ -289,6 +278,12 @@ nav .navbar-nav li.nav-item ul.dropdown-menu li:hover {
 }
 nav .navbar-nav li.nav-item ul.dropdown-menu li:last-child a {
   border-bottom: 0px;
+}
+nav .navbar-nav li.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+nav .navbar-nav li.nav-item.dropdown:hover img.toggle-icon {
+  transform: rotate(180deg);
 }
 nav .userAvatar {
   display: flex;
@@ -424,6 +419,10 @@ nav .userAvatar img {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.25px;
+}
+.listTable .listTableBody {
+  min-height: 52px;
+  transition: all 3s linear;
 }
 .listTable .listTableBody .listTabledata {
   display: flex;

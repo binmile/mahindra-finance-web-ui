@@ -65,6 +65,7 @@ body {
 .mt-20{
     margin-top: 20px;
 }
+
 .mb-20{
     margin-bottom: 20px;
 }
@@ -72,7 +73,8 @@ body {
 /*********Header Start****************/
 nav {
     box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
-
+    padding: 0 !important;
+    height: 52px;
     .navbar-brand {
         @include allCenter;
     }
@@ -82,7 +84,8 @@ nav {
             margin-left: 24px;
 
             a.nav-link {
-                @include custom-font(16px, 500, normal, normal);
+                @include custom-font(16px, 500, 33px, normal);
+                height: 51px;
                 color: $color_white;
                 &:after {
                     @include dropdown-toggle(0);
@@ -101,17 +104,9 @@ nav {
                     transition: transform 250ms ease-in-out;
                 }
             }
-            a.dropdown-toggle.show{
-                img{
-                    transform: rotate(180deg);
-                }
-                &:after {
-                    @include dropdown-toggle(1);
-                  }
-            }
             ul.dropdown-menu{
                 border-radius: 8px;
-                top: 42px;
+                top: 51px;
                 left: auto;
                 right: 0;
                 padding: 0px;
@@ -143,6 +138,14 @@ nav {
                         }
                     }
                 }
+            }
+        }
+        li.nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        li.nav-item.dropdown:hover{
+            img.toggle-icon{
+                transform: rotate(180deg);
             }
         }
     }
@@ -266,6 +269,8 @@ nav {
     }
 
     .listTableBody {
+        min-height: 52px;
+        transition: all 3s linear;
         .listTabledata {
             @include allCenter;
             background-color: $color_white;

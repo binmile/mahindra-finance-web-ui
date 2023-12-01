@@ -1,7 +1,8 @@
+/*****************Graph Start***************/
 window.onload = function () {
     var chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
-        title:{
+        title: {
             text: "Growth chart"
         },
         axisY: {
@@ -22,50 +23,68 @@ window.onload = function () {
                 { x: new Date(2002, 0), y: 73605 }
             ]
         }]
-        });
-    chart.render();
-    }
-
-    function showMoreData() {
-        var dataShow = document.getElementById("moreListData");
-        var hideShow = document.getElementById("hideMoreBtn");
-        var showShow = document.getElementById("showMoreBtn");
-        dataShow.style.display = "block";
-        showShow.style.display = "none";
-        hideShow.style.display = "flex";
-      }
-
-      function hideMoreData() {
-        var dataShow = document.getElementById("moreListData");
-        var hideShow = document.getElementById("hideMoreBtn");
-        var showShow = document.getElementById("showMoreBtn");
-        dataShow.style.display = "none";
-        showShow.style.display = "flex";
-        hideShow.style.display = "none";
-      }
-
-      function updateKycModal(id) {
-        var toggleSwitch = document.getElementById(id);
-        var myModal = new bootstrap.Modal(document.getElementById("myModal"));
-
-        toggleSwitch.addEventListener("change", function() {
-            if (toggleSwitch.checked) {
-                myModal.show();
-            } else {
-                myModal.hide();
-            }
-        });
-    }
-
-    $("#quickActionElements :input").click(function () {
-        $("#quickActionElements :input").each(function () {
-            if ($(this).is(":checked")) {
-                var activeData = $(this).attr('data-tenure');
-                $('#' + activeData).addClass('active');
-                var result = $(this).val();
-            } else {
-                var activeData = $(this).attr('data-tenure');
-                $('#' + activeData).removeClass('active');
-            }
-        });
     });
+    chart.render();
+}
+/*****************Graph End***************/
+/*****************Menu Dropdown Hover Effect Start***************/
+$(document).ready(function () {
+    $('.dropdown').hover(function () {
+        $(this).addClass('show');
+        $(this).find('.dropdown-menu').addClass('show');
+    }, function () {
+        $(this).removeClass('show');
+        $(this).find('.dropdown-menu').removeClass('show');
+    });
+});
+/*****************Menu Dropdown Hover Effect End***************/
+
+/*****************Dashboard Data show hide Start***************/
+function showMoreData() {
+    var dataShow = document.getElementById("moreListData");
+    var hideShow = document.getElementById("hideMoreBtn");
+    var showShow = document.getElementById("showMoreBtn");
+    dataShow.style.display = "block";
+    showShow.style.display = "none";
+    hideShow.style.display = "flex";
+}
+
+function hideMoreData() {
+    var dataShow = document.getElementById("moreListData");
+    var hideShow = document.getElementById("hideMoreBtn");
+    var showShow = document.getElementById("showMoreBtn");
+    dataShow.style.display = "none";
+    showShow.style.display = "flex";
+    hideShow.style.display = "none";
+}
+/*****************Dashboard Data show hide End***************/
+
+/*****************Dashboard Toggle Switch Button Modal Start***************/
+function updateKycModal(id) {
+    var toggleSwitch = document.getElementById(id);
+    var myModal = new bootstrap.Modal(document.getElementById("myModal"));
+
+    toggleSwitch.addEventListener("change", function () {
+        if (toggleSwitch.checked) {
+            myModal.show();
+        } else {
+            myModal.hide();
+        }
+    });
+}
+/*****************Dashboard Toggle Switch Button Modal End***************/
+
+/*****************Quick Action Box Select Start***************/
+$("#quickActionElements :input").click(function () {
+    $("#quickActionElements :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).addClass('active');
+            var result = $(this).val();
+        } else {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).removeClass('active');
+        }
+    });
+});
+/*****************Quick Action Box Select End***************/
