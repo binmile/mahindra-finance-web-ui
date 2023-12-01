@@ -420,10 +420,6 @@ nav .userAvatar img {
   line-height: 24px;
   letter-spacing: 0.25px;
 }
-.listTable .listTableBody {
-  min-height: 52px;
-  transition: all 3s linear;
-}
 .listTable .listTableBody .listTabledata {
   display: flex;
   justify-content: center;
