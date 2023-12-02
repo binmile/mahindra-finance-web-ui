@@ -91,7 +91,7 @@ $("#quickActionElements :input").click(function () {
 
 function handleClickRadio(ele1, ele2) {
     var checkedValue = document.querySelector('input[name="preclosure-flow"]:checked').value;
-    if(checkedValue === ele1){
+    if(checkedValue == ele1){
         $('#'+ele1).addClass('active');
         $('#'+ele2).removeClass('active');
     } else {
