@@ -74,6 +74,9 @@ body {
     width: 100%;
 }
 
+.strongText{
+    font-weight: 600;
+}
 /*********Header Start****************/
 nav {
     box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
@@ -681,6 +684,9 @@ nav {
 .errorText{
     color: $color_red_error;
 }
+.greenText{
+    color: $color_green_dark;
+}
 .strike{
     text-decoration: line-through;
 }
@@ -709,7 +715,7 @@ nav {
 }
 
 .fDList{
-    min-height: 500px;
+    min-height: 380px;
     ul{
         padding: 0;
         list-style: none;
@@ -721,18 +727,6 @@ nav {
             padding: 12px 0px;
             .fDListContent{
                 @include allCenter;
-                .roundBackgroundIcon{
-                    background-color: #F3F4F6;
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    margin-right: 16px;
-                    @include allCenter;
-                    img{
-                        width: 15px;
-                        height: 15px;
-                    }
-                }
                 label{
                     @include custom-font(16px, 500, 24px, normal);
                 }
@@ -743,6 +737,125 @@ nav {
                     @include custom-font(14px, 500, 20px, normal);
                     background-color: $color_green_light;
                     color: $color_green_dark;
+                    border-radius: 8px;
+                    padding: 3px 7px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+.roundBackgroundIcon{
+    background-color: #F3F4F6;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 16px;
+    @include allCenter;
+    img{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.borrowFundContainer{
+    display: flex;
+    justify-content: space-between;
+    .borrowFundBox{
+        width: 48%;
+        display: flex;
+        justify-content: flex-start;
+        place-items: flex-start;
+        border-right: 1px solid #E8E8E8;
+        .borrowFundContent{
+            @include custom-font(14px, 500, 20px, normal);
+            width: calc(100% - 60px);
+        }
+        &:last-child{
+            border-right: none;
+        }
+    }
+}
+
+.borrowFundFDContainer{
+    margin-top: 32px;
+    .borrowFDList{
+        position: relative;
+        border: 1px solid #e8e8e8;
+        padding: 16px 24px 12px 24px;
+        border-radius: 8px;
+        margin-bottom: 24px;
+        &:last-child{
+            margin-bottom: 26px;
+        }
+        .headingLabel{
+            position: absolute;
+            top: -15px;
+            left: 24px;
+            background-color: #E8E8E8;
+            padding: 2px 10px;
+            border-radius: 8px;
+            @include custom-font(14px, 500, 20px, normal);
+        }
+        .borrowFDBox{
+            display: flex;
+            justify-content: space-between;
+            place-items: center;
+            .borrowFDContent{
+                .label{
+                    @include custom-font(14px, 500, 24px, 0.1px);
+                    color: #6B7280;
+                    margin-bottom: 4px;
+                }
+                .value{
+                    @include custom-font(16px, 500, 24px, normal);
+                    @include setDisplayProperty(flex, flex-start, center);
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.borrowFdBottomBox{
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 16px 24px;
+    .heading{
+        @include custom-font(16px, 700, 24px, normal);
+    }
+    .borrowFdBottomList{
+        .borrowFdListRow{
+            display: flex;
+            justify-content: space-between;
+            place-items: center;
+            border-bottom: 1px solid #D6D6D6;
+            padding: 8px 0px;
+            &:last-child{
+                border-bottom: none;
+                padding-bottom: 0px;
+            }
+            .fDListContent{
+                display: flex;
+                justify-content: flex-start;
+                place-items: center;
+                .roundBackgroundIcon{
+                    background-color: $color_white;
+                }
+                label{
+                    @include custom-font(16px, 500, 24px, normal);
+                }
+            }
+            .fDListValue{
+                @include custom-font(16px, 700, 24px, normal);
+                span{
+                    @include custom-font(14px, 500, 20px, normal);
+                    background-color: #BEF4D2;
                     border-radius: 8px;
                     padding: 3px 7px;
                     margin-right: 8px;

@@ -262,6 +262,10 @@ body {
   width: 100%;
 }
 
+.strongText {
+  font-weight: 600;
+}
+
 /*********Header Start****************/
 nav {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
@@ -1048,6 +1052,10 @@ nav .userAvatar img {
   color: #DC2626;
 }
 
+.greenText {
+  color: #17823E;
+}
+
 .strike {
   text-decoration: line-through;
 }
@@ -1078,7 +1086,7 @@ nav .userAvatar img {
 }
 
 .fDList {
-  min-height: 500px;
+  min-height: 380px;
 }
 .fDList ul {
   padding: 0;
@@ -1095,20 +1103,6 @@ nav .userAvatar img {
   display: flex;
   justify-content: center;
   place-items: center;
-}
-.fDList ul li .fDListContent .roundBackgroundIcon {
-  background-color: #F3F4F6;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 16px;
-  display: flex;
-  justify-content: center;
-  place-items: center;
-}
-.fDList ul li .fDListContent .roundBackgroundIcon img {
-  width: 15px;
-  height: 15px;
 }
 .fDList ul li .fDListContent label {
   font-size: 16px;
@@ -1129,6 +1123,150 @@ nav .userAvatar img {
   letter-spacing: normal;
   background-color: #BEF4D2;
   color: #17823E;
+  border-radius: 8px;
+  padding: 3px 7px;
+  margin-right: 8px;
+}
+
+.roundBackgroundIcon {
+  background-color: #F3F4F6;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.roundBackgroundIcon img {
+  width: 15px;
+  height: 15px;
+}
+
+.borrowFundContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.borrowFundContainer .borrowFundBox {
+  width: 48%;
+  display: flex;
+  justify-content: flex-start;
+  place-items: flex-start;
+  border-right: 1px solid #E8E8E8;
+}
+.borrowFundContainer .borrowFundBox .borrowFundContent {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  width: calc(100% - 60px);
+}
+.borrowFundContainer .borrowFundBox:last-child {
+  border-right: none;
+}
+
+.borrowFundFDContainer {
+  margin-top: 32px;
+}
+.borrowFundFDContainer .borrowFDList {
+  position: relative;
+  border: 1px solid #e8e8e8;
+  padding: 16px 24px 12px 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.borrowFundFDContainer .borrowFDList:last-child {
+  margin-bottom: 26px;
+}
+.borrowFundFDContainer .borrowFDList .headingLabel {
+  position: absolute;
+  top: -15px;
+  left: 24px;
+  background-color: #E8E8E8;
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+}
+.borrowFundFDContainer .borrowFDList .borrowFDBox {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+.borrowFundFDContainer .borrowFDList .borrowFDBox .borrowFDContent .label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #6B7280;
+  margin-bottom: 4px;
+}
+.borrowFundFDContainer .borrowFDList .borrowFDBox .borrowFDContent .value {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  display: flex;
+  justify-content: flex-start;
+  place-items: center;
+  flex-direction: row;
+}
+.borrowFundFDContainer .borrowFDList .borrowFDBox .borrowFDContent .value img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.borrowFdBottomBox {
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+.borrowFdBottomBox .heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.borrowFdBottomBox .borrowFdBottomList .borrowFdListRow {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  border-bottom: 1px solid #D6D6D6;
+  padding: 8px 0px;
+}
+.borrowFdBottomBox .borrowFdBottomList .borrowFdListRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+.borrowFdBottomBox .borrowFdBottomList .borrowFdListRow .fDListContent {
+  display: flex;
+  justify-content: flex-start;
+  place-items: center;
+}
+.borrowFdBottomBox .borrowFdBottomList .borrowFdListRow .fDListContent .roundBackgroundIcon {
+  background-color: #FFFFFF;
+}
+.borrowFdBottomBox .borrowFdBottomList .borrowFdListRow .fDListContent label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.borrowFdBottomBox .borrowFdBottomList .borrowFdListRow .fDListValue {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.borrowFdBottomBox .borrowFdBottomList .borrowFdListRow .fDListValue span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  background-color: #BEF4D2;
   border-radius: 8px;
   padding: 3px 7px;
   margin-right: 8px;
