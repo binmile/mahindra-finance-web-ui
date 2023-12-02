@@ -1146,6 +1146,7 @@ nav .userAvatar img {
 .borrowFundContainer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 46px;
 }
 .borrowFundContainer .borrowFundBox {
   width: 48%;
