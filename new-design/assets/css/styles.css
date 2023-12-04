@@ -186,6 +186,15 @@
 }
 
 /***********************************Custom Checkbox End**********************/
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+  background-color: #DCDCDC;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  color: #FFFFFF;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1379,32 +1388,38 @@ nav .userAvatar img {
   letter-spacing: 0.15px;
 }
 
-.accountList {
-  margin-top: 24px;
+.accountDetailsBox {
+  padding: 24px;
+}
+.accountDetailsBox .accountListContainer {
+  min-height: 465px;
+}
+.accountDetailsBox .accountListContainer .accountList {
+  padding: 24px 0px;
   border-bottom: 1px solid #E8E8E8;
 }
-.accountList:last-child {
+.accountDetailsBox .accountListContainer .accountList:last-child {
   border-bottom: 0px;
 }
-.accountList .accountHolderDetails {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
   display: flex;
   justify-content: space-between;
   place-items: center;
   flex-direction: row;
 }
-.accountList .accountHolderDetails .accountDetails .accountHolderName {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountHolderName {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 32px;
   letter-spacing: -0.18px;
 }
-.accountList .accountHolderDetails .accountDetails .accountType {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountType {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.25px;
 }
-.accountList .accountHolderDetails .accountDetails .accountMobile {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountMobile {
   margin-top: 8px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -1416,7 +1431,7 @@ nav .userAvatar img {
   place-items: center;
   flex-direction: row;
 }
-.accountList .accountHolderDetails .accountDetails .accountMobile img {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountMobile img {
   width: 20px;
   height: 20px;
   margin-right: 8px;
@@ -1426,6 +1441,28 @@ nav .userAvatar img {
   height: 40px;
   font-size: 14px;
   padding: 0 24px;
+}
+
+.bottomText {
+  display: flex;
+  justify-content: flex-start;
+  place-items: center;
+  flex-direction: row;
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+.bottomText .roundBackgroundIcon {
+  margin-right: 8px;
+}
+
+.accountList.disabledText {
+  color: #D1D5DB;
+}
+.accountList.disabledText img {
+  opacity: 0.2;
 }
 
 /********************Single Account Page End******************/

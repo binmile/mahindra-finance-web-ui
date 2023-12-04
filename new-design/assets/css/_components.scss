@@ -130,3 +130,11 @@
     transform: rotate(45deg);
   }
   /***********************************Custom Checkbox End**********************/
+
+  .btn.disabled, .btn:disabled, fieldset:disabled .btn{
+    background-color: $color_disabled_btn;
+    color: $color_white;
+}
+.btn:hover {
+    color: $color_white;
+}

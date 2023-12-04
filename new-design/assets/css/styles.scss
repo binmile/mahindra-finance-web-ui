@@ -943,41 +943,63 @@ nav {
 .boldHeader{
     @include custom-font(20px, 600, 24px, 0.15px);
 }
-.accountList{
-    margin-top: 24px;
-    border-bottom: 1px solid $color_border;
-    &:last-child{
-        border-bottom: 0px;
-    }
-    .accountHolderDetails{
-        @include setDisplayProperty(flex, space-between, center);
-        .accountDetails{
-            .accountHolderName{
-                @include custom-font(24px, 600, 32px, -0.18px);
+
+.accountDetailsBox{
+    padding: 24px;
+    .accountListContainer{
+        min-height: 465px;
+        .accountList{
+            padding: 24px 0px;
+            border-bottom: 1px solid $color_border;
+            &:last-child{
+                border-bottom: 0px;
             }
-            .accountType{
-                @include custom-font(14px, 400, 24px, 0.25px);
-            }
-            .accountMobile{
-                margin-top: 8px;
-                margin-bottom: 16px;
-                @include custom-font(16px, 500, 24px, normal);
-                @include setDisplayProperty(flex, flex-start, center);
-                img{
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 8px;
+            .accountHolderDetails{
+                @include setDisplayProperty(flex, space-between, center);
+                .accountDetails{
+                    .accountHolderName{
+                        @include custom-font(24px, 500, 32px, -0.18px);
+                    }
+                    .accountType{
+                        @include custom-font(14px, 400, 24px, 0.25px);
+                    }
+                    .accountMobile{
+                        margin-top: 8px;
+                        margin-bottom: 16px;
+                        @include custom-font(16px, 500, 24px, normal);
+                        @include setDisplayProperty(flex, flex-start, center);
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 8px;
+                        }
+                    }
                 }
             }
         }
     }
 }
-
 .customBtn{
     height: 40px;
     font-size: 14px;
     padding: 0 24px;
 }
+.bottomText{
+    @include setDisplayProperty(flex, flex-start, center);
+    color: $color_light_text;
+    @include custom-font(14px, 400, 24px, 0.25px);
+    .roundBackgroundIcon{
+        margin-right: 8px;
+    }
+}
+
+.accountList.disabledText{
+    color: #D1D5DB;
+    img{
+        opacity: 0.2;
+    }
+}
+
 /********************Single Account Page End******************/
 
 @import "./265_css";
