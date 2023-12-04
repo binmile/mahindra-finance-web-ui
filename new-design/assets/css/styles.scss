@@ -698,10 +698,8 @@ nav {
 }
 .customChangeWidth{
     width: 49%;
-    display: inline-flex;
     margin-right: 20px;
-    place-items: center;
-    justify-content: center;
+    @include setDisplayProperty(inline-flex, center, center);
     &:last-child{
         margin-right: 0px;
     }
@@ -726,10 +724,8 @@ nav {
         padding: 0;
         list-style: none;
         li{
-            display: flex;
-            justify-content: space-between;
-            place-items: center;
-            border-bottom: 1px solid #E8E8E8;
+            @include setDisplayProperty(flex, space-between, center);
+            border-bottom: 1px solid $color_border;
             padding: 12px 0px;
             .fDListContent{
                 @include allCenter;
@@ -766,14 +762,11 @@ nav {
 }
 
 .borrowFundContainer{
-    display: flex;
-    justify-content: space-between;
+    @include setDisplayProperty(flex, space-between, flex-start);
     margin-bottom: 46px;
     .borrowFundBox{
         width: 48%;
-        display: flex;
-        justify-content: flex-start;
-        place-items: flex-start;
+        @include setDisplayProperty(flex, flex-start, flex-start);
         border-right: 1px solid $color_border;
         .borrowFundContent{
             @include custom-font(14px, 500, 20px, normal);
@@ -806,9 +799,7 @@ nav {
             @include custom-font(14px, 500, 20px, normal);
         }
         .borrowFDBox{
-            display: flex;
-            justify-content: space-between;
-            place-items: center;
+            @include setDisplayProperty(flex, space-between, center);
             .borrowFDContent{
                 .label{
                     @include custom-font(14px, 500, 24px, 0.1px);
@@ -838,9 +829,7 @@ nav {
     }
     .borrowFdBottomList{
         .borrowFdListRow{
-            display: flex;
-            justify-content: space-between;
-            place-items: center;
+            @include setDisplayProperty(flex, space-between, center);
             border-bottom: 1px solid $color_light_border;
             padding: 8px 0px;
             &:last-child{
@@ -848,9 +837,7 @@ nav {
                 padding-bottom: 0px;
             }
             .fDListContent{
-                display: flex;
-                justify-content: flex-start;
-                place-items: center;
+                @include setDisplayProperty(flex, flex-start, center);
                 .roundBackgroundIcon{
                     background-color: $color_white;
                 }
