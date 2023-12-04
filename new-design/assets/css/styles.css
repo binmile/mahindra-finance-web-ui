@@ -1068,10 +1068,11 @@ nav .userAvatar img {
 
 .customChangeWidth {
   width: 49%;
-  display: inline-flex;
   margin-right: 20px;
-  place-items: center;
+  display: inline-flex;
   justify-content: center;
+  place-items: center;
+  flex-direction: row;
 }
 .customChangeWidth:last-child {
   margin-right: 0px;
@@ -1102,6 +1103,7 @@ nav .userAvatar img {
   display: flex;
   justify-content: space-between;
   place-items: center;
+  flex-direction: row;
   border-bottom: 1px solid #E8E8E8;
   padding: 12px 0px;
 }
@@ -1152,6 +1154,8 @@ nav .userAvatar img {
 .borrowFundContainer {
   display: flex;
   justify-content: space-between;
+  place-items: flex-start;
+  flex-direction: row;
   margin-bottom: 46px;
 }
 .borrowFundContainer .borrowFundBox {
@@ -1159,6 +1163,7 @@ nav .userAvatar img {
   display: flex;
   justify-content: flex-start;
   place-items: flex-start;
+  flex-direction: row;
   border-right: 1px solid #E8E8E8;
 }
 .borrowFundContainer .borrowFundBox .borrowFundContent {
@@ -1201,6 +1206,7 @@ nav .userAvatar img {
   display: flex;
   justify-content: space-between;
   place-items: center;
+  flex-direction: row;
 }
 .borrowFundFDContainer .borrowFDList .borrowFDBox .borrowFDContent .label {
   font-size: 14px;
@@ -1241,6 +1247,7 @@ nav .userAvatar img {
   display: flex;
   justify-content: space-between;
   place-items: center;
+  flex-direction: row;
   border-bottom: 1px solid #D6D6D6;
   padding: 8px 0px;
 }
@@ -1252,6 +1259,7 @@ nav .userAvatar img {
   display: flex;
   justify-content: flex-start;
   place-items: center;
+  flex-direction: row;
 }
 .borrowFdBottomBox .borrowFdBottomList .borrowFdListRow .fDListContent .roundBackgroundIcon {
   background-color: #FFFFFF;
@@ -1420,4 +1428,6 @@ nav .userAvatar img {
   padding: 0 24px;
 }
 
-/********************Single Account Page End******************//*# sourceMappingURL=styles.css.map */
+/********************Single Account Page End******************/
+/*********** Responsive CSS Start Here*************/
+/*********** Responsive CSS Start Here*************//*# sourceMappingURL=styles.css.map */
