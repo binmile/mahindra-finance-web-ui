@@ -258,6 +258,10 @@ body {
   margin-bottom: 20px;
 }
 
+.pd-32 {
+  padding: 32px;
+}
+
 .wd-100 {
   width: 100%;
 }
@@ -850,7 +854,8 @@ nav .userAvatar img {
 .fdDetailsBox .fdHeader .fdTenure img {
   margin-right: 4px;
 }
-.fdDetailsBox .fdMainContent {
+
+.fdMainContent {
   display: flex;
   justify-content: space-between;
   place-items: center;
@@ -858,19 +863,19 @@ nav .userAvatar img {
   padding: 24px 0px;
   border-bottom: 1px solid #E8E8E8;
 }
-.fdDetailsBox .fdMainContent .fdInvestment {
+.fdMainContent .fdInvestment {
   display: flex;
   justify-content: flex-start;
   place-items: flex-start;
   flex-direction: column;
 }
-.fdDetailsBox .fdMainContent .fdInvestment .bigText {
+.fdMainContent .fdInvestment .bigText {
   font-size: 34px;
   font-weight: 600;
   line-height: 40px;
   letter-spacing: 0.25px;
 }
-.fdDetailsBox .fdMainContent .fdInvestment .lightText {
+.fdMainContent .fdInvestment .lightText {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -878,14 +883,14 @@ nav .userAvatar img {
   color: #6B7280;
   margin-top: 8px;
 }
-.fdDetailsBox .fdMainContent .fdTenure {
+.fdMainContent .fdTenure {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: normal;
   position: relative;
 }
-.fdDetailsBox .fdMainContent .fdTenure::before {
+.fdMainContent .fdTenure::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -896,7 +901,7 @@ nav .userAvatar img {
   height: 9px;
   background-color: #D6D6D6;
 }
-.fdDetailsBox .fdMainContent .fdTenure::after {
+.fdMainContent .fdTenure::after {
   content: "";
   position: absolute;
   top: 1px;
@@ -908,18 +913,19 @@ nav .userAvatar img {
   background-image: url("../img/icons/Union.svg");
   background-repeat: no-repeat;
 }
-.fdDetailsBox .fdContents {
+
+.fdContents {
   display: flex;
   justify-content: space-between;
   place-items: baseline;
   flex-direction: row;
   margin-top: 24px;
 }
-.fdDetailsBox .fdContents .fdDetails {
+.fdContents .fdDetails {
   display: block;
   position: relative;
 }
-.fdDetailsBox .fdContents .fdDetails::after {
+.fdContents .fdDetails::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -930,10 +936,10 @@ nav .userAvatar img {
   height: 35px;
   background-color: #E8E8E8;
 }
-.fdDetailsBox .fdContents .fdDetails:last-child::after {
+.fdContents .fdDetails:last-child::after {
   display: none;
 }
-.fdDetailsBox .fdContents .fdDetails .label {
+.fdContents .fdDetails .label {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -941,7 +947,7 @@ nav .userAvatar img {
   color: #6B7280;
   margin-bottom: 4px;
 }
-.fdDetailsBox .fdContents .fdDetails .value {
+.fdContents .fdDetails .value {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -950,7 +956,7 @@ nav .userAvatar img {
   justify-content: center;
   place-items: center;
 }
-.fdDetailsBox .fdContents .fdDetails .value img {
+.fdContents .fdDetails .value img {
   width: 20px;
   height: 20px;
   margin-right: 4px;
@@ -1171,7 +1177,7 @@ nav .userAvatar img {
 }
 .borrowFundFDContainer .borrowFDList {
   position: relative;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #E8E8E8;
   padding: 16px 24px 12px 24px;
   border-radius: 8px;
   margin-bottom: 24px;
@@ -1273,4 +1279,145 @@ nav .userAvatar img {
   margin-right: 8px;
 }
 
-/********************Preclosure Flow End******************//*# sourceMappingURL=styles.css.map */
+/********************Preclosure Flow End******************/
+/********************Single Account Page Start******************/
+.darkBg {
+  background-color: #F3F4F6;
+}
+
+.accountContainer {
+  padding: 32px;
+}
+.accountContainer .accountBox {
+  padding: 24px 32px;
+  border-radius: 8px;
+}
+.accountContainer .accountBox .heading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+.accountContainer .accountBox .fdMainContent {
+  border-bottom: 1px solid #D6D6D6;
+}
+.accountContainer .accountBox .fdMainContent .fdTenure::before {
+  display: none;
+}
+.accountContainer .accountBox .fdMainContent .fdTenure:after {
+  display: none;
+}
+.accountContainer .accountBox .fdContents {
+  min-height: 350px;
+}
+.accountContainer .accountBox .fdContents .fdDetails .value {
+  justify-content: flex-start;
+}
+.accountContainer .accountBox .fdContents .fdDetails .value .roundBackgroundIcon {
+  background-color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.accountContainer .accountBox .fdContents .fdDetails .value .roundBackgroundIcon img {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  filter: unset;
+}
+.accountContainer .accountBox .fdContents .fdDetails:after {
+  background-color: #D6D6D6;
+  right: -50px;
+}
+
+.bottomLightText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+}
+
+.termsConditionsContainer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+.termsConditionsContainer .checkbox-container {
+  margin-bottom: 0px;
+  margin-top: 32px;
+}
+.termsConditionsContainer .checkbox-container .checkmark {
+  height: 16px;
+  width: 16px;
+  margin-top: 4px;
+}
+.termsConditionsContainer .checkbox-container .checkmark::after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border-width: 0 2px 2px 0;
+}
+.termsConditionsContainer a {
+  color: #1084CB;
+}
+
+.boldHeader {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.accountList {
+  margin-top: 24px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.accountList:last-child {
+  border-bottom: 0px;
+}
+.accountList .accountHolderDetails {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  flex-direction: row;
+}
+.accountList .accountHolderDetails .accountDetails .accountHolderName {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+}
+.accountList .accountHolderDetails .accountDetails .accountType {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+.accountList .accountHolderDetails .accountDetails .accountMobile {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  display: flex;
+  justify-content: flex-start;
+  place-items: center;
+  flex-direction: row;
+}
+.accountList .accountHolderDetails .accountDetails .accountMobile img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.customBtn {
+  height: 40px;
+  font-size: 14px;
+  padding: 0 24px;
+}
+
+/********************Single Account Page End******************//*# sourceMappingURL=styles.css.map */
