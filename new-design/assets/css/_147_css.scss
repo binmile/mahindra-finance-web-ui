@@ -5,12 +5,83 @@
         display: none;
     }
 
+    .dashboardCardMobile {
+        display: none;
+    }
+
+    .mobile_container {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: $tablet) {
     .container_wrapper {
         display: none !important;
 
+    }
+
+    .cardContainer_mobileView {
+        margin-bottom: 24px;
+        margin-top: 3px;
+    }
+
+    .dashboardDarkCard {
+        .cardLabelHeading {
+            &.cardLabelHeading_mob {
+
+                font-family: $primaryFont;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.15000000596046448px;
+                text-align: left;
+            }
+        }
+
+
+        .cardLabelList_mob {
+            ul {
+                li {
+                    font-family: $primaryFont;
+
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    letter-spacing: 0.25px;
+                    text-align: left;
+                }
+            }
+
+        }
+
+        &.dashboardDarkCard_mob {
+            padding: 16px 12px;
+            height: auto;
+
+            .newFdImage_mob {
+                width: auto;
+                height: 111px;
+                ;
+            }
+        }
+
+        .advertisement_mob {
+            width: 100%;
+        }
+    }
+
+
+
+
+    .fixed_deposit_summary {
+        font-family: $primaryFont;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.15000000596046448px;
+        text-align: left;
+        color: $color_black;
     }
 
     .mobile_container {
@@ -31,6 +102,7 @@
         box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
         border-radius: 5.14px;
         margin-top: 12px;
+        margin-bottom: 24px;
 
         .custom-tooltip {
             &.custom_tooltip {
@@ -126,6 +198,8 @@
     }
 
     .fixedDepositDetailsData {
+        margin-top: 24px;
+
         .details_fixed_deposit {
             padding: 14px 16px;
             background-color: $color_white !important;

@@ -1557,10 +1557,56 @@ button.resend_otp.disabled {
   .mobile_container {
     display: none;
   }
+  .dashboardCardMobile {
+    display: none;
+  }
+  .mobile_container {
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   .container_wrapper {
     display: none !important;
+  }
+  .cardContainer_mobileView {
+    margin-bottom: 24px;
+    margin-top: 3px;
+  }
+  .dashboardDarkCard .cardLabelHeading.cardLabelHeading_mob {
+    font-family: "Georama", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.150000006px;
+    text-align: left;
+  }
+  .dashboardDarkCard .cardLabelList_mob ul li {
+    font-family: "Georama", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+  .dashboardDarkCard.dashboardDarkCard_mob {
+    padding: 16px 12px;
+    height: auto;
+  }
+  .dashboardDarkCard.dashboardDarkCard_mob .newFdImage_mob {
+    width: auto;
+    height: 111px;
+  }
+  .dashboardDarkCard .advertisement_mob {
+    width: 100%;
+  }
+  .fixed_deposit_summary {
+    font-family: "Georama", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.150000006px;
+    text-align: left;
+    color: #000000;
   }
   .mobile_container .fixed_deposit_summary {
     font-family: "Georama", sans-serif;
@@ -1577,6 +1623,7 @@ button.resend_otp.disabled {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
     border-radius: 5.14px;
     margin-top: 12px;
+    margin-bottom: 24px;
   }
   .cardContainerMobile .custom-tooltip.custom_tooltip img {
     vertical-align: text-bottom;
@@ -1645,6 +1692,9 @@ button.resend_otp.disabled {
   .cardContainerMobile .card_wrapper_data {
     display: flex;
     justify-content: space-between;
+  }
+  .fixedDepositDetailsData {
+    margin-top: 24px;
   }
   .fixedDepositDetailsData .details_fixed_deposit {
     padding: 14px 16px;
