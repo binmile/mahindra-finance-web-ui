@@ -141,3 +141,35 @@ inputs.addEventListener("keyup", function (e) {
 });
 
 /*************************OTP Modal End******************************/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const timerElement = document.getElementById("timer");
+    const resultElement = document.getElementById("resend_otp");
+    function startTimer(duration, display) {
+        let timer = duration;
+        let minutes, seconds;
+        let interval = setInterval(function() {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            display.textContent = minutes + ":" + seconds;
+            timer--;
+            if (timer < 0) {
+                clearInterval(interval);
+                showResendButton();
+            }
+        }, 1000);
+    }
+
+    function showResendButton() {
+        resultElement.classList.remove("disabled");
+        resultElement.disabled = false;
+    }
+    resultElement.addEventListener("click", function() {
+        resultElement.classList.add("disabled");
+        resultElement.disabled = true;
+        startTimer(59, timerElement);
+    });
+    startTimer(59, timerElement);
+});

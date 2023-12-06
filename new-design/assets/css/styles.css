@@ -202,6 +202,10 @@
   font-family: "Georama", sans-serif;
 }
 
+a {
+  color: #1084CB;
+}
+
 body {
   min-height: calc(100vh + 5px);
   padding-top: 4.5rem;
@@ -377,10 +381,10 @@ nav .userAvatar img {
 /*********Header End****************/
 /************Button Start ***********************/
 .themeRedBtn {
-  width: -moz-fit-content;
-  width: fit-content;
   background-color: #E31837;
   color: #FFFFFF;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 27px;
   border: none;
   outline: none;
@@ -706,15 +710,27 @@ nav .userAvatar img {
   padding: 0px;
   opacity: 1;
 }
-.modal .modal-content .modal-body .info-heading {
+.modal .modal-content .modal-body .info-heading-container {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading-image {
+  margin-right: 12px;
+  background-color: #F3F4F6;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.18px;
   text-align: center;
-}
-.modal .modal-content .modal-body .info-heading img {
-  margin-right: 12px;
 }
 .modal .modal-content .modal-body .info-content {
   font-size: 16px;
@@ -722,7 +738,7 @@ nav .userAvatar img {
   line-height: 24px;
   letter-spacing: 0.5px;
   text-align: center;
-  margin: 12px 0px 20px 0px;
+  margin: 20px 0px 16px 0px;
 }
 .modal .modal-content .modal-body .info-button {
   display: flex;
@@ -1366,8 +1382,8 @@ nav .userAvatar img {
   margin-top: 32px;
 }
 .termsConditionsContainer .checkbox-container .checkmark {
-  height: 16px;
   width: 16px;
+  height: 16px;
   margin-top: 4px;
 }
 .termsConditionsContainer .checkbox-container .checkmark::after {
@@ -1490,8 +1506,6 @@ nav .userAvatar img {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: normal;
-  cursor: not-allowed;
-  pointer-events: none;
 }
 
 .input:focus {
@@ -1500,7 +1514,40 @@ nav .userAvatar img {
 
 .input:nth-child(1) {
   cursor: pointer;
-  pointer-events: all;
+}
+
+.otp_msg {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-top: 8px;
+}
+.otp_msg .timer {
+  color: #6B7280;
+  margin-right: 8px;
+}
+.otp_msg button.resend_otp {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #1084CB;
+  text-decoration: underline;
+  background-color: transparent;
+  padding: 0;
+}
+
+button.resend_otp.disabled {
+  background-color: transparent;
+  color: #D1D5DB !important;
+}
+
+.msg {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: normal;
+  margin-top: 12px;
 }
 
 /********************Single Account Page End******************/
