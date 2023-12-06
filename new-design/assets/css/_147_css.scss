@@ -20,7 +20,6 @@
         display: none !important;
 
     }
-
     .cardContainer_mobileView {
         margin-bottom: 24px;
         margin-top: 3px;
@@ -29,27 +28,17 @@
     .dashboardDarkCard {
         .cardLabelHeading {
             &.cardLabelHeading_mob {
-
-                font-family: $primaryFont;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 24px;
-                letter-spacing: 0.15000000596046448px;
                 text-align: left;
+                @include custom-font(16px, 600, 24px, 0.15000000596046448px);
+
             }
         }
-
-
         .cardLabelList_mob {
             ul {
                 li {
-                    font-family: $primaryFont;
-
-                    font-size: 12px;
-                    font-weight: 500;
-                    line-height: 16px;
-                    letter-spacing: 0.25px;
                     text-align: left;
+                    @include custom-font(12px, 500, 16px, 0.25px);
+
                 }
             }
 
@@ -58,41 +47,36 @@
         &.dashboardDarkCard_mob {
             padding: 16px 12px;
             height: auto;
-
             .newFdImage_mob {
-                width: auto;
-                height: 111px;
-                ;
+                @include custom-width-height(auto, 111px)
             }
         }
-
         .advertisement_mob {
             width: 100%;
+            .themeRedBtn {
+                &.themeRedBtn_mob {
+                    height: 32px;
+                    @include custom-font(12px, 700, 16px, 1.25px);
+
+
+                }
+            }
         }
     }
 
-
-
-
     .fixed_deposit_summary {
-        font-family: $primaryFont;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0.15000000596046448px;
         text-align: left;
         color: $color_black;
+        @include custom-font(16px, 600, 24px, 0.15000000596046448px);
+
     }
 
     .mobile_container {
         .fixed_deposit_summary {
-            font-family: $primaryFont;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 24px;
-            letter-spacing: 0.15000000596046448px;
             text-align: left;
             color: $color_black;
+            @include custom-font(16px, 600, 24px, 0.15000000596046448px);
+
         }
     }
 
@@ -103,7 +87,6 @@
         border-radius: 5.14px;
         margin-top: 12px;
         margin-bottom: 24px;
-
         .custom-tooltip {
             &.custom_tooltip {
                 img {
@@ -121,8 +104,7 @@
 
         .first_active_data::after {
             content: "";
-            width: 1px;
-            height: 80%;
+            @include custom-width-height(1px, 80%);
             background: $color_border;
             position: absolute;
             right: 0;
@@ -130,14 +112,9 @@
         }
 
         .active_fds {
-            font-family: $primaryFont;
-            font-size: 10px;
-            font-weight: 500;
-            line-height: 14px;
-            letter-spacing: 0.4000000059604645px;
             text-align: left;
             color: $color_light_text;
-
+            @include custom-font(10px, 500, 14px, 0.4000000059604645px);
             &.investment_fds {
                 white-space: nowrap;
             }
@@ -165,34 +142,26 @@
             gap: 6px;
 
             .detail_price {
-                font-family: $primaryFont;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 24px;
-                letter-spacing: 0.25px;
                 text-align: left;
                 color: $color_black_light;
+                @include custom-font(14px, 600, 24px, 0.25px);
 
             }
         }
 
         .cardIcons_circle {
-            width: 20px;
-            height: 20px;
+            @include custom-width-height(20px, 20px);
             background-color: $color_light_bg;
             border-radius: 50%;
             @include allCenter;
             margin-bottom: 5px;
-
             img {
-                width: 10px;
-                height: 10px;
+                @include custom-width-height(10px, 10px);
             }
         }
 
         .card_wrapper_data {
-            display: flex;
-            justify-content: space-between;
+           @include setDisplayProperty(flex, space-between, center )
         }
 
     }
@@ -208,33 +177,23 @@
             margin-top: 12px;
 
             .auto_renewal_details {
-                display: flex;
-                justify-content: space-between;
+              
+                @include setDisplayProperty(flex, space-between, center );
 
                 .FD_num {
-                    font-family: $primaryFont;
-                    font-size: 12px;
-                    font-weight: 400;
-                    line-height: 16px;
-                    letter-spacing: 0em;
                     text-align: left;
                     color: $color_black_light;
+                    @include custom-font(12px, 400, 16px, 0em);
 
                 }
 
                 .auto_renewal {
                     display: flex;
-
                     .auto_renewal_text {
-                        font-family: $primaryFont;
-                        font-size: 12px;
-                        font-weight: 500;
-                        line-height: 16px;
-                        letter-spacing: 0.25px;
                         text-align: left;
                         color: $color_light_text;
+                        @include custom-font(12px, 500, 16px, 0.25px);
                     }
-
                     .form-check-input_mob {
                         margin-top: 0;
                     }
@@ -252,75 +211,53 @@
                         content: "";
                     }
 
-
-
                 }
 
-
             }
-
             .second_details {
                 .Investment_details_content {
-                    display: flex;
-                    justify-content: space-between;
+                    @include setDisplayProperty(flex,space-between, center);
                     margin: 12px 0 16px 0;
-
                     .img_detail {
                         display: flex;
                         gap: 4px;
                         margin-top: 4px;
 
                         img {
-                            width: 15px;
-                            height: 15px;
+                            @include custom-width-height(15px, 15px);
                             vertical-align: inherit;
                         }
 
                         .NA_text {
-                            font-family: $primaryFont;
-                            font-size: 14px;
-                            font-weight: 400;
-                            line-height: 20px;
-                            letter-spacing: 0.25px;
                             text-align: left;
                             color: $color_black_light;
-                            ;
+                            @include custom-font(14px, 400, 20px, 0.25px);
+
 
                         }
 
                         .percentage_text {
-
-                            font-family: $primaryFont;
-                            font-size: 14px;
-                            font-weight: 700;
-                            line-height: 20px;
-                            letter-spacing: 0em;
                             text-align: left;
                             color: $color_green_dark;
-                            ;
+                            @include custom-font(14px, 700, 20px, 0em);
+
                         }
                     }
 
                     .text_content {
-                        font-family: $primaryFont;
-                        font-size: 12px;
-                        font-weight: 400;
-                        line-height: 16px;
-                        letter-spacing: 0em;
                         text-align: left;
                         color: $color_light_text;
+                        @include custom-font(12px, 400, 16px, 0em);
+
                     }
                 }
 
             }
 
             .third_details {
-                display: flex;
-                justify-content: space-between;
-
+               @include setDisplayProperty(flex,space-between, center);
                 .circle_arrow {
-                    width: 20px;
-                    height: 20px;
+                    @include custom-width-height(20px, 20px);
                     @include allCenter;
                     border-radius: 50%;
                     background-color: $color_black;
@@ -349,18 +286,12 @@
         }
 
         .showmorebtn_mob {
-            display: flex;
-            justify-content: center;
+            @include setDisplayProperty(flex, center, center);
             margin-top: 12px;
             margin-bottom: 24px;
-            font-family: $primaryFont;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-            letter-spacing: 0.25px;
             text-align: left;
             color: $color_light_blue;
-
+            @include custom-font(12px, 500, 20px, 0.25px);
             a {
                 text-decoration: none;
             }
@@ -383,9 +314,7 @@
         }
 
         .img_content {
-
-            width: 110px;
-            height: 111px;
+            @include custom-width-height(110px, 111px);
             object-fit: cover;
 
         }
@@ -393,8 +322,8 @@
         .themeRedBtn {
             &.img {
                 .img {
-                    width: 110px;
-                    height: 111px;
+                    @include custom-width-height(110px, 111px);
+
                 }
             }
         }
