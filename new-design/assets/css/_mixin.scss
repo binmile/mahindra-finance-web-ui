@@ -103,3 +103,8 @@
     line-height: $lineHeight;
     letter-spacing: $letterSpacing;
 }
+
+@mixin custom-width-height($wd, $ht){
+    width: $wd;
+    height: $ht;
+}

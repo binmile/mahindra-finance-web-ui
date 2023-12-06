@@ -186,11 +186,24 @@
 }
 
 /***********************************Custom Checkbox End**********************/
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+  background-color: #DCDCDC;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  color: #FFFFFF;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Georama", sans-serif;
+}
+
+a {
+  color: #1084CB;
 }
 
 body {
@@ -368,10 +381,10 @@ nav .userAvatar img {
 /*********Header End****************/
 /************Button Start ***********************/
 .themeRedBtn {
-  width: -moz-fit-content;
-  width: fit-content;
   background-color: #E31837;
   color: #FFFFFF;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 27px;
   border: none;
   outline: none;
@@ -697,15 +710,27 @@ nav .userAvatar img {
   padding: 0px;
   opacity: 1;
 }
-.modal .modal-content .modal-body .info-heading {
+.modal .modal-content .modal-body .info-heading-container {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading-image {
+  margin-right: 12px;
+  background-color: #F3F4F6;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.18px;
   text-align: center;
-}
-.modal .modal-content .modal-body .info-heading img {
-  margin-right: 12px;
 }
 .modal .modal-content .modal-body .info-content {
   font-size: 16px;
@@ -713,7 +738,7 @@ nav .userAvatar img {
   line-height: 24px;
   letter-spacing: 0.5px;
   text-align: center;
-  margin: 12px 0px 20px 0px;
+  margin: 20px 0px 16px 0px;
 }
 .modal .modal-content .modal-body .info-button {
   display: flex;
@@ -1357,8 +1382,8 @@ nav .userAvatar img {
   margin-top: 32px;
 }
 .termsConditionsContainer .checkbox-container .checkmark {
-  height: 16px;
   width: 16px;
+  height: 16px;
   margin-top: 4px;
 }
 .termsConditionsContainer .checkbox-container .checkmark::after {
@@ -1379,32 +1404,38 @@ nav .userAvatar img {
   letter-spacing: 0.15px;
 }
 
-.accountList {
-  margin-top: 24px;
+.accountDetailsBox {
+  padding: 24px;
+}
+.accountDetailsBox .accountListContainer {
+  min-height: 465px;
+}
+.accountDetailsBox .accountListContainer .accountList {
+  padding: 24px 0px;
   border-bottom: 1px solid #E8E8E8;
 }
-.accountList:last-child {
+.accountDetailsBox .accountListContainer .accountList:last-child {
   border-bottom: 0px;
 }
-.accountList .accountHolderDetails {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
   display: flex;
   justify-content: space-between;
   place-items: center;
   flex-direction: row;
 }
-.accountList .accountHolderDetails .accountDetails .accountHolderName {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountHolderName {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 32px;
   letter-spacing: -0.18px;
 }
-.accountList .accountHolderDetails .accountDetails .accountType {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountType {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.25px;
 }
-.accountList .accountHolderDetails .accountDetails .accountMobile {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountMobile {
   margin-top: 8px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -1416,7 +1447,7 @@ nav .userAvatar img {
   place-items: center;
   flex-direction: row;
 }
-.accountList .accountHolderDetails .accountDetails .accountMobile img {
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountMobile img {
   width: 20px;
   height: 20px;
   margin-right: 8px;
@@ -1426,6 +1457,97 @@ nav .userAvatar img {
   height: 40px;
   font-size: 14px;
   padding: 0 24px;
+}
+
+.bottomText {
+  display: flex;
+  justify-content: flex-start;
+  place-items: center;
+  flex-direction: row;
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+.bottomText .roundBackgroundIcon {
+  margin-right: 8px;
+}
+
+.accountList.disabledText {
+  color: #D1D5DB;
+}
+.accountList.disabledText img {
+  opacity: 0.2;
+}
+
+.otpBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
+.otpInputContainer {
+  border: 1px solid #231F20;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 18px;
+}
+
+.input {
+  width: 40px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:nth-child(1) {
+  cursor: pointer;
+}
+
+.otp_msg {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-top: 8px;
+}
+.otp_msg .timer {
+  color: #6B7280;
+  margin-right: 8px;
+}
+.otp_msg button.resend_otp {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #1084CB;
+  text-decoration: underline;
+  background-color: transparent;
+  padding: 0;
+}
+
+button.resend_otp.disabled {
+  background-color: transparent;
+  color: #D1D5DB !important;
+}
+
+.msg {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: normal;
+  margin-top: 12px;
 }
 
 /********************Single Account Page End******************/

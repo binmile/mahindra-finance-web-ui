@@ -148,3 +148,76 @@ function handleClickRadio(ele1, ele2) {
     }
 }
 
+/*************************OTP Modal Start******************************/
+
+function handleClickOTP(){
+    var myModal = new bootstrap.Modal(document.getElementById("myOTPModal"));
+    myModal.show();
+}
+
+const inputs = document.getElementById("inputs"); 
+  
+inputs.addEventListener("input", function (e) { 
+    const target = e.target; 
+    const val = target.value; 
+  
+    if (isNaN(val)) { 
+        target.value = ""; 
+        return; 
+    } 
+  
+    if (val != "") { 
+        const next = target.nextElementSibling; 
+        if (next) { 
+            next.focus(); 
+        } 
+    } 
+}); 
+  
+inputs.addEventListener("keyup", function (e) { 
+    const target = e.target; 
+    const key = e.key.toLowerCase(); 
+  
+    if (key == "backspace" || key == "delete") { 
+        target.value = ""; 
+        const prev = target.previousElementSibling; 
+        if (prev) { 
+            prev.focus(); 
+        } 
+        return; 
+    } 
+});
+
+/*************************OTP Modal End******************************/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const timerElement = document.getElementById("timer");
+    const resultElement = document.getElementById("resend_otp");
+    function startTimer(duration, display) {
+        let timer = duration;
+        let minutes, seconds;
+        let interval = setInterval(function() {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            display.textContent = minutes + ":" + seconds;
+            timer--;
+            if (timer < 0) {
+                clearInterval(interval);
+                showResendButton();
+            }
+        }, 1000);
+    }
+
+    function showResendButton() {
+        resultElement.classList.remove("disabled");
+        resultElement.disabled = false;
+    }
+    resultElement.addEventListener("click", function() {
+        resultElement.classList.add("disabled");
+        resultElement.disabled = true;
+        startTimer(59, timerElement);
+    });
+    startTimer(59, timerElement);
+});

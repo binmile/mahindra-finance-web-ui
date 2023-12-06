@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahindra Finance :: Single Account Holder</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Mahindra Finance :: Joint Account Holder</title>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
@@ -138,7 +137,7 @@
 <div class="container mb-20">
     <div class="row">
         <div class="col col-md-12"><a href="#" class="commonBackBtn"><img src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
-        <div class="col col-md-12 mt-20 cardContainer accountContainer animate__animated animate__fadeInUp">
+        <div class="col col-md-12 mt-20 cardContainer accountContainer">
             <div class="container p-0">
                 <div class="row">
                     <div class="col col-md-7">
@@ -203,11 +202,19 @@
                                             <div class="accountType"> (Primary account holder)</div>
                                             <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons" /> 9283393221</div>
                                         </div>
-                                        <img src="./assets/img/terms-and-conditions.svg" alt="icons" />
+                                        <button class="themeRedBtn customBtn"> Generate OTP
+                                            <img src="./assets/img/arrow-right.svg" alt="icons" />
+                                        </button>
                                     </div>
-                                    <button class="themeRedBtn customBtn" onclick="handleClickOTP()"> Generate OTP
-                                        <img src="./assets/img/arrow-right.svg" alt="icons" />
-                                    </button>
+                                </div>
+                                <div class="accountList disabledText">
+                                    <div class="accountHolderDetails">
+                                        <div class="accountDetails">
+                                            <div class="accountHolderName">Raman Kumar Sahu</div>
+                                            <div class="accountType"> (Secondary account holder)</div>
+                                            <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons" /> 9282329343</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="bottomText">
@@ -230,7 +237,7 @@
                 </div>
             </div>
         </div>
-        <div class="col col-md-12 animate__animated animate__fadeInUp">
+        <div class="col col-md-12">
             <div class="buttonContainer">
                 <button class="btn themeRedBtn" disabled> Proceed
                 <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
@@ -240,55 +247,6 @@
  </div>
 
 
- <!-- OTP Modal Start -->
- <div class="modal fade" id="myOTPModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="btn-close"
-                    data-bs-dismiss="modal" aria-label="Close">
-                    <img src="./assets/img/icons/close-icon.svg"
-                        alt="icon" />
-                </button>
-                <div class="info-heading-container">
-                    <div class="info-heading-image">
-                        <img src="./assets/img/icons/otp-icon.svg" alt="icon" />
-                    </div>
-                    <div class="info-heading">
-                        Enter the OTP to Verify your Number
-                    </div>
-                </div>
-                <div class="info-content otpBox">
-                    <div id="inputs" class="inputs otpInputContainer">
-                        <input class="input" type="text"
-                            inputmode="numeric" maxlength="1"  />
-                        <input class="input" type="text"
-                            inputmode="numeric" maxlength="1" />
-                        <input class="input" type="text"
-                            inputmode="numeric" maxlength="1" />
-                        <input class="input" type="text"
-                            inputmode="numeric" maxlength="1" />
-                            <input class="input" type="text"
-                            inputmode="numeric" maxlength="1" />
-                            <input class="input" type="text"
-                            inputmode="numeric" maxlength="1" />
-                    </div>
-                    <div class="msg errorText">Incorrect OTP. Please try again!</div>
-
-                    <div class="otp_msg" id="otp_msg">
-                        <div class="timer" id="timer">
-                            00:59
-                        </div>
-                        <button class="btn resend_otp disabled" disabled id="resend_otp">Resend OTP</button>
-                    </div>
-                </div>
-                <div class="info-button"><button type="button"
-                        class="btn themeRedBtn" disabled>Proceed</button></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- OTP Modal End-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
