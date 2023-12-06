@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 /********************Toggle Switch Start**********************/
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 .form-check-input {
   position: relative;
   border: 1px solid #4D4D4F;
@@ -1467,4 +1468,131 @@ nav .userAvatar img {
 
 /********************Single Account Page End******************/
 /*********** Responsive CSS Start Here*************/
+@media screen and (min-width: 767px) {
+  .mob-wrapper {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .web-wrapper {
+    display: none;
+  }
+  .mob-wrapper .fixed_deposit_summary {
+    font-family: "Georama", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit {
+    padding: 12px 16px;
+    background-color: #FFFFFF !important;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5.14px;
+    margin-top: 12px;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .mobRadioButton {
+    width: 16px;
+    height: 16px;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .FD_num {
+    font-family: "Georama", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #231F20;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0 16px 0px;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail img {
+    width: 15px;
+    height: 15px;
+    vertical-align: inherit;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .NA_text {
+    font-family: "Georama", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #231F20;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .percentage_text {
+    font-family: "Georama", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #17823E;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .text_content {
+    font-family: "Georama", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6B7280;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .third_details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details {
+    display: flex;
+    gap: 7px;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details .red-bg-label.red_bg_label_mob {
+    padding: 0.4rem;
+  }
+  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details .green_label_mob {
+    padding: 0.4rem;
+  }
+  .mob-wrapper .mob-buttonContainer {
+    position: fixed;
+    width: 94%;
+    bottom: 20px;
+  }
+  .mob-wrapper .mob-buttonContainer button.mob-themeRedBtn {
+    width: 100%;
+    background-color: #E31837;
+    color: #FFFFFF;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: normal;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    cursor: pointer;
+  }
+  .mob-wrapper .mob-buttonContainer button.mob-themeRedBtn img {
+    margin-left: 8px;
+    transition: transform 250ms ease-in-out;
+  }
+  .mob-wrapper .mob-buttonContainer button.mob-themeRedBtn:hover {
+    background-color: #c7142f;
+  }
+}
 /*********** Responsive CSS Start Here*************//*# sourceMappingURL=styles.css.map */

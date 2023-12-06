@@ -72,6 +72,56 @@ function updateKycModal(id) {
         }
     });
 }
+
+function radioButtonAction1(id) {
+    var checkbox = document.getElementById(id);
+    var autoRenewalText = document.getElementById("details_fixed_deposit1");
+    checkbox.addEventListener("change", function () {
+    autoRenewalText.style.border = checkbox.checked ? "2px solid black" : "";
+    });
+    var autoRenewalText2 = document.getElementById("details_fixed_deposit2");
+    var autoRenewalText3 = document.getElementById("details_fixed_deposit3");
+    autoRenewalText2.style.border ="2px solid white";
+    autoRenewalText3.style.border ="2px solid white";
+    
+    
+}
+radioButtonAction1("radio1");
+
+function radioButtonAction2(id) {
+    var checkbox = document.getElementById(id);
+    var autoRenewalText = document.getElementById("details_fixed_deposit2");
+    if( checkbox.checked){
+        autoRenewalText.style.border = "2px solid black"
+    }else{
+        autoRenewalText.style.border = "2px solid white"
+    }
+    // autoRenewalText.style.border = ? "2px solid black" : "2px solid white";
+    checkbox.addEventListener("change", function () {
+    autoRenewalText.style.border = checkbox.checked ? "2px solid black" : "2px solid white";
+    });
+    var autoRenewalText1 = document.getElementById("details_fixed_deposit1");
+    var autoRenewalText3 = document.getElementById("details_fixed_deposit3");
+    autoRenewalText1.style.border ="2px solid white";
+    autoRenewalText3.style.border ="2px solid white";
+    
+}
+radioButtonAction2("radio2");
+
+
+function radioButtonAction3(id) {
+    var checkbox = document.getElementById(id);
+    var autoRenewalText = document.getElementById("details_fixed_deposit3");
+    checkbox.addEventListener("change", function () {
+    autoRenewalText.style.border = checkbox.checked ? "2px solid black" : "2px solid white";
+    });
+    var autoRenewalText1 = document.getElementById("details_fixed_deposit1");
+    var autoRenewalText2 = document.getElementById("details_fixed_deposit2");
+    autoRenewalText1.style.border ="2px solid white";
+    autoRenewalText2.style.border ="2px solid white";
+    
+}
+radioButtonAction3("radio3");
 /*****************Dashboard Toggle Switch Button Modal End***************/
 
 /*****************Quick Action Box Select Start***************/

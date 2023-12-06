@@ -1,5 +1,149 @@
-
-
-
-
+@import "./variable";
+@import "./mixin";
 /*********** Responsive CSS Start Here*************/
+@media screen and (min-width: 767px) {
+  .mob-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .web-wrapper {
+    display: none;
+  }
+
+  .mob-wrapper {
+    .fixed_deposit_summary {
+      font-family: $primaryFont;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      text-align: left;
+      color: $color_black;
+    }
+
+    .fixedDepositDetailsData {
+      .details_fixed_deposit {
+        padding: 12px 16px;
+        background-color: $color_white !important;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 5.14px;
+        margin-top: 12px;
+
+        .auto_renewal_details {
+          display: flex;
+          justify-content: space-between;
+          .mobRadioButton{
+            width: 16px;
+            height: 16px;
+          }
+
+          .FD_num {
+            font-family: $primaryFont;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+            color: $color_black_light;
+          }
+        }
+
+        .second_details {
+          .Investment_details_content {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px 0 16px 0px;
+
+            .img_detail {
+              display: flex;
+              gap: 4px;
+              margin-top: 4px;
+
+              img {
+                width: 15px;
+                height: 15px;
+                vertical-align: inherit;
+              }
+
+              .NA_text {
+                font-family: $primaryFont;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                text-align: left;
+                color: $color_black_light;
+              }
+
+              .percentage_text {
+                font-family: $primaryFont;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $color_green_dark;
+              }
+            }
+
+            .text_content {
+              font-family: $primaryFont;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 16px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $color_light_text;
+            }
+          }
+        }
+
+        .third_details {
+          display: flex;
+          justify-content: space-between;
+
+          .pending_details {
+            display: flex;
+            gap: 7px;
+
+            .red-bg-label {
+              &.red_bg_label_mob {
+                padding: 0.4rem;
+              }
+            }
+
+            .green_label_mob {
+              padding: 0.4rem;
+            }
+          }
+        }
+      }
+    }
+
+    .mob-buttonContainer{
+      position: fixed;
+      width: 94%;
+      bottom: 20px;
+        button.mob-themeRedBtn {
+            width: 100%;
+            background-color: $color_red;
+            color: $color_white;
+            height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            padding: 0 12px 0 12px;
+            @include custom-font(14px, 700, 32px, normal);
+            @include allCenter;
+            cursor: pointer;
+            img {
+                margin-left: 8px;
+                transition: transform 250ms ease-in-out;
+            }
+            &:hover{
+                background-color: $color_red_dark;
+            }
+        }
+    }
+  }
+}
