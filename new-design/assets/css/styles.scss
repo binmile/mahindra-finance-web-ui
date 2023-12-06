@@ -9,6 +9,10 @@
     font-family: $primaryFont;
 }
 
+// :root {
+//     --animate-duration: 900ms;
+//   }
+
 body {
     min-height: calc(100vh + 5px);
     padding-top: 4.5rem;
@@ -1000,6 +1004,33 @@ nav {
     }
 }
 
+
+.otpBox{
+    width: 100%;
+    @include setDisplayProperty(flex, center, center, column);
+}
+.otpInputContainer{
+    border: 1px solid #231F20;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 0px 18px;
+}
+.input {
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    @include custom-font(16px, 700, 24px, normal);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.input:focus {
+    outline: none;
+}
+.input:nth-child(1) {
+    cursor: pointer;
+    pointer-events: all;
+}
 /********************Single Account Page End******************/
 
 @import "./265_css";

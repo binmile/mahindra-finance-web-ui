@@ -1465,6 +1465,44 @@ nav .userAvatar img {
   opacity: 0.2;
 }
 
+.otpBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
+.otpInputContainer {
+  border: 1px solid #231F20;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 18px;
+}
+
+.input {
+  width: 40px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: normal;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:nth-child(1) {
+  cursor: pointer;
+  pointer-events: all;
+}
+
 /********************Single Account Page End******************/
 /*********** Responsive CSS Start Here*************/
 /*********** Responsive CSS Start Here*************//*# sourceMappingURL=styles.css.map */
