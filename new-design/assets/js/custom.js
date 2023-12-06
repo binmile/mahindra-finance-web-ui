@@ -63,15 +63,66 @@ function hideMoreData() {
 function updateKycModal(id) {
     var toggleSwitch = document.getElementById(id);
     var myModal = new bootstrap.Modal(document.getElementById("myModal"));
-
     toggleSwitch.addEventListener("change", function () {
         if (toggleSwitch.checked) {
             myModal.show();
+
         } else {
             myModal.hide();
         }
     });
 }
+/*****************body toggle BMT-147 ******************/
+
+
+
+function toggle_data(id) {
+    var checkbox = document.getElementById(id);
+    var autoRenewalText = document.getElementById("auto_renewal_text_");
+    autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    checkbox.addEventListener("change", function () {
+        autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    });
+}
+
+toggle_data("C2032231F_");
+
+function toggle_value(id) {
+    var checkbox = document.getElementById(id);
+    var autoRenewalText = document.getElementById("toggle_value");
+    autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    checkbox.addEventListener("change", function () {
+        autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    });
+}
+toggle_value("toggle_value_data")
+
+function toggle_content(id) {
+    var checkbox = document.getElementById(id);
+    var autoRenewalText = document.getElementById("toggle_content");
+    autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    checkbox.addEventListener("change", function () {
+        autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    });
+}
+toggle_content("toggle_content_values")
+
+function toggle_data_content(id) {
+    var checkbox = document.getElementById(id);
+    var autoRenewalText = document.getElementById("toggle_data_content");
+    autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    checkbox.addEventListener("change", function () {
+        autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    });
+}
+toggle_data_content("toggle_values")
+
+
+
+
+/*****************body End ******************/
+
+
 /*****************Dashboard Toggle Switch Button Modal End***************/
 
 /*****************Quick Action Box Select Start***************/
@@ -91,12 +142,12 @@ $("#quickActionElements :input").click(function () {
 
 function handleClickRadio(ele1, ele2) {
     var checkedValue = document.querySelector('input[name="preclosure-flow"]:checked').value;
-    if(checkedValue == ele1){
-        $('#'+ele1).addClass('active');
-        $('#'+ele2).removeClass('active');
+    if (checkedValue == ele1) {
+        $('#' + ele1).addClass('active');
+        $('#' + ele2).removeClass('active');
     } else {
-        $('#'+ele1).removeClass('active');
-        $('#'+ele2).addClass('active');
+        $('#' + ele1).removeClass('active');
+        $('#' + ele2).addClass('active');
     }
 }
 

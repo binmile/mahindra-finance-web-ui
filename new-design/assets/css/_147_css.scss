@@ -1,6 +1,337 @@
-
-
-
-
-
 /*********** Responsive CSS Start Here*************/
+@import "./breakpoint";
+@media only screen and (min-width: 767px) {
+    .mobile_container {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: $tablet) {
+    .container_wrapper {
+        display: none !important;
+
+    }
+
+    .mobile_container {
+        .fixed_deposit_summary {
+            font-family: $primaryFont;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.15000000596046448px;
+            text-align: left;
+            color: $color_black;
+        }
+    }
+
+    .cardContainerMobile {
+        padding: 8px 16px;
+        background-color: $color_white !important;
+        box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
+        border-radius: 5.14px;
+        margin-top: 12px;
+
+        .custom-tooltip {
+            &.custom_tooltip {
+                img {
+                    vertical-align: text-bottom;
+                }
+            }
+        }
+
+        .first_active_data {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .first_active_data::after {
+            content: "";
+            width: 1px;
+            height: 80%;
+            background: $color_border;
+            position: absolute;
+            right: 0;
+            top: 10%;
+        }
+
+        .active_fds {
+            font-family: $primaryFont;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 14px;
+            letter-spacing: 0.4000000059604645px;
+            text-align: left;
+            color: $color_light_text;
+
+            &.investment_fds {
+                white-space: nowrap;
+            }
+
+            .custom_tooltip {
+                .tooltip-text {
+                    &.tooltip_mobile {
+                        left: -235px
+                    }
+
+                }
+
+                .tooltip-text::after {
+                    left: 80%;
+                }
+            }
+
+
+        }
+
+        .circle_div_mobile {
+            display: flex;
+            place-items: baseline;
+            margin-top: 6px;
+            gap: 6px;
+
+            .detail_price {
+                font-family: $primaryFont;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.25px;
+                text-align: left;
+                color: $color_black_light;
+
+            }
+        }
+
+        .cardIcons_circle {
+            width: 20px;
+            height: 20px;
+            background-color: $color_light_bg;
+            border-radius: 50%;
+            @include allCenter;
+            margin-bottom: 5px;
+
+            img {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        .card_wrapper_data {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+
+    .fixedDepositDetailsData {
+        .details_fixed_deposit {
+            padding: 14px 16px;
+            background-color: $color_white !important;
+            box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
+            border-radius: 5.14px;
+            margin-top: 12px;
+
+            .auto_renewal_details {
+                display: flex;
+                justify-content: space-between;
+
+                .FD_num {
+                    font-family: $primaryFont;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: $color_black_light;
+
+                }
+
+                .auto_renewal {
+                    display: flex;
+
+                    .auto_renewal_text {
+                        font-family: $primaryFont;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 16px;
+                        letter-spacing: 0.25px;
+                        text-align: left;
+                        color: $color_light_text;
+                    }
+
+                    .form-check-input_mob {
+                        margin-top: 0;
+                    }
+
+                    .form_switch_mob {
+                        padding-left: 8px;
+
+                    }
+
+                    .form-check-input-mob::before {
+                        content: "";
+                    }
+
+                    .form-check-input-mob::after {
+                        content: "";
+                    }
+
+
+
+                }
+
+
+            }
+
+            .second_details {
+                .Investment_details_content {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 12px 0 16px 0;
+
+                    .img_detail {
+                        display: flex;
+                        gap: 4px;
+                        margin-top: 4px;
+
+                        img {
+                            width: 15px;
+                            height: 15px;
+                            vertical-align: inherit;
+                        }
+
+                        .NA_text {
+                            font-family: $primaryFont;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            letter-spacing: 0.25px;
+                            text-align: left;
+                            color: $color_black_light;
+                            ;
+
+                        }
+
+                        .percentage_text {
+
+                            font-family: $primaryFont;
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 20px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: $color_green_dark;
+                            ;
+                        }
+                    }
+
+                    .text_content {
+                        font-family: $primaryFont;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: $color_light_text;
+                    }
+                }
+
+            }
+
+            .third_details {
+                display: flex;
+                justify-content: space-between;
+
+                .circle_arrow {
+                    width: 20px;
+                    height: 20px;
+                    @include allCenter;
+                    border-radius: 50%;
+                    background-color: $color_black;
+
+                    img {
+                        width: 12.5px;
+                        height: 12.5px;
+                    }
+                }
+
+                .pending_details {
+                    display: flex;
+                    gap: 7px;
+
+                    .red-bg-label {
+                        &.red_bg_label_mob {
+                            padding: 0.4rem;
+                        }
+                    }
+
+                    .green_label_mob {
+                        padding: 0.4rem;
+                    }
+                }
+            }
+        }
+
+        .showmorebtn_mob {
+            display: flex;
+            justify-content: center;
+            margin-top: 12px;
+            margin-bottom: 24px;
+            font-family: $primaryFont;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            text-align: left;
+            color: $color_light_blue;
+
+            a {
+                text-decoration: none;
+            }
+
+        }
+    }
+
+    .border_top_line {
+        border-top: 1px solid $color_light_border;
+        margin-bottom: 24px;
+    }
+
+    .dashboardDarkCardMobile {
+        margin: 24px 0px;
+
+        .cardLabelList {
+            .percent_data {
+                color: $color_white;
+            }
+        }
+
+        .img_content {
+
+            width: 110px;
+            height: 111px;
+            object-fit: cover;
+
+        }
+
+        .themeRedBtn {
+            &.img {
+                .img {
+                    width: 110px;
+                    height: 111px;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $miniMobile) {
+    .cardContainerMobile {
+        .first_active_data::after {
+            right: -13px;
+        }
+    }
+}
