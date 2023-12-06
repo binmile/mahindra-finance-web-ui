@@ -79,9 +79,9 @@ function updateKycModal(id) {
 function toggle_data(id) {
     var checkbox = document.getElementById(id);
     var autoRenewalText = document.getElementById("auto_renewal_text_");
-    autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     checkbox.addEventListener("change", function () {
-        autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+        autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     });
 }
 
@@ -90,9 +90,9 @@ toggle_data("C2032231F_");
 function toggle_value(id) {
     var checkbox = document.getElementById(id);
     var autoRenewalText = document.getElementById("toggle_value");
-    autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     checkbox.addEventListener("change", function () {
-        autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+        autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     });
 }
 toggle_value("toggle_value_data")
@@ -100,9 +100,9 @@ toggle_value("toggle_value_data")
 function toggle_content(id) {
     var checkbox = document.getElementById(id);
     var autoRenewalText = document.getElementById("toggle_content");
-    autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     checkbox.addEventListener("change", function () {
-        autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+        autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     });
 }
 toggle_content("toggle_content_values")
@@ -110,15 +110,12 @@ toggle_content("toggle_content_values")
 function toggle_data_content(id) {
     var checkbox = document.getElementById(id);
     var autoRenewalText = document.getElementById("toggle_data_content");
-    autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+    autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     checkbox.addEventListener("change", function () {
-        autoRenewalText.style.color = checkbox.checked ? "green" : "black";
+        autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     });
 }
 toggle_data_content("toggle_values")
-
-
-
 
 /*****************body End ******************/
 
