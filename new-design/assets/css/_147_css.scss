@@ -69,6 +69,7 @@
         color: $color_black;
         @include custom-font(16px, 600, 24px, 0.15000000596046448px);
         margin-bottom: 12px;
+        margin-top: 16px;
     }
 
     .mobile_container {
