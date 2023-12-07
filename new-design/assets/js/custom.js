@@ -63,15 +63,34 @@ function hideMoreData() {
 function updateKycModal(id) {
     var toggleSwitch = document.getElementById(id);
     var myModal = new bootstrap.Modal(document.getElementById("myModal"));
-
     toggleSwitch.addEventListener("change", function () {
         if (toggleSwitch.checked) {
             myModal.show();
+
         } else {
             myModal.hide();
         }
     });
 }
+/*****************body toggle BMT-147 ******************/
+ function toggle_data(onclickId,elementId) {
+    let checkbox = document.getElementById(onclickId);
+    let autoRenewalText = document.getElementById(elementId);
+    autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
+    checkbox.addEventListener("change", function () {
+        autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
+    });
+}
+
+toggle_data('C2032231F_','auto_renewal_text_');
+toggle_data('toggle_value_data','toggle_value');
+toggle_data('toggle_content_values','toggle_content');
+toggle_data('toggle_values','toggle_data_content');
+
+
+/*****************body End ******************/
+
+
 /*****************Dashboard Toggle Switch Button Modal End***************/
 
 /*****************Quick Action Box Select Start***************/
@@ -91,12 +110,12 @@ $("#quickActionElements :input").click(function () {
 
 function handleClickRadio(ele1, ele2) {
     var checkedValue = document.querySelector('input[name="preclosure-flow"]:checked').value;
-    if(checkedValue == ele1){
-        $('#'+ele1).addClass('active');
-        $('#'+ele2).removeClass('active');
+    if (checkedValue == ele1) {
+        $('#' + ele1).addClass('active');
+        $('#' + ele2).removeClass('active');
     } else {
-        $('#'+ele1).removeClass('active');
-        $('#'+ele2).addClass('active');
+        $('#' + ele1).removeClass('active');
+        $('#' + ele2).addClass('active');
     }
 }
 
