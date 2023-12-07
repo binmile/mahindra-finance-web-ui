@@ -1850,6 +1850,9 @@ button.resend_otp.disabled {
     width: 110px;
     height: 111px;
   }
+  #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
+    width: auto !important;
+  }
 }
 @media only screen and (max-width: 420px) {
   .cardContainerMobile .first_active_data::after {

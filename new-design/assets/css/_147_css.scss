@@ -329,6 +329,10 @@
         }
 
     }
+    
+    #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas{
+        width: auto !important;
+    }
 }
 
 @media only screen and (max-width: $miniMobile) {
