@@ -15,7 +15,7 @@ a {
 
 body {
   min-height: calc(100vh + 5px);
-  padding-top: 4.5rem;
+  padding-top: 3rem;
   color: $color_black_light;
   background-color: $color_light_bg;
 }
@@ -1072,4 +1072,4 @@ button.resend_otp.disabled {
 @import "./265_css";
 @import "./147_css";
 
-// @import "./responsive.scss";
+@import "./responsive.scss";

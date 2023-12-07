@@ -209,7 +209,7 @@ a {
 
 body {
   min-height: calc(100vh + 5px);
-  padding-top: 4.5rem;
+  padding-top: 3rem;
   color: #231F20;
   background-color: #F3F4F6;
 }
@@ -1735,6 +1735,7 @@ button.resend_otp.disabled {
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.150000006px;
+    margin-bottom: 12px;
   }
   .mobile_container .fixed_deposit_summary {
     text-align: left;
@@ -1749,8 +1750,9 @@ button.resend_otp.disabled {
     background-color: #FFFFFF !important;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
     border-radius: 5.14px;
-    margin-top: 12px;
-    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
   }
   .cardContainerMobile .custom-tooltip.custom_tooltip img {
     vertical-align: text-bottom;
@@ -1760,14 +1762,17 @@ button.resend_otp.disabled {
     display: flex;
     flex-direction: column;
   }
-  .cardContainerMobile .first_active_data::after {
+  .cardContainerMobile .first_active_data:after {
     content: "";
     width: 1px;
     height: 80%;
     background: #E8E8E8;
     position: absolute;
-    right: 0;
+    right: -44px;
     top: 10%;
+  }
+  .cardContainerMobile .first_active_data:last-child:after {
+    display: none;
   }
   .cardContainerMobile .active_fds {
     text-align: left;
@@ -1956,7 +1961,7 @@ button.resend_otp.disabled {
   }
   .border_top_line {
     border-top: 1px solid #D6D6D6;
-    margin-bottom: 24px;
+    margin-bottom: 4px;
   }
   .dashboardDarkCardMobile {
     margin: 24px 0px;
@@ -1981,5 +1986,13 @@ button.resend_otp.disabled {
 @media only screen and (max-width: 420px) {
   .cardContainerMobile .first_active_data::after {
     right: -13px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  body {
+    padding-top: 3rem;
+  }
+  .container {
+    max-width: 100% !important;
   }
 }/*# sourceMappingURL=styles.css.map */

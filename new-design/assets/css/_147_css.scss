@@ -68,7 +68,7 @@
         text-align: left;
         color: $color_black;
         @include custom-font(16px, 600, 24px, 0.15000000596046448px);
-
+        margin-bottom: 12px;
     }
 
     .mobile_container {
@@ -85,8 +85,9 @@
         background-color: $color_white !important;
         box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
         border-radius: 5.14px;
-        margin-top: 12px;
-        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
         .custom-tooltip {
             &.custom_tooltip {
                 img {
@@ -99,16 +100,21 @@
             position: relative;
             display: flex;
             flex-direction: column;
-
+            &:after{
+                content: "";
+                @include custom-width-height(1px, 80%);
+                background: $color_border;
+                position: absolute;
+                right: -44px;
+                top: 10%;
+            }
         }
-
-        .first_active_data::after {
-            content: "";
-            @include custom-width-height(1px, 80%);
-            background: $color_border;
-            position: absolute;
-            right: 0;
-            top: 10%;
+            .first_active_data {
+                &:last-child {
+                &:after{
+                    display: none;
+                }
+            }
         }
 
         .active_fds {
@@ -301,7 +307,7 @@
 
     .border_top_line {
         border-top: 1px solid $color_light_border;
-        margin-bottom: 24px;
+        margin-bottom: 4px;
     }
 
     .dashboardDarkCardMobile {
