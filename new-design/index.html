@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahindra Finance :: Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
@@ -143,7 +144,7 @@
     <!--Top-navbar End -->
 
     <div class="container">
-        <div class="row">
+        <div class="row animate__animated animate__fadeInRight">
             <div class="col col-md-2">
                 <div class="cardContainer dashboardCard container_wrapper container_wrapper">
                     <div class="cardIcons">
@@ -297,7 +298,7 @@
         </div>
     </div>
 
-    <div class="container mt-20 container_wrapper">
+    <div class="container mt-20 container_wrapper animate__animated animate__fadeInUp" >
         <div class="row">
             <div class="col col-md-12">
                 <div class="listTable">
@@ -315,6 +316,8 @@
                                     balance at term end</div>
                             </div>
                         </div>
+                        <div class="wd-11 all-center">Auto Renewal</div>
+                        <div class="wd-12">Status</div>
                     </div>
                     <div class="listTableBody">
                         <input type="checkbox" id="expend" />
@@ -557,7 +560,6 @@
                         <span class="form-check form-switch form_switch_mob">
                             <input type="checkbox" class="form-check-input form-check-input_mob form-check-input-mob"
                                 id="C2032231F_" onclick="toggle_data('C2032231F_', 'auto_renewal_text_')" />
-                               
                         </span>
                     </div>
 
@@ -910,7 +912,7 @@
         <div class="border_top_line">
         </div>
     </div>
-    <div class="container mt-20 mb-20">
+    <div class="container mt-20 mb-20 animate__animated animate__fadeInUp">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-7">
                 <div class="cardContainer cardContainer_mobileView" id="chartContainer"></div>
