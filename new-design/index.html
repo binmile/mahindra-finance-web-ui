@@ -145,7 +145,7 @@
 
     <div class="container">
         <div class="row animate__animated animate__fadeInRight">
-            <div class="col col-md-2">
+            <div class="col col-md-6 col-lg-4 col-xl-2 mt-20 container_wrapper">
                 <div class="cardContainer dashboardCard container_wrapper container_wrapper">
                     <div class="cardIcons">
                         <img src="./assets/img/icons/user-icon.svg" alt="icon" />
@@ -171,7 +171,7 @@
 
                 </div>
             </div>
-            <div class="col col-md-2">
+            <div class="col col-md-6 col-lg-4 col-xl-2  mt-20 container_wrapper">
                 <div class="cardContainer dashboardCard container_wrapper container_wrapper">
                     <div class="cardIcons">
                         <img src="./assets/img/icons/home-icon.svg" alt="icon" />
@@ -184,7 +184,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-md-2">
+            <div class="col col-md-6 col-lg-4 col-xl-2 mt-20 container_wrapper">
                 <div class="cardContainer dashboardCard container_wrapper container_wrapper">
                     <div class="cardIcons">
                         <img src="./assets/img/icons/rupee-icon.svg" alt="icon" />
@@ -197,8 +197,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-md-2">
-                <div class="cardContainer dashboardCard container_wrapper container_wrapper">
+            <div class="col col-md-6 col-lg-4 col-xl-2 mt-20 container_wrapper">
+                <div class="cardContainer dashboardCard">
                     <div class="cardIcons">
                         <img src="./assets/img/icons/maturity-icon.svg" alt="icon" />
                     </div>
@@ -211,72 +211,61 @@
                 </div>
             </div>
             <!-- Mobile View Start -->
-            <div class="col-12 col-md-4 dashboardCardMobile">
+            <div class="col-12 col-md-6 col-lg-8 col-xl-2 dashboardCardMobile">
                 <div class="dashboardCardMobile">
                     <div class="fixed_deposit_summary">Fixed deposit summary</div>
                     <div class="cardContainerMobile">
-                        <div class="row">
-                            <div class="col">
-                                <div class="first_active_data">
-                                    <div class="active_fds">
-                                        Active FDs
-                                    </div>
-                                    <div class="circle_div_mobile">
-                                        <div class="cardIcons_circle">
-                                            <img src="./assets/img/icons/home-icon.svg" alt="icon" />
-                                        </div>
-                                        <div class="detail_price">
-                                            02
-                                        </div>
-                                    </div>
-
-                                </div>
+                        <div class="first_active_data">
+                            <div class="active_fds">
+                                Active FDs
                             </div>
-                            <div class="col">
-                                <div class="first_active_data">
-                                    <div class="active_fds investment_fds">
-                                        Investment amount
-                                    </div>
-                                    <div class="circle_div_mobile">
-                                        <div class="cardIcons_circle">
-                                            <img src="./assets/img/icons/cash_text.svg" alt="icon" />
-                                        </div>
-                                        <div class="detail_price">
-                                            ₹55,000
-                                        </div>
-                                    </div>
+                            <div class="circle_div_mobile">
+                                <div class="cardIcons_circle">
+                                    <img src="./assets/img/icons/home-icon.svg" alt="icon" />
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div>
-                                    <div class="active_fds d-flex investment_fds">
-                                        Maturity amount
-                                        <div class="info-icon custom-tooltip custom_tooltip">
-                                            <img src="./assets/img/icons/info-icon-black.svg" alt="icon" />
-                                            <div class="tooltip-text tooltip_mobile">Total expected
-                                                balance at term end</div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="circle_div_mobile">
-                                        <div class="cardIcons_circle">
-                                            <img src="./assets/img/icons/cash_text.svg" alt="icon" />
-                                        </div>
-                                        <div class="detail_price">
-                                            ₹73,605
-                                        </div>
-                                    </div>
+                                <div class="detail_price">
+                                    02
                                 </div>
                             </div>
 
                         </div>
+                        <div class="first_active_data">
+                            <div class="active_fds investment_fds">
+                                Investment amount
+                            </div>
+                            <div class="circle_div_mobile">
+                                <div class="cardIcons_circle">
+                                    <img src="./assets/img/icons/cash_text.svg" alt="icon" />
+                                </div>
+                                <div class="detail_price">
+                                    ₹55,000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first_active_data">
+                            <div class="active_fds d-flex investment_fds">
+                                Maturity amount
+                                <div class="info-icon custom-tooltip custom_tooltip">
+                                    <img src="./assets/img/icons/info-icon-black.svg" alt="icon" />
+                                    <div class="tooltip-text tooltip_mobile">Total expected
+                                        balance at term end</div>
+                                </div>
+                            </div>
 
+
+                            <div class="circle_div_mobile">
+                                <div class="cardIcons_circle">
+                                    <img src="./assets/img/icons/cash_text.svg" alt="icon" />
+                                </div>
+                                <div class="detail_price">
+                                    ₹73,605
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col col-md-4">
+            <div class="col col-md-12 col-lg-8 col-xl-4 mt-20">
                 <div class="dashboardDarkCard">
                     <div class="cardLabelHeading">
                         Book a new FD
@@ -543,11 +532,12 @@
     </div>
 
 
-    <div class="container mobile_container">
+    <div class="container mobile_container animate__animated animate__fadeInUp">
         <div class="fixedDepositDetailsData">
             <div class="fixed_deposit_summary">
                 Fixed deposit list
             </div>
+
             <div class="details_fixed_deposit">
                 <div class="auto_renewal_details">
                     <div class="FD_num">
@@ -912,12 +902,12 @@
         <div class="border_top_line">
         </div>
     </div>
-    <div class="container mt-20 mb-20 animate__animated animate__fadeInUp">
+    <div class="container mb-20 animate__animated animate__fadeInUp">
         <div class="row">
-            <div class="col-12 col-md-12 col-lg-7">
+            <div class="col-12 col-md-12 col-lg-7 mt-20">
                 <div class="cardContainer cardContainer_mobileView" id="chartContainer"></div>
             </div>
-            <div class="col-12 col-md-12 col-lg-5">
+            <div class="col-12 col-md-12 col-lg-5 mt-20">
                 <div class="dashboardDarkCard fdAvailBanner dashboardDarkCard_mob">
                     <div class="wd-50 advertisement_mob">
                         <div class="cardLabelHeading  cardLabelHeading_mob">
