@@ -203,6 +203,10 @@
   font-family: "Georama", sans-serif;
 }
 
+a {
+  color: #1084CB;
+}
+
 body {
   min-height: calc(100vh + 5px);
   padding-top: 4.5rem;
@@ -378,10 +382,10 @@ nav .userAvatar img {
 /*********Header End****************/
 /************Button Start ***********************/
 .themeRedBtn {
-  width: -moz-fit-content;
-  width: fit-content;
   background-color: #E31837;
   color: #FFFFFF;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 27px;
   border: none;
   outline: none;
@@ -707,15 +711,27 @@ nav .userAvatar img {
   padding: 0px;
   opacity: 1;
 }
-.modal .modal-content .modal-body .info-heading {
+.modal .modal-content .modal-body .info-heading-container {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading-image {
+  margin-right: 12px;
+  background-color: #F3F4F6;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.18px;
   text-align: center;
-}
-.modal .modal-content .modal-body .info-heading img {
-  margin-right: 12px;
 }
 .modal .modal-content .modal-body .info-content {
   font-size: 16px;
@@ -723,7 +739,7 @@ nav .userAvatar img {
   line-height: 24px;
   letter-spacing: 0.5px;
   text-align: center;
-  margin: 12px 0px 20px 0px;
+  margin: 20px 0px 16px 0px;
 }
 .modal .modal-content .modal-body .info-button {
   display: flex;
@@ -1367,8 +1383,8 @@ nav .userAvatar img {
   margin-top: 32px;
 }
 .termsConditionsContainer .checkbox-container .checkmark {
-  height: 16px;
   width: 16px;
+  height: 16px;
   margin-top: 4px;
 }
 .termsConditionsContainer .checkbox-container .checkmark::after {
@@ -1466,6 +1482,75 @@ nav .userAvatar img {
   opacity: 0.2;
 }
 
+.otpBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
+.otpInputContainer {
+  border: 1px solid #231F20;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 18px;
+}
+
+.input {
+  width: 40px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:nth-child(1) {
+  cursor: pointer;
+}
+
+.otp_msg {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-top: 8px;
+}
+.otp_msg .timer {
+  color: #6B7280;
+  margin-right: 8px;
+}
+.otp_msg button.resend_otp {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #1084CB;
+  text-decoration: underline;
+  background-color: transparent;
+  padding: 0;
+}
+
+button.resend_otp.disabled {
+  background-color: transparent;
+  color: #D1D5DB !important;
+}
+
+.msg {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: normal;
+  margin-top: 12px;
+}
+
 /********************Single Account Page End******************/
 /*********** Responsive CSS Start Here*************/
 @media screen and (min-width: 767px) {
@@ -1477,107 +1562,15 @@ nav .userAvatar img {
   .web-wrapper {
     display: none;
   }
-  .mob-wrapper .fixed_deposit_summary {
-    font-family: "Georama", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-    color: #000000;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit {
-    padding: 12px 16px;
-    background-color: #FFFFFF !important;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
-    border-radius: 5.14px;
-    margin-top: 12px;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details {
-    display: flex;
-    justify-content: space-between;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .mobRadioButton {
-    width: 16px;
-    height: 16px;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .FD_num {
-    font-family: "Georama", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    text-align: left;
-    color: #231F20;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content {
-    display: flex;
-    justify-content: space-between;
-    margin: 4px 0 16px 0px;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail {
-    display: flex;
-    gap: 4px;
-    margin-top: 4px;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail img {
-    width: 15px;
-    height: 15px;
-    vertical-align: inherit;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .NA_text {
-    font-family: "Georama", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    text-align: left;
-    color: #231F20;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .percentage_text {
-    font-family: "Georama", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #17823E;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .text_content {
-    font-family: "Georama", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #6B7280;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .third_details {
-    display: flex;
-    justify-content: space-between;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details {
-    display: flex;
-    gap: 7px;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details .red-bg-label.red_bg_label_mob {
-    padding: 0.4rem;
-  }
-  .mob-wrapper .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details .green_label_mob {
-    padding: 0.4rem;
-  }
-  .mob-wrapper .mob-buttonContainer {
+  .buttonContainer {
     position: fixed;
-    width: 94%;
+    width: 94.5%;
     bottom: 20px;
+    padding: 0px;
   }
-  .mob-wrapper .mob-buttonContainer button.mob-themeRedBtn {
+  .buttonContainer button.themeRedBtn {
     width: 100%;
-    background-color: #E31837;
-    color: #FFFFFF;
     height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    padding: 0 12px 0 12px;
     font-size: 14px;
     font-weight: 700;
     line-height: 32px;
@@ -1585,14 +1578,91 @@ nav .userAvatar img {
     display: flex;
     justify-content: center;
     place-items: center;
-    cursor: pointer;
   }
-  .mob-wrapper .mob-buttonContainer button.mob-themeRedBtn img {
-    margin-left: 8px;
-    transition: transform 250ms ease-in-out;
+  .commonHeading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 0px 0 12px 0;
   }
-  .mob-wrapper .mob-buttonContainer button.mob-themeRedBtn:hover {
-    background-color: #c7142f;
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit {
+    padding: 12px 16px;
+    background-color: #FFFFFF !important;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5.14px;
+    margin-bottom: 12px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-direction: row;
+    margin-bottom: 12px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .mobRadioButton {
+    width: 16px;
+    height: 16px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .FD_num {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0 16px 0px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail img {
+    width: 15px;
+    height: 15px;
+    vertical-align: inherit;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .NA_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .percentage_text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #17823E;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .text_content {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .third_details {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-direction: row;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details {
+    display: flex;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details .green_label_mob {
+    padding: 6px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
+    margin-bottom: 75px;
   }
 }
 /*********** Responsive CSS Start Here*************//*# sourceMappingURL=styles.css.map */

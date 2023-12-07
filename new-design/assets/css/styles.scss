@@ -9,6 +9,10 @@
     font-family: $primaryFont;
 }
 
+a{
+    color: $color_light_blue;
+}
+
 body {
     min-height: calc(100vh + 5px);
     padding-top: 4.5rem;
@@ -110,8 +114,7 @@ nav {
             }
             a.dropdown-toggle{
                 img.toggle-icon{
-                    width: 16px;
-                    height: 16px;
+                    @include custom-width-height(16px, 16px);
                     transition: transform 250ms ease-in-out;
                 }
             }
@@ -135,8 +138,7 @@ nav {
                             background-color: $color_light_gray;
                         }
                         img{
-                            width: 24px;
-                            height: 24px;
+                            @include custom-width-height(24px, 24px);
                             margin-right: 12px;
                         }
                     }
@@ -164,8 +166,7 @@ nav {
     .userAvatar {
         @include allCenter;
         img {
-            width: 32px;
-            height: 32px;
+            @include custom-width-height(32px, 32px);
             object-fit: cover;
         }
     }
@@ -175,10 +176,9 @@ nav {
 
 /************Button Start ***********************/
 .themeRedBtn {
-    width: fit-content;
     background-color: $color_red;
     color: $color_white;
-    height: 27px;
+    @include custom-width-height(fit-content, 27px);
     border: none;
     outline: none;
     border-radius: 8px;
@@ -208,8 +208,7 @@ nav {
     padding: 16px;
     min-height: 129px;
     .cardIcons {
-        width: 36px;
-        height: 36px;
+        @include custom-width-height(36px, 36px);
         background-color: $color_light_bg;
         border-radius: 50%;
         @include allCenter;
@@ -423,17 +422,24 @@ nav {
                 padding: 0px;
                 opacity: 1;
             }
-            .info-heading{
-                @include custom-font(24px, 600, 32px, -0.18px);
-                text-align: center;
-                img{
+            .info-heading-container{
+                @include allCenter;
+                .info-heading-image{
                     margin-right: 12px;
+                    background-color: $color_light_bg;
+                    @include allCenter;
+                    @include custom-width-height(38px, 38px);
+                    border-radius: 50%;
+                }
+                .info-heading{
+                    @include custom-font(24px, 600, 32px, -0.18px);
+                    text-align: center;
                 }
             }
             .info-content{
                 @include custom-font(16px, 400, 24px, 0.5px);
                 text-align: center;
-                margin: 12px 0px 20px 0px;
+                margin: 20px 0px 16px 0px;
             }
             .info-button{
                 @include allCenter;
@@ -461,8 +467,7 @@ nav {
         opacity: 0.9;
     }
     img{
-        width: 16px;
-        height: 16px;
+        @include custom-width-height(16px, 16px);
         margin-right: 4px;
     }
 }
@@ -598,8 +603,7 @@ nav {
             @include custom-font(16px, 500, 24px, normal);
             @include allCenter;
             img{
-                width: 20px;
-                height: 20px;
+                @include custom-width-height(20px, 20px);
                 margin-right: 4px;
                 filter: invert(0) brightness(0);
             }
@@ -615,7 +619,7 @@ nav {
         label{
             width: 48%;
             @include setDisplayProperty(flex, flex-start, flex-start, column);
-            border: 1px solid #E8E8E8;
+            border: 1px solid $color_border;
             margin-bottom: 16px;
             margin-right: 16px;
             border-radius: 8px;
@@ -625,8 +629,7 @@ nav {
                 margin-right: 0px;
             }
             img{
-                width: 20px;
-                height: 20px;
+                @include custom-width-height(20px, 20px);
                 margin-bottom: 4px;
             }
             .quickActionLabel{
@@ -750,14 +753,12 @@ nav {
 
 .roundBackgroundIcon{
     background-color: $color_light_bg;
-    width: 30px;
-    height: 30px;
+    @include custom-width-height(30px, 30px);
     border-radius: 50%;
     margin-right: 16px;
     @include allCenter;
     img{
-        width: 15px;
-        height: 15px;
+        @include custom-width-height(15px, 15px);
     }
 }
 
@@ -810,8 +811,7 @@ nav {
                     @include custom-font(16px, 500, 24px, normal);
                     @include setDisplayProperty(flex, flex-start, center);
                     img{
-                        width: 20px;
-                        height: 20px;
+                        @include custom-width-height(20px, 20px);
                         margin-right: 4px;
                     }
                 }
@@ -892,12 +892,10 @@ nav {
                     justify-content: flex-start;
                     .roundBackgroundIcon{
                         background-color: $color_white;
-                        width: 24px;
-                        height: 24px;
+                        @include custom-width-height(24px, 24px);
                         margin-right: 8px;
                         img{
-                            width: 14px;
-                            height: 14px;
+                            @include custom-width-height(14px, 14px);
                             margin: 0;
                             filter: unset;
                         }
@@ -923,14 +921,12 @@ nav {
         margin-bottom: 0px;
         margin-top: 32px;
         .checkmark{
-            height: 16px;
-            width: 16px;
+            @include custom-width-height(16px, 16px);
             margin-top: 4px;
             &::after{
                 left: 5px;
                 top: 1px;
-                width: 5px;
-                height: 10px;
+                @include custom-width-height(5px, 10px);
                 border-width: 0 2px 2px 0;
             }
         }
@@ -969,8 +965,7 @@ nav {
                         @include custom-font(16px, 500, 24px, normal);
                         @include setDisplayProperty(flex, flex-start, center);
                         img{
-                            width: 20px;
-                            height: 20px;
+                            @include custom-width-height(20px, 20px);
                             margin-right: 8px;
                         }
                     }
@@ -994,12 +989,60 @@ nav {
 }
 
 .accountList.disabledText{
-    color: #D1D5DB;
+    color: $color_light_gray2;
     img{
         opacity: 0.2;
     }
 }
 
+
+.otpBox{
+    width: 100%;
+    @include setDisplayProperty(flex, center, center, column);
+}
+.otpInputContainer{
+    border: 1px solid $color_black_light;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 0px 18px;
+}
+.input {
+    @include custom-width-height(40px, 40px);
+    border: none;
+    text-align: center;
+    @include custom-font(16px, 700, 24px, normal);
+}
+.input:focus {
+    outline: none;
+}
+.input:nth-child(1) {
+    cursor: pointer;
+}
+
+.otp_msg{
+    @include allCenter;
+    margin-top: 8px;
+    .timer{
+        color: $color_light_text;
+        margin-right: 8px;
+    }
+    button.resend_otp{
+        @include custom-font(14px, 400, 20px, normal);
+        color: $color_light_blue;
+        text-decoration: underline;
+        background-color: transparent;
+        padding: 0;
+    }
+}
+button.resend_otp.disabled{
+    background-color: transparent;
+    color: $color_light_gray2 !important;
+}
+
+.msg{
+    @include custom-font(14px, 400, 24px, normal);
+    margin-top: 12px;
+}
 /********************Single Account Page End******************/
 
 @import "./265_css";

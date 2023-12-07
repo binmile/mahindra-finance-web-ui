@@ -73,55 +73,23 @@ function updateKycModal(id) {
     });
 }
 
-function radioButtonAction1(id) {
+function radioButtonAction(id,element) {
     var checkbox = document.getElementById(id);
-    var autoRenewalText = document.getElementById("details_fixed_deposit1");
+    var radioButton = document.getElementById(element);
+    radioButton.style.border = checkbox.checked ? "1px solid black" : "1px solid white";
     checkbox.addEventListener("change", function () {
-    autoRenewalText.style.border = checkbox.checked ? "2px solid black" : "";
+        radioButton.style.border = checkbox.checked ? "1px solid black" : "1px solid white";
     });
-    var autoRenewalText2 = document.getElementById("details_fixed_deposit2");
-    var autoRenewalText3 = document.getElementById("details_fixed_deposit3");
-    autoRenewalText2.style.border ="2px solid white";
-    autoRenewalText3.style.border ="2px solid white";
-    
+    var radioButton1 = document.getElementById("details_fixed_deposit1");
+    var radioButton3 = document.getElementById("details_fixed_deposit3");
+    var radioButton2 = document.getElementById("details_fixed_deposit2");
+    radioButton1.style.border ="2px solid white";
+    radioButton3.style.border ="2px solid white";
+    radioButton2.style.border ="2px solid white";
     
 }
-radioButtonAction1("radio1");
-
-function radioButtonAction2(id) {
-    var checkbox = document.getElementById(id);
-    var autoRenewalText = document.getElementById("details_fixed_deposit2");
-    if( checkbox.checked){
-        autoRenewalText.style.border = "2px solid black"
-    }else{
-        autoRenewalText.style.border = "2px solid white"
-    }
-    // autoRenewalText.style.border = ? "2px solid black" : "2px solid white";
-    checkbox.addEventListener("change", function () {
-    autoRenewalText.style.border = checkbox.checked ? "2px solid black" : "2px solid white";
-    });
-    var autoRenewalText1 = document.getElementById("details_fixed_deposit1");
-    var autoRenewalText3 = document.getElementById("details_fixed_deposit3");
-    autoRenewalText1.style.border ="2px solid white";
-    autoRenewalText3.style.border ="2px solid white";
-    
-}
-radioButtonAction2("radio2");
 
 
-function radioButtonAction3(id) {
-    var checkbox = document.getElementById(id);
-    var autoRenewalText = document.getElementById("details_fixed_deposit3");
-    checkbox.addEventListener("change", function () {
-    autoRenewalText.style.border = checkbox.checked ? "2px solid black" : "2px solid white";
-    });
-    var autoRenewalText1 = document.getElementById("details_fixed_deposit1");
-    var autoRenewalText2 = document.getElementById("details_fixed_deposit2");
-    autoRenewalText1.style.border ="2px solid white";
-    autoRenewalText2.style.border ="2px solid white";
-    
-}
-radioButtonAction3("radio3");
 /*****************Dashboard Toggle Switch Button Modal End***************/
 
 /*****************Quick Action Box Select Start***************/
@@ -150,3 +118,76 @@ function handleClickRadio(ele1, ele2) {
     }
 }
 
+/*************************OTP Modal Start******************************/
+
+function handleClickOTP(){
+    var myModal = new bootstrap.Modal(document.getElementById("myOTPModal"));
+    myModal.show();
+}
+
+const inputs = document.getElementById("inputs"); 
+  
+inputs.addEventListener("input", function (e) { 
+    const target = e.target; 
+    const val = target.value; 
+  
+    if (isNaN(val)) { 
+        target.value = ""; 
+        return; 
+    } 
+  
+    if (val != "") { 
+        const next = target.nextElementSibling; 
+        if (next) { 
+            next.focus(); 
+        } 
+    } 
+}); 
+  
+inputs.addEventListener("keyup", function (e) { 
+    const target = e.target; 
+    const key = e.key.toLowerCase(); 
+  
+    if (key == "backspace" || key == "delete") { 
+        target.value = ""; 
+        const prev = target.previousElementSibling; 
+        if (prev) { 
+            prev.focus(); 
+        } 
+        return; 
+    } 
+});
+
+/*************************OTP Modal End******************************/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const timerElement = document.getElementById("timer");
+    const resultElement = document.getElementById("resend_otp");
+    function startTimer(duration, display) {
+        let timer = duration;
+        let minutes, seconds;
+        let interval = setInterval(function() {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            display.textContent = minutes + ":" + seconds;
+            timer--;
+            if (timer < 0) {
+                clearInterval(interval);
+                showResendButton();
+            }
+        }, 1000);
+    }
+
+    function showResendButton() {
+        resultElement.classList.remove("disabled");
+        resultElement.disabled = false;
+    }
+    resultElement.addEventListener("click", function() {
+        resultElement.classList.add("disabled");
+        resultElement.disabled = true;
+        startTimer(59, timerElement);
+    });
+    startTimer(59, timerElement);
+});
