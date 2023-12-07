@@ -1736,6 +1736,7 @@ button.resend_otp.disabled {
     line-height: 24px;
     letter-spacing: 0.150000006px;
     margin-bottom: 12px;
+    margin-top: 16px;
   }
   .mobile_container .fixed_deposit_summary {
     text-align: left;
