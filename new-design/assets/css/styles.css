@@ -541,24 +541,35 @@ nav .userAvatar img {
   color: #1084CB;
   text-decoration: none;
 }
-.listTable .hideMoreBtn {
+
+#expend {
   display: none;
-  justify-content: center;
-  place-items: center;
-  height: 48px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.1px;
-  line-height: 24px;
-  background-color: #FFFFFF;
 }
-.listTable .hideMoreBtn a {
+
+#expend + .smalldesc {
+  max-height: 209px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+#expend:checked + .smalldesc {
+  max-height: 364px;
+}
+
+label.showMoreBtn {
   color: #1084CB;
-  text-decoration: none;
+  text-decoration: underline;
+  cursor: pointer;
 }
-.listTable .hideMoreBtn img {
+label.showMoreBtn img {
+  margin-left: 4px;
+}
+
+#homeHideBtn {
+  display: none;
+}
+
+.rotate {
   transform: rotate(180deg);
 }
 

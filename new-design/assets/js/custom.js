@@ -40,23 +40,18 @@ $(document).ready(function () {
 /*****************Menu Dropdown Hover Effect End***************/
 
 /*****************Dashboard Data show hide Start***************/
-function showMoreData() {
-    var dataShow = document.getElementById("moreListData");
-    var hideShow = document.getElementById("hideMoreBtn");
-    var showShow = document.getElementById("showMoreBtn");
-    dataShow.style.display = "block";
-    showShow.style.display = "none";
-    hideShow.style.display = "flex";
-}
-
-function hideMoreData() {
-    var dataShow = document.getElementById("moreListData");
-    var hideShow = document.getElementById("hideMoreBtn");
-    var showShow = document.getElementById("showMoreBtn");
+$("#homeShowBtn").click(function () {
+    var dataShow = document.getElementById("homeShowBtn");
+    var dataHide = document.getElementById("homeHideBtn");
     dataShow.style.display = "none";
-    showShow.style.display = "flex";
-    hideShow.style.display = "none";
-}
+    dataHide.style.display = "flex";
+});
+$("#homeHideBtn").click(function () {
+    var dataShow = document.getElementById("homeShowBtn");
+    var dataHide = document.getElementById("homeHideBtn");
+    dataShow.style.display = "flex";
+    dataHide.style.display = "none";
+});
 /*****************Dashboard Data show hide End***************/
 
 /*****************Dashboard Toggle Switch Button Modal Start***************/
@@ -107,40 +102,37 @@ function handleClickOTP(){
     myModal.show();
 }
 
-const inputs = document.getElementById("inputs"); 
-  
-inputs.addEventListener("input", function (e) { 
-    const target = e.target; 
-    const val = target.value; 
-  
-    if (isNaN(val)) { 
-        target.value = ""; 
-        return; 
-    } 
-  
-    if (val != "") { 
-        const next = target.nextElementSibling; 
-        if (next) { 
-            next.focus(); 
-        } 
-    } 
-}); 
-  
-inputs.addEventListener("keyup", function (e) { 
-    const target = e.target; 
-    const key = e.key.toLowerCase(); 
-  
-    if (key == "backspace" || key == "delete") { 
-        target.value = ""; 
-        const prev = target.previousElementSibling; 
-        if (prev) { 
-            prev.focus(); 
-        } 
-        return; 
-    } 
+const inputs = document.getElementById("inputs");
+inputs.addEventListener("input", function (e) {
+    const target = e.target;
+    const val = target.value;
+    if (isNaN(val)) {
+        target.value = "";
+        return;
+    }
+    if (val != "") {
+        const next = target.nextElementSibling;
+        if (next) {
+            next.focus();
+        }
+    }
+});
+inputs.addEventListener("keyup", function (e) {
+    const target = e.target;
+    const key = e.key.toLowerCase();
+    if (key == "backspace" || key == "delete") {
+        target.value = "";
+        const prev = target.previousElementSibling;
+        if (prev) {
+            prev.focus();
+        }
+        return;
+    }
 });
 
 /*************************OTP Modal End******************************/
+
+/*************************OTP Timer Start******************************/
 
 document.addEventListener("DOMContentLoaded", function() {
     const timerElement = document.getElementById("timer");
@@ -173,3 +165,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     startTimer(59, timerElement);
 });
+
+/*************************OTP Timer End******************************/
