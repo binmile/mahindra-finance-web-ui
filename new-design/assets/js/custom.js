@@ -40,39 +40,34 @@ $(document).ready(function () {
 /*****************Menu Dropdown Hover Effect End***************/
 
 /*****************Dashboard Data show hide Start***************/
-function showMoreData() {
-    var dataShow = document.getElementById("moreListData");
-    var hideShow = document.getElementById("hideMoreBtn");
-    var showShow = document.getElementById("showMoreBtn");
-    dataShow.style.display = "block";
-    showShow.style.display = "none";
-    hideShow.style.display = "flex";
-}
-
-function hideMoreData() {
-    var dataShow = document.getElementById("moreListData");
-    var hideShow = document.getElementById("hideMoreBtn");
-    var showShow = document.getElementById("showMoreBtn");
+$("#homeShowBtn").click(function () {
+    var dataShow = document.getElementById("homeShowBtn");
+    var dataHide = document.getElementById("homeHideBtn");
     dataShow.style.display = "none";
-    showShow.style.display = "flex";
-    hideShow.style.display = "none";
-}
+    dataHide.style.display = "flex";
+});
+$("#homeHideBtn").click(function () {
+    var dataShow = document.getElementById("homeShowBtn");
+    var dataHide = document.getElementById("homeHideBtn");
+    dataShow.style.display = "flex";
+    dataHide.style.display = "none";
+});
 /*****************Dashboard Data show hide End***************/
 
 /*****************Dashboard Toggle Switch Button Modal Start***************/
 function updateKycModal(id) {
     var toggleSwitch = document.getElementById(id);
     var myModal = new bootstrap.Modal(document.getElementById("myModal"));
-
     toggleSwitch.addEventListener("change", function () {
         if (toggleSwitch.checked) {
             myModal.show();
+
         } else {
             myModal.hide();
         }
     });
 }
-
+/*****************radio button BMT-265 ******************/
 function radioButtonAction(id,element) {
     var checkbox = document.getElementById(id);
     var radioButton = document.getElementById(element);
@@ -88,6 +83,24 @@ function radioButtonAction(id,element) {
     radioButton2.style.border ="2px solid white";
     
 }
+
+/*****************body toggle BMT-147 ******************/
+ function toggle_data(onclickId,elementId) {
+    let checkbox = document.getElementById(onclickId);
+    let autoRenewalText = document.getElementById(elementId);
+    autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
+    checkbox.addEventListener("change", function () {
+        autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
+    });
+}
+
+toggle_data('C2032231F_','auto_renewal_text_');
+toggle_data('toggle_value_data','toggle_value');
+toggle_data('toggle_content_values','toggle_content');
+toggle_data('toggle_values','toggle_data_content');
+
+
+/*****************body End ******************/
 
 
 /*****************Dashboard Toggle Switch Button Modal End***************/
@@ -109,12 +122,12 @@ $("#quickActionElements :input").click(function () {
 
 function handleClickRadio(ele1, ele2) {
     var checkedValue = document.querySelector('input[name="preclosure-flow"]:checked').value;
-    if(checkedValue == ele1){
-        $('#'+ele1).addClass('active');
-        $('#'+ele2).removeClass('active');
+    if (checkedValue == ele1) {
+        $('#' + ele1).addClass('active');
+        $('#' + ele2).removeClass('active');
     } else {
-        $('#'+ele1).removeClass('active');
-        $('#'+ele2).addClass('active');
+        $('#' + ele1).removeClass('active');
+        $('#' + ele2).addClass('active');
     }
 }
 
@@ -125,40 +138,37 @@ function handleClickOTP(){
     myModal.show();
 }
 
-const inputs = document.getElementById("inputs"); 
-  
-inputs.addEventListener("input", function (e) { 
-    const target = e.target; 
-    const val = target.value; 
-  
-    if (isNaN(val)) { 
-        target.value = ""; 
-        return; 
-    } 
-  
-    if (val != "") { 
-        const next = target.nextElementSibling; 
-        if (next) { 
-            next.focus(); 
-        } 
-    } 
-}); 
-  
-inputs.addEventListener("keyup", function (e) { 
-    const target = e.target; 
-    const key = e.key.toLowerCase(); 
-  
-    if (key == "backspace" || key == "delete") { 
-        target.value = ""; 
-        const prev = target.previousElementSibling; 
-        if (prev) { 
-            prev.focus(); 
-        } 
-        return; 
-    } 
+const inputs = document.getElementById("inputs");
+inputs.addEventListener("input", function (e) {
+    const target = e.target;
+    const val = target.value;
+    if (isNaN(val)) {
+        target.value = "";
+        return;
+    }
+    if (val != "") {
+        const next = target.nextElementSibling;
+        if (next) {
+            next.focus();
+        }
+    }
+});
+inputs.addEventListener("keyup", function (e) {
+    const target = e.target;
+    const key = e.key.toLowerCase();
+    if (key == "backspace" || key == "delete") {
+        target.value = "";
+        const prev = target.previousElementSibling;
+        if (prev) {
+            prev.focus();
+        }
+        return;
+    }
 });
 
 /*************************OTP Modal End******************************/
+
+/*************************OTP Timer Start******************************/
 
 document.addEventListener("DOMContentLoaded", function() {
     const timerElement = document.getElementById("timer");
@@ -191,3 +201,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     startTimer(59, timerElement);
 });
+
+/*************************OTP Timer End******************************/

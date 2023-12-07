@@ -542,24 +542,35 @@ nav .userAvatar img {
   color: #1084CB;
   text-decoration: none;
 }
-.listTable .hideMoreBtn {
+
+#expend {
   display: none;
-  justify-content: center;
-  place-items: center;
-  height: 48px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.1px;
-  line-height: 24px;
-  background-color: #FFFFFF;
 }
-.listTable .hideMoreBtn a {
+
+#expend + .smalldesc {
+  max-height: 209px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+#expend:checked + .smalldesc {
+  max-height: 364px;
+}
+
+label.showMoreBtn {
   color: #1084CB;
-  text-decoration: none;
+  text-decoration: underline;
+  cursor: pointer;
 }
-.listTable .hideMoreBtn img {
+label.showMoreBtn img {
+  margin-left: 4px;
+}
+
+#homeHideBtn {
+  display: none;
+}
+
+.rotate {
   transform: rotate(180deg);
 }
 
@@ -1553,12 +1564,25 @@ button.resend_otp.disabled {
 
 /********************Single Account Page End******************/
 /*********** Responsive CSS Start Here*************/
+<<<<<<< HEAD
 @media screen and (min-width: 767px) {
   .mob-wrapper {
+=======
+/*********** Responsive CSS Start Here*************/
+@media only screen and (min-width: 767px) {
+  .mobile_container {
+    display: none;
+  }
+  .dashboardCardMobile {
+    display: none;
+  }
+  .mobile_container {
+>>>>>>> 9944fbffb36ed2b8a6cecedefdc8d860f3b7529c
     display: none;
   }
 }
 @media only screen and (max-width: 768px) {
+<<<<<<< HEAD
   .web-wrapper {
     display: none;
   }
@@ -1595,10 +1619,139 @@ button.resend_otp.disabled {
     margin-bottom: 12px;
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details {
+=======
+  .container_wrapper {
+    display: none !important;
+  }
+  .cardContainer_mobileView {
+    margin-bottom: 24px;
+    margin-top: 3px;
+  }
+  .dashboardDarkCard .cardLabelHeading.cardLabelHeading_mob {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.150000006px;
+  }
+  .dashboardDarkCard .cardLabelList_mob ul li {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
+  .dashboardDarkCard.dashboardDarkCard_mob {
+    padding: 16px 12px;
+    height: auto;
+  }
+  .dashboardDarkCard.dashboardDarkCard_mob .newFdImage_mob {
+    width: auto;
+    height: 111px;
+  }
+  .dashboardDarkCard .advertisement_mob {
+    width: 100%;
+  }
+  .dashboardDarkCard .advertisement_mob .themeRedBtn.themeRedBtn_mob {
+    height: 32px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+  }
+  .fixed_deposit_summary {
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.150000006px;
+  }
+  .mobile_container .fixed_deposit_summary {
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.150000006px;
+  }
+  .cardContainerMobile {
+    padding: 8px 16px;
+    background-color: #FFFFFF !important;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5.14px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  .cardContainerMobile .custom-tooltip.custom_tooltip img {
+    vertical-align: text-bottom;
+  }
+  .cardContainerMobile .first_active_data {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .cardContainerMobile .first_active_data::after {
+    content: "";
+    width: 1px;
+    height: 80%;
+    background: #E8E8E8;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+  .cardContainerMobile .active_fds {
+    text-align: left;
+    color: #6B7280;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.400000006px;
+  }
+  .cardContainerMobile .active_fds.investment_fds {
+    white-space: nowrap;
+  }
+  .cardContainerMobile .active_fds .custom_tooltip .tooltip-text.tooltip_mobile {
+    left: -235px;
+  }
+  .cardContainerMobile .active_fds .custom_tooltip .tooltip-text::after {
+    left: 80%;
+  }
+  .cardContainerMobile .circle_div_mobile {
+    display: flex;
+    place-items: baseline;
+    margin-top: 6px;
+    gap: 6px;
+  }
+  .cardContainerMobile .circle_div_mobile .detail_price {
+    text-align: left;
+    color: #231F20;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+  .cardContainerMobile .cardIcons_circle {
+    width: 20px;
+    height: 20px;
+    background-color: #F3F4F6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 5px;
+  }
+  .cardContainerMobile .cardIcons_circle img {
+    width: 10px;
+    height: 10px;
+  }
+  .cardContainerMobile .card_wrapper_data {
+>>>>>>> 9944fbffb36ed2b8a6cecedefdc8d860f3b7529c
     display: flex;
     justify-content: space-between;
     place-items: center;
     flex-direction: row;
+<<<<<<< HEAD
     margin-bottom: 12px;
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .mobRadioButton {
@@ -1618,15 +1771,78 @@ button.resend_otp.disabled {
     margin: 4px 0 16px 0px;
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail {
+=======
+  }
+  .fixedDepositDetailsData {
+    margin-top: 24px;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit {
+    padding: 14px 16px;
+    background-color: #FFFFFF !important;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5.14px;
+    margin-top: 12px;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-direction: row;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .FD_num {
+    text-align: left;
+    color: #231F20;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .auto_renewal {
+    display: flex;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .auto_renewal .auto_renewal_text {
+    text-align: left;
+    color: #6B7280;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .auto_renewal .form-check-input_mob {
+    margin-top: 0;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .auto_renewal .form_switch_mob {
+    padding-left: 8px;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .auto_renewal .form-check-input-mob::before {
+    content: "";
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .auto_renewal .form-check-input-mob::after {
+    content: "";
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-direction: row;
+    margin: 12px 0 16px 0;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail {
+>>>>>>> 9944fbffb36ed2b8a6cecedefdc8d860f3b7529c
     display: flex;
     gap: 4px;
     margin-top: 4px;
   }
+<<<<<<< HEAD
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail img {
+=======
+  .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail img {
+>>>>>>> 9944fbffb36ed2b8a6cecedefdc8d860f3b7529c
     width: 15px;
     height: 15px;
     vertical-align: inherit;
   }
+<<<<<<< HEAD
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .NA_text {
     font-size: 14px;
     font-weight: 400;
@@ -1650,11 +1866,39 @@ button.resend_otp.disabled {
     text-align: left;
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .third_details {
+=======
+  .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .NA_text {
+    text-align: left;
+    color: #231F20;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .percentage_text {
+    text-align: left;
+    color: #17823E;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .text_content {
+    text-align: left;
+    color: #6B7280;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .third_details {
+>>>>>>> 9944fbffb36ed2b8a6cecedefdc8d860f3b7529c
     display: flex;
     justify-content: space-between;
     place-items: center;
     flex-direction: row;
   }
+<<<<<<< HEAD
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details {
     display: flex;
   }
@@ -1666,3 +1910,74 @@ button.resend_otp.disabled {
   }
 }
 /*********** Responsive CSS Start Here*************//*# sourceMappingURL=styles.css.map */
+=======
+  .fixedDepositDetailsData .details_fixed_deposit .third_details .circle_arrow {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #000000;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .third_details .circle_arrow img {
+    width: 12.5px;
+    height: 12.5px;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details {
+    display: flex;
+    gap: 7px;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details .red-bg-label.red_bg_label_mob {
+    padding: 0.4rem;
+  }
+  .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details .green_label_mob {
+    padding: 0.4rem;
+  }
+  .fixedDepositDetailsData .showmorebtn_mob {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    text-align: left;
+    color: #1084CB;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .fixedDepositDetailsData .showmorebtn_mob a {
+    text-decoration: none;
+  }
+  .border_top_line {
+    border-top: 1px solid #D6D6D6;
+    margin-bottom: 24px;
+  }
+  .dashboardDarkCardMobile {
+    margin: 24px 0px;
+  }
+  .dashboardDarkCardMobile .cardLabelList .percent_data {
+    color: #FFFFFF;
+  }
+  .dashboardDarkCardMobile .img_content {
+    width: 110px;
+    height: 111px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .dashboardDarkCardMobile .themeRedBtn.img .img {
+    width: 110px;
+    height: 111px;
+  }
+  #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
+    width: auto !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .cardContainerMobile .first_active_data::after {
+    right: -13px;
+  }
+}/*# sourceMappingURL=styles.css.map */
+>>>>>>> 9944fbffb36ed2b8a6cecedefdc8d860f3b7529c
