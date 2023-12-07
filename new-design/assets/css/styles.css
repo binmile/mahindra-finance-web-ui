@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 /********************Toggle Switch Start**********************/
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 .form-check-input {
   position: relative;
   border: 1px solid #4D4D4F;
@@ -1563,6 +1564,118 @@ button.resend_otp.disabled {
 
 /********************Single Account Page End******************/
 /*********** Responsive CSS Start Here*************/
+@media screen and (min-width: 767px) {
+  .mob-wrapper {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .web-wrapper {
+    display: none;
+  }
+  .buttonContainer {
+    position: fixed;
+    width: 94.5%;
+    bottom: 20px;
+    padding: 0px;
+  }
+  .buttonContainer button.themeRedBtn {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: normal;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+  }
+  .commonHeading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 0px 0 -10px 0;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit {
+    padding: 12px 16px;
+    background-color: #FFFFFF !important;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5.14px;
+    margin-bottom: 12px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-direction: row;
+    margin-bottom: 12px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .mobRadioButton {
+    width: 16px;
+    height: 16px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .auto_renewal_details .FD_num {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0 16px 0px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail img {
+    width: 15px;
+    height: 15px;
+    vertical-align: inherit;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .NA_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .percentage_text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #17823E;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .text_content {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .third_details {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-direction: row;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details {
+    display: flex;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details .green_label_mob {
+    padding: 6px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
+    margin-bottom: 75px;
+  }
+}
 /*********** Responsive CSS Start Here*************/
 @media only screen and (min-width: 767px) {
   .mobile_container {

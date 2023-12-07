@@ -1,5 +1,107 @@
-
-
-
-
+@import "./variable";
+@import "./mixin";
 /*********** Responsive CSS Start Here*************/
+@media screen and (min-width: 767px) {
+  .mob-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .web-wrapper {
+    display: none;
+  }
+
+  .buttonContainer{
+    position: fixed;
+    width: 94.5%;
+    bottom: 20px;
+    padding: 0px;
+      button.themeRedBtn {
+          @include custom-width-height(100%, 40px);
+          @include custom-font(14px, 700, 32px, normal);
+          @include allCenter;
+      }
+  }
+  .commonHeading{
+    @include custom-font(16px, 600, 24px, normal);
+    text-align: left;
+    margin: 0px 0 -10px 0;
+  }
+  .mob-wrapper {
+    .fixedDepositeContainer{
+
+    .fixedDepositDetailsData {
+      .details_fixed_deposit {
+        padding: 12px 16px;
+        background-color: $color_white !important;
+        box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
+        border-radius: 5.14px;
+        margin-bottom: 12px;
+
+        .auto_renewal_details {
+          @include setDisplayProperty(flex, space-between, center);
+          margin-bottom: 12px;
+          .mobRadioButton{
+            @include custom-width-height(16px, 16px);
+          }
+
+          .FD_num {
+            @include custom-font(12px, 400, 16px, normal);
+            text-align: left;
+          }
+        }
+
+        .second_details {
+          .Investment_details_content {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px 0 16px 0px;
+
+            .img_detail {
+              display: flex;
+              gap: 4px;
+              margin-top: 4px;
+
+              img {
+                @include custom-width-height(15px, 15px);
+                vertical-align: inherit;
+              }
+
+              .NA_text {
+                @include custom-font(14px, 400, 20px, normal);
+                text-align: left;
+              }
+
+              .percentage_text {
+                @include custom-font(14px, 700, 20px, normal);
+                text-align: left;
+                color: $color_green_dark;
+              }
+            }
+
+            .text_content {
+              @include custom-font(12px, 400, 16px, normal);
+              text-align: left;
+            }
+          }
+        }
+
+        .third_details {
+          @include setDisplayProperty(flex, space-between, center);
+          .pending_details {
+            display: flex;
+
+            .green_label_mob {
+              padding: 6px;
+            }
+          }
+        }
+      }
+    &:last-child{
+      margin-bottom: 75px;
+    }
+  }
+    }
+  }
+}

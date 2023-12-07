@@ -67,6 +67,24 @@ function updateKycModal(id) {
         }
     });
 }
+/*****************radio button BMT-265 ******************/
+function radioButtonAction(id,element) {
+    var checkbox = document.getElementById(id);
+    var radioButton = document.getElementById(element);
+    radioButton.style.border = checkbox.checked ? "1px solid black" : " ";
+    checkbox.addEventListener("change", function () {
+        radioButton.style.border = checkbox.checked ? "1px solid black" : " ";
+    });
+    var radioButton1 = document.getElementById("details_fixed_deposit1");
+    var radioButton3 = document.getElementById("details_fixed_deposit3");
+    var radioButton2 = document.getElementById("details_fixed_deposit2");
+    radioButton1.style.border ="1px solid white";
+    radioButton3.style.border ="1px solid white";
+    radioButton2.style.border ="1px solid white";
+    
+}
+radioButtonAction('radio2','details_fixed_deposit2')
+
 /*****************body toggle BMT-147 ******************/
  function toggle_data(onclickId,elementId) {
     let checkbox = document.getElementById(onclickId);
