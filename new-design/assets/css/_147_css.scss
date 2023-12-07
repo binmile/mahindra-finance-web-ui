@@ -1,6 +1,8 @@
 /*********** Responsive CSS Start Here*************/
 @import "./breakpoint";
 @media only screen and (min-width: 767px) {
+
+    /*********** Responsive dashboard View Start*************/
     .mobile_container {
         display: none;
     }
@@ -13,13 +15,30 @@
         display: none;
     }
 
+    /*********** Responsive dashboard View End*************/
+
+    /*********** Responsive Quick-Actions-Mobile View Start*************/
+    .boldTitle_mobile {
+        display: none;
+    }
+
+
+
+
+
+
+    /*********** Responsive Quick-Actions-Mobile View End*************/
+
 }
 
 @media only screen and (max-width: $tablet) {
+    /*********** Responsive dashboard View Start*************/
+
     .container_wrapper {
         display: none !important;
 
     }
+
     .cardContainer_mobileView {
         margin-bottom: 24px;
         margin-top: 3px;
@@ -33,6 +52,7 @@
 
             }
         }
+
         .cardLabelList_mob {
             ul {
                 li {
@@ -47,12 +67,15 @@
         &.dashboardDarkCard_mob {
             padding: 16px 12px;
             height: auto;
+
             .newFdImage_mob {
                 @include custom-width-height(auto, 111px)
             }
         }
+
         .advertisement_mob {
             width: 100%;
+
             .themeRedBtn {
                 &.themeRedBtn_mob {
                     height: 32px;
@@ -87,6 +110,7 @@
         border-radius: 5.14px;
         margin-top: 12px;
         margin-bottom: 24px;
+
         .custom-tooltip {
             &.custom_tooltip {
                 img {
@@ -115,6 +139,7 @@
             text-align: left;
             color: $color_light_text;
             @include custom-font(10px, 500, 14px, 0.4000000059604645px);
+
             &.investment_fds {
                 white-space: nowrap;
             }
@@ -155,13 +180,14 @@
             border-radius: 50%;
             @include allCenter;
             margin-bottom: 5px;
+
             img {
                 @include custom-width-height(10px, 10px);
             }
         }
 
         .card_wrapper_data {
-           @include setDisplayProperty(flex, space-between, center )
+            @include setDisplayProperty(flex, space-between, center)
         }
 
     }
@@ -177,8 +203,8 @@
             margin-top: 12px;
 
             .auto_renewal_details {
-              
-                @include setDisplayProperty(flex, space-between, center );
+
+                @include setDisplayProperty(flex, space-between, center);
 
                 .FD_num {
                     text-align: left;
@@ -189,11 +215,13 @@
 
                 .auto_renewal {
                     display: flex;
+
                     .auto_renewal_text {
                         text-align: left;
                         color: $color_light_text;
                         @include custom-font(12px, 500, 16px, 0.25px);
                     }
+
                     .form-check-input_mob {
                         margin-top: 0;
                     }
@@ -214,10 +242,12 @@
                 }
 
             }
+
             .second_details {
                 .Investment_details_content {
-                    @include setDisplayProperty(flex,space-between, center);
+                    @include setDisplayProperty(flex, space-between, center);
                     margin: 12px 0 16px 0;
+
                     .img_detail {
                         display: flex;
                         gap: 4px;
@@ -255,7 +285,8 @@
             }
 
             .third_details {
-               @include setDisplayProperty(flex,space-between, center);
+                @include setDisplayProperty(flex, space-between, center);
+
                 .circle_arrow {
                     @include custom-width-height(20px, 20px);
                     @include allCenter;
@@ -292,6 +323,7 @@
             text-align: left;
             color: $color_light_blue;
             @include custom-font(12px, 500, 20px, 0.25px);
+
             a {
                 text-decoration: none;
             }
@@ -329,16 +361,189 @@
         }
 
     }
-    
-    #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas{
+
+    #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
         width: auto !important;
     }
+
+    /*********** Responsive dashboard View End*************/
+
+
+
+    /*********** Responsive Quick-Actions-Mobile View Start*************/
+    .col_data_ {
+        margin-top: 0;
+    }
+
+    .cardContainer_mobile_screen {
+        margin-top: 12px;
+
+        .fdDetailsBox_mobile_screen {
+            padding: 12px 16px;
+
+            .fdHeader_mobile_screen {
+                flex-direction: column;
+                place-items: initial;
+                justify-content: left;
+
+                .fdTenure_mobile_screen {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    place-items: center;
+                    gap: 4px;
+                    width: 222px;
+
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: 0em;
+                    text-align: center;
+
+                    img {
+                        margin-right: 0;
+                    }
+                }
+
+                .boldTitle_mobile_FD {
+                    display: none;
+                }
+
+                .boldTitle_mobile {
+                    margin-bottom: 8px;
+
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.15000000596046448px;
+                    text-align: left;
+
+
+                }
+            }
+
+            .fdMainContent {
+                padding: 16px 0;
+
+                display: none;
+
+                .fdInvestment_mobile_screen {
+                    .bigText_mob_screen {
+
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: 0.15000000596046448px;
+                        text-align: left;
+
+                    }
+
+                    .lightText_mob_screen {
+
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        letter-spacing: 0em;
+                        text-align: left;
+
+                    }
+                }
+
+                .fdInvestment_sec_mobile_view {
+                    .lightText_line_text_mob_screen {
+
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        letter-spacing: 0em;
+                        text-align: right;
+
+                    }
+
+                    .darkGreenText_mob_screen {
+
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: 0.15000000596046448px;
+                        text-align: right;
+
+                    }
+                }
+
+                .fdTenure_years_text {
+
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    letter-spacing: 0.25px;
+                    text-align: center;
+
+                }
+            }
+
+            .fdContents {
+                &.fdContents_mob_screen {
+                    flex-wrap: wrap;
+                }
+
+                .fdDetails {
+                    width: 50%;
+                    margin-bottom: 12px;
+
+                    .label {
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 16px;
+                        letter-spacing: 0.25px;
+                        text-align: left;
+
+                    }
+
+                    .value {
+                        justify-content: flex-start;
+                        place-items: center;
+                        align-items: center;
+
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        letter-spacing: 0.25px;
+                        text-align: left;
+                        color: #231F20;
+
+                        img {
+                            width: 15px;
+                            height: 15px;
+                            vertical-align: middle !important;
+                        }
+
+                    }
+                }
+
+                .fdDetails::after {
+                    position: initial;
+                }
+            }
+
+
+        }
+    }
+
+
+
+    /*********** Responsive Quick-Actions-Mobile View End*************/
+
 }
 
 @media only screen and (max-width: $miniMobile) {
+
+    /*********** Responsive dashboard View Start*************/
     .cardContainerMobile {
         .first_active_data::after {
             right: -13px;
         }
     }
+
+    /*********** Responsive dashboard View End*************/
 }
