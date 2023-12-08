@@ -1,6 +1,80 @@
 @import "./variable";
 @import "./mixin";
 /*********** Responsive CSS Start Here*************/
+
+// repayment-bank-css
+.bankDetailsMainContainer {
+  padding: 24px 32px;
+  background-color: $color_white !important;
+  box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
+  border-radius: 8px;
+
+  .bankDetailSubheading {
+    @include custom-font(14px, 500, 20px, normal);
+    margin: 8px 0 8px 0;
+  }
+
+  .textparent {
+    position: relative;
+
+    .formLabel {
+      @include custom-font(14px, 400, 24px, 0.25px);
+      color: $color_light_text;
+      text-align: left;
+      margin: 24px 0 5px 0;
+    }
+
+    .infoText {
+      @include custom-font(14px, 500, 20px, 0.1px);
+      margin: 8px 0 0 0;
+      color: $color_light_text;
+    }
+
+    .formControl {
+      border: 1px solid $color_disabled_btn;
+      padding: 10px 16px;
+    }
+
+    .textfildicons {
+      position: absolute;
+      right: 16px;
+      top: 62.5px;
+
+      .icons {
+        @include custom-width-height(24px, 24px);
+      }
+    }
+
+    .ifscHeading {
+      display: flex;
+      justify-content: space-between;
+      white-space: nowrap;
+
+      .ifscLink {
+        @include custom-font(12px, 400, 16px, 0.4px);
+        white-space: nowrap;
+        margin: 27.5px 0 5px 0;
+
+        a {
+          text-decoration: none;
+          color: $color_link_blue;
+        }
+      }
+    }
+  }
+
+  .bottomContentBox {
+    @include custom-font(14px, 400, 24px, 0.25px);
+    background-color: $color_light_bg;
+    margin: 141px 0 8px 0;
+    border-radius: 4px;
+    color: $color_light_text;
+    padding: 0px 8px 0px 8px;
+    width: fit-content;
+  }
+}
+
+
 @media screen and (min-width: 767px) {
   .mob-wrapper {
     display: none;
@@ -12,96 +86,159 @@
     display: none;
   }
 
-  .buttonContainer{
+  #repayment-buttonContainer {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 24px;
+  }
+
+  .buttonContainer {
     position: fixed;
     width: 94.5%;
     bottom: 20px;
     padding: 0px;
-      button.themeRedBtn {
-          @include custom-width-height(100%, 40px);
-          @include custom-font(14px, 700, 32px, normal);
-          @include allCenter;
-      }
+
+    button.themeRedBtn {
+      @include custom-width-height(100%, 40px);
+      @include custom-font(14px, 700, 32px, normal);
+      @include allCenter;
+    }
   }
-  .commonHeading{
+
+  .commonHeading {
     @include custom-font(16px, 600, 24px, normal);
     text-align: left;
     margin: 16px 0 -10px 0;
   }
-  .mob-wrapper {
-    .fixedDepositeContainer{
 
-    .fixedDepositDetailsData {
-      .details_fixed_deposit {
-        padding: 12px 16px;
-        background-color: $color_white !important;
-        box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
-        border-radius: 5.14px;
-        margin-bottom: 12px;
+  .bankDetailsMainContainer {
+    padding: 16px;
 
-        .auto_renewal_details {
-          @include setDisplayProperty(flex, space-between, center);
-          margin-bottom: 12px;
-          .mobRadioButton{
-            @include custom-width-height(16px, 16px);
-          }
+    .bankDetailSubheading {
+      @include custom-font(12px, 400, 16px, normal);
+      margin: 8px 0 0 0;
+    }
 
-          .FD_num {
-            @include custom-font(12px, 400, 16px, normal);
-            text-align: left;
-          }
+    .textparent {
+      .formLabel {
+        @include custom-font(12px, 400, 16px, normal);
+        margin: 16px 0 4px 0;
+      }
+
+      .infoText {
+        @include custom-font(10px, 500, 14px, 0.4px);
+        margin: 4px 0 0 0;
+      }
+
+      .textfildicons {
+        right: 14px;
+        top: 45px;
+
+        .icons {
+          @include custom-width-height(16px, 16px);
         }
+      }
 
-        .second_details {
-          .Investment_details_content {
-            display: flex;
-            justify-content: space-between;
-            margin: 4px 0 16px 0px;
+      .ifscHeading {
+        .ifscLink {
+          @include custom-font(12px, 400, 16px, 0.4px);
+          margin: 16px 0 5px 0;
+        }
+      }
+    }
 
-            .img_detail {
-              display: flex;
-              gap: 4px;
-              margin-top: 4px;
+    .bottomContentBox {
+      @include custom-font(10px, 400, 14px, normal);
+      margin: 60px 0 8px 0;
+      border-radius: 4px;
+      padding: 5px 8px 5px 8px;
+    }
+  }
 
-              img {
-                @include custom-width-height(15px, 15px);
-                vertical-align: inherit;
-              }
+  .mob-wrapper {
+    .fixedDepositeContainer {
 
-              .NA_text {
-                @include custom-font(14px, 400, 20px, normal);
-                text-align: left;
-              }
+      .fixedDepositDetailsData {
+        .details_fixed_deposit {
+          padding: 12px 16px;
+          background-color: $color_white !important;
+          box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
+          border-radius: 5.14px;
+          margin-bottom: 12px;
 
-              .percentage_text {
-                @include custom-font(14px, 700, 20px, normal);
-                text-align: left;
-                color: $color_green_dark;
-              }
+          .auto_renewal_details {
+            @include setDisplayProperty(flex, space-between, center);
+            margin-bottom: 12px;
+
+            .mobRadioButton {
+              @include custom-width-height(16px, 16px);
             }
 
-            .text_content {
+            .FD_num {
               @include custom-font(12px, 400, 16px, normal);
               text-align: left;
             }
           }
-        }
 
-        .third_details {
-          @include setDisplayProperty(flex, space-between, center);
-          .pending_details {
-            display: flex;
+          .second_details {
+            .Investment_details_content {
+              display: flex;
+              justify-content: space-between;
+              margin: 4px 0 16px 0px;
 
-            .green_label_mob {
-              padding: 6px;
+              .img_detail {
+                display: flex;
+                gap: 4px;
+                margin-top: 4px;
+
+                img {
+                  @include custom-width-height(15px, 15px);
+                  vertical-align: inherit;
+                }
+
+                .NA_text {
+                  @include custom-font(14px, 400, 20px, normal);
+                  text-align: left;
+                }
+
+                .percentage_text {
+                  @include custom-font(14px, 700, 20px, normal);
+                  text-align: left;
+                  color: $color_green_dark;
+                }
+              }
+
+              .text_content {
+                @include custom-font(12px, 400, 16px, normal);
+                text-align: left;
+              }
+            }
+          }
+
+          .third_details {
+            @include setDisplayProperty(flex, space-between, center);
+
+            .pending_details {
+              display: flex;
+
+              .green_label_mob {
+                padding: 6px;
+              }
             }
           }
         }
+
+        &:last-child {
+          margin-bottom: 75px;
+        }
       }
-    &:last-child{
-      margin-bottom: 75px;
     }
   }
-    }
+
+  // repayment-bank-css-mobile
+  .commonHeading {
+    @include custom-font(16px, 600, 24px, 0.15px);
+    margin: 12px 0 12px;
   }
 }
