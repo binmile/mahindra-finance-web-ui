@@ -12,9 +12,17 @@
 a {
   color: $color_light_blue;
 }
-
+::-webkit-scrollbar {
+   width: 0px;
+}
+::-webkit-scrollbar-track {
+    background: $color_white;
+}
+::-webkit-scrollbar-thumb {
+    background: #F5F5F5;
+}
 body {
-  min-height: calc(100vh + 5px);
+  min-height: 100vh;
   padding-top: 3rem;
   color: $color_black_light;
   background-color: $color_light_bg;
@@ -73,11 +81,15 @@ body {
 .mb-20 {
   margin-bottom: 20px;
 }
-
+.ml-25{
+    margin-left: 25px;
+}
 .pd-32 {
   padding: 32px;
 }
-
+.pb-20{
+    padding-bottom: 20px;
+}
 .wd-100 {
   width: 100%;
 }
@@ -286,6 +298,7 @@ nav {
     .listTabledata {
       @include allCenter;
       background-color: $color_white;
+      cursor: pointer;
       &:hover {
         background-color: $color_light_gray;
       }
@@ -361,7 +374,7 @@ label.showMoreBtn {
   }
   .themeRedBtn {
     height: 44px;
-    @include custom-font(14px, 400, 16px, 1.25px);
+    @include custom-font(14px, 700, 16px, 1.25px);
   }
 }
 
@@ -581,7 +594,7 @@ label.showMoreBtn {
   .fdInvestment {
     @include setDisplayProperty(flex, flex-start, flex-start, column);
     .bigText {
-      @include custom-font(34px, 600, 40px, 0.25px);
+      @include custom-font(28px, 600, 40px, 0.25px);
     }
     .lightText {
       @include custom-font(14px, 400, 24px, 0.25px);
@@ -748,7 +761,7 @@ label.showMoreBtn {
 }
 
 .fDList {
-  min-height: 380px;
+  min-height: 392px;
   ul {
     padding: 0;
     list-style: none;
@@ -980,6 +993,9 @@ label.showMoreBtn {
         .accountDetails {
           .accountHolderName {
             @include custom-font(24px, 500, 32px, -0.18px);
+          }
+          .smallName {
+            @include custom-font(14px, 500, 24px, 0.1px);
           }
           .accountType {
             @include custom-font(14px, 400, 24px, 0.25px);
