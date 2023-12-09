@@ -73,7 +73,7 @@ function updateKycModal(id) {
     });
 }
 /*****************body toggle BMT-147 start ******************/
-function toggle_data(onclickId, elementId) {
+function toggle_data_dashboard(onclickId, elementId) {
     let checkbox = document.getElementById(onclickId);
     let autoRenewalText = document.getElementById(elementId);
     autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
@@ -82,10 +82,10 @@ function toggle_data(onclickId, elementId) {
     });
 }
 
-toggle_data('C2032231F_', 'auto_renewal_text_');
-toggle_data('toggle_value_data', 'toggle_value');
-toggle_data('toggle_content_values', 'toggle_content');
-toggle_data('toggle_values', 'toggle_data_content');
+toggle_data_dashboard('C2032231F_', 'auto_renewal_text_');
+toggle_data_dashboard('toggle_value_data', 'toggle_value');
+toggle_data_dashboard('toggle_content_values', 'toggle_content');
+toggle_data_dashboard('toggle_values', 'toggle_data_content');
 
 
 /*****************body End ******************/
