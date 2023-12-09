@@ -40,23 +40,18 @@ $(document).ready(function () {
 /*****************Menu Dropdown Hover Effect End***************/
 
 /*****************Dashboard Data show hide Start***************/
-function showMoreData() {
-    var dataShow = document.getElementById("moreListData");
-    var hideShow = document.getElementById("hideMoreBtn");
-    var showShow = document.getElementById("showMoreBtn");
-    dataShow.style.display = "block";
-    showShow.style.display = "none";
-    hideShow.style.display = "flex";
-}
-
-function hideMoreData() {
-    var dataShow = document.getElementById("moreListData");
-    var hideShow = document.getElementById("hideMoreBtn");
-    var showShow = document.getElementById("showMoreBtn");
+$("#homeShowBtn").click(function () {
+    var dataShow = document.getElementById("homeShowBtn");
+    var dataHide = document.getElementById("homeHideBtn");
     dataShow.style.display = "none";
-    showShow.style.display = "flex";
-    hideShow.style.display = "none";
-}
+    dataHide.style.display = "flex";
+});
+$("#homeHideBtn").click(function () {
+    var dataShow = document.getElementById("homeShowBtn");
+    var dataHide = document.getElementById("homeHideBtn");
+    dataShow.style.display = "flex";
+    dataHide.style.display = "none";
+});
 /*****************Dashboard Data show hide End***************/
 
 /*****************Dashboard Toggle Switch Button Modal Start***************/
@@ -72,8 +67,27 @@ function updateKycModal(id) {
         }
     });
 }
-/*****************body toggle BMT-147 start ******************/
-function toggle_data_dashboard(onclickId, elementId) {
+
+/*****************radio button BMT-265 ******************/
+function radioButtonAction(id,element) {
+    var checkbox = document.getElementById(id);
+    var radioButton = document.getElementById(element);
+    radioButton.style.border = checkbox.checked ? "1px solid black" : " ";
+    checkbox.addEventListener("change", function () {
+        radioButton.style.border = checkbox.checked ? "1px solid black" : " ";
+    });
+    var radioButton1 = document.getElementById("details_fixed_deposit1");
+    var radioButton3 = document.getElementById("details_fixed_deposit3");
+    var radioButton2 = document.getElementById("details_fixed_deposit2");
+    radioButton1.style.border ="1px solid white";
+    radioButton3.style.border ="1px solid white";
+    radioButton2.style.border ="1px solid white";
+}
+
+
+
+/*****************body toggle BMT-147 ******************/
+ function toggle_data_dashboard(onclickId,elementId) {
     let checkbox = document.getElementById(onclickId);
     let autoRenewalText = document.getElementById(elementId);
     autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
@@ -81,19 +95,15 @@ function toggle_data_dashboard(onclickId, elementId) {
         autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     });
 }
-
 toggle_data_dashboard('C2032231F_', 'auto_renewal_text_');
 toggle_data_dashboard('toggle_value_data', 'toggle_value');
 toggle_data_dashboard('toggle_content_values', 'toggle_content');
 toggle_data_dashboard('toggle_values', 'toggle_data_content');
 
-
-/*****************body End ******************/
+/*****************body  toggle BMT-147 End ******************/
 
 
 /*****************quick-actions BMT-147 ******************/
-
-
 function toggleButton(activate) {
     var button = document.getElementById('actionButton');
 
@@ -162,16 +172,13 @@ function handleClickOTP() {
 }
 
 const inputs = document.getElementById("inputs");
-
 inputs.addEventListener("input", function (e) {
     const target = e.target;
     const val = target.value;
-
     if (isNaN(val)) {
         target.value = "";
         return;
     }
-
     if (val != "") {
         const next = target.nextElementSibling;
         if (next) {
@@ -179,11 +186,9 @@ inputs.addEventListener("input", function (e) {
         }
     }
 });
-
 inputs.addEventListener("keyup", function (e) {
     const target = e.target;
     const key = e.key.toLowerCase();
-
     if (key == "backspace" || key == "delete") {
         target.value = "";
         const prev = target.previousElementSibling;
@@ -196,7 +201,9 @@ inputs.addEventListener("keyup", function (e) {
 
 /*************************OTP Modal End******************************/
 
-document.addEventListener("DOMContentLoaded", function () {
+/*************************OTP Timer Start******************************/
+
+document.addEventListener("DOMContentLoaded", function() {
     const timerElement = document.getElementById("timer");
     const resultElement = document.getElementById("resend_otp");
     function startTimer(duration, display) {
@@ -227,3 +234,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     startTimer(59, timerElement);
 });
+
+/*************************OTP Timer End******************************/
+
+ function selectRadio(event, className) {
+    const target = event.target;
+    const radioContainer = target.closest('.'+className);
+    if (radioContainer) {
+      const radioInput = radioContainer.querySelector('input[type="radio"]');
+      if (radioInput) {
+        radioInput.click();
+      }
+    }
+  }

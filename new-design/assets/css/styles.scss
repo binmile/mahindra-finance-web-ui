@@ -3,1049 +3,1089 @@
 @import "./components";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: $primaryFont;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $primaryFont;
 }
 
-a{
-    color: $color_light_blue;
+a {
+  color: $color_light_blue;
 }
-
+::-webkit-scrollbar {
+   width: 0px;
+}
+::-webkit-scrollbar-track {
+    background: $color_white;
+}
+::-webkit-scrollbar-thumb {
+    background: #F5F5F5;
+}
 body {
-    min-height: calc(100vh + 5px);
-    padding-top: 4.5rem;
-    color: $color_black_light;
-    background-color: $color_light_bg;
+  min-height: 100vh;
+  padding-top: 3rem;
+  color: $color_black_light;
+  background-color: $color_light_bg;
 }
-.all-center{
-    @include allCenter;
+.all-center {
+  @include allCenter;
 }
 .font-bolder {
-    font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
 .font-bold {
-    font-weight: 600 !important;
+  font-weight: 600 !important;
 }
 
 .dark-green-font {
-    color: $color_green_dark !important;
+  color: $color_green_dark !important;
 }
 
 .text-center {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 .wd-8 {
-    width: 8%;
+  width: 8%;
 }
 
 .wd-11 {
-    width: 11%;
+  width: 11%;
 }
 
 .wd-12 {
-    width: 12%;
+  width: 12%;
 }
 
 .wd-13 {
-    width: 13%;
+  width: 13%;
 }
 
 .wd-15 {
-    width: 15%;
+  width: 15%;
 }
 
 .wd-14 {
-    width: 14%;
+  width: 14%;
 }
 
-.wd-50{
-    width: 50%;
+.wd-50 {
+  width: 50%;
 }
 
-.mt-20{
-    margin-top: 20px;
+.mt-20 {
+  margin-top: 20px;
 }
 
-.mb-20{
-    margin-bottom: 20px;
+.mb-20 {
+  margin-bottom: 20px;
+}
+.ml-25{
+    margin-left: 25px;
+}
+.pd-32 {
+  padding: 32px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.wd-100 {
+  width: 100%;
 }
 
-.pd-32{
-    padding: 32px;
-}
-
-.wd-100{
-    width: 100%;
-}
-
-.strongText{
-    font-weight: 600;
+.strongText {
+  font-weight: 600;
 }
 /*********Header Start****************/
 nav {
-    box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
-    padding: 0 !important;
-    height: 52px;
-    .navbar-brand {
-        @include allCenter;
-    }
+  box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
+    0px 10px 15px 0px rgba($color_black, 0.05);
+  padding: 0 !important;
+  height: 52px;
+  .navbar-brand {
+    @include allCenter;
+  }
 
-    .navbar-nav {
-        li.nav-item {
-            margin-left: 24px;
+  .navbar-nav {
+    li.nav-item {
+      margin-left: 24px;
 
-            a.nav-link {
-                @include custom-font(16px, 500, 33px, normal);
-                height: 51px;
-                color: $color_white;
-                &:after {
-                    @include dropdown-toggle(0);
-                  }
-                  &:hover{
-                    color: $color_white;
-                    &:after {
-                        transform: scaleX(1);
-                    }
-                  }
-            }
-            a.dropdown-toggle{
-                img.toggle-icon{
-                    @include custom-width-height(16px, 16px);
-                    transition: transform 250ms ease-in-out;
-                }
-            }
-            ul.dropdown-menu{
-                border-radius: 8px;
-                top: 51px;
-                left: auto;
-                right: 0;
-                padding: 0px;
-                border: none;
-                overflow: hidden;
-                box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06), 0px 2px 6px 0px rgba($color_black, 0.06);
-                li{
-                    padding: 0px 24px;
-                    a{
-                        border-bottom: 1px solid $color_light_border;
-                        padding: 16px 0px;
-                        font-weight: 500;
-                        color: $color_black_light;
-                        &:hover{
-                            background-color: $color_light_gray;
-                        }
-                        img{
-                            @include custom-width-height(24px, 24px);
-                            margin-right: 12px;
-                        }
-                    }
-                    &:hover{
-                        background-color: $color_light_gray !important;
-                    }
-                    &:last-child{
-                        a{
-                            border-bottom: 0px;
-                        }
-                    }
-                }
-            }
+      a.nav-link {
+        @include custom-font(16px, 500, 33px, normal);
+        height: 51px;
+        color: $color_white;
+        &:after {
+          @include dropdown-toggle(0);
         }
-        li.nav-item.dropdown:hover .dropdown-menu {
-            display: block;
+        &:hover {
+          color: $color_white;
+          &:after {
+            transform: scaleX(1);
+          }
         }
-        li.nav-item.dropdown:hover{
-            img.toggle-icon{
-                transform: rotate(180deg);
+      }
+      a.dropdown-toggle {
+        img.toggle-icon {
+          @include custom-width-height(16px, 16px);
+          transition: transform 250ms ease-in-out;
+        }
+      }
+      ul.dropdown-menu {
+        border-radius: 8px;
+        top: 51px;
+        left: auto;
+        right: 0;
+        padding: 0px;
+        border: none;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06),
+          0px 2px 6px 0px rgba($color_black, 0.06);
+        li {
+          padding: 0px 24px;
+          a {
+            border-bottom: 1px solid $color_light_border;
+            padding: 16px 0px;
+            font-weight: 500;
+            color: $color_black_light;
+            &:hover {
+              background-color: $color_light_gray;
             }
+            img {
+              @include custom-width-height(24px, 24px);
+              margin-right: 12px;
+            }
+          }
+          &:hover {
+            background-color: $color_light_gray !important;
+          }
+          &:last-child {
+            a {
+              border-bottom: 0px;
+            }
+          }
         }
+      }
     }
+    li.nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    li.nav-item.dropdown:hover {
+      img.toggle-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
 
-    .userAvatar {
-        @include allCenter;
-        img {
-            @include custom-width-height(32px, 32px);
-            object-fit: cover;
-        }
+  .userAvatar {
+    @include allCenter;
+    img {
+      @include custom-width-height(32px, 32px);
+      object-fit: cover;
     }
+  }
 }
 
 /*********Header End****************/
 
 /************Button Start ***********************/
 .themeRedBtn {
-    background-color: $color_red;
-    color: $color_white;
-    @include custom-width-height(fit-content, 27px);
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    padding: 0 12px 0 12px;
-    @include custom-font(12px, 700, 32px, normal);
-    @include allCenter;
-    cursor: pointer;
-    img {
-        margin-left: 8px;
-        transition: transform 250ms ease-in-out;
-    }
-    &:hover{
-        background-color: $color_red_dark;
-    }
+  background-color: $color_red;
+  color: $color_white;
+  @include custom-width-height(fit-content, 27px);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 0 12px 0 12px;
+  @include custom-font(12px, 700, 32px, normal);
+  @include allCenter;
+  cursor: pointer;
+  img {
+    margin-left: 8px;
+    transition: transform 250ms ease-in-out;
+  }
+  &:hover {
+    background-color: $color_red_dark;
+  }
 }
 
 /************Button End ***********************/
 
-.cardContainer{
-    box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
-    background-color: $color_white;
-    border-radius: 8px;
+.cardContainer {
+  box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
+    0px 10px 15px 0px rgba($color_black, 0.05);
+  background-color: $color_white;
+  border-radius: 8px;
 }
 
 /********************Dashboard Start*********************/
 .dashboardCard {
-    padding: 16px;
-    min-height: 129px;
-    .cardIcons {
-        @include custom-width-height(36px, 36px);
-        background-color: $color_light_bg;
-        border-radius: 50%;
-        @include allCenter;
-        margin-bottom: 5px;
-    }
+  padding: 16px;
+  min-height: 129px;
+  .cardIcons {
+    @include custom-width-height(36px, 36px);
+    background-color: $color_light_bg;
+    border-radius: 50%;
+    @include allCenter;
+    margin-bottom: 5px;
+  }
 
-    .cardUserName {
-        margin-bottom: 5px;
-        @include custom-font(16px, 500, 24px, normal);
-    }
+  .cardUserName {
+    margin-bottom: 5px;
+    @include custom-font(16px, 500, 24px, normal);
+  }
 
-    .cardLabel {
-        color: $color_light_text;
-        @include custom-font(14px, 500, 24px, normal);
-    }
+  .cardLabel {
+    color: $color_light_text;
+    @include custom-font(14px, 500, 24px, normal);
+  }
 
-    .cardLabelValue {
-        color: $color_black_light;
-        @include custom-font(24px, 600, 32px, normal);
-    }
+  .cardLabelValue {
+    color: $color_black_light;
+    @include custom-font(24px, 600, 32px, normal);
+  }
 }
 
 .dashboardDarkCard {
-    position: relative;
-    background-color: $color_black_light;
-    color: $color_white;
-    box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
-    border-radius: 8px;
-    padding: 16px;
-    overflow: hidden;
-    min-height: 129px;
+  position: relative;
+  background-color: $color_black_light;
+  color: $color_white;
+  box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
+    0px 10px 15px 0px rgba($color_black, 0.05);
+  border-radius: 8px;
+  padding: 16px;
+  overflow: hidden;
+  min-height: 129px;
 
-    .cardLabelHeading {
-        @include custom-font(20px, 600, 26px, 0.15px);
-    }
+  .cardLabelHeading {
+    @include custom-font(20px, 600, 26px, 0.15px);
+  }
 
-    .cardLabelList {
-        ul {
-            margin-bottom: 5px;
-            list-style-type: square;
-            padding-left: 16px;
+  .cardLabelList {
+    ul {
+      margin-bottom: 5px;
+      list-style-type: square;
+      padding-left: 16px;
 
-            li {
-                @include custom-font(13px, 500, normal, 0.1px);
-                span {
-                    color: $color_green;
-                }
-            }
+      li {
+        @include custom-font(13px, 500, normal, 0.1px);
+        span {
+          color: $color_green;
         }
+      }
     }
+  }
 
-    .newFdImage {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+  .newFdImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .listTable {
-    .listTableHead {
-        background-color: $color_black_light;
-        color: $color_white;
-        @include allCenter;
-        height: 48px;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
-        @include custom-font(14px, 400, 24px, 0.25px);
-    }
+  .listTableHead {
+    background-color: $color_black_light;
+    color: $color_white;
+    @include allCenter;
+    height: 48px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    @include custom-font(14px, 400, 24px, 0.25px);
+  }
 
-    .listTableBody {
-        .listTabledata {
-            @include allCenter;
-            background-color: $color_white;
-            &:hover{
-                background-color: $color_light_gray;
-            }
-            .tableData {
-                height: 52px;
-                border-bottom: 1px solid $color_border;
-                @include custom-font(16px, 400, 52px, 0.15px);
-                .form-switch {
-                    padding-left: 0px;
-                    @include allCenter;
-                }
-            }
+  .listTableBody {
+    .listTabledata {
+      @include allCenter;
+      background-color: $color_white;
+      cursor: pointer;
+      &:hover {
+        background-color: $color_light_gray;
+      }
+      .tableData {
+        height: 52px;
+        border-bottom: 1px solid $color_border;
+        @include custom-font(16px, 400, 52px, 0.15px);
+        .form-switch {
+          padding-left: 0px;
+          @include allCenter;
         }
+      }
     }
-    .showMoreBtn{
-        @include moreDataList(flex);
-    }
-    .hideMoreBtn{
-        @include moreDataList(none);
-        img{
-            transform: rotate(180deg);
-        }
-    }
+  }
+  .showMoreBtn {
+    @include moreDataList(flex);
+  }
 }
 
-.info-icon{
-    margin-left: 6px;
+#expend {
+  display: none;
+}
+#expend + .smalldesc {
+  max-height: 209px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+#expend:checked + .smalldesc {
+  max-height: 364px;
+}
+label.showMoreBtn {
+  color: $color_light_blue;
+  text-decoration: underline;
+  cursor: pointer;
+  img {
+    margin-left: 4px;
+  }
 }
 
-.red-bg-label{
-    @include statusLabel($color_red, $color_light_red);
+#homeHideBtn {
+  display: none;
+}
+.rotate {
+  transform: rotate(180deg);
 }
 
-.green-bg-label{
-    @include statusLabel($color_green_dark, $color_light_green);
+.info-icon {
+  margin-left: 6px;
 }
 
-.fdAvailBanner{
-    padding: 32px 28px;
-    height: 316px;
-    .cardLabelHeading{
-        margin-bottom: 8px;
-        @include custom-font(24px, 400, 32px, normal);
+.red-bg-label {
+  @include statusLabel($color_red, $color_light_red);
+}
+
+.green-bg-label {
+  @include statusLabel($color_green_dark, $color_light_green);
+}
+
+.fdAvailBanner {
+  padding: 32px 28px;
+  height: 316px;
+  .cardLabelHeading {
+    margin-bottom: 8px;
+    @include custom-font(24px, 400, 32px, normal);
+  }
+  .cardLabelList {
+    margin-bottom: 16px;
+    ul {
+      li {
+        @include custom-font(16px, 400, 24px, normal);
+      }
     }
-    .cardLabelList{
-        margin-bottom: 16px;
-        ul {
-            li {
-                @include custom-font(16px, 400, 24px, normal);
-            }
+  }
+  .themeRedBtn {
+    height: 44px;
+    @include custom-font(14px, 700, 16px, 1.25px);
+  }
+}
+
+.custom-dropdown {
+  button {
+    border: none;
+    outline: none;
+    &::after {
+      display: none;
+    }
+  }
+  button.show {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+  ul {
+    padding: 0;
+    box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06),
+      0px 2px 6px 0px rgba($color_black, 0.06);
+    border: none;
+    overflow: hidden;
+    li {
+      padding: 0px 12px;
+      a {
+        border-bottom: 1px solid $color_light_border;
+        padding: 5px 0px;
+        @include custom-font(14px, 500, 20px, normal);
+        span {
+          display: block;
+          @include custom-font(12px, 400, 16px, 0.4px);
         }
+        &:hover {
+          background-color: $color_light_gray;
+        }
+      }
+      &:hover {
+        background-color: $color_light_gray;
+      }
+      &:last-child {
+        a {
+          border-bottom: 0px;
+        }
+      }
     }
-    .themeRedBtn {
-        height: 44px;
-        @include custom-font(14px, 400, 16px, 1.25px);
-    }
+  }
 }
 
-.custom-dropdown{
-    button{
-        border: none;
-        outline: none;
-        &::after{
-            display: none;
-        }
-    }
-    button.show{
-        img{
-            transform: rotate(180deg);
-        }
-    }
-    ul{
-        padding: 0;
-        box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06), 0px 2px 6px 0px rgba($color_black, 0.06);
-        border: none;
-        overflow: hidden;
-        li{
-            padding: 0px 12px;
-            a{
-                border-bottom: 1px solid $color_light_border;
-                padding: 5px 0px;
-                @include custom-font(14px, 500, 20px, normal);
-                span{
-                    display: block;
-                    @include custom-font(12px, 400, 16px, 0.4px);
-                }
-                &:hover{
-                    background-color: $color_light_gray;
-                }
-            }
-            &:hover{
-                background-color: $color_light_gray;
-            }
-            &:last-child{
-                a{
-                    border-bottom: 0px;
-                }
-            }
-        }
-    }
-}
-
-
-#moreListData{
-    display: none;
+#moreListData {
+  display: none;
 }
 /********************Dashboard End*********************/
 
 /********************Chart Start*********************/
-#chartContainer{
-    padding: 18px;
+#chartContainer {
+  padding: 18px;
+  width: 100%;
+  height: 316px;
+  canvas {
     width: 100%;
-    height: 316px;
-    canvas{
-        width: 100%;
-        max-height: 280px;
-    }
-    a.canvasjs-chart-credit{
-        display: none;
-    }
+    max-height: 280px;
+  }
+  a.canvasjs-chart-credit {
+    display: none;
+  }
 }
 /********************Chart End*********************/
 
 /***************Modal Start**************************/
-.modal{
-    .modal-content{
-        border-radius: 8px;
-        box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06), 0px 2px 6px 0px rgba($color_black, 0.06);
-        border: none;
-        .modal-body{
-            padding: 40px 24px;
-            .btn-close{
-                position: absolute;
-                top: 16px;
-                right: 16px;
-                background: none;
-                @include allCenter;
-                padding: 0px;
-                opacity: 1;
-            }
-            .info-heading-container{
-                @include allCenter;
-                .info-heading-image{
-                    margin-right: 12px;
-                    background-color: $color_light_bg;
-                    @include allCenter;
-                    @include custom-width-height(38px, 38px);
-                    border-radius: 50%;
-                }
-                .info-heading{
-                    @include custom-font(24px, 600, 32px, -0.18px);
-                    text-align: center;
-                }
-            }
-            .info-content{
-                @include custom-font(16px, 400, 24px, 0.5px);
-                text-align: center;
-                margin: 20px 0px 16px 0px;
-            }
-            .info-button{
-                @include allCenter;
-                button{
-                    outline: none;
-                    border: none;
-                    height: 44px;
-                    @include custom-font(14px, 700, 16px, 1.25px);
-                    padding: 0 50px;
-                }
-            }
+.modal {
+  .modal-content {
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06),
+      0px 2px 6px 0px rgba($color_black, 0.06);
+    border: none;
+    .modal-body {
+      padding: 40px 24px;
+      .btn-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: none;
+        @include allCenter;
+        padding: 0px;
+        opacity: 1;
+      }
+      .info-heading-container {
+        @include allCenter;
+        .info-heading-image {
+          margin-right: 12px;
+          background-color: $color_light_bg;
+          @include allCenter;
+          @include custom-width-height(38px, 38px);
+          border-radius: 50%;
         }
+        .info-heading {
+          @include custom-font(24px, 600, 32px, -0.18px);
+          text-align: center;
+        }
+      }
+      .info-content {
+        @include custom-font(16px, 400, 24px, 0.5px);
+        text-align: center;
+        margin: 20px 0px 16px 0px;
+      }
+      .info-button {
+        @include allCenter;
+        button {
+          outline: none;
+          border: none;
+          height: 44px;
+          @include custom-font(14px, 700, 16px, 1.25px);
+          padding: 0 50px;
+        }
+      }
     }
+  }
 }
 /***************Modal End**************************/
 
 /********************Preclosure FD Start******************/
-.commonBackBtn{
-    text-decoration: none;
-    @include custom-font(14px, 500, 24px, 0.1px);
+.commonBackBtn {
+  text-decoration: none;
+  @include custom-font(14px, 500, 24px, 0.1px);
+  color: $color_light_blue;
+  cursor: pointer;
+  &:hover {
     color: $color_light_blue;
-    cursor: pointer;
-    &:hover{
-        color: $color_light_blue;
-        opacity: 0.9;
-    }
-    img{
-        @include custom-width-height(16px, 16px);
-        margin-right: 4px;
-    }
+    opacity: 0.9;
+  }
+  img {
+    @include custom-width-height(16px, 16px);
+    margin-right: 4px;
+  }
 }
 
-.commonHeading{
-    @include custom-font(24px, 600, 32px, -0.18px);
-    margin: 16px 0 20px 0;
+.commonHeading {
+  @include custom-font(24px, 600, 32px, -0.18px);
+  margin: 16px 0 20px 0;
 }
 
-.tableBodyWithHeight{
-    min-height: calc(100vh - 460px);
-    background-color: $color_white;
+.tableBodyWithHeight {
+  min-height: calc(100vh - 460px);
+  background-color: $color_white;
 }
 
-.descriptionContainer{
-    background-color: $color_white;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    @include setDisplayProperty(flex, center, center);
-    padding: 24px 0px;
-    .descriptionBox{
-        width: 96%;
-        @include setDisplayProperty(flex, flex-start, center);
-        background-image: url('../img/abstract-blue-geometric-shapes-background.svg');
-        background-repeat: no-repeat;
-        padding: 20px 24px;
-        background-size: cover;
-        background-position: right;
-        background-color: $color_light_bg;
-        border-radius: 8px;
-        .descriptionImage{
-            width: fit-content;
-            margin-right: 12px;
-        }
-        .descriptionContent{
-            p{
-                margin: 0;
-                @include custom-font(16px, 400, 24px, 0.15px);
-                color: $color_light_text;
-            }
-        }
+.descriptionContainer {
+  background-color: $color_white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  @include setDisplayProperty(flex, center, center);
+  padding: 24px 0px;
+  .descriptionBox {
+    width: 96%;
+    @include setDisplayProperty(flex, flex-start, center);
+    background-image: url("../img/abstract-blue-geometric-shapes-background.svg");
+    background-repeat: no-repeat;
+    padding: 20px 24px;
+    background-size: cover;
+    background-position: right;
+    background-color: $color_light_bg;
+    border-radius: 8px;
+    .descriptionImage {
+      width: fit-content;
+      margin-right: 12px;
     }
+    .descriptionContent {
+      p {
+        margin: 0;
+        @include custom-font(16px, 400, 24px, 0.15px);
+        color: $color_light_text;
+      }
+    }
+  }
 }
 
-.buttonContainer{
-    @include setDisplayProperty(flex, flex-end, center);
-    padding: 24px 0px;
-    button.themeRedBtn{
-        height: 44px;
-        padding: 0 24px;
-        @include custom-font(14px, 700, 16px, 1.25px);
-    }
+.buttonContainer {
+  @include setDisplayProperty(flex, flex-end, center);
+  padding: 24px 0px;
+  button.themeRedBtn {
+    height: 44px;
+    padding: 0 24px;
+    @include custom-font(14px, 700, 16px, 1.25px);
+  }
 }
 /********************Preclosure FD End********************/
 
 /********************** Quick Action Start******************/
-.darkGreenText{
-    color: $color_green_dark;
+.darkGreenText {
+  color: $color_green_dark;
 }
 
-.boldTitle{
-    @include custom-font(20px, 600, 24px, 0.15px);
+.boldTitle {
+  @include custom-font(20px, 600, 24px, 0.15px);
 }
-.fdDetailsBox{
-    padding: 24px 32px 36px 32px;
-    .fdHeader{
-        @include setDisplayProperty(flex, space-between, center);
-        .fdTenure{
-            background-color: $color_light_bg;
-            border-radius: 8px;
-            @include custom-font(14px, 400, 24px, 0.25px);
-            color: $color_light_text;
-            padding: 4px 8px;
-            img{
-                margin-right: 4px;
-            }
-        }
-    }
-}
-
-.fdMainContent{
+.fdDetailsBox {
+  padding: 24px 32px 36px 32px;
+  .fdHeader {
     @include setDisplayProperty(flex, space-between, center);
-    padding: 24px 0px;
-    border-bottom: 1px solid $color_border;
-    .fdInvestment{
-        @include setDisplayProperty(flex, flex-start, flex-start, column);
-        .bigText{
-            @include custom-font(34px, 600, 40px, 0.25px);
-        }
-        .lightText{
-            @include custom-font(14px, 400, 24px, 0.25px);
-            color: $color_light_text;
-            margin-top: 8px;
-        }
+    .fdTenure {
+      background-color: $color_light_bg;
+      border-radius: 8px;
+      @include custom-font(14px, 400, 24px, 0.25px);
+      color: $color_light_text;
+      padding: 4px 8px;
+      img {
+        margin-right: 4px;
+      }
     }
-    .fdTenure{
-        @include custom-font(16px, 500, 24px, normal);
-        position: relative;
-        &::before{
-            @include setPosition(8px, 0, 0, -45px, 38px, 9px);
-            background-color: $color_light_border;
-        }
-
-        &::after{
-            @include setPosition(1px, -46px, 0, auto, 38px, 23px);
-            background-image: url("../img/icons/Union.svg");
-            background-repeat: no-repeat;
-        }
-    }
+  }
 }
 
-.fdContents{
-    @include setDisplayProperty(flex, space-between, baseline);
-    margin-top: 24px;
-    .fdDetails{
-        display: block;
-        position: relative;
-        &::after{
-            @include setPosition(10px, -18px, auto, auto, 1px, 35px);
-            background-color: $color_border;
-        }
-        &:last-child{
-            &::after{
-                display: none;
-            }
-        }
-        .label{
-            @include custom-font(14px, 500, 24px, 0.1px);
-            color: $color_light_text;
-            margin-bottom: 4px;
-        }
-        .value{
-            @include custom-font(16px, 500, 24px, normal);
-            @include allCenter;
-            img{
-                @include custom-width-height(20px, 20px);
-                margin-right: 4px;
-                filter: invert(0) brightness(0);
-            }
-        }
+.fdMainContent {
+  @include setDisplayProperty(flex, space-between, center);
+  padding: 24px 0px;
+  border-bottom: 1px solid $color_border;
+  .fdInvestment {
+    @include setDisplayProperty(flex, flex-start, flex-start, column);
+    .bigText {
+      @include custom-font(28px, 600, 40px, 0.25px);
     }
+    .lightText {
+      @include custom-font(14px, 400, 24px, 0.25px);
+      color: $color_light_text;
+      margin-top: 8px;
+    }
+  }
+  .fdTenure {
+    @include custom-font(16px, 500, 24px, normal);
+    position: relative;
+    &::before {
+      @include setPosition(8px, 0, 0, -45px, 38px, 9px);
+      background-color: $color_light_border;
+    }
+
+    &::after {
+      @include setPosition(1px, -46px, 0, auto, 38px, 23px);
+      background-image: url("../img/icons/Union.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
-.quickActionBox{
-    padding: 24px 32px;
-    .quickActionTabs{
-        display: flex;
-        flex-wrap: wrap;
-        label{
-            width: 48%;
-            @include setDisplayProperty(flex, flex-start, flex-start, column);
-            border: 1px solid $color_border;
-            margin-bottom: 16px;
-            margin-right: 16px;
-            border-radius: 8px;
-            padding: 4px 12px 16px 12px;
-            cursor: pointer;
-            &:nth-child(even){
-                margin-right: 0px;
-            }
-            img{
-                @include custom-width-height(20px, 20px);
-                margin-bottom: 4px;
-            }
-            .quickActionLabel{
-                @include custom-font(14px, 400, 24px, 0.25px);
-            }
-        }
+.fdContents {
+  @include setDisplayProperty(flex, space-between, baseline);
+  margin-top: 24px;
+  .fdDetails {
+    display: block;
+    position: relative;
+    &::after {
+      @include setPosition(10px, -18px, auto, auto, 1px, 35px);
+      background-color: $color_border;
     }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+    .label {
+      @include custom-font(14px, 500, 24px, 0.1px);
+      color: $color_light_text;
+      margin-bottom: 4px;
+    }
+    .value {
+      @include custom-font(16px, 500, 24px, normal);
+      @include allCenter;
+      img {
+        @include custom-width-height(20px, 20px);
+        margin-right: 4px;
+        filter: invert(0) brightness(0);
+      }
+    }
+  }
+}
+
+.quickActionBox {
+  padding: 24px 32px;
+  .quickActionTabs {
+    display: flex;
+    flex-wrap: wrap;
+    label {
+      width: 48%;
+      @include setDisplayProperty(flex, flex-start, flex-start, column);
+      border: 1px solid $color_border;
+      margin-bottom: 16px;
+      margin-right: 16px;
+      border-radius: 8px;
+      padding: 4px 12px 16px 12px;
+      cursor: pointer;
+      &:nth-child(even) {
+        margin-right: 0px;
+      }
+      img {
+        @include custom-width-height(20px, 20px);
+        margin-bottom: 4px;
+      }
+      .quickActionLabel {
+        @include custom-font(14px, 400, 24px, 0.25px);
+      }
+    }
+  }
 }
 
 .boxRadioButton input[type="radio"] {
-    opacity: 0;
+  opacity: 0;
 }
 
-.boxRadioButton.active{
-    background-color: $color_black_light;
-    color: $color_white;
-    transition: all 0.2s linear;
-    img{
-        filter: invert(1) brightness(100);
-    }
+.boxRadioButton.active {
+  background-color: $color_black_light;
+  color: $color_white;
+  transition: all 0.2s linear;
+  img {
+    filter: invert(1) brightness(100);
+  }
 }
 
-.quickActionBanner{
-    position: relative;
-    overflow: hidden;
-    height: auto;
-    .cardLabelHeading{
-        @include custom-font(20px, 600, 24px, 0.15px);
-        margin-bottom: 16px;
+.quickActionBanner {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  .cardLabelHeading {
+    @include custom-font(20px, 600, 24px, 0.15px);
+    margin-bottom: 16px;
+  }
+  .cardLabelList {
+    margin-bottom: 28px;
+    ul {
+      padding: 0;
+      list-style-type: square;
+      list-style-position: inside;
+      li {
+        margin-bottom: 8px;
+        @include custom-font(16px, 500, 24px, normal);
+      }
     }
-    .cardLabelList{
-        margin-bottom: 28px;
-        ul{
-            padding: 0;
-            list-style-type: square;
-            list-style-position: inside;
-            li{
-                margin-bottom: 8px;
-                @include custom-font(16px, 500, 24px, normal);
-            }
-        }
-    }
+  }
 
-    img.newFdImage{
-        position: absolute;
-        top: auto;
-        right: -30px;
-        bottom: -40px;
-    }
+  img.newFdImage {
+    position: absolute;
+    top: auto;
+    right: -30px;
+    bottom: -40px;
+  }
 }
 
-.quickActionGraph{
-    height: 364px !important;
-    canvas {
-        max-height: 320px !important;
-    }
+.quickActionGraph {
+  height: 364px !important;
+  canvas {
+    max-height: 320px !important;
+  }
 }
 /********************** Quick Action End*******************/
 
 /********************Preclosure Flow Start******************/
-.errorText{
-    color: $color_red_error;
+.errorText {
+  color: $color_red_error;
 }
-.greenText{
-    color: $color_green_dark;
+.greenText {
+  color: $color_green_dark;
 }
-.strike{
-    text-decoration: line-through;
+.strike {
+  text-decoration: line-through;
 }
-.customChangeWidth{
-    width: 49%;
-    margin-right: 20px;
-    @include setDisplayProperty(inline-flex, center, center);
-    &:last-child{
-        margin-right: 0px;
-    }
-}
-
-.customChangeWidth.active{
-    border: 1px solid $color_black_light;
+.customChangeWidth {
+  width: 49%;
+  margin-right: 20px;
+  @include setDisplayProperty(inline-flex, center, center);
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
-.bottomDescription{
-    .descriptionContent{
-        border-top: 1px solid $color_light_border;
-        padding: 24px 0px 0px 0px;
-        @include custom-font(14px, 400, 24px, 0.25px);
-        color: $color_light_text;
-    }
+.customChangeWidth.active {
+  border: 1px solid $color_black_light;
 }
 
-.fDList{
-    min-height: 380px;
-    ul{
-        padding: 0;
-        list-style: none;
-        li{
-            @include setDisplayProperty(flex, space-between, center);
-            border-bottom: 1px solid $color_border;
-            padding: 12px 0px;
-            .fDListContent{
-                @include allCenter;
-                label{
-                    @include custom-font(16px, 500, 24px, normal);
-                }
-            }
-            .fDListValue{
-                @include custom-font(16px, 700, 24px, normal);
-                span{
-                    @include custom-font(14px, 500, 20px, normal);
-                    background-color: $color_green_light;
-                    color: $color_green_dark;
-                    border-radius: 8px;
-                    padding: 3px 7px;
-                    margin-right: 8px;
-                }
-            }
+.bottomDescription {
+  .descriptionContent {
+    border-top: 1px solid $color_light_border;
+    padding: 24px 0px 0px 0px;
+    @include custom-font(14px, 400, 24px, 0.25px);
+    color: $color_light_text;
+  }
+}
+
+.fDList {
+  min-height: 392px;
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      @include setDisplayProperty(flex, space-between, center);
+      border-bottom: 1px solid $color_border;
+      padding: 12px 0px;
+      .fDListContent {
+        @include allCenter;
+        label {
+          @include custom-font(16px, 500, 24px, normal);
         }
-    }
-}
-
-.roundBackgroundIcon{
-    background-color: $color_light_bg;
-    @include custom-width-height(30px, 30px);
-    border-radius: 50%;
-    margin-right: 16px;
-    @include allCenter;
-    img{
-        @include custom-width-height(15px, 15px);
-    }
-}
-
-.borrowFundContainer{
-    @include setDisplayProperty(flex, space-between, flex-start);
-    margin-bottom: 46px;
-    .borrowFundBox{
-        width: 48%;
-        @include setDisplayProperty(flex, flex-start, flex-start);
-        border-right: 1px solid $color_border;
-        .borrowFundContent{
-            @include custom-font(14px, 500, 20px, normal);
-            width: calc(100% - 60px);
-        }
-        &:last-child{
-            border-right: none;
-        }
-    }
-}
-
-.borrowFundFDContainer{
-    margin-top: 32px;
-    .borrowFDList{
-        position: relative;
-        border: 1px solid $color_border;
-        padding: 16px 24px 12px 24px;
-        border-radius: 8px;
-        margin-bottom: 24px;
-        &:last-child{
-            margin-bottom: 26px;
-        }
-        .headingLabel{
-            position: absolute;
-            top: -15px;
-            left: 24px;
-            background-color: $color_border;
-            padding: 2px 10px;
-            border-radius: 8px;
-            @include custom-font(14px, 500, 20px, normal);
-        }
-        .borrowFDBox{
-            @include setDisplayProperty(flex, space-between, center);
-            .borrowFDContent{
-                .label{
-                    @include custom-font(14px, 500, 24px, 0.1px);
-                    color: $color_light_text;
-                    margin-bottom: 4px;
-                }
-                .value{
-                    @include custom-font(16px, 500, 24px, normal);
-                    @include setDisplayProperty(flex, flex-start, center);
-                    img{
-                        @include custom-width-height(20px, 20px);
-                        margin-right: 4px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.borrowFdBottomBox{
-    background-color: $color_light_gray;
-    border-radius: 8px;
-    padding: 16px 24px;
-    .heading{
+      }
+      .fDListValue {
         @include custom-font(16px, 700, 24px, normal);
-    }
-    .borrowFdBottomList{
-        .borrowFdListRow{
-            @include setDisplayProperty(flex, space-between, center);
-            border-bottom: 1px solid $color_light_border;
-            padding: 8px 0px;
-            &:last-child{
-                border-bottom: none;
-                padding-bottom: 0px;
-            }
-            .fDListContent{
-                @include setDisplayProperty(flex, flex-start, center);
-                .roundBackgroundIcon{
-                    background-color: $color_white;
-                }
-                label{
-                    @include custom-font(16px, 500, 24px, normal);
-                }
-            }
-            .fDListValue{
-                @include custom-font(16px, 700, 24px, normal);
-                span{
-                    @include custom-font(14px, 500, 20px, normal);
-                    background-color: $color_green_light;
-                    border-radius: 8px;
-                    padding: 3px 7px;
-                    margin-right: 8px;
-                }
-            }
+        span {
+          @include custom-font(14px, 500, 20px, normal);
+          background-color: $color_green_light;
+          color: $color_green_dark;
+          border-radius: 8px;
+          padding: 3px 7px;
+          margin-right: 8px;
         }
+      }
     }
+  }
+}
+
+.roundBackgroundIcon {
+  background-color: $color_light_bg;
+  @include custom-width-height(30px, 30px);
+  border-radius: 50%;
+  margin-right: 16px;
+  @include allCenter;
+  img {
+    @include custom-width-height(15px, 15px);
+  }
+}
+
+.borrowFundContainer {
+  @include setDisplayProperty(flex, space-between, flex-start);
+  margin-bottom: 46px;
+  .borrowFundBox {
+    width: 48%;
+    @include setDisplayProperty(flex, flex-start, flex-start);
+    border-right: 1px solid $color_border;
+    .borrowFundContent {
+      @include custom-font(14px, 500, 20px, normal);
+      width: calc(100% - 60px);
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.borrowFundFDContainer {
+  margin-top: 32px;
+  .borrowFDList {
+    position: relative;
+    border: 1px solid $color_border;
+    padding: 16px 24px 12px 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 26px;
+    }
+    .headingLabel {
+      position: absolute;
+      top: -15px;
+      left: 24px;
+      background-color: $color_border;
+      padding: 2px 10px;
+      border-radius: 8px;
+      @include custom-font(14px, 500, 20px, normal);
+    }
+    .borrowFDBox {
+      @include setDisplayProperty(flex, space-between, center);
+      .borrowFDContent {
+        .label {
+          @include custom-font(14px, 500, 24px, 0.1px);
+          color: $color_light_text;
+          margin-bottom: 4px;
+        }
+        .value {
+          @include custom-font(16px, 500, 24px, normal);
+          @include setDisplayProperty(flex, flex-start, center);
+          img {
+            @include custom-width-height(20px, 20px);
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.borrowFdBottomBox {
+  background-color: $color_light_gray;
+  border-radius: 8px;
+  padding: 16px 24px;
+  .heading {
+    @include custom-font(16px, 700, 24px, normal);
+  }
+  .borrowFdBottomList {
+    .borrowFdListRow {
+      @include setDisplayProperty(flex, space-between, center);
+      border-bottom: 1px solid $color_light_border;
+      padding: 8px 0px;
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0px;
+      }
+      .fDListContent {
+        @include setDisplayProperty(flex, flex-start, center);
+        .roundBackgroundIcon {
+          background-color: $color_white;
+        }
+        label {
+          @include custom-font(16px, 500, 24px, normal);
+        }
+      }
+      .fDListValue {
+        @include custom-font(16px, 700, 24px, normal);
+        span {
+          @include custom-font(14px, 500, 20px, normal);
+          background-color: $color_green_light;
+          border-radius: 8px;
+          padding: 3px 7px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
 }
 /********************Preclosure Flow End******************/
 
 /********************Single Account Page Start******************/
-.darkBg{
-    background-color: $color_light_bg;
+.darkBg {
+  background-color: $color_light_bg;
 }
 
-
-.accountContainer{
-    padding: 32px;
-    .accountBox{
-        padding: 24px 32px;
-        border-radius: 8px;
-        .heading{
-            @include custom-font(20px, 600, 24px, 0.15px);
-        }
-        .fdMainContent{
-            border-bottom: 1px solid $color_light_border;
-            .fdTenure{
-                &::before{
-                    display: none;
-                }
-                &:after{
-                    display: none;
-                }
-            }
-        }
-        .fdContents{
-            min-height: 350px;
-            .fdDetails{
-                .value{
-                    justify-content: flex-start;
-                    .roundBackgroundIcon{
-                        background-color: $color_white;
-                        @include custom-width-height(24px, 24px);
-                        margin-right: 8px;
-                        img{
-                            @include custom-width-height(14px, 14px);
-                            margin: 0;
-                            filter: unset;
-                        }
-                    }
-                }
-                &:after{
-                    background-color: $color_light_border;
-                    right: -50px;
-                }
-            }
-        }
-    }
-}
-
-.bottomLightText{
-    @include custom-font(14px, 400, 24px, 0.25px);
-    color: $color_light_text;
-}
-
-.termsConditionsContainer{
-    @include custom-font(14px, 400, 24px, 0.25px);
-    .checkbox-container{
-        margin-bottom: 0px;
-        margin-top: 32px;
-        .checkmark{
-            @include custom-width-height(16px, 16px);
-            margin-top: 4px;
-            &::after{
-                left: 5px;
-                top: 1px;
-                @include custom-width-height(5px, 10px);
-                border-width: 0 2px 2px 0;
-            }
-        }
-    }
-    a{
-        color: $color_light_blue;
-    }
-}
-
-.boldHeader{
-    @include custom-font(20px, 600, 24px, 0.15px);
-}
-
-.accountDetailsBox{
-    padding: 24px;
-    .accountListContainer{
-        min-height: 465px;
-        .accountList{
-            padding: 24px 0px;
-            border-bottom: 1px solid $color_border;
-            &:last-child{
-                border-bottom: 0px;
-            }
-            .accountHolderDetails{
-                @include setDisplayProperty(flex, space-between, center);
-                .accountDetails{
-                    .accountHolderName{
-                        @include custom-font(24px, 500, 32px, -0.18px);
-                    }
-                    .accountType{
-                        @include custom-font(14px, 400, 24px, 0.25px);
-                    }
-                    .accountMobile{
-                        margin-top: 8px;
-                        margin-bottom: 16px;
-                        @include custom-font(16px, 500, 24px, normal);
-                        @include setDisplayProperty(flex, flex-start, center);
-                        img{
-                            @include custom-width-height(20px, 20px);
-                            margin-right: 8px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-.customBtn{
-    height: 40px;
-    font-size: 14px;
-    padding: 0 24px;
-}
-.bottomText{
-    @include setDisplayProperty(flex, flex-start, center);
-    color: $color_light_text;
-    @include custom-font(14px, 400, 24px, 0.25px);
-    .roundBackgroundIcon{
-        margin-right: 8px;
-    }
-}
-
-.accountList.disabledText{
-    color: $color_light_gray2;
-    img{
-        opacity: 0.2;
-    }
-}
-
-
-.otpBox{
-    width: 100%;
-    @include setDisplayProperty(flex, center, center, column);
-}
-.otpInputContainer{
-    border: 1px solid $color_black_light;
+.accountContainer {
+  padding: 32px;
+  .accountBox {
+    padding: 24px 32px;
     border-radius: 8px;
-    width: fit-content;
-    padding: 0px 18px;
+    .heading {
+      @include custom-font(20px, 600, 24px, 0.15px);
+    }
+    .fdMainContent {
+      border-bottom: 1px solid $color_light_border;
+      .fdTenure {
+        &::before {
+          display: none;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .fdContents {
+      min-height: 350px;
+      .fdDetails {
+        .value {
+          justify-content: flex-start;
+          .roundBackgroundIcon {
+            background-color: $color_white;
+            @include custom-width-height(24px, 24px);
+            margin-right: 8px;
+            img {
+              @include custom-width-height(14px, 14px);
+              margin: 0;
+              filter: unset;
+            }
+          }
+        }
+        &:after {
+          background-color: $color_light_border;
+          right: -50px;
+        }
+      }
+    }
+  }
+}
+
+.bottomLightText {
+  @include custom-font(14px, 400, 24px, 0.25px);
+  color: $color_light_text;
+}
+
+.termsConditionsContainer {
+  @include custom-font(14px, 400, 24px, 0.25px);
+  .checkbox-container {
+    margin-bottom: 0px;
+    margin-top: 32px;
+    .checkmark {
+      @include custom-width-height(16px, 16px);
+      margin-top: 4px;
+      &::after {
+        left: 5px;
+        top: 1px;
+        @include custom-width-height(5px, 10px);
+        border-width: 0 2px 2px 0;
+      }
+    }
+  }
+  a {
+    color: $color_light_blue;
+  }
+}
+
+.boldHeader {
+  @include custom-font(20px, 600, 24px, 0.15px);
+}
+
+.accountDetailsBox {
+  padding: 24px;
+  .accountListContainer {
+    min-height: 465px;
+    .accountList {
+      padding: 24px 0px;
+      border-bottom: 1px solid $color_border;
+      &:last-child {
+        border-bottom: 0px;
+      }
+      .accountHolderDetails {
+        @include setDisplayProperty(flex, space-between, center);
+        .accountDetails {
+          .accountHolderName {
+            @include custom-font(24px, 500, 32px, -0.18px);
+          }
+          .smallName {
+            @include custom-font(14px, 500, 24px, 0.1px);
+          }
+          .accountType {
+            @include custom-font(14px, 400, 24px, 0.25px);
+          }
+          .accountMobile {
+            margin-top: 8px;
+            margin-bottom: 16px;
+            @include custom-font(16px, 500, 24px, normal);
+            @include setDisplayProperty(flex, flex-start, center);
+            img {
+              @include custom-width-height(20px, 20px);
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.customBtn {
+  height: 40px;
+  font-size: 14px;
+  padding: 0 24px;
+}
+.bottomText {
+  @include setDisplayProperty(flex, flex-start, center);
+  color: $color_light_text;
+  @include custom-font(14px, 400, 24px, 0.25px);
+  .roundBackgroundIcon {
+    margin-right: 8px;
+  }
+}
+
+.accountList.disabledText {
+  color: $color_light_gray2;
+  img {
+    opacity: 0.2;
+  }
+}
+
+.otpBox {
+  width: 100%;
+  @include setDisplayProperty(flex, center, center, column);
+}
+.otpInputContainer {
+  border: 1px solid $color_black_light;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 0px 18px;
 }
 .input {
-    @include custom-width-height(40px, 40px);
-    border: none;
-    text-align: center;
-    @include custom-font(16px, 700, 24px, normal);
+  @include custom-width-height(40px, 40px);
+  border: none;
+  text-align: center;
+  @include custom-font(16px, 700, 24px, normal);
 }
 .input:focus {
-    outline: none;
+  outline: none;
 }
 .input:nth-child(1) {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.otp_msg{
-    @include allCenter;
-    margin-top: 8px;
-    .timer{
-        color: $color_light_text;
-        margin-right: 8px;
-    }
-    button.resend_otp{
-        @include custom-font(14px, 400, 20px, normal);
-        color: $color_light_blue;
-        text-decoration: underline;
-        background-color: transparent;
-        padding: 0;
-    }
-}
-button.resend_otp.disabled{
+.otp_msg {
+  @include allCenter;
+  margin-top: 8px;
+  .timer {
+    color: $color_light_text;
+    margin-right: 8px;
+  }
+  button.resend_otp {
+    @include custom-font(14px, 400, 20px, normal);
+    color: $color_light_blue;
+    text-decoration: underline;
     background-color: transparent;
-    color: $color_light_gray2 !important;
+    padding: 0;
+  }
+}
+button.resend_otp.disabled {
+  background-color: transparent;
+  color: $color_light_gray2 !important;
 }
 
-.msg{
-    @include custom-font(14px, 400, 24px, normal);
-    margin-top: 12px;
+.msg {
+  @include custom-font(14px, 400, 24px, normal);
+  margin-top: 12px;
 }
 /********************Single Account Page End******************/
 
 @import "./265_css";
 @import "./147_css";
 
-// @import "./responsive.scss";
+@import "./responsive.scss";
