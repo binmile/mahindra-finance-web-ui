@@ -81,9 +81,7 @@ function radioButtonAction(id,element) {
     radioButton1.style.border ="1px solid white";
     radioButton3.style.border ="1px solid white";
     radioButton2.style.border ="1px solid white";
-    
 }
-radioButtonAction('radio2','details_fixed_deposit2')
 
 /*****************body toggle BMT-147 ******************/
  function toggle_data(onclickId,elementId) {
@@ -94,13 +92,6 @@ radioButtonAction('radio2','details_fixed_deposit2')
         autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     });
 }
-
-toggle_data('C2032231F_','auto_renewal_text_');
-toggle_data('toggle_value_data','toggle_value');
-toggle_data('toggle_content_values','toggle_content');
-toggle_data('toggle_values','toggle_data_content');
-
-
 /*****************body End ******************/
 
 
@@ -204,3 +195,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /*************************OTP Timer End******************************/
+
+ function selectRadio(event, className) {
+    const target = event.target;
+    const radioContainer = target.closest('.'+className);
+    if (radioContainer) {
+      const radioInput = radioContainer.querySelector('input[type="radio"]');
+      if (radioInput) {
+        radioInput.click();
+      }
+    }
+  }
