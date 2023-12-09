@@ -1569,6 +1569,15 @@ button.resend_otp.disabled {
   .boldTitle_mobile {
     display: none;
   }
+  .quick_actions_button {
+    display: none;
+  }
+  .themeRedBtn_mob_Continue {
+    display: none;
+  }
+  .close_icon {
+    display: none;
+  }
   /*********** Responsive Quick-Actions-Mobile View End*************/
 }
 @media only screen and (max-width: 768px) {
@@ -1864,6 +1873,7 @@ button.resend_otp.disabled {
   /*********** Responsive dashboard View End*************/
   /*********** Responsive Quick-Actions-Mobile View Start*************/
   .col_data_ {
+    position: relative;
     margin-top: 0;
   }
   .cardContainer_mobile_screen {
@@ -1901,7 +1911,7 @@ button.resend_otp.disabled {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.150000006px;
+    letter-spacing: 0.15px;
     text-align: left;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent {
@@ -1912,7 +1922,7 @@ button.resend_otp.disabled {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.150000006px;
+    letter-spacing: 0.15px;
     text-align: left;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_mobile_screen .lightText_mob_screen {
@@ -1933,7 +1943,7 @@ button.resend_otp.disabled {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.150000006px;
+    letter-spacing: 0.15px;
     text-align: right;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdTenure_years_text {
@@ -1975,6 +1985,162 @@ button.resend_otp.disabled {
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails::after {
     position: initial;
+  }
+  .quickActionGraph_mob_screen {
+    margin: 24px 0 !important;
+  }
+  .third_col_data {
+    margin-top: 0 !important;
+  }
+  .third_col_data .quickActionBanner {
+    margin-top: 0 !important;
+    padding: 12px 24px 12px 16px;
+  }
+  .third_col_data .quickActionBanner img.newFdImage {
+    width: 95.99px;
+    height: 94.9px;
+    right: -20px;
+    bottom: -14px;
+  }
+  .third_col_data .quickActionBanner .cardLabelHeading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+    margin-bottom: 0 !important;
+  }
+  .third_col_data .quickActionBanner .cardLabelList {
+    margin: 8px 0 16px 0;
+  }
+  .third_col_data .quickActionBanner .cardLabelList ul li {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+  .third_col_data .quickActionBanner .themeRedBtn_mob {
+    width: 104.95px;
+    height: 32px;
+    padding: 8px, 12px, 8px, 12px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-align: center;
+  }
+  #chartContainer {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+  }
+  .quick_actions_button_div {
+    margin-top: 62px;
+  }
+  .quick_actions_button_div .quick_actions_button {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 109px;
+    height: 34px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: normal;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 5px 12px;
+    border-radius: 20px;
+    gap: 10px;
+    font-family: Georama;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.09px;
+    text-align: left;
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
+  #cardContainer_mobile_view_ {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0588235294);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: none;
+    z-index: 10;
+    transition: display 0.3s ease;
+  }
+  #cardContainer_mobile_view_ .quickActionBox {
+    padding: 20px 16px;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .boldTitle {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: center;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .close_icon {
+    position: absolute;
+    display: flex !important;
+    justify-content: right !important;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .close_icon img {
+    width: 16px;
+    height: 16px;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen {
+    display: initial;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .themeRedBtn_mob_Continue {
+    width: 100%;
+    padding: 12px 118px;
+    height: 40px;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .boxRadioButton_mob {
+    width: 100%;
+    padding: 16px 12px 16px 0px;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .boxRadioButton_mob .quickActionLabel {
+    margin-left: 8px;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .boxRadioButton_mob:hover {
+    background-color: #231F20;
+    color: #FFFFFF;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen #actionButton {
+    background-color: #DCDCDC;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: not-allowed;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen #actionButton.active {
+    background-color: #E31837;
+    cursor: pointer;
+  }
+  #cardContainer_mobile_view_.show {
+    display: block;
   }
   /*********** Responsive Quick-Actions-Mobile View End*************/
 }

@@ -140,8 +140,8 @@
 
     <div class="container mb-20">
         <div class="row">
-            <div class="col-12 col-md-12"><a href="#" class="commonBackBtn"><img src="./assets/img/icons/chevron-left.svg"
-                        alt="icon" /> Back</a></div>
+            <div class="col-12 col-md-12"><a href="#" class="commonBackBtn"><img
+                        src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
             <div class="col col-md-7 col-lg-7 col-12 mt-20 col_data_">
                 <div class="cardContainer cardContainer_mobile_screen ">
                     <div class="fdDetailsBox fdDetailsBox_mobile_screen">
@@ -177,7 +177,7 @@
                         <div class="fdContents fdContents_mob_screen">
                             <div class="fdDetails">
                                 <div class="label">Investment date </div>
-                                <div class="value"><img src="./assets/img/icons/calendar-icon.svg" alt="icon" /> 
+                                <div class="value"><img src="./assets/img/icons/calendar-icon.svg" alt="icon" />
                                     18 Sept
                                     2020</div>
                             </div>
@@ -202,43 +202,58 @@
                         </div>
                     </div>
                 </div>
-                <div class="cardContainer mt-20  quickActionGraph" id="chartContainer"></div>
+                <div class="cardContainer mt-20  quickActionGraph quickActionGraph_mob_screen" id="chartContainer">
+                </div>
             </div>
-            <div class="col col-md-5 col-lg-5  col-12 mt-20">
-                <div class="cardContainer">
+            <div class="col col-md-5 col-lg-5  col-12 mt-20 third_col_data">
+                <div class="cardContainer cardContainer_mobile_view" id="cardContainer_mobile_view_">
                     <div class="quickActionBox">
+                        <div class="close_icon" onclick="toggleClose()" id="close_icon_">
+                            <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+                        </div>
                         <div class="boldTitle mb-20">Quick actions</div>
-                        <div class="quickActionTabs" data-toggle="buttons" id="quickActionElements">
-                            <label class="boxRadioButton" id="elementOption1">
+                        <div class="quickActionTabs quickActionTabs_mob_screen" data-toggle="buttons"
+                            id="quickActionElements">
+                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption1"
+                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
                                 <input type="radio" name="type" value="1" data-tenure="elementOption1"
                                     autocomplete="off">
                                 <img src="./assets/img/icons/quick-actions/refresh-icon.svg" alt="icon" />
                                 <div class="quickActionLabel">Renew fixed deposit</div>
                             </label>
-                            <label class="boxRadioButton" id="elementOption2">
+                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption2"
+                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
                                 <input type="radio" name="type" value="2" data-tenure="elementOption2"
                                     autocomplete="off">
                                 <img src="./assets/img/icons/quick-actions/download-icon.svg" alt="icon" />
                                 <div class="quickActionLabel">Download E receipt</div>
                             </label>
-                            <label class="boxRadioButton" id="elementOption3">
+                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption3"
+                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
                                 <input type="radio" name="type" value="3" data-tenure="elementOption3"
                                     autocomplete="off">
                                 <img src="./assets/img/icons/quick-actions/round-rupees.svg" alt="icon" />
                                 <div class="quickActionLabel">Loan against fixed deposit</div>
                             </label>
-                            <label class="boxRadioButton" id="elementOption4">
+                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption4"
+                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
                                 <input type="radio" name="type" value="4" data-tenure="elementOption4"
                                     autocomplete="off">
                                 <img src="./assets/img/icons/quick-actions/preclose-icon.svg" alt="icon" />
                                 <div class="quickActionLabel">Pre close fixed deposit</div>
                             </label>
-                            <label class="boxRadioButton" id="elementOption5">
+                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption5"
+                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
                                 <input type="radio" name="type" value="5" data-tenure="elementOption5"
                                     autocomplete="off">
                                 <img src="./assets/img/icons/quick-actions/edit-icon.svg" alt="icon" />
                                 <div class="quickActionLabel">Update Nominee Details</div>
                             </label>
+
+                            <div class="themeRedBtn themeRedBtn_mob_Continue" id="actionButton" disabled>
+                                Continue
+                                <img src="./assets/img/arrow-right.svg" alt="icons" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -254,19 +269,25 @@
                             <li>Compounding your investments</li>
                         </ul>
                     </div>
-                    <div class="themeRedBtn">
+                    <div class="themeRedBtn themeRedBtn_mob">
                         Renew
                         <img src="./assets/img/arrow-right.svg" alt="icons" />
                     </div>
-                    <img src="./assets/img/icons/quick-actions/rupee-tree-icon.svg" alt="image" class="newFdImage" />
+                    <img src="./assets/img/icons/quick-actions/rupee-tree-icon.svg" alt="image"
+                        class="newFdImage circle_img" />
+                </div>
+                <div class="quick_actions_button_div">
+                    <button class="quick_actions_button" id="quick_actions_button_" onclick="toggleWrapper()">
+                        + Quick Actions
+                    </button>
                 </div>
 
+
             </div>
+
         </div>
+
     </div>
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/chart.min.js"></script>

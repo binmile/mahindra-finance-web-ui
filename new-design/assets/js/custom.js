@@ -72,8 +72,8 @@ function updateKycModal(id) {
         }
     });
 }
-/*****************body toggle BMT-147 ******************/
- function toggle_data(onclickId,elementId) {
+/*****************body toggle BMT-147 start ******************/
+function toggle_data(onclickId, elementId) {
     let checkbox = document.getElementById(onclickId);
     let autoRenewalText = document.getElementById(elementId);
     autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
@@ -82,13 +82,48 @@ function updateKycModal(id) {
     });
 }
 
-toggle_data('C2032231F_','auto_renewal_text_');
-toggle_data('toggle_value_data','toggle_value');
-toggle_data('toggle_content_values','toggle_content');
-toggle_data('toggle_values','toggle_data_content');
+toggle_data('C2032231F_', 'auto_renewal_text_');
+toggle_data('toggle_value_data', 'toggle_value');
+toggle_data('toggle_content_values', 'toggle_content');
+toggle_data('toggle_values', 'toggle_data_content');
 
 
 /*****************body End ******************/
+
+
+/*****************quick-actions BMT-147 ******************/
+
+
+function toggleButton(activate) {
+    var button = document.getElementById('actionButton');
+
+    if (activate) {
+        button.classList.add('active');
+        button.removeAttribute('disabled');
+    } else {
+        button.classList.remove('active');
+        button.setAttribute('disabled', 'disabled');
+    }
+}
+
+
+function toggleWrapper() {
+    var wrapper = document.getElementById('cardContainer_mobile_view_');
+    wrapper.classList.toggle('show');
+}
+
+document.addEventListener('click', function (event) {
+    var wrapper = document.getElementById('cardContainer_mobile_view_');
+    if (!wrapper.contains(event.target) && !document.getElementById('quick_actions_button_').contains(event.target)) {
+        wrapper.classList.remove('show');
+    }
+});
+function toggleClose() {
+    var wrapper = document.getElementById('cardContainer_mobile_view_');
+    wrapper.classList.remove('show');
+}
+
+/*****************quick-actions BMT-147 ******************/
 
 
 /*****************Dashboard Toggle Switch Button Modal End***************/
@@ -121,53 +156,53 @@ function handleClickRadio(ele1, ele2) {
 
 /*************************OTP Modal Start******************************/
 
-function handleClickOTP(){
+function handleClickOTP() {
     var myModal = new bootstrap.Modal(document.getElementById("myOTPModal"));
     myModal.show();
 }
 
-const inputs = document.getElementById("inputs"); 
-  
-inputs.addEventListener("input", function (e) { 
-    const target = e.target; 
-    const val = target.value; 
-  
-    if (isNaN(val)) { 
-        target.value = ""; 
-        return; 
-    } 
-  
-    if (val != "") { 
-        const next = target.nextElementSibling; 
-        if (next) { 
-            next.focus(); 
-        } 
-    } 
-}); 
-  
-inputs.addEventListener("keyup", function (e) { 
-    const target = e.target; 
-    const key = e.key.toLowerCase(); 
-  
-    if (key == "backspace" || key == "delete") { 
-        target.value = ""; 
-        const prev = target.previousElementSibling; 
-        if (prev) { 
-            prev.focus(); 
-        } 
-        return; 
-    } 
+const inputs = document.getElementById("inputs");
+
+inputs.addEventListener("input", function (e) {
+    const target = e.target;
+    const val = target.value;
+
+    if (isNaN(val)) {
+        target.value = "";
+        return;
+    }
+
+    if (val != "") {
+        const next = target.nextElementSibling;
+        if (next) {
+            next.focus();
+        }
+    }
+});
+
+inputs.addEventListener("keyup", function (e) {
+    const target = e.target;
+    const key = e.key.toLowerCase();
+
+    if (key == "backspace" || key == "delete") {
+        target.value = "";
+        const prev = target.previousElementSibling;
+        if (prev) {
+            prev.focus();
+        }
+        return;
+    }
 });
 
 /*************************OTP Modal End******************************/
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const timerElement = document.getElementById("timer");
     const resultElement = document.getElementById("resend_otp");
     function startTimer(duration, display) {
         let timer = duration;
         let minutes, seconds;
-        let interval = setInterval(function() {
+        let interval = setInterval(function () {
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
             minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -185,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function() {
         resultElement.classList.remove("disabled");
         resultElement.disabled = false;
     }
-    resultElement.addEventListener("click", function() {
+    resultElement.addEventListener("click", function () {
         resultElement.classList.add("disabled");
         resultElement.disabled = true;
         startTimer(59, timerElement);
