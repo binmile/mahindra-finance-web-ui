@@ -2237,6 +2237,7 @@ button.resend_otp.disabled {
   #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
     width: auto !important;
   }
+  /* post-closure-scss  start here */
 }
 @media only screen and (max-width: 420px) {
   .cardContainerMobile .first_active_data::after {
