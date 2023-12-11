@@ -1,6 +1,7 @@
 @import "./variable";
 @import "./mixin";
 @import "./components";
+@import "./animations.scss";
 
 * {
   padding: 0;
@@ -924,7 +925,7 @@ label.showMoreBtn {
       }
     }
     .fdContents {
-      min-height: 350px;
+      min-height: 325px;
       .fdDetails {
         .value {
           justify-content: flex-start;
@@ -989,7 +990,7 @@ label.showMoreBtn {
         border-bottom: 0px;
       }
       .accountHolderDetails {
-        @include setDisplayProperty(flex, space-between, center);
+        @include setDisplayProperty(flex, space-between, flex-end);
         .accountDetails {
           .accountHolderName {
             @include custom-font(24px, 500, 32px, -0.18px);
@@ -1002,7 +1003,6 @@ label.showMoreBtn {
           }
           .accountMobile {
             margin-top: 8px;
-            margin-bottom: 16px;
             @include custom-font(16px, 500, 24px, normal);
             @include setDisplayProperty(flex, flex-start, center);
             img {
@@ -1085,7 +1085,93 @@ button.resend_otp.disabled {
 }
 /********************Single Account Page End******************/
 
+/*********Pagination Start**********************/
+.customPagination {
+    @include setDisplayProperty(none, center, flex-end);
+    background-color: $color_white;
+    min-height: 52px;
+    .pagination-before, .pagination-after{
+        border: 1px solid $color_light_gray2;
+        border-radius: 4px;
+        @include allCenter;
+        @include custom-width-height(28px, 28px);
+        cursor: pointer;
+    }
+    .pagination-before{
+        margin-right: 12px;
+    }
+    .pagination-after{
+        margin-left: 12px;
+        img{
+            transform: rotate(180deg);
+        }
+    }
+    .btn-page{
+        ul{
+            list-style: none;
+            padding: 0;
+            @include allCenter;
+            margin-bottom: 0;
+            li{
+                display: inline-block;
+                width: 40px;
+                cursor: pointer;
+                text-align: center;
+                &.active{
+                    color: $color_red;
+                }
+            }
+        }
+    }
+}
+/*********Pagination End**********************/
 @import "./265_css";
 @import "./147_css";
 
 @import "./responsive.scss";
+
+    .verifyBtn{
+        position: relative;
+        text-decoration: none;
+        width: fit-content;
+        height: 38px;
+        padding: 3px 18px 0px 18px;
+        text-align: center;
+        @include custom-font(16px, 400, 24px, 0.15px);
+        @include allCenter;
+        color: $color_green_dark;
+        opacity: 0;
+        animation: fadeInAnimate 0.5s linear forwards;
+        animation-delay: 1s;
+        img{
+            margin-right: 4px;
+        }
+    }
+
+    .verifyBtn::before{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 0;
+        height: 0;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        animation: animateVerifiedButton 1s linear forwards;
+        animation-delay: 2s;
+    }
+
+    .verifyBtn::after{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 0;
+        height: 0;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        animation: animateVerifiedButton2 1s linear forwards;
+        animation-delay: 2s;
+    }

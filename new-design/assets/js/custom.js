@@ -43,14 +43,18 @@ $(document).ready(function () {
 $("#homeShowBtn").click(function () {
     var dataShow = document.getElementById("homeShowBtn");
     var dataHide = document.getElementById("homeHideBtn");
+    var dataPagination = document.getElementById("customPagination");
     dataShow.style.display = "none";
     dataHide.style.display = "flex";
+    dataPagination.style.display = "flex";
 });
 $("#homeHideBtn").click(function () {
     var dataShow = document.getElementById("homeShowBtn");
     var dataHide = document.getElementById("homeHideBtn");
+    var dataPagination = document.getElementById("customPagination");
     dataShow.style.display = "flex";
     dataHide.style.display = "none";
+    dataPagination.style.display = "none";
 });
 /*****************Dashboard Data show hide End***************/
 
