@@ -774,7 +774,7 @@ label.showMoreBtn img {
   height: 316px;
 }
 #chartContainer canvas {
-  width: 100%;
+  width: 100% !important;
   max-height: 280px;
 }
 #chartContainer a.canvasjs-chart-credit {
@@ -1933,18 +1933,7 @@ button.resend_otp.disabled {
 /*********** Responsive CSS Start Here*************/
 @media only screen and (min-width: 767px) {
   /*********** Responsive dashboard View Start*************/
-  .mobile_container {
-    display: none;
-  }
-  .dashboardCardMobile {
-    display: none;
-  }
-  .mobile_container {
-    display: none;
-  }
-  /*********** Responsive dashboard View End*************/
-  /*********** Responsive Quick-Actions-Mobile View Start*************/
-  .boldTitle_mobile_mob {
+  .no_desktop_view {
     display: none;
   }
   /*********** Responsive Quick-Actions-Mobile View End*************/
@@ -2243,9 +2232,6 @@ button.resend_otp.disabled {
     width: 110px;
     height: 111px;
   }
-  #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
-    width: auto;
-  }
   /*********** Responsive dashboard View End*************/
   /*********** Responsive Quick-Actions-Mobile View Start*************/
   .col_data_ {
@@ -2366,14 +2352,7 @@ button.resend_otp.disabled {
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails::after {
     position: initial;
   }
-  .quickActionGraph_mob_screen {
-    margin: 24px 0;
-  }
-  .third_col_data {
-    margin-top: 0;
-  }
   .third_col_data .quickActionBanner {
-    margin-top: 0;
     padding: 12px 24px 12px 16px;
   }
   .third_col_data .quickActionBanner img.newFdImage {
@@ -2410,20 +2389,11 @@ button.resend_otp.disabled {
     letter-spacing: 1.25px;
     text-align: center;
   }
-  #chartContainer {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.15px;
-    text-align: left;
-  }
-  .quick_actions_button_div {
-    margin-top: 62px;
-  }
   .quick_actions_button_div .quick_actions_button {
     background-color: #000000;
     color: #FFFFFF;
-    width: 109px;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 34px;
     border: none;
     outline: none;
@@ -2434,10 +2404,8 @@ button.resend_otp.disabled {
     display: flex;
     justify-content: center;
     place-items: center;
-    padding: 5px 12px;
+    padding: 0px 12px;
     border-radius: 20px;
-    gap: 10px;
-    text-align: left;
     position: fixed;
     bottom: 24px;
     left: 50%;

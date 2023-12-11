@@ -1,20 +1,7 @@
 /*********** Responsive CSS Start Here*************/
-@import "./breakpoint";
 @media only screen and (min-width: 767px) {
     /*********** Responsive dashboard View Start*************/
-    .mobile_container {
-        display: none;
-    }
-    .dashboardCardMobile {
-        display: none;
-    }
-    .mobile_container {
-        display: none;
-    }
-    /*********** Responsive dashboard View End*************/
-    /*********** Responsive Quick-Actions-Mobile View Start*************/
-
-    .boldTitle_mobile_mob {
+    .no_desktop_view{
         display: none;
     }
     /*********** Responsive Quick-Actions-Mobile View End*************/
@@ -281,9 +268,9 @@
             }
         }
     }
-    #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
-        width: auto;
-    }
+    // #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
+    //     width: auto;
+    // }
 
     /*********** Responsive dashboard View End*************/
     /*********** Responsive Quick-Actions-Mobile View Start*************/
@@ -378,13 +365,8 @@
         }
     }
 
-    .quickActionGraph_mob_screen {
-        margin: 24px 0;
-    }
     .third_col_data {
-        margin-top: 0;
         .quickActionBanner {
-            margin-top: 0;
             padding: 12px 24px 12px 16px;
             img.newFdImage {
                 @include custom-width-height(95.99px, 94.9px);
@@ -417,25 +399,17 @@
 
         }
     }
-    #chartContainer {
-        @include custom-font(16px, 600, 24px, 0.15px);
-        text-align: left;
-
-    }
     .quick_actions_button_div {
-        margin-top: 62px;
         .quick_actions_button {
             background-color: $color_black;
             color: $color_white;
-            @include custom-width-height(109px, 34px);
+            @include custom-width-height(fit-content, 34px);
             border: none;
             outline: none;
             @include custom-font(12px, 600, 24px, 0.09px);
             @include allCenter;
-            padding: 5px 12px;
+            padding: 0px 12px;
             border-radius: 20px;
-            gap: 10px;
-            text-align: left;
             position: fixed;
             bottom: 24px;
             left: 50%;
