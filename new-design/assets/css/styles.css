@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 /********************Toggle Switch Start**********************/
-@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 .form-check-input {
   position: relative;
   border: 1px solid #4D4D4F;
@@ -1696,6 +1695,74 @@ button.resend_otp.disabled {
 }
 
 /*********Pagination End**********************/
+#commonHeading-repayment {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  margin: 16px 0 20px 0;
+}
+
+.bankDetailsMainContainer {
+  padding: 24px 32px;
+  background-color: #FFFFFF !important;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.bankDetailsMainContainer .bankDetailSubheading {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  margin: 8px 0 8px 0;
+}
+.bankDetailsMainContainer .textparent {
+  position: relative;
+}
+.bankDetailsMainContainer .textparent .formLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+  text-align: left;
+  margin: 24px 0 5px 0;
+}
+.bankDetailsMainContainer .textparent .infoText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  margin: 8px 0 0 0;
+  color: #6B7280;
+}
+.bankDetailsMainContainer .textparent .formControl {
+  border: 1px solid #DCDCDC;
+  padding: 10px 16px;
+}
+.bankDetailsMainContainer .textparent .textfildicons {
+  position: absolute;
+  right: 16px;
+  top: 62.5px;
+}
+.bankDetailsMainContainer .textparent .textfildicons .icons {
+  width: 24px;
+  height: 24px;
+}
+.bankDetailsMainContainer .bottomContentBox {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  background-color: #F3F4F6;
+  margin: 141px 0 8px 0;
+  border-radius: 4px;
+  color: #6B7280;
+  padding: 0px 8px 0px 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 /*********** Responsive CSS Start Here*************/
 @media screen and (min-width: 767px) {
   .mob-wrapper {
@@ -1730,6 +1797,47 @@ button.resend_otp.disabled {
     letter-spacing: normal;
     text-align: left;
     margin: 16px 0 -10px 0;
+  }
+  .bankDetailsMainContainer {
+    padding: 16px;
+  }
+  .bankDetailsMainContainer .bankDetailSubheading {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: normal;
+    margin: 8px 0 0 0;
+  }
+  .bankDetailsMainContainer .textparent .formLabel {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: normal;
+    margin: 16px 0 4px 0;
+  }
+  .bankDetailsMainContainer .textparent .infoText {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    margin: 4px 0 0 0;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons {
+    right: 14px;
+    top: 45px;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons .icons {
+    width: 16px;
+    height: 16px;
+  }
+  .bankDetailsMainContainer .bottomContentBox {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: normal;
+    margin: 60px 0 8px 0;
+    border-radius: 4px;
+    padding: 5px 8px 5px 8px;
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit {
     padding: 12px 16px;
@@ -1807,6 +1915,19 @@ button.resend_otp.disabled {
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
     margin-bottom: 75px;
+  }
+  #commonHeading-repayment {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin: 12px 0 12px;
+  }
+  #repayment-buttonContainer {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 24px;
   }
 }
 /*********** Responsive CSS Start Here*************/
