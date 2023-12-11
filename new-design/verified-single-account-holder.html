@@ -138,7 +138,8 @@
 <div class="container mb-20">
     <div class="row animate__animated animate__fadeInUp">
         <div class="col col-md-12 mt-20"><a href="#" class="commonBackBtn"><img src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
-        <div class="col col-md-12 mt-20 cardContainer accountContainer">
+        <div class="col col-md-12 mt-20">
+        <div class="cardContainer accountContainer">
             <div class="container p-0">
                 <div class="row">
                     <div class="col col-md-7">
@@ -224,10 +225,11 @@
                                 <input type="checkbox" name="preclosure-flow">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="ml-25">I agree with the <a href="#">terms & conditions</a></label>
+                            <label class="ml-25">I agree with the <a href="javascript:;" onclick="handleClickModal('TermsConditionModal')">terms & conditions</a></label>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         <div class="col col-md-12 animate__animated animate__fadeInUp">
@@ -289,6 +291,43 @@
     </div>
 </div>
 <!-- OTP Modal End-->
+
+<!-- TermsConditionModal Start -->
+<div class="modal fade" id="TermsConditionModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./assets/img/icons/close-icon.svg"
+                        alt="icon" />
+                </button>
+                <div class="info-heading-container">
+                    <div class="info-heading-image">
+                        <img src="./assets/img/icons/file-text.svg" alt="icon" />
+                    </div>
+                    <div class="info-heading">
+                        Terms & conditions governing fixed deposit schemes
+                    </div>
+                </div>
+                <div class="info-content termsContent">
+                    <div class="termsSmallHeading">
+                        ACCEPTANCE OF DEPOSITS:
+                    </div>
+                    <p>The minimumamount, period and rate of interest scheme is indicated on the cover page. The Company will not entertain any request for change once the scheme is selected. Where the scheme choice is not indicated in the Application Form, the deposit will be treated as place in Cumulative Scheme for the highest tenure. Senior Citizen"'</p>
+                    <p>(60 year and above), will get an additional rate of 0.25% per annum and Employee/ Employees' relatives and Retired Employees/ Retired Employees' relatives will get an additional rate of 0.35% per annum (All M&M Group Company Employees.)</p>
+                    <p>Interest onthe Fixed Deposit will cease toaccrue from the maturity date of the deposit.</p>
+                    <p>The Board of Directors of the Company reserves the right to change /alter /modify all or any of the Fixed Deposit schemes without prior notice.</p>
+                    <p>MICR Code and NEFT are mandatory for all deposit and a copy of Personalized cancelled cheque copy is to be attached along with the application. In case of deposit cheque being from adifferent bank account other than that of the firstdepositor, Personalized cancelled cheque copy of the first depositor bank account to be furnished.</p>
+                    <p>If the KYC documents are incomplete then, the forms will be rejected and returned without interest within 30 days, so please provide thecorrect document proofs. Please provide your mobile number and E-mail JD for faster communication,KYC documents of alt the deposit holders should</p>
+                </div>
+                <div class="info-button top-border-shadow pt-12"><button type="button" data-bs-dismiss="modal" aria-label="Close"
+                        class="btn themeRedBtn">I understand</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TermsConditionModal End-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
