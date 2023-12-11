@@ -2,6 +2,7 @@
 @import "./mixin";
 @import "./components";
 @import "./animations.scss";
+@import "./breakpoint";
 
 * {
   padding: 0;
@@ -435,7 +436,7 @@ label.showMoreBtn {
   width: 100%;
   height: 316px;
   canvas {
-    width: 100%;
+    width: 100% !important;
     max-height: 280px;
   }
   a.canvasjs-chart-credit {

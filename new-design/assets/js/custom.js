@@ -88,7 +88,7 @@ function radioButtonAction(id,element) {
 }
 
 /*****************body toggle BMT-147 ******************/
- function toggle_data(onclickId,elementId) {
+ function toggle_data_dashboard(onclickId,elementId) {
     let checkbox = document.getElementById(onclickId);
     let autoRenewalText = document.getElementById(elementId);
     autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
@@ -210,3 +210,36 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   }
+
+
+  /*****************quick-actions BMT-147 ******************/
+function toggleButton(activate) {
+    var button = document.getElementById('actionButton');
+
+    if (activate) {
+        button.classList.add('active');
+        button.removeAttribute('disabled');
+    } else {
+        button.classList.remove('active');
+        button.setAttribute('disabled', 'disabled');
+    }
+}
+
+
+function toggleWrapper() {
+    var wrapper = document.getElementById('cardContainer_mobile_view_');
+    wrapper.classList.toggle('show');
+}
+
+document.addEventListener('click', function (event) {
+    var wrapper = document.getElementById('cardContainer_mobile_view_');
+    if (!wrapper.contains(event.target) && !document.getElementById('quick_actions_button_').contains(event.target)) {
+        wrapper.classList.remove('show');
+    }
+});
+function toggleClose() {
+    var wrapper = document.getElementById('cardContainer_mobile_view_');
+    wrapper.classList.remove('show');
+}
+
+/*****************quick-actions BMT-147 ******************/
