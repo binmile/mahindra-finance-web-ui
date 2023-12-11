@@ -1,5 +1,9 @@
+// repayment-bank-css-start
+#commonHeading-repayment {
+  @include custom-font(24px, 600, 32px, -0.18px);
+  margin: 16px 0 20px 0;
+}
 
-// repayment-bank-css
 .bankDetailsMainContainer {
   padding: 24px 32px;
   background-color: $color_white !important;
@@ -41,23 +45,6 @@
         @include custom-width-height(24px, 24px);
       }
     }
-
-    .ifscHeading {
-      display: flex;
-      justify-content: space-between;
-      white-space: nowrap;
-
-      .ifscLink {
-        @include custom-font(12px, 400, 16px, 0.4px);
-        white-space: nowrap;
-        margin: 27.5px 0 5px 0;
-
-        a {
-          text-decoration: none;
-          color: $color_link_blue;
-        }
-      }
-    }
   }
 
   .bottomContentBox {
@@ -71,6 +58,8 @@
   }
 }
 
+// repayment-bank-css-end
+
 
 /*********** Responsive CSS Start Here*************/
 
@@ -83,13 +72,6 @@
 @media only screen and (max-width: 768px) {
   .web-wrapper {
     display: none;
-  }
-
-  #repayment-buttonContainer {
-    position: relative;
-    width: 100%;
-    bottom: 0px;
-    margin-top: 24px;
   }
 
   .buttonContainer {
@@ -136,13 +118,6 @@
 
         .icons {
           @include custom-width-height(16px, 16px);
-        }
-      }
-
-      .ifscHeading {
-        .ifscLink {
-          @include custom-font(12px, 400, 16px, 0.4px);
-          margin: 16px 0 5px 0;
         }
       }
     }
@@ -235,9 +210,18 @@
     }
   }
 
-  // repayment-bank-css-mobile
-  .commonHeading {
+  // repayment-bank-css-mobile-start
+  #commonHeading-repayment {
     @include custom-font(16px, 600, 24px, 0.15px);
     margin: 12px 0 12px;
   }
+
+  #repayment-buttonContainer {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 24px;
+  }
+
+  // repayment-bank-css-mobile-end
 }

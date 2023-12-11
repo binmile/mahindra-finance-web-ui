@@ -141,26 +141,26 @@
     <!--Top-navbar End -->
     <div class="container mb-20">
         <div class="row animate__animated animate__fadeInUp">
-            <div class="col-12 mt-20"><a href="#" class="commonBackBtn"><img
-                        src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
+            <div class="col-12 mt-20"><a href="#" class="commonBackBtn"><img src="./assets/img/icons/chevron-left.svg"
+                        alt="icon" /> Back</a></div>
             <div class="col col-md-12">
-                <div class="commonHeading">Bank details</div>
+                <div id="commonHeading-repayment"> Repayment bank details </div>
             </div>
             <div class="col-12">
                 <div class="bankDetailsMainContainer">
-                    <div class="boldTitle"> Repayment bank details </div>
-                    <div class="bankDetailSubheading">Important bank details for seamless repayment transactions.</div>
+                    <div class="boldTitle"> Enter new bank details </div>
+                    <div class="bankDetailSubheading">Essential bank details for smooth repayments.</div>
                     <div class="main-form">
                         <form>
                             <div class="row">
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <div class="textparent">
                                         <label for="account_number" class="form-label formLabel">Account number</label>
-                                        <input type="password" class="form-control formControl  " id="account_number">
+                                        <input type="password" class="form-control formControl  " id="account_number" maxlength="20">
                                         <div class="textfildicons">
                                             <img src="./assets/img/icons/bank.svg" alt="icons" class="icons" />
                                         </div>
-                                        <div class="infoText">Important bank details for seamless repayment transactions.</div>
+                                        <div class="infoText">Account must be under primary holder’s name</div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -168,8 +168,7 @@
                                         <label for="re_enter_account_number" class="form-label formLabel">Re-enter
                                             account number
                                             number</label>
-                                        <input type="text" class="form-control  formControl  "
-                                            id="re_enter_account_number">
+                                        <input type="text" class="form-control  formControl" id="re_enter_account_number" maxlength="20">
                                         <div class="textfildicons">
                                             <img src="./assets/img/icons/bank.svg" alt="icons" class="icons" />
                                         </div>
@@ -177,16 +176,8 @@
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <div class="textparent">
-                                        <div class="ifscHeading">
-                                            <div>
-                                                <label for="ifsc_code" class="form-label formLabel">IFSC
-                                                    code</label>
-                                            </div>
-                                            <div class="ifscLink">
-                                                <a href=""> Search IFSC </a>
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control  formControl  " id="ifsc_code">
+                                        <label for="ifsc_code" class="form-label formLabel">IFSC code</label>
+                                        <input type="text" class="form-control  formControl  " id="ifsc_code" maxlength="20">
                                         <div class="textfildicons">
                                             <img src="./assets/img/icons/file-minus.svg" alt="icons" class="icons" />
                                         </div>
@@ -202,8 +193,8 @@
             </div>
             <div class="col col-md-12">
                 <div class="buttonContainer" id="repayment-buttonContainer">
-                    <button class="btn themeRedBtn" disabled> Proceed
-                    <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
+                    <button class="btn themeRedBtn" disabled> Submit
+                        <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
                 </div>
             </div>
         </div>

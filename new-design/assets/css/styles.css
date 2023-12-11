@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 /********************Toggle Switch Start**********************/
-@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 .form-check-input {
   position: relative;
   border: 1px solid #4D4D4F;
@@ -1590,7 +1589,14 @@ button.resend_otp.disabled {
 }
 
 /********************Single Account Page End******************/
-/*********** Responsive CSS Start Here*************/
+#commonHeading-repayment {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  margin: 16px 0 20px 0;
+}
+
 .bankDetailsMainContainer {
   padding: 24px 32px;
   background-color: #FFFFFF !important;
@@ -1637,23 +1643,6 @@ button.resend_otp.disabled {
   width: 24px;
   height: 24px;
 }
-.bankDetailsMainContainer .textparent .ifscHeading {
-  display: flex;
-  justify-content: space-between;
-  white-space: nowrap;
-}
-.bankDetailsMainContainer .textparent .ifscHeading .ifscLink {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.4px;
-  white-space: nowrap;
-  margin: 27.5px 0 5px 0;
-}
-.bankDetailsMainContainer .textparent .ifscHeading .ifscLink a {
-  text-decoration: none;
-  color: #61B0E0;
-}
 .bankDetailsMainContainer .bottomContentBox {
   font-size: 14px;
   font-weight: 400;
@@ -1668,6 +1657,7 @@ button.resend_otp.disabled {
   width: fit-content;
 }
 
+/*********** Responsive CSS Start Here*************/
 @media screen and (min-width: 767px) {
   .mob-wrapper {
     display: none;
@@ -1676,12 +1666,6 @@ button.resend_otp.disabled {
 @media only screen and (max-width: 768px) {
   .web-wrapper {
     display: none;
-  }
-  #repayment-buttonContainer {
-    position: relative;
-    width: 100%;
-    bottom: 0px;
-    margin-top: 24px;
   }
   .buttonContainer {
     position: fixed;
@@ -1739,13 +1723,6 @@ button.resend_otp.disabled {
   .bankDetailsMainContainer .textparent .textfildicons .icons {
     width: 16px;
     height: 16px;
-  }
-  .bankDetailsMainContainer .textparent .ifscHeading .ifscLink {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.4px;
-    margin: 16px 0 5px 0;
   }
   .bankDetailsMainContainer .bottomContentBox {
     font-size: 10px;
@@ -1833,12 +1810,18 @@ button.resend_otp.disabled {
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
     margin-bottom: 75px;
   }
-  .commonHeading {
+  #commonHeading-repayment {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.15px;
     margin: 12px 0 12px;
+  }
+  #repayment-buttonContainer {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 24px;
   }
 }
 /*********** Responsive CSS Start Here*************/
