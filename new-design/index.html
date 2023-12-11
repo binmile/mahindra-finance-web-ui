@@ -210,8 +210,8 @@
                 </div>
             </div>
             <!-- Mobile View Start -->
-            <div class="col-12 col-md-6 col-lg-8 col-xl-2 dashboardCardMobile">
-                <div class="dashboardCardMobile">
+            <div class="col-12 col-md-6 col-lg-8 col-xl-2 no_desktop_view">
+                <div class="check">
                     <div class="fixed_deposit_summary">Fixed deposit summary</div>
                     <div class="cardContainerMobile">
                         <div class="first_active_data">
@@ -547,7 +547,7 @@
     </div>
 
 
-    <div class="container mobile_container animate__animated animate__fadeInUp">
+    <div class="container no_desktop_view animate__animated animate__fadeInUp">
         <div class="fixedDepositDetailsData">
             <div class="fixed_deposit_summary">
                 Fixed deposit list
@@ -564,7 +564,8 @@
                         </div>
                         <span class="form-check form-switch form_switch_mob">
                             <input type="checkbox" class="form-check-input form-check-input_mob form-check-input-mob"
-                                id="C2032231F_" onclick="toggle_data('C2032231F_', 'auto_renewal_text_')" />
+                                id="C2032231F_" onclick="toggle_data_dashboard('C2032231F_', 'auto_renewal_text_')" />
+                               
                         </span>
                     </div>
 
@@ -657,7 +658,7 @@
                         </div>
                         <span class="form-check form-switch form_switch_mob">
                             <input type="checkbox" class="form-check-input form-check-input_mob form-check-input-mob"
-                                checked id="toggle_value_data" onclick="toggle_data('toggle_value_data',  'toggle_value')" />
+                                 id="toggle_value_data" onclick="toggle_data_dashboard('toggle_value_data',  'toggle_value')" />
                         </span>
                     </div>
 
@@ -750,7 +751,7 @@
                         </div>
                         <span class="form-check form-switch form_switch_mob">
                             <input type="checkbox" class="form-check-input form-check-input_mob form-check-input-mob"
-                                checked id="toggle_content_values" onclick="toggle_data('toggle_content_values','toggle_content')" />
+                                 id="toggle_content_values" onclick="toggle_data_dashboard('toggle_content_values','toggle_content')" />
                         </span>
                     </div>
 
@@ -838,7 +839,7 @@
                         </div>
                         <span class="form-check form-switch form_switch_mob">
                             <input type="checkbox" class="form-check-input form-check-input_mob form-check-input-mob"
-                                checked id="toggle_values" onclick="toggle_data('toggle_values', 'toggle_data_content')" />
+                                 id="toggle_values" onclick="toggle_data_dashboard('toggle_values', 'toggle_data_content')" />
                         </span>
                     </div>
 

@@ -774,7 +774,7 @@ label.showMoreBtn img {
   height: 316px;
 }
 #chartContainer canvas {
-  width: 100%;
+  width: 100% !important;
   max-height: 280px;
 }
 #chartContainer a.canvasjs-chart-credit {
@@ -1932,19 +1932,16 @@ button.resend_otp.disabled {
 }
 /*********** Responsive CSS Start Here*************/
 @media only screen and (min-width: 767px) {
-  .mobile_container {
+  /*********** Responsive dashboard View Start*************/
+  .no_desktop_view {
     display: none;
   }
-  .dashboardCardMobile {
-    display: none;
-  }
-  .mobile_container {
-    display: none;
-  }
+  /*********** Responsive Quick-Actions-Mobile View End*************/
 }
 @media only screen and (max-width: 768px) {
+  /*********** Responsive dashboard View Start*************/
   .container_wrapper {
-    display: none !important;
+    display: none;
   }
   .cardContainer_mobileView {
     margin-bottom: 24px;
@@ -1955,7 +1952,7 @@ button.resend_otp.disabled {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.150000006px;
+    letter-spacing: 0.15px;
   }
   .dashboardDarkCard .cardLabelList_mob ul li {
     text-align: left;
@@ -1988,7 +1985,7 @@ button.resend_otp.disabled {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.150000006px;
+    letter-spacing: 0.15px;
     margin-bottom: 12px;
     margin-top: 16px;
   }
@@ -1998,16 +1995,17 @@ button.resend_otp.disabled {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.150000006px;
+    letter-spacing: 0.15px;
   }
   .cardContainerMobile {
     padding: 8px 16px;
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
     border-radius: 5.14px;
     display: flex;
     justify-content: space-between;
     place-items: center;
+    flex-direction: row;
   }
   .cardContainerMobile .custom-tooltip.custom_tooltip img {
     vertical-align: text-bottom;
@@ -2035,7 +2033,7 @@ button.resend_otp.disabled {
     font-size: 10px;
     font-weight: 500;
     line-height: 14px;
-    letter-spacing: 0.400000006px;
+    letter-spacing: 0.4px;
   }
   .cardContainerMobile .active_fds.investment_fds {
     white-space: nowrap;
@@ -2085,7 +2083,7 @@ button.resend_otp.disabled {
   }
   .fixedDepositDetailsData .details_fixed_deposit {
     padding: 14px 16px;
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
     border-radius: 5.14px;
     margin-top: 12px;
@@ -2234,14 +2232,266 @@ button.resend_otp.disabled {
     width: 110px;
     height: 111px;
   }
-  #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
-    width: auto !important;
+  /*********** Responsive dashboard View End*************/
+  /*********** Responsive Quick-Actions-Mobile View Start*************/
+  .col_data_ {
+    position: relative;
+    margin-top: 0;
   }
+  .cardContainer_mobile_screen {
+    margin-top: 12px;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen {
+    padding: 12px 16px;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen {
+    display: flex;
+    justify-content: left;
+    place-items: initial;
+    flex-direction: column;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .fdTenure_mobile_screen {
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    width: 222px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .fdTenure_mobile_screen img {
+    margin-right: 0;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .boldTitle_mobile_FD {
+    display: none;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .boldTitle_mobile {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent {
+    padding: 16px 0;
+    display: none;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_mobile_screen .bigText_mob_screen {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_mobile_screen .lightText_mob_screen {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_sec_mobile_view .lightText_line_text_mob_screen {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: right;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_sec_mobile_view .darkGreenText_mob_screen {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: right;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdTenure_years_text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-align: center;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents.fdContents_mob_screen {
+    flex-wrap: wrap;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails {
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails .label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails .value {
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #231F20;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails .value img {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails::after {
+    position: initial;
+  }
+  .third_col_data .quickActionBanner {
+    padding: 12px 24px 12px 16px;
+  }
+  .third_col_data .quickActionBanner img.newFdImage {
+    width: 95.99px;
+    height: 94.9px;
+    right: -20px;
+    bottom: -14px;
+  }
+  .third_col_data .quickActionBanner .cardLabelHeading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .third_col_data .quickActionBanner .cardLabelList {
+    margin: 8px 0 16px 0;
+  }
+  .third_col_data .quickActionBanner .cardLabelList ul li {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+  .third_col_data .quickActionBanner .themeRedBtn_mob {
+    width: 104.95px;
+    height: 32px;
+    padding: 8px, 12px, 8px, 12px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-align: center;
+  }
+  .quick_actions_button_div .quick_actions_button {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 34px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.09px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 0px 12px;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
+  #cardContainer_mobile_view_ {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.01);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: none;
+    z-index: 10;
+    transition: display 0.3s ease;
+  }
+  #cardContainer_mobile_view_ .quickActionBox {
+    padding: 20px 16px;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .boldTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .close_icon {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .close_icon img {
+    width: 16px;
+    height: 16px;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen {
+    display: initial;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .themeRedBtn_mob_Continue {
+    padding: 12px 118px;
+    width: 100%;
+    height: 40px;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .boxRadioButton_mob {
+    width: 100%;
+    padding: 16px 12px 16px 0px;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .boxRadioButton_mob .quickActionLabel {
+    margin-left: 8px;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .boxRadioButton_mob:hover {
+    background-color: #231F20;
+    color: #FFFFFF;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen #actionButton {
+    background-color: #DCDCDC;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: not-allowed;
+  }
+  #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen #actionButton.active {
+    background-color: #E31837;
+    cursor: pointer;
+  }
+  #cardContainer_mobile_view_.show {
+    display: block;
+  }
+  /*********** Responsive Quick-Actions-Mobile View End*************/
 }
 @media only screen and (max-width: 420px) {
+  /*********** Responsive dashboard View Start*************/
   .cardContainerMobile .first_active_data::after {
     right: -13px;
   }
+  /*********** Responsive dashboard View End*************/
 }
 @media screen and (min-width: 768px) and (max-width: 1366px) {
   body {
