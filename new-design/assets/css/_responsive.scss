@@ -8,3 +8,17 @@
         max-width: 100% !important;
     }
 }
+
+@media only screen and (max-width: $tablet) {
+    .mobChangeWidth {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+        place-items: flex-start;
+        overflow-x: auto;
+        width: 100%;
+        .customChangeWidth {
+            min-width: 85%;
+        }
+    }
+}

@@ -207,8 +207,20 @@ a {
   color: #1084CB;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F5F5F5;
+}
+
 body {
-  min-height: calc(100vh + 5px);
+  min-height: 100vh;
   padding-top: 3rem;
   color: #231F20;
   background-color: #F3F4F6;
@@ -272,8 +284,16 @@ body {
   margin-bottom: 20px;
 }
 
+.ml-25 {
+  margin-left: 25px;
+}
+
 .pd-32 {
   padding: 32px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
 }
 
 .wd-100 {
@@ -507,6 +527,7 @@ nav .userAvatar img {
   justify-content: center;
   place-items: center;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 .listTable .listTableBody .listTabledata:hover {
   background-color: #F5F5F5;
@@ -633,7 +654,7 @@ label.showMoreBtn img {
 .fdAvailBanner .themeRedBtn {
   height: 44px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 16px;
   letter-spacing: 1.25px;
 }
@@ -907,7 +928,7 @@ label.showMoreBtn img {
   flex-direction: column;
 }
 .fdMainContent .fdInvestment .bigText {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 40px;
   letter-spacing: 0.25px;
@@ -1130,7 +1151,7 @@ label.showMoreBtn img {
 }
 
 .fDList {
-  min-height: 380px;
+  min-height: 392px;
 }
 .fDList ul {
   padding: 0;
@@ -1440,6 +1461,12 @@ label.showMoreBtn img {
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -0.18px;
+}
+.accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .smallName {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }
 .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountType {
   font-size: 14px;
@@ -2133,5 +2160,18 @@ button.resend_otp.disabled {
   }
   .container {
     max-width: 100% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mobChangeWidth {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: flex-start;
+    overflow-x: auto;
+    width: 100%;
+  }
+  .mobChangeWidth .customChangeWidth {
+    min-width: 85%;
   }
 }/*# sourceMappingURL=styles.css.map */
