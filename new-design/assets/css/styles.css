@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 /********************Toggle Switch Start**********************/
-@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap");
 .form-check-input {
   position: relative;
   border: 1px solid #4D4D4F;
@@ -196,6 +195,66 @@
   color: #FFFFFF;
 }
 
+@keyframes fadeInAnimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animateVerifiedButton {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #17823E;
+    border-right-color: #17823E;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #17823E;
+    border-right-color: #17823E;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+@keyframes animateVerifiedButton2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #17823E;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #17823E;
+    border-left-color: #17823E;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #17823E;
+    border-left-color: #17823E;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -1374,7 +1433,7 @@ label.showMoreBtn img {
   display: none;
 }
 .accountContainer .accountBox .fdContents {
-  min-height: 350px;
+  min-height: 325px;
 }
 .accountContainer .accountBox .fdContents .fdDetails .value {
   justify-content: flex-start;
@@ -1453,7 +1512,7 @@ label.showMoreBtn img {
 .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
   display: flex;
   justify-content: space-between;
-  place-items: center;
+  place-items: flex-end;
   flex-direction: row;
 }
 .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountHolderName {
@@ -1476,7 +1535,6 @@ label.showMoreBtn img {
 }
 .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountMobile {
   margin-top: 8px;
-  margin-bottom: 16px;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1590,6 +1648,121 @@ button.resend_otp.disabled {
 }
 
 /********************Single Account Page End******************/
+/*********Pagination Start**********************/
+.customPagination {
+  display: none;
+  justify-content: center;
+  place-items: flex-end;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  min-height: 52px;
+}
+.customPagination .pagination-before, .customPagination .pagination-after {
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.customPagination .pagination-before {
+  margin-right: 12px;
+}
+.customPagination .pagination-after {
+  margin-left: 12px;
+}
+.customPagination .pagination-after img {
+  transform: rotate(180deg);
+}
+.customPagination .btn-page ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-bottom: 0;
+}
+.customPagination .btn-page ul li {
+  display: inline-block;
+  width: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+.customPagination .btn-page ul li.active {
+  color: #E31837;
+}
+
+/*********Pagination End**********************/
+#commonHeading-repayment {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  margin: 16px 0 20px 0;
+}
+
+.bankDetailsMainContainer {
+  padding: 24px 32px;
+  background-color: #FFFFFF !important;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.bankDetailsMainContainer .bankDetailSubheading {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  margin: 8px 0 8px 0;
+}
+.bankDetailsMainContainer .textparent {
+  position: relative;
+}
+.bankDetailsMainContainer .textparent .formLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+  text-align: left;
+  margin: 24px 0 5px 0;
+}
+.bankDetailsMainContainer .textparent .infoText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  margin: 8px 0 0 0;
+  color: #6B7280;
+}
+.bankDetailsMainContainer .textparent .formControl {
+  border: 1px solid #DCDCDC;
+  padding: 10px 16px;
+}
+.bankDetailsMainContainer .textparent .textfildicons {
+  position: absolute;
+  right: 16px;
+  top: 62.5px;
+}
+.bankDetailsMainContainer .textparent .textfildicons .icons {
+  width: 24px;
+  height: 24px;
+}
+.bankDetailsMainContainer .bottomContentBox {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  background-color: #F3F4F6;
+  margin: 141px 0 8px 0;
+  border-radius: 4px;
+  color: #6B7280;
+  padding: 0px 8px 0px 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 /*********** Responsive CSS Start Here*************/
 @media screen and (min-width: 767px) {
   .mob-wrapper {
@@ -1624,6 +1797,47 @@ button.resend_otp.disabled {
     letter-spacing: normal;
     text-align: left;
     margin: 16px 0 -10px 0;
+  }
+  .bankDetailsMainContainer {
+    padding: 16px;
+  }
+  .bankDetailsMainContainer .bankDetailSubheading {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: normal;
+    margin: 8px 0 0 0;
+  }
+  .bankDetailsMainContainer .textparent .formLabel {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: normal;
+    margin: 16px 0 4px 0;
+  }
+  .bankDetailsMainContainer .textparent .infoText {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    margin: 4px 0 0 0;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons {
+    right: 14px;
+    top: 45px;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons .icons {
+    width: 16px;
+    height: 16px;
+  }
+  .bankDetailsMainContainer .bottomContentBox {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: normal;
+    margin: 60px 0 8px 0;
+    border-radius: 4px;
+    padding: 5px 8px 5px 8px;
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit {
     padding: 12px 16px;
@@ -1701,6 +1915,19 @@ button.resend_otp.disabled {
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
     margin-bottom: 75px;
+  }
+  #commonHeading-repayment {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin: 12px 0 12px;
+  }
+  #repayment-buttonContainer {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 24px;
   }
 }
 /*********** Responsive CSS Start Here*************/
@@ -2330,4 +2557,55 @@ button.resend_otp.disabled {
   .mobChangeWidth .customChangeWidth {
     min-width: 85%;
   }
+}
+.verifyBtn {
+  position: relative;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 38px;
+  padding: 3px 18px 0px 18px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  color: #17823E;
+  opacity: 0;
+  animation: fadeInAnimate 0.5s linear forwards;
+  animation-delay: 1s;
+}
+.verifyBtn img {
+  margin-right: 4px;
+}
+
+.verifyBtn::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  animation: animateVerifiedButton 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.verifyBtn::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  animation: animateVerifiedButton2 1s linear forwards;
+  animation-delay: 2s;
 }/*# sourceMappingURL=styles.css.map */
