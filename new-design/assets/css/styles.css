@@ -1944,16 +1944,7 @@ button.resend_otp.disabled {
   }
   /*********** Responsive dashboard View End*************/
   /*********** Responsive Quick-Actions-Mobile View Start*************/
-  .boldTitle_mobile {
-    display: none;
-  }
-  .quick_actions_button {
-    display: none;
-  }
-  .themeRedBtn_mob_Continue {
-    display: none;
-  }
-  .close_icon {
+  .boldTitle_mobile_mob {
     display: none;
   }
   /*********** Responsive Quick-Actions-Mobile View End*************/
@@ -1961,7 +1952,7 @@ button.resend_otp.disabled {
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
   .container_wrapper {
-    display: none !important;
+    display: none;
   }
   .cardContainer_mobileView {
     margin-bottom: 24px;
@@ -2019,7 +2010,7 @@ button.resend_otp.disabled {
   }
   .cardContainerMobile {
     padding: 8px 16px;
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
     border-radius: 5.14px;
     display: flex;
@@ -2103,7 +2094,7 @@ button.resend_otp.disabled {
   }
   .fixedDepositDetailsData .details_fixed_deposit {
     padding: 14px 16px;
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
     border-radius: 5.14px;
     margin-top: 12px;
@@ -2253,7 +2244,7 @@ button.resend_otp.disabled {
     height: 111px;
   }
   #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
-    width: auto !important;
+    width: auto;
   }
   /*********** Responsive dashboard View End*************/
   /*********** Responsive Quick-Actions-Mobile View Start*************/
@@ -2370,19 +2361,19 @@ button.resend_otp.disabled {
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails .value img {
     width: 15px;
     height: 15px;
-    vertical-align: middle !important;
+    vertical-align: middle;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails::after {
     position: initial;
   }
   .quickActionGraph_mob_screen {
-    margin: 24px 0 !important;
+    margin: 24px 0;
   }
   .third_col_data {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
   .third_col_data .quickActionBanner {
-    margin-top: 0 !important;
+    margin-top: 0;
     padding: 12px 24px 12px 16px;
   }
   .third_col_data .quickActionBanner img.newFdImage {
@@ -2397,7 +2388,7 @@ button.resend_otp.disabled {
     line-height: 24px;
     letter-spacing: 0.15px;
     text-align: left;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
   .third_col_data .quickActionBanner .cardLabelList {
     margin: 8px 0 16px 0;
@@ -2436,7 +2427,6 @@ button.resend_otp.disabled {
     height: 34px;
     border: none;
     outline: none;
-    border-radius: 8px;
     font-size: 12px;
     font-weight: 600;
     line-height: 24px;
@@ -2481,8 +2471,8 @@ button.resend_otp.disabled {
   }
   #cardContainer_mobile_view_ .quickActionBox .close_icon {
     position: absolute;
-    display: flex !important;
-    justify-content: right !important;
+    display: flex;
+    justify-content: right;
     top: 16px;
     right: 16px;
     cursor: pointer;
@@ -2495,9 +2485,7 @@ button.resend_otp.disabled {
     display: initial;
   }
   #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .themeRedBtn_mob_Continue {
-    width: 100%;
     padding: 12px 118px;
-    height: 40px;
     width: 100%;
     height: 40px;
   }

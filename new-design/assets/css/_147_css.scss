@@ -1,104 +1,66 @@
 /*********** Responsive CSS Start Here*************/
 @import "./breakpoint";
 @media only screen and (min-width: 767px) {
-
     /*********** Responsive dashboard View Start*************/
     .mobile_container {
         display: none;
     }
-
     .dashboardCardMobile {
         display: none;
     }
-
     .mobile_container {
         display: none;
     }
-
     /*********** Responsive dashboard View End*************/
-
     /*********** Responsive Quick-Actions-Mobile View Start*************/
-    .boldTitle_mobile {
+
+    .boldTitle_mobile_mob {
         display: none;
     }
-
-    .quick_actions_button {
-        display: none;
-    }
-
-    .themeRedBtn_mob_Continue {
-        display: none;
-    }
-
-    .close_icon {
-        display: none;
-    }
-
-
-
-
-
     /*********** Responsive Quick-Actions-Mobile View End*************/
-
 }
 
 @media only screen and (max-width: $tablet) {
     /*********** Responsive dashboard View Start*************/
-
     .container_wrapper {
-        display: none !important;
-
+        display: none;
     }
-
     .cardContainer_mobileView {
         margin-bottom: 24px;
         margin-top: 3px;
     }
-
     .dashboardDarkCard {
         .cardLabelHeading {
             &.cardLabelHeading_mob {
                 text-align: left;
                 @include custom-font(16px, 600, 24px, 0.15px);
-
             }
         }
-
         .cardLabelList_mob {
-
             ul {
                 li {
                     text-align: left;
                     @include custom-font(12px, 500, 16px, 0.25px);
-
                 }
             }
-
         }
-
         &.dashboardDarkCard_mob {
             padding: 16px 12px;
             height: auto;
-
             .newFdImage_mob {
                 @include custom-width-height(auto, 111px)
             }
         }
-
         .advertisement_mob {
             width: 100%;
-
             .themeRedBtn {
                 &.themeRedBtn_mob {
                     height: 32px;
                     @include custom-font(12px, 700, 16px, 1.25px);
-
-
                 }
             }
         }
     }
-
     .fixed_deposit_summary {
         text-align: left;
         color: $color_black;
@@ -106,23 +68,19 @@
         margin-bottom: 12px;
         margin-top: 16px;
     }
-
     .mobile_container {
         .fixed_deposit_summary {
             text-align: left;
             color: $color_black;
             @include custom-font(16px, 600, 24px, 0.15px);
-
         }
     }
-
     .cardContainerMobile {
         padding: 8px 16px;
-        background-color: $color_white !important;
+        background-color: $color_white ;
         box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
         border-radius: 5.14px;
         @include setDisplayProperty(flex, space-between, center);
-
         .custom-tooltip {
             &.custom_tooltip {
                 img {
@@ -130,12 +88,10 @@
                 }
             }
         }
-
         .first_active_data {
             position: relative;
             display: flex;
             flex-direction: column;
-
             &:after {
                 content: "";
                 @include custom-width-height(1px, 80%);
@@ -145,7 +101,6 @@
                 top: 10%;
             }
         }
-
         .first_active_data {
             &:last-child {
                 &:after {
@@ -153,32 +108,24 @@
                 }
             }
         }
-
         .active_fds {
             text-align: left;
             color: $color_light_text;
             @include custom-font(10px, 500, 14px, 0.4px);
-
             &.investment_fds {
                 white-space: nowrap;
             }
-
             .custom_tooltip {
                 .tooltip-text {
                     &.tooltip_mobile {
                         left: -235px
                     }
-
                 }
-
                 .tooltip-text::after {
                     left: 80%;
                 }
             }
-
-
         }
-
         .circle_div_mobile {
             display: flex;
             place-items: baseline;
@@ -189,135 +136,100 @@
                 text-align: left;
                 color: $color_black_light;
                 @include custom-font(14px, 600, 24px, 0.25px);
-
             }
         }
-
         .cardIcons_circle {
             @include custom-width-height(20px, 20px);
             background-color: $color_light_bg;
             border-radius: 50%;
             @include allCenter;
             margin-bottom: 5px;
-
             img {
                 @include custom-width-height(10px, 10px);
             }
         }
-
         .card_wrapper_data {
             @include setDisplayProperty(flex, space-between, center)
         }
 
     }
-
     .fixedDepositDetailsData {
         margin-top: 24px;
-
         .details_fixed_deposit {
             padding: 14px 16px;
-            background-color: $color_white !important;
+            background-color: $color_white ;
             box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
             border-radius: 5.14px;
             margin-top: 12px;
-
             .auto_renewal_details {
-
                 @include setDisplayProperty(flex, space-between, center);
-
                 .FD_num {
                     text-align: left;
                     color: $color_black_light;
                     @include custom-font(12px, 400, 16px, 0em);
-
                 }
-
                 .auto_renewal {
                     display: flex;
-
                     .auto_renewal_text {
                         text-align: left;
                         color: $color_light_text;
                         @include custom-font(12px, 500, 16px, 0.25px);
                     }
-
                     .form-check-input_mob {
                         margin-top: 0;
                     }
-
                     .form_switch_mob {
                         padding-left: 8px;
-
                     }
-
                     .form-check-input-mob::before {
                         content: "";
                     }
-
                     .form-check-input-mob::after {
                         content: "";
                     }
-
                 }
-
             }
-
             .second_details {
                 .Investment_details_content {
                     @include setDisplayProperty(flex, space-between, center);
                     margin: 12px 0 16px 0;
-
                     .img_detail {
                         display: flex;
                         gap: 4px;
                         margin-top: 4px;
-
                         img {
                             @include custom-width-height(15px, 15px);
                             vertical-align: inherit;
                         }
-
                         .NA_text {
                             text-align: left;
                             color: $color_black_light;
                             @include custom-font(14px, 400, 20px, 0.25px);
-
-
                         }
-
                         .percentage_text {
                             text-align: left;
                             color: $color_green_dark;
                             @include custom-font(14px, 700, 20px, 0em);
-
                         }
                     }
-
                     .text_content {
                         text-align: left;
                         color: $color_light_text;
                         @include custom-font(12px, 400, 16px, 0em);
-
                     }
                 }
-
             }
-
             .third_details {
                 @include setDisplayProperty(flex, space-between, center);
-
                 .circle_arrow {
                     @include custom-width-height(20px, 20px);
                     @include allCenter;
                     border-radius: 50%;
                     background-color: $color_black;
-
                     img {
-                        width: 12.5px;
-                        height: 12.5px;
+                        @include custom-width-height(12.5px, 12.5px);
                     }
                 }
-
                 .pending_details {
                     display: flex;
                     gap: 7px;
@@ -327,14 +239,12 @@
                             padding: 0.4rem;
                         }
                     }
-
                     .green_label_mob {
                         padding: 0.4rem;
                     }
                 }
             }
         }
-
         .showmorebtn_mob {
             @include setDisplayProperty(flex, center, center);
             margin-top: 12px;
@@ -342,34 +252,26 @@
             text-align: left;
             color: $color_light_blue;
             @include custom-font(12px, 500, 20px, 0.25px);
-
             a {
                 text-decoration: none;
             }
-
         }
     }
-
     .border_top_line {
         border-top: 1px solid $color_light_border;
         margin-bottom: 4px;
     }
-
     .dashboardDarkCardMobile {
         margin: 24px 0px;
-
         .cardLabelList {
             .percent_data {
                 color: $color_white;
             }
         }
-
         .img_content {
             @include custom-width-height(110px, 111px);
             object-fit: cover;
-
         }
-
         .themeRedBtn {
             &.img {
                 .img {
@@ -378,106 +280,75 @@
                 }
             }
         }
-
     }
-
     #chartContainer .canvasjs-chart-container .canvasjs-chart-canvas {
-        width: auto !important;
+        width: auto;
     }
 
     /*********** Responsive dashboard View End*************/
-
-
-
     /*********** Responsive Quick-Actions-Mobile View Start*************/
     .col_data_ {
         position: relative;
         margin-top: 0;
     }
-
     .cardContainer_mobile_screen {
         margin-top: 12px;
-
         .fdDetailsBox_mobile_screen {
             padding: 12px 16px;
-
             .fdHeader_mobile_screen {
-
                 @include setDisplayProperty(flex, left, initial, column);
-
                 .fdTenure_mobile_screen {
                     @include setDisplayProperty(flex, flex-start, center);
-
                     align-items: center;
-
                     gap: 4px;
                     width: 222px;
                     @include custom-font(12px, 400, 16px, 0);
-
                     text-align: center;
-
                     img {
                         margin-right: 0;
                     }
                 }
-
                 .boldTitle_mobile_FD {
                     display: none;
                 }
-
                 .boldTitle_mobile {
                     margin-bottom: 8px;
                     @include custom-font(16px, 600, 24px, 0.15px);
                     text-align: left;
-
-
                 }
             }
-
             .fdMainContent {
                 padding: 16px 0;
                 display: none;
-
                 .fdInvestment_mobile_screen {
                     .bigText_mob_screen {
                         @include custom-font(16px, 600, 24px, 0.15px);
                         text-align: left;
-
                     }
-
                     .lightText_mob_screen {
                         @include custom-font(12px, 400, 16px, 0);
                         text-align: left;
-
                     }
                 }
-
                 .fdInvestment_sec_mobile_view {
                     .lightText_line_text_mob_screen {
                         @include custom-font(12px, 400, 16px, 0);
                         text-align: right;
-
                     }
-
                     .darkGreenText_mob_screen {
                         @include custom-font(16px, 600, 24px, 0.15px);
                         text-align: right;
-
                     }
                 }
-
                 .fdTenure_years_text {
                     @include custom-font(12px, 500, 16px, 0.25px);
                     text-align: center;
-
                 }
             }
-
             .fdContents {
                 &.fdContents_mob_screen {
                     flex-wrap: wrap;
                 }
-
                 .fdDetails {
                     width: 50%;
                     margin-bottom: 12px;
@@ -487,59 +358,45 @@
                         text-align: left;
 
                     }
-
                     .value {
                         @include setDisplayProperty(flex, flex-start, center);
-
-
                         align-items: center;
                         @include custom-font(14px, 500, 20px, 0.25px);
                         text-align: left;
                         color: #231F20;
-
                         img {
                             @include custom-width-height(15px, 15px);
-                            vertical-align: middle !important;
+                            vertical-align: middle;
                         }
-
                     }
                 }
-
                 .fdDetails::after {
                     position: initial;
                 }
             }
 
-
         }
     }
 
     .quickActionGraph_mob_screen {
-        margin: 24px 0 !important;
+        margin: 24px 0;
     }
-
     .third_col_data {
-        margin-top: 0 !important;
-
+        margin-top: 0;
         .quickActionBanner {
-            margin-top: 0 !important;
+            margin-top: 0;
             padding: 12px 24px 12px 16px;
-
             img.newFdImage {
-
                 @include custom-width-height(95.99px, 94.9px);
                 right: -20px;
                 bottom: -14px;
-
             }
-
             .cardLabelHeading {
                 @include custom-font(16px, 600, 24px, 0.15px);
                 text-align: left;
-                margin-bottom: 0 !important;
+                margin-bottom: 0;
 
             }
-
             .cardLabelList {
                 margin: 8px 0 16px 0;
 
@@ -551,37 +408,28 @@
                     }
                 }
             }
-
             .themeRedBtn_mob {
-
                 @include custom-width-height(104.95px, 32px);
                 padding: 8px, 12px, 8px, 12px;
                 @include custom-font(12px, 700, 16px, 1.25px);
                 text-align: center;
-
             }
-
-
 
         }
     }
-
     #chartContainer {
         @include custom-font(16px, 600, 24px, 0.15px);
         text-align: left;
 
     }
-
     .quick_actions_button_div {
         margin-top: 62px;
-
         .quick_actions_button {
             background-color: $color_black;
             color: $color_white;
             @include custom-width-height(109px, 34px);
             border: none;
             outline: none;
-            border-radius: 8px;
             @include custom-font(12px, 600, 24px, 0.09px);
             @include allCenter;
             padding: 5px 12px;
@@ -596,7 +444,6 @@
         }
 
     }
-
 
     #cardContainer_mobile_view_ {
         position: fixed;
@@ -624,8 +471,8 @@
 
             .close_icon {
                 position: absolute;
-                display: flex !important;
-                justify-content: right !important;
+                display: flex;
+                justify-content: right;
                 top: 16px;
                 right: 16px;
                 cursor: pointer;
@@ -641,9 +488,7 @@
                     display: initial;
 
                     .themeRedBtn_mob_Continue {
-                        width: 100%;
                         padding: 12px 118px;
-                        height: 40px;
                         @include custom-width-height(100%, 40px);
                     }
 
@@ -652,19 +497,14 @@
                         padding: 16px 12px 16px 0px;
                         justify-content: flex-start;
                         flex-direction: row;
-
                         .quickActionLabel {
                             margin-left: 8px;
                         }
                     }
-
                     .boxRadioButton_mob:hover {
                         background-color: $color_black_light;
-
                         color: $color_white;
-
                     }
-
                     #actionButton {
                         background-color: $color_disabled_btn;
                         color: $color_white;
@@ -675,29 +515,19 @@
 
                     #actionButton.active {
                         background-color: $color_red;
-
                         cursor: pointer;
                     }
                 }
             }
         }
-
-
-
     }
-
     #cardContainer_mobile_view_.show {
         display: block;
     }
-
-
-
     /*********** Responsive Quick-Actions-Mobile View End*************/
-
 }
 
 @media only screen and (max-width: $miniMobile) {
-
     /*********** Responsive dashboard View Start*************/
     .cardContainerMobile {
         .first_active_data::after {
