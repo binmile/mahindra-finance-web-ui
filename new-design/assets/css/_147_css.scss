@@ -122,6 +122,7 @@
         box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05), 0px 10px 15px 0px rgba($color_black, 0.05);
         border-radius: 5.14px;
         @include setDisplayProperty(flex, space-between, center);
+
         .custom-tooltip {
             &.custom_tooltip {
                 img {
@@ -134,7 +135,8 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            &:after{
+
+            &:after {
                 content: "";
                 @include custom-width-height(1px, 80%);
                 background: $color_border;
@@ -143,9 +145,10 @@
                 top: 10%;
             }
         }
-            .first_active_data {
-                &:last-child {
-                &:after{
+
+        .first_active_data {
+            &:last-child {
+                &:after {
                     display: none;
                 }
             }
@@ -399,14 +402,14 @@
             padding: 12px 16px;
 
             .fdHeader_mobile_screen {
-               
+
                 @include setDisplayProperty(flex, left, initial, column);
 
                 .fdTenure_mobile_screen {
                     @include setDisplayProperty(flex, flex-start, center);
 
                     align-items: center;
-                   
+
                     gap: 4px;
                     width: 222px;
                     @include custom-font(12px, 400, 16px, 0);
@@ -488,7 +491,7 @@
                     .value {
                         @include setDisplayProperty(flex, flex-start, center);
 
-                      
+
                         align-items: center;
                         @include custom-font(14px, 500, 20px, 0.25px);
                         text-align: left;
@@ -600,7 +603,7 @@
         bottom: 0;
         width: 100%;
         left: 0;
-        box-shadow: 0px 1px 2px 0px $color_black_semi_dark;
+        box-shadow: 0px 1px 2px 0px rgba($color_black_semi_dark, 0.06), 0px 1px 3px 0px rgba($color_black, 0.01);
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 0px;
@@ -636,6 +639,7 @@
             .quickActionTabs {
                 &.quickActionTabs_mob_screen {
                     display: initial;
+
                     .themeRedBtn_mob_Continue {
                         width: 100%;
                         padding: 12px 118px;
