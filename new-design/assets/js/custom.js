@@ -67,7 +67,6 @@ function updateKycModal(id) {
         }
     });
 }
-
 /*****************radio button BMT-265 ******************/
 function radioButtonAction(id,element) {
     var checkbox = document.getElementById(id);
@@ -84,8 +83,6 @@ function radioButtonAction(id,element) {
     radioButton2.style.border ="1px solid white";
 }
 
-
-
 /*****************body toggle BMT-147 ******************/
  function toggle_data_dashboard(onclickId,elementId) {
     let checkbox = document.getElementById(onclickId);
@@ -95,45 +92,7 @@ function radioButtonAction(id,element) {
         autoRenewalText.style.color = checkbox.checked ? "#17823E" : "#6B7280";
     });
 }
-toggle_data_dashboard('C2032231F_', 'auto_renewal_text_');
-toggle_data_dashboard('toggle_value_data', 'toggle_value');
-toggle_data_dashboard('toggle_content_values', 'toggle_content');
-toggle_data_dashboard('toggle_values', 'toggle_data_content');
-
-/*****************body  toggle BMT-147 End ******************/
-
-
-/*****************quick-actions BMT-147 ******************/
-function toggleButton(activate) {
-    var button = document.getElementById('actionButton');
-
-    if (activate) {
-        button.classList.add('active');
-        button.removeAttribute('disabled');
-    } else {
-        button.classList.remove('active');
-        button.setAttribute('disabled', 'disabled');
-    }
-}
-
-
-function toggleWrapper() {
-    var wrapper = document.getElementById('cardContainer_mobile_view_');
-    wrapper.classList.toggle('show');
-}
-
-document.addEventListener('click', function (event) {
-    var wrapper = document.getElementById('cardContainer_mobile_view_');
-    if (!wrapper.contains(event.target) && !document.getElementById('quick_actions_button_').contains(event.target)) {
-        wrapper.classList.remove('show');
-    }
-});
-function toggleClose() {
-    var wrapper = document.getElementById('cardContainer_mobile_view_');
-    wrapper.classList.remove('show');
-}
-
-/*****************quick-actions BMT-147 ******************/
+/*****************body End ******************/
 
 
 /*****************Dashboard Toggle Switch Button Modal End***************/
@@ -166,7 +125,7 @@ function handleClickRadio(ele1, ele2) {
 
 /*************************OTP Modal Start******************************/
 
-function handleClickOTP() {
+function handleClickOTP(){
     var myModal = new bootstrap.Modal(document.getElementById("myOTPModal"));
     myModal.show();
 }
@@ -209,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function startTimer(duration, display) {
         let timer = duration;
         let minutes, seconds;
-        let interval = setInterval(function () {
+        let interval = setInterval(function() {
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
             minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -227,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
         resultElement.classList.remove("disabled");
         resultElement.disabled = false;
     }
-    resultElement.addEventListener("click", function () {
+    resultElement.addEventListener("click", function() {
         resultElement.classList.add("disabled");
         resultElement.disabled = true;
         startTimer(59, timerElement);
@@ -247,3 +206,36 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   }
+
+
+  /*****************quick-actions BMT-147 ******************/
+function toggleButton(activate) {
+    var button = document.getElementById('actionButton');
+
+    if (activate) {
+        button.classList.add('active');
+        button.removeAttribute('disabled');
+    } else {
+        button.classList.remove('active');
+        button.setAttribute('disabled', 'disabled');
+    }
+}
+
+
+function toggleWrapper() {
+    var wrapper = document.getElementById('cardContainer_mobile_view_');
+    wrapper.classList.toggle('show');
+}
+
+document.addEventListener('click', function (event) {
+    var wrapper = document.getElementById('cardContainer_mobile_view_');
+    if (!wrapper.contains(event.target) && !document.getElementById('quick_actions_button_').contains(event.target)) {
+        wrapper.classList.remove('show');
+    }
+});
+function toggleClose() {
+    var wrapper = document.getElementById('cardContainer_mobile_view_');
+    wrapper.classList.remove('show');
+}
+
+/*****************quick-actions BMT-147 ******************/

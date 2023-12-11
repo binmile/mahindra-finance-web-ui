@@ -1745,7 +1745,7 @@ button.resend_otp.disabled {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.150000006px;
+    letter-spacing: 0.15px;
   }
   .dashboardDarkCard .cardLabelList_mob ul li {
     text-align: left;
@@ -1778,7 +1778,7 @@ button.resend_otp.disabled {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.150000006px;
+    letter-spacing: 0.15px;
     margin-bottom: 12px;
     margin-top: 16px;
   }
@@ -1788,7 +1788,7 @@ button.resend_otp.disabled {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.150000006px;
+    letter-spacing: 0.15px;
   }
   .cardContainerMobile {
     padding: 8px 16px;
@@ -1798,6 +1798,7 @@ button.resend_otp.disabled {
     display: flex;
     justify-content: space-between;
     place-items: center;
+    flex-direction: row;
   }
   .cardContainerMobile .custom-tooltip.custom_tooltip img {
     vertical-align: text-bottom;
@@ -1825,7 +1826,7 @@ button.resend_otp.disabled {
     font-size: 10px;
     font-weight: 500;
     line-height: 14px;
-    letter-spacing: 0.400000006px;
+    letter-spacing: 0.4px;
   }
   .cardContainerMobile .active_fds.investment_fds {
     white-space: nowrap;
@@ -2040,21 +2041,23 @@ button.resend_otp.disabled {
     padding: 12px 16px;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen {
-    flex-direction: column;
-    place-items: initial;
+    display: flex;
     justify-content: left;
+    place-items: initial;
+    flex-direction: column;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .fdTenure_mobile_screen {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     place-items: center;
+    flex-direction: row;
+    align-items: center;
     gap: 4px;
     width: 222px;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .fdTenure_mobile_screen img {
@@ -2086,14 +2089,14 @@ button.resend_otp.disabled {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_sec_mobile_view .lightText_line_text_mob_screen {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: right;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_sec_mobile_view .darkGreenText_mob_screen {
@@ -2125,8 +2128,10 @@ button.resend_otp.disabled {
     text-align: left;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails .value {
+    display: flex;
     justify-content: flex-start;
     place-items: center;
+    flex-direction: row;
     align-items: center;
     font-size: 14px;
     font-weight: 500;
@@ -2208,18 +2213,13 @@ button.resend_otp.disabled {
     font-size: 12px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: normal;
+    letter-spacing: 0.09px;
     display: flex;
     justify-content: center;
     place-items: center;
     padding: 5px 12px;
     border-radius: 20px;
     gap: 10px;
-    font-family: Georama;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.09px;
     text-align: left;
     position: fixed;
     bottom: 24px;
@@ -2245,11 +2245,11 @@ button.resend_otp.disabled {
     padding: 20px 16px;
   }
   #cardContainer_mobile_view_ .quickActionBox .boldTitle {
-    margin-bottom: 16px;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.15px;
+    margin-bottom: 16px;
     text-align: center;
   }
   #cardContainer_mobile_view_ .quickActionBox .close_icon {
@@ -2270,6 +2270,8 @@ button.resend_otp.disabled {
   #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .themeRedBtn_mob_Continue {
     width: 100%;
     padding: 12px 118px;
+    height: 40px;
+    width: 100%;
     height: 40px;
   }
   #cardContainer_mobile_view_ .quickActionBox .quickActionTabs.quickActionTabs_mob_screen .boxRadioButton_mob {
@@ -2306,9 +2308,7 @@ button.resend_otp.disabled {
   .cardContainerMobile .first_active_data::after {
     right: -13px;
   }
-<<<<<<< HEAD
   /*********** Responsive dashboard View End*************/
-=======
 }
 @media screen and (min-width: 768px) and (max-width: 1366px) {
   body {
@@ -2330,5 +2330,4 @@ button.resend_otp.disabled {
   .mobChangeWidth .customChangeWidth {
     min-width: 85%;
   }
->>>>>>> c4161cf823a435077ed00a5ef4dfd21cb4cbca0c
 }/*# sourceMappingURL=styles.css.map */
