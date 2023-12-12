@@ -129,8 +129,8 @@ function handleClickRadio(ele1, ele2) {
 
 /*************************OTP Modal Start******************************/
 
-function handleClickOTP(){
-    var myModal = new bootstrap.Modal(document.getElementById("myOTPModal"));
+function handleClickModal(modalId){
+    var myModal = new bootstrap.Modal(document.getElementById(modalId));
     myModal.show();
 }
 
