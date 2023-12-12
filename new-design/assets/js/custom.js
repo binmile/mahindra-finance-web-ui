@@ -71,7 +71,28 @@ function updateKycModal(id) {
         }
     });
 }
-/*****************radio button BMT-265 ******************/
+
+/*****************Dashboard repayment-bank Modal Start***************/
+function repaymentSubmitModal() {
+    var myModal = new bootstrap.Modal(document.getElementById("myModal"));
+    myModal.show();
+}
+/*****************Dashboard repayment-bank Modal end***************/
+
+function repaymentContinueButtonEnable() {
+    var account_number = document.getElementById("account_number").value;
+    var re_enter_account_number = document.getElementById("re_enter_account_number").value;
+    var ifsc_code = document.getElementById("ifsc_code").value;
+    var element = document.getElementById("continueButton");
+    if (account_number !== '' &&  ifsc_code !== '' && re_enter_account_number !== '') {
+        element.disabled = false
+    } else {
+        element.disabled = true
+    }
+
+}
+
+/*****************radio button BMT-265 start******************/
 function radioButtonAction(id,element) {
     var checkbox = document.getElementById(id);
     var radioButton = document.getElementById(element);
@@ -86,6 +107,7 @@ function radioButtonAction(id,element) {
     radioButton3.style.border ="1px solid white";
     radioButton2.style.border ="1px solid white";
 }
+/*****************radio button BMT-265 end******************/
 
 /*****************body toggle BMT-147 ******************/
  function toggle_data_dashboard(onclickId,elementId) {

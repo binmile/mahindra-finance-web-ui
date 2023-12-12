@@ -156,9 +156,11 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <div class="textparent">
                                         <label for="account_number" class="form-label formLabel">Account number</label>
-                                        <input type="password" class="form-control formControl  " id="account_number" maxlength="20">
+                                        <input type="password" class="form-control formControl  " id="account_number"
+                                            maxlength="20" onchange="repaymentContinueButtonEnable()">
                                         <div class="textfildicons">
-                                            <img src="./assets/img/icons/bank.svg" alt="icons" class="icons" />
+                                            <img src="./assets/img/icons/bank.svg" alt="icons"
+                                                class="repayment-icons" />
                                         </div>
                                         <div class="infoText">Account must be under primary holder’s name</div>
                                     </div>
@@ -168,18 +170,23 @@
                                         <label for="re_enter_account_number" class="form-label formLabel">Re-enter
                                             account number
                                             number</label>
-                                        <input type="text" class="form-control  formControl" id="re_enter_account_number" maxlength="20">
+                                        <input type="text" class="form-control  formControl"
+                                            id="re_enter_account_number" maxlength="20"
+                                            onchange="repaymentContinueButtonEnable()">
                                         <div class="textfildicons">
-                                            <img src="./assets/img/icons/bank.svg" alt="icons" class="icons" />
+                                            <img src="./assets/img/icons/bank.svg" alt="icons"
+                                                class="repayment-icons" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <div class="textparent">
                                         <label for="ifsc_code" class="form-label formLabel">IFSC code</label>
-                                        <input type="text" class="form-control  formControl  " id="ifsc_code" maxlength="20">
+                                        <input type="text" class="form-control  formControl  " id="ifsc_code"
+                                            maxlength="20" onchange="repaymentContinueButtonEnable()">
                                         <div class="textfildicons">
-                                            <img src="./assets/img/icons/file-minus.svg" alt="icons" class="icons" />
+                                            <img src="./assets/img/icons/file-minus.svg" alt="icons"
+                                                class="repayment-icons" />
                                         </div>
                                     </div>
                                 </div>
@@ -193,11 +200,62 @@
             </div>
             <div class="col col-md-12">
                 <div class="buttonContainer" id="repayment-buttonContainer">
-                    <button class="btn themeRedBtn" disabled> Submit
+                    <button class="btn themeRedBtn" id="continueButton" disabled onclick="repaymentSubmitModal()">
+                        Submit
                         <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
                 </div>
             </div>
         </div>
+        <!-- Confrmation Modal Start -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+                        </button>
+                        <div class="info-heading-container">
+                            <div class="info-heading-image"><img src="./assets/img/icons/info-button-icon.svg"
+                                    alt="icon" /></div>
+                            <div class="info-heading">Are you sure ?</div>
+                        </div>
+                        <div class="info-content">Please confirm that you want to proceed with the OTP verification
+                        </div>
+                        <div class="info-button-container">
+                            <div class="info-button"><button type="button" class="themeRedBtn"
+                                    id="themeWhiteButton">No</button></div>
+                            <div class="info-button"><button type="button" class="themeRedBtn">Yes</button></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--confirmation Modal End-->
+        <!-- verfication Modal Start -->
+        <!-- <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+                        </button>
+                        <div class="info-heading-container">
+                            <div class="info-heading-image"><img src="./assets/img/icons/info-button-icon.svg"
+                                    alt="icon" /></div>
+                            <div class="info-heading">Bank verification failure</div>
+                        </div>
+                        <div class="info-content">Uh oh, we are unable verify your bank account details, 
+                            please provide new bank details to proceed with the process. </div>
+                        <div class="info-button-container">
+                            <div class="info-button"><button type="button" class="themeRedBtn">Ok</button></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--verfication Modal End-->
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
