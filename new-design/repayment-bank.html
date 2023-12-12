@@ -200,7 +200,7 @@
             </div>
             <div class="col col-md-12">
                 <div class="buttonContainer" id="repayment-buttonContainer">
-                    <button class="btn themeRedBtn" id="continueButton" disabled onclick="repaymentSubmitModal()">
+                    <button class="btn themeRedBtn" id="continueButton" disabled onclick="openVerificationModal('myModal')">
                         Submit
                         <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
                 </div>
@@ -223,7 +223,7 @@
                         </div>
                         <div class="info-button-container">
                             <div class="info-button"><button type="button" class="themeRedBtn"
-                                    id="themeWhiteButton">No</button></div>
+                                    id="themeWhiteButton" class="btn-close" data-bs-dismiss="modal" aria-label="Close" >No</button></div>
                             <div class="info-button"><button type="button" class="themeRedBtn">Yes</button></div>
                         </div>
 
