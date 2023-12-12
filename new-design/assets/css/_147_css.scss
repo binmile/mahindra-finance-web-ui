@@ -7,118 +7,29 @@
     }
 
     /*********** Responsive Quick-Actions-Mobile View End*************/
-
-    /*----------post-closure-dashboard-UI start-------------------------*/
-    .cardContainer_leftside {
-        border-radius: 8px;
-        background: $color_light_bg;
-        margin-bottom: 32px;
-        box-shadow: none;
-
-        .fdDetailsBox {
-            padding: 24px 32px 28px 32px;
-
-            .fdMainContent {
-                &.fdMainContent_post_closure {
-                    border-bottom: 1px solid $color_light_border;
-                }
-
-                .darkRedText {
-                    color: $color_red_error;
+    .accountContainer {
+        .accountBox {
+            .fdContents {
+                &.fdContents_post_closure_ {
+                    min-height: auto;
                 }
             }
         }
-
-        .fdContents {
-            .fdDetails::after {
-                right: -37px;
-                background-color: $color_light_border;
-                height: 52px;
-                top: 0
-            }
-
-            &.fdContents_post_closure {
-                margin-bottom: 24px;
-            }
-        }
-
-        .post_closure_text_data {
-            @include custom-font(14px, 400, 24px, 0.25px);
-            text-align: left;
-            color: $color_light_text;
-        }
-
-        .border_bottom_post_closure {
-            border-top: 1px solid $color_light_border;
-            margin-top: 28px;
-            color: $color_black_light;
-
-            .list_Disclaimer {
-                margin-top: 28px;
-                @include custom-font(20px, 600, 24px, 0.15px);
-
-                ul {
-                    text-align: left;
-                    padding-left: 1rem;
-                    margin-top: 12px;
-                    list-style: square;
-
-                    li {
-                        @include custom-font(16px, 500, 24px, 0);
-                        margin-bottom: 12px;
-                    }
-                }
-            }
-
-        }
-    }
-    .cardContainer_rightside {
-        box-shadow: none;
-        border: none;
-        border-radius: 0;
-        .quickActionBox {
-            .boldTitle {
+        .accountDetailsBox{
+            .boldTitle{
                 margin-bottom: 8px;
             }
-            .loan_content {
+            .loan_content{
                 @include custom-font(14px, 400, 24px, 0.25px);
                 color: $color_light_text;
             }
-            .right_side_data {
-                .fixed_deposit_wrapper {
-                    background-color: $color_light_gray;
-                    border-radius: 8px;
-                    padding-top: 8px;
-                    padding-bottom: 8px;
-                    padding-right: 23px;
-                    padding-left: 24px;
-                    margin-top: 16px;
-                    .fdContents {
-                        margin-top: 0;
-                        .value {
-                            img {
-                                margin-right: 8px;
-                            }
-                        }
+            .right_side_data{
+                .fdDetails {
+                    &.fdDetails_mob_post_sec::after {
+                        right: -16px;
                     }
                 }
-                .fdContents {
-                    .fdDetails {
-                        .value {
-                            img {
-                                margin-right: 8px;
-                            }
-                        }
-                    }
-                    .fdDetails::after {
-                        right: -12px;
-                    }
-                }
-                .border_bottom_post_closure {
-                    margin-top: 24px;
-                    border-bottom: 1px solid $color_light_border;
-                }
-                .ruppe_container {
+                .ruppe_container{
                     display: flex;
                     gap: 23px;
                     align-items: center;
@@ -136,20 +47,104 @@
                             }
                         }
                     }
-                    .rupee_content {
+                    .rupee_content{
                         @include custom-font(20px, 700, 24px, 0);
-                        .loan_amount {
+                        .loan_amount{
                             @include custom-font(16px, 400, 24px, 0.5px);
                         }
                     }
                 }
+                .fixed_deposit_wrapper{
+                    background-color: $color_light_gray;
+                    border-radius: 8px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-right: 23px;
+                    padding-left: 24px;
+                    margin-top: 16px;
+                    .fdContents {
+                        margin-top: 0;
 
+                        .value {
+                            img {
+                                margin-right: 8px;
+                            }
+                        }
+
+                        .fdDetails {
+                            &.fdDetails_mob_post::after {
+                                right: -22px;
+                            }
+                        }
+                        
+                    }
+                        background-color: $color_light_gray;
+                        border-radius: 8px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        padding-right: 23px;
+                        padding-left: 24px;
+                        margin-top: 16px;
+                    
+                }
             }
-
         }
     }
 
-    // }
+    .fdMainContent {
+        &.fdMainContent_post_closure {
+            border-bottom: 1px solid $color_light_border;
+        }
+
+        .darkRedText {
+            color: $color_red_error;
+        }
+    }
+
+    .fdContents {
+        .fdDetails::after {
+            right: -20px;
+            background-color: $color_light_border;
+            height: 52px;
+            top: 0
+        }
+
+        &.fdContents_post_closure_ {
+            margin-bottom: 24px;
+        }
+    }
+
+    .post_closure_text_data {
+        @include custom-font(14px, 400, 24px, 0.25px);
+        text-align: left;
+        color: $color_light_text;
+    }
+
+    .border_bottom_post_closure {
+        border-top: 1px solid $color_light_border;
+        margin-top: 28px;
+        color: $color_black_light;
+
+        .list_Disclaimer {
+            margin-top: 28px;
+            @include custom-font(20px, 600, 24px, 0.15px);
+            ul {
+                text-align: left;
+                padding-left: 1rem;
+                margin-top: 12px;
+                list-style: square;
+                margin-bottom: 0;
+                li {
+                    @include custom-font(16px, 500, 24px, 0);
+
+                    &.Disclaimer_first {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+
+    }
     /*----------post-closure-dashboard-UI-  end------------------------*/
 }
 
@@ -560,8 +555,7 @@
                         align-items: center;
                         @include custom-font(14px, 500, 20px, 0.25px);
                         text-align: left;
-                        color: $color_light_bg;
-
+                        color: $color_black_light;
                         img {
                             @include custom-width-height(15px, 15px);
                             vertical-align: middle;
@@ -727,6 +721,7 @@
     .cardContainer_leftside {
         background-color: $color_light_bg;
         box-shadow: none;
+
         .fdDetailsBox {
             .fdMainContent {
                 .fdInvestment {
@@ -736,14 +731,19 @@
                         line-height: 24px;
                         letter-spacing: 0.15px;
 
+                        &.darkRedText {
+                            color: #DC2626;
+                        }
                     }
                 }
-                img{
+
+                img {
                     width: 100%;
                 }
             }
         }
     }
+
     .no_mobile_view {
         display: none;
     }
