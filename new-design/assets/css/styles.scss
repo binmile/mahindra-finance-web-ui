@@ -21,7 +21,7 @@ a {
     background: $color_white;
 }
 ::-webkit-scrollbar-thumb {
-    background: #F5F5F5;
+    background: $color_light_border;
 }
 body {
   min-height: 100vh;
@@ -89,6 +89,9 @@ body {
 .pd-32 {
   padding: 32px;
 }
+.pt-12 {
+    padding-top: 12px;
+  }
 .pb-20{
     padding-bottom: 20px;
 }
@@ -98,6 +101,9 @@ body {
 
 .strongText {
   font-weight: 600;
+}
+.text-left{
+    text-align: left !important;
 }
 /*********Header Start****************/
 nav {
@@ -1126,6 +1132,31 @@ button.resend_otp.disabled {
     }
 }
 /*********Pagination End**********************/
+
+/********************Terms and Condition Modal Start************/
+
+    .termsContent{
+        height: fit-content;
+        max-height: calc(100vh - 270px);
+        overflow: auto;
+        text-align: left !important;
+        .termsSmallHeading{
+            @include custom-font(16px, 700, 20px, 0.4px);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+    }
+
+    .top-border-shadow{
+        box-shadow: 0px -6px 15px 0px rgba($color_black, 0.06);
+    }
+
+    .modal ::-webkit-scrollbar{
+        width: 6px !important;
+    }
+
+/********************Terms and Condition Modal End************/
+
 @import "./265_css";
 @import "./147_css";
 

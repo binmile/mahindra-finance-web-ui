@@ -275,7 +275,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #F5F5F5;
+  background: #D6D6D6;
 }
 
 body {
@@ -351,6 +351,10 @@ body {
   padding: 32px;
 }
 
+.pt-12 {
+  padding-top: 12px;
+}
+
 .pb-20 {
   padding-bottom: 20px;
 }
@@ -361,6 +365,10 @@ body {
 
 .strongText {
   font-weight: 600;
+}
+
+.text-left {
+  text-align: left !important;
 }
 
 /*********Header Start****************/
@@ -1695,6 +1703,32 @@ button.resend_otp.disabled {
 }
 
 /*********Pagination End**********************/
+/********************Terms and Condition Modal Start************/
+.termsContent {
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: calc(100vh - 270px);
+  overflow: auto;
+  text-align: left !important;
+}
+.termsContent .termsSmallHeading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.top-border-shadow {
+  box-shadow: 0px -6px 15px 0px rgba(0, 0, 0, 0.06);
+}
+
+.modal ::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+/********************Terms and Condition Modal End************/
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
