@@ -43,7 +43,7 @@
                         width: 100%;
                      }
                     }
-            } 
+            }
             }
         }
       }
@@ -52,6 +52,12 @@
         transform: translate(0, 0px) !important;
       }
       /************Modal End************/
+      .mt-20{
+        margin-top: 12px;
+      }
+      .row{
+        flex-direction: column;
+      }
     .mobChangeWidth {
         margin-top: 20px;
         display: flex;
@@ -62,5 +68,96 @@
         .customChangeWidth {
             min-width: 85%;
         }
+    }
+
+    .accountContainer {
+        padding: 12px 16px;
+        .accountBox {
+            padding: 12px 16px;
+            .heading{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .fdContents {
+                min-height: unset;
+                margin: 16px 0px 10px 0px;
+                flex-wrap: wrap;
+                .fdDetails {
+                    width: 50%;
+                    margin-bottom: 12px;
+                    .label {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                    .value {
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                        .roundBackgroundIcon {
+                            width: 20px;
+                            height: 20px;
+                            img{
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mob-text-right{
+        text-align: right;
+    }
+
+    .bottomLightText {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .accountDetailsBox {
+        padding: 24px 0px 16px 0px;
+        .accountListContainer {
+            min-height: auto;
+            .accountList {
+                padding: 16px 0px;
+                .accountHolderDetails{
+                    padding-bottom: 0px;
+                    .accountDetails{
+                        .accountMobile {
+                            font-size: 14px;
+                            img {
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    } 
+                } 
+            }
+        }
+    }
+    .customBtn {
+        height: 32px;
+        font-size: 12px;
+        padding: 0 15px;
+    }
+
+    .fdMainContent{
+        place-items: flex-start;
+        padding: 18px 0px;
+        .fdInvestment{
+             .bigText{
+                @include custom-font(16px, 600, 24px, 0.15px);
+             }
+        }
+        .fdTenure{
+            img{
+                max-width: 52px;
+            }
+        }
+        .fdInvestment{
+             .lightText{
+                margin-top: 4px;
+             }
+            }
     }
 }
