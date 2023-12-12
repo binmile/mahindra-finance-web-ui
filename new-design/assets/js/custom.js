@@ -72,11 +72,6 @@ function updateKycModal(id) {
     });
 }
 
-/*****************Dashboard repayment-bank Modal Start***************/
-function openConfirmationModal(onclickId) {
-    var myModal = new bootstrap.Modal(document.getElementById(onclickId));
-    myModal.show();
-}
 /*****************Dashboard repayment-bank Modal end***************/
 
 function repaymentContinueButtonEnable() {
