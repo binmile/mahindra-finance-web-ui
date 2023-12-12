@@ -1815,6 +1815,80 @@ button.resend_otp.disabled {
   width: fit-content;
 }
 
+.accountHolderDetails {
+  padding-bottom: 12px;
+  place-items: center !important;
+}
+.accountHolderDetails .accountDetails .bankName {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+}
+.accountHolderDetails .bankLocation {
+  color: #6B7280;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background-color: #F3F4F6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.bankDetailsIcon {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  padding-right: 2px;
+}
+
+#sucessToastMessage {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  visibility: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: -15.5%;
+  background-color: #22C55E;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 24px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 75px;
+}
+
+#sucessToastMessage.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 75px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    top: 75px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
 /*********** Responsive CSS Start Here*************/
 @media screen and (min-width: 767px) {
   .mob-wrapper {
