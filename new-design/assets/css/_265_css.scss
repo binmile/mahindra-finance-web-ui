@@ -61,6 +61,77 @@
 // repayment-bank-css-end
 
 
+// Active toast-css-start
+.accountHolderDetails {
+  padding-bottom: 12px;
+  place-items: center !important;
+  .accountDetails {
+    
+    .bankName {
+      @include custom-font(34px, 600, 40px, 0.25px);
+    }
+  }
+  .bankLocation {
+    color: $color_light_text;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: $color_light_bg;
+    @include custom-font(14px, 400, 24px, 0.25px);
+  }
+
+}
+
+.bankDetailsIcon {
+  @include allCenter;
+  padding-right: 2px;
+}
+
+#sucessToastMessage {
+   @include custom-font(20px, 600, 24px, 0.15px);
+  visibility: hidden;
+  width: fit-content;
+  margin-left: -15.5%;
+  background-color: $color_green;
+  color: $color_white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 24px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 75px;
+}
+
+#sucessToastMessage.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;} 
+  to {top: 75px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 75px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 75px; opacity: 1;} 
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 75px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+
+// Active toast-css-end
+
 /*********** Responsive CSS Start Here*************/
 
 @media screen and (min-width: 767px) {

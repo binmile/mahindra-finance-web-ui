@@ -86,7 +86,17 @@ function radioButtonAction(id,element) {
     radioButton3.style.border ="1px solid white";
     radioButton2.style.border ="1px solid white";
 }
-
+/*****************terms and condition checkbbox BMT-265 ******************/
+function checkboxTandC(){
+    var element = document.getElementById("continueButton");
+    element.disabled = false
+}
+/*****************open sucess toast BMT-265 ******************/
+function openSucessToast(){
+   var element = document.getElementById("sucessToastMessage");
+   element.className = "show";
+   setTimeout(function(){ element.className = element.className.replace("show", ""); }, 3000);
+}
 /*****************body toggle BMT-147 ******************/
  function toggle_data_dashboard(onclickId,elementId) {
     let checkbox = document.getElementById(onclickId);
