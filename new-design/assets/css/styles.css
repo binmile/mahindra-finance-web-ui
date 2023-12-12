@@ -2536,6 +2536,48 @@ button.resend_otp.disabled {
   }
 }
 @media only screen and (max-width: 768px) {
+  /************Modal Start************/
+  .modal {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06), 0px 2px 6px 0px rgba(0, 0, 0, 0.06);
+    padding: 0px;
+    border-radius: 8px 8px 0 0;
+    z-index: 9999;
+    width: 100%;
+    transition: all ease-in-out 600ms;
+    transform: translate(0, 600px);
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .modal .modal-dialog {
+    margin: 0px;
+  }
+  .modal .modal-dialog .modal-content {
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  .modal .modal-dialog .modal-content .modal-body {
+    padding: 24px 16px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container {
+    margin-top: 4px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .info-button button {
+    width: 100%;
+  }
+  .modal.show {
+    transform: translate(0, 0px) !important;
+  }
+  /************Modal End************/
   .mobChangeWidth {
     margin-top: 20px;
     display: flex;
