@@ -560,7 +560,7 @@
                         align-items: center;
                         @include custom-font(14px, 500, 20px, 0.25px);
                         text-align: left;
-                        color: #231F20;
+                        color: $color_light_bg;
 
                         img {
                             @include custom-width-height(15px, 15px);
@@ -725,7 +725,7 @@
     /******Responsive post-closure-Mobile-view start*******************/
 
     .cardContainer_leftside {
-        background-color: #F3F4F6;
+        background-color: $color_light_bg;
         box-shadow: none;
         .fdDetailsBox {
             .fdMainContent {
