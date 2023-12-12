@@ -2617,6 +2617,24 @@ button.resend_otp.disabled {
     display: block;
   }
   /*********** Responsive Quick-Actions-Mobile View End*************/
+  /******Responsive post-closure-Mobile-view start*******************/
+  .cardContainer_leftside {
+    background-color: #F3F4F6;
+    box-shadow: none;
+  }
+  .cardContainer_leftside .fdDetailsBox .fdMainContent .fdInvestment .bigText {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .cardContainer_leftside .fdDetailsBox .fdMainContent img {
+    width: 100%;
+  }
+  .no_mobile_view {
+    display: none;
+  }
+  /******Responsive post-closure-Mobile-view end*******************/
 }
 @media only screen and (max-width: 420px) {
   /*********** Responsive dashboard View Start*************/
