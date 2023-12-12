@@ -1737,6 +1737,19 @@ button.resend_otp.disabled {
   margin: 16px 0 20px 0;
 }
 
+.info-button-container {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 20px;
+}
+
+#themeWhiteButton {
+  border: 1px solid #E31837;
+  color: #E31837;
+  background-color: #FFFFFF;
+}
+
 .bankDetailsMainContainer {
   padding: 24px 32px;
   background-color: #FFFFFF !important;
@@ -1762,6 +1775,11 @@ button.resend_otp.disabled {
   text-align: left;
   margin: 24px 0 5px 0;
 }
+.bankDetailsMainContainer .textparent .errorMessage {
+  display: none;
+  color: red;
+  font-size: 14px;
+}
 .bankDetailsMainContainer .textparent .infoText {
   font-size: 14px;
   font-weight: 500;
@@ -1779,7 +1797,7 @@ button.resend_otp.disabled {
   right: 16px;
   top: 62.5px;
 }
-.bankDetailsMainContainer .textparent .textfildicons .icons {
+.bankDetailsMainContainer .textparent .textfildicons .repayment-icons {
   width: 24px;
   height: 24px;
 }
