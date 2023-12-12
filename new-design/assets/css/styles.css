@@ -1937,6 +1937,138 @@ button.resend_otp.disabled {
     display: none;
   }
   /*********** Responsive Quick-Actions-Mobile View End*************/
+  /*----------post-closure-dashboard-UI start-------------------------*/
+  .cardContainer_leftside {
+    border-radius: 8px;
+    background: #F3F4F6;
+    margin-bottom: 32px;
+    box-shadow: none;
+  }
+  .cardContainer_leftside .fdDetailsBox {
+    padding: 24px 32px 28px 32px;
+  }
+  .cardContainer_leftside .fdDetailsBox .fdMainContent.fdMainContent_post_closure {
+    border-bottom: 1px solid #D6D6D6;
+  }
+  .cardContainer_leftside .fdDetailsBox .fdMainContent .darkRedText {
+    color: #DC2626;
+  }
+  .cardContainer_leftside .fdContents .fdDetails::after {
+    right: -37px;
+    background-color: #D6D6D6;
+    height: 52px;
+    top: 0;
+  }
+  .cardContainer_leftside .fdContents.fdContents_post_closure {
+    margin-bottom: 24px;
+  }
+  .cardContainer_leftside .post_closure_text_data {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #6B7280;
+  }
+  .cardContainer_leftside .border_bottom_post_closure {
+    border-top: 1px solid #D6D6D6;
+    margin-top: 28px;
+    color: #231F20;
+  }
+  .cardContainer_leftside .border_bottom_post_closure .list_Disclaimer {
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .cardContainer_leftside .border_bottom_post_closure .list_Disclaimer ul {
+    text-align: left;
+    padding-left: 1rem;
+    margin-top: 12px;
+    list-style: square;
+  }
+  .cardContainer_leftside .border_bottom_post_closure .list_Disclaimer ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 12px;
+  }
+  .cardContainer_rightside {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+  .cardContainer_rightside .quickActionBox .boldTitle {
+    margin-bottom: 8px;
+  }
+  .cardContainer_rightside .quickActionBox .loan_content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #6B7280;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .fixed_deposit_wrapper {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 23px;
+    padding-left: 24px;
+    margin-top: 16px;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .fixed_deposit_wrapper .fdContents {
+    margin-top: 0;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .fixed_deposit_wrapper .fdContents .value img {
+    margin-right: 8px;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .fdContents .fdDetails .value img {
+    margin-right: 8px;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .fdContents .fdDetails::after {
+    right: -12px;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .border_bottom_post_closure {
+    margin-top: 24px;
+    border-bottom: 1px solid #D6D6D6;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .ruppe_container {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    place-items: center;
+    margin-top: 24px;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure {
+    width: 50px;
+    height: 50px;
+    background-color: #F3F4F6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 5px;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure img {
+    width: 28px;
+    height: 28px;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .ruppe_container .rupee_content {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .cardContainer_rightside .quickActionBox .right_side_data .ruppe_container .rupee_content .loan_amount {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  /*----------post-closure-dashboard-UI-  end------------------------*/
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
