@@ -3005,7 +3005,7 @@ button.resend_otp.disabled {
     width: 100%;
   }
   .mobChangeWidth .customChangeWidth {
-    min-width: 85%;
+    min-width: 87%;
   }
   .accountContainer {
     padding: 12px 16px;
@@ -3214,6 +3214,9 @@ button.resend_otp.disabled {
     height: 32px;
     font-size: 12px;
     letter-spacing: 1.25px;
+  }
+  .customChangeWidth {
+    margin-right: 16px;
   }
 }
 .verifyBtn {
