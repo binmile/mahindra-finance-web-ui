@@ -2810,6 +2810,14 @@ button.resend_otp.disabled {
     line-height: 24px;
     letter-spacing: 0.15px;
   }
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image {
+    max-width: 28px;
+    max-height: 28px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img {
+    width: 16px;
+    height: 16px;
+  }
   .modal .modal-dialog .modal-content .modal-body .info-button button {
     width: 100%;
   }
@@ -2822,6 +2830,11 @@ button.resend_otp.disabled {
   }
   .row {
     flex-direction: column;
+  }
+  .buttonContainer {
+    position: unset;
+    margin-top: 20px;
+    width: 100%;
   }
   .mobChangeWidth {
     margin-top: 20px;
