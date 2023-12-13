@@ -2192,9 +2192,6 @@ button.resend_otp.disabled {
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
-  .container_wrapper {
-    display: none;
-  }
   .cardContainer_mobileView {
     margin-bottom: 24px;
     margin-top: 3px;
@@ -2519,9 +2516,6 @@ button.resend_otp.disabled {
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .fdTenure_mobile_screen img {
     margin-right: 0;
   }
-  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .boldTitle_mobile_FD {
-    display: none;
-  }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .boldTitle_mobile {
     margin-bottom: 8px;
     font-size: 16px;
@@ -2532,7 +2526,6 @@ button.resend_otp.disabled {
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent {
     padding: 16px 0;
-    display: none;
   }
   .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_mobile_screen .bigText_mob_screen {
     font-size: 16px;
@@ -2674,7 +2667,6 @@ button.resend_otp.disabled {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    display: none;
     z-index: 10;
     transition: display 0.3s ease;
   }
@@ -2791,9 +2783,6 @@ button.resend_otp.disabled {
     text-align: left;
     color: #6B7280;
   }
-  .accountContainer .accountBox .border_bottom_post_closure {
-    display: none;
-  }
   .accountContainer .accountBox .fdMainContent .fdInvestment .bigText {
     font-size: 16px;
     font-weight: 600;
@@ -2840,8 +2829,8 @@ button.resend_otp.disabled {
     margin-top: 16px;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle {
-    width: 50px;
-    height: 50px;
+    width: 37px;
+    height: 37px;
     background-color: #F3F4F6;
     border-radius: 50%;
     display: flex;
@@ -2850,19 +2839,19 @@ button.resend_otp.disabled {
     margin-bottom: 5px;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle img {
-    width: 28px;
-    height: 28px;
+    width: 16.5px;
+    height: 16.5px;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container .rupee_content {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0;
+    letter-spacing: 0.25px;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container .rupee_content .loan_amount {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 16px;
     letter-spacing: 0.5px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper {
