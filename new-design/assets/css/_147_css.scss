@@ -633,10 +633,7 @@
       .fdMainContent {
         .fdInvestment {
           .bigText {
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 24px;
-            letter-spacing: 0.15px;
+            @include custom-font(16px, 600, 24px, 0.15px);
             &.darkRedText {
               color: $color_red_error;
             }
