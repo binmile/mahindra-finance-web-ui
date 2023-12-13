@@ -171,7 +171,7 @@
 
     .edit_img {
         color:$color_light_blue;
-        border-bottom: 1px solid $color_light_blue4CB;
+        border-bottom: 1px solid $color_light_blue;
 
         img {
             width: 14px;
@@ -195,13 +195,14 @@
             width:50%;
             .fdContents{
                 .fdDetails::after{
-                    right: -33px;
+                    right:-17px;
                 }
             }
+           
         }
     
     }
-    
+  
     /*----------renewal-dashboard-UI-  end------------------------*/
 
 

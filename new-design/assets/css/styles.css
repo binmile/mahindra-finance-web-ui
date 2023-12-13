@@ -2221,7 +2221,7 @@ button.resend_otp.disabled {
     width: 50%;
   }
   .accountBox .renewal_wrapper_container .fdContents .fdDetails::after {
-    right: -33px;
+    right: -17px;
   }
   /*----------renewal-dashboard-UI-  end------------------------*/
 }
