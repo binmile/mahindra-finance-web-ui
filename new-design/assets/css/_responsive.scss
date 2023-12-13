@@ -80,7 +80,7 @@
         overflow-x: auto;
         width: 100%;
         .customChangeWidth {
-            min-width: 85%;
+            min-width: 87%;
         }
     }
 
@@ -332,5 +332,8 @@
             font-size: 12px;
             letter-spacing: 1.25px;
         }
+    }
+    .customChangeWidth {
+        margin-right: 16px;
     }
 }
