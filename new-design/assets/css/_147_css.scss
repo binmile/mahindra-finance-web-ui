@@ -691,39 +691,37 @@
         .fdInvestment {
           .bigText {
             @include custom-font(16px, 600, 24px, 0.15px);
-
             &.darkRedText {
               color: $color_red_error;
             }
           }
         }
-
         &.fdMainContent_post_closure {
           img {
             width: 100%;
           }
-
           place-items: initial;
         }
       }
     }
-
     .border-top-data {
       border-top: 1px solid $color_light_border;
       margin-top: 24px;
+      margin-bottom: 24px;
     }
 
     .border-top-data_ {
       border-top: 1px solid $color_light_border;
     }
     .accountDetailsBox {
-      padding: 12px 0px 16px 0;
+      padding: 0px 0px 0px 0;
       .boldTitle {
+        margin-bottom: 4px;
         @include custom-font(16px, 600, 24px, 0.15px);
       }
       .loan_content {
         @include custom-font(12px, 400, 16px, 0.25px);
-        margin-bottom: 12px;
+        margin-bottom: 16px;
       }
       .right_side_data {
         .ruppe_container {
@@ -743,8 +741,7 @@
               @include custom-width-height(16.5px, 16.5px);
             }
           }
-          .rupee_content {
-          
+          .rupee_content {          
             @include custom-font(14px, 600, 24px, 0.25px);
             .loan_amount {
               @include custom-font(12px, 400, 16px, 0.5px);
@@ -794,11 +791,7 @@
         .fdContents {
           .value {
             justify-content: initial;
-
-            img {
-            }
           }
-
           .fdDetails {
             &.fdDetails_mob_post::after {
               position: initial;
@@ -810,6 +803,15 @@
   }
   .buttonContainer {
     width: 100%;
+  }
+  .fdContents{
+    flex-wrap: wrap;
+    .fdDetails{
+        width: 100%;
+        &.fdDetails_mob_post_sec{
+            margin-bottom: 16px;
+        }
+    }
   }
 
   /******Responsive post-closure-Mobile-view end*******************/

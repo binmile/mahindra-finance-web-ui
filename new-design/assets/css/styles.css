@@ -2801,14 +2801,16 @@ button.resend_otp.disabled {
   .accountContainer .border-top-data {
     border-top: 1px solid #D6D6D6;
     margin-top: 24px;
+    margin-bottom: 24px;
   }
   .accountContainer .border-top-data_ {
     border-top: 1px solid #D6D6D6;
   }
   .accountContainer .accountDetailsBox {
-    padding: 12px 0px 16px 0;
+    padding: 0px 0px 0px 0;
   }
   .accountContainer .accountDetailsBox .boldTitle {
+    margin-bottom: 4px;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -2819,7 +2821,7 @@ button.resend_otp.disabled {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.25px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container {
     display: flex;
@@ -2894,6 +2896,15 @@ button.resend_otp.disabled {
   }
   .buttonContainer {
     width: 100%;
+  }
+  .fdContents {
+    flex-wrap: wrap;
+  }
+  .fdContents .fdDetails {
+    width: 100%;
+  }
+  .fdContents .fdDetails.fdDetails_mob_post_sec {
+    margin-bottom: 16px;
   }
   /******Responsive post-closure-Mobile-view end*******************/
 }
