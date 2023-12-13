@@ -2189,6 +2189,41 @@ button.resend_otp.disabled {
     margin-bottom: 12px;
   }
   /*----------post-closure-dashboard-UI-  end------------------------*/
+  /*----------renewal-dashboard-UI-  end------------------------*/
+  .renewal-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .edit_img {
+    color: #1084CB;
+    border-bottom: 1px solid #1084CB;
+  }
+  .edit_img img {
+    width: 14px;
+    height: 14px;
+    vertical-align: initial;
+  }
+  .renewal-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 5px;
+  }
+  .renewal-circle img {
+    width: 36px;
+    height: 36px;
+  }
+  .accountBox .renewal_wrapper_container {
+    width: 50%;
+  }
+  .accountBox .renewal_wrapper_container .fdContents .fdDetails::after {
+    right: -33px;
+  }
+  /*----------renewal-dashboard-UI-  end------------------------*/
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
@@ -2758,6 +2793,8 @@ button.resend_otp.disabled {
     display: none;
   }
   /******Responsive post-closure-Mobile-view end*******************/
+  /*----------renewal-Mobile View dashboard-UI-end------------------------*/
+  /*----------renewal-Mobile View UI-end------------------------*/
 }
 @media only screen and (max-width: 420px) {
   /*********** Responsive dashboard View Start*************/
