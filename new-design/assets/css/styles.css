@@ -2757,6 +2757,127 @@ button.resend_otp.disabled {
   .no_mobile_view {
     display: none;
   }
+  .accountContainer {
+    padding: 12px 16px;
+  }
+  .accountContainer .accountBox {
+    padding: 12px 16px;
+  }
+  .accountContainer .accountBox .boldTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .accountContainer .accountBox .fdContents.fdContents_post_closure_ {
+    min-height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails::after {
+    position: initial;
+  }
+  .accountContainer .accountBox .post_closure_text_data {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #6B7280;
+  }
+  .accountContainer .accountBox .border_bottom_post_closure {
+    display: none;
+  }
+  .accountContainer .accountBox .fdMainContent .fdInvestment .bigText {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .accountContainer .accountBox .fdMainContent .fdInvestment .bigText.darkRedText {
+    color: #DC2626;
+  }
+  .accountContainer .accountBox .fdMainContent.fdMainContent_post_closure {
+    place-items: initial;
+  }
+  .accountContainer .accountBox .fdMainContent.fdMainContent_post_closure img {
+    width: 100%;
+  }
+  .accountContainer .border-top-data {
+    border-top: 1px solid #D6D6D6;
+    margin-top: 24px;
+  }
+  .accountContainer .accountDetailsBox {
+    padding: 12px 16px;
+  }
+  .accountContainer .accountDetailsBox .loan_content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    margin-bottom: 12px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    place-items: center;
+    margin-top: 24px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure {
+    width: 50px;
+    height: 50px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure img {
+    width: 28px;
+    height: 28px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .rupee_content {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .rupee_content .loan_amount {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 16px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    margin-top: 16px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents {
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails {
+    width: 100%;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .value img {
+    margin-right: 8px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post::after {
+    right: -22px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fdContents .value {
+    justify-content: initial;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fdContents .fdDetails.fdDetails_mob_post::after {
+    position: initial;
+  }
+  .termsConditionsContainer label .checkbox-container {
+    margin-top: 0;
+  }
+  .buttonContainer {
+    width: 100%;
+  }
   /******Responsive post-closure-Mobile-view end*******************/
 }
 @media only screen and (max-width: 420px) {
