@@ -514,7 +514,7 @@
       }
 
       .themeRedBtn_mob {
-        @include custom-width-height(104.95px, 32px);
+        @include custom-width-height(fit-content, 32px);
         padding: 8px, 12px, 8px, 12px;
         @include custom-font(12px, 700, 16px, 1.25px);
         text-align: center;
