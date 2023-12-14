@@ -403,4 +403,23 @@
         line-height: 20px;
     }
 
+    .cardContainer_mobile_screen{
+        .fdDetailsBox_mobile_screen {
+            .fdMainContent {
+                .fdTenure_years_text {
+                    margin-top: 25px;
+                    &::before{
+                        display: none;
+                    }
+                    &::after{
+                        top: -21px;
+                        right: 12px;
+                        width: 52px;
+                        background-image: url(../img/icons/Union_big.svg);
+                    }
+                }
+            }
+        }
+    } 
+
 }
