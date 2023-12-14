@@ -153,6 +153,30 @@ $("#quickActionElements :input").click(function () {
         }
     });
 });
+$("#quickActionElements1 :input").click(function () {
+    $("#quickActionElements1 :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).addClass('active');
+            var result = $(this).val();
+        } else {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).removeClass('active');
+        }
+    });
+});
+$("#quickActionElements2 :input").click(function () {
+    $("#quickActionElements2 :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).addClass('active');
+            var result = $(this).val();
+        } else {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).removeClass('active');
+        }
+    });
+});
 /*****************Quick Action Box Select End***************/
 
 function handleClickRadio(ele1, ele2) {
@@ -252,17 +276,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   /*****************quick-actions BMT-147 ******************/
-function toggleButton(activate) {
-    var button = document.getElementById('actionButton');
+// function toggleButton(activate) {
+//     var button = document.getElementById('actionButton');
 
-    if (activate) {
-        button.classList.add('active');
-        button.removeAttribute('disabled');
-    } else {
-        button.classList.remove('active');
-        button.setAttribute('disabled', 'disabled');
-    }
-}
+//     if (activate) {
+//         button.classList.add('active');
+//         button.removeAttribute('disabled');
+//     } else {
+//         button.classList.remove('active');
+//         button.setAttribute('disabled', 'disabled');
+//     }
+// }
 
 
 // function toggleWrapper() {
