@@ -2886,10 +2886,11 @@ button.resend_otp.disabled {
     right: -22px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post .value {
-    margin-bottom: 19px;
+    margin-bottom: 12px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_MM {
-    border-top: 1px solid #D6D6D6;
+    border-top: 1px solid #E8E8E8;
+    margin-bottom: 0px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_MM .label {
     margin-top: 7px;
@@ -2927,6 +2928,9 @@ button.resend_otp.disabled {
   }
   .fdContents .fdDetails::after {
     display: none;
+  }
+  .fdContents .fdDetails_mob_post {
+    margin-bottom: 0px;
   }
   /******Responsive post-closure-Mobile-view end*******************/
 }
@@ -3022,7 +3026,7 @@ button.resend_otp.disabled {
     padding: 12px 16px;
   }
   .accountContainer .accountDetailsBox {
-    padding: 24px 0px 24px 0;
+    padding: 24px 0px 8px 0;
     border-top: 1px solid #E8E8E8;
     border-bottom: 1px solid #E8E8E8;
     margin: 24px 0px;
@@ -3280,6 +3284,10 @@ button.resend_otp.disabled {
     right: 12px;
     width: 52px;
     background-image: url(../img/icons/Union_big.svg);
+  }
+  .brd-top {
+    border-top: 1px solid #E8E8E8;
+    padding-top: 16px;
   }
 }
 .verifyBtn {
