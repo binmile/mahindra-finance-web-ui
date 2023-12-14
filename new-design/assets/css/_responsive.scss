@@ -86,6 +86,12 @@
 
     .accountContainer {
         padding: 12px 16px;
+        .accountDetailsBox {
+            padding: 24px 0px 24px 0;
+            border-top: 1px solid #E8E8E8;
+            border-bottom: 1px solid #E8E8E8;
+            margin: 24px 0px;
+        }
         .accountBox {
             padding: 12px 16px;
             .heading{
@@ -338,4 +344,63 @@
     .customChangeWidth {
         margin-right: 16px;
     }
+
+    .verifyBtn{
+        padding: 0px !important;
+        &::after, &::before{
+        animation: none !important;
+        }
+        img{
+            width: 28px;
+            height: 28px;
+            margin-right: 0px;
+        }
+        label{
+            display: none;
+        }
+    }
+    // .fdContents {
+    //     .fdDetails{
+    //         margin-bottom: 12px;
+    //         .value{
+    //             justify-content: flex-start;
+    //         }
+    //     } 
+    // }
+    .accountHolderDetails{
+        .accountDetails{
+            .bankName {
+                font-size: 22px;
+                margin-bottom: 0px !important;
+            }
+        } 
+        .bankLocation{
+            margin-bottom: 0px;
+        }
+    } 
+
+    .mob_p_0{
+        padding: 0 !important;
+    }
+
+    .accountDetailsBox{
+        .accountListContainer{
+            .accountList{
+                .accountHolderDetails{
+                    .accountDetails{
+                        .accountHolderName {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    } 
+                } 
+            } 
+        } 
+    }
+
+    .boldHeader {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
 }
