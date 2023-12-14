@@ -514,7 +514,7 @@
       }
 
       .themeRedBtn_mob {
-        @include custom-width-height(104.95px, 32px);
+        @include custom-width-height(fit-content, 32px);
         padding: 8px, 12px, 8px, 12px;
         @include custom-font(12px, 700, 16px, 1.25px);
         text-align: center;
@@ -770,12 +770,13 @@
               }
               &.fdDetails_mob_post {
                 .value {
-                  margin-bottom: 19px;
+                  margin-bottom: 12px;
                 }
               }
 
               &.fdDetails_MM {
-                border-top: 1px solid $color_light_border;
+                border-top: 1px solid #E8E8E8;
+                margin-bottom: 0px;
 
                 .label {
                   margin-top: 7px;
@@ -826,6 +827,9 @@
         &::after{
           display: none;
         }
+    }
+    .fdDetails_mob_post{
+      margin-bottom: 0px;
     }
   }
 
