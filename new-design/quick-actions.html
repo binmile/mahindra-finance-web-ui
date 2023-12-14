@@ -205,9 +205,9 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-5 col-lg-5 mt-20 third_col_data">
-                <div class="cardContainer cardContainer_mobile_view no_mobile_view" id="cardContainer_mobile_view_">
+                <div class="cardContainer quick_action_container" id="quick_action_container">
                     <div class="quickActionBox">
-                        <div class="close_icon  no_desktop_view" onclick="toggleClose()" id="close_icon_">
+                        <div class="close_icon no_desktop_view" onclick="handleClickHideQuickAction()">
                             <img src="./assets/img/icons/close-icon.svg" alt="icon" />
                         </div>
                         <div class="boldTitle mb-20">Quick actions</div>
@@ -249,10 +249,10 @@
                                 <div class="quickActionLabel">Update Nominee Details</div>
                             </label>
 
-                            <div class="themeRedBtn themeRedBtn_mob_Continue no_desktop_view " id="actionButton" disabled>
+                            <button class="themeRedBtn themeRedBtn_mob_Continue no_desktop_view " id="actionButton" disabled>
                                 Continue
                                 <img src="./assets/img/arrow-right.svg" alt="icons" />
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -276,15 +276,14 @@
                         class="newFdImage circle_img" />
                 </div>
                 <div class="quick_actions_button_div">
-                    <button class="quick_actions_button  no_desktop_view" id="quick_actions_button_" onclick="toggleWrapper()">
+                    <button class="quick_actions_button no_desktop_view" onclick="handleClickShowQuickAction()">
                         + Quick Actions
                     </button>
                 </div>
-
-
             </div>
         </div>
     </div>
+    <div id="overlay"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/chart.min.js"></script>

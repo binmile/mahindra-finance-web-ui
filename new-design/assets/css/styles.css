@@ -2951,10 +2951,11 @@ button.resend_otp.disabled {
 }
 @media only screen and (max-width: 768px) {
   /************Modal Start************/
-  .modal {
+  .modal, .quick_action_container {
     position: fixed;
     bottom: 0;
     top: auto;
+    left: 0;
     background: #fff;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06), 0px 2px 6px 0px rgba(0, 0, 0, 0.06);
     padding: 0px;
@@ -2966,38 +2967,50 @@ button.resend_otp.disabled {
     height: -moz-fit-content;
     height: fit-content;
   }
-  .modal .modal-dialog {
+  .modal .modal-dialog, .quick_action_container .modal-dialog {
     margin: 0px;
   }
-  .modal .modal-dialog .modal-content {
+  .modal .modal-dialog .modal-content, .quick_action_container .modal-dialog .modal-content {
     box-shadow: none;
     border-radius: 0px;
   }
-  .modal .modal-dialog .modal-content .modal-body {
+  .modal .modal-dialog .modal-content .modal-body, .quick_action_container .modal-dialog .modal-content .modal-body {
     padding: 24px 16px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container {
     margin-top: 4px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.15px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image {
     max-width: 28px;
     max-height: 28px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img {
     width: 16px;
     height: 16px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-button button {
+  .modal .modal-dialog .modal-content .modal-body .info-button button, .quick_action_container .modal-dialog .modal-content .modal-body .info-button button {
     width: 100%;
   }
-  .modal.show {
+  .modal.show, .quick_action_container.show {
     transform: translate(0, 0px) !important;
+  }
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #overlay.show {
+    display: block;
   }
   /************Modal End************/
   .mt-20 {
@@ -3288,6 +3301,25 @@ button.resend_otp.disabled {
   .brd-top {
     border-top: 1px solid #E8E8E8;
     padding-top: 16px;
+  }
+  .quickActionBox {
+    padding: 18px 16px;
+  }
+  .quickActionBox .close_icon {
+    text-align: right;
+  }
+  .quickActionBox .quickActionTabs label {
+    width: 100%;
+    margin-right: 0px;
+    padding: 16px 12px;
+    flex-direction: row;
+  }
+  .quickActionBox .quickActionTabs label img {
+    margin: 2px 8px 0px 0px;
+  }
+  .quickActionBox .quickActionTabs button {
+    width: 100%;
+    height: 32px;
   }
 }
 .verifyBtn {
