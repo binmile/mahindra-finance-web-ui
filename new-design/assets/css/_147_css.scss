@@ -807,9 +807,25 @@
   .fdContents{
     flex-wrap: wrap;
     .fdDetails{
-        width: 100%;
+        width: 50%;
+        margin-bottom: 16px;
         &.fdDetails_mob_post_sec{
             margin-bottom: 16px;
+        }
+        .label {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .value{
+          justify-content: flex-start;
+          font-size: 14px;
+          img{
+            width: 15px;
+            height: 15px;
+          }
+        }
+        &::after{
+          display: none;
         }
     }
   }

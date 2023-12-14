@@ -2912,10 +2912,26 @@ button.resend_otp.disabled {
     flex-wrap: wrap;
   }
   .fdContents .fdDetails {
-    width: 100%;
+    width: 50%;
+    margin-bottom: 16px;
   }
   .fdContents .fdDetails.fdDetails_mob_post_sec {
     margin-bottom: 16px;
+  }
+  .fdContents .fdDetails .label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .fdContents .fdDetails .value {
+    justify-content: flex-start;
+    font-size: 14px;
+  }
+  .fdContents .fdDetails .value img {
+    width: 15px;
+    height: 15px;
+  }
+  .fdContents .fdDetails::after {
+    display: none;
   }
   /******Responsive post-closure-Mobile-view end*******************/
 }
@@ -3009,6 +3025,12 @@ button.resend_otp.disabled {
   }
   .accountContainer {
     padding: 12px 16px;
+  }
+  .accountContainer .accountDetailsBox {
+    padding: 24px 0px 24px 0;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    margin: 24px 0px;
   }
   .accountContainer .accountBox {
     padding: 12px 16px;
@@ -3219,6 +3241,38 @@ button.resend_otp.disabled {
   }
   .customChangeWidth {
     margin-right: 16px;
+  }
+  .verifyBtn {
+    padding: 0px !important;
+  }
+  .verifyBtn::after, .verifyBtn::before {
+    animation: none !important;
+  }
+  .verifyBtn img {
+    width: 28px;
+    height: 28px;
+    margin-right: 0px;
+  }
+  .verifyBtn label {
+    display: none;
+  }
+  .accountHolderDetails .accountDetails .bankName {
+    font-size: 22px;
+    margin-bottom: 0px !important;
+  }
+  .accountHolderDetails .bankLocation {
+    margin-bottom: 0px;
+  }
+  .mob_p_0 {
+    padding: 0 !important;
+  }
+  .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountHolderName {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .boldHeader {
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 .verifyBtn {
