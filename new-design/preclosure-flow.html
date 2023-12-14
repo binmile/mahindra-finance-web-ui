@@ -145,7 +145,7 @@
                     <div class="fdDetailsBox wd-100">
                         <div class="fdHeader">
                             <div class="boldTitle">Premature closure of FD</div>
-                                <label class="checkbox-container">
+                                <label class="checkbox-container no_mobile_view">
                                     <input type="radio" name="preclosure-flow" checked="checked" onclick="handleClickRadio(this.value, 'option2')" value="option1">
                                     <span class="checkmark"></span>
                                 </label>
@@ -206,13 +206,17 @@
                                 *The final amount will be payable post deduction of TDS, as per the tax guidelines
                             </div>
                         </div>
+                        <div class="buttonContainer mob_buttonContainer">
+                            <button class="themeRedBtn">Explore
+                            <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
+                        </div>
                     </div>
                 </div>
                 <div class="cardContainer customChangeWidth animate__animated animate__slideInRight" onclick="selectRadio(event, 'customChangeWidth')" id="option2">
                     <div class="fdDetailsBox wd-100">
                         <div class="fdHeader">
                             <div class="boldTitle">Borrow funds against your FD</div>
-                            <label class="checkbox-container">
+                            <label class="checkbox-container no_mobile_view">
                                 <input type="radio" name="preclosure-flow" onclick="handleClickRadio(this.value, 'option1')" value="option2">
                                 <span class="checkmark"></span>
                             </label>
@@ -316,11 +320,17 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="buttonContainer mob_buttonContainer">
+                                <button class="themeRedBtn">Explore
+                                <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
+                            </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col col-md-12">
+        <div class="col col-md-12 no_mobile_view">
             <div class="buttonContainer">
                 <button class="themeRedBtn">Continue
                 <img src="./assets/img/arrow-right.svg" alt="icons" /></button>

@@ -262,12 +262,18 @@
   font-family: "Georama", sans-serif;
 }
 
+:root {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 a {
   color: #1084CB;
 }
 
 ::-webkit-scrollbar {
   width: 0px;
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -369,6 +375,11 @@ body {
 
 .text-left {
   text-align: left !important;
+}
+
+.make_top {
+  z-index: -1;
+  position: relative;
 }
 
 /*********Header Start****************/
@@ -3086,7 +3097,7 @@ button.resend_otp.disabled {
     width: 100%;
   }
   .mobChangeWidth .customChangeWidth {
-    min-width: 85%;
+    min-width: 87%;
   }
   .accountContainer {
     padding: 12px 16px;
@@ -3169,6 +3180,137 @@ button.resend_otp.disabled {
   }
   .fdMainContent .fdInvestment .lightText {
     margin-top: 4px;
+  }
+  .commonHeading {
+    margin-top: 12px;
+  }
+  .fdDetailsBox {
+    padding: 12px 16px;
+    height: calc(100vh - 180px);
+    position: relative;
+  }
+  .boldTitle {
+    font-size: 16px;
+  }
+  .fDList ul li .fDListContent label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
+  .roundBackgroundIcon {
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 8px;
+  }
+  .roundBackgroundIcon img {
+    width: 12px;
+    height: 12px;
+  }
+  .fDList {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .fDList ul li .fDListContent {
+    width: 65%;
+  }
+  .fDList ul li .fDListValue {
+    width: 35%;
+    font-size: 12px;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .fDList ul li .fDListValue span {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 3px 5px;
+  }
+  .bottomDescription .descriptionContent {
+    border-top: none;
+    padding: 16px 0px 0px 0px;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+  .borrowFundContainer {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  .borrowFundContainer .borrowFundBox .borrowFundContent {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: normal;
+    width: calc(100% - 60px);
+  }
+  .borrowFundFDContainer .borrowFDList {
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 16px 0px 16px 0px;
+    border-radius: 0px;
+  }
+  .borrowFundFDContainer .borrowFDList .headingLabel {
+    left: 0px;
+    font-size: 12px;
+    line-height: 20px;
+    top: -12px;
+    padding: 2px 8px;
+  }
+  .borrowFundFDContainer .borrowFDList .borrowFDBox .borrowFDContent .label {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .borrowFundFDContainer .borrowFDList .borrowFDBox .borrowFDContent .value {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .borrowFundFDContainer .borrowFDList .borrowFDBox .borrowFDContent .value img {
+    width: 15px;
+    height: 15px;
+  }
+  .borrowFundFDContainer .borrowFDList:last-child {
+    border-bottom: 0px;
+    margin-bottom: 16px;
+  }
+  .borrowFdBottomBox {
+    padding: 8px 12px;
+  }
+  .borrowFdBottomBox .heading {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .borrowFdBottomBox .borrowFdBottomList .borrowFdListRow {
+    padding: 6px 0px;
+  }
+  .borrowFdBottomBox .borrowFdBottomList .borrowFdListRow .fDListContent label {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .borrowFdBottomBox .borrowFdBottomList .borrowFdListRow .fDListValue {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .borrowFdBottomBox .borrowFdBottomList .borrowFdListRow .fDListValue span {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .mob_buttonContainer {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 91%;
+    bottom: 12px;
+    margin-top: 0px;
+  }
+  .buttonContainer button.themeRedBtn {
+    height: 32px;
+    font-size: 12px;
+    letter-spacing: 1.25px;
+  }
+  .customChangeWidth {
+    margin-right: 16px;
   }
 }
 .verifyBtn {

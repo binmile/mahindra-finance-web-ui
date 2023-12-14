@@ -10,12 +10,16 @@
   box-sizing: border-box;
   font-family: $primaryFont;
 }
-
+:root{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 a {
   color: $color_light_blue;
 }
 ::-webkit-scrollbar {
    width: 0px;
+   display: none;
 }
 ::-webkit-scrollbar-track {
     background: $color_white;
@@ -23,6 +27,7 @@ a {
 ::-webkit-scrollbar-thumb {
     background: $color_light_border;
 }
+
 body {
   min-height: 100vh;
   padding-top: 3rem;
@@ -104,6 +109,11 @@ body {
 }
 .text-left{
     text-align: left !important;
+}
+
+.make_top{
+    z-index: -1;
+    position: relative;
 }
 /*********Header Start****************/
 nav {

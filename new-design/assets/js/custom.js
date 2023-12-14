@@ -28,6 +28,7 @@ window.onload = function () {
 }
 /*****************Graph End***************/
 /*****************Menu Dropdown Hover Effect Start***************/
+
 $(document).ready(function () {
     $('.dropdown').hover(function () {
         $(this).addClass('show');
@@ -37,6 +38,16 @@ $(document).ready(function () {
         $(this).find('.dropdown-menu').removeClass('show');
     });
 });
+
+document.body.addEventListener("click", function (evt) {
+    var isShown = $("#dropdownElement").hasClass("show");
+        if(isShown){
+            $('#make_top').addClass('make_top');
+        } else {
+            $('#make_top').removeClass('make_top');
+        }
+});
+
 /*****************Menu Dropdown Hover Effect End***************/
 
 /*****************Dashboard Data show hide Start***************/
