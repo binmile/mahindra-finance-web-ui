@@ -2631,7 +2631,8 @@ button.resend_otp.disabled {
     text-align: left;
   }
   .third_col_data .quickActionBanner .themeRedBtn_mob {
-    width: 104.95px;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 32px;
     padding: 8px, 12px, 8px, 12px;
     font-size: 12px;
