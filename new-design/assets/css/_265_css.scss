@@ -83,12 +83,14 @@
 .accountHolderDetails {
   padding-bottom: 12px;
   place-items: center !important;
+
   .accountDetails {
-    
+
     .bankName {
       @include custom-font(34px, 600, 40px, 0.25px);
     }
   }
+
   .bankLocation {
     color: $color_light_text;
     width: fit-content;
@@ -106,7 +108,7 @@
 }
 
 #sucessToastMessage {
-   @include custom-font(20px, 600, 24px, 0.15px);
+  @include custom-font(20px, 600, 24px, 0.15px);
   visibility: hidden;
   width: fit-content;
   margin-left: -15.5%;
@@ -128,27 +130,132 @@
 }
 
 @-webkit-keyframes fadein {
-  from {top: 0; opacity: 0;} 
-  to {top: 75px; opacity: 1;}
+  from {
+    top: 0;
+    opacity: 0;
+  }
+
+  to {
+    top: 75px;
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-  from {top: 0; opacity: 0;}
-  to {top: 75px; opacity: 1;}
+  from {
+    top: 0;
+    opacity: 0;
+  }
+
+  to {
+    top: 75px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeout {
-  from {top: 75px; opacity: 1;} 
-  to {top: 0; opacity: 0;}
+  from {
+    top: 75px;
+    opacity: 1;
+  }
+
+  to {
+    top: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes fadeout {
-  from {top: 75px; opacity: 1;}
-  to {top: 0; opacity: 0;}
+  from {
+    top: 75px;
+    opacity: 1;
+  }
+
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+// Active toast-css-end
+
+// joint-account-and-nominee-details-css-start
+.boldHeading {
+  @include custom-font(20px, 600, 24px, 0.15px);
+  margin-bottom: 20px;
+}
+
+      
+
+// joint-account-and-nominee-details-css-start
+
+.SelectOptionsMainContainer {
+  padding: 0;
+  .subHeadingContainer {
+    display: flex;
+    justify-content: space-between;
+    color: $color_light_text;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .subHeading {
+      @include custom-font(14px, 400, 24px, 0.25px);
+    }
+
+    .subHeadingIcons img {
+      @include custom-width-height(16px, 16px);
+      margin-left: 8px;
+    }
+  }
+  .optionsMainContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .optionsName{
+      width: fit-content;
+      padding: 12px 30px;
+      background-color: $color_white;
+      color: $color_dull_gray;
+      border: 1.5px solid $color_dull_gray;
+      border-radius: 8px;
+    }
+  }
+  .subHeading2 {
+    @include custom-font(14px, 500, 24px, 0.25px);
+    color: $color_light_text;
+  }
+  .subHeadingIcons2 img {
+    @include custom-width-height(16px, 16px);
+    margin-right: 6.5px;
+  }
+}
+.noteContent{
+  @include custom-font(14px, 400, 24px, 0.25px);
+  color: $color_light_text;
+  .noteText{
+    font-weight: 700;
+  }
+}
+.rightNoteContent{
+  margin-top: 20px;
+}
+.rightIcon img{
+  @include custom-width-height(20px, 20px)
+}
+#renewalRightSideWrapper{
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+.renewalBoldTitle {
+  @include custom-font(20px, 600, 24px, 0.15px);
+  padding-bottom: 20px;
 }
 
 
-// Active toast-css-end
+
+
+// joint-account-and-nominee-details-css-end
+
 
 /*********** Responsive CSS Start Here*************/
 

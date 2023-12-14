@@ -1900,6 +1900,95 @@ button.resend_otp.disabled {
     opacity: 0;
   }
 }
+.boldHeading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin-bottom: 20px;
+}
+
+.SelectOptionsMainContainer {
+  padding: 0;
+}
+.SelectOptionsMainContainer .subHeadingContainer {
+  display: flex;
+  justify-content: space-between;
+  color: #6B7280;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.SelectOptionsMainContainer .subHeadingContainer .subHeading {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+.SelectOptionsMainContainer .subHeadingContainer .subHeadingIcons img {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+.SelectOptionsMainContainer .optionsMainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.SelectOptionsMainContainer .optionsMainContainer .optionsName {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 12px 30px;
+  background-color: #FFFFFF;
+  color: #ADADAD;
+  border: 1.5px solid #ADADAD;
+  border-radius: 8px;
+}
+.SelectOptionsMainContainer .subHeading2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+}
+.SelectOptionsMainContainer .subHeadingIcons2 img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6.5px;
+}
+
+.noteContent {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+}
+.noteContent .noteText {
+  font-weight: 700;
+}
+
+.rightNoteContent {
+  margin-top: 20px;
+}
+
+.rightIcon img {
+  width: 20px;
+  height: 20px;
+}
+
+#renewalRightSideWrapper {
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.renewalBoldTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  padding-bottom: 20px;
+}
+
 /*********** Responsive CSS Start Here*************/
 @media screen and (min-width: 767px) {
   .mob-wrapper {
