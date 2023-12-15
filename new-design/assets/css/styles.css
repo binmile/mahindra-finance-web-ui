@@ -2942,7 +2942,6 @@ button.resend_otp.disabled {
     margin-bottom: 12px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_MM {
-    border-top: 1px solid #e8e8e8;
     margin-bottom: 0px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_MM .label {

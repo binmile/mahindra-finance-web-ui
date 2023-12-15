@@ -142,8 +142,7 @@
     color: $color_light_blue;
     border-bottom: 1px solid $color_light_blue;
     img {
-      width: 14px;
-      height: 14px;
+        @include custom-width-height(14px, 14px);
       vertical-align: initial;
     }
   }
@@ -813,7 +812,6 @@
               }
 
               &.fdDetails_MM {
-                border-top: 1px solid #e8e8e8;
                 margin-bottom: 0px;
 
                 .label {
@@ -858,8 +856,7 @@
         justify-content: flex-start;
         font-size: 14px;
         img {
-          width: 15px;
-          height: 15px;
+            @include custom-width-height(15px, 15px);
         }
       }
       &::after {
@@ -884,8 +881,7 @@
     color: $color_light_blue;
     border-bottom: 1px solid $color_light_blue;
     img {
-      width: 14px;
-      height: 14px;
+        @include custom-width-height(14px, 14px);
       vertical-align: initial;
     }
   }
