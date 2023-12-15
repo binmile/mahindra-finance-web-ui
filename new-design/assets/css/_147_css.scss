@@ -77,7 +77,7 @@
           }
           background-color: $color_light_gray;
           border-radius: 8px;
-          padding:8px 23px 8px 24px ;
+          padding: 8px 23px 8px 24px;
           margin-top: 16px;
         }
       }
@@ -130,45 +130,76 @@
       }
     }
   }
-/*----------post-closure-dashboard-UI-  end------------------------*/
+  /*----------post-closure-dashboard-UI-  end------------------------*/
 
-/*----------renewal-desktop-UI---start------------------------*/
+  /*----------renewal-desktop-UI---start------------------------*/
 
-.renewal-div {
+  .renewal-div {
     display: flex;
     justify-content: space-between;
-}
-.edit_img {
-    color:$color_light_blue;
+  }
+  .edit_img {
+    color: $color_light_blue;
     border-bottom: 1px solid $color_light_blue;
     img {
-        width: 14px;
-        height: 14px;
-        vertical-align: initial;
+      width: 14px;
+      height: 14px;
+      vertical-align: initial;
     }
-}
-.renewal-circle{
+  }
+  .renewal-circle {
     @include custom-width-height(60px, 60px);
     background-color: $color_white;
     border-radius: 50%;
     @include allCenter;
     margin-bottom: 5px;
     img {
-        @include custom-width-height(36px, 36px);
+      @include custom-width-height(36px, 36px);
     }
-}
-.accountBox{
-    .renewal_wrapper_container{
-        width:50%;
-        .fdContents{
-            .fdDetails::after{
-                right:-17px;
-            }
-        }
+  }
+  .accountBox {
+    .fdContents {
+      &.fdContents_renewal {
+        margin-top: 32px;
+      }
     }
-}
-/*----------renewal-desktop-UI--- end------------------------*/
+    .fdMainContent {
+      &.fdMainContent_renewal {
+        padding-bottom: 32px;
+      }
+    }
+    .renewal_wrapper_container {
+      width: 50%;
 
+      .fdContents {
+        &.fdContents_renewal {
+          margin-top: 32px;
+        }
+        .fdDetails::after {
+          right: -17px;
+        }
+      }
+    }
+  }
+
+  /*----------renewal-desktop-UI--- end------------------------*/
+
+  /*----------renewal-review-desktop-UI--- end------------------------*/
+  .accountContainer .accountBox .fdContents .fdDetails {
+    &.fdetails_review::after {
+      right: -25px;
+    }
+  }
+  .accountBox {
+    .bottomLightText {
+      span {
+        &.interest_rate {
+          @include custom-font(14px, 700, 24px, 0.25px);
+        }
+      }
+    }
+  }
+  /*----------renewal-review-desktop-UI--- end------------------------*/
 }
 @media only screen and (max-width: $tablet) {
   /*********** Responsive dashboard View Start*************/
@@ -747,7 +778,7 @@
               @include custom-width-height(16.5px, 16.5px);
             }
           }
-          .rupee_content {          
+          .rupee_content {
             @include custom-font(14px, 600, 24px, 0.25px);
             .loan_amount {
               @include custom-font(12px, 400, 16px, 0.5px);
@@ -782,7 +813,7 @@
               }
 
               &.fdDetails_MM {
-                border-top: 1px solid #E8E8E8;
+                border-top: 1px solid #e8e8e8;
                 margin-bottom: 0px;
 
                 .label {
@@ -811,96 +842,108 @@
   .buttonContainer {
     width: 100%;
   }
-  .fdContents{
+  .fdContents {
     flex-wrap: wrap;
-    .fdDetails{
-        width: 50%;
+    .fdDetails {
+      width: 50%;
+      margin-bottom: 16px;
+      &.fdDetails_mob_post_sec {
         margin-bottom: 16px;
-        &.fdDetails_mob_post_sec{
-            margin-bottom: 16px;
+      }
+      .label {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .value {
+        justify-content: flex-start;
+        font-size: 14px;
+        img {
+          width: 15px;
+          height: 15px;
         }
-        .label {
-          font-size: 12px;
-          line-height: 16px;
-        }
-        .value{
-          justify-content: flex-start;
-          font-size: 14px;
-          img{
-            width: 15px;
-            height: 15px;
-          }
-        }
-        &::after{
-          display: none;
-        }
+      }
+      &::after {
+        display: none;
+      }
     }
-    .fdDetails_mob_post{
+    .fdDetails_mob_post {
       margin-bottom: 0px;
     }
   }
   /******Responsive post-closure-Mobile-view end*******************/
   /******Renewal-Summary-Mobile-view start*******************/
-  .card_content_heading{
+  .card_content_heading {
     margin-bottom: 12px;
     @include custom-font(16px, 600, 24px, 0.15px);
-
-}
-.renewal-div {
+  }
+  .renewal-div {
     display: flex;
     justify-content: space-between;
-}
-.edit_img {
-    color:$color_light_blue;
+  }
+  .edit_img {
+    color: $color_light_blue;
     border-bottom: 1px solid $color_light_blue;
     img {
-        width: 14px;
-        height: 14px;
-        vertical-align: initial;
+      width: 14px;
+      height: 14px;
+      vertical-align: initial;
     }
-}
-.renewal-circle{
+  }
+  .renewal-circle {
     @include custom-width-height(46px, 46px);
     background-color: $color_white;
     border-radius: 50%;
     @include allCenter;
     margin-bottom: 5px;
     img {
-        @include custom-width-height(25px, 25px);
+      @include custom-width-height(25px, 25px);
     }
-}
-.accountBox{
-    .renewal_wrapper_container{
-        width:50%;
-        .fdContents{
-            &.fdContents_renewal{
-                margin-bottom: 36px;
-            }
-            .fdDetails::after{
-                right:-17px;
-            }
+  }
+  .accountBox {
+    .renewal_wrapper_container {
+      width: 50%;
+      .fdContents {
+        &.fdContents_renewal {
+          margin-bottom: 36px;
         }
-    }
-    .fdMainContent{
-        &.fdMainContent_renewal{
-            padding: 12px 0 16px 0;
+        .fdDetails::after {
+          right: -17px;
         }
+      }
     }
-    .renewal_wrapper_container{
-        width: 100%;
+    .fdMainContent {
+      &.fdMainContent_renewal {
+        padding: 12px 0 16px 0;
+      }
     }
-}
-.border-top-data{
-    &.border-top-data_renewal{
-        margin:28px 0 16px 0;
+    .renewal_wrapper_container {
+      width: 100%;
     }
-}
-.termsConditionsContainer{
-    .label{
-        @include custom-font(14px, 400, 16px, 0);
+  }
+  .border-top-data {
+    &.border-top-data_renewal {
+      margin: 28px 0 16px 0;
     }
-}
-/******Renewal-Summary-Mobile-view end*******************/
+  }
+  .termsConditionsContainer {
+    .label {
+      @include custom-font(14px, 400, 16px, 0);
+    }
+  }
+  /******Renewal-Summary-Mobile-view end*******************/
+  /******Renewal-Summary-Review-Mobile-view end*******************/
+  .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    .accountDetails {
+        &.accountDetails_renewal {
+          margin-bottom: 18px;
+        }
+      }
+    &.accountHolderDetails_renewal {
+      display: unset;
+    }
+  }
+
+  /******Renewal-Summary-Review-Mobile-view end*******************/
 }
 @media only screen and (max-width: $miniMobile) {
   /*********** Responsive dashboard View Start*************/

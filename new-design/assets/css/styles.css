@@ -2225,13 +2225,33 @@ button.resend_otp.disabled {
     width: 36px;
     height: 36px;
   }
+  .accountBox .fdContents.fdContents_renewal {
+    margin-top: 32px;
+  }
+  .accountBox .fdMainContent.fdMainContent_renewal {
+    padding-bottom: 32px;
+  }
   .accountBox .renewal_wrapper_container {
     width: 50%;
+  }
+  .accountBox .renewal_wrapper_container .fdContents.fdContents_renewal {
+    margin-top: 32px;
   }
   .accountBox .renewal_wrapper_container .fdContents .fdDetails::after {
     right: -17px;
   }
   /*----------renewal-desktop-UI--- end------------------------*/
+  /*----------renewal-review-desktop-UI--- end------------------------*/
+  .accountContainer .accountBox .fdContents .fdDetails.fdetails_review::after {
+    right: -25px;
+  }
+  .accountBox .bottomLightText span.interest_rate {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+  /*----------renewal-review-desktop-UI--- end------------------------*/
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
@@ -2922,7 +2942,7 @@ button.resend_otp.disabled {
     margin-bottom: 12px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_MM {
-    border-top: 1px solid #E8E8E8;
+    border-top: 1px solid #e8e8e8;
     margin-bottom: 0px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_MM .label {
@@ -3026,6 +3046,14 @@ button.resend_otp.disabled {
     letter-spacing: 0;
   }
   /******Renewal-Summary-Mobile-view end*******************/
+  /******Renewal-Summary-Review-Mobile-view end*******************/
+  .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails.accountDetails_renewal {
+    margin-bottom: 18px;
+  }
+  .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_renewal {
+    display: unset;
+  }
+  /******Renewal-Summary-Review-Mobile-view end*******************/
 }
 @media only screen and (max-width: 420px) {
   /*********** Responsive dashboard View Start*************/
