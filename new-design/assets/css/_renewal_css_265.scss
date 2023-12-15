@@ -1,0 +1,195 @@
+// joint-account-and-nominee-details-css-start
+.boldHeading {
+    @include custom-font(20px, 600, 24px, 0.15px);
+    margin-bottom: 20px;
+}
+
+
+.renewalQuickActionBox {
+    color: $color_dull_gray !important;
+    padding: 0 !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    margin-left: 50px !important;
+    // border-left: 1px dashed black !important;
+}
+
+.renewalQuickActionBox .quickActionTabs label {
+    @include setDisplayProperty(flex, center, center, column);
+    position: relative;
+}
+
+.renewalboxRadioButton {
+    width: fit-content !important;
+    padding: 0px 26px 12px 26px !important;
+    margin-right: 12px !important;
+    line-height: 24px !important;
+    letter-spacing: 0.5px !important;
+    height: 44px !important;
+    margin-bottom: 60px !important;
+}
+
+.renewalContentContainer {
+    display: flex;
+}
+.rightSideSubHeading {
+    .subHeadingContainer {
+        display: flex;
+        .subHeading {
+            @include custom-font(14px, 400, 24px, 0.25px);
+            margin-bottom: 8px;
+            color: $color_light_text;
+        }
+        .subHeadingIcons img {
+            @include custom-width-height(16px, 16px);
+            margin-left: 8px;
+            margin-right: 35px
+        }
+    }
+}
+
+.renewalInputBoxContainer {
+    width: fit-content;
+    @include setDisplayProperty(flex, center, center, row);
+    border: 1px solid $color_border;
+    margin-right: 12px;
+    margin: 0 16px 0 0;
+    border-radius: 8px;
+    height: 44px !important;
+    padding: 16px 12px 16px 12px;
+    cursor: pointer;
+    background-color: $color_disabled_btn;
+
+    .renewalInputBox {
+        display: flex;
+    }
+
+    .renewalInputBox input {
+        width: 92px !important;
+        border: none;
+        @include custom-font(16px, 400, 24px, 0.5px);
+        align-items: baseline;
+        background-color: $color_disabled_btn;
+        outline: none !important;
+    }
+
+    .renewalInputBoxImg img {
+        margin-left: 4px;
+        @include custom-width-height(24px, 24px);
+    }
+
+    .renewalInputBoxYellowImg {
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 4px;
+        @include custom-width-height(16px, 16px);
+    }
+}
+
+.fdDetails {
+    &.renewal_fdDetails::after {
+        right: -58px !important;
+    }
+}
+
+.colBorder {
+    border-right: 1px solid #E8E8E8;
+}
+
+.renewalHeadCount {
+    border: 1px solid $color_black_light;
+    border-radius: 50%;
+    padding: 5px 5px 5px 7px;
+    margin-right: 18px;
+}
+
+.SelectOptionsMainContainer {
+    .subHeadingContainer {
+        display: flex;
+        color: $color_light_text;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .subHeading {
+            @include custom-font(14px, 400, 24px, 0.25px);
+        }
+
+        .subHeadingIcons img {
+            @include custom-width-height(16px, 16px);
+            margin-left: 8px;
+            margin-right: 35px
+        }
+    }
+
+
+    .subHeading2 {
+        @include custom-font(14px, 500, 24px, 0.25px);
+        color: $color_light_text;
+        margin-left: 50px;
+        margin-bottom: 64px;
+        margin-top: -58px;
+    }
+
+    .subHeadingIcons2 img {
+        @include custom-width-height(16px, 16px);
+        margin-right: 6.5px;
+    }
+}
+
+
+.noteContent {
+    @include custom-font(14px, 400, 24px, 0.25px);
+    color: $color_light_text;
+
+    .noteText {
+        font-weight: 700;
+    }
+}
+
+.rightIcon img {
+    @include custom-width-height(20px, 20px);
+    margin-right: 8px;
+}
+
+.boxRadioButtonYellowBadge img {
+    position: absolute;
+    display: none;
+    top: 5px;
+    right: 5px;
+    height: 10px !important;
+    width: 6.81px !important;
+}
+
+.renewalboxRadioButton.active img {
+    display: block !important;
+    filter: unset !important;
+}
+
+#renewalRightSideWrapper {
+    padding: 20px 24px;
+    margin-bottom: 20px !important;
+}
+
+#renewalRightSideWrapperTwo {
+    padding: 20px 24px;
+}
+
+.renewalBoldTitle {
+    @include custom-font(20px, 600, 24px, 0.15px);
+    padding-bottom: 20px;
+}
+
+.renewalBoldTitle span {
+    @include custom-font(14px, 500, 24px, 0.1px);
+    float: right;
+}
+
+.renewal_border_bottom_post_closure {
+    padding-top: 23px !important;
+}
+
+.renewalAccountDetailsBox {
+    padding: 24px 24px 0 24px !important;
+}
+
+// joint-account-and-nominee-details-css-end
