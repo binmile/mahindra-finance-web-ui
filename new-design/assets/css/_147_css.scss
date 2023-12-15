@@ -438,17 +438,16 @@
     margin-top: 12px;
     .fdDetailsBox_mobile_screen {
       padding: 12px 16px;
+      height: fit-content;
       .fdHeader_mobile_screen {
         @include setDisplayProperty(flex, left, initial, column);
         .fdTenure_mobile_screen {
-          @include setDisplayProperty(flex, flex-start, center);
-          align-items: center;
-          gap: 4px;
-          width: 222px;
-          @include custom-font(12px, 400, 16px, 0);
-          text-align: center;
+          margin-top: 8px;
+          padding: 2px 8px;
+          width: fit-content;
+          font-size: 12px;
           img {
-            margin-right: 0;
+            margin-bottom: 2px;
           }
         }
         .boldTitle_mobile {
@@ -546,7 +545,7 @@
         }
       }
       .themeRedBtn_mob {
-        @include custom-width-height(104.95px, 32px);
+        @include custom-width-height(fit-content, 32px);
         padding: 8px, 12px, 8px, 12px;
         @include custom-font(12px, 700, 16px, 1.25px);
         text-align: center;
@@ -778,12 +777,13 @@
               }
               &.fdDetails_mob_post {
                 .value {
-                  margin-bottom: 19px;
+                  margin-bottom: 12px;
                 }
               }
 
               &.fdDetails_MM {
-                border-top: 1px solid $color_light_border;
+                border-top: 1px solid #E8E8E8;
+                margin-bottom: 0px;
 
                 .label {
                   margin-top: 7px;
@@ -814,10 +814,29 @@
   .fdContents{
     flex-wrap: wrap;
     .fdDetails{
-        width: 100%;
+        width: 50%;
+        margin-bottom: 16px;
         &.fdDetails_mob_post_sec{
             margin-bottom: 16px;
         }
+        .label {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .value{
+          justify-content: flex-start;
+          font-size: 14px;
+          img{
+            width: 15px;
+            height: 15px;
+          }
+        }
+        &::after{
+          display: none;
+        }
+    }
+    .fdDetails_mob_post{
+      margin-bottom: 0px;
     }
   }
   /******Responsive post-closure-Mobile-view end*******************/

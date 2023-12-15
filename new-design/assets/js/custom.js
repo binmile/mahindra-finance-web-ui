@@ -265,20 +265,36 @@ function toggleButton(activate) {
 }
 
 
-function toggleWrapper() {
-    var wrapper = document.getElementById('cardContainer_mobile_view_');
-    wrapper.classList.toggle('show');
+// function toggleWrapper() {
+//     var wrapper = document.getElementById('cardContainer_mobile_view_');
+//     wrapper.classList.toggle('show');
+// }
+
+// document.addEventListener('click', function (event) {
+//     var wrapper = document.getElementById('cardContainer_mobile_view_');
+//     if (!wrapper.contains(event.target) && !document.getElementById('quick_actions_button_').contains(event.target)) {
+//         wrapper.classList.remove('show');
+//     }
+// });
+// function toggleClose() {
+//     var wrapper = document.getElementById('cardContainer_mobile_view_');
+//     wrapper.classList.remove('show');
+// }
+
+function handleClickShowQuickAction(){
+    var showBox = document.getElementById("quick_action_container");
+    var overlay = document.getElementById("overlay");
+    showBox.classList.add("show");
+    overlay.classList.add("show");
 }
 
-document.addEventListener('click', function (event) {
-    var wrapper = document.getElementById('cardContainer_mobile_view_');
-    if (!wrapper.contains(event.target) && !document.getElementById('quick_actions_button_').contains(event.target)) {
-        wrapper.classList.remove('show');
-    }
-});
-function toggleClose() {
-    var wrapper = document.getElementById('cardContainer_mobile_view_');
-    wrapper.classList.remove('show');
+function handleClickHideQuickAction(){
+    var showBox = document.getElementById("quick_action_container");
+    var overlay = document.getElementById("overlay");
+    showBox.classList.remove("show");
+    overlay.classList.remove("show");
 }
+
+
 
 /*****************quick-actions BMT-147 ******************/
