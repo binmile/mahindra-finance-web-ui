@@ -108,6 +108,13 @@
     text-align: left;
     color: $color_light_text;
   }
+  .right_side_data{
+    .border-top-data {
+        border-top: 1px solid $color_light_border;
+        margin-top: 28px;
+        margin-bottom: 28px;
+      }
+  }
   .border_bottom_post_closure {
     border-top: 1px solid $color_light_border;
     margin-top: 28px;
@@ -142,7 +149,7 @@
     color: $color_light_blue;
     border-bottom: 1px solid $color_light_blue;
     img {
-        @include custom-width-height(14px, 14px);
+      @include custom-width-height(14px, 14px);
       vertical-align: initial;
     }
   }
@@ -194,6 +201,36 @@
       span {
         &.interest_rate {
           @include custom-font(14px, 700, 24px, 0.25px);
+        }
+      }
+    }
+    .fdContents {
+      &.fdContents_success {
+        min-height: 0;
+      }
+    }
+    .heading_success {
+      margin-bottom: 8px;
+    }
+    .content_settled {
+      @include custom-font(14px, 400, 24px, 0.25px);
+      color: #6b7280;
+    }
+  }
+  .accountContainer {
+    .accountDetailsBox {
+      .leftside_div {
+        align-items: center;
+        @include setDisplayProperty(flex, center, center, column);
+        .email-content {
+          width: 364px;
+          text-align: center;
+        }
+        .buttonContainer_success {
+          button {
+            width: 238px;
+            height: 40px;
+          }
         }
       }
     }
@@ -856,7 +893,7 @@
         justify-content: flex-start;
         font-size: 14px;
         img {
-            @include custom-width-height(15px, 15px);
+          @include custom-width-height(15px, 15px);
         }
       }
       &::after {
@@ -881,7 +918,7 @@
     color: $color_light_blue;
     border-bottom: 1px solid $color_light_blue;
     img {
-        @include custom-width-height(14px, 14px);
+      @include custom-width-height(14px, 14px);
       vertical-align: initial;
     }
   }
@@ -915,6 +952,11 @@
     .renewal_wrapper_container {
       width: 100%;
     }
+     .content_settled {
+        @include custom-font(12px, 400, 16px, 0);
+       margin-top: 12px;
+       color:$color_light_text;
+      }
   }
   .border-top-data {
     &.border-top-data_renewal {
@@ -930,15 +972,35 @@
   /******Renewal-Summary-Review-Mobile-view end*******************/
   .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
     .accountDetails {
-        &.accountDetails_renewal {
-          margin-bottom: 18px;
-        }
+      &.accountDetails_renewal {
+        margin-bottom: 18px;
       }
+    }
     &.accountHolderDetails_renewal {
       display: unset;
     }
   }
-
+  .accountContainer {
+    .accountDetailsBox {
+      .leftside_div {
+        align-items: center;
+        @include setDisplayProperty(flex, center, center, column);
+        .email-content {
+          width: 100%;
+          text-align: center;
+        }
+        .buttonContainer_success {
+          button {
+          width: 100%;
+          }
+        }
+      }
+      &.accountDetailsBox_success {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+  }
   /******Renewal-Summary-Review-Mobile-view end*******************/
 }
 @media only screen and (max-width: $miniMobile) {

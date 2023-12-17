@@ -2168,6 +2168,11 @@ button.resend_otp.disabled {
     text-align: left;
     color: #6B7280;
   }
+  .right_side_data .border-top-data {
+    border-top: 1px solid #D6D6D6;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
   .border_bottom_post_closure {
     border-top: 1px solid #D6D6D6;
     margin-top: 28px;
@@ -2250,6 +2255,34 @@ button.resend_otp.disabled {
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.25px;
+  }
+  .accountBox .fdContents.fdContents_success {
+    min-height: 0;
+  }
+  .accountBox .heading_success {
+    margin-bottom: 8px;
+  }
+  .accountBox .content_settled {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #6b7280;
+  }
+  .accountContainer .accountDetailsBox .leftside_div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+  }
+  .accountContainer .accountDetailsBox .leftside_div .email-content {
+    width: 364px;
+    text-align: center;
+  }
+  .accountContainer .accountDetailsBox .leftside_div .buttonContainer_success button {
+    width: 238px;
+    height: 40px;
   }
   /*----------renewal-review-desktop-UI--- end------------------------*/
 }
@@ -3035,6 +3068,14 @@ button.resend_otp.disabled {
   .accountBox .renewal_wrapper_container {
     width: 100%;
   }
+  .accountBox .content_settled {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin-top: 12px;
+    color: #6B7280;
+  }
   .border-top-data.border-top-data_renewal {
     margin: 28px 0 16px 0;
   }
@@ -3051,6 +3092,24 @@ button.resend_otp.disabled {
   }
   .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_renewal {
     display: unset;
+  }
+  .accountContainer .accountDetailsBox .leftside_div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+  }
+  .accountContainer .accountDetailsBox .leftside_div .email-content {
+    width: 100%;
+    text-align: center;
+  }
+  .accountContainer .accountDetailsBox .leftside_div .buttonContainer_success button {
+    width: 100%;
+  }
+  .accountContainer .accountDetailsBox.accountDetailsBox_success {
+    border-top: none;
+    border-bottom: none;
   }
   /******Renewal-Summary-Review-Mobile-view end*******************/
 }
