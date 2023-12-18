@@ -2542,9 +2542,6 @@ button.resend_otp.disabled {
     place-items: center;
     flex-direction: row;
   }
-  .fixedDepositDetailsData {
-    margin-top: 24px;
-  }
   .fixedDepositDetailsData .details_fixed_deposit {
     padding: 14px 16px;
     background-color: #FFFFFF;
@@ -3278,10 +3275,10 @@ button.resend_otp.disabled {
   .navbar-collapse.show {
     height: 100%;
     left: 0;
-    transition: left 600ms ease-in-out;
+    transition: left 400ms ease-in-out;
   }
   .navbar-toggler.collapsed ~ .navbar-collapse {
-    transition: left 600ms ease-in;
+    transition: left 400ms ease-in;
   }
   #hamburgerIcon {
     width: 18px;
@@ -3400,10 +3397,10 @@ button.resend_otp.disabled {
     border: 1px solid #D6D6D6;
   }
   .mob_menus .mob_menu_list .mob_sub_menu.show {
-    height: 116px;
+    height: 115px;
   }
   .mob_menus .mob_menu_list .mob_menu_download.show {
-    height: 174px;
+    height: 173px;
   }
   .mob_menus .mob_menu_list .smallRotate {
     transform: rotate(45deg);
@@ -3490,6 +3487,63 @@ button.resend_otp.disabled {
     display: block;
   }
   /************Modal End************/
+  .owl-carousel .owl-stage-outer {
+    overflow: hidden;
+    height: 162px;
+  }
+  .owl-carousel .owl-item img.newFdImage {
+    width: 50%;
+  }
+  .owl-carousel .owl-item .carousel-roundBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+  }
+  .owl-carousel .owl-item .carousel-roundBtn img {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+  }
+  .owl-carousel .owl-item .cardLabelHeading {
+    margin-bottom: 8px;
+  }
+  .owl-carousel .owl-item .cardLabelList ul.list-none {
+    padding-top: 0 !important;
+    padding-bottom: 5px !important;
+  }
+  .owl-carousel .owl-item .cardLabelList ul.list-none li {
+    display: flex;
+    justify-content: flex-start;
+    place-items: flex-start;
+    flex-direction: row;
+  }
+  .owl-carousel .owl-item .cardLabelList li {
+    width: 60%;
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+  .owl-carousel .owl-item .cardLabelList li span {
+    font-size: 12px;
+  }
+  .owl-carousel .owl-item .cardLabelList li .roundBackgroundIcon {
+    background-color: #D6D6D6;
+    height: 14px;
+    width: 14px;
+  }
+  .owl-carousel .owl-item .cardLabelList li .roundBackgroundIcon img {
+    width: 8px;
+    height: 8px;
+  }
+  .owl-carousel .owl-dots {
+    margin-top: 0px !important;
+  }
   .mt-20 {
     margin-top: 12px;
   }
