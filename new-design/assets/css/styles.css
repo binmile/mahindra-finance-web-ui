@@ -2077,6 +2077,9 @@ button.resend_otp.disabled {
   .accountContainer .accountBox .fdContents.fdContents_post_closure_ {
     min-height: auto;
   }
+  .accountContainer .accountDetailsBox {
+    padding-right: 0;
+  }
   .accountContainer .accountDetailsBox .boldTitle {
     margin-bottom: 8px;
   }
@@ -2208,6 +2211,9 @@ button.resend_otp.disabled {
     justify-content: space-between;
   }
   .edit_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #1084CB;
     border-bottom: 1px solid #1084CB;
   }
@@ -2215,6 +2221,7 @@ button.resend_otp.disabled {
     width: 14px;
     height: 14px;
     vertical-align: initial;
+    margin-right: 5px;
   }
   .renewal-circle {
     width: 60px;
@@ -2272,6 +2279,31 @@ button.resend_otp.disabled {
     letter-spacing: 0.25px;
     color: #6b7280;
   }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList.accountList_review {
+    padding-bottom: 0;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList.accountList_review {
+    padding-bottom: 32px;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_remove {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_review {
+    align-items: flex-end !important;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountMobile {
+    margin-top: 24px;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
+    display: flex;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content .accountType {
+    margin-left: 3px;
+  }
+  .accountContainer .accountDetailsBox .bottomText_review {
+    margin-top: 17px;
+  }
   .accountContainer .accountDetailsBox .leftside_div {
     align-items: center;
     display: flex;
@@ -2288,6 +2320,56 @@ button.resend_otp.disabled {
     height: 40px;
   }
   /*----------renewal-review-desktop-UI--- end------------------------*/
+}
+@media only screen and (min-width: 992px) and (max-width: 1210px) {
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
+    flex-direction: column;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .themeRedBtn.customBtn {
+    padding: 12px 12px;
+  }
+  .accountContainer .accountBox .fdContents {
+    flex-wrap: wrap;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails {
+    margin-bottom: 12px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails::after {
+    position: initial;
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountContainer .termsConditionsContainer .checkbox-container {
+    margin-top: 0;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails.accountDetails_renewal {
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountDetailsBox {
+    padding-left: 0;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    margin: 24px 0px;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_renewal {
+    display: unset;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer.fdContents_success {
+    min-height: 0;
+  }
+  .accountContainer .accountBox .fd_content_min_height {
+    min-height: 0;
+  }
+  .accountContainer .accountBox .fd_content_min_height .fdContents.fdContents_mobile_tab {
+    margin-bottom: 24px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails.fdetails_review::after {
+    right: -44px;
+  }
+  .modal-dialog {
+    max-width: unset;
+  }
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
@@ -3096,6 +3178,12 @@ button.resend_otp.disabled {
   .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_renewal {
     display: unset;
   }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
+    display: flex;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content .accountType {
+    margin-left: 3px;
+  }
   .accountContainer .accountDetailsBox .leftside_div {
     align-items: center;
     display: flex;
@@ -3114,7 +3202,6 @@ button.resend_otp.disabled {
     border-top: none;
     border-bottom: none;
   }
-  /******Renewal-Summary-Review-Mobile-view end*******************/
 }
 @media only screen and (max-width: 420px) {
   /*********** Responsive dashboard View Start*************/
