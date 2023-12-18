@@ -197,6 +197,9 @@
     }
   }
   .accountBox {
+    .fd_content_min_height{
+        min-height: 325px;
+    }
     .bottomLightText {
       span {
         &.interest_rate {

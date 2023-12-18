@@ -2250,6 +2250,9 @@ button.resend_otp.disabled {
   .accountContainer .accountBox .fdContents .fdDetails.fdetails_review::after {
     right: -25px;
   }
+  .accountBox .fd_content_min_height {
+    min-height: 325px;
+  }
   .accountBox .bottomLightText span.interest_rate {
     font-size: 14px;
     font-weight: 700;
