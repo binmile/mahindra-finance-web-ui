@@ -427,10 +427,11 @@ nav .navbar-nav li.nav-item a.dropdown-toggle img.toggle-icon {
   transition: transform 250ms ease-in-out;
 }
 nav .navbar-nav li.nav-item ul.dropdown-menu {
+  width: 348px;
   border-radius: 8px;
   top: 51px;
   left: auto;
-  right: 0;
+  right: -20px;
   padding: 0px;
   border: none;
   overflow: hidden;
@@ -440,24 +441,52 @@ nav .navbar-nav li.nav-item ul.dropdown-menu li {
   padding: 0px 24px;
 }
 nav .navbar-nav li.nav-item ul.dropdown-menu li a {
-  border-bottom: 1px solid #D6D6D6;
-  padding: 16px 0px;
+  padding: 14px 0px;
   font-weight: 500;
   color: #231F20;
+  transition: all linear 0.1s;
 }
-nav .navbar-nav li.nav-item ul.dropdown-menu li a:hover {
-  background-color: #F5F5F5;
-}
-nav .navbar-nav li.nav-item ul.dropdown-menu li a img {
+nav .navbar-nav li.nav-item ul.dropdown-menu li a img.menuIcon {
   width: 24px;
   height: 24px;
   margin-right: 12px;
+  transition: all linear 0.2s;
 }
-nav .navbar-nav li.nav-item ul.dropdown-menu li:hover {
-  background-color: #F5F5F5 !important;
+nav .navbar-nav li.nav-item ul.dropdown-menu li a img.menu_hover_icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+  margin-left: 12px;
+  transition: all linear 0.4s;
+}
+nav .navbar-nav li.nav-item ul.dropdown-menu li a:hover {
+  color: #E31837;
+  background-color: transparent;
+}
+nav .navbar-nav li.nav-item ul.dropdown-menu li a:hover img.menuIcon {
+  filter: invert(27%) sepia(45%) saturate(2750%) hue-rotate(346deg) brightness(88%) contrast(88%);
+}
+nav .navbar-nav li.nav-item ul.dropdown-menu li a:hover img.menu_hover_icon {
+  opacity: 1;
 }
 nav .navbar-nav li.nav-item ul.dropdown-menu li:last-child a {
   border-bottom: 0px;
+  margin-bottom: 75px;
+}
+nav .navbar-nav li.nav-item ul.dropdown-menu li a.logoutLink {
+  border-top: 1px solid #D6D6D6;
+  margin-top: 75px;
+  color: #1084CB;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+nav .navbar-nav li.nav-item ul.dropdown-menu li a.logoutLink img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
 }
 nav .navbar-nav li.nav-item.dropdown:hover .dropdown-menu {
   display: block;
@@ -1516,7 +1545,7 @@ label.showMoreBtn img {
 }
 
 .accountDetailsBox {
-  padding: 24px;
+  padding: 24px 0px 24px 24px;
 }
 .accountDetailsBox .accountListContainer {
   min-height: 465px;
@@ -1857,49 +1886,37 @@ button.resend_otp.disabled {
 }
 
 #sucessToastMessage {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-  visibility: hidden;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: -15.5%;
+  position: fixed;
+  bottom: auto;
+  top: 27px;
+  left: 50%;
+  transform: translate(-50%, -100px);
+  padding: 0px;
+  z-index: -1;
+  width: 28%;
+  transition: all ease-in-out 600ms;
+  height: 40px;
+  border-radius: 8px;
   background-color: #22C55E;
   color: #FFFFFF;
   text-align: center;
-  border-radius: 8px;
-  padding: 10px 24px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  top: 75px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+#sucessToastMessage img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
 }
 
 #sucessToastMessage.show {
-  visibility: visible;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  opacity: 1;
+  z-index: 9999;
+  transform: translate(-50%, 30px) !important;
 }
-@keyframes fadein {
-  from {
-    top: 0;
-    opacity: 0;
-  }
-  to {
-    top: 75px;
-    opacity: 1;
-  }
-}
-@keyframes fadeout {
-  from {
-    top: 75px;
-    opacity: 1;
-  }
-  to {
-    top: 0;
-    opacity: 0;
-  }
-}
+
 /*********** Responsive CSS Start Here*************/
 @media screen and (min-width: 767px) {
   .mob-wrapper {
@@ -3043,6 +3060,180 @@ button.resend_otp.disabled {
   }
 }
 @media only screen and (max-width: 768px) {
+  /************Menu Start********************/
+  button.navbar-toggler {
+    border: none;
+    outline: none;
+    border-radius: 0px;
+  }
+  button.navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 54px;
+    left: 0;
+    height: 100%;
+    background-color: #FFFFFF;
+    width: 100%;
+  }
+  .navbar-collapse.collapsing {
+    height: 100%;
+    left: -100%;
+    transition: height 0s ease;
+  }
+  .navbar-collapse.show {
+    height: 100%;
+    left: 0;
+    transition: left 600ms ease-in-out;
+  }
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: left 600ms ease-in;
+  }
+  #hamburgerIcon {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin: 0px auto;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  #hamburgerIcon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  #hamburgerIcon span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  #hamburgerIcon span:nth-child(2) {
+    top: 7px;
+    transform-origin: left center;
+  }
+  #hamburgerIcon span:nth-child(3) {
+    top: 14px;
+    transform-origin: left center;
+  }
+  #hamburgerIcon.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 1px;
+    left: 3px;
+  }
+  #hamburgerIcon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  #hamburgerIcon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 14px;
+    left: 3px;
+  }
+  .mob_menus {
+    height: calc(100vh - 52px);
+    overflow: auto;
+  }
+  .mob_menus .mob_menu_list .mob_menu_user_profile {
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 20px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: normal;
+  }
+  .mob_menus .mob_menu_list .mob_menu_user_profile .userIconImage {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .mob_menus .mob_menu_list .mob_menu_user_profile .userIconImage img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  .mob_menus .mob_menu_list .mob_menu {
+    border-bottom: 1px solid #E8E8E8;
+    padding: 16px;
+  }
+  .mob_menus .mob_menu_list .mob_menu a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #231F20;
+    text-decoration: none;
+  }
+  .mob_menus .mob_menu_list .mob_menu_expandable {
+    padding: 0;
+  }
+  .mob_menus .mob_menu_list .mob_menu_expandable a {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-direction: row;
+    padding: 16px;
+  }
+  .mob_menus .mob_menu_list .mob_menu_expandable a img {
+    transition: all linear 300ms;
+  }
+  .mob_menus .mob_menu_list .mob_sub_menu {
+    background-color: #F0F0F0;
+    height: 0px;
+    overflow: hidden;
+    transition: all linear 300ms;
+  }
+  .mob_menus .mob_menu_list .mob_sub_menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mob_menus .mob_menu_list .mob_sub_menu ul li {
+    width: 50%;
+    border: 1px solid #D6D6D6;
+  }
+  .mob_menus .mob_menu_list .mob_sub_menu.show {
+    height: 116px;
+  }
+  .mob_menus .mob_menu_list .mob_menu_download.show {
+    height: 174px;
+  }
+  .mob_menus .mob_menu_list .smallRotate {
+    transform: rotate(45deg);
+  }
+  .mob_menus .mob_menu_logout {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .mob_menus .mob_menu_logout a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-decoration: underline;
+    color: #1084CB;
+  }
+  .mob_menus .mob_menu_logout a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  /************Menu End********************/
   /************Modal Start************/
   .modal, .quick_action_container {
     position: fixed;
@@ -3413,6 +3604,16 @@ button.resend_otp.disabled {
   .quickActionBox .quickActionTabs button {
     width: 100%;
     height: 32px;
+  }
+  #sucessToastMessage {
+    top: auto;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 0px);
+    width: 94%;
+  }
+  #sucessToastMessage.show {
+    transform: translate(-50%, -12px) !important;
   }
 }
 .verifyBtn {

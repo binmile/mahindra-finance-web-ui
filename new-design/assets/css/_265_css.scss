@@ -106,49 +106,33 @@
 }
 
 #sucessToastMessage {
-   @include custom-font(20px, 600, 24px, 0.15px);
-  visibility: hidden;
-  width: fit-content;
-  margin-left: -15.5%;
-  background-color: $color_green;
-  color: $color_white;
-  text-align: center;
-  border-radius: 8px;
-  padding: 10px 24px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  top: 75px;
+    position: fixed;
+    bottom: auto;
+    top: 27px;
+    left: 50%;
+    transform: translate(-50%, -100px);
+    padding: 0px;
+    z-index: -1;
+    width: 28%;
+    transition: all ease-in-out 600ms;
+    height: 40px;
+    border-radius: 8px;
+    background-color: $color_green;
+    color: $color_white;
+    text-align: center;
+    opacity: 0;
+    @include allCenter;
+  img{
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+  }
 }
-
 #sucessToastMessage.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  opacity: 1;
+  z-index: 9999;
+  transform: translate(-50%, 30px) !important;
 }
-
-@-webkit-keyframes fadein {
-  from {top: 0; opacity: 0;} 
-  to {top: 75px; opacity: 1;}
-}
-
-@keyframes fadein {
-  from {top: 0; opacity: 0;}
-  to {top: 75px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-  from {top: 75px; opacity: 1;} 
-  to {top: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-  from {top: 75px; opacity: 1;}
-  to {top: 0; opacity: 0;}
-}
-
-
-// Active toast-css-end
 
 /*********** Responsive CSS Start Here*************/
 
