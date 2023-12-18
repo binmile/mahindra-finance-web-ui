@@ -1,32 +1,3 @@
-/*****************Graph Start***************/
-window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        title: {
-            text: "Growth chart"
-        },
-        axisY: {
-            title: "",
-            valueFormatString: "#0,,.",
-            suffix: "k",
-            prefix: "₹"
-        },
-        data: [{
-            type: "splineArea",
-            color: "rgba(34, 197, 94, 1)",
-            markerSize: 5,
-            xValueFormatString: "YYYY",
-            yValueFormatString: "₹#,##0.##",
-            dataPoints: [
-                { x: new Date(2000, 0), y: 55000 },
-                { x: new Date(2001, 0), y: 70000 },
-                { x: new Date(2002, 0), y: 73605 }
-            ]
-        }]
-    });
-    chart.render();
-}
-/*****************Graph End***************/
 /*****************Menu Dropdown Hover Effect Start***************/
 
 $(document).ready(function () {
@@ -40,29 +11,29 @@ $(document).ready(function () {
 });
 
 // let isShown = document.getElementById("#dropdownElement").className;
-const element = document.getElementById('make_top');
-const dropdownMenuButton1 = document.getElementById('dropdownMenuButton1');
+// const element = document.getElementById('make_top');
+// const dropdownMenuButton1 = document.getElementById('dropdownMenuButton1');
 
-document.body.addEventListener("click", function (evt) {
-    if(dropdownMenuButton1.className.includes("show")) {
-        element.classList.remove('make_top');
-    } else {
-        element.classList.add('make_top');
-    }
-});
+// document.body.addEventListener("click", function (evt) {
+//     if(dropdownMenuButton1.className.includes("show")) {
+//         element.classList.remove('make_top');
+//     } else {
+//         element.classList.add('make_top');
+//     }
+// });
 
-dropdownMenuButton1.addEventListener("click", function (evt) {
-    if(dropdownMenuButton1.className.includes("show")) {
-        element.classList.remove('make_top');
-    } else {
-        element.classList.add('make_top');
-    }
-    // if(isShown){
-    //     $('#make_top').addClass('make_top');
-    // } else {
-    //     $('#make_top').removeClass('make_top');
-    // }
-});
+// dropdownMenuButton1.addEventListener("click", function (evt) {
+//     if(dropdownMenuButton1.className.includes("show")) {
+//         element.classList.remove('make_top');
+//     } else {
+//         element.classList.add('make_top');
+//     }
+//     // if(isShown){
+//     //     $('#make_top').addClass('make_top');
+//     // } else {
+//     //     $('#make_top').removeClass('make_top');
+//     // }
+// });
 
 // $('#dropdownMenuButton1').click(function (event) {
 //     event.stopPropagation();
