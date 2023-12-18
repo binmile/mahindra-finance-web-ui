@@ -39,15 +39,48 @@ $(document).ready(function () {
     });
 });
 
+// let isShown = document.getElementById("#dropdownElement").className;
+const element = document.getElementById('make_top');
+const dropdownMenuButton1 = document.getElementById('dropdownMenuButton1');
+
 document.body.addEventListener("click", function (evt) {
-    var isShown = $("#dropdownElement").hasClass("show");
-        if(isShown){
-            $('#make_top').addClass('make_top');
-        } else {
-            $('#make_top').removeClass('make_top');
-        }
+    if(dropdownMenuButton1.className.includes("show")) {
+        element.classList.remove('make_top');
+    } else {
+        element.classList.add('make_top');
+    }
 });
 
+dropdownMenuButton1.addEventListener("click", function (evt) {
+    if(dropdownMenuButton1.className.includes("show")) {
+        element.classList.remove('make_top');
+    } else {
+        element.classList.add('make_top');
+    }
+    // if(isShown){
+    //     $('#make_top').addClass('make_top');
+    // } else {
+    //     $('#make_top').removeClass('make_top');
+    // }
+});
+
+// $('#dropdownMenuButton1').click(function (event) {
+//     event.stopPropagation();
+//  });
+
+$("#mob_menu_download_click").click(function(){
+    $("#mob_menu_download").toggleClass("show");
+    $("#rotate_icon_download").toggleClass("smallRotate");
+  });
+
+  $("#mob_menu_profile_click").click(function(){
+    $("#mob_menu_profile").toggleClass("show");
+    $("#rotate_icon_profile").toggleClass("smallRotate");
+  });
+
+  $('#hamburgerIcon').click(function(){
+    $(this).toggleClass('open');
+});
 /*****************Menu Dropdown Hover Effect End***************/
 
 /*****************Dashboard Data show hide Start***************/
@@ -122,9 +155,9 @@ function checkboxTandC(){
 }
 /*****************open sucess toast BMT-265 ******************/
 function openSucessToast(){
-   var element = document.getElementById("sucessToastMessage");
-   element.className = "show";
-   setTimeout(function(){ element.className = element.className.replace("show", ""); }, 3000);
+    var element = document.getElementById("sucessToastMessage");
+    element.classList.add('show');
+    setTimeout(function(){ element.classList.remove('show'); }, 3000);
 }
 /*****************body toggle BMT-147 ******************/
  function toggle_data_dashboard(onclickId,elementId) {

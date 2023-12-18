@@ -150,10 +150,11 @@ nav {
         }
       }
       ul.dropdown-menu {
+        width: 348px;
         border-radius: 8px;
         top: 51px;
         left: auto;
-        right: 0;
+        right: -20px;
         padding: 0px;
         border: none;
         overflow: hidden;
@@ -162,24 +163,47 @@ nav {
         li {
           padding: 0px 24px;
           a {
-            border-bottom: 1px solid $color_light_border;
-            padding: 16px 0px;
+            padding: 14px 0px;
             font-weight: 500;
             color: $color_black_light;
-            &:hover {
-              background-color: $color_light_gray;
-            }
-            img {
+            transition: all linear 0.1s;
+            img.menuIcon {
               @include custom-width-height(24px, 24px);
               margin-right: 12px;
+              transition: all linear 0.2s;
             }
-          }
-          &:hover {
-            background-color: $color_light_gray !important;
+            img.menu_hover_icon{
+              @include custom-width-height(18px, 18px);
+              opacity: 0;
+              margin-left: 12px;
+              transition: all linear 0.4s;
+            }
+            &:hover {
+              color: $color_red;
+              background-color: transparent;
+              img.menuIcon{
+                filter: invert(27%) sepia(45%) saturate(2750%) hue-rotate(346deg) brightness(88%) contrast(88%);
+              }
+              img.menu_hover_icon{
+                opacity: 1;
+              }
+            }
           }
           &:last-child {
             a {
               border-bottom: 0px;
+              margin-bottom: 75px;
+            }
+          }
+          a.logoutLink{
+            border-top: 1px solid $color_light_border;
+            margin-top: 75px;
+            color: $color_light_blue;
+            margin-bottom: 0px;
+            @include custom-font(16px, 500, 24px, normal);
+            img{
+              @include custom-width-height(24px, 24px);
+              margin-right: 12px;
             }
           }
         }
@@ -997,7 +1021,7 @@ label.showMoreBtn {
 }
 
 .accountDetailsBox {
-  padding: 24px;
+  padding: 24px 0px 24px 24px;
   .accountListContainer {
     min-height: 465px;
     .accountList {
