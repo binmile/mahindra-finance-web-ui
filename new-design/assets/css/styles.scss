@@ -953,6 +953,7 @@ label.showMoreBtn {
     border-radius: 8px;
     .heading {
       @include custom-font(20px, 600, 24px, 0.15px);
+      word-break: break-all;
     }
     .fdMainContent {
       border-bottom: 1px solid $color_light_border;
