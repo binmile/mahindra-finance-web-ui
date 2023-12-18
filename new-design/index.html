@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahindra Finance :: Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -299,7 +301,55 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-md-12 col-lg-8 col-xl-4 mt-20">
+            <div class="col-12 mt-20 no_desktop_view">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="dashboardDarkCard">
+                            <div class="cardLabelHeading">
+                                Secure future:<br/> invest in FD now!
+                            </div>
+                            <div class="cardLabelList">
+                                <ul>
+                                    <li>Interest upto <span>8.05%</span></li>
+                                    <li>Extra <span>0.25%</span> for senior citizens</li>
+                                </ul>
+                            </div>
+                            <div class="themeRedBtn carousel-roundBtn">
+                                <img src="./assets/img/arrow-right.svg" alt="icons" />
+                            </div>
+                            <img src="./assets/img/illustration-top-banner.svg" alt="image" class="newFdImage" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="dashboardDarkCard">
+                            <div class="cardLabelHeading">
+                                Loan against:<br/> your fixed deposit
+                            </div>
+                            <div class="cardLabelList">
+                                <ul class="list-none">
+                                    <li>
+                                        <div class="roundBackgroundIcon">
+                                            <img src="./assets/img/icons/preclosure-flow/money-single.svg" alt="icons" />
+                                        </div>
+                                        No monthly EMIs</li>
+                                    <li>
+                                        <div class="roundBackgroundIcon">
+                                            <img src="./assets/img/icons/percent.svg" alt="icons" />
+                                        </div>
+                                        Only additional 2% <br/>
+                                        interest on FD ROI</li>
+                                </ul>
+                            </div>
+                            <div class="themeRedBtn carousel-roundBtn">
+                                <img src="./assets/img/arrow-right.svg" alt="icons" />
+                            </div>
+                            <img src="./assets/img/Get-loan-fixed-deposit-banner.svg" alt="image" class="newFdImage" />
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="col col-md-12 col-lg-8 col-xl-4 mt-20 no_mobile_view">
                 <div class="dashboardDarkCard">
                     <div class="cardLabelHeading">
                         Secure future: invest in FD now!
@@ -319,9 +369,8 @@
             </div>
         </div>
     </div>
-
-    <div class="container mt-20" >
-        <div class="row animate__animated animate__fadeInUp no_mobile_view" id="make_top">
+    <div class="container mt-20 no_mobile_view" >
+        <div class="row animate__animated animate__fadeInUp" id="make_top">
             <div class="col col-md-12">
                 <div class="listTable">
                     <div class="listTableHead">
@@ -582,7 +631,7 @@
 
     <div class="container no_desktop_view animate__animated animate__fadeInUp">
         <div class="fixedDepositDetailsData">
-            <div class="fixed_deposit_summary">
+            <div class="fixed_deposit_summary mt-0">
                 Fixed deposit list
             </div>
 
@@ -1006,9 +1055,28 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
     <script src="./assets/js/chart.min.js"></script>
     <script src="./assets/js/graph.js"></script>
     <script src="./assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            autoplay: true,
+            autoplaySpeed: 100000000000000,
+            responsive: {
+              0: {
+                items: 1.4,
+                nav: false,
+                dots: true
+              }
+            }
+          })
+        })
+      </script>
 </body>
 
 </html>

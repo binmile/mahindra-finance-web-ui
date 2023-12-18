@@ -24,9 +24,6 @@
         position: fixed;
         top: 54px;
         left: 0;
-        // padding-left: 16px;
-        // padding-right: 16px;
-        // padding-bottom: 15px;
         height: 100%;
         background-color: #FFFFFF;
         width: 100%;
@@ -41,11 +38,11 @@
     .navbar-collapse.show {
         height: 100%;
         left: 0;
-        transition: left 600ms ease-in-out;
+        transition: left 400ms ease-in-out;
     }
 
     .navbar-toggler.collapsed ~ .navbar-collapse {
-        transition: left 600ms ease-in;
+        transition: left 400ms ease-in;
     }
 
     #hamburgerIcon {
@@ -179,10 +176,10 @@
                 }
             }
             .mob_sub_menu.show{
-                height: 116px;
+                height: 115px;
             }
             .mob_menu_download.show{
-                height: 174px;
+                height: 173px;
             }
             .smallRotate{
                 transform: rotate(45deg);
@@ -269,6 +266,66 @@
         display: block;
         }
       /************Modal End************/
+
+      .owl-carousel{
+        .owl-stage-outer{
+            overflow: hidden;
+            height: 162px;
+        }
+        .owl-item{
+            img.newFdImage {
+                width: 50%;
+            }
+            .carousel-roundBtn{
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                @include allCenter;
+                img{
+                    margin: 0;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+            .cardLabelHeading{
+                margin-bottom: 8px;
+            }
+            .cardLabelList{
+                ul.list-none{
+                    padding-top: 0 !important;
+                    padding-bottom: 5px !important;
+                    li{
+                        @include setDisplayProperty(flex, flex-start, flex-start);
+                    }
+                }
+                li{
+                    width: 60%;
+                    font-size: 10px;
+                    margin-bottom: 4px;
+                    span{
+                        font-size: 12px;
+                    }
+                    .roundBackgroundIcon{
+                        background-color: $color_light_border;
+                        height: 14px;
+                        width: 14px;
+                        img{
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .owl-dots{
+            margin-top: 0px !important;
+        }
+      }
+
       .mt-20{
         margin-top: 12px;
       }
