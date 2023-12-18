@@ -2150,10 +2150,7 @@ button.resend_otp.disabled {
     margin-top: 16px;
     background-color: #F5F5F5;
     border-radius: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 23px;
-    padding-left: 24px;
+    padding: 8px 23px 8px 24px;
     margin-top: 16px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents {
@@ -2217,6 +2214,41 @@ button.resend_otp.disabled {
     margin-bottom: 12px;
   }
   /*----------post-closure-dashboard-UI-  end------------------------*/
+  /*----------renewal-desktop-UI---start------------------------*/
+  .renewal-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .edit_img {
+    color: #1084CB;
+    border-bottom: 1px solid #1084CB;
+  }
+  .edit_img img {
+    width: 14px;
+    height: 14px;
+    vertical-align: initial;
+  }
+  .renewal-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 5px;
+  }
+  .renewal-circle img {
+    width: 36px;
+    height: 36px;
+  }
+  .accountBox .renewal_wrapper_container {
+    width: 50%;
+  }
+  .accountBox .renewal_wrapper_container .fdContents .fdDetails::after {
+    right: -17px;
+  }
+  /*----------renewal-desktop-UI--- end------------------------*/
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
@@ -2951,6 +2983,66 @@ button.resend_otp.disabled {
     margin-bottom: 0px;
   }
   /******Responsive post-closure-Mobile-view end*******************/
+  /******Renewal-Summary-Mobile-view start*******************/
+  .card_content_heading {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .renewal-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .edit_img {
+    color: #1084CB;
+    border-bottom: 1px solid #1084CB;
+  }
+  .edit_img img {
+    width: 14px;
+    height: 14px;
+    vertical-align: initial;
+  }
+  .renewal-circle {
+    width: 46px;
+    height: 46px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 5px;
+  }
+  .renewal-circle img {
+    width: 25px;
+    height: 25px;
+  }
+  .accountBox .renewal_wrapper_container {
+    width: 50%;
+  }
+  .accountBox .renewal_wrapper_container .fdContents.fdContents_renewal {
+    margin-bottom: 36px;
+  }
+  .accountBox .renewal_wrapper_container .fdContents .fdDetails::after {
+    right: -17px;
+  }
+  .accountBox .fdMainContent.fdMainContent_renewal {
+    padding: 12px 0 16px 0;
+  }
+  .accountBox .renewal_wrapper_container {
+    width: 100%;
+  }
+  .border-top-data.border-top-data_renewal {
+    margin: 28px 0 16px 0;
+  }
+  .termsConditionsContainer .label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  /******Renewal-Summary-Mobile-view end*******************/
 }
 @media only screen and (max-width: 420px) {
   /*********** Responsive dashboard View Start*************/
