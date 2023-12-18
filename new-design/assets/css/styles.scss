@@ -234,12 +234,12 @@ nav {
 .themeRedBtn {
   background-color: $color_red;
   color: $color_white;
-  @include custom-width-height(fit-content, 27px);
+  @include custom-width-height(fit-content, 32px);
   border: none;
   outline: none;
   border-radius: 8px;
   padding: 0 12px 0 12px;
-  @include custom-font(12px, 700, 32px, normal);
+  @include custom-font(12px, 700, 32px, 1.25px);
   @include allCenter;
   cursor: pointer;
   img {
@@ -290,10 +290,12 @@ nav {
 
 .dashboardDarkCard {
   position: relative;
-  background-color: $color_black_light;
-  color: $color_white;
+  // background-color: $color_black_light;
+  // color: $color_white;
+  border: 1px solid rgba(227, 229, 234, 1);
   box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
     0px 10px 15px 0px rgba($color_black, 0.05);
+  background: linear-gradient(180deg, #EFF6FF 0%, rgba(239, 246, 255, 0) 100%);
   border-radius: 8px;
   padding: 16px;
   overflow: hidden;
@@ -401,16 +403,20 @@ label.showMoreBtn {
 
 .fdAvailBanner {
   padding: 32px 28px;
-  height: 316px;
+  height: 270px;
   .cardLabelHeading {
-    margin-bottom: 8px;
-    @include custom-font(24px, 400, 32px, normal);
+    margin-bottom: 16px;
+    @include custom-font(20px, 600, 24px, 0.15px);
   }
   .cardLabelList {
     margin-bottom: 16px;
     ul {
       li {
-        @include custom-font(16px, 400, 24px, normal);
+        margin-bottom: 8px;
+        @include custom-font(14px, 500, 20px, normal);
+        &:last-child{
+          margin-bottom: 44px;
+        }
       }
     }
   }
@@ -468,16 +474,24 @@ label.showMoreBtn {
 #moreListData {
   display: none;
 }
+
+.list-none{
+  list-style: none !important;
+  padding: 8px 0 13px 0px !important;
+  margin: 0px !important;
+}
+
 /********************Dashboard End*********************/
 
 /********************Chart Start*********************/
 #chartContainer {
   padding: 18px;
   width: 100%;
-  height: 316px;
+  height: 270px;
+  overflow: hidden;
   canvas {
     width: 100% !important;
-    max-height: 280px;
+    max-height: 240px;
   }
   a.canvasjs-chart-credit {
     display: none;
