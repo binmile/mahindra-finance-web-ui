@@ -3248,7 +3248,7 @@ button.resend_otp.disabled {
     border-bottom: none;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 450px) {
   /*********** Responsive dashboard View Start*************/
   .cardContainerMobile .first_active_data::after {
     right: -32px;
@@ -3882,6 +3882,11 @@ button.resend_otp.disabled {
   }
   #sucessToastMessage.show {
     transform: translate(-50%, -12px) !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .owl-carousel .owl-item img.newFdImage {
+    width: 40%;
   }
 }
 .verifyBtn {
