@@ -392,6 +392,13 @@ body {
   position: relative;
 }
 
+.allCentered {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
 /*********Header Start****************/
 nav {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
@@ -1499,7 +1506,6 @@ label.showMoreBtn img {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.15px;
-  word-break: break-all;
 }
 .accountContainer .accountBox .fdMainContent {
   border-bottom: 1px solid #D6D6D6;
@@ -2121,6 +2127,30 @@ button.resend_otp.disabled {
     display: none;
   }
   /*********** Responsive Quick-Actions-Mobile View End*************/
+  .accountContainer .bottomLightText_success {
+    border-top: 1px solid #D6D6D6;
+    padding-top: 24px;
+  }
+  .accountContainer .border-success-page {
+    border-top: 1px solid #D6D6D6;
+    margin: 24px 0;
+  }
+  .accountContainer .accountBox .fdContents.fdContents_remove_margin {
+    margin-top: 0;
+  }
+  .accountContainer .accountBox .fdContents.with-border {
+    position: relative;
+  }
+  .accountContainer .accountBox .fdContents.with-border::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 80%;
+    background: #D6D6D6;
+  }
   .accountContainer .accountBox .fdContents.fdContents_post_closure_ {
     min-height: auto;
   }
@@ -2308,6 +2338,15 @@ button.resend_otp.disabled {
   .accountBox .fd_content_min_height {
     min-height: 325px;
   }
+  .accountBox .fd_content_min_height.fd_content_min_height_success {
+    min-height: 240px;
+    border-top: 1px solid #D6D6D6;
+    margin-top: 24px;
+    padding-top: 24px;
+  }
+  .accountBox .fd_content_min_height.fd_content_min_height_post_closure {
+    min-height: 200px;
+  }
   .accountBox .bottomLightText span.interest_rate {
     font-size: 14px;
     font-weight: 700;
@@ -2352,26 +2391,78 @@ button.resend_otp.disabled {
   .accountContainer .accountDetailsBox .bottomText_review {
     margin-top: 17px;
   }
-  .accountContainer .accountDetailsBox .leftside_div {
-    align-items: center;
+  .accountDetailsBox_success {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .accountDetailsBox_success .all_done {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    margin-bottom: 16px;
+    margin: 24px 0 16px 0;
+    color: #231F20;
+  }
+  .accountDetailsBox_success .buttonContainer_success {
     display: flex;
     justify-content: center;
     place-items: center;
-    flex-direction: column;
+    flex-direction: row;
   }
-  .accountContainer .accountDetailsBox .leftside_div .email-content {
-    width: 364px;
-    text-align: center;
+  .accountDetailsBox_success .email-content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+    width: 100% !important;
+    color: #231F20;
   }
-  .accountContainer .accountDetailsBox .leftside_div .buttonContainer_success button {
-    width: 238px;
+  .accountDetailsBox_success .buttonContainer_success .themeRedBtn.button_success_home {
+    width: 38%;
     height: 40px;
   }
   /*----------renewal-review-desktop-UI--- end------------------------*/
 }
-@media only screen and (min-width: 992px) and (max-width: 1210px) {
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
+@media only screen and (min-width: 992px) and (max-width: 1236px) {
+  .no_desktop_view {
+    display: none;
+  }
+  .accountDetailsBox_success .all_done {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    margin: 24px 0 16px 0;
+  }
+  .accountDetailsBox_success .email-content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails .value_success {
+    font-size: 11px;
+  }
+  .accountContainer .accountBox .with-border::after {
+    right: -10px;
+  }
+  .accountContainer .accountBox .fdContents .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
     flex-direction: column;
+  }
+  .accountContainer .content_settled {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin-top: 12px;
+    color: #6B7280;
+  }
+  .accountContainer .border-success-page {
+    border-top: 1px solid #D6D6D6;
+    margin: 24px 0;
   }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .themeRedBtn.customBtn {
     padding: 12px 12px;
@@ -2382,14 +2473,63 @@ button.resend_otp.disabled {
   .accountContainer .accountBox .fdContents .fdDetails {
     margin-bottom: 12px;
   }
+  .accountContainer .accountBox .fdContents .fdDetails .label.label_success {
+    font-size: 10px;
+  }
   .accountContainer .accountBox .fdContents .fdDetails::after {
     position: initial;
     gap: 10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountContainer .accountBox .fdContents.remove_margin {
+    margin: 0;
+  }
+  .buttonContainer_success .themeRedBtn.button_success_home {
+    height: 40px;
+  }
+  .accountContainer .accountBox .fdContents.with-border::after {
+    right: 17%;
+  }
+  .accountDetailsBox_success {
+    border-bottom: 1px solid #D6D6D6;
+    margin-bottom: 28px;
+  }
+  .accountDetailsBox_success .all_done {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin: 8px 0 16px 0;
+  }
+  .accountDetailsBox_success .email-content {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .no_mobile_view {
+    display: none !important;
+  }
+  .no_desktop_ipad {
+    display: block;
+  }
+  .accountContainer .accountBox .fdContents.with-border::after {
+    height: 60%;
+  }
+  .accountContainer .accountDetailsBox.accountDetailsBox_success_remove_margin {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .accountContainer .accountBox .fdContents .remove_margin {
+    margin: 0;
+  }
   .accountContainer .termsConditionsContainer .checkbox-container {
     margin-top: 0;
+  }
+  .accountContainer .accountDetailsBox_success_remove_margin {
+    margin-top: 0;
+    padding-top: 0;
   }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails.accountDetails_renewal {
     margin-bottom: 16px;
@@ -2400,14 +2540,46 @@ button.resend_otp.disabled {
     border-bottom: 1px solid #E8E8E8;
     margin: 24px 0px;
   }
+  .accountContainer .accountDetailsBox.remove_border-top {
+    border-top: unset;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_renewal {
     display: unset;
   }
   .accountContainer .accountDetailsBox .accountListContainer.fdContents_success {
     min-height: 0;
   }
+  .accountContainer .bottomLightText_success {
+    border-top: unset;
+    padding-top: 0;
+    margin-top: 4px;
+  }
+  .accountContainer .accountBox .content_settled {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails.fdDetails_value {
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails .value.value_success {
+    margin-bottom: 0;
+  }
+  .accountContainer .accountBox .accountContainer .accountBox .fdContents.remove_margin {
+    margin: 0;
+  }
   .accountContainer .accountBox .fd_content_min_height {
     min-height: 0;
+  }
+  .accountContainer .accountBox .fd_content_min_height.fd_content_min_height_success {
+    border-top: unset;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .accountContainer .accountBox .fd_content_min_height.fdContents_width {
+    width: 100%;
   }
   .accountContainer .accountBox .fd_content_min_height .fdContents.fdContents_mobile_tab {
     margin-bottom: 24px;
@@ -2424,6 +2596,22 @@ button.resend_otp.disabled {
   .cardContainer_mobileView {
     margin-bottom: 24px;
     margin-top: 3px;
+  }
+  .buttonContainer_success .themeRedBtn.button_success_home {
+    height: 40px;
+  }
+  .accountDetailsBox_success .all_done {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin: 8px 0 12px 0;
+  }
+  .accountDetailsBox_success .email-content {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
   }
   .dashboardDarkCard .cardLabelHeading.cardLabelHeading_mob {
     text-align: left;
@@ -2974,6 +3162,17 @@ button.resend_otp.disabled {
   .accountContainer {
     padding: 12px 16px;
   }
+  .accountContainer.accountContainer_success {
+    padding-bottom: 26px;
+  }
+  .accountContainer .accountDetailsBox.accountDetailsBox_success_remove_margin {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .accountContainer .border-success-page {
+    border-top: 1px solid #D6D6D6;
+    margin: 24px 0;
+  }
   .accountContainer .termsConditionsContainer .checkbox-container {
     margin-top: 0;
   }
@@ -3223,6 +3422,9 @@ button.resend_otp.disabled {
   .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_renewal {
     display: unset;
   }
+  .accountContainer.accountContainer_success {
+    padding-bottom: 26px;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
     display: flex;
   }
@@ -3235,10 +3437,19 @@ button.resend_otp.disabled {
     justify-content: center;
     place-items: center;
     flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
   }
   .accountContainer .accountDetailsBox .leftside_div .email-content {
+    margin-top: 12px;
     width: 100%;
     text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
   }
   .accountContainer .accountDetailsBox .leftside_div .buttonContainer_success button {
     width: 100%;
@@ -3246,6 +3457,36 @@ button.resend_otp.disabled {
   .accountContainer .accountDetailsBox.accountDetailsBox_success {
     border-top: none;
     border-bottom: none;
+  }
+  .accountContainer .accountDetailsBox.accountDetailsBox_success_remove_margin {
+    margin-bottom: 0;
+  }
+  .accountContainer .accountBox .bottomLightText.bottomLightText_success {
+    margin-top: 4px;
+  }
+  .accountContainer .accountBox .content_settled {
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails.fdDetails_value {
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails .value.value_success {
+    margin-bottom: 0;
+  }
+  .accountContainer .accountBox .fdContents.remove_margin {
+    margin: 0;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails.fdContents_width {
+    width: 100%;
+  }
+  .accountDetailsBox_success {
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    width: 100%;
+  }
+  .accountDetailsBox_success img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 450px) {
