@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahindra Finance :: Single Account Holder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Top-navbar Start -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">
+              <img src="./assets/img/logo.svg" alt="Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <div id="hamburgerIcon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0 no_mobile_view">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">FD renewal</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="preclosure.html">Preclosure</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Loan against FD repayment</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Loan against FD</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                          Download
+                          <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <img src="./assets/img/icons/Certificate.svg" alt="icon" class="menuIcon" /> TDS certificate
+                                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                              </a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <img src="./assets/img/icons/file-plus.svg" alt="icon" class="menuIcon" /> Form 15 G/H submission
+                                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                              </a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <img src="./assets/img/icons/file-text.svg" alt="icon" class="menuIcon" /> Cumulative letter
+                                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                              </a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Non - cumulative letter
+                                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                              </a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <img src="./assets/img/icons/percent.svg" alt="icon" class="menuIcon" /> Interest paid / accrued details
+                                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown userAvatar">
+                      <img src="./assets/img/avatar.png" alt="user" />
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                          Profile
+                          <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <img src="./assets/img/icons/user.svg" alt="icon" class="menuIcon" /> My account
+                                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                              </a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <img src="./assets/img/icons/edit.svg" alt="icon" class="menuIcon" /> CKYC update
+                                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                              </a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <img src="./assets/img/icons/check-circle.svg" alt="icon" class="menuIcon" /> Avail employee benefit <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                              </a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Other fixed deposits <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                              </a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item logoutLink" href="#">
+                                  <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log out
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+              <div class="mob_menus no_desktop_view">
+                  <div class="mob_menu_list">
+                      <div class="mob_menu_user_profile">
+                          <div class="userIconImage">
+                              <img src="./assets/img/avatar.png" alt="user icon" />
+                          </div>
+                          Vikram Kumar Sahu
+                      </div>
+                      <div class="mob_menu mob_menu_expandable">
+                          <a href="javascript:;" id="mob_menu_profile_click">
+                              <div>My Profile</div>
+                              <div><img src="./assets/img/icons/plusIcon.svg" alt="icon" id="rotate_icon_profile" /></div>
+                          </a>
+                          <div class="mob_sub_menu mob_menu_profile" id="mob_menu_profile">
+                              <ul>
+                                  <li><a href="#">My account</a></li>
+                                  <li><a href="#">CKYC update</a></li>
+                                  <li><a href="#">Avail employee benefit</a></li>
+                                  <li><a href="#">Other fixed deposits</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="mob_menu">
+                          <a href="#">FD renewal</a>
+                      </div>
+                      <div class="mob_menu">
+                          <a href="#">Preclosure</a>
+                      </div>
+                      <div class="mob_menu">
+                          <a href="#">Loan against FD repayment</a>
+                      </div>
+                      <div class="mob_menu">
+                          <a href="#">Loan against FD</a>
+                      </div>
+                      <div class="mob_menu mob_menu_expandable">
+                          <a href="javascript:;" id="mob_menu_download_click">
+                              <div>Download</div>
+                              <div><img src="./assets/img/icons/plusIcon.svg" alt="icon" id="rotate_icon_download" /></div>
+                          </a>
+                          <div class="mob_sub_menu mob_menu_download" id="mob_menu_download">
+                              <ul>
+                                  <li><a href="#">TDS certificate</a></li>
+                                  <li><a href="#">Form 15 G/H submission</a></li>
+                                  <li><a href="#">Cumulative letter</a></li>
+                                  <li><a href="#">Non - cumulative letter</a></li>
+                                  <li><a href="#">Interest paid / accrued</a></li>
+                                  <li><a href="#">&nbsp;</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mob_menu_logout">
+                      <a href="#">
+                          <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                          Log out
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <!--Top-navbar End -->
+
+    <div class="container mb-20">
+      <div class="row">
+        <div class="col col-md-12 mt-20">
+          <a href="#" class="commonBackBtn"
+            ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
+            Back</a
+          >
+        </div>
+        <div class="col col-md-12 mt-20 animate__animated animate__fadeInUp">
+          <div class="cardContainer accountContainer accountContainer_success">
+            <div class="container p-0">
+              <div class="row">
+                <div class="col col-md-12 col-sm-12 col-lg-6 allCentered">
+                  <div class="accountDetailsBox_success text-center">
+                      <div class="success_img">
+                        <img src="./assets/img/success.svg" alt="icon" />
+                      </div>
+                      <div class="all_done">All done!</div>
+                      <div class="email-content text-center">
+                        You will receive the renewal confirmation & FDR
+                        E-Receipt on your email : vikram.sahu@gmail.com
+                      </div>
+                      <div class="buttonContainer_success no_mobile_view">
+                        <button class="btn themeRedBtn button_success_home">Home</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col col-md-12 col-sm-12 col-lg-6">
+                  <div class="accountBox darkBg">
+                    <div class="heading heading_success">
+                      Your FD renewal process is successfully completed
+                    </div>
+                    <div class="content_settled">
+                      Out of ₹22,569 your loan amount will get settled for loan
+                      2212321
+                    </div>
+                    <div class="row flex-row">
+                       <div class="col-md-4 col-6">
+                        <div
+                          class="fdContents fdContents_renewal fdContents_success with-border remove_margin"
+                        >
+                          <div class="fdDetails fdContents_width fdetails_data_success fdDetails_value">
+                            <div class="label label_success">Renewal application no.</div>
+                            <div class="value value_success">
+                              <div class="roundBackgroundIcon">
+                                <img
+                                  src="./assets/img/icons/minus.svg"
+                                  alt="icon"
+                                />
+                              </div>
+                              #1233224
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-6">
+                        <div
+                          class="fdContents fdContents_renewal fdContents_success with-border remove_margin"
+                        >
+                          <div class="fdDetails fdContents_width fdDetails_value">
+                            <div class="label label_success">Deposit amount</div>
+                            <div class="value value_success">
+                              <div class="roundBackgroundIcon">
+                                <img
+                                  src="./assets/img/icons/cash_text.svg"
+                                  alt="icon"
+                                />
+                              </div>
+                              ₹ 15,000
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-6">
+                        <div
+                          class="fdContents fdContents_renewal fdContents_success remove_margin"
+                        >
+                          <div class="fdDetails fdContents_width fdDetails_value">
+                            <div class="label label_success">Start date</div>
+                            <div class="value value_success">
+                              <div class="roundBackgroundIcon">
+                                <img
+                                  src="./assets/img/icons/clockwise.svg"
+                                  alt="icon"
+                                />
+                              </div>
+                              15 months
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fd_content_min_height fd_content_min_height_success">
+                        <div class="row flex-row">
+                            <div class="col-md-4 col-6">
+                              <div
+                                class="fdContents fdContents_renewal fdContents_success with-border fdContents_remove_margin remove_margin"
+                              >
+                                <div class="fdDetails fdContents_width fdDetails_value">
+                                  <div class="label label_success">Start date</div>
+                                  <div class="value value_success">
+                                    <div class="roundBackgroundIcon">
+                                      <img
+                                        src="./assets/img/icons/calendar-red-icon.svg"
+                                        alt="icon"
+                                      />
+                                    </div>
+                                    18 Sept 2025
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                              <div
+                                class="fdContents fdContents_renewal fdContents_success fdContents_remove_margin remove_margin"
+                              >
+                                <div class="fdDetails fdContents_width fdDetails_value">
+                                  <div class="label label_success">End date</div>
+                                  <div class="value value_success">
+                                    <div class="roundBackgroundIcon">
+                                      <img
+                                        src="./assets/img/icons/calendar-red-icon.svg"
+                                        alt="icon"
+                                      />
+                                    </div>
+                                    18 Dec 2026
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="bottomLightText bottomLightText_renewal bottomLightText_success">
+                      *The final amount will be payable post deduction of TDS,
+                      as per the tax guidelines
+                    </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-12 col-12 col-sm-12 col-xs-12 no_desktop_view no_desktop_ipad">
+            <div class="buttonContainer buttonContainer_success">
+                <button class="btn themeRedBtn button_success_home">Home</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/chart.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>

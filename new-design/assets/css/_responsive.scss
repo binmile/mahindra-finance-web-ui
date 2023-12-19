@@ -10,11 +10,207 @@
 }
 
 @media only screen and (max-width: $tablet) {
+
+    /************Menu Start********************/
+    button.navbar-toggler{
+        border: none;
+        outline: none;
+        border-radius: 0px;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 54px;
+        left: 0;
+        height: 100%;
+        background-color: #FFFFFF;
+        width: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        height: 100%;
+        left: -100%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        height: 100%;
+        left: 0;
+        transition: left 400ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 400ms ease-in;
+    }
+
+    #hamburgerIcon {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        margin: 0px auto;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        span {
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: #FFFFFF;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+          }
+      }
+      #hamburgerIcon span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+      }
+      #hamburgerIcon span:nth-child(2) {
+        top: 7px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+      }
+      #hamburgerIcon span:nth-child(3) {
+        top: 14px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+      }
+      #hamburgerIcon.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 1px;
+        left: 3px;
+      }
+      #hamburgerIcon.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+      }
+      #hamburgerIcon.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 14px;
+        left: 3px;
+      }
+
+    .mob_menus{
+        height: calc(100vh - 52px);
+        overflow: auto;
+        .mob_menu_list{
+            .mob_menu_user_profile{
+                @include setDisplayProperty(flex, flex-start, center);
+                border-bottom: 1px solid $color_border;
+                padding: 20px 16px;
+                @include custom-font(14px, 500, 20px, normal);
+                .userIconImage{
+                    @include custom-width-height(51px, 51px);
+                    border-radius: 50%;
+                    margin-right: 15px;
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                    }
+                }
+            }
+            .mob_menu{
+                border-bottom: 1px solid $color_border;
+                padding: 16px;
+                a{
+                    @include custom-font(14px, 600, 24px, 0.25px);
+                    color: $color_black_light;
+                    text-decoration: none;
+                }
+            }
+            .mob_menu_expandable {
+                padding: 0;
+                a{
+                    @include setDisplayProperty(flex, space-between, center);
+                    padding: 16px;
+                    white-space: nowrap;
+                    img{
+                        transition: all linear 300ms;
+                    }
+                }
+            }
+            .mob_sub_menu{
+                background-color: #F0F0F0;
+                height: 0px;
+                overflow: hidden;
+                transition: all linear 300ms;
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 50%;
+                        border: 1px solid #D6D6D6;
+                        a{
+                            @include custom-font(12px, 500, 16px, 0.25px);
+                        }
+                    }
+                }
+            }
+            .mob_sub_menu.show{
+                height: 99px;
+            }
+            .mob_menu_download.show{
+                height: 149px;
+            }
+            .smallRotate{
+                transform: rotate(45deg);
+            }
+        }
+        .mob_menu_logout {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            a{
+                @include custom-font(12px, 500, 16px, 0.25px);
+                text-decoration: underline;
+                color: $color_light_blue;
+                img{
+                    @include custom-width-height(16px, 16px);
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    /************Menu End********************/
     /************Modal Start************/
-    .modal {
+    .modal, .quick_action_container {
         position: fixed;
         bottom: 0;
         top: auto;
+        left: 0;
         background: #fff;
         box-shadow: 0px 4px 10px 0px rgba($color_black, 0.06),
           0px 2px 6px 0px rgba($color_black, 0.06);
@@ -56,10 +252,84 @@
         }
       }
 
-      .modal.show {
+      .modal.show, .quick_action_container.show {
         transform: translate(0, 0px) !important;
       }
+
+      #overlay{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color_black, 0.5);
+      }
+
+      #overlay.show{
+        display: block;
+        }
       /************Modal End************/
+
+      .owl-carousel{
+        .owl-stage-outer{
+            overflow: hidden;
+            height: 162px;
+        }
+        .owl-item{
+            img.newFdImage {
+                width: 50%;
+            }
+            .carousel-roundBtn{
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                @include allCenter;
+                img{
+                    margin: 0;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+            .cardLabelHeading{
+                margin-bottom: 8px;
+            }
+            .cardLabelList{
+                ul.list-none{
+                    padding-top: 0 !important;
+                    padding-bottom: 5px !important;
+                    li{
+                        @include setDisplayProperty(flex, flex-start, flex-start);
+                    }
+                }
+                li{
+                    width: 60%;
+                    font-size: 10px;
+                    margin-bottom: 4px;
+                    span{
+                        font-size: 12px;
+                    }
+                    .roundBackgroundIcon{
+                        background-color: $color_light_border;
+                        height: 14px;
+                        width: 14px;
+                        img{
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .owl-dots{
+            margin-top: 0px !important;
+        }
+      }
+
       .mt-20{
         margin-top: 12px;
       }
@@ -80,12 +350,18 @@
         overflow-x: auto;
         width: 100%;
         .customChangeWidth {
-            min-width: 85%;
+            min-width: 87%;
         }
     }
 
     .accountContainer {
         padding: 12px 16px;
+        .accountDetailsBox {
+            padding: 24px 0px 8px 0;
+            border-top: 1px solid #E8E8E8;
+            border-bottom: 1px solid #E8E8E8;
+            margin: 24px 0px;
+        }
         .accountBox {
             padding: 12px 16px;
             .heading{
@@ -173,5 +449,286 @@
                 margin-top: 4px;
              }
             }
+    }
+    .commonHeading {
+        margin-top: 12px;
+    }
+
+    .fdDetailsBox {
+        padding: 12px 16px;
+        height: calc(100vh - 180px);
+        position: relative;
+    }
+    .boldTitle {
+        font-size: 16px;
+    }
+    .fDList{
+        ul{
+            li{
+                .fDListContent{
+                    label {
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 16px;
+                        letter-spacing: 0.25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .roundBackgroundIcon{
+        max-width: 20px;
+        max-height: 20px;
+        margin-right: 8px;
+        img{
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .fDList{
+        min-height: fit-content;
+        ul{
+            li {
+                .fDListContent{
+                    width: 65%;
+                }
+                .fDListValue {
+                    width: 35%;
+                    font-size: 12px;
+                    flex-wrap: nowrap;
+                    display: flex;
+                    justify-content: flex-end;
+                    span {
+                        font-size: 12px;
+                        line-height: 18px;
+                        padding: 3px 5px;
+                    }
+                }
+            }
+        }
+    }
+    .bottomDescription{
+        .descriptionContent {
+            border-top: none;
+            padding: 16px 0px 0px 0px;
+            font-size: 11px;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+        }
+    }
+    .borrowFundContainer{
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E8E8E8;
+        .borrowFundBox{
+            .borrowFundContent {
+                font-size: 10px;
+                font-weight: 500;
+                line-height: 16px;
+                letter-spacing: normal;
+                width: calc(100% - 60px);
+            }
+        }
+    }
+
+    .borrowFundFDContainer{
+        .borrowFDList{
+            border: none;
+            border-bottom: 1px solid #E8E8E8;
+            padding: 16px 0px 16px 0px;
+            border-radius: 0px;
+            .headingLabel {
+                left: 0px;
+                font-size: 12px;
+                line-height: 20px;
+                top: -12px;
+                padding: 2px 8px;
+            }
+            .borrowFDBox{
+                .borrowFDContent{
+                    .label {
+                        font-size: 10px;
+                        line-height: 14px;
+                    }
+                    .value {
+                        font-size: 12px;
+                        line-height: 16px;
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                } 
+            }
+            &:last-child {
+                border-bottom: 0px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .borrowFdBottomBox {
+        padding: 8px 12px;
+        .heading {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .borrowFdBottomList{
+            .borrowFdListRow{
+                padding: 6px 0px;
+                .fDListContent{
+                    label {
+                        font-size: 10px;
+                        line-height: 14px;
+                    }
+                }
+                .fDListValue {
+                    font-size: 10px;
+                    line-height: 16px;
+                    span {
+                        font-size: 10px;
+                        line-height: 14px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .mob_buttonContainer{
+        position: absolute;
+        top: auto;
+        left: auto;
+        width: 91%;
+        bottom: 12px;
+        margin-top: 0px;
+    }
+    .buttonContainer{
+        button.themeRedBtn {
+            height: 32px;
+            font-size: 12px;
+            letter-spacing: 1.25px;
+        }
+    }
+    .customChangeWidth {
+        margin-right: 16px;
+    }
+
+    .verifyBtn{
+        padding: 0px !important;
+        &::after, &::before{
+        animation: none !important;
+        }
+        img{
+            width: 28px;
+            height: 28px;
+            margin-right: 0px;
+        }
+        label{
+            display: none;
+        }
+    }
+    .accountHolderDetails{
+        .accountDetails{
+            .bankName {
+                font-size: 22px;
+                margin-bottom: 0px !important;
+            }
+        } 
+        .bankLocation{
+            margin-bottom: 0px;
+        }
+    }
+
+    .mob_p_0{
+        padding: 0 !important;
+    }
+
+    .accountDetailsBox{
+        .accountListContainer{
+            .accountList{
+                .accountHolderDetails{
+                    .accountDetails{
+                        .accountHolderName {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    } 
+                } 
+            } 
+        } 
+    }
+
+    .boldHeader {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .cardContainer_mobile_screen{
+        .fdDetailsBox_mobile_screen {
+            .fdMainContent {
+                .fdTenure_years_text {
+                    margin-top: 25px;
+                    &::before{
+                        display: none;
+                    }
+                    &::after{
+                        top: -21px;
+                        right: 12px;
+                        width: 52px;
+                        background-image: url(../img/icons/Union_big.svg);
+                    }
+                }
+            }
+        }
+    }
+
+    .brd-top{
+        border-top: 1px solid #E8E8E8;
+        padding-top: 16px;
+    }
+
+    .quickActionBox{
+        padding: 18px 16px;
+        .close_icon {
+            text-align: right;
+        }
+        .quickActionTabs{
+            label {
+                width: 100%;
+                margin-right: 0px;
+                padding: 16px 12px;
+                flex-direction: row;
+                img{
+                    margin: 2px 8px 0px 0px;
+                }
+            }
+            button{
+                width: 100%;
+                height: 32px;
+            }
+        }
+    }
+
+    #sucessToastMessage {
+        top: auto;
+        left: 50%;
+        bottom: 0px;
+        transform: translate(-50%, 0px);
+        width: 94%;
+    }
+    #sucessToastMessage.show {
+      transform: translate(-50%, -12px) !important;
+    }
+}
+
+@media only screen and (max-width: $miniMobile) {
+    .owl-carousel{
+        .owl-item {
+            img.newFdImage {
+            width: 40%;
+            }
+        }
     }
 }

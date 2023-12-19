@@ -1,33 +1,5 @@
-/*****************Graph Start***************/
-window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        title: {
-            text: "Growth chart"
-        },
-        axisY: {
-            title: "",
-            valueFormatString: "#0,,.",
-            suffix: "k",
-            prefix: "₹"
-        },
-        data: [{
-            type: "splineArea",
-            color: "rgba(34, 197, 94, 1)",
-            markerSize: 5,
-            xValueFormatString: "YYYY",
-            yValueFormatString: "₹#,##0.##",
-            dataPoints: [
-                { x: new Date(2000, 0), y: 55000 },
-                { x: new Date(2001, 0), y: 70000 },
-                { x: new Date(2002, 0), y: 73605 }
-            ]
-        }]
-    });
-    chart.render();
-}
-/*****************Graph End***************/
 /*****************Menu Dropdown Hover Effect Start***************/
+
 $(document).ready(function () {
     $('.dropdown').hover(function () {
         $(this).addClass('show');
@@ -36,6 +8,20 @@ $(document).ready(function () {
         $(this).removeClass('show');
         $(this).find('.dropdown-menu').removeClass('show');
     });
+});
+
+$("#mob_menu_download_click").click(function(){
+    $("#mob_menu_download").toggleClass("show");
+    $("#rotate_icon_download").toggleClass("smallRotate");
+  });
+
+  $("#mob_menu_profile_click").click(function(){
+    $("#mob_menu_profile").toggleClass("show");
+    $("#rotate_icon_profile").toggleClass("smallRotate");
+  });
+
+  $('#hamburgerIcon').click(function(){
+    $(this).toggleClass('open');
 });
 /*****************Menu Dropdown Hover Effect End***************/
 
@@ -61,15 +47,12 @@ $("#homeHideBtn").click(function () {
 /*****************Dashboard Toggle Switch Button Modal Start***************/
 function updateKycModal(id) {
     var toggleSwitch = document.getElementById(id);
-    var myModal = new bootstrap.Modal(document.getElementById("myModal"));
-    toggleSwitch.addEventListener("change", function () {
+    var myModal = new bootstrap.Modal(document.getElementById("myKycModal"));
         if (toggleSwitch.checked) {
             myModal.show();
-
         } else {
             myModal.hide();
         }
-    });
 }
 
 /*****************Dashboard repayment-bank Modal end***************/
@@ -111,9 +94,9 @@ function checkboxTandC(){
 }
 /*****************open sucess toast BMT-265 ******************/
 function openSucessToast(){
-   var element = document.getElementById("sucessToastMessage");
-   element.className = "show";
-   setTimeout(function(){ element.className = element.className.replace("show", ""); }, 3000);
+    var element = document.getElementById("sucessToastMessage");
+    element.classList.add('show');
+    setTimeout(function(){ element.classList.remove('show'); }, 3000);
 }
 /*****************body toggle BMT-147 ******************/
  function toggle_data_dashboard(onclickId,elementId) {
@@ -125,7 +108,6 @@ function openSucessToast(){
     });
 }
 /*****************body End ******************/
-
 
 /*****************Dashboard Toggle Switch Button Modal End***************/
 
@@ -239,7 +221,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-
   /*****************quick-actions BMT-147 ******************/
 function toggleButton(activate) {
     var button = document.getElementById('actionButton');
@@ -253,21 +234,18 @@ function toggleButton(activate) {
     }
 }
 
-
-function toggleWrapper() {
-    var wrapper = document.getElementById('cardContainer_mobile_view_');
-    wrapper.classList.toggle('show');
+function handleClickShowQuickAction(){
+    var showBox = document.getElementById("quick_action_container");
+    var overlay = document.getElementById("overlay");
+    showBox.classList.add("show");
+    overlay.classList.add("show");
 }
 
-document.addEventListener('click', function (event) {
-    var wrapper = document.getElementById('cardContainer_mobile_view_');
-    if (!wrapper.contains(event.target) && !document.getElementById('quick_actions_button_').contains(event.target)) {
-        wrapper.classList.remove('show');
-    }
-});
-function toggleClose() {
-    var wrapper = document.getElementById('cardContainer_mobile_view_');
-    wrapper.classList.remove('show');
+function handleClickHideQuickAction(){
+    var showBox = document.getElementById("quick_action_container");
+    var overlay = document.getElementById("overlay");
+    showBox.classList.remove("show");
+    overlay.classList.remove("show");
 }
 
 /*****************quick-actions BMT-147 ******************/
