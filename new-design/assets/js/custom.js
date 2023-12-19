@@ -69,6 +69,17 @@ function repaymentContinueButtonEnable() {
     }
 
 }
+/*********************renewal-form-start-************/
+function toggleSecondColumn(elementId, targetValue, nomineevalue) {
+    var selectValue = $(nomineevalue).val();
+    var element = $(elementId);
+    if (selectValue === targetValue) {
+      element.show();
+    } else {
+      element.hide();
+    }
+  }
+/*********************renewal-form-end-************/
 
 /*****************radio button BMT-265 start******************/
 function radioButtonAction(id,element) {

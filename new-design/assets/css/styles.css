@@ -2424,6 +2424,71 @@ button.resend_otp.disabled {
     height: 40px;
   }
   /*----------renewal-review-desktop-UI--- end------------------------*/
+  /*----------renewal-form-desktop-UI--- start------------------------*/
+  .bankDetailsMainContainer .bottomContentBox.bottomContentBox_renewal_form {
+    margin: 0;
+  }
+  .bankDetailsMainContainer .main-form .form_container {
+    margin-top: 20px;
+    min-height: 445px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail {
+    margin-bottom: 24px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail #secondColumn {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::-moz-placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #6B7280;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data {
+    padding: 10px 18px 10px 18px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data ::-moz-placeholder {
+    color: rgb(197, 60, 60);
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data ::placeholder {
+    color: rgb(197, 60, 60);
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg {
+    background-image: url("../img/icons/VectorStroke.svg");
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    background-size: 16px 17px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid #DCDCDC;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data {
+    padding-right: 20px;
+    background-size: 16px 17px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data option {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #231F20;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
   .no_desktop_view {

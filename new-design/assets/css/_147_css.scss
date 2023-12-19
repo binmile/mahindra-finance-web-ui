@@ -304,9 +304,8 @@
     .all_done {
       @include custom-font(34px, 600, 40px, 0.25px);
       margin-bottom: 16px;
-      margin:24px 0 16px 0;
+      margin: 24px 0 16px 0;
       color: $color_black_light;
-
     }
     width: 100%;
     padding: 0 16px;
@@ -318,7 +317,6 @@
       margin-bottom: 32px;
       width: 100% !important;
       color: $color_black_light;
-
     }
     .buttonContainer_success {
       .themeRedBtn {
@@ -329,6 +327,68 @@
     }
   }
   /*----------renewal-review-desktop-UI--- end------------------------*/
+  /*----------renewal-form-desktop-UI--- start------------------------*/
+  .bankDetailsMainContainer {
+    .bottomContentBox {
+      &.bottomContentBox_renewal_form {
+        margin: 0;
+      }
+    }
+    .main-form {
+      .form_container {
+        margin-top: 20px;
+        min-height: 445px;
+        .nominee_detail {
+          margin-bottom: 24px;
+          #secondColumn {
+            display: none; // Hide by default
+          }
+          .form-control.nominee_value_data::placeholder {
+            color: $color_black_light;
+          }
+          .form-label {
+            margin-bottom: 8px;
+            @include custom-font(14px, 400, 24px, 0.25px);
+            color: $color_light_text;
+          }
+          .nominee_value_data {
+            padding: 10px 18px 10px 18px;
+            ::placeholder{
+              color:rgb(197, 60, 60);
+            }
+            &.dobimg {
+              background-image: url("../img/icons/VectorStroke.svg");
+              background-repeat: no-repeat;
+              background-position: right 13px center;
+              background-size: 16px 17px;
+            }
+            &.dobimg::-webkit-calendar-picker-indicator {
+              display: none;
+            }
+          }
+          .nominee_value_data:focus{
+            outline: none !important;
+            outline-width: 0 !important;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            border: 1px solid $color_disabled_btn;
+          }
+          .form-select {
+            &.nominee_value_data {
+              padding-right: 20px;
+              background-size: 16px 17px;
+              option {
+                @include custom-font(16px, 400, 24px, 0.5px);
+                color: $color_black_light;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
   .no_desktop_view {
@@ -337,7 +397,7 @@
   .accountDetailsBox_success {
     .all_done {
       @include custom-font(34px, 600, 40px, 0.25px);
-      margin:24px 0 16px 0;
+      margin: 24px 0 16px 0;
     }
     .email-content {
       @include custom-font(16px, 400, 24px, 0.5px);
@@ -420,15 +480,15 @@
       }
     }
   }
-  .accountContainer .accountBox .fdContents.with-border::after{
-    right:17%;
+  .accountContainer .accountBox .fdContents.with-border::after {
+    right: 17%;
   }
   .accountDetailsBox_success {
     border-bottom: 1px solid $color_light_border;
     margin-bottom: 28px;
     .all_done {
       @include custom-font(24px, 700, 30px, 0);
-      margin:8px 0 16px 0;
+      margin: 8px 0 16px 0;
     }
     .email-content {
       @include custom-font(12px, 400, 16px, 0);
@@ -553,7 +613,7 @@
   .accountDetailsBox_success {
     .all_done {
       @include custom-font(24px, 700, 30px, 0);
-      margin:8px 0 12px 0;
+      margin: 8px 0 12px 0;
     }
     .email-content {
       @include custom-font(12px, 400, 16px, 0);
