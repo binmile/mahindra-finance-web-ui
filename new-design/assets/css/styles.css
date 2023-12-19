@@ -2488,6 +2488,9 @@ button.resend_otp.disabled {
   .buttonContainer_success .themeRedBtn.button_success_home {
     height: 40px;
   }
+  .accountContainer .accountBox .fdContents.with-border::after {
+    right: 17%;
+  }
   .accountDetailsBox_success {
     border-bottom: 1px solid #D6D6D6;
     margin-bottom: 28px;
@@ -3486,7 +3489,7 @@ button.resend_otp.disabled {
     width: 100%;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 450px) {
   /*********** Responsive dashboard View Start*************/
   .cardContainerMobile .first_active_data::after {
     right: -32px;
@@ -4120,6 +4123,11 @@ button.resend_otp.disabled {
   }
   #sucessToastMessage.show {
     transform: translate(-50%, -12px) !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .owl-carousel .owl-item img.newFdImage {
+    width: 40%;
   }
 }
 .verifyBtn {

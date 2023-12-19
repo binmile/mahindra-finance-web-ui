@@ -722,3 +722,13 @@
       transform: translate(-50%, -12px) !important;
     }
 }
+
+@media only screen and (max-width: $miniMobile) {
+    .owl-carousel{
+        .owl-item {
+            img.newFdImage {
+            width: 40%;
+            }
+        }
+    }
+}

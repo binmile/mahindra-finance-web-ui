@@ -419,6 +419,9 @@
       }
     }
   }
+  .accountContainer .accountBox .fdContents.with-border::after{
+    right:17%;
+  }
   .accountDetailsBox_success {
     border-bottom: 1px solid $color_light_border;
     margin-bottom: 28px;
