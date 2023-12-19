@@ -3237,7 +3237,7 @@ button.resend_otp.disabled {
 @media only screen and (max-width: 420px) {
   /*********** Responsive dashboard View Start*************/
   .cardContainerMobile .first_active_data::after {
-    right: -13px;
+    right: -32px;
   }
   /*********** Responsive dashboard View End*************/
 }
