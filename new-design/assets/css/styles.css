@@ -255,6 +255,16 @@
     border-left-color: #17823E;
   }
 }
+@keyframes slideInRight {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -1162,6 +1172,7 @@ label.showMoreBtn img {
   border-radius: 8px;
   padding: 4px 12px 16px 12px;
   cursor: pointer;
+  transition: all linear 0.2s;
 }
 .quickActionBox .quickActionTabs label:nth-child(even) {
   margin-right: 0px;
@@ -1176,6 +1187,9 @@ label.showMoreBtn img {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.25px;
+}
+.quickActionBox .quickActionTabs label:hover {
+  border: 1.5px solid #231F20;
 }
 
 .boxRadioButton input[type=radio] {
@@ -3376,7 +3390,7 @@ button.resend_otp.disabled {
 @media only screen and (max-width: 420px) {
   /*********** Responsive dashboard View Start*************/
   .cardContainerMobile .first_active_data::after {
-    right: -13px;
+    right: -32px;
   }
   /*********** Responsive dashboard View End*************/
 }
@@ -3514,6 +3528,7 @@ button.resend_otp.disabled {
     place-items: center;
     flex-direction: row;
     padding: 16px;
+    white-space: nowrap;
   }
   .mob_menus .mob_menu_list .mob_menu_expandable a img {
     transition: all linear 300ms;
@@ -3535,11 +3550,17 @@ button.resend_otp.disabled {
     width: 50%;
     border: 1px solid #D6D6D6;
   }
+  .mob_menus .mob_menu_list .mob_sub_menu ul li a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
   .mob_menus .mob_menu_list .mob_sub_menu.show {
-    height: 115px;
+    height: 99px;
   }
   .mob_menus .mob_menu_list .mob_menu_download.show {
-    height: 173px;
+    height: 149px;
   }
   .mob_menus .mob_menu_list .smallRotate {
     transform: rotate(45deg);
@@ -4052,4 +4073,9 @@ button.resend_otp.disabled {
   border-radius: 8px;
   animation: animateVerifiedButton2 1s linear forwards;
   animation-delay: 2s;
+}
+
+.slideInRight {
+  animation-duration: 2s;
+  animation-name: slideInRight;
 }/*# sourceMappingURL=styles.css.map */
