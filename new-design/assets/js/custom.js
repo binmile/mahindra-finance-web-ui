@@ -10,35 +10,6 @@ $(document).ready(function () {
     });
 });
 
-// let isShown = document.getElementById("#dropdownElement").className;
-// const element = document.getElementById('make_top');
-// const dropdownMenuButton1 = document.getElementById('dropdownMenuButton1');
-
-// document.body.addEventListener("click", function (evt) {
-//     if(dropdownMenuButton1.className.includes("show")) {
-//         element.classList.remove('make_top');
-//     } else {
-//         element.classList.add('make_top');
-//     }
-// });
-
-// dropdownMenuButton1.addEventListener("click", function (evt) {
-//     if(dropdownMenuButton1.className.includes("show")) {
-//         element.classList.remove('make_top');
-//     } else {
-//         element.classList.add('make_top');
-//     }
-//     // if(isShown){
-//     //     $('#make_top').addClass('make_top');
-//     // } else {
-//     //     $('#make_top').removeClass('make_top');
-//     // }
-// });
-
-// $('#dropdownMenuButton1').click(function (event) {
-//     event.stopPropagation();
-//  });
-
 $("#mob_menu_download_click").click(function(){
     $("#mob_menu_download").toggleClass("show");
     $("#rotate_icon_download").toggleClass("smallRotate");
@@ -76,15 +47,12 @@ $("#homeHideBtn").click(function () {
 /*****************Dashboard Toggle Switch Button Modal Start***************/
 function updateKycModal(id) {
     var toggleSwitch = document.getElementById(id);
-    var myModal = new bootstrap.Modal(document.getElementById("myModal"));
-    toggleSwitch.addEventListener("change", function () {
+    var myModal = new bootstrap.Modal(document.getElementById("myKycModal"));
         if (toggleSwitch.checked) {
             myModal.show();
-
         } else {
             myModal.hide();
         }
-    });
 }
 
 /*****************Dashboard repayment-bank Modal end***************/
@@ -140,7 +108,6 @@ function openSucessToast(){
     });
 }
 /*****************body End ******************/
-
 
 /*****************Dashboard Toggle Switch Button Modal End***************/
 
@@ -254,7 +221,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-
   /*****************quick-actions BMT-147 ******************/
 function toggleButton(activate) {
     var button = document.getElementById('actionButton');
@@ -267,23 +233,6 @@ function toggleButton(activate) {
         button.setAttribute('disabled', 'disabled');
     }
 }
-
-
-// function toggleWrapper() {
-//     var wrapper = document.getElementById('cardContainer_mobile_view_');
-//     wrapper.classList.toggle('show');
-// }
-
-// document.addEventListener('click', function (event) {
-//     var wrapper = document.getElementById('cardContainer_mobile_view_');
-//     if (!wrapper.contains(event.target) && !document.getElementById('quick_actions_button_').contains(event.target)) {
-//         wrapper.classList.remove('show');
-//     }
-// });
-// function toggleClose() {
-//     var wrapper = document.getElementById('cardContainer_mobile_view_');
-//     wrapper.classList.remove('show');
-// }
 
 function handleClickShowQuickAction(){
     var showBox = document.getElementById("quick_action_container");
@@ -298,7 +247,5 @@ function handleClickHideQuickAction(){
     showBox.classList.remove("show");
     overlay.classList.remove("show");
 }
-
-
 
 /*****************quick-actions BMT-147 ******************/

@@ -153,6 +153,7 @@
                 a{
                     @include setDisplayProperty(flex, space-between, center);
                     padding: 16px;
+                    white-space: nowrap;
                     img{
                         transition: all linear 300ms;
                     }
@@ -172,14 +173,17 @@
                     li{
                         width: 50%;
                         border: 1px solid #D6D6D6;
+                        a{
+                            @include custom-font(12px, 500, 16px, 0.25px);
+                        }
                     }
                 }
             }
             .mob_sub_menu.show{
-                height: 115px;
+                height: 99px;
             }
             .mob_menu_download.show{
-                height: 173px;
+                height: 149px;
             }
             .smallRotate{
                 transform: rotate(45deg);
