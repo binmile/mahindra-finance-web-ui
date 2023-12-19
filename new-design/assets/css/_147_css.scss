@@ -304,6 +304,7 @@
     .all_done {
       @include custom-font(34px, 600, 40px, 0.25px);
       margin-bottom: 16px;
+      margin:24px 0 16px 0;
       color: $color_black_light;
 
     }
@@ -336,7 +337,7 @@
   .accountDetailsBox_success {
     .all_done {
       @include custom-font(34px, 600, 40px, 0.25px);
-      margin-bottom: 16px;
+      margin:24px 0 16px 0;
     }
     .email-content {
       @include custom-font(16px, 400, 24px, 0.5px);
@@ -427,7 +428,7 @@
     margin-bottom: 28px;
     .all_done {
       @include custom-font(24px, 700, 30px, 0);
-      margin-bottom: 16px;
+      margin:8px 0 16px 0;
     }
     .email-content {
       @include custom-font(12px, 400, 16px, 0);
@@ -552,7 +553,7 @@
   .accountDetailsBox_success {
     .all_done {
       @include custom-font(24px, 700, 30px, 0);
-      margin-bottom: 12px;
+      margin:8px 0 12px 0;
     }
     .email-content {
       @include custom-font(12px, 400, 16px, 0);
