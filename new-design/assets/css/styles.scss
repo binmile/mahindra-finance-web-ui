@@ -1261,3 +1261,8 @@ button.resend_otp.disabled {
         animation: animateVerifiedButton2 1s linear forwards;
         animation-delay: 2s;
     }
+
+    .slideInRight{
+      animation-duration: 2s;
+      animation-name: slideInRight;
+    }
