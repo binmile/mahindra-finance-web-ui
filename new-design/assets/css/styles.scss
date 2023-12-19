@@ -721,6 +721,7 @@ label.showMoreBtn {
       border-radius: 8px;
       padding: 4px 12px 16px 12px;
       cursor: pointer;
+      transition: all linear 0.2s;
       &:nth-child(even) {
         margin-right: 0px;
       }
@@ -730,6 +731,9 @@ label.showMoreBtn {
       }
       .quickActionLabel {
         @include custom-font(14px, 400, 24px, 0.25px);
+      }
+      &:hover{
+        border: 1.5px solid $color_black_light;
       }
     }
   }
