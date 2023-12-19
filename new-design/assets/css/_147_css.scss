@@ -6,6 +6,10 @@
   }
   /*********** Responsive Quick-Actions-Mobile View End*************/
   .accountContainer {
+    .bottomLightText_success {
+      border-top: 1px solid $color_light_border;
+      padding-top: 24px;
+    }
     .border-success-page {
       border-top: 1px solid $color_light_border;
       margin: 24px 0;
@@ -225,7 +229,10 @@
     .fd_content_min_height {
       min-height: 325px;
       &.fd_content_min_height_success {
-        min-height: 150px;
+        min-height: 240px;
+        border-top: 1px solid $color_light_border;
+        margin-top: 24px;
+        padding-top: 24px;
       }
       &.fd_content_min_height_post_closure {
         min-height: 200px;
@@ -290,18 +297,32 @@
       .bottomText_review {
         margin-top: 17px;
       }
-      .leftside_div {
-        align-items: center;
-        @include setDisplayProperty(flex, center, center, column);
-        .email-content {
-          width: 364px;
-          text-align: center;
-        }
-        .buttonContainer_success {
-          button {
-            width: 238px;
-            height: 40px;
-          }
+    }
+  }
+
+  .accountDetailsBox_success {
+    .all_done {
+      @include custom-font(34px, 600, 40px, 0.25px);
+      margin-bottom: 16px;
+      color: $color_black_light;
+
+    }
+    width: 100%;
+    padding: 0 16px;
+    .buttonContainer_success {
+      @include setDisplayProperty(flex, center, center, row);
+    }
+    .email-content {
+      @include custom-font(16px, 400, 24px, 0.5px);
+      margin-bottom: 32px;
+      width: 100% !important;
+      color: $color_black_light;
+
+    }
+    .buttonContainer_success {
+      .themeRedBtn {
+        &.button_success_home {
+          @include custom-width-height(38%, 40px);
         }
       }
     }
@@ -311,6 +332,16 @@
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
   .no_desktop_view {
     display: none;
+  }
+  .accountDetailsBox_success {
+    .all_done {
+      @include custom-font(34px, 600, 40px, 0.25px);
+      margin-bottom: 16px;
+    }
+    .email-content {
+      @include custom-font(16px, 400, 24px, 0.5px);
+      margin-bottom: 32px;
+    }
   }
   .accountContainer .accountBox {
     .fdContents {
@@ -378,8 +409,26 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-.accountContainer .accountBox .fdContents.remove_margin{
+  .accountContainer .accountBox .fdContents.remove_margin {
     margin: 0;
+  }
+  .buttonContainer_success {
+    .themeRedBtn {
+      &.button_success_home {
+        height: 40px;
+      }
+    }
+  }
+  .accountDetailsBox_success {
+    border-bottom: 1px solid $color_light_border;
+    margin-bottom: 28px;
+    .all_done {
+      @include custom-font(24px, 700, 30px, 0);
+      margin-bottom: 16px;
+    }
+    .email-content {
+      @include custom-font(12px, 400, 16px, 0);
+    }
   }
   .no_mobile_view {
     display: none !important;
@@ -431,6 +480,11 @@
         }
       }
     }
+    .bottomLightText_success {
+      border-top: unset;
+      padding-top: 0;
+      margin-top: 4px;
+    }
     .accountBox {
       .content_settled {
         @include custom-font(12px, 400, 16px, 0);
@@ -453,6 +507,13 @@
       }
       .fd_content_min_height {
         min-height: 0;
+
+        &.fd_content_min_height_success {
+          border-top: unset;
+          margin-top: 0;
+          padding-top: 0;
+        }
+
         &.fdContents_width {
           width: 100%;
         }
@@ -478,6 +539,22 @@
     margin-bottom: 24px;
     margin-top: 3px;
   }
+  .buttonContainer_success {
+    .themeRedBtn {
+      &.button_success_home {
+        height: 40px;
+      }
+    }
+  }
+  .accountDetailsBox_success {
+    .all_done {
+      @include custom-font(24px, 700, 30px, 0);
+      margin-bottom: 12px;
+    }
+    .email-content {
+      @include custom-font(12px, 400, 16px, 0);
+    }
+  }
   .dashboardDarkCard {
     .cardLabelHeading {
       &.cardLabelHeading_mob {
@@ -502,7 +579,6 @@
     }
     .advertisement_mob {
       width: 100%;
-
       .themeRedBtn {
         &.themeRedBtn_mob {
           height: 32px;
@@ -1298,6 +1374,15 @@
     }
   }
   //******Renewal-Summary-Review-Mobile-view end*******************/
+  .accountDetailsBox_success {
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
 }
 @media only screen and (max-width: $miniMobile) {
   /*********** Responsive dashboard View Start*************/

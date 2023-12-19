@@ -115,6 +115,10 @@ body {
     z-index: -1;
     position: relative;
 }
+
+.allCentered{
+  @include setDisplayProperty(flex, center, center, column);
+}
 /*********Header Start****************/
 nav {
   box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
