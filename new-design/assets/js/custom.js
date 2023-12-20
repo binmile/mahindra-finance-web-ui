@@ -71,21 +71,16 @@ function repaymentContinueButtonEnable() {
 }
 /*********************renewal-form-start-************/
 function renewalformContinueButtonEnable() {
-    // Get values from input fields
     var nomineeValue = document.getElementById('nominee_value').value;
     var nomineeName = document.getElementById('name').value;
     var nomineeDOB = document.getElementById('nominee_DOB').value;
     var nomineeRelation = document.getElementById('nominee_relation').value;
-    // Check if all required fields are filled
     var allFieldsFilled = nomineeValue !== 'add-new' || nomineeName !== ''
     var allFieldsFilled2=nomineeDOB !== '' && nomineeRelation !== ''
-    // Enable or disable the button based on the condition
     var continueButton = document.getElementById('continueButton');
     continueButton.disabled = !allFieldsFilled || !allFieldsFilled2;
   }
-  
-  // You may also want to call the function initially to set the initial state of the button
-  
+    
 function toggleSecondColumn(elementId, targetValue, nomineevalue) {
     var selectValue = $(nomineevalue).val();
     var element = $(elementId);
