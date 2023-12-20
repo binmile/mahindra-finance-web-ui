@@ -1211,58 +1211,59 @@ button.resend_otp.disabled {
 
 /********************Terms and Condition Modal End************/
 
+.verifyBtn{
+  position: relative;
+  text-decoration: none;
+  width: fit-content;
+  height: 38px;
+  padding: 3px 18px 0px 18px;
+  text-align: center;
+  @include custom-font(16px, 400, 24px, 0.15px);
+  @include allCenter;
+  color: $color_green_dark;
+  opacity: 0;
+  animation: fadeInAnimate 0.5s linear forwards;
+  animation-delay: 1s;
+  img{
+      margin-right: 4px;
+  }
+}
+
+.verifyBtn::before{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  animation: animateVerifiedButton 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.verifyBtn::after{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  animation: animateVerifiedButton2 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.slideInRight{
+animation-duration: 2s;
+animation-name: slideInRight;
+}
+
 @import "./265_css";
 @import "./147_css";
+@import "./renewal_css_265";
 
 @import "./responsive.scss";
-
-    .verifyBtn{
-        position: relative;
-        text-decoration: none;
-        width: fit-content;
-        height: 38px;
-        padding: 3px 18px 0px 18px;
-        text-align: center;
-        @include custom-font(16px, 400, 24px, 0.15px);
-        @include allCenter;
-        color: $color_green_dark;
-        opacity: 0;
-        animation: fadeInAnimate 0.5s linear forwards;
-        animation-delay: 1s;
-        img{
-            margin-right: 4px;
-        }
-    }
-
-    .verifyBtn::before{
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 0;
-        height: 0;
-        background: transparent;
-        border: 1px solid transparent;
-        border-radius: 8px;
-        animation: animateVerifiedButton 1s linear forwards;
-        animation-delay: 2s;
-    }
-
-    .verifyBtn::after{
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 0;
-        height: 0;
-        background: transparent;
-        border: 1px solid transparent;
-        border-radius: 8px;
-        animation: animateVerifiedButton2 1s linear forwards;
-        animation-delay: 2s;
-    }
-
-    .slideInRight{
-      animation-duration: 2s;
-      animation-name: slideInRight;
-    }
