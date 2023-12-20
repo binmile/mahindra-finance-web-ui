@@ -1741,7 +1741,7 @@ button.resend_otp.disabled {
   background-color: #FFFFFF;
   min-height: 52px;
 }
-.customPagination .pagination-before, .customPagination .pagination-after {
+.customPagination .pagination-before, .customPagination .pagination-after, .customPagination #prev_link, .customPagination #next_link {
   border: 1px solid #D1D5DB;
   border-radius: 4px;
   display: flex;
@@ -1751,30 +1751,28 @@ button.resend_otp.disabled {
   height: 28px;
   cursor: pointer;
 }
-.customPagination .pagination-before {
+.customPagination .pagination-before, .customPagination #prev_link {
   margin-right: 12px;
 }
-.customPagination .pagination-after {
+.customPagination .pagination-after, .customPagination #next_link {
   margin-left: 12px;
 }
-.customPagination .pagination-after img {
+.customPagination .pagination-after img, .customPagination #next_link img {
   transform: rotate(180deg);
 }
-.customPagination .btn-page ul {
-  list-style: none;
-  padding: 0;
+.customPagination .pagination a {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #231F20;
   display: flex;
   justify-content: center;
   place-items: center;
-  margin-bottom: 0;
 }
-.customPagination .btn-page ul li {
-  display: inline-block;
-  width: 40px;
-  cursor: pointer;
-  text-align: center;
-}
-.customPagination .btn-page ul li.active {
+.customPagination .pagination a.page_active {
   color: #E31837;
 }
 
@@ -5554,4 +5552,7 @@ p.notifiy {
   button.btn.themeRedBtn {
     display: none;
   }
+}
+#req_per_page {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
