@@ -69,6 +69,28 @@ function repaymentContinueButtonEnable() {
     }
 
 }
+/*********************renewal-form-start-************/
+function renewalformContinueButtonEnable() {
+    var nomineeValue = document.getElementById('nominee_value').value;
+    var nomineeName = document.getElementById('name').value;
+    var nomineeDOB = document.getElementById('nominee_DOB').value;
+    var nomineeRelation = document.getElementById('nominee_relation').value;
+    var allFieldsFilled = nomineeValue !== 'add-new' || nomineeName !== ''
+    var allFieldsFilled2=nomineeDOB !== '' && nomineeRelation !== ''
+    var continueButton = document.getElementById('continueButton');
+    continueButton.disabled = !allFieldsFilled || !allFieldsFilled2;
+  }
+    
+function toggleSecondColumn(elementId, targetValue, nomineevalue) {
+    var selectValue = $(nomineevalue).val();
+    var element = $(elementId);
+    if (selectValue === targetValue) {
+      element.show();
+    } else {
+      element.hide();
+    }
+  }
+/*********************renewal-form-end-************/
 
 /*****************radio button BMT-265 start******************/
 function radioButtonAction(id,element) {
