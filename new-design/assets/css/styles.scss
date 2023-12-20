@@ -115,6 +115,10 @@ body {
     z-index: -1;
     position: relative;
 }
+
+.allCentered{
+  @include setDisplayProperty(flex, center, center, column);
+}
 /*********Header Start****************/
 nav {
   box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
@@ -972,7 +976,7 @@ label.showMoreBtn {
     border-radius: 8px;
     .heading {
       @include custom-font(20px, 600, 24px, 0.15px);
-      word-break: break-all;
+      // word-break: break-all;
     }
     .fdMainContent {
       border-bottom: 1px solid $color_light_border;
@@ -1267,3 +1271,5 @@ animation-name: slideInRight;
 @import "./renewal_css_265";
 
 @import "./responsive.scss";
+
+@import "./mobileresponsive.scss";

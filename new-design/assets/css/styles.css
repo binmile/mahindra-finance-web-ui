@@ -392,6 +392,13 @@ body {
   position: relative;
 }
 
+.allCentered {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
 /*********Header Start****************/
 nav {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
@@ -1499,7 +1506,6 @@ label.showMoreBtn img {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.15px;
-  word-break: break-all;
 }
 .accountContainer .accountBox .fdMainContent {
   border-bottom: 1px solid #D6D6D6;
@@ -2178,6 +2184,30 @@ button.resend_otp.disabled {
     display: none;
   }
   /*********** Responsive Quick-Actions-Mobile View End*************/
+  .accountContainer .bottomLightText_success {
+    border-top: 1px solid #D6D6D6;
+    padding-top: 24px;
+  }
+  .accountContainer .border-success-page {
+    border-top: 1px solid #D6D6D6;
+    margin: 24px 0;
+  }
+  .accountContainer .accountBox .fdContents.fdContents_remove_margin {
+    margin-top: 0;
+  }
+  .accountContainer .accountBox .fdContents.with-border {
+    position: relative;
+  }
+  .accountContainer .accountBox .fdContents.with-border::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 80%;
+    background: #D6D6D6;
+  }
   .accountContainer .accountBox .fdContents.fdContents_post_closure_ {
     min-height: auto;
   }
@@ -2365,6 +2395,15 @@ button.resend_otp.disabled {
   .accountBox .fd_content_min_height {
     min-height: 325px;
   }
+  .accountBox .fd_content_min_height.fd_content_min_height_success {
+    min-height: 240px;
+    border-top: 1px solid #D6D6D6;
+    margin-top: 24px;
+    padding-top: 24px;
+  }
+  .accountBox .fd_content_min_height.fd_content_min_height_post_closure {
+    min-height: 200px;
+  }
   .accountBox .bottomLightText span.interest_rate {
     font-size: 14px;
     font-weight: 700;
@@ -2409,26 +2448,78 @@ button.resend_otp.disabled {
   .accountContainer .accountDetailsBox .bottomText_review {
     margin-top: 17px;
   }
-  .accountContainer .accountDetailsBox .leftside_div {
-    align-items: center;
+  .accountDetailsBox_success {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .accountDetailsBox_success .all_done {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    margin-bottom: 16px;
+    margin: 24px 0 16px 0;
+    color: #231F20;
+  }
+  .accountDetailsBox_success .buttonContainer_success {
     display: flex;
     justify-content: center;
     place-items: center;
-    flex-direction: column;
+    flex-direction: row;
   }
-  .accountContainer .accountDetailsBox .leftside_div .email-content {
-    width: 364px;
-    text-align: center;
+  .accountDetailsBox_success .email-content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+    width: 100% !important;
+    color: #231F20;
   }
-  .accountContainer .accountDetailsBox .leftside_div .buttonContainer_success button {
-    width: 238px;
+  .accountDetailsBox_success .buttonContainer_success .themeRedBtn.button_success_home {
+    width: 38%;
     height: 40px;
   }
   /*----------renewal-review-desktop-UI--- end------------------------*/
 }
-@media only screen and (min-width: 992px) and (max-width: 1210px) {
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
+@media only screen and (min-width: 992px) and (max-width: 1236px) {
+  .no_desktop_view {
+    display: none;
+  }
+  .accountDetailsBox_success .all_done {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    margin: 24px 0 16px 0;
+  }
+  .accountDetailsBox_success .email-content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails .value_success {
+    font-size: 11px;
+  }
+  .accountContainer .accountBox .with-border::after {
+    right: -10px;
+  }
+  .accountContainer .accountBox .fdContents .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
     flex-direction: column;
+  }
+  .accountContainer .content_settled {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin-top: 12px;
+    color: #6B7280;
+  }
+  .accountContainer .border-success-page {
+    border-top: 1px solid #D6D6D6;
+    margin: 24px 0;
   }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .themeRedBtn.customBtn {
     padding: 12px 12px;
@@ -2439,14 +2530,63 @@ button.resend_otp.disabled {
   .accountContainer .accountBox .fdContents .fdDetails {
     margin-bottom: 12px;
   }
+  .accountContainer .accountBox .fdContents .fdDetails .label.label_success {
+    font-size: 10px;
+  }
   .accountContainer .accountBox .fdContents .fdDetails::after {
     position: initial;
     gap: 10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountContainer .accountBox .fdContents.remove_margin {
+    margin: 0;
+  }
+  .buttonContainer_success .themeRedBtn.button_success_home {
+    height: 40px;
+  }
+  .accountContainer .accountBox .fdContents.with-border::after {
+    right: 17%;
+  }
+  .accountDetailsBox_success {
+    border-bottom: 1px solid #D6D6D6;
+    margin-bottom: 28px;
+  }
+  .accountDetailsBox_success .all_done {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin: 8px 0 16px 0;
+  }
+  .accountDetailsBox_success .email-content {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .no_mobile_view {
+    display: none !important;
+  }
+  .no_desktop_ipad {
+    display: block;
+  }
+  .accountContainer .accountBox .fdContents.with-border::after {
+    height: 60%;
+  }
+  .accountContainer .accountDetailsBox.accountDetailsBox_success_remove_margin {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .accountContainer .accountBox .fdContents .remove_margin {
+    margin: 0;
+  }
   .accountContainer .termsConditionsContainer .checkbox-container {
     margin-top: 0;
+  }
+  .accountContainer .accountDetailsBox_success_remove_margin {
+    margin-top: 0;
+    padding-top: 0;
   }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails.accountDetails_renewal {
     margin-bottom: 16px;
@@ -2457,14 +2597,46 @@ button.resend_otp.disabled {
     border-bottom: 1px solid #E8E8E8;
     margin: 24px 0px;
   }
+  .accountContainer .accountDetailsBox.remove_border-top {
+    border-top: unset;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_renewal {
     display: unset;
   }
   .accountContainer .accountDetailsBox .accountListContainer.fdContents_success {
     min-height: 0;
   }
+  .accountContainer .bottomLightText_success {
+    border-top: unset;
+    padding-top: 0;
+    margin-top: 4px;
+  }
+  .accountContainer .accountBox .content_settled {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails.fdDetails_value {
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails .value.value_success {
+    margin-bottom: 0;
+  }
+  .accountContainer .accountBox .accountContainer .accountBox .fdContents.remove_margin {
+    margin: 0;
+  }
   .accountContainer .accountBox .fd_content_min_height {
     min-height: 0;
+  }
+  .accountContainer .accountBox .fd_content_min_height.fd_content_min_height_success {
+    border-top: unset;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .accountContainer .accountBox .fd_content_min_height.fdContents_width {
+    width: 100%;
   }
   .accountContainer .accountBox .fd_content_min_height .fdContents.fdContents_mobile_tab {
     margin-bottom: 24px;
@@ -2481,6 +2653,22 @@ button.resend_otp.disabled {
   .cardContainer_mobileView {
     margin-bottom: 24px;
     margin-top: 3px;
+  }
+  .buttonContainer_success .themeRedBtn.button_success_home {
+    height: 40px;
+  }
+  .accountDetailsBox_success .all_done {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin: 8px 0 12px 0;
+  }
+  .accountDetailsBox_success .email-content {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
   }
   .dashboardDarkCard .cardLabelHeading.cardLabelHeading_mob {
     text-align: left;
@@ -3031,6 +3219,17 @@ button.resend_otp.disabled {
   .accountContainer {
     padding: 12px 16px;
   }
+  .accountContainer.accountContainer_success {
+    padding-bottom: 26px;
+  }
+  .accountContainer .accountDetailsBox.accountDetailsBox_success_remove_margin {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .accountContainer .border-success-page {
+    border-top: 1px solid #D6D6D6;
+    margin: 24px 0;
+  }
   .accountContainer .termsConditionsContainer .checkbox-container {
     margin-top: 0;
   }
@@ -3280,6 +3479,9 @@ button.resend_otp.disabled {
   .accountDetailsBox .accountListContainer .accountList .accountHolderDetails.accountHolderDetails_renewal {
     display: unset;
   }
+  .accountContainer.accountContainer_success {
+    padding-bottom: 26px;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
     display: flex;
   }
@@ -3292,10 +3494,19 @@ button.resend_otp.disabled {
     justify-content: center;
     place-items: center;
     flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
   }
   .accountContainer .accountDetailsBox .leftside_div .email-content {
+    margin-top: 12px;
     width: 100%;
     text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
   }
   .accountContainer .accountDetailsBox .leftside_div .buttonContainer_success button {
     width: 100%;
@@ -3303,6 +3514,36 @@ button.resend_otp.disabled {
   .accountContainer .accountDetailsBox.accountDetailsBox_success {
     border-top: none;
     border-bottom: none;
+  }
+  .accountContainer .accountDetailsBox.accountDetailsBox_success_remove_margin {
+    margin-bottom: 0;
+  }
+  .accountContainer .accountBox .bottomLightText.bottomLightText_success {
+    margin-top: 4px;
+  }
+  .accountContainer .accountBox .content_settled {
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails.fdDetails_value {
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails .value.value_success {
+    margin-bottom: 0;
+  }
+  .accountContainer .accountBox .fdContents.remove_margin {
+    margin: 0;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails.fdContents_width {
+    width: 100%;
+  }
+  .accountDetailsBox_success {
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    width: 100%;
+  }
+  .accountDetailsBox_success img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -4205,4 +4446,340 @@ button.resend_otp.disabled {
   .owl-carousel .owl-item img.newFdImage {
     width: 40%;
   }
+}
+.textparent {
+  position: relative;
+}
+
+.textfildicons {
+  position: absolute;
+  top: 36px;
+  right: 16px;
+}
+
+.textparent {
+  position: relative;
+}
+
+.infoText {
+  font-size: 14px;
+  font-family: "Georama";
+  color: #6B7280;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.textparent label.form-label.formLabel {
+  font-size: 14px;
+  color: #6B7280;
+  font-weight: 400;
+}
+
+.customRedBtn {
+  background-color: #E31837;
+  color: #FFFFFF;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 44px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 0 12px 0 12px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: normal;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.smalltext {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.customeul {
+  margin-top: 16px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.sideimage {
+  text-align: end;
+}
+
+.custmalign-item {
+  align-items: flex-end;
+}
+
+.custborder-right {
+  border-right: 1px solid #ccc;
+}
+
+.custborder-bottom {
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #231F20;
+  background-color: unset;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.custHeader h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: "Georama";
+  color: #231F20;
+}
+
+.custHeader {
+  margin-top: 32px;
+  margin-bottom: 17px;
+}
+
+.accordion-body {
+  font-size: 14px;
+}
+
+.customeli {
+  margin-bottom: 17px;
+}
+
+ul.custliststyle :before {
+  height: 8px;
+  width: 8px;
+  background: #231F20;
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  margin-right: 20px;
+}
+
+ul.custliststyle {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.bgimage {
+  background-image: url(../img/ulbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ccc;
+  padding: 20px 20px;
+  border-radius: 4px;
+}
+
+.custHeader.newcustHeader {
+  margin-top: 0px;
+}
+
+.accordion-button {
+  padding: 12px 16px;
+}
+
+.accountContainer .accountBox .fdContents.custtbl {
+  min-height: auto;
+}
+
+.textparent.custtextparent {
+  margin-top: 24px;
+}
+
+.boldHeader.customeboldHeader {
+  margin-bottom: 16px;
+}
+
+.accountHolderName.smallName span {
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.notesection {
+  border-bottom: 1px solid #E8E8E8;
+  margin-top: 28px;
+}
+
+.vl {
+  border-left: 1px solid #E8E8E8;
+}
+
+.accountDetailsBox.accountDetailsBox2 {
+  padding-bottom: 0px;
+}
+
+.boldHeader-bottom-margin {
+  margin-bottom: 24px;
+}
+
+.notesection p {
+  margin-bottom: 28px;
+}
+
+.tooltipdesign {
+  background: #1084CB;
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 12px;
+  align-items: center;
+  display: inline-flex;
+  border-radius: 25px;
+}
+
+.notesection p {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.info-icon.info-icon2 {
+  margin-left: 5px;
+  align-items: center;
+  display: flex;
+}
+
+.info-icon2.custom-tooltip .tooltip-text {
+  background-color: #080707;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  padding: 16px;
+  display: none;
+  position: absolute;
+  top: auto;
+  bottom: 24px;
+  /* left: -114%; */
+  left: -22vw;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 99;
+}
+
+.info-icon2.custom-tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  margin-left: 59px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #080707 transparent transparent transparent;
+}
+
+.info-icon2.custom-tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.info-icon2.custom-tooltip:hover .tooltip-text, .custom-tooltip:hover .tooltip-textTableData {
+  display: block;
+}
+
+.explore-section h6 {
+  font-size: 14px;
+}
+
+.explore-section {
+  background-image: url(../img/ulbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ccc;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+p.small-text {
+  color: #231F20;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.section-parent {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 24px;
+  margin-right: 25px;
+}
+
+.value.custvalue {
+  display: flex;
+}
+
+.fdDetails.customefdDetails:after {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #ccc;
+  height: 50px;
+  right: 35px;
+  top: 15px;
+}
+
+.custpostion {
+  position: relative;
+}
+
+.section-parent p {
+  font-size: 14px;
+  background: #000;
+  display: inline-block;
+  padding: 2px 8px;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+
+.section-parent span {
+  margin-right: 5px;
+}
+
+.section-parent .label {
+  color: #6B7280;
+  font-size: 14px;
+  margin: 12px 0px;
+  font-weight: 500;
+}
+
+p.notifiy {
+  color: #6B7280;
+  font-family: "Georama";
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 17px;
+}
+
+.br-1::after {
+  content: "";
+  position: absolute;
+  left: 58%;
+  top: 0;
+  height: 60vh;
+  border-right: 1px solid #ccc;
+}
+
+.br-1::before {
+  border-bottom: 1px solid #cccccc;
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  width: 98%;
 }/*# sourceMappingURL=styles.css.map */
