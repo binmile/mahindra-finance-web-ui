@@ -1805,6 +1805,63 @@ button.resend_otp.disabled {
 }
 
 /********************Terms and Condition Modal End************/
+.verifyBtn {
+  position: relative;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 38px;
+  padding: 3px 18px 0px 18px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  color: #17823E;
+  opacity: 0;
+  animation: fadeInAnimate 0.5s linear forwards;
+  animation-delay: 1s;
+}
+.verifyBtn img {
+  margin-right: 4px;
+}
+
+.verifyBtn::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  animation: animateVerifiedButton 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.verifyBtn::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  animation: animateVerifiedButton2 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.slideInRight {
+  animation-duration: 2s;
+  animation-name: slideInRight;
+}
+
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
@@ -2424,6 +2481,66 @@ button.resend_otp.disabled {
     height: 40px;
   }
   /*----------renewal-review-desktop-UI--- end------------------------*/
+  /*----------renewal-form-desktop-UI--- start------------------------*/
+  .bankDetailsMainContainer .bottomContentBox.bottomContentBox_renewal_form {
+    margin: 0;
+  }
+  .bankDetailsMainContainer .main-form .form_container {
+    margin-top: 20px;
+    min-height: 445px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail {
+    margin-bottom: 24px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail #secondColumn {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::-moz-placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #6B7280;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data {
+    padding: 10px 18px 10px 18px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg {
+    background-image: url("../img/icons/VectorStroke.svg");
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    background-size: 16px 17px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid #DCDCDC;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data {
+    padding-right: 20px;
+    background-size: 16px 17px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data option {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #231F20;
+  }
+  /*----------renewal-form-desktop-UI--- end------------------------*/
 }
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
   .no_desktop_view {
@@ -2480,6 +2597,66 @@ button.resend_otp.disabled {
     position: initial;
     gap: 10px;
   }
+  /*----------renewal-form-mini-desktop-UI--- start------------------------*/
+  .bankDetailsMainContainer .bottomContentBox.bottomContentBox_renewal_form {
+    margin: 0;
+  }
+  .bankDetailsMainContainer .main-form .form_container {
+    margin-top: 20px;
+    min-height: 445px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail {
+    margin-bottom: 24px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail #secondColumn {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::-moz-placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #6B7280;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data {
+    padding: 10px 18px 10px 18px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg {
+    background-image: url("../img/icons/VectorStroke.svg");
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    background-size: 12px 14px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid #DCDCDC;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data {
+    padding-right: 20px;
+    background-size: 16px 17px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data option {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #231F20;
+  }
+  /*----------renewal-form-mini-desktop-UI--- end------------------------*/
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .accountContainer .accountBox .fdContents.remove_margin {
@@ -2590,6 +2767,72 @@ button.resend_otp.disabled {
   .modal-dialog {
     max-width: unset;
   }
+  /*----------renewal-form-mini-mobile-UI--- start------------------------*/
+  .bankDetailsMainContainer .boldTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .bankDetailsMainContainer .bottomContentBox.bottomContentBox_renewal_form {
+    margin: 0;
+  }
+  .bankDetailsMainContainer .main-form .form_container {
+    margin-top: 16px;
+    min-height: 439px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail {
+    margin-bottom: 24px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail #secondColumn {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::-moz-placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #6B7280;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data {
+    padding: 10px 12px 10px 12px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg {
+    background-image: url("../img/icons/VectorStroke.svg");
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    background-size: 12px 14px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid #DCDCDC;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data {
+    padding-right: 20px;
+    background-size: 12px 14px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data option {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #231F20;
+  }
+  /*----------renewal-form-mini-mobile-UI--- end------------------------*/
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
@@ -3488,6 +3731,72 @@ button.resend_otp.disabled {
   .accountDetailsBox_success img {
     width: 100%;
   }
+  /*----------renewal-form-mobile-UI---start------------------------*/
+  .bankDetailsMainContainer .boldTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .bankDetailsMainContainer .bottomContentBox.bottomContentBox_renewal_form {
+    margin: 0;
+  }
+  .bankDetailsMainContainer .main-form .form_container {
+    margin-top: 16px;
+    min-height: 439px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail {
+    margin-bottom: 16px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail #secondColumn {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::-moz-placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-control.nominee_value_data::placeholder {
+    color: #231F20;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #6B7280;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data {
+    padding: 10px 12px 10px 12px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg {
+    background-image: url("../img/icons/VectorStroke.svg");
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    background-size: 12px 14px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data.dobimg::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .nominee_value_data:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid #DCDCDC;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data {
+    padding-right: 20px;
+    background-size: 12px 14px;
+  }
+  .bankDetailsMainContainer .main-form .form_container .nominee_detail .form-select.nominee_value_data option {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #231F20;
+  }
+  /*----------renewal-form-mobile-UI--- end------------------------*/
 }
 @media only screen and (max-width: 450px) {
   /*********** Responsive dashboard View Start*************/
@@ -3496,6 +3805,266 @@ button.resend_otp.disabled {
   }
   /*********** Responsive dashboard View End*************/
 }
+.boldHeading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin-bottom: 20px;
+}
+
+.renewalQuickActionBox {
+  color: #ADADAD !important;
+  padding: 0 !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  margin-left: 42px !important;
+}
+
+.renewalQuickActionBox .quickActionTabs label {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.renewalboxRadioButton {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 0px 26px 12px 26px !important;
+  margin-right: 12px !important;
+  line-height: 24px !important;
+  letter-spacing: 0.5px !important;
+  height: 44px !important;
+}
+
+.renewalContentContainer {
+  display: flex;
+}
+
+.rightSideSubHeading .subHeadingContainer {
+  display: flex;
+}
+.rightSideSubHeading .subHeadingContainer .subHeading {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  margin-bottom: 8px;
+  color: #6B7280;
+  display: flex;
+}
+
+.renewalInputBoxContainer {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: row;
+  border: 1px solid #E8E8E8;
+  margin-right: 12px;
+  margin: 0 16px 0 0;
+  border-radius: 8px;
+  height: 44px !important;
+  padding: 16px 12px 16px 12px;
+  cursor: pointer;
+  background-color: #DCDCDC;
+}
+.renewalInputBoxContainer .renewalInputBox {
+  display: flex;
+}
+.renewalInputBoxContainer .renewalInputBox input {
+  width: 92px !important;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  align-items: baseline;
+  background-color: #DCDCDC;
+  outline: none !important;
+}
+.renewalInputBoxContainer .renewalInputBoxImg img {
+  margin-left: 4px;
+  width: 24px;
+  height: 24px;
+}
+.renewalInputBoxContainer .renewalInputBoxYellowImg {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.fdDetails.renewal_fdDetails::after {
+  right: -58px !important;
+}
+
+.colBorder {
+  border-right: 1px solid #E8E8E8;
+}
+
+.noteContent {
+  margin-top: 23px;
+  padding-top: 20px;
+  border-top: 1px solid #D6D6D6;
+}
+
+.no-border-top {
+  margin-top: 0px;
+  padding-top: 0px;
+  border: none;
+}
+
+.renewalHeadCount {
+  border: 1px solid #231F20;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-right: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #231F20;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
+.SelectOptionsMainContainer .subHeadingContainer {
+  display: flex;
+  color: #6B7280;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.SelectOptionsMainContainer .subHeadingContainer .subHeading {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  display: flex;
+}
+.SelectOptionsMainContainer .subHeadingContainer .subHeadingIcons img {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  margin-right: 35px;
+}
+.SelectOptionsMainContainer .subHeading2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+  margin-left: 45px;
+  margin-top: 8px;
+}
+.SelectOptionsMainContainer .subHeadingIcons2 img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6.5px;
+}
+
+.noteContent {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+}
+.noteContent .noteText {
+  font-weight: 700;
+}
+
+.rightIcon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.boxRadioButtonYellowBadge img {
+  position: absolute;
+  display: none;
+  top: 5px;
+  right: 5px;
+  height: 10px !important;
+  width: 6.81px !important;
+}
+
+.renewalboxRadioButton.active img {
+  display: block !important;
+  filter: unset !important;
+}
+
+#renewalRightSideWrapper {
+  padding: 20px 24px;
+  margin-bottom: 20px !important;
+}
+
+#renewalRightSideWrapperTwo {
+  padding: 20px 24px;
+}
+
+.renewalBoldTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  padding-bottom: 20px;
+}
+
+.renewalBoldTitle span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  float: right;
+}
+
+.renewal_border_bottom_post_closure {
+  padding-top: 23px !important;
+}
+
+.renewalContentContainer {
+  padding-bottom: 60px;
+  position: relative;
+}
+.renewalContentContainer::after {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  content: "";
+  border-left: 1px dashed #7A7A7A;
+  top: 0;
+  left: 25px;
+  z-index: 0;
+}
+
+.noLine::after {
+  display: none;
+}
+
+.updateLink {
+  border-bottom: 1px solid #1084CB;
+}
+.updateLink a {
+  text-decoration: none;
+}
+.updateLink a:hover {
+  color: #1084CB;
+}
+.updateLink a img {
+  width: 16px;
+  height: 16px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1366px) {
   body {
     padding-top: 3rem;
@@ -3582,97 +4151,111 @@ button.resend_otp.disabled {
     top: 14px;
     left: 3px;
   }
-  .mob_menus {
-    height: calc(100vh - 52px);
-    overflow: auto;
+  nav .navbar-nav li.nav-item {
+    border-bottom: 1px solid #E8E8E8;
+    margin-left: 0px;
   }
-  .mob_menus .mob_menu_list .mob_menu_user_profile {
+  nav .navbar-nav li.nav-item a.nav-link, nav .navbar-nav li.nav-item a.nav-link.active, nav .navbar-nav li.nav-item a.nav-link:hover {
+    color: #231F20;
+  }
+  nav .navbar-nav li.nav-item a.nav-link {
+    padding: 20px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+    height: 56px;
+  }
+  nav .navbar-nav .mob_menu_user_profile {
     display: flex;
     justify-content: flex-start;
     place-items: center;
     flex-direction: row;
-    border-bottom: 1px solid #E8E8E8;
     padding: 20px 16px;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: normal;
   }
-  .mob_menus .mob_menu_list .mob_menu_user_profile .userIconImage {
+  nav .navbar-nav .mob_menu_user_profile .userIconImage {
     width: 51px;
     height: 51px;
     border-radius: 50%;
     margin-right: 15px;
   }
-  .mob_menus .mob_menu_list .mob_menu_user_profile .userIconImage img {
+  nav .navbar-nav .mob_menu_user_profile .userIconImage img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
   }
-  .mob_menus .mob_menu_list .mob_menu {
-    border-bottom: 1px solid #E8E8E8;
-    padding: 16px;
+  nav .userAvatar {
+    display: block;
   }
-  .mob_menus .mob_menu_list .mob_menu a {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.25px;
-    color: #231F20;
-    text-decoration: none;
+  nav .userAvatar a {
+    width: 100%;
   }
-  .mob_menus .mob_menu_list .mob_menu_expandable {
-    padding: 0;
-  }
-  .mob_menus .mob_menu_list .mob_menu_expandable a {
-    display: flex;
-    justify-content: space-between;
-    place-items: center;
-    flex-direction: row;
-    padding: 16px;
-    white-space: nowrap;
-  }
-  .mob_menus .mob_menu_list .mob_menu_expandable a img {
-    transition: all linear 300ms;
-  }
-  .mob_menus .mob_menu_list .mob_sub_menu {
-    background-color: #F0F0F0;
+  nav ul.dropdown-menu.show, nav ul.dropdown-menu {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    border-radius: 0px !important;
     height: 0px;
+    background-color: #F0F0F0;
+    box-shadow: none !important;
     overflow: hidden;
     transition: all linear 300ms;
   }
-  .mob_menus .mob_menu_list .mob_sub_menu ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .mob_menus .mob_menu_list .mob_sub_menu ul li {
-    width: 50%;
+  nav ul.dropdown-menu.show li, nav ul.dropdown-menu li {
+    width: 50% !important;
     border: 1px solid #D6D6D6;
+    padding: 0px 16px !important;
   }
-  .mob_menus .mob_menu_list .mob_sub_menu ul li a {
+  nav ul.dropdown-menu.show li a, nav ul.dropdown-menu li a {
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.25px;
+    transition: all linear 300ms;
   }
-  .mob_menus .mob_menu_list .mob_sub_menu.show {
-    height: 99px;
+  nav ul.dropdown-menu.show li a img, nav ul.dropdown-menu li a img {
+    display: none;
   }
-  .mob_menus .mob_menu_list .mob_menu_download.show {
-    height: 149px;
+  nav ul.dropdown-menu.show li a img.plusIcon, nav ul.dropdown-menu li a img.plusIcon {
+    display: block;
   }
-  .mob_menus .mob_menu_list .smallRotate {
-    transform: rotate(45deg);
+  nav ul.dropdown-menu.show li:last-child a, nav ul.dropdown-menu li:last-child a {
+    border-bottom: none !important;
+    margin-bottom: 0px !important;
   }
-  .mob_menus .mob_menu_logout {
+  nav .nav-link.dropdown-toggle {
+    display: flex !important;
+    justify-content: space-between !important;
+    place-items: center !important;
+  }
+  nav .nav-link.dropdown-toggle .plus_icon {
+    width: 100%;
+    text-align: right;
+  }
+  nav .nav-link.dropdown-toggle .plus_icon img {
+    width: 16px;
+    height: 16px;
+  }
+  nav .nav-item.dropdown.show .nav-link.dropdown-toggle .plus_icon img {
+    transform: rotate(45deg) !important;
+  }
+  nav .mob_sub_profile.show {
+    height: 91px !important;
+  }
+  nav .mob_menu_download.show {
+    height: 150px !important;
+  }
+  nav .mob_menu_logout {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
+    border-bottom: 0px !important;
   }
-  .mob_menus .mob_menu_logout a {
+  nav .mob_menu_logout a {
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
@@ -3680,10 +4263,13 @@ button.resend_otp.disabled {
     text-decoration: underline;
     color: #1084CB;
   }
-  .mob_menus .mob_menu_logout a img {
+  nav .mob_menu_logout a img {
     width: 16px;
     height: 16px;
     margin-right: 5px;
+  }
+  .navbar-dark .navbar-nav .show > .nav-link {
+    color: #231F20;
   }
   /************Menu End********************/
   /************Modal Start************/

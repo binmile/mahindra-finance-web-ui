@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahindra Finance :: Joint Account Holder</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -24,7 +25,15 @@
                   </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0 no_mobile_view">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item no_desktop_view">
+                        <div class="mob_menu_user_profile">
+                            <div class="userIconImage">
+                                <img src="./assets/img/avatar.png" alt="user icon" />
+                            </div>
+                            Vikram Kumar Sahu
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">FD renewal</a>
                     </li>
@@ -39,10 +48,11 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            Download
+                            <span>Download</span>
                             <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_desktop_view plusIcon" id="rotate_icon_profile" /></span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                        <ul class="dropdown-menu mob_menu_download" aria-labelledby="dropdown09">
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <img src="./assets/img/icons/Certificate.svg" alt="icon" class="menuIcon" /> TDS certificate
@@ -76,12 +86,13 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown userAvatar">
-                        <img src="./assets/img/avatar.png" alt="user" />
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            Profile
+                        <img src="./assets/img/avatar.png" alt="user" class="no_mobile_view" />
+                        <a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Profile</span>
                             <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_desktop_view plusIcon" id="rotate_icon_profile" /></span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                        <ul class="dropdown-menu mob_sub_profile" aria-labelledby="dropdown09">
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <img src="./assets/img/icons/user.svg" alt="icon" class="menuIcon" /> My account
@@ -111,65 +122,13 @@
                             </li>
                         </ul>
                     </li>
-                </ul>
-                <div class="mob_menus no_desktop_view">
-                    <div class="mob_menu_list">
-                        <div class="mob_menu_user_profile">
-                            <div class="userIconImage">
-                                <img src="./assets/img/avatar.png" alt="user icon" />
-                            </div>
-                            Vikram Kumar Sahu
-                        </div>
-                        <div class="mob_menu mob_menu_expandable">
-                            <a href="javascript:;" id="mob_menu_profile_click">
-                                <div>My Profile</div>
-                                <div><img src="./assets/img/icons/plusIcon.svg" alt="icon" id="rotate_icon_profile" /></div>
-                            </a>
-                            <div class="mob_sub_menu mob_menu_profile" id="mob_menu_profile">
-                                <ul>
-                                    <li><a href="#">My account</a></li>
-                                    <li><a href="#">CKYC update</a></li>
-                                    <li><a href="#">Avail employee benefit</a></li>
-                                    <li><a href="#">Other fixed deposits</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mob_menu">
-                            <a href="#">FD renewal</a>
-                        </div>
-                        <div class="mob_menu">
-                            <a href="#">Preclosure</a>
-                        </div>
-                        <div class="mob_menu">
-                            <a href="#">Loan against FD repayment</a>
-                        </div>
-                        <div class="mob_menu">
-                            <a href="#">Loan against FD</a>
-                        </div>
-                        <div class="mob_menu mob_menu_expandable">
-                            <a href="javascript:;" id="mob_menu_download_click">
-                                <div>Download</div>
-                                <div><img src="./assets/img/icons/plusIcon.svg" alt="icon" id="rotate_icon_download" /></div>
-                            </a>
-                            <div class="mob_sub_menu mob_menu_download" id="mob_menu_download">
-                                <ul>
-                                    <li><a href="#">TDS certificate</a></li>
-                                    <li><a href="#">Form 15 G/H submission</a></li>
-                                    <li><a href="#">Cumulative letter</a></li>
-                                    <li><a href="#">Non - cumulative letter</a></li>
-                                    <li><a href="#">Interest paid / accrued</a></li>
-                                    <li><a href="#">&nbsp;</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mob_menu_logout">
+                    <li class="nav-item mob_menu_logout no_desktop_view">
                         <a href="#">
                             <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
                             Log out
                         </a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

@@ -69,6 +69,28 @@ function repaymentContinueButtonEnable() {
     }
 
 }
+/*********************renewal-form-start-************/
+function renewalformContinueButtonEnable() {
+    var nomineeValue = document.getElementById('nominee_value').value;
+    var nomineeName = document.getElementById('name').value;
+    var nomineeDOB = document.getElementById('nominee_DOB').value;
+    var nomineeRelation = document.getElementById('nominee_relation').value;
+    var allFieldsFilled = nomineeValue !== 'add-new' || nomineeName !== ''
+    var allFieldsFilled2=nomineeDOB !== '' && nomineeRelation !== ''
+    var continueButton = document.getElementById('continueButton');
+    continueButton.disabled = !allFieldsFilled || !allFieldsFilled2;
+  }
+    
+function toggleSecondColumn(elementId, targetValue, nomineevalue) {
+    var selectValue = $(nomineevalue).val();
+    var element = $(elementId);
+    if (selectValue === targetValue) {
+      element.show();
+    } else {
+      element.hide();
+    }
+  }
+/*********************renewal-form-end-************/
 
 /*****************radio button BMT-265 start******************/
 function radioButtonAction(id,element) {
@@ -114,6 +136,32 @@ function openSucessToast(){
 /*****************Quick Action Box Select Start***************/
 $("#quickActionElements :input").click(function () {
     $("#quickActionElements :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).addClass('active');
+            var result = $(this).val();
+        } else {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).removeClass('active');
+        }
+    });
+});
+
+$("#quickActionElements1 :input").click(function () {
+    $("#quickActionElements1 :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).addClass('active');
+            var result = $(this).val();
+        } else {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).removeClass('active');
+        }
+    });
+});
+
+$("#quickActionElements2 :input").click(function () {
+    $("#quickActionElements2 :input").each(function () {
         if ($(this).is(":checked")) {
             var activeData = $(this).attr('data-tenure');
             $('#' + activeData).addClass('active');

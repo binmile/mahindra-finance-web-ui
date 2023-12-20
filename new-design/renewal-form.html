@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahindra Finance :: Single Account Holder</title>
+    <title>Mahindra Finance :: Preclosure</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <link
       rel="stylesheet"
@@ -11,7 +11,9 @@
     />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/_265_css.scss" />
   </head>
+
   <body>
     <!-- Top-navbar Start -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -136,153 +138,171 @@
       </div>
   </nav>
     <!--Top-navbar End -->
-
     <div class="container mb-20">
-      <div class="row">
-        <div class="col col-md-12 mt-20">
+      <div class="row animate__animated animate__fadeInUp">
+        <div class="col-12 mt-20">
           <a href="#" class="commonBackBtn"
             ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
             Back</a
           >
         </div>
-        <div class="col col-md-12 mt-20 animate__animated animate__fadeInUp">
-          <div class="cardContainer accountContainer accountContainer_success">
-            <div class="container p-0">
-              <div class="row">
-                <div class="col col-md-12 col-sm-12 col-lg-6 allCentered">
-                  <div class="accountDetailsBox_success text-center">
-                      <div class="success_img">
-                        <img src="./assets/img/success.svg" alt="icon" />
-                      </div>
-                      <div class="all_done">All done!</div>
-                      <div class="email-content text-center">
-                        You will receive the renewal confirmation & FDR
-                        E-Receipt on your email : vikram.sahu@gmail.com
-                      </div>
-                      <div class="buttonContainer_success no_mobile_view">
-                        <button class="btn themeRedBtn button_success_home">Home</button>
+        <div class="col col-md-12">
+          <div id="commonHeading-repayment"></div>
+        </div>
+        <div class="col-12">
+          <div class="bankDetailsMainContainer">
+            <div class="boldTitle">Update nominee details</div>
+            <div class="main-form">
+              <form>
+                <div class="form_container">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div class="nominee_detail">
+                        <label for="exampMobile" class="form-label"
+                          >Quick select nominee
+                        </label>
+                        <select
+                          id="nominee_value"
+                          class="form-select nominee_value_data"
+                          onchange="toggleSecondColumn('#secondColumn','add-new', '#nominee_value')"
+                        >
+                          <option
+                            value="disable-selected"
+                            disabled
+                            hidden
+                            selected
+                          >
+                            Add New
+                          </option>
+                          <option value="add-new">Add New</option>
+                          <option value="Sudhir Rana">Vishal Sahu</option>
+                        </select>
                       </div>
                     </div>
+                    <div
+                      class="col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                      id="secondColumn"
+                    >
+                      <div class="nominee_detail">
+                        <label for="nominee name" class="form-label"
+                          >Nominee’s name</label
+                        >
+                        <input
+                          type="name"
+                          class="form-control nominee_value_data"
+                          id="name"
+                          maxlength="50"
+                          placeholder="Hariom Sahu"
+                          onchange="renewalformContinueButtonEnable()"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div class="nominee_detail">
+                        <label for="" class="form-label"
+                          >Nominee’s date of birth</label
+                        >
+                        <input
+                          type="date"
+                          placeholder="DD/MM/YYYY"
+                          class="form-control nominee_value_data"
+                          id="nominee_DOB"
+                          required
+                          onchange="renewalformContinueButtonEnable()"
+
+                        />
+                        <div id="error-message_nomenieeDOB"></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div class="nominee_detail">
+                        <label for="exampMobile" class="form-label"
+                          >Nominee’s relation with you</label
+                        >
+                        <select
+                          id="nominee_relation"
+                          class="form-select nominee_value_data"
+                          onchange="renewalformContinueButtonEnable()"
+
+                        >
+                          <option value="" disabled hidden selected>
+                            Select
+                          </option>
+                          <option value="new">Mother</option>
+                          <option value="Sudhir Rana">Father</option>
+                          <option value="Kapil">Sister</option>
+                          <option value="Rohit">Brother</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col col-md-12 col-sm-12 col-lg-6">
-                  <div class="accountBox darkBg">
-                    <div class="heading heading_success">
-                      Your FD renewal process is successfully completed
-                    </div>
-                    <div class="content_settled">
-                      Out of ₹22,569 your loan amount will get settled for loan
-                      2212321
-                    </div>
-                    <div class="row flex-row">
-                       <div class="col-md-4 col-6">
-                        <div
-                          class="fdContents fdContents_renewal fdContents_success with-border remove_margin"
-                        >
-                          <div class="fdDetails fdContents_width fdetails_data_success fdDetails_value">
-                            <div class="label label_success">Renewal application no.</div>
-                            <div class="value value_success">
-                              <div class="roundBackgroundIcon">
-                                <img
-                                  src="./assets/img/icons/minus.svg"
-                                  alt="icon"
-                                />
-                              </div>
-                              #1233224
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-6">
-                        <div
-                          class="fdContents fdContents_renewal fdContents_success with-border remove_margin"
-                        >
-                          <div class="fdDetails fdContents_width fdDetails_value">
-                            <div class="label label_success">Deposit amount</div>
-                            <div class="value value_success">
-                              <div class="roundBackgroundIcon">
-                                <img
-                                  src="./assets/img/icons/cash_text.svg"
-                                  alt="icon"
-                                />
-                              </div>
-                              ₹ 15,000
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-6">
-                        <div
-                          class="fdContents fdContents_renewal fdContents_success remove_margin"
-                        >
-                          <div class="fdDetails fdContents_width fdDetails_value">
-                            <div class="label label_success">Start date</div>
-                            <div class="value value_success">
-                              <div class="roundBackgroundIcon">
-                                <img
-                                  src="./assets/img/icons/clockwise.svg"
-                                  alt="icon"
-                                />
-                              </div>
-                              15 months
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fd_content_min_height fd_content_min_height_success">
-                        <div class="row flex-row">
-                            <div class="col-md-4 col-6">
-                              <div
-                                class="fdContents fdContents_renewal fdContents_success with-border fdContents_remove_margin remove_margin"
-                              >
-                                <div class="fdDetails fdContents_width fdDetails_value">
-                                  <div class="label label_success">Start date</div>
-                                  <div class="value value_success">
-                                    <div class="roundBackgroundIcon">
-                                      <img
-                                        src="./assets/img/icons/calendar-red-icon.svg"
-                                        alt="icon"
-                                      />
-                                    </div>
-                                    18 Sept 2025
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4 col-6">
-                              <div
-                                class="fdContents fdContents_renewal fdContents_success fdContents_remove_margin remove_margin"
-                              >
-                                <div class="fdDetails fdContents_width fdDetails_value">
-                                  <div class="label label_success">End date</div>
-                                  <div class="value value_success">
-                                    <div class="roundBackgroundIcon">
-                                      <img
-                                        src="./assets/img/icons/calendar-red-icon.svg"
-                                        alt="icon"
-                                      />
-                                    </div>
-                                    18 Dec 2026
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="bottomLightText bottomLightText_renewal bottomLightText_success">
-                      *The final amount will be payable post deduction of TDS,
-                      as per the tax guidelines
-                    </div>
-                </div>
-               
-              </div>
+              </form>
+            </div>
+            <div class="bottomContentBox bottomContentBox_renewal_form">
+              Ensure to double-check the nominee details, as it plays a crucial
+              role in the seamless processing of benefits.
             </div>
           </div>
         </div>
-        <div class="col col-md-12 col-12 col-sm-12 col-xs-12 no_desktop_view no_desktop_ipad">
-            <div class="buttonContainer buttonContainer_success">
-                <button class="btn themeRedBtn button_success_home">Home</button>
+        <div class="col col-md-12">
+          <div class="buttonContainer" id="repayment-buttonContainer">
+            <button
+              class="btn themeRedBtn"
+              id="continueButton"
+              disabled
+              onclick="handleClickModal('myModal')"
+            >
+              Add nominee
+              <img src="./assets/img/arrow-right.svg" alt="icons" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Confrmation Modal Start -->
+      <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+              </button>
+              <div class="info-heading-container">
+                <div class="info-heading-image">
+                  <img
+                    src="./assets/img/icons/info-button-icon.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info-heading">Are you sure ?</div>
               </div>
+              <div class="info-content">
+                Please confirm that you want to proceed with the OTP
+                verification
+              </div>
+              <div class="info-button-container">
+                <div class="info-button">
+                  <button
+                    type="button"
+                    class="themeRedBtn"
+                    id="themeWhiteButton"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No
+                  </button>
+                </div>
+                <div class="info-button">
+                  <button type="button" class="themeRedBtn">Yes</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
