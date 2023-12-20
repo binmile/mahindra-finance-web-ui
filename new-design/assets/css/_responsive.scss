@@ -1014,6 +1014,102 @@
     /************Menu End********************/
 }
 
+@media screen and (min-width: 769px) and (max-width: 1270px) {
+    .cardContainer_mobile_screen {
+        margin-top: 12px;
+        .fdDetailsBox_mobile_screen {
+          padding: 12px 16px;
+          height: fit-content;
+          .fdHeader_mobile_screen {
+            @include setDisplayProperty(flex, left, initial, column);
+            .fdTenure_mobile_screen {
+              margin-top: 8px;
+              padding: 2px 8px;
+              width: fit-content;
+              font-size: 12px;
+              img {
+                margin-bottom: 2px;
+              }
+            }
+            .boldTitle_mobile {
+              margin-bottom: 8px;
+              @include custom-font(16px, 600, 24px, 0.15px);
+              text-align: left;
+            }
+          }
+          .fdMainContent {
+            padding: 16px 0;
+            .fdInvestment_mobile_screen {
+              .bigText_mob_screen {
+                @include custom-font(16px, 600, 24px, 0.15px);
+                text-align: left;
+              }
+              .lightText_mob_screen {
+                @include custom-font(12px, 400, 16px, 0);
+                text-align: left;
+              }
+            }
+            .fdInvestment_sec_mobile_view {
+              .lightText_line_text_mob_screen {
+                @include custom-font(12px, 400, 16px, 0);
+                text-align: right;
+              }
+    
+              .darkGreenText_mob_screen {
+                @include custom-font(16px, 600, 24px, 0.15px);
+                text-align: right;
+              }
+            }
+    
+            .fdTenure_years_text {
+              @include custom-font(12px, 500, 16px, 0.25px);
+              text-align: center;
+            }
+          }
+    
+          .fdContents {
+            &.fdContents_mob_screen {
+              flex-wrap: wrap;
+            }
+    
+            .fdDetails {
+              width: 50%;
+              margin-bottom: 12px;
+              .label {
+                @include custom-font(12px, 500, 16px, 0.25px);
+                text-align: left;
+              }
+    
+              .value {
+                @include setDisplayProperty(flex, flex-start, center);
+                align-items: center;
+                @include custom-font(14px, 500, 20px, 0.25px);
+                text-align: left;
+                color: $color_black_light;
+    
+                img {
+                  @include custom-width-height(15px, 15px);
+                  vertical-align: middle;
+                }
+              }
+            }
+    
+            .fdDetails::after {
+              position: initial;
+            }
+          }
+        }
+      }
+.quickActionBox{
+    .quickActionTabs{
+        label {
+            width: 100%;
+            margin-right: 0px;
+        }
+    } 
+} 
+}
+
 @media screen and (min-width: 992px) and (max-width: 1135px) {
         .navbar-nav {
             li.nav-item {

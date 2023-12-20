@@ -4931,6 +4931,117 @@ button.resend_otp.disabled {
   }
   /************Menu End********************/
 }
+@media screen and (min-width: 769px) and (max-width: 1270px) {
+  .cardContainer_mobile_screen {
+    margin-top: 12px;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen {
+    padding: 12px 16px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen {
+    display: flex;
+    justify-content: left;
+    place-items: initial;
+    flex-direction: column;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .fdTenure_mobile_screen {
+    margin-top: 8px;
+    padding: 2px 8px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 12px;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .fdTenure_mobile_screen img {
+    margin-bottom: 2px;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdHeader_mobile_screen .boldTitle_mobile {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent {
+    padding: 16px 0;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_mobile_screen .bigText_mob_screen {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_mobile_screen .lightText_mob_screen {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_sec_mobile_view .lightText_line_text_mob_screen {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: right;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdInvestment_sec_mobile_view .darkGreenText_mob_screen {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: right;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdMainContent .fdTenure_years_text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-align: center;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents.fdContents_mob_screen {
+    flex-wrap: wrap;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails {
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails .label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails .value {
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #231F20;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails .value img {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+  }
+  .cardContainer_mobile_screen .fdDetailsBox_mobile_screen .fdContents .fdDetails::after {
+    position: initial;
+  }
+  .quickActionBox .quickActionTabs label {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1135px) {
   .navbar-nav li.nav-item a.nav-link {
     font-size: 12px !important;
