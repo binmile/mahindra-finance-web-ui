@@ -353,9 +353,6 @@
           }
           .nominee_value_data {
             padding: 10px 18px 10px 18px;
-            ::placeholder{
-              color:rgb(197, 60, 60);
-            }
             &.dobimg {
               background-image: url("../img/icons/VectorStroke.svg");
               background-repeat: no-repeat;
@@ -366,7 +363,7 @@
               display: none;
             }
           }
-          .nominee_value_data:focus{
+          .nominee_value_data:focus {
             outline: none !important;
             outline-width: 0 !important;
             box-shadow: none;
@@ -384,11 +381,11 @@
               }
             }
           }
-          
         }
       }
     }
   }
+  /*----------renewal-form-desktop-UI--- end------------------------*/
 }
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
   .no_desktop_view {
@@ -467,6 +464,65 @@
       }
     }
   }
+  /*----------renewal-form-mini-desktop-UI--- start------------------------*/
+  .bankDetailsMainContainer {
+    .bottomContentBox {
+      &.bottomContentBox_renewal_form {
+        margin: 0;
+      }
+    }
+    .main-form {
+      .form_container {
+        margin-top: 20px;
+        min-height: 445px;
+        .nominee_detail {
+          margin-bottom: 24px;
+          #secondColumn {
+            display: none; // Hide by default
+          }
+          .form-control.nominee_value_data::placeholder {
+            color: $color_black_light;
+          }
+          .form-label {
+            margin-bottom: 8px;
+            @include custom-font(14px, 400, 24px, 0.25px);
+            color: $color_light_text;
+          }
+          .nominee_value_data {
+            padding: 10px 18px 10px 18px;
+            &.dobimg {
+              background-image: url("../img/icons/VectorStroke.svg");
+              background-repeat: no-repeat;
+              background-position: right 13px center;
+              background-size: 12px 14px;
+            }
+            &.dobimg::-webkit-calendar-picker-indicator {
+              display: none;
+            }
+          }
+          .nominee_value_data:focus {
+            outline: none !important;
+            outline-width: 0 !important;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            border: 1px solid $color_disabled_btn;
+          }
+          .form-select {
+            &.nominee_value_data {
+              padding-right: 20px;
+              background-size: 16px 17px;
+              option {
+                @include custom-font(16px, 400, 24px, 0.5px);
+                color: $color_black_light;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*----------renewal-form-mini-desktop-UI--- end------------------------*/
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -595,6 +651,68 @@
   .modal-dialog {
     max-width: unset;
   }
+  /*----------renewal-form-mini-mobile-UI--- start------------------------*/
+  .bankDetailsMainContainer {
+    .boldTitle {
+      @include custom-font(16px, 600, 24px, 0.15px);
+    }
+    .bottomContentBox {
+      &.bottomContentBox_renewal_form {
+        margin: 0;
+      }
+    }
+    .main-form {
+      .form_container {
+        margin-top: 16px;
+        min-height: 439px;
+        .nominee_detail {
+          margin-bottom: 24px;
+          #secondColumn {
+            display: none; // Hide by default
+          }
+          .form-control.nominee_value_data::placeholder {
+            color: $color_black_light;
+          }
+          .form-label {
+            margin-bottom: 8px;
+            @include custom-font(12px, 400, 16px, 0);
+            color: $color_light_text;
+          }
+          .nominee_value_data {
+            padding: 10px 12px 10px 12px;
+            &.dobimg {
+              background-image: url("../img/icons/VectorStroke.svg");
+              background-repeat: no-repeat;
+              background-position: right 13px center;
+              background-size: 12px 14px;
+            }
+            &.dobimg::-webkit-calendar-picker-indicator {
+              display: none;
+            }
+          }
+          .nominee_value_data:focus {
+            outline: none !important;
+            outline-width: 0 !important;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            border: 1px solid $color_disabled_btn;
+          }
+          .form-select {
+            &.nominee_value_data {
+              padding-right: 20px;
+              background-size: 12px 14px;
+              option {
+                @include custom-font(14px, 400, 28px, 0.25px);
+                color: $color_black_light;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*----------renewal-form-mini-mobile-UI--- end------------------------*/
 }
 
 @media only screen and (max-width: $tablet) {
@@ -1447,6 +1565,68 @@
       width: 100%;
     }
   }
+  /*----------renewal-form-mobile-UI---start------------------------*/
+  .bankDetailsMainContainer {
+    .boldTitle {
+      @include custom-font(16px, 600, 24px, 0.15px);
+    }
+    .bottomContentBox {
+      &.bottomContentBox_renewal_form {
+        margin: 0;
+      }
+    }
+    .main-form {
+      .form_container {
+        margin-top: 16px;
+        min-height: 439px;
+        .nominee_detail {
+          margin-bottom: 16px;
+          #secondColumn {
+            display: none; // Hide by default
+          }
+          .form-control.nominee_value_data::placeholder {
+            color: $color_black_light;
+          }
+          .form-label {
+            margin-bottom: 8px;
+            @include custom-font(12px, 400, 16px, 0);
+            color: $color_light_text;
+          }
+          .nominee_value_data {
+            padding: 10px 12px 10px 12px;
+            &.dobimg {
+              background-image: url("../img/icons/VectorStroke.svg");
+              background-repeat: no-repeat;
+              background-position: right 13px center;
+              background-size: 12px 14px;
+            }
+            &.dobimg::-webkit-calendar-picker-indicator {
+              display: none;
+            }
+          }
+          .nominee_value_data:focus {
+            outline: none !important;
+            outline-width: 0 !important;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            border: 1px solid $color_disabled_btn;
+          }
+          .form-select {
+            &.nominee_value_data {
+              padding-right: 20px;
+              background-size: 12px 14px;
+              option {
+                @include custom-font(14px, 400, 28px, 0.25px);
+                color: $color_black_light;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*----------renewal-form-mobile-UI--- end------------------------*/
 }
 @media only screen and (max-width: $miniMobile) {
   /*********** Responsive dashboard View Start*************/
