@@ -4771,13 +4771,14 @@ button.resend_otp.disabled {
   line-height: 24px;
   letter-spacing: 0.15px;
   margin-bottom: 16px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0px solid #ccc !important;
 }
 
 ul.customeul {
   margin-top: 16px;
   list-style: none;
   padding-left: 0px;
+  margin-bottom: 0px;
 }
 
 .sideimage {
@@ -4793,7 +4794,6 @@ ul.customeul {
 }
 
 .custborder-bottom {
-  border-bottom: 1px solid #ccc;
   margin-top: 20px;
 }
 
@@ -5041,7 +5041,7 @@ p.notifiy {
   position: absolute;
   left: 58%;
   top: 0;
-  height: 60vh;
+  height: 56vh;
   border-right: 1px solid #ccc;
 }
 
@@ -5051,4 +5051,168 @@ p.notifiy {
   position: absolute;
   bottom: 50px;
   width: 98%;
+}
+
+.custmalign-item .customeul li .smalltext.customesmalltext {
+  border-bottom: unset;
+}
+
+.accountBox.darkBg.custdarkBg {
+  padding: 12px 32px;
+}
+
+.fdContents.custtbl.custfdContents {
+  margin-top: 0px;
+  position: relative;
+}
+
+.custimetop-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desabletext p {
+  background: #E3E5EA;
+  color: #6B7280;
+}
+
+.fdContents .fdDetails .value.crousalvalue {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  width: 150px;
+}
+
+.owl-carousel.cutomecrousal .owl-stage-outer {
+  height: unset;
+}
+
+.card-section {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 32px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.card-section-2 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 32px;
+  border-radius: 8px;
+  background: #fff;
+  padding-bottom: 0px;
+}
+
+.cardContainer.accountContainer.bgremove {
+  background: unset;
+  box-shadow: none;
+}
+
+.row.customealign {
+  align-items: center;
+}
+
+.row.customealign .customRedBtn.themeRedBtn_mob {
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .custborder-right {
+    border-right: 0px;
+  }
+  ul.customeul {
+    display: none;
+  }
+  .sideimage {
+    display: none;
+  }
+  .owl-carousel.owl-theme.cutomecrousal.owl-loaded.owl-drag {
+    display: block;
+  }
+  .card-section-2 {
+    margin-top: 20px;
+  }
+  .card-section-2 {
+    display: none;
+  }
+  .customRedBtn.themeRedBtn_mob {
+    display: none;
+  }
+}
+@media screen and (min-width: 771px) {
+  .value.crousalvalue .roundBackgroundIcon {
+    margin-bottom: 8px;
+  }
+  ul.customeul {
+    display: block;
+  }
+  .owl-carousel.owl-theme.cutomecrousal.owl-loaded.owl-drag {
+    display: none;
+  }
+  .card-section-2 {
+    display: block;
+  }
+  button.btn.themeRedBtn {
+    display: none;
+  }
+}
+.verifyBtn {
+  position: relative;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 38px;
+  padding: 3px 18px 0px 18px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  color: #17823E;
+  opacity: 0;
+  animation: fadeInAnimate 0.5s linear forwards;
+  animation-delay: 1s;
+}
+.verifyBtn img {
+  margin-right: 4px;
+}
+
+.verifyBtn::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  animation: animateVerifiedButton 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.verifyBtn::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  animation: animateVerifiedButton2 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.slideInRight {
+  animation-duration: 2s;
+  animation-name: slideInRight;
 }/*# sourceMappingURL=styles.css.map */
