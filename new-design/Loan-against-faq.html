@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahindra Finance :: Single Account Holder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+</head>
+
+<body>
+    <!-- Top-navbar Start -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logo.svg" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <div id="hamburgerIcon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 no_mobile_view">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">FD renewal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preclosure.html">Preclosure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Loan against FD repayment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Loan against FD</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Download
+                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/Certificate.svg" alt="icon" class="menuIcon" /> TDS certificate
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/file-plus.svg" alt="icon" class="menuIcon" /> Form 15 G/H submission
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/file-text.svg" alt="icon" class="menuIcon" /> Cumulative letter
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Non - cumulative letter
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/percent.svg" alt="icon" class="menuIcon" /> Interest paid / accrued details
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown userAvatar">
+                        <img src="./assets/img/avatar.png" alt="user" />
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Profile
+                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/user.svg" alt="icon" class="menuIcon" /> My account
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/edit.svg" alt="icon" class="menuIcon" /> CKYC update
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="icon" class="menuIcon" /> Avail employee benefit <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Other fixed deposits <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item logoutLink" href="#">
+                                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="mob_menus no_desktop_view">
+                    <div class="mob_menu_list">
+                        <div class="mob_menu_user_profile">
+                            <div class="userIconImage">
+                                <img src="./assets/img/avatar.png" alt="user icon" />
+                            </div>
+                            Vikram Kumar Sahu
+                        </div>
+                        <div class="mob_menu mob_menu_expandable">
+                            <a href="javascript:;" id="mob_menu_profile_click">
+                                <div>My Profile</div>
+                                <div><img src="./assets/img/icons/plusIcon.svg" alt="icon" id="rotate_icon_profile" /></div>
+                            </a>
+                            <div class="mob_sub_menu mob_menu_profile" id="mob_menu_profile">
+                                <ul>
+                                    <li><a href="#">My account</a></li>
+                                    <li><a href="#">CKYC update</a></li>
+                                    <li><a href="#">Avail employee benefit</a></li>
+                                    <li><a href="#">Other fixed deposits</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mob_menu">
+                            <a href="#">FD renewal</a>
+                        </div>
+                        <div class="mob_menu">
+                            <a href="#">Preclosure</a>
+                        </div>
+                        <div class="mob_menu">
+                            <a href="#">Loan against FD repayment</a>
+                        </div>
+                        <div class="mob_menu">
+                            <a href="#">Loan against FD</a>
+                        </div>
+                        <div class="mob_menu mob_menu_expandable">
+                            <a href="javascript:;" id="mob_menu_download_click">
+                                <div>Download</div>
+                                <div><img src="./assets/img/icons/plusIcon.svg" alt="icon" id="rotate_icon_download" /></div>
+                            </a>
+                            <div class="mob_sub_menu mob_menu_download" id="mob_menu_download">
+                                <ul>
+                                    <li><a href="#">TDS certificate</a></li>
+                                    <li><a href="#">Form 15 G/H submission</a></li>
+                                    <li><a href="#">Cumulative letter</a></li>
+                                    <li><a href="#">Non - cumulative letter</a></li>
+                                    <li><a href="#">Interest paid / accrued</a></li>
+                                    <li><a href="#">&nbsp;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mob_menu_logout">
+                        <a href="#">
+                            <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                            Log out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Top-navbar End -->
+
+    <div class="container mb-20">
+        <div class="row animate__animated animate__fadeInUp">
+            <div class="col col-md-12 mt-20"><a href="#" class="commonBackBtn"><img
+                        src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
+            <div class="col col-md-12 mt-20">
+                <div class="cardContainer accountContainer">
+                    <div class="container p-0">
+                        
+
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6 col-lg-6 col-12 custborder-right">
+                                <div class="boldHeader">
+                                    <span> <img src="./assets/img/icons/money.svg" alt="icon" /></span>
+                                    How much funds do you need ? 
+                                </div>
+                                <div class="textparent">
+                                    <label for="account_number" class="form-label formLabel">Account number</label>
+                                    <input type="number" class="form-control formControl  " id="account_number" maxlength="20" onchange="repaymentContinueButtonEnable()">
+                                    <div class="textfildicons">
+                                        <img src="./assets/img/icons/cash.svg" alt="icons" class="repayment-icons">
+                                    </div>
+                                    <div class="infoText">Minimum amount of ₹5,000</div>
+                                </div>
+                                <div class="customRedBtn themeRedBtn_mob">
+                                    Continue
+                                    <img src="./assets/img/arrow-right.svg" alt="icons">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-12">
+                                <div class="boldHeader">
+                                    Loan against FD benefits 
+                                </div>
+                                <div class="row custmalign-item">
+
+                                
+                                <div class="col-md-9 col-lg-9">
+                                    <ul class="customeul">
+                                        <li>
+                                            <div class="smalltext">
+                                                <span> <img src="./assets/img/icons/moneysymble.svg" alt="icon" /></span>
+                                                No EMIs or monthly repayments required 
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="smalltext">
+                                                <span> <img src="./assets/img/icons/persent.svg" alt="icon" /></span>
+                                                Only additional 2% interest on FD ROI
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="smalltext">
+                                                <span> <img src="./assets/img/icons/coffee.svg" alt="icon" /></span>
+                                                You can repay early or settle against FD maturity value
+                                            </div>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                                <div class="col-md-3 col-lg-3">
+                                    <div class="sideimage">
+                                        <img src="./assets/img/icons/bigmoney.svg" alt="icon" />
+                                    </div>
+
+                                </div>
+                            </div>
+                                
+
+                            </div>
+                        </div>
+                        <div class="custborder-bottom"></div>
+                        <div class="row">
+                            <div class="custHeader">
+                                <h4>Frequently asked questions</h4> 
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-12">
+                               
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Why loan against FD ?  
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Taking a loan against your FD is generally preferred over prematurely closing it because it allows you to retain the benefits of your FD, including its interest-earning potential, while accessing funds for your immediate needs.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            What are the interest rates offered on FDs?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Taking a loan against your FD is generally preferred over prematurely closing it because it allows you to retain the benefits of your FD, including its interest-earning potential, while accessing funds for your immediate needs.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Can I reinvest the interest earned on an FD?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-12">
+                                <div class="bgimage">
+                                    <div class="custHeader newcustHeader">
+                                    <h4>What is loan against fixed deposit?</h4> 
+                                </div>
+                                <div class="cstuionimage">
+                                    <ul class="custliststyle">
+                                        <li class="customeli">
+                                            Borrowing against deposited amount.
+                                        </li>
+                                        <li class="customeli">
+                                            Lower interest than personal loans.
+                                        </li>
+                                        <li class="">
+                                            FD continues earning interest.
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                        
+
+
+    <!-- TermsConditionModal End-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/chart.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
