@@ -1,1012 +1,1115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahindra Finance :: Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Top-navbar Start -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/img/logo.svg" alt="Logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <div id="hamburgerIcon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item no_desktop_view">
-                        <div class="mob_menu_user_profile">
-                            <div class="userIconImage">
-                                <img src="./assets/img/avatar.png" alt="user icon" />
-                            </div>
-                            Vikram Kumar Sahu
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">FD renewal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="preclosure.html">Preclosure</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Loan against FD repayment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Loan against FD</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>Download</span>
-                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
-                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_desktop_view plusIcon" id="rotate_icon_profile" /></span>
-                        </a>
-                        <ul class="dropdown-menu mob_menu_download" aria-labelledby="dropdown09">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/Certificate.svg" alt="icon" class="menuIcon" /> TDS certificate
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-plus.svg" alt="icon" class="menuIcon" /> Form 15 G/H submission
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-text.svg" alt="icon" class="menuIcon" /> Cumulative letter
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Non - cumulative letter
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/percent.svg" alt="icon" class="menuIcon" /> Interest paid / accrued details
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown userAvatar">
-                        <img src="./assets/img/avatar.png" alt="user" class="no_mobile_view" />
-                        <a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>Profile</span>
-                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
-                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_desktop_view plusIcon" id="rotate_icon_profile" /></span>
-                        </a>
-                        <ul class="dropdown-menu mob_sub_profile" aria-labelledby="dropdown09">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/user.svg" alt="icon" class="menuIcon" /> My account
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/edit.svg" alt="icon" class="menuIcon" /> CKYC update
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/check-circle.svg" alt="icon" class="menuIcon" /> Avail employee benefit <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Other fixed deposits <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item logoutLink" href="#">
-                                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log out
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mob_menu_logout no_desktop_view">
-                        <a href="#">
-                            <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
-                            Log out
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div id="hamburgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item no_desktop_view">
+              <div class="mob_menu_user_profile">
+                <div class="userIconImage">
+                  <img src="./assets/img/avatar.png" alt="user icon" />
+                </div>
+                Vikram Kumar Sahu
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >FD renewal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preclosure.html">Preclosure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD repayment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Download</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_desktop_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_menu_download"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/Certificate.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    TDS certificate
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-plus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Form 15 G/H submission
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-text.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Non - cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/percent.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Interest paid / accrued details
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown userAvatar">
+              <img
+                src="./assets/img/avatar.png"
+                alt="user"
+                class="no_mobile_view"
+              />
+              <a
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Profile</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_desktop_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_sub_profile"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/user.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    My account
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/edit.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    CKYC update
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/check-circle.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Avail employee benefit
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Other fixed deposits
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item logoutLink" href="#">
+                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                    Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mob_menu_logout no_desktop_view">
+              <a href="#">
+                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                Log out
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!--Top-navbar End -->
     <div class="container">
-        <div class="row slideInRight">
-            <div class="col col-md-6 col-lg-4 col-xl-2 mt-20  no_mobile_view">
-                <div class="cardContainer dashboardCard  no_mobile_view">
-                    <div class="cardIcons">
-                        <img src="./assets/img/icons/user-icon.svg" alt="icon" />
-                    </div>
-                    <div class="cardUserName">
-                        Vikram Kumar Sahu
-                    </div>
-                    <div class="custom-dropdown" id="portfolio_btn">
-                        <button class="themeRedBtn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Portfolio : 221132
-                            <img src="./assets/img/chevron-down.svg" alt="icons" />
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="dropdownElement">
-                            <li><a class="dropdown-item" href="#">Vikram
-                                    Kumar Sahu <span>221132</span></a></li>
-                            <li><a class="dropdown-item" href="#">Hariom
-                                    Sahu <span>221130</span></a></li>
-                            <li><a class="dropdown-item" href="#">Vikram
-                                    Sahu <span>221128</span></a></li>
-                        </ul>
-                    </div>
-
-                </div>
+      <div class="row slideInRight">
+        <div class="col col-md-6 col-lg-4 col-xl-2 mt-20 no_mobile_view">
+          <div class="cardContainer dashboardCard no_mobile_view">
+            <div class="cardIcons">
+              <img src="./assets/img/icons/user-icon.svg" alt="icon" />
             </div>
-            <div class="col col-md-6 col-lg-4 col-xl-2  mt-20  no_mobile_view">
-                <div class="cardContainer dashboardCard  no_mobile_view">
-                    <div class="cardIcons">
-                        <img src="./assets/img/icons/home-icon.svg" alt="icon" />
-                    </div>
-                    <div class="cardLabel">
-                        Active FDs
-                    </div>
-                    <div class="cardLabelValue">
-                        02
-                    </div>
-                </div>
+            <div class="cardUserName">Vikram Kumar Sahu</div>
+            <div class="custom-dropdown" id="portfolio_btn">
+              <button
+                class="themeRedBtn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Portfolio : 221132
+                <img src="./assets/img/chevron-down.svg" alt="icons" />
+              </button>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuButton1"
+                id="dropdownElement"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Vikram Kumar Sahu <span>221132</span></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Hariom Sahu <span>221130</span></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Vikram Sahu <span>221128</span></a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="col col-md-6 col-lg-4 col-xl-2 mt-20  no_mobile_view">
-                <div class="cardContainer dashboardCard  no_mobile_view">
-                    <div class="cardIcons">
-                        <img src="./assets/img/icons/rupee-icon.svg" alt="icon" />
-                    </div>
-                    <div class="cardLabel">
-                        Investment amount
-                    </div>
-                    <div class="cardLabelValue">
-                        ₹ 55,000
-                    </div>
-                </div>
-            </div>
-            <div class="col col-md-6 col-lg-4 col-xl-2 mt-20  no_mobile_view">
-                <div class="cardContainer dashboardCard">
-                    <div class="cardIcons">
-                        <img src="./assets/img/icons/maturity-icon.svg" alt="icon" />
-                    </div>
-                    <div class="cardLabel">
-                        Maturity amount
-                    </div>
-                    <div class="cardLabelValue">
-                        ₹ 73,605
-                    </div>
-                </div>
-            </div>
-            <!-- Mobile View Start -->
-            <div class="col-12 col-md-6 col-lg-8 col-xl-2 no_desktop_view">
-                <div class="check">
-                    <div class="fixed_deposit_summary">Fixed deposit summary</div>
-                    <div class="cardContainerMobile">
-                        <div class="first_active_data">
-                            <div class="active_fds">
-                                Active FDs
-                            </div>
-                            <div class="circle_div_mobile">
-                                <div class="cardIcons_circle">
-                                    <img src="./assets/img/icons/home-icon.svg" alt="icon" />
-                                </div>
-                                <div class="detail_price">
-                                    02
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="first_active_data">
-                            <div class="active_fds investment_fds">
-                                Investment amount
-                            </div>
-                            <div class="circle_div_mobile">
-                                <div class="cardIcons_circle">
-                                    <img src="./assets/img/icons/cash_text.svg" alt="icon" />
-                                </div>
-                                <div class="detail_price">
-                                    ₹55,000
-                                </div>
-                            </div>
-                        </div>
-                        <div class="first_active_data">
-                            <div class="active_fds d-flex investment_fds">
-                                Maturity amount
-                                <div class="info-icon custom-tooltip custom_tooltip">
-                                    <img src="./assets/img/icons/info-icon-black.svg" alt="icon" />
-                                    <div class="tooltip-text tooltip_mobile">Total expected
-                                        balance at term end</div>
-                                </div>
-                            </div>
-
-
-                            <div class="circle_div_mobile">
-                                <div class="cardIcons_circle">
-                                    <img src="./assets/img/icons/cash_text.svg" alt="icon" />
-                                </div>
-                                <div class="detail_price">
-                                    ₹73,605
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mt-20 no_desktop_view">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="dashboardDarkCard">
-                            <div class="cardLabelHeading">
-                                Secure future:<br/> invest in FD now!
-                            </div>
-                            <div class="cardLabelList">
-                                <ul>
-                                    <li>Interest upto <span>8.05%</span></li>
-                                    <li>Extra <span>0.25%</span> for senior<br/>citizens</li>
-                                </ul>
-                            </div>
-                            <div class="themeRedBtn carousel-roundBtn">
-                                <img src="./assets/img/arrow-right.svg" alt="icons" />
-                            </div>
-                            <img src="./assets/img/illustration-top-banner.svg" alt="image" class="newFdImage" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="dashboardDarkCard">
-                            <div class="cardLabelHeading">
-                                Loan against:<br/> your fixed deposit
-                            </div>
-                            <div class="cardLabelList">
-                                <ul class="list-none">
-                                    <li>
-                                        <div class="roundBackgroundIcon">
-                                            <img src="./assets/img/icons/preclosure-flow/money-single.svg" alt="icons" />
-                                        </div>
-                                        No monthly EMIs</li>
-                                    <li>
-                                        <div class="roundBackgroundIcon">
-                                            <img src="./assets/img/icons/percent.svg" alt="icons" />
-                                        </div>
-                                        Only additional 2% <br/>
-                                        interest on FD ROI</li>
-                                </ul>
-                            </div>
-                            <div class="themeRedBtn carousel-roundBtn">
-                                <img src="./assets/img/arrow-right.svg" alt="icons" />
-                            </div>
-                            <img src="./assets/img/Get-loan-fixed-deposit-banner.svg" alt="image" class="newFdImage" />
-                        </div>
-                    </div>
-                    </div>
-            </div>
-
-            <div class="col col-md-12 col-lg-8 col-xl-4 mt-20 no_mobile_view">
-                <div class="dashboardDarkCard">
-                    <div class="cardLabelHeading">
-                        Secure future: invest in FD now!
-                    </div>
-                    <div class="cardLabelList">
-                        <ul class="list-none">
-                            <li>Interest upto <span>8.05%</span> | Extra <span>0.25%</span> for senior citizens
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="themeRedBtn">
-                        Invest now
-                        <img src="./assets/img/arrow-right.svg" alt="icons" />
-                    </div>
-                    <img src="./assets/img/illustration-top-banner.svg" alt="image" class="newFdImage" />
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col col-md-6 col-lg-4 col-xl-2 mt-20 no_mobile_view">
+          <div class="cardContainer dashboardCard no_mobile_view">
+            <div class="cardIcons">
+              <img src="./assets/img/icons/home-icon.svg" alt="icon" />
+            </div>
+            <div class="cardLabel">Active FDs</div>
+            <div class="cardLabelValue">02</div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-2 mt-20 no_mobile_view">
+          <div class="cardContainer dashboardCard no_mobile_view">
+            <div class="cardIcons">
+              <img src="./assets/img/icons/rupee-icon.svg" alt="icon" />
+            </div>
+            <div class="cardLabel">Investment amount</div>
+            <div class="cardLabelValue">₹ 55,000</div>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-4 col-xl-2 mt-20 no_mobile_view">
+          <div class="cardContainer dashboardCard">
+            <div class="cardIcons">
+              <img src="./assets/img/icons/maturity-icon.svg" alt="icon" />
+            </div>
+            <div class="cardLabel">Maturity amount</div>
+            <div class="cardLabelValue">₹ 73,605</div>
+          </div>
+        </div>
+        <!-- Mobile View Start -->
+        <div class="col-12 col-md-6 col-lg-8 col-xl-2 no_desktop_view">
+          <div class="check">
+            <div class="fixed_deposit_summary">Fixed deposit summary</div>
+            <div class="cardContainerMobile">
+              <div class="first_active_data">
+                <div class="active_fds">Active FDs</div>
+                <div class="circle_div_mobile">
+                  <div class="cardIcons_circle">
+                    <img src="./assets/img/icons/home-icon.svg" alt="icon" />
+                  </div>
+                  <div class="detail_price">02</div>
+                </div>
+              </div>
+              <div class="first_active_data">
+                <div class="active_fds investment_fds">Investment amount</div>
+                <div class="circle_div_mobile">
+                  <div class="cardIcons_circle">
+                    <img src="./assets/img/icons/cash_text.svg" alt="icon" />
+                  </div>
+                  <div class="detail_price">₹55,000</div>
+                </div>
+              </div>
+              <div class="first_active_data">
+                <div class="active_fds d-flex investment_fds">
+                  Maturity amount
+                  <div class="info-icon custom-tooltip custom_tooltip">
+                    <img
+                      src="./assets/img/icons/info-icon-black.svg"
+                      alt="icon"
+                    />
+                    <div class="tooltip-text tooltip_mobile">
+                      Total expected balance at term end
+                    </div>
+                  </div>
+                </div>
+
+                <div class="circle_div_mobile">
+                  <div class="cardIcons_circle">
+                    <img src="./assets/img/icons/cash_text.svg" alt="icon" />
+                  </div>
+                  <div class="detail_price">₹73,605</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-20 no_desktop_view">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="dashboardDarkCard">
+                <div class="cardLabelHeading">
+                  Secure future:<br />
+                  invest in FD now!
+                </div>
+                <div class="cardLabelList">
+                  <ul>
+                    <li>Interest upto <span>8.05%</span></li>
+                    <li>Extra <span>0.25%</span> for senior<br />citizens</li>
+                  </ul>
+                </div>
+                <div class="themeRedBtn carousel-roundBtn">
+                  <img src="./assets/img/arrow-right.svg" alt="icons" />
+                </div>
+                <img
+                  src="./assets/img/illustration-top-banner.svg"
+                  alt="image"
+                  class="newFdImage"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div class="dashboardDarkCard">
+                <div class="cardLabelHeading">
+                  Loan against:<br />
+                  your fixed deposit
+                </div>
+                <div class="cardLabelList">
+                  <ul class="list-none">
+                    <li>
+                      <div class="roundBackgroundIcon">
+                        <img
+                          src="./assets/img/icons/preclosure-flow/money-single.svg"
+                          alt="icons"
+                        />
+                      </div>
+                      No monthly EMIs
+                    </li>
+                    <li>
+                      <div class="roundBackgroundIcon">
+                        <img src="./assets/img/icons/percent.svg" alt="icons" />
+                      </div>
+                      Only additional 2% <br />
+                      interest on FD ROI
+                    </li>
+                  </ul>
+                </div>
+                <div class="themeRedBtn carousel-roundBtn">
+                  <img src="./assets/img/arrow-right.svg" alt="icons" />
+                </div>
+                <img
+                  src="./assets/img/Get-loan-fixed-deposit-banner.svg"
+                  alt="image"
+                  class="newFdImage"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-12 col-lg-8 col-xl-4 mt-20 no_mobile_view">
+          <div class="dashboardDarkCard">
+            <div class="cardLabelHeading">Secure future: invest in FD now!</div>
+            <div class="cardLabelList">
+              <ul class="list-none">
+                <li>
+                  Interest upto <span>8.05%</span> | Extra
+                  <span>0.25%</span> for senior citizens
+                </li>
+              </ul>
+            </div>
+            <div class="themeRedBtn">
+              Invest now
+              <img src="./assets/img/arrow-right.svg" alt="icons" />
+            </div>
+            <img
+              src="./assets/img/illustration-top-banner.svg"
+              alt="image"
+              class="newFdImage"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="container mt-20 no_mobile_view" >
-        <div class="row animate__animated animate__fadeInUp" id="make_top">
-            <div class="col col-md-12">
-                <div class="listTable">
-                    <div class="listTableHead">
-                        <div class="wd-12">FD number</div>
-                        <div class="wd-13">Investment date</div>
-                        <div class="wd-11">Maturity date</div>
-                        <div class="wd-11 text-center">Tenure (months)</div>
-                        <div class="wd-13">Investment amount</div>
-                        <div class="wd-13 d-flex">
-                            Maturity amount
-                            <div class="info-icon custom-tooltip">
-                                <img src="./assets/img/round-info-white.svg" alt="icon" />
-                                <div class="tooltip-text">Total expected
-                                    balance at term end</div>
-                            </div>
-                        </div>
-                        <div class="wd-11 all-center">Auto Renewal</div>
-                        <div class="wd-12 all-center">Status</div>
-                    </div>
-                    <div class="listTableBody">
-                        <input type="checkbox" id="expend" />
-                        <div class="smalldesc">
-                            <div class="listTabledata">
-                                <div class="tableData wd-12">N2003901F</div>
-                                <div class="tableData wd-13">28 Sept 2021</div>
-                                <div class="tableData wd-11">N/A</div>
-                                <div class="tableData wd-11 text-center">5</div>
-                                <div class="tableData wd-13">N/A</div>
-                                <div
-                                    class="tableData wd-13 font-bolder dark-green-font">₹
-                                    22,656</div>
-                                <div class="tableData wd-11 all-center">
-                                    <span class="form-check form-switch">
-                                        <input type="checkbox"
-                                            class="form-check-input"
-                                            id="N2003901F"
-                                            onclick="updateKycModal(this.id)" />
-                                    </span>
-                                </div>
-                                <div class="tableData wd-12 all-center">
-                                    <div class="red-bg-label">
-                                        <img
-                                            src="./assets/img/icons/reload-icon.svg"
-                                            alt="icon" />
-                                        KYC Pending
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="listTabledata">
-                                <div class="tableData wd-12">C2032231F</div>
-                                <div class="tableData wd-13">17 July 2021</div>
-                                <div class="tableData wd-11">N/A</div>
-                                <div class="tableData wd-11 text-center">3</div>
-                                <div class="tableData wd-13">N/A</div>
-                                <div class="tableData wd-13 font-bolder dark-green-font">₹
-                                    59,456</div>
-                                <div class="tableData wd-11 all-center">
-                                    <span class="form-check form-switch">
-                                        <input type="checkbox" class="form-check-input" checked id="C2032231F"
-                                            onclick="updateKycModal(this.id)" />
-                                    </span>
-                                </div>
-                                <div class="tableData wd-12 all-center">
-                                    <div class="red-bg-label">
-                                        <img src="./assets/img/icons/reload-icon.svg" alt="icon" />
-                                        Payment Pending
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="listTabledata">
-                                <div class="tableData wd-12">F2001101F</div>
-                                <div class="tableData wd-13">22 Aug 2021</div>
-                                <div class="tableData wd-11">22 Aug 2025</div>
-                                <div class="tableData wd-11 text-center">4</div>
-                                <div class="tableData wd-13 font-bolder">₹
-                                    35,000</div>
-                                <div class="tableData wd-13 font-bolder dark-green-font d-flex">
-                                    ₹ 44,149
-                                    <div class="info-icon custom-tooltip">
-                                        <img src="./assets/img/circle-amount-icon.svg" alt="icon" />
-                                        <div class="tooltip-textTableData">You
-                                            have a loan against this fixed
-                                            deposit</div>
-                                    </div>
-                                </div>
-                                <div class="tableData wd-11 all-center">
-                                    <span class="form-check form-switch">
-                                        <input type="checkbox" class="form-check-input" checked id="F2001101F"
-                                            onclick="updateKycModal(this.id)" />
-                                    </span>
-                                </div>
-                                <div class="tableData wd-12 all-center">
-                                    <div class="green-bg-label">
-                                        <img src="./assets/img/icons/round-tick.svg" alt="icon" />
-                                        Active
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="listTabledata">
-                                <div class="tableData wd-12">R2022009D</div>
-                                <div class="tableData wd-13">18 Sept 2020</div>
-                                <div class="tableData wd-11">18 Sept 2025</div>
-                                <div class="tableData wd-11 text-center">5</div>
-                                <div class="tableData wd-13 font-bolder">₹
-                                    20,000</div>
-                                <div class="tableData wd-13 font-bolder dark-green-font">₹
-                                    29,456</div>
-                                <div class="tableData wd-11 all-center">
-                                    <span class="form-check form-switch">
-                                        <input type="checkbox" class="form-check-input" checked id="R2022009D"
-                                            onclick="updateKycModal(this.id)" />
-                                    </span>
-                                </div>
-                                <div class="tableData wd-12 all-center">
-                                    <div class="green-bg-label">
-                                        <img src="./assets/img/icons/round-tick.svg" alt="icon" />
-                                        Active
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="listTabledata">
-                                <div class="tableData wd-12">R2122009E</div>
-                                <div class="tableData wd-13">18 Sept 2020</div>
-                                <div class="tableData wd-11">18 Sept 2025</div>
-                                <div class="tableData wd-11 text-center">5</div>
-                                <div class="tableData wd-13 font-bolder">₹
-                                    20,000</div>
-                                <div class="tableData wd-13 font-bolder dark-green-font">₹
-                                    29,456</div>
-                                <div class="tableData wd-11 all-center">
-                                    <span class="form-check form-switch">
-                                        <input type="checkbox" class="form-check-input" checked id="R2122009E"
-                                            onclick="updateKycModal(this.id)" />
-                                    </span>
-                                </div>
-                                <div class="tableData wd-12 all-center">
-                                    <div class="green-bg-label">
-                                        <img src="./assets/img/icons/round-tick.svg" alt="icon" />
-                                        Active
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="listTabledata">
-                                <div class="tableData wd-12">R2122009E</div>
-                                <div class="tableData wd-13">18 Sept 2020</div>
-                                <div class="tableData wd-11">18 Sept 2025</div>
-                                <div class="tableData wd-11 text-center">5</div>
-                                <div class="tableData wd-13 font-bolder">₹
-                                    20,000</div>
-                                <div
-                                    class="tableData wd-13 font-bolder dark-green-font">₹
-                                    29,456</div>
-                                <div class="tableData wd-11 all-center">
-                                    <span class="form-check form-switch">
-                                        <input type="checkbox"
-                                            class="form-check-input" checked
-                                            id="R2122009E"
-                                            onclick="updateKycModal(this.id)" />
-                                    </span>
-                                </div>
-                                <div class="tableData wd-12 all-center">
-                                    <div class="green-bg-label">
-                                        <img
-                                            src="./assets/img/icons/round-tick.svg"
-                                            alt="icon" />
-                                        Active
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="listTabledata">
-                                <div class="tableData wd-12">D5022009D</div>
-                                <div class="tableData wd-13">18 Sept 2020</div>
-                                <div class="tableData wd-11">18 Sept 2025</div>
-                                <div class="tableData wd-11 text-center">5</div>
-                                <div class="tableData wd-13 font-bolder">₹
-                                    20,000</div>
-                                <div
-                                    class="tableData wd-13 font-bolder dark-green-font">₹
-                                    29,456</div>
-                                <div class="tableData wd-11 all-center">
-                                    <span class="form-check form-switch">
-                                        <input type="checkbox"
-                                            class="form-check-input"
-                                            id="D5022009D"
-                                            onclick="updateKycModal(this.id)" />
-                                    </span>
-                                </div>
-                                <div class="tableData wd-12 all-center">
-                                    <div class="green-bg-label">
-                                        <img
-                                            src="./assets/img/icons/round-tick.svg"
-                                            alt="icon" />
-                                        Active
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="listTabledata">
-                                <div class="tableData wd-12">P2022010E</div>
-                                <div class="tableData wd-13">18 Sept 2020</div>
-                                <div class="tableData wd-11">18 Sept 2025</div>
-                                <div class="tableData wd-11 text-center">5</div>
-                                <div class="tableData wd-13 font-bolder">₹
-                                    20,000</div>
-                                <div
-                                    class="tableData wd-13 font-bolder dark-green-font">₹
-                                    29,456</div>
-                                <div class="tableData wd-11 all-center">
-                                    <span class="form-check form-switch">
-                                        <input type="checkbox"
-                                            class="form-check-input"
-                                            id="P2022010E"
-                                            onclick="updateKycModal(this.id)" />
-                                    </span>
-                                </div>
-                                <div class="tableData wd-12 all-center">
-                                    <div class="green-bg-label">
-                                        <img
-                                            src="./assets/img/icons/round-tick.svg"
-                                            alt="icon" />
-                                        Active
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="customPagination" id="customPagination">
-                            <div class="pagination-before">
-                                <img src="./assets/img/icons/arrow-left-red.svg" alt="before" />
-                            </div>
-                            <div class="btn-page">
-                                <ul>
-                                    <li class="active">1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                </ul>
-                            </div>
-                            <div class="pagination-after">
-                                <img src="./assets/img/icons/arrow-left-red.svg" alt="before" />
-                            </div>
-                        </div>
-                            <label class="showMoreBtn" for="expend" id="homeShowBtn">
-                                Show more
-                                    <img
-                                        src="./assets/img/chevron-down-blue.svg"
-                                        alt="icon" />
-                            </label>
-                            <label class="showMoreBtn" for="expend" id="homeHideBtn">
-                                Show less
-                                    <img class="rotate"
-                                        src="./assets/img/chevron-down-blue.svg"
-                                        alt="icon" />
-                            </label>
-                    </div>
+    <div class="container mt-20 no_mobile_view">
+      <div class="row animate__animated animate__fadeInUp" id="make_top">
+        <div class="col col-md-12">
+          <div class="listTable">
+            <div class="listTableHead">
+              <div class="wd-12">FD number</div>
+              <div class="wd-13">Investment date</div>
+              <div class="wd-11">Maturity date</div>
+              <div class="wd-11 text-center">Tenure (months)</div>
+              <div class="wd-13">Investment amount</div>
+              <div class="wd-13 d-flex">
+                Maturity amount
+                <div class="info-icon custom-tooltip">
+                  <img src="./assets/img/round-info-white.svg" alt="icon" />
+                  <div class="tooltip-text">
+                    Total expected balance at term end
+                  </div>
                 </div>
+              </div>
+              <div class="wd-11 all-center">Auto Renewal</div>
+              <div class="wd-12 all-center">Status</div>
             </div>
+            <div class="listTableBody">
+              <input type="checkbox" id="expend" />
+              <div class="smalldesc">
+                <div class="listTabledata">
+                  <div class="tableData wd-12">N2003901F</div>
+                  <div class="tableData wd-13">28 Sept 2021</div>
+                  <div class="tableData wd-11">N/A</div>
+                  <div class="tableData wd-11 text-center">5</div>
+                  <div class="tableData wd-13">N/A</div>
+                  <div class="tableData wd-13 font-bolder dark-green-font">
+                    ₹ 22,656
+                  </div>
+                  <div class="tableData wd-11 all-center">
+                    <span class="form-check form-switch">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="N2003901F"
+                        onclick="updateKycModal(this.id)"
+                      />
+                    </span>
+                  </div>
+                  <div class="tableData wd-12 all-center">
+                    <div class="red-bg-label">
+                      <img
+                        src="./assets/img/icons/reload-icon.svg"
+                        alt="icon"
+                      />
+                      KYC Pending
+                    </div>
+                  </div>
+                </div>
+                <div class="listTabledata">
+                  <div class="tableData wd-12">C2032231F</div>
+                  <div class="tableData wd-13">17 July 2021</div>
+                  <div class="tableData wd-11">N/A</div>
+                  <div class="tableData wd-11 text-center">3</div>
+                  <div class="tableData wd-13">N/A</div>
+                  <div class="tableData wd-13 font-bolder dark-green-font">
+                    ₹ 59,456
+                  </div>
+                  <div class="tableData wd-11 all-center">
+                    <span class="form-check form-switch">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        checked
+                        id="C2032231F"
+                        onclick="updateKycModal(this.id)"
+                      />
+                    </span>
+                  </div>
+                  <div class="tableData wd-12 all-center">
+                    <div class="red-bg-label">
+                      <img
+                        src="./assets/img/icons/reload-icon.svg"
+                        alt="icon"
+                      />
+                      Payment Pending
+                    </div>
+                  </div>
+                </div>
+                <div class="listTabledata">
+                  <div class="tableData wd-12">F2001101F</div>
+                  <div class="tableData wd-13">22 Aug 2021</div>
+                  <div class="tableData wd-11">22 Aug 2025</div>
+                  <div class="tableData wd-11 text-center">4</div>
+                  <div class="tableData wd-13 font-bolder">₹ 35,000</div>
+                  <div
+                    class="tableData wd-13 font-bolder dark-green-font d-flex"
+                  >
+                    ₹ 44,149
+                    <div class="info-icon custom-tooltip">
+                      <img
+                        src="./assets/img/circle-amount-icon.svg"
+                        alt="icon"
+                      />
+                      <div class="tooltip-textTableData">
+                        You have a loan against this fixed deposit
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tableData wd-11 all-center">
+                    <span class="form-check form-switch">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        checked
+                        id="F2001101F"
+                        onclick="updateKycModal(this.id)"
+                      />
+                    </span>
+                  </div>
+                  <div class="tableData wd-12 all-center">
+                    <div class="green-bg-label">
+                      <img src="./assets/img/icons/round-tick.svg" alt="icon" />
+                      Active
+                    </div>
+                  </div>
+                </div>
+                <div class="listTabledata">
+                  <div class="tableData wd-12">R2022009D</div>
+                  <div class="tableData wd-13">18 Sept 2020</div>
+                  <div class="tableData wd-11">18 Sept 2025</div>
+                  <div class="tableData wd-11 text-center">5</div>
+                  <div class="tableData wd-13 font-bolder">₹ 20,000</div>
+                  <div class="tableData wd-13 font-bolder dark-green-font">
+                    ₹ 29,456
+                  </div>
+                  <div class="tableData wd-11 all-center">
+                    <span class="form-check form-switch">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        checked
+                        id="R2022009D"
+                        onclick="updateKycModal(this.id)"
+                      />
+                    </span>
+                  </div>
+                  <div class="tableData wd-12 all-center">
+                    <div class="green-bg-label">
+                      <img src="./assets/img/icons/round-tick.svg" alt="icon" />
+                      Active
+                    </div>
+                  </div>
+                </div>
+                <div class="listTabledata">
+                  <div class="tableData wd-12">R2122009E</div>
+                  <div class="tableData wd-13">18 Sept 2020</div>
+                  <div class="tableData wd-11">18 Sept 2025</div>
+                  <div class="tableData wd-11 text-center">5</div>
+                  <div class="tableData wd-13 font-bolder">₹ 20,000</div>
+                  <div class="tableData wd-13 font-bolder dark-green-font">
+                    ₹ 29,456
+                  </div>
+                  <div class="tableData wd-11 all-center">
+                    <span class="form-check form-switch">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        checked
+                        id="R2122009E"
+                        onclick="updateKycModal(this.id)"
+                      />
+                    </span>
+                  </div>
+                  <div class="tableData wd-12 all-center">
+                    <div class="green-bg-label">
+                      <img src="./assets/img/icons/round-tick.svg" alt="icon" />
+                      Active
+                    </div>
+                  </div>
+                </div>
+                <div class="listTabledata">
+                  <div class="tableData wd-12">R2122009E</div>
+                  <div class="tableData wd-13">18 Sept 2020</div>
+                  <div class="tableData wd-11">18 Sept 2025</div>
+                  <div class="tableData wd-11 text-center">5</div>
+                  <div class="tableData wd-13 font-bolder">₹ 20,000</div>
+                  <div class="tableData wd-13 font-bolder dark-green-font">
+                    ₹ 29,456
+                  </div>
+                  <div class="tableData wd-11 all-center">
+                    <span class="form-check form-switch">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        checked
+                        id="R2122009E"
+                        onclick="updateKycModal(this.id)"
+                      />
+                    </span>
+                  </div>
+                  <div class="tableData wd-12 all-center">
+                    <div class="green-bg-label">
+                      <img src="./assets/img/icons/round-tick.svg" alt="icon" />
+                      Active
+                    </div>
+                  </div>
+                </div>
+                <div class="listTabledata">
+                  <div class="tableData wd-12">D5022009D</div>
+                  <div class="tableData wd-13">18 Sept 2020</div>
+                  <div class="tableData wd-11">18 Sept 2025</div>
+                  <div class="tableData wd-11 text-center">5</div>
+                  <div class="tableData wd-13 font-bolder">₹ 20,000</div>
+                  <div class="tableData wd-13 font-bolder dark-green-font">
+                    ₹ 29,456
+                  </div>
+                  <div class="tableData wd-11 all-center">
+                    <span class="form-check form-switch">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="D5022009D"
+                        onclick="updateKycModal(this.id)"
+                      />
+                    </span>
+                  </div>
+                  <div class="tableData wd-12 all-center">
+                    <div class="green-bg-label">
+                      <img src="./assets/img/icons/round-tick.svg" alt="icon" />
+                      Active
+                    </div>
+                  </div>
+                </div>
+                <div class="listTabledata">
+                  <div class="tableData wd-12">P2022010E</div>
+                  <div class="tableData wd-13">18 Sept 2020</div>
+                  <div class="tableData wd-11">18 Sept 2025</div>
+                  <div class="tableData wd-11 text-center">5</div>
+                  <div class="tableData wd-13 font-bolder">₹ 20,000</div>
+                  <div class="tableData wd-13 font-bolder dark-green-font">
+                    ₹ 29,456
+                  </div>
+                  <div class="tableData wd-11 all-center">
+                    <span class="form-check form-switch">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="P2022010E"
+                        onclick="updateKycModal(this.id)"
+                      />
+                    </span>
+                  </div>
+                  <div class="tableData wd-12 all-center">
+                    <div class="green-bg-label">
+                      <img src="./assets/img/icons/round-tick.svg" alt="icon" />
+                      Active
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="customPagination" id="customPagination">
+                <div class="pagination-before">
+                  <img
+                    src="./assets/img/icons/arrow-left-red.svg"
+                    alt="before"
+                  />
+                </div>
+                <div class="btn-page">
+                  <ul>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                  </ul>
+                </div>
+                <div class="pagination-after">
+                  <img
+                    src="./assets/img/icons/arrow-left-red.svg"
+                    alt="before"
+                  />
+                </div>
+              </div>
+              <label class="showMoreBtn" for="expend" id="homeShowBtn">
+                Show more
+                <img src="./assets/img/chevron-down-blue.svg" alt="icon" />
+              </label>
+              <label class="showMoreBtn" for="expend" id="homeHideBtn">
+                Show less
+                <img
+                  class="rotate"
+                  src="./assets/img/chevron-down-blue.svg"
+                  alt="icon"
+                />
+              </label>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="container no_desktop_view animate__animated animate__fadeInUp">
-        <div class="fixedDepositDetailsData">
-            <div class="fixed_deposit_summary mt-0">
-                Fixed deposit list
+      <div class="fixedDepositDetailsData">
+        <div class="fixed_deposit_summary mt-0">Fixed deposit list</div>
+
+        <div class="details_fixed_deposit">
+          <div class="auto_renewal_details">
+            <div class="FD_num">FD2321232</div>
+            <div class="auto_renewal">
+              <div class="auto_renewal_text" id="auto_renewal_text_">
+                Auto renewal
+              </div>
+              <span class="form-check form-switch form_switch_mob">
+                <input
+                  type="checkbox"
+                  class="form-check-input form-check-input_mob form-check-input-mob"
+                  id="C2032231F_"
+                  onclick="toggle_data_dashboard('C2032231F_', 'auto_renewal_text_')"
+                />
+              </span>
             </div>
-
-            <div class="details_fixed_deposit">
-                <div class="auto_renewal_details">
-                    <div class="FD_num">
-                        FD2321232
-                    </div>
-                    <div class="auto_renewal">
-                        <div class="auto_renewal_text" id="auto_renewal_text_">
-                            Auto renewal
-                        </div>
-                        <span class="form-check form-switch form_switch_mob">
-                            <input type="checkbox" class="form-check-input form-check-input_mob form-check-input-mob"
-                                id="C2032231F_" onclick="toggle_data_dashboard('C2032231F_', 'auto_renewal_text_')" />
-                        </span>
-                    </div>
-
+          </div>
+          <div class="second_details">
+            <div class="Investment_details_content">
+              <div>
+                <div class="text_content">Investment</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                  </div>
+                  <div class="NA_text">N/A</div>
                 </div>
-                <div class="second_details">
-                    <div class="Investment_details_content">
-                        <div>
-                            <div class="text_content">
-                                Investment
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
-                                </div>
-                                <div class="NA_text">
-                                    N/A
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div>
-                            <div class="text_content">
-                                Maturity
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
-                                </div>
-                                <div class="percentage_text">
-                                    ₹ 22,656
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div>
-                            <div class="text_content">
-                                Interest
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/percent.svg" alt="Logo" />
-                                </div>
-                                <div class="NA_text">
-                                    7.75%
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
+              </div>
+              <div>
+                <div class="text_content">Maturity</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                  </div>
+                  <div class="percentage_text">₹ 22,656</div>
                 </div>
-                <div class="third_details">
-                    <div class="pending_details">
-                        <div>
-                            <div class="green-bg-label green_label_mob
-                            ">
-                                <img src="./assets/img/icons/calendar.svg" alt="icon" />
-                                Days left 100
-                            </div>
-                        </div>
-                        <div>
-                            <div class="red-bg-label red_bg_label_mob">
-                                <img src="./assets/img/icons/reload-icon.svg" alt="icon" />
-                                Payment Pending
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="circle_arrow">
-
-                        <img src="./assets/img/arrow-right.svg" alt="Logo" />
-
-                    </div>
+              </div>
+              <div>
+                <div class="text_content">Interest</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/percent.svg" alt="Logo" />
+                  </div>
+                  <div class="NA_text">7.75%</div>
                 </div>
-
-
+              </div>
             </div>
-
-            <div class="details_fixed_deposit">
-                <div class="auto_renewal_details">
-                    <div class="FD_num">
-                        C2032231F
-                    </div>
-                    <div class="auto_renewal">
-                        <div class="auto_renewal_text" id="toggle_value">
-                            Auto renewal
-                        </div>
-                        <span class="form-check form-switch form_switch_mob">
-                            <input type="checkbox" class="form-check-input form-check-input_mob form-check-input-mob"
-                                 id="toggle_value_data" onclick="toggle_data_dashboard('toggle_value_data',  'toggle_value')" />
-                        </span>
-                    </div>
-
+          </div>
+          <div class="third_details">
+            <div class="pending_details">
+              <div>
+                <div class="green-bg-label green_label_mob">
+                  <img src="./assets/img/icons/calendar.svg" alt="icon" />
+                  Days left 100
                 </div>
-                <div class="second_details">
-                    <div class="Investment_details_content">
-                        <div>
-                            <div class="text_content">
-                                Investment
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
-                                </div>
-                                <div class="NA_text">
-                                    N/A
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div>
-                            <div class="text_content">
-                                Maturity
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
-                                </div>
-                                <div class="percentage_text">
-                                    ₹ 59,456
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div>
-                            <div class="text_content">
-                                Interest
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/percent.svg" alt="Logo" />
-                                </div>
-                                <div class="NA_text">
-                                    7.75%
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
+              </div>
+              <div>
+                <div class="red-bg-label red_bg_label_mob">
+                  <img src="./assets/img/icons/reload-icon.svg" alt="icon" />
+                  Payment Pending
                 </div>
-                <div class="third_details">
-                    <div class="pending_details">
-                        <div>
-                            <div class="green-bg-label green_label_mob
-                            ">
-                                <img src="./assets/img/icons/calendar.svg" alt="icon" />
-                                Days left 100
-                            </div>
-                        </div>
-                        <div>
-                            <div class="red-bg-label red_bg_label_mob">
-                                <img src="./assets/img/icons/reload-icon.svg" alt="icon" />
-                                Payment Pending
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="circle_arrow">
-
-                        <img src="./assets/img/arrow-right.svg" alt="Logo" />
-
-                    </div>
-                </div>
-
-
+              </div>
             </div>
-
-            <div class="details_fixed_deposit">
-                <div class="auto_renewal_details">
-                    <div class="FD_num">
-                        F2001101F
-                    </div>
-                    <div class="auto_renewal">
-                        <div class="auto_renewal_text" id="toggle_content">
-                            Auto renewal
-                        </div>
-                        <span class="form-check form-switch form_switch_mob">
-                            <input type="checkbox" class="form-check-input form-check-input_mob form-check-input-mob"
-                                 id="toggle_content_values" onclick="toggle_data_dashboard('toggle_content_values','toggle_content')" />
-                        </span>
-                    </div>
-
-                </div>
-                <div class="second_details">
-                    <div class="Investment_details_content">
-                        <div>
-                            <div class="text_content">
-                                Investment
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
-                                </div>
-                                <div class="NA_text">
-                                    ₹ 35,000
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div>
-                            <div class="text_content">
-                                Maturity
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
-                                </div>
-                                <div class="percentage_text">
-                                    ₹ 44,149
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div>
-                            <div class="text_content">
-                                Interest
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/percent.svg" alt="Logo" />
-                                </div>
-                                <div class="NA_text">
-                                    7.75%
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="third_details">
-                    <div class="pending_details">
-                        <div>
-                            <div class="green-bg-label green_label_mob
-                            ">
-                                <img src="./assets/img/icons/calendar.svg" alt="icon" />
-                                Days left 100
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="circle_arrow">
-
-                        <img src="./assets/img/arrow-right.svg" alt="Logo" />
-
-                    </div>
-                </div>
-
-
+            <div class="circle_arrow">
+              <img src="./assets/img/arrow-right.svg" alt="Logo" />
             </div>
-
-            <div class="details_fixed_deposit">
-                <div class="auto_renewal_details">
-                    <div class="FD_num">
-                        R2022009D
-                    </div>
-                    <div class="auto_renewal">
-                        <div class="auto_renewal_text" id="toggle_data_content">
-                            Auto renewal
-                        </div>
-                        <span class="form-check form-switch form_switch_mob">
-                            <input type="checkbox" class="form-check-input form-check-input_mob form-check-input-mob"
-                                 id="toggle_values" onclick="toggle_data_dashboard('toggle_values', 'toggle_data_content')" />
-                        </span>
-                    </div>
-
-                </div>
-                <div class="second_details">
-                    <div class="Investment_details_content">
-                        <div>
-                            <div class="text_content">
-                                Investment
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
-                                </div>
-                                <div class="NA_text">
-                                    ₹ 20,000
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div>
-                            <div class="text_content">
-                                Maturity
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
-                                </div>
-                                <div class="percentage_text">
-                                    ₹ 29,456
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div>
-                            <div class="text_content">
-                                Interest
-                            </div>
-                            <div class="img_detail">
-                                <div>
-                                    <img src="./assets/img/icons/percent.svg" alt="Logo" />
-                                </div>
-                                <div class="NA_text">
-                                    7.75%
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="third_details">
-                    <div class="pending_details">
-                        <div>
-                            <div class="green-bg-label green_label_mob
-                            ">
-                                <img src="./assets/img/icons/calendar.svg" alt="icon" />
-                                Days left 100
-                            </div>
-                        </div>
-                    </div>
-                    <div class="circle_arrow">
-
-                        <img src="./assets/img/arrow-right.svg" alt="Logo" />
-
-                    </div>
-                </div>
-            </div>
-            <div class="showMoreBtn showmorebtn_mob" id="showMoreBtn">
-                <a href="#" onclick="showMoreData()">Show more
-                    <img src="./assets/img/chevron-down-blue.svg" alt="icon" /></a>
-            </div>
+          </div>
         </div>
 
-        <div class="border_top_line">
+        <div class="details_fixed_deposit">
+          <div class="auto_renewal_details">
+            <div class="FD_num">C2032231F</div>
+            <div class="auto_renewal">
+              <div class="auto_renewal_text" id="toggle_value">
+                Auto renewal
+              </div>
+              <span class="form-check form-switch form_switch_mob">
+                <input
+                  type="checkbox"
+                  class="form-check-input form-check-input_mob form-check-input-mob"
+                  id="toggle_value_data"
+                  onclick="toggle_data_dashboard('toggle_value_data',  'toggle_value')"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="second_details">
+            <div class="Investment_details_content">
+              <div>
+                <div class="text_content">Investment</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                  </div>
+                  <div class="NA_text">N/A</div>
+                </div>
+              </div>
+              <div>
+                <div class="text_content">Maturity</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                  </div>
+                  <div class="percentage_text">₹ 59,456</div>
+                </div>
+              </div>
+              <div>
+                <div class="text_content">Interest</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/percent.svg" alt="Logo" />
+                  </div>
+                  <div class="NA_text">7.75%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="third_details">
+            <div class="pending_details">
+              <div>
+                <div class="green-bg-label green_label_mob">
+                  <img src="./assets/img/icons/calendar.svg" alt="icon" />
+                  Days left 100
+                </div>
+              </div>
+              <div>
+                <div class="red-bg-label red_bg_label_mob">
+                  <img src="./assets/img/icons/reload-icon.svg" alt="icon" />
+                  Payment Pending
+                </div>
+              </div>
+            </div>
+            <div class="circle_arrow">
+              <img src="./assets/img/arrow-right.svg" alt="Logo" />
+            </div>
+          </div>
         </div>
+
+        <div class="details_fixed_deposit">
+          <div class="auto_renewal_details">
+            <div class="FD_num">F2001101F</div>
+            <div class="auto_renewal">
+              <div class="auto_renewal_text" id="toggle_content">
+                Auto renewal
+              </div>
+              <span class="form-check form-switch form_switch_mob">
+                <input
+                  type="checkbox"
+                  class="form-check-input form-check-input_mob form-check-input-mob"
+                  id="toggle_content_values"
+                  onclick="toggle_data_dashboard('toggle_content_values','toggle_content')"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="second_details">
+            <div class="Investment_details_content">
+              <div>
+                <div class="text_content">Investment</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                  </div>
+                  <div class="NA_text">₹ 35,000</div>
+                </div>
+              </div>
+              <div>
+                <div class="text_content">Maturity</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                  </div>
+                  <div class="percentage_text">₹ 44,149</div>
+                </div>
+              </div>
+              <div>
+                <div class="text_content">Interest</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/percent.svg" alt="Logo" />
+                  </div>
+                  <div class="NA_text">7.75%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="third_details">
+            <div class="pending_details">
+              <div>
+                <div class="green-bg-label green_label_mob">
+                  <img src="./assets/img/icons/calendar.svg" alt="icon" />
+                  Days left 100
+                </div>
+              </div>
+            </div>
+            <div class="circle_arrow">
+              <img src="./assets/img/arrow-right.svg" alt="Logo" />
+            </div>
+          </div>
+        </div>
+
+        <div class="details_fixed_deposit">
+          <div class="auto_renewal_details">
+            <div class="FD_num">R2022009D</div>
+            <div class="auto_renewal">
+              <div class="auto_renewal_text" id="toggle_data_content">
+                Auto renewal
+              </div>
+              <span class="form-check form-switch form_switch_mob">
+                <input
+                  type="checkbox"
+                  class="form-check-input form-check-input_mob form-check-input-mob"
+                  id="toggle_values"
+                  onclick="toggle_data_dashboard('toggle_values', 'toggle_data_content')"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="second_details">
+            <div class="Investment_details_content">
+              <div>
+                <div class="text_content">Investment</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                  </div>
+                  <div class="NA_text">₹ 20,000</div>
+                </div>
+              </div>
+              <div>
+                <div class="text_content">Maturity</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                  </div>
+                  <div class="percentage_text">₹ 29,456</div>
+                </div>
+              </div>
+              <div>
+                <div class="text_content">Interest</div>
+                <div class="img_detail">
+                  <div>
+                    <img src="./assets/img/icons/percent.svg" alt="Logo" />
+                  </div>
+                  <div class="NA_text">7.75%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="third_details">
+            <div class="pending_details">
+              <div>
+                <div class="green-bg-label green_label_mob">
+                  <img src="./assets/img/icons/calendar.svg" alt="icon" />
+                  Days left 100
+                </div>
+              </div>
+            </div>
+            <div class="circle_arrow">
+              <img src="./assets/img/arrow-right.svg" alt="Logo" />
+            </div>
+          </div>
+        </div>
+        <div class="showMoreBtn showmorebtn_mob" id="showMoreBtn">
+          <a href="#" onclick="showMoreData()"
+            >Show more <img src="./assets/img/chevron-down-blue.svg" alt="icon"
+          /></a>
+        </div>
+      </div>
+
+      <div class="border_top_line"></div>
     </div>
     <div class="container pb-20 animate__animated animate__fadeInUp">
-        <div class="row">
-            <div class="col-12 col-md-12 col-lg-7 mt-20">
-                <div class="cardContainer cardContainer_mobileView" id="chartContainer"></div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-5 mt-20">
-                <div class="dashboardDarkCard fdAvailBanner dashboardDarkCard_mob">
-                    <div class="advertisement_mob">
-                        <div class="cardLabelHeading  cardLabelHeading_mob">
-                            Get loan against your fixed deposit
-                        </div>
-                        <div class="cardLabelList cardLabelList_mob">
-                            <ul>
-                                <li>No monthly EMIs</li>
-                                <li>Only additional 2% interest on FD ROI</li>
-                                <li>Interest adjustment from FD maturity
-                                    amount</li>
-                            </ul>
-                        </div>
-                        <div class="themeRedBtn themeRedBtn_mob">
-                            Avail now
-                            <img src="./assets/img/arrow-right.svg" alt="icons" />
-                        </div>
-                    </div>
-                    <img src="./assets/img/Get-loan-fixed-deposit-banner.svg" alt="image" class="newFdImage newFdImage_mob" />
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-7 mt-20">
+          <div
+            class="cardContainer cardContainer_mobileView"
+            id="chartContainer"
+          ></div>
         </div>
+        <div class="col-12 col-md-12 col-lg-5 mt-20">
+          <div class="dashboardDarkCard fdAvailBanner dashboardDarkCard_mob">
+            <div class="advertisement_mob">
+              <div class="cardLabelHeading cardLabelHeading_mob">
+                Get loan against your fixed deposit
+              </div>
+              <div class="cardLabelList cardLabelList_mob">
+                <ul>
+                  <li>No monthly EMIs</li>
+                  <li>Only additional 2% interest on FD ROI</li>
+                  <li>Interest adjustment from FD maturity amount</li>
+                </ul>
+              </div>
+              <div class="themeRedBtn themeRedBtn_mob">
+                Avail now
+                <img src="./assets/img/arrow-right.svg" alt="icons" />
+              </div>
+            </div>
+            <img
+              src="./assets/img/Get-loan-fixed-deposit-banner.svg"
+              alt="image"
+              class="newFdImage newFdImage_mob"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Mobile View end -->
     <!-- Modal Start -->
     <div class="modal fade" id="myKycModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="./assets/img/icons/close-icon.svg" alt="icon" />
-                    </button>
-                    <div class="info-heading-container">
-                        <div class="info-heading-image"><img
-                                src="./assets/img/icons/info-button-icon.svg"
-                                alt="icon" /></div>
-                                <div class="info-heading">KYC update required!</div>
-                            </div>
-                    <div class="info-content">Please complete your KYC
-                        details</div>
-                    <div class="info-button"><button type="button" class="themeRedBtn">Update KYC</button></div>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+            </button>
+            <div class="info-heading-container">
+              <div class="info-heading-image">
+                <img src="./assets/img/icons/info-button-icon.svg" alt="icon" />
+              </div>
+              <div class="info-heading">KYC update required!</div>
             </div>
+            <div class="info-content">Please complete your KYC details</div>
+            <div class="info-button">
+              <button type="button" class="themeRedBtn">Update KYC</button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--Modal End-->
 
@@ -1017,23 +1120,22 @@
     <script src="./assets/js/graph.js"></script>
     <script src="./assets/js/custom.js"></script>
     <script>
-        $(document).ready(function() {
-          $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            responsive: {
-              0: {
-                items: 1.4,
-                nav: false,
-                dots: true
-              }
-            }
-          })
-        })
-      </script>
-</body>
-
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          responsive: {
+            0: {
+              items: 1.4,
+              nav: false,
+              dots: true,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
 </html>
