@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahindra Finance :: Single Account Holder</title>
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -141,146 +143,212 @@
             <div class="col col-md-12 mt-20"><a href="#" class="commonBackBtn"><img
                         src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
             <div class="col col-md-12 mt-20">
-                <div class="cardContainer accountContainer">
+                <div class="cardContainer accountContainer bgremove p-0">
                     <div class="container p-0">
                         
 
                         </div>
                         <div class="row ">
-                            <div class="col-md-6 col-lg-6 col-12 custborder-right">
-                                <div class="boldHeader">
-                                    <span> <img src="./assets/img/icons/money.svg" alt="icon" /></span>
-                                    How much funds do you need ? 
-                                </div>
-                                <div class="textparent">
-                                    <label for="account_number" class="form-label formLabel">Account number</label>
-                                    <input type="number" class="form-control formControl  " id="account_number" maxlength="20" onchange="repaymentContinueButtonEnable()">
-                                    <div class="textfildicons">
-                                        <img src="./assets/img/icons/cash.svg" alt="icons" class="repayment-icons">
+                            <div class="col-md-7 col-lg-7 col-12 ">
+                                <div class="card-section">
+                                    <div class="boldHeader">
+                                        <span> <img src="./assets/img/icons/money.svg" alt="icon" /></span>
+                                        How much funds do you need ? 
                                     </div>
-                                    <div class="infoText">Minimum amount of ₹5,000</div>
+                                    <div class="row customealign">
+                                        <div class="col-lg-10 col-md-10 ">
+                                            <div class="textparent">
+                                                <label for="account_number" class="form-label formLabel">Enter amount</label>
+                                                <input type="number" class="form-control formControl  " id="account_number" maxlength="20" onchange="repaymentContinueButtonEnable()">
+                                                <div class="textfildicons">
+                                                    <img src="./assets/img/icons/cash.svg" alt="icons" class="repayment-icons">
+                                                </div>
+                                                <div class="infoText">Minimum amount of ₹5,000</div>
+                                            </div>
+                                          
+
+                                        </div>
+                                        <div class="col-lg-2 col-md-2">
+                                            <div class="customRedBtn themeRedBtn_mob">
+                                                Continue
+                                                <img src="./assets/img/arrow-right.svg" alt="icons">
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+
                                 </div>
-                                <div class="customRedBtn themeRedBtn_mob">
-                                    Continue
-                                    <img src="./assets/img/arrow-right.svg" alt="icons">
-                                </div>
+                              
 
                             </div>
 
-                            <div class="col-md-6 col-lg-6 col-12">
+                            <div class="col-md-5 col-lg-5 col-12">
+                                <div class="card-section-2">
+
+                                
                                 <div class="boldHeader">
                                     Loan against FD benefits 
                                 </div>
+                              
                                 <div class="row custmalign-item">
-
-                                
-                                <div class="col-md-9 col-lg-9">
                                     <ul class="customeul">
                                         <li>
-                                            <div class="smalltext">
+                                            <div class=" smalltext customesmalltext">
                                                 <span> <img src="./assets/img/icons/moneysymble.svg" alt="icon" /></span>
-                                                No EMIs or monthly repayments required 
+                                                No EMIs/monthly repayments
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="smalltext">
+                                            <div class="smalltext customesmalltext">
                                                 <span> <img src="./assets/img/icons/persent.svg" alt="icon" /></span>
-                                                Only additional 2% interest on FD ROI
+                                                Additional 2% interest on FD
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="smalltext">
+                                            <div class="smalltext customesmalltext">
                                                 <span> <img src="./assets/img/icons/coffee.svg" alt="icon" /></span>
-                                                You can repay early or settle against FD maturity value
+                                                Repayment flexibility
                                             </div>
                                         </li>
                                     </ul>
-
-
-                                </div>
-
-                                <div class="col-md-3 col-lg-3">
-                                    <div class="sideimage">
-                                        <img src="./assets/img/icons/bigmoney.svg" alt="icon" />
-                                    </div>
-
-                                </div>
                             </div>
                                 
 
                             </div>
                         </div>
-                        <div class="custborder-bottom"></div>
-                        <div class="row">
-                            <div class="custHeader">
-                                <h4>Frequently asked questions</h4> 
-                            </div>
-                            <div class="col-md-8 col-lg-8 col-12">
-                               
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Why loan against FD ?  
-                                        </button>
-                                      </h2>
-                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Taking a loan against your FD is generally preferred over prematurely closing it because it allows you to retain the benefits of your FD, including its interest-earning potential, while accessing funds for your immediate needs.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            What are the interest rates offered on FDs?
-                                        </button>
-                                      </h2>
-                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Taking a loan against your FD is generally preferred over prematurely closing it because it allows you to retain the benefits of your FD, including its interest-earning potential, while accessing funds for your immediate needs.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Can I reinvest the interest earned on an FD?
-                                        </button>
-                                      </h2>
-                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-12">
-                                <div class="bgimage">
-                                    <div class="custHeader newcustHeader">
-                                    <h4>What is loan against fixed deposit?</h4> 
-                                </div>
-                                <div class="cstuionimage">
-                                    <ul class="custliststyle">
-                                        <li class="customeli">
-                                            Borrowing against deposited amount.
-                                        </li>
-                                        <li class="customeli">
-                                            Lower interest than personal loans.
-                                        </li>
-                                        <li class="">
-                                            FD continues earning interest.
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-                            </div>
-
                         </div>
+                        <div class="custborder-bottom"></div>
+                        <div class="col-md-12 col-lg-12 col-12">
+                            <div class="card-section">
+                                <div class="boldHeader">
+                                    Loan against FD benefits 
+                                </div>
+                                <div class="owl-carousel owl-theme cutomecrousal">
+                                    <div class="item">
+                                        <div class="fdContents custtbl">
+                                            <div class="fdDetails">
+                                               
+                                                <div class="value crousalvalue">
+                                                    <div class="roundBackgroundIcon">
+                                                        <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
+                                                    </div> No EMIs or monthly 
+                                                    repayments required
+                                                </div>
+                                            </div>
+                                        </div>     
+                                    </div>
+                                    <div class="item">
+                                        <div class="fdContents custtbl">
+                                            <div class="fdDetails">
+                                               
+                                                <div class="value crousalvalue">
+                                                    <div class="roundBackgroundIcon">
+                                                        <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
+                                                    </div> No EMIs or monthly 
+                                                    repayments required
+                                                </div>
+                                            </div>
+                                        </div>     
+                                    </div>
+                                    <div class="item">
+                                        <div class="fdContents custtbl">
+                                            <div class="fdDetails">
+                                               
+                                                <div class="value crousalvalue">
+                                                    <div class="roundBackgroundIcon">
+                                                        <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
+                                                    </div> No EMIs or monthly 
+                                                    repayments required
+                                                </div>
+                                            </div>
+                                        </div>     
+                                    </div>
+                                    <div class="item">
+                                        <div class="fdContents custtbl">
+                                            <div class="fdDetails">
+                                               
+                                                <div class="value crousalvalue">
+                                                    <div class="roundBackgroundIcon">
+                                                        <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
+                                                    </div> No EMIs or monthly 
+                                                    repayments required
+                                                </div>
+                                            </div>
+                                        </div>     
+                                    </div>
+                                    <div class="item">
+                                        <div class="fdContents custtbl">
+                                            <div class="fdDetails">
+                                               
+                                                <div class="value crousalvalue">
+                                                    <div class="roundBackgroundIcon">
+                                                        <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
+                                                    </div> No EMIs or monthly 
+                                                    repayments required
+                                                </div>
+                                            </div>
+                                        </div>     
+                                    </div>
+                                </div>
+
+                                <div class="custHeader">
+                                    <h4>Frequently asked questions</h4> 
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Why loan against FD ?  
+                                            </button>
+                                          </h2>
+    
+                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Taking a loan against your FD is generally preferred over prematurely closing it because it allows you to retain the benefits of your FD, including its interest-earning potential, while accessing funds for your immediate needs.
+                                            </div>
+                                            
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                What are the interest rates offered on FDs?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Taking a loan against your FD is generally preferred over prematurely closing it because it allows you to retain the benefits of your FD, including its interest-earning potential, while accessing funds for your immediate needs.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Can I reinvest the interest earned on an FD?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                     
+
+                            </div>
+                            
+                         
+                        </div>
+
+                      
+                    </div>
+                </div>
+                <div class="col col-md-12">
+                    <div class="buttonContainer">
+                        <button class="btn themeRedBtn"> Proceed
+                        <img src="./assets/img/arrow-right.svg" alt="icons"></button>
                     </div>
                 </div>
             </div>
@@ -296,8 +364,51 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
     <script src="./assets/js/chart.min.js"></script>
     <script src="./assets/js/custom.js"></script>
+    <script>
+//         $('.owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:false,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:5
+//         }
+//     }
+// })
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:120,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    
+    responsive:{
+        0:{
+            items:3,
+            nav:false
+        },
+        600:{
+            items:4,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:false,
+            loop:false
+        }
+    }
+})
+    </script>
 </body>
 
 </html>
