@@ -363,7 +363,7 @@
                           id="name"
                           maxlength="50"
                           placeholder="Hariom Sahu"
-                          onchange="repaymentContinueButtonEnable()"
+                          onchange="renewalformContinueButtonEnable()"
                         />
                       </div>
                     </div>
@@ -378,6 +378,8 @@
                           class="form-control nominee_value_data"
                           id="nominee_DOB"
                           required
+                          onchange="renewalformContinueButtonEnable()"
+
                         />
                         <div id="error-message_nomenieeDOB"></div>
                       </div>
@@ -388,8 +390,10 @@
                           >Nominee’s relation with you</label
                         >
                         <select
-                          id="accountNew"
+                          id="nominee_relation"
                           class="form-select nominee_value_data"
+                          onchange="renewalformContinueButtonEnable()"
+
                         >
                           <option value="" disabled hidden selected>
                             Select
