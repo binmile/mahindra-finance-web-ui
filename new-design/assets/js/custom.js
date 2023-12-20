@@ -124,6 +124,32 @@ $("#quickActionElements :input").click(function () {
         }
     });
 });
+
+$("#quickActionElements1 :input").click(function () {
+    $("#quickActionElements1 :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).addClass('active');
+            var result = $(this).val();
+        } else {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).removeClass('active');
+        }
+    });
+});
+
+$("#quickActionElements2 :input").click(function () {
+    $("#quickActionElements2 :input").each(function () {
+        if ($(this).is(":checked")) {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).addClass('active');
+            var result = $(this).val();
+        } else {
+            var activeData = $(this).attr('data-tenure');
+            $('#' + activeData).removeClass('active');
+        }
+    });
+});
 /*****************Quick Action Box Select End***************/
 
 function handleClickRadio(ele1, ele2) {
