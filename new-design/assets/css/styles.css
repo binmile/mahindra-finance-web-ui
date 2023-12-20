@@ -2183,7 +2183,6 @@ button.resend_otp.disabled {
   .no_desktop_view {
     display: none;
   }
-  /*********** Responsive Quick-Actions-Mobile View End*************/
   .accountContainer .bottomLightText_success {
     border-top: 1px solid #D6D6D6;
     padding-top: 24px;
@@ -2223,6 +2222,7 @@ button.resend_otp.disabled {
     line-height: 24px;
     letter-spacing: 0.25px;
     color: #6B7280;
+    margin-bottom: 20px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fdDetails.fdDetails_mob_post_sec::after {
     right: -25px;
@@ -2232,7 +2232,11 @@ button.resend_otp.disabled {
     gap: 23px;
     align-items: center;
     place-items: center;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container.brd-top {
+    padding-top: 24px;
     margin-top: 24px;
+    border-top: 1px solid #D6D6D6;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure {
     width: 50px;
@@ -2278,6 +2282,7 @@ button.resend_otp.disabled {
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .value img {
     margin-right: 8px;
+    filter: unset;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post::after {
     right: -43px;
