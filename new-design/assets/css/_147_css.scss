@@ -1,5 +1,5 @@
 /*********** Responsive CSS Start Here*************/
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 769px) {
   /*********** Responsive dashboard View Start*************/
   .no_desktop_view {
     display: none;
@@ -550,9 +550,9 @@
       @include custom-font(12px, 400, 16px, 0);
     }
   }
-  .no_mobile_view {
-    display: none !important;
-  }
+  // .no_mobile_view {
+  //   display: none !important;
+  // }
   .no_desktop_ipad {
     display: block;
   }
