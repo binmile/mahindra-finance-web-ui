@@ -2233,9 +2233,51 @@ button.resend_otp.disabled {
     align-items: center;
     place-items: center;
   }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container.ruppe_container_first_div {
+    place-items: flex-start;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container.second_check {
+    display: flex;
+    justify-content: space-between;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container.second_check .finance_check {
+    display: flex;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container.second_check .finance_check .rupee_content_data {
+    display: flex;
+    flex-direction: column;
+    margin-left: 21px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .paid_wrapper {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 24px;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border-color: #22c55e;
+    background: linear-gradient(0deg, #bef4d2, #bef4d2), linear-gradient(0deg, #22c55e, #22c55e);
+    color: #17823E;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .paid_wrapper.remaining_amount {
+    background: #fff0bc;
+    color: #BD9400;
+    font-family: Georama;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .paid_wrapper span img {
+    margin-right: 4px;
+    vertical-align: baseline;
+  }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container.brd-top {
-    padding-top: 24px;
-    margin-top: 24px;
+    padding-top: 28px;
+    margin-top: 28px;
     border-top: 1px solid #D6D6D6;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure {
@@ -2267,15 +2309,37 @@ button.resend_otp.disabled {
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper {
     background-color: #F5F5F5;
     border-radius: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 23px;
-    padding-left: 24px;
+    padding: 8px 23px 8px 24px;
     margin-top: 16px;
     background-color: #F5F5F5;
     border-radius: 8px;
     padding: 8px 23px 8px 24px;
     margin-top: 16px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper.fixed_deposit_second_wrapper {
+    padding: 12px 16px 22px 16px;
+    margin-top: 24px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .icContents {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    margin-bottom: 12px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .icContents .strep_wrapper {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 24px;
+    padding: 0px 8px;
+    border-radius: 8px;
+    background-color: #e3e5ea;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .icContents .strep_wrapper .strep_content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #6B7280;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents {
     margin-top: 0;
@@ -2407,7 +2471,7 @@ button.resend_otp.disabled {
     padding-top: 24px;
   }
   .accountBox .fd_content_min_height.fd_content_min_height_post_closure {
-    min-height: 200px;
+    min-height: 106px;
   }
   .accountBox .bottomLightText span.interest_rate {
     font-size: 14px;
