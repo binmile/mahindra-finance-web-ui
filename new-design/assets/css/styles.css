@@ -5110,10 +5110,6 @@ button.resend_otp.disabled {
     font-size: 12px !important;
   }
 }
-.row {
-  --bs-gutter-x: 0rem;
-}
-
 .textparent {
   position: relative;
 }
@@ -5611,4 +5607,7 @@ p.notifiy {
   .section-parent {
     margin-right: 0px;
   }
+}
+#req_per_page {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
