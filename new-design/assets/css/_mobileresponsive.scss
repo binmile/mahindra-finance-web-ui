@@ -1,3 +1,6 @@
+.row {
+    // --bs-gutter-x: 0rem;
+}
 .textparent {
     position: relative;
 }
@@ -143,7 +146,7 @@ ul.custliststyle{
     font-weight: 400;
 }
 .notesection {
-    border-bottom: 1px solid #E8E8E8;
+    // border-bottom: 1px solid #E8E8E8;
     margin-top: 28px;
 }
 .vl {
@@ -372,7 +375,10 @@ p.notifiy {
     margin-top: 0px;
 }
 
-
+.align-item {
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -387,13 +393,55 @@ p.notifiy {
 
 
 // MOBILE RESPONSIVE//
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .card-section-2 {
+        display: block;
+        margin-top: 24px;
+    }
+
+
+.accountBox.darkBg.custdarkBg {
+   
+    margin-top: 12px;
+}
+
+}
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .boldHeader.boldHeaderFd span {
+        display: none;
+    }
+    .boldHeader.boldHeader-bottom-margin span {
+        display: none;
+    }
+    .fdDetails.customenone {
+        display: none;
+    }
+    .customenone {
+        display: none;
+    }
+    .accountBox.darkBg.custdarkBg {
+        padding: 8px 12px;
+        margin-top: 16px;
+    }
+    .accountBox.darkBg.custdarkBg {
+        padding: 8px 12px;
+        margin-top: 16px;
+    }
+    .fdContents.custtbl.custfdContents .fdDetails.customeborder {
+        margin-bottom: 0px;
+    }
+    .fdContents.custtbl.custfdContents {
+        margin-bottom: 0px;
+    }
+    .custome-flex-row {
+        flex-direction: row;
+    }
     .custborder-right {
         border-right: 0px;
     }
     ul.customeul {
-        display: none ;
+        display: block ;
     }
     .sideimage {
         display: none ;
@@ -408,6 +456,14 @@ p.notifiy {
         display: none;
     }
     .customRedBtn.themeRedBtn_mob {
+        display: none;
+    }
+    .text-end {
+        text-align: left!important;
+    }
+    .fdDetails.customefdDetails:after {
+        content: "";
+       
         display: none;
     }
 
@@ -428,10 +484,26 @@ p.notifiy {
     .card-section-2 {
         display: block;
     }
-    button.btn.themeRedBtn {
-        display: none;
-    }
+    // button.btn.themeRedBtn {
+    //     display: none;
+    // }
    
 
+}
+
+@media screen and (max-width: 991px) { 
+    .br-1::after {
+     
+        display: none;
+    }
+    .br-1::before {
+       
+        display: none;
+    }
+    .section-parent {
+        
+        margin-right: 0px;
+    }
+   
 }
 
