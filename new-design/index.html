@@ -352,7 +352,8 @@
                     <div class="listTableBody">
                         <input type="checkbox" id="expend" />
                         <div class="smalldesc">
-                            <div class="listTabledata">
+                            <div id="request-table"></div>
+                            <!-- <div class="listTabledata">
                                 <div class="tableData wd-12">N2003901F</div>
                                 <div class="tableData wd-13">28 Sept 2021</div>
                                 <div class="tableData wd-11">N/A</div>
@@ -552,23 +553,23 @@
                                         Active
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
+
                         <div class="customPagination" id="customPagination">
-                            <div class="pagination-before">
+                            <select id="req_per_page" onchange="filter_requests()">
+                                <option>7</option>
+                                <option>14</option>
+                                <option>ALL</option>
+                            </select>
+                            <!-- <div class="pagination-before">
                                 <img src="./assets/img/icons/arrow-left-red.svg" alt="before" />
+                            </div> -->
+                            <div class="pagination">
                             </div>
-                            <div class="btn-page">
-                                <ul>
-                                    <li class="active">1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                </ul>
-                            </div>
-                            <div class="pagination-after">
+                            <!-- <div class="pagination-after">
                                 <img src="./assets/img/icons/arrow-left-red.svg" alt="before" />
-                            </div>
+                            </div> -->
                         </div>
                             <label class="showMoreBtn" for="expend" id="homeShowBtn">
                                 Show more
@@ -1017,6 +1018,7 @@
     <script src="./assets/js/chart.min.js"></script>
     <script src="./assets/js/graph.js"></script>
     <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/pagination.js"></script>
     <script>
         $(document).ready(function() {
           $('.owl-carousel').owlCarousel({
