@@ -1,0 +1,66 @@
+.boldHeaderFd{
+    margin-bottom: 16px !important;
+}
+.formControlFd{
+    height: 44px;
+}
+
+.customRedBtnFd{
+    padding: 14px 24px !important;
+}
+
+.card-section-2FD{
+    padding: 24px 32px !important;
+    position: relative;
+}
+.rightCornerImg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.rightCornerImg img{
+   height: 89px;
+   width: 160px;
+}
+.showLessBtnFD{
+    display: none;
+}
+.showMoreBtnFD{
+    display: none;
+}
+.card-section-2 {
+    display: block;
+  }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .card-section-2FD{
+        display: block !important;
+    }
+    .card-section-2 {
+        display: block;
+      }
+    .boldHeaderHide{
+        display: none !important;
+    }
+    .owl-carousel{
+        display: none !important;
+    }
+    .custHeader{
+        margin-top: 0 !important;
+    }
+    .showLessBtnFD{
+        display: none;
+        text-align: center !important;
+        text-decoration: none !important;
+        color: #1084CB;
+    }
+    .showMoreBtnFD{
+        display: flex;
+        justify-content: center;
+        text-decoration: none !important;
+        color: #1084CB;
+    }
+    #accordionFD{
+        display: none;
+    }
+}
