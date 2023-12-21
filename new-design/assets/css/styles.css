@@ -1860,6 +1860,171 @@ button.resend_otp.disabled {
   animation-name: slideInRight;
 }
 
+/***********************Interest Rate Modal start**********************************/
+#interestRateModal .modal-header {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: #231F20;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+#interestRateModal .modal-header .info-heading-container {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+#interestRateModal .modal-header .info-heading-container img {
+  margin-right: 8px;
+}
+#interestRateModal .modal-header button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+#interestRateModal .modal-body {
+  background-color: #F3F4F6;
+  padding: 0px;
+}
+#interestRateModal .modal-body .info-heading-container {
+  padding: 12px;
+}
+#interestRateModal .modal-body .info-heading-container .info-heading-image {
+  background-color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+}
+#interestRateModal .modal-body .info-heading-container .info-heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #231F20;
+}
+#interestRateModal .modal-body .interestRateTable table {
+  border: 1px solid #D6D6D6;
+}
+#interestRateModal .modal-body .interestRateTable table td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#interestRateModal .modal-body .interestRateTable .wd-150 {
+  width: 150px;
+  border: none;
+  display: contents;
+}
+#interestRateModal .modal-body .interestRateTable .wd-150 table {
+  border: 0px;
+}
+#interestRateModal .modal-body .interestRateTable .custom-height-103 {
+  height: 103px;
+}
+#interestRateModal .modal-body .interestRateTable .wd-40 {
+  width: 40%;
+}
+#interestRateModal .modal-body .interestRateTable .wd-60 {
+  width: 60%;
+}
+#interestRateModal .modal-body .interestRateTable .border-right {
+  border-right: 1px solid #D6D6D6;
+}
+#interestRateModal .modal-body .interestRateTable .border-left {
+  border-left: 1px solid #D6D6D6;
+}
+#interestRateModal .modal-body .interestRateTable .border-bottom {
+  border-bottom: 1px solid #D6D6D6;
+}
+#interestRateModal .modal-body .interestRateTable .border-top {
+  border-top: 1px solid #D6D6D6;
+}
+#interestRateModal .modal-body .interestRateTable .table-text-bold {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: normal;
+}
+#interestRateModal .modal-body .interestRateTable .table-text-medium {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+}
+#interestRateModal .modal-body .interestRateTable .border-none {
+  border: 0px;
+}
+#interestRateModal .modal-body .interestRateTable .darkBackground {
+  background-color: #F3F4F6 !important;
+}
+#interestRateModal .modal-footer {
+  padding: 0;
+  border-top: 0px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+#interestRateModal .modal-footer .disclaimer {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #6B7280;
+  text-align: center;
+  width: 100%;
+  padding: 16px;
+}
+#interestRateModal .modal-footer .disclaimerfooter {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #EF4444;
+  background-color: #F3F4F6;
+  text-align: center;
+  width: 100%;
+  padding: 16px;
+  margin: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+#interestRateModal .modal-footer .disclaimerfooter span {
+  font-weight: 700;
+}
+#interestRateModal .responsiveTable {
+  max-width: 800px;
+  overflow-x: auto;
+}
+#interestRateModal .interestRateTable {
+  position: relative;
+  overflow: auto;
+  white-space: nowrap;
+}
+#interestRateModal .interestRateTable .sticky-col {
+  position: sticky;
+  background-color: white !important;
+}
+#interestRateModal .interestRateTable .first-col {
+  width: 165px;
+  min-width: 165px;
+  max-width: 165px;
+  left: 0px;
+}
+#interestRateModal .interestRateTable .sec-col {
+  max-width: 380px;
+  min-width: 380px;
+}
+#interestRateModal .interestRateTable .thrd-col {
+  max-width: 475px;
+  min-width: 475px;
+}
+
+/************************Interest Rate Modal End*********************************/
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
@@ -4768,6 +4933,86 @@ button.resend_otp.disabled {
   }
   #sucessToastMessage.show {
     transform: translate(-50%, -12px) !important;
+  }
+  #interestRateModal .modal-dialog {
+    max-width: 100%;
+  }
+  #interestRateModal .modal-dialog .modal-header {
+    padding: 10px;
+  }
+  #interestRateModal .modal-dialog .modal-header .info-heading-container {
+    font-size: 12px;
+  }
+  #interestRateModal .modal-dialog .modal-header .info-heading-container img {
+    width: 12px;
+    height: 12px;
+  }
+  #interestRateModal .modal-dialog .modal-header button {
+    top: 10px;
+    right: 10px;
+  }
+  #interestRateModal .modal-dialog .modal-body {
+    max-height: calc(100vh - 240px);
+    overflow: auto;
+  }
+  #interestRateModal .modal-dialog .modal-body .info-heading-container {
+    padding: 10px;
+  }
+  #interestRateModal .modal-dialog .modal-body .info-heading-container .info-heading-image {
+    background-color: #FFFFFF;
+    width: 16px;
+    height: 16px;
+  }
+  #interestRateModal .modal-dialog .modal-body .info-heading-container .info-heading-image img {
+    width: 12px;
+    height: 12px;
+  }
+  #interestRateModal .modal-dialog .modal-body .info-heading-container .info-heading {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+  }
+  #interestRateModal .modal-dialog .modal-footer .disclaimer {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13.58px;
+    letter-spacing: normal;
+    padding: 10px;
+  }
+  #interestRateModal .modal-dialog .modal-footer .disclaimerfooter {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13.58px;
+    letter-spacing: normal;
+    padding: 10px;
+  }
+  #interestRateModal .responsiveTable {
+    max-width: 800px;
+    overflow-x: auto;
+  }
+  #interestRateModal .interestRateTable {
+    position: relative;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  #interestRateModal .interestRateTable .sticky-col {
+    position: sticky;
+    background-color: white !important;
+  }
+  #interestRateModal .interestRateTable .first-col {
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+    left: 0px;
+  }
+  #interestRateModal .interestRateTable .sec-col {
+    max-width: 380px;
+    min-width: 380px;
+  }
+  #interestRateModal .interestRateTable .thrd-col {
+    max-width: 475px;
+    min-width: 475px;
   }
 }
 @media only screen and (max-width: 450px) {
