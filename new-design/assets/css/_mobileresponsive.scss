@@ -146,7 +146,7 @@ ul.custliststyle{
     font-weight: 400;
 }
 .notesection {
-    border-bottom: 1px solid #E8E8E8;
+    // border-bottom: 1px solid #E8E8E8;
     margin-top: 28px;
 }
 .vl {
@@ -394,6 +394,10 @@ p.notifiy {
 
 // MOBILE RESPONSIVE//
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .card-section-2 {
+        display: block;
+        margin-top: 24px;
+    }
 
 
 .accountBox.darkBg.custdarkBg {
@@ -404,6 +408,9 @@ p.notifiy {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .boldHeader.boldHeaderFd span {
+        display: none;
+    }
     .boldHeader.boldHeader-bottom-margin span {
         display: none;
     }
@@ -477,9 +484,9 @@ p.notifiy {
     .card-section-2 {
         display: block;
     }
-    button.btn.themeRedBtn {
-        display: none;
-    }
+    // button.btn.themeRedBtn {
+    //     display: none;
+    // }
    
 
 }
@@ -499,3 +506,4 @@ p.notifiy {
     }
    
 }
+
