@@ -1741,7 +1741,7 @@ button.resend_otp.disabled {
   background-color: #FFFFFF;
   min-height: 52px;
 }
-.customPagination .pagination-before, .customPagination .pagination-after {
+.customPagination .pagination-before, .customPagination .pagination-after, .customPagination #prev_link, .customPagination #next_link {
   border: 1px solid #D1D5DB;
   border-radius: 4px;
   display: flex;
@@ -1751,30 +1751,28 @@ button.resend_otp.disabled {
   height: 28px;
   cursor: pointer;
 }
-.customPagination .pagination-before {
+.customPagination .pagination-before, .customPagination #prev_link {
   margin-right: 12px;
 }
-.customPagination .pagination-after {
+.customPagination .pagination-after, .customPagination #next_link {
   margin-left: 12px;
 }
-.customPagination .pagination-after img {
+.customPagination .pagination-after img, .customPagination #next_link img {
   transform: rotate(180deg);
 }
-.customPagination .btn-page ul {
-  list-style: none;
-  padding: 0;
+.customPagination .pagination a {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #231F20;
   display: flex;
   justify-content: center;
   place-items: center;
-  margin-bottom: 0;
 }
-.customPagination .btn-page ul li {
-  display: inline-block;
-  width: 40px;
-  cursor: pointer;
-  text-align: center;
-}
-.customPagination .btn-page ul li.active {
+.customPagination .pagination a.page_active {
   color: #E31837;
 }
 
@@ -2183,7 +2181,6 @@ button.resend_otp.disabled {
   .no_desktop_view {
     display: none;
   }
-  /*********** Responsive Quick-Actions-Mobile View End*************/
   .accountContainer .bottomLightText_success {
     border-top: 1px solid #D6D6D6;
     padding-top: 24px;
@@ -2223,6 +2220,7 @@ button.resend_otp.disabled {
     line-height: 24px;
     letter-spacing: 0.25px;
     color: #6B7280;
+    margin-bottom: 20px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fdDetails.fdDetails_mob_post_sec::after {
     right: -25px;
@@ -2232,7 +2230,11 @@ button.resend_otp.disabled {
     gap: 23px;
     align-items: center;
     place-items: center;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container.brd-top {
+    padding-top: 24px;
     margin-top: 24px;
+    border-top: 1px solid #D6D6D6;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure {
     width: 50px;
@@ -2278,6 +2280,7 @@ button.resend_otp.disabled {
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .value img {
     margin-right: 8px;
+    filter: unset;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post::after {
     right: -43px;
@@ -4802,7 +4805,7 @@ button.resend_otp.disabled {
   }
   .navbar-collapse {
     position: fixed;
-    top: 54px;
+    top: 52px;
     left: 0;
     height: 100%;
     background-color: #FFFFFF;
@@ -4814,9 +4817,10 @@ button.resend_otp.disabled {
     transition: height 0s ease;
   }
   .navbar-collapse.show {
-    height: 100%;
+    height: calc(100vh - 52px);
     left: 0;
     transition: left 400ms ease-in-out;
+    overflow-y: auto;
   }
   .navbar-toggler.collapsed ~ .navbar-collapse {
     transition: left 400ms ease-in;

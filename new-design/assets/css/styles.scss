@@ -1155,38 +1155,50 @@ button.resend_otp.disabled {
     @include setDisplayProperty(none, center, flex-end);
     background-color: $color_white;
     min-height: 52px;
-    .pagination-before, .pagination-after{
+    .pagination-before, .pagination-after, #prev_link, #next_link{
         border: 1px solid $color_light_gray2;
         border-radius: 4px;
         @include allCenter;
         @include custom-width-height(28px, 28px);
         cursor: pointer;
     }
-    .pagination-before{
+    .pagination-before, #prev_link{
         margin-right: 12px;
     }
-    .pagination-after{
+    .pagination-after, #next_link{
         margin-left: 12px;
         img{
             transform: rotate(180deg);
         }
     }
-    .btn-page{
-        ul{
-            list-style: none;
-            padding: 0;
-            @include allCenter;
-            margin-bottom: 0;
-            li{
-                display: inline-block;
-                width: 40px;
-                cursor: pointer;
-                text-align: center;
-                &.active{
-                    color: $color_red;
-                }
-            }
-        }
+    .pagination{
+      a{
+        width: fit-content;
+        margin: 0px 10px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: $color_black_light;
+        @include allCenter;
+      }
+      a.page_active{
+        color: $color_red;
+      }
+        // ul{
+        //     list-style: none;
+        //     padding: 0;
+        //     @include allCenter;
+        //     margin-bottom: 0;
+        //     li{
+        //         display: inline-block;
+        //         width: 40px;
+        //         cursor: pointer;
+        //         text-align: center;
+        //         &.active{
+        //             color: $color_red;
+        //         }
+        //     }
+        // }
     }
 }
 /*********Pagination End**********************/
@@ -1273,3 +1285,7 @@ animation-name: slideInRight;
 @import "./responsive.scss";
 
 @import "./mobileresponsive.scss";
+
+#req_per_page{
+  display: none;
+}
