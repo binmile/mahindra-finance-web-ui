@@ -797,7 +797,7 @@
     }
     .navbar-collapse {
         position: fixed;
-        top: 54px;
+        top: 52px;
         left: 0;
         height: 100%;
         background-color: #FFFFFF;
@@ -811,9 +811,10 @@
     }
 
     .navbar-collapse.show {
-        height: 100%;
+        height: calc(100vh - 52px);
         left: 0;
         transition: left 400ms ease-in-out;
+        overflow-y: auto;
     }
 
     .navbar-toggler.collapsed ~ .navbar-collapse {
