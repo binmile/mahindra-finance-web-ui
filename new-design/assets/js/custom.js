@@ -44,6 +44,25 @@ $("#homeHideBtn").click(function () {
 });
 /*****************Dashboard Data show hide End***************/
 
+/*****************FD Data show hide Start***************/
+$("#homeShowBtnFD").click(function () {
+    var dataShow = document.getElementById("homeShowBtnFD");
+    var dataHide = document.getElementById("homeHideBtnFD");
+    var dataPagination = document.getElementById("accordionFD");
+    dataShow.style.display = "none";
+    dataHide.style.display = "block";
+    dataPagination.style.display = "block";
+});
+$("#homeHideBtnFD").click(function () {
+    var dataShow = document.getElementById("homeShowBtnFD");
+    var dataHide = document.getElementById("homeHideBtnFD");
+    var dataPagination = document.getElementById("accordionFD");
+    dataShow.style.display = "flex";
+    dataHide.style.display = "none";
+    dataPagination.style.display = "none";
+});
+/*****************FD Data show hide End***************/
+
 /*****************Dashboard Toggle Switch Button Modal Start***************/
 function updateKycModal(id) {
     var toggleSwitch = document.getElementById(id);

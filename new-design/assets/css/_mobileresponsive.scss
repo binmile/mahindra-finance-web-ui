@@ -1,5 +1,5 @@
 .row {
-    --bs-gutter-x: 0rem;
+    // --bs-gutter-x: 0rem;
 }
 .textparent {
     position: relative;
@@ -434,7 +434,7 @@ p.notifiy {
         border-right: 0px;
     }
     ul.customeul {
-        display: none ;
+        display: block ;
     }
     .sideimage {
         display: none ;
