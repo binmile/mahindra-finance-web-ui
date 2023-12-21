@@ -1,3 +1,6 @@
+.row {
+    --bs-gutter-x: 0rem;
+}
 .textparent {
     position: relative;
 }
@@ -372,7 +375,10 @@ p.notifiy {
     margin-top: 0px;
 }
 
-
+.align-item {
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -387,8 +393,43 @@ p.notifiy {
 
 
 // MOBILE RESPONSIVE//
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+.accountBox.darkBg.custdarkBg {
+   
+    margin-top: 12px;
+}
+
+}
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .boldHeader.boldHeader-bottom-margin span {
+        display: none;
+    }
+    .fdDetails.customenone {
+        display: none;
+    }
+    .customenone {
+        display: none;
+    }
+    .accountBox.darkBg.custdarkBg {
+        padding: 8px 12px;
+        margin-top: 16px;
+    }
+    .accountBox.darkBg.custdarkBg {
+        padding: 8px 12px;
+        margin-top: 16px;
+    }
+    .fdContents.custtbl.custfdContents .fdDetails.customeborder {
+        margin-bottom: 0px;
+    }
+    .fdContents.custtbl.custfdContents {
+        margin-bottom: 0px;
+    }
+    .custome-flex-row {
+        flex-direction: row;
+    }
     .custborder-right {
         border-right: 0px;
     }
@@ -408,6 +449,14 @@ p.notifiy {
         display: none;
     }
     .customRedBtn.themeRedBtn_mob {
+        display: none;
+    }
+    .text-end {
+        text-align: left!important;
+    }
+    .fdDetails.customefdDetails:after {
+        content: "";
+       
         display: none;
     }
 
@@ -435,3 +484,18 @@ p.notifiy {
 
 }
 
+@media screen and (max-width: 991px) { 
+    .br-1::after {
+     
+        display: none;
+    }
+    .br-1::before {
+       
+        display: none;
+    }
+    .section-parent {
+        
+        margin-right: 0px;
+    }
+   
+}
