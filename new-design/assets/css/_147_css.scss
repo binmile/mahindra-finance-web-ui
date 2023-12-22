@@ -1120,6 +1120,9 @@
 
 @media only screen and (max-width: $tablet) {
   /*********** Responsive dashboard View Start*************/
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child{
+    margin-bottom: 0;
+  }
   .accountHolderDetails
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
     position: relative;
