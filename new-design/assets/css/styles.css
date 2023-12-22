@@ -2392,6 +2392,7 @@ button.resend_otp.disabled {
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container {
     display: flex;
+    position: relative;
     gap: 23px;
     align-items: center;
     place-items: center;
@@ -2417,6 +2418,8 @@ button.resend_otp.disabled {
     width: fit-content;
     height: 24px;
     border-radius: 5px;
+    position: absolute;
+    right: 0;
     padding: 4px 8px;
     border-color: #22c55e;
     background: linear-gradient(0deg, #bef4d2, #bef4d2), linear-gradient(0deg, #22c55e, #22c55e);
@@ -2511,11 +2514,13 @@ button.resend_otp.disabled {
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails .strep_wrapper {
     width: -moz-fit-content;
     width: fit-content;
-    height: 24px;
+    max-height: 24px;
     padding: 0px 8px;
     border-radius: 8px;
     background-color: #e3e5ea;
     margin-bottom: 12px;
+    overflow: auto; /* Hide any content that overflows the box */
+    text-overflow: ellipsis;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails .strep_wrapper .strep_content {
     font-size: 14px;
@@ -2832,7 +2837,7 @@ button.resend_otp.disabled {
     font-size: 12px;
   }
   .fdContents .fdDetails .label {
-    font-size: 13px;
+    font-size: 14px;
   }
   .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper {
     padding: 12px 16px;
@@ -2845,12 +2850,6 @@ button.resend_otp.disabled {
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container .rupee_content {
     font-size: 16px;
-  }
-  .loan_amount {
-    font-size: 12px;
-  }
-  .accountContainer .accountDetailsBox .loan_content {
-    font-size: 12px;
   }
   .accountContainer .accountDetailsBox .loan_content {
     margin-bottom: 16px;
