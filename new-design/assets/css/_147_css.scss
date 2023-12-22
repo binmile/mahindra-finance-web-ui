@@ -503,6 +503,17 @@
   }
   /*----------renewal-form-desktop-UI--- end------------------------*/
 }
+@media only screen and (min-width: 1367px) and (max-width: 1399px) {
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+    .themeRedBtn{
+      &.themeRedBtn_joint_account{
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
