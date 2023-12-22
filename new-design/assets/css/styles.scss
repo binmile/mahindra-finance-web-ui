@@ -1273,9 +1273,13 @@ button.resend_otp.disabled {
   animation-delay: 2s;
 }
 
-.slideInRight{
+.slideInRightAnimation{
 animation-duration: 2s;
-animation-name: slideInRight;
+animation-name: slideInRightAnimation;
+}
+
+.mobChangeWidth{
+  display: flex;
 }
 
 /***********************Interest Rate Modal start**********************************/
