@@ -1278,6 +1278,160 @@ animation-duration: 2s;
 animation-name: slideInRight;
 }
 
+/***********************Interest Rate Modal start**********************************/
+#interestRateModal{
+  .modal-header{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #231F20;
+    text-align: center;
+    display: block;
+    position: relative;
+    .info-heading-container{
+      display: flex;
+      justify-content: center;
+      place-items: center;
+      color: #FFFFFF;
+      @include custom-font(20px, 600, 24px, 0.15px);
+      img{
+        margin-right: 8px;
+      }
+    }
+    button{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+  .modal-body{
+    background-color: #F3F4F6;
+    padding: 0px;
+    .info-heading-container{
+      padding: 12px;
+      .info-heading-image{
+        background-color: #FFFFFF;
+        width: 24px;
+        height: 24px;
+      }
+      .info-heading{
+        @include custom-font(16px, 700, 24px, normal);
+        color:#231F20;
+      }
+    }
+
+    .interestRateTable{
+      table{
+        border: 1px solid #D6D6D6;
+        td{
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+      }
+      .wd-150{
+        width: 150px;
+        border: none;
+        display: contents;
+        table{
+          border: 0px;
+        }
+      }
+      .custom-height-103{
+        height: 103px;
+      }
+      .wd-40{
+        width: 40%;
+      }
+      .wd-60{
+        width: 60%;
+      }
+      .border-right{
+        border-right: 1px solid #D6D6D6;
+      }
+      .border-left{
+        border-left: 1px solid #D6D6D6;
+      }
+      .border-bottom{
+        border-bottom: 1px solid #D6D6D6;
+      }
+      .border-top{
+        border-top: 1px solid #D6D6D6;
+      }
+      .table-text-bold{
+        @include custom-font(14px, 700, 20px, normal);
+      }
+      .table-text-medium{
+        @include custom-font(14px, 500, 20px, normal);
+      }
+      .border-none{
+        border: 0px;
+      }
+      .darkBackground{
+        background-color: #F3F4F6 !important;
+      }
+    }
+  }
+  .modal-footer{
+    padding: 0;
+    border-top: 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    .disclaimer{
+      @include custom-font(14px, 500, 20px, normal);
+      color: #6B7280;
+      text-align: center;
+      width: 100%;
+      padding: 16px;
+    }
+    .disclaimerfooter{
+      @include custom-font(14px, 500, 20px, normal);
+      color: #EF4444;
+      background-color: #F3F4F6;
+      text-align: center;
+      width: 100%;
+      padding: 16px;
+      margin: 0;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      span{
+        font-weight: 700;
+      }
+    }
+  }
+  .responsiveTable{
+    max-width: 800px;
+    overflow-x: auto;
+}
+  .interestRateTable{
+    position: relative;
+    overflow: auto;
+    white-space: nowrap;
+    .sticky-col {
+        position: -webkit-sticky;
+        position: sticky;
+        background-color: white !important;
+      }
+      .first-col {
+        width: 165px;
+        min-width: 165px;
+        max-width: 165px;
+        left: 0px;
+      }
+      .sec-col{
+        max-width: 380px;
+        min-width: 380px;
+      }
+      .thrd-col{
+        max-width: 475px;
+        min-width: 475px;
+      }
+  }
+}
+
+/************************Interest Rate Modal End*********************************/
+
 @import "./265_css";
 @import "./147_css";
 @import "./renewal_css_265";

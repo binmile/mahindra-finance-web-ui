@@ -346,7 +346,7 @@
                                     </div>
                                         <div class="noteContent no-border-top">
                                             <span class="noteText">Note: </span>The interest will be applicable on the
-                                            renewal day, to check the current rates <a href="javascript:;">click
+                                            renewal day, to check the current rates <a href="javascript:;" onclick="handleClickModal('interestRateModal')">click
                                                 here</a>
                                         </div>
                                     </div>
@@ -419,6 +419,118 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Start -->
+    <div class="modal fade" id="interestRateModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="info-heading-container">
+                        <div class="info-heading-image"><img
+                                src="./assets/img/icons/file-text-white.svg"
+                                alt="icon" /></div>
+                                <div class="info-heading">Samruddhi scheme application for deposits upto ₹ 5 crore</div>
+                            </div>
+                            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                                <img src="./assets/img/icons/close-icon-white.svg" alt="icon" />
+                            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="info-heading-container">
+                    <div class="info-heading-image"><img
+                        src="./assets/img/icons/preclosure-flow/percent-red.svg"
+                        alt="icon" /></div>
+                        <div class="info-heading">Interest rates for public</div>
+                    </div>
+                    <div class="interestRateTable">
+                        <table border="0" class="w-100 border-none text-center">
+                            <tr rowspan="2">
+                                <td class="table-text-bold text-center border-right border-top sticky-col first-col darkBackground">&nbsp;</td>
+                                <td colspan="3" class="table-text-bold text-center border-right border-bottom border-top wd-40 sec-col">Cumulative scheme</td>
+                                <td colspan="4" class="table-text-bold text-center border-bottom wd-60 border-top thrd-col">Non - cumulative scheme</td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">Tenure</td>
+                                <td class="table-text-medium">Amount<br>Payable</td>
+                                <td class="table-text-medium">Interest<br>p.a.</td>
+                                <td class="border-right table-text-medium">Effective<br>Yield p.a.</td>
+                                <td class="table-text-medium">Interest p.a.*<br>(monthly)</td>
+                                <td class="border-right">Interest p.a.*<br>(quarterly)</td>
+                                <td class="table-text-medium">Interest p.a.*<br>(half yearly)</td>
+                                <td class="table-text-medium">Interest p.a.*<br>(yearly)</td>
+                            </tr>
+                            <tr class="border-bottom bg-white">
+                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">12 months</td>
+                                <td class="table-text-bold">5380</td>
+                                <td class="table-text-bold">7.60%</td>
+                                <td class="table-text-bold border-right">7.60%</td>
+                                <td class="table-text-bold">7.20%</td>
+                                <td class="table-text-bold border-right">7.25%</td>
+                                <td class="table-text-bold">7.35%</td>
+                                <td class="table-text-bold">7.60%</td>
+                            </tr>
+                            <tr class="border-bottom bg-white">
+                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">24 months</td>
+                                <td class="table-text-bold">5805</td>
+                                <td class="table-text-bold">7.75%</td>
+                                <td class="table-text-bold border-right">8.05%</td>
+                                <td class="table-text-bold">7.25%</td>
+                                <td class="table-text-bold border-right">7.35%</td>
+                                <td class="table-text-bold">7.50%</td>
+                                <td class="table-text-bold">7.75%</td>
+                            </tr>
+                            <tr class="border-bottom bg-white">
+                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">36 months</td>
+                                <td class="table-text-bold">6307</td>
+                                <td class="table-text-bold">8.05%</td>
+                                <td class="table-text-bold border-right">8.72%</td>
+                                <td class="table-text-bold">7.50%</td>
+                                <td class="table-text-bold border-right">7.60%</td>
+                                <td class="table-text-bold">7.80%</td>
+                                <td class="table-text-bold">8.05%</td>
+                            </tr>
+                            <tr class="border-bottom bg-white">
+                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">48 months</td>
+                                <td class="table-text-bold">6815</td>
+                                <td class="table-text-bold">8.05%</td>
+                                <td class="table-text-bold border-right">9.08%</td>
+                                <td class="table-text-bold">7.50%</td>
+                                <td class="table-text-bold border-right">7.60%</td>
+                                <td class="table-text-bold">7.80%</td>
+                                <td class="table-text-bold">8.05%</td>
+                            </tr>
+                            <tr class="border-bottom bg-white">
+                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">60 months</td>
+                                <td class="table-text-bold">7364</td>
+                                <td class="table-text-bold">8.05%</td>
+                                <td class="table-text-bold border-right">9.45%</td>
+                                <td class="table-text-bold">7.50%</td>
+                                <td class="table-text-bold border-right">7.60%</td>
+                                <td class="table-text-bold">7.80%</td>
+                                <td class="table-text-bold">8.05%</td>
+                            </tr>
+                            <tr class="border-bottom bg-white">
+                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">Minimum amount</td>
+                                <td colspan="3" class="table-text-bold text-center border-right border-top">5000+</td>
+                                <td colspan="2" class="table-text-bold text-center border-right border-top">50000+</td>
+                                <td colspan="2" class="table-text-bold text-center border-top">25000+</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col border-bottom darkBackground">&nbsp;</td>
+                                <td colspan="3" class="table-text-bold border-top text-center border-right border-left border-bottom">*Compounded annually</td>
+                                <td colspan="4" class="table-text-bold border-top text-center border-bottom">+Additional amount for fresh deposit in multiple of Rs. 1000</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="disclaimer">**Senior citizen’s shall earn 0.25% additional rates. Employees, employee relatives, retired employees shall earn 0.35% additional rates.</div>
+                    <div class="disclaimerfooter"><span>Important</span> : Interest rate of renewed FD will depend on the applicable rate as on the day of renewal</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal End-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
