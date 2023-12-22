@@ -815,6 +815,9 @@
       }
     }
   }
+  .accountDetails{
+    margin-bottom: 5px;
+  }
   .accountDetailsBox_post{
     padding-bottom: 24px;
   }
@@ -1133,6 +1136,9 @@
   /*********** Responsive dashboard View Start*************/
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child{
     margin-bottom: 0;
+  }
+  .accountDetails{
+    margin-bottom: 5px;
   }
   .accountHolderDetails
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {

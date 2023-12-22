@@ -3130,6 +3130,9 @@ button.resend_otp.disabled {
     position: absolute;
     right: 0;
   }
+  .accountDetails {
+    margin-bottom: 5px;
+  }
   .accountDetailsBox_post {
     padding-bottom: 24px;
   }
@@ -3438,6 +3441,9 @@ button.resend_otp.disabled {
   /*********** Responsive dashboard View Start*************/
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
     margin-bottom: 0;
+  }
+  .accountDetails {
+    margin-bottom: 5px;
   }
   .accountHolderDetails .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
     position: relative;
@@ -6464,6 +6470,7 @@ p.notifiy {
 }
 
 .accountMobileFD {
+  margin-top: 8px;
   display: flex;
   justify-content: flex-start;
   place-items: center;
