@@ -160,17 +160,18 @@
                 margin-bottom: 12px;
               }
               .strep_wrapper {
-                width: fit-content;
                 max-height: 24px;
                 padding: 0px 8px;
                 border-radius: 8px;
                 background-color: #e3e5ea;
                 margin-bottom: 12px;
-                overflow: auto; /* Hide any content that overflows the box */
-                text-overflow: ellipsis; 
+                width:149px;
                 .strep_content {
                   @include custom-font(14px, 400, 24px, 0.25px);
                   color: #6b7280;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis; 
                 }
               }
               &.fdDetails_mob_post::after {
