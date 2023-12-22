@@ -4,6 +4,15 @@
   .no_desktop_view {
     display: none;
   }
+  .accountHolderDetails{
+    position: relative;
+  }
+  .verifyBtn{
+    &.verifyBtn_joint_account{
+      position: absolute;
+      right: 0;
+    }
+  }
   .accountContainer {
     .bottomLightText_success {
       border-top: 1px solid $color_light_border;
@@ -356,7 +365,11 @@
             padding-bottom: 32px;
           }
           .accountHolderDetails {
+            position: relative;
             .single_account_circle {
+              position: absolute;
+              right:0;
+              top:10px;
               @include custom-width-height(88px, 88px);
               background-color: $color_light_bg;
               border-radius: 50%;
@@ -492,6 +505,26 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+    .single_account_circle {
+      position: absolute;
+      right: 0;
+      top: 30px;
+    }
+    .verifyBtn{
+      &.verifyBtn_joint_account{
+        position: absolute;
+        right: 0;
+      }
+    }
+     .themeRedBtn{
+    &.themeRedBtn_joint_account{
+      position: absolute;
+      right: 0;
+    }
+  }
+  }
   .no_desktop_view {
     display: none;
   }
@@ -757,9 +790,31 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+    .single_account_circle {
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+    .verifyBtn{
+      &.verifyBtn_joint_account{
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
   .accountDetailsBox_post{
     padding-bottom: 24px;
-
+  }
+  .accountDetailsBox .accountListContainer{
+    min-height: 0;
+  }
+  .accountBox .fdContents.fdContents_success{
+    margin-bottom: 24px;
+  }
+  .listTable .listTableBody .listTabledata .tableData {
+    font-size: 14px;
   }
   .accountContainer .accountBox .fdContents.remove_margin {
     margin: 0;
@@ -1065,6 +1120,21 @@
 
 @media only screen and (max-width: $tablet) {
   /*********** Responsive dashboard View Start*************/
+  .accountHolderDetails
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+    .single_account_circle {
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+    .verifyBtn{
+      &.verifyBtn_joint_account{
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
   .cardContainer_mobileView {
     margin-bottom: 24px;
     margin-top: 3px;
@@ -2124,5 +2194,35 @@
       right: -32px;
     }
   }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+    .single_account_circle {
+      position: absolute;
+      right: 0;
+      top: 25px;
+    }
+    .verifyBtn{
+      &.verifyBtn_joint_account{
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
   /*********** Responsive dashboard View End*************/
+}
+
+@media only screen and (min-width: 375px) and (max-width: 393px) {
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content .accountType{
+    font-size: 12px;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+    .verifyBtn{
+      &.verifyBtn_joint_account{
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
 }
