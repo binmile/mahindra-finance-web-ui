@@ -2814,6 +2814,9 @@ button.resend_otp.disabled {
     letter-spacing: 0.5px;
     color: #231F20;
   }
+  .accountDetailsBox_post {
+    padding-bottom: 0;
+  }
   /*----------renewal-form-desktop-UI--- end------------------------*/
 }
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
@@ -2822,6 +2825,9 @@ button.resend_otp.disabled {
   }
   .icic_label {
     margin-bottom: 12px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails .strep_wrapper {
+    width: 133px;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure img {
     width: 25px;
@@ -3070,6 +3076,9 @@ button.resend_otp.disabled {
   /*----------renewal-form-mini-desktop-UI--- end------------------------*/
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountDetailsBox_post {
+    padding-bottom: 24px;
+  }
   .accountContainer .accountBox .fdContents.remove_margin {
     margin: 0;
   }
