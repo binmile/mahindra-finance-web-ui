@@ -6333,6 +6333,8 @@ p.notifiy {
 }
 
 .card-section-2FD {
+  display: block;
+  background: linear-gradient(180deg, #EFF6FF 0%, rgba(239, 246, 255, 0) 20%) !important;
   padding: 24px 32px !important;
   position: relative;
 }
@@ -6356,16 +6358,13 @@ p.notifiy {
   display: none;
 }
 
-.card-section-2FD {
-  display: block;
-}
-
 .accountMobileFD img {
   height: 20px;
   width: 20px;
 }
 
 .accountMobileFD {
+  margin-top: 8px;
   display: flex;
   justify-content: flex-start;
   place-items: center;
