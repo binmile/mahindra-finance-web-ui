@@ -53,13 +53,58 @@
         }
         .ruppe_container {
           display: flex;
+          position: relative;
           gap: 23px;
           align-items: center;
           place-items: center;
-          &.brd-top{
-            padding-top: 24px;
-            margin-top: 24px;
-            border-top:1px solid $color_light_border;
+          &.ruppe_container_first_div {
+            place-items: flex-start;
+          }
+          &.second_check {
+            display: flex;
+            justify-content: space-between;
+            .finance_check {
+              display: flex;
+              .rupee_content_data {
+                display: flex;
+                flex-direction: column;
+                margin-left: 21px;
+              }
+            }
+          }
+          .paid_wrapper {
+            display: flex;
+            width: fit-content;
+            height: 24px;
+            border-radius: 5px;
+            position: absolute;
+            // top:0;
+            right: 0;
+            &.remaining_amount {
+              display: flex;
+              white-space: nowrap;
+              background: #fff0bc;
+              color: #bd9400;
+              @include custom-font(12px, 500, 16px, 0.4px);
+            }
+            padding: 4px 8px;
+            border-color: #22c55e;
+            background: linear-gradient(0deg, #bef4d2, #bef4d2),
+              linear-gradient(0deg, #22c55e, #22c55e);
+            color: #17823e;
+
+            @include custom-font(12px, 500, 16px, 0.4px);
+            span {
+              img {
+                margin-right: 4px;
+                vertical-align: baseline;
+              }
+            }
+          }
+          &.brd-top {
+            padding-top: 28px;
+            margin-top: 28px;
+            border-top: 1px solid $color_light_border;
           }
           .cardIcons_circle {
             &.cardIcons_circle_post_closure {
@@ -85,22 +130,56 @@
         .fixed_deposit_wrapper {
           background-color: $color_light_gray;
           border-radius: 8px;
-          padding-top: 8px;
-          padding-bottom: 8px;
-          padding-right: 23px;
-          padding-left: 24px;
+          padding: 8px 23px 8px 24px;
           margin-top: 16px;
+          &.fixed_deposit_second_wrapper {
+            padding: 12px 16px 22px 16px;
+            margin-top: 24px;
+            .fixed_wrapper_check {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
           .fdContents {
             margin-top: 0;
             .value {
+              &.value_post{
+                display: flex;
+                justify-content: flex-start;
+                place-items: flex-start;
+               
+              }
               img {
                 margin-right: 8px;
-                filter:unset;
+                filter: unset;
               }
             }
             .fdDetails {
+              .icic_label {
+                @include custom-font(20px, 600, 24px, 0.15px);
+                margin-bottom: 12px;
+              }
+              .strep_wrapper {
+                max-height: 24px;
+                padding: 0px 8px;
+                border-radius: 8px;
+                background-color: #e3e5ea;
+                margin-bottom: 12px;
+                width:149px;
+                .strep_content {
+                  @include custom-font(14px, 400, 24px, 0.25px);
+                  color: #6b7280;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis; 
+                }
+              }
               &.fdDetails_mob_post::after {
                 right: -43px;
+              }
+              &.fdDetails_mob_post_details::after {
+                top: 36px;
+                right:-79px;
               }
             }
           }
@@ -240,7 +319,7 @@
         padding-top: 24px;
       }
       &.fd_content_min_height_post_closure {
-        min-height: 200px;
+        min-height: 106px;
       }
     }
     .bottomLightText {
@@ -277,7 +356,7 @@
             padding-bottom: 32px;
           }
           .accountHolderDetails {
-            .single_account_circle{
+            .single_account_circle {
               @include custom-width-height(88px, 88px);
               background-color: $color_light_bg;
               border-radius: 50%;
@@ -406,11 +485,63 @@
       }
     }
   }
+  .accountDetailsBox_post{
+    padding-bottom: 0;
+  }
   /*----------renewal-form-desktop-UI--- end------------------------*/
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
   .no_desktop_view {
     display: none;
+  }
+  .icic_label {
+    margin-bottom: 12px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails .strep_wrapper{
+    width:133px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure img{
+    width:25px;
+    height:25px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails .icic_label{
+    font-size: 14px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails .strep_wrapper .strep_content {
+    font-size: 12px;
+  }
+  .fdContents .fdDetails .value{
+    font-size: 12px;
+  }
+ 
+  .fdContents .fdDetails .label {
+    font-size: 14px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper{
+    padding: 12px 16px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post::after {
+    right:-16px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post_details::after{
+    right:-36px !important;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .rupee_content {
+    font-size: 16px;
+  }
+  .accountContainer .accountDetailsBox .loan_content{
+    margin-bottom: 16px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .ruppe_container.brd-top{
+    padding-top: 24px;
+    margin-top: 24px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper.fixed_deposit_second_wrapper{
+    margin-top: 20px;
+  }
+  .border_bottom_post_closure .list_Disclaimer{
+    font-size: 16px;
   }
   .accountDetailsBox_success {
     .all_done {
@@ -423,6 +554,70 @@
     }
   }
   .accountContainer .accountBox {
+    .right_side_data {
+      .ruppe_container {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        place-items: center;
+        margin-top: 16px;
+        &.second_check {
+          display: flex;
+          justify-content: space-between;
+          .finance_check {
+            display: flex;
+            .rupee_content_data {
+              display: flex;
+              flex-direction: column;
+              margin-left: 21px;
+            }
+          }
+        }
+        .paid_wrapper {
+          display: flex;
+          width: fit-content;
+          height: 24px;
+          border-radius: 5px;
+          &.remaining_amount {
+            display: flex;
+            white-space: nowrap;
+            background: #fff0bc;
+            color: #bd9400;
+            @include custom-font(12px, 500, 16px, 0.4px);
+          }
+          padding: 4px 8px;
+          border-color: #22c55e;
+          background: linear-gradient(0deg, #bef4d2, #bef4d2),
+            linear-gradient(0deg, #22c55e, #22c55e);
+          color: #17823e;
+
+          @include custom-font(12px, 500, 16px, 0.4px);
+          span {
+            img {
+              margin-right: 4px;
+              vertical-align: baseline;
+            }
+          }
+        }
+        .cardIcons_circle {
+          @include custom-width-height(37px, 37px);
+          background-color: $color_light_bg;
+          border-radius: 50%;
+          @include allCenter;
+          margin-bottom: 5px;
+
+          img {
+            @include custom-width-height(16.5px, 16.5px);
+          }
+        }
+        .rupee_content {
+          @include custom-font(14px, 600, 24px, 0.25px);
+          .loan_amount {
+            @include custom-font(12px, 400, 16px, 0.5px);
+          }
+        }
+      }
+    }
     .fdContents {
       .fdDetails {
         .value_success {
@@ -459,7 +654,7 @@
     .accountDetailsBox {
       .accountListContainer {
         .accountList .accountHolderDetails {
-          .single_account_circle{
+          .single_account_circle {
             @include custom-width-height(88px, 88px);
             background-color: $color_light_bg;
             border-radius: 50%;
@@ -562,8 +757,30 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountDetailsBox_post{
+    padding-bottom: 24px;
+
+  }
   .accountContainer .accountBox .fdContents.remove_margin {
     margin: 0;
+  }
+  .icic_label {
+    margin-bottom: 12px;
+  }
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post_details::after{
+    right: -141% !important;
+  }
+  .loan_amount{
+    @include custom-font(14px, 400, 16px, 0.4px);
+
+  }
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents
+    .fdDetails.fdDetails_mob_post::after {
+    right: -100%;
   }
   .buttonContainer_success {
     .themeRedBtn {
@@ -592,8 +809,79 @@
   .no_desktop_ipad {
     display: block;
   }
-  .accountContainer .accountBox .fdContents.with-border::after {
-    height: 60%;
+  .accountContainer .accountBox {
+    .right_side_data {
+      .ruppe_container {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        place-items: center;
+        margin-top: 16px;
+        .finance_check {
+          display: flex;
+          .rupee_content_data {
+            display: flex;
+            flex-direction: column;
+            margin-left: 21px;
+            .loan_amount{
+              @include custom-font(12px, 500, 16px, 0.4px);
+
+            }
+          }
+        }
+        &.second_check {
+          display: flex;
+          justify-content: space-between;
+         
+        }
+        .paid_wrapper {
+          display: flex;
+          width: fit-content;
+          height: 24px;
+          border-radius: 5px;
+          &.remaining_amount {
+            display: flex;
+            white-space: nowrap;
+            background: #fff0bc;
+            color: #bd9400;
+            @include custom-font(12px, 500, 16px, 0.4px);
+          }
+          padding: 4px 8px;
+          border-color: #22c55e;
+          background: linear-gradient(0deg, #bef4d2, #bef4d2),
+            linear-gradient(0deg, #22c55e, #22c55e);
+          color: #17823e;
+
+          @include custom-font(12px, 500, 16px, 0.4px);
+          span {
+            img {
+              margin-right: 4px;
+              vertical-align: baseline;
+            }
+          }
+        }
+        .cardIcons_circle {
+          @include custom-width-height(37px, 37px);
+          background-color: $color_light_bg;
+          border-radius: 50%;
+          @include allCenter;
+          margin-bottom: 5px;
+
+          img {
+            @include custom-width-height(16.5px, 16.5px);
+          }
+        }
+        .rupee_content {
+          @include custom-font(14px, 600, 24px, 0.25px);
+          .loan_amount {
+            @include custom-font(12px, 400, 16px, 0.5px);
+          }
+        }
+      }
+    }
+    .fdContents.with-border::after {
+      height: 60%;
+    }
   }
   .accountContainer .accountDetailsBox.accountDetailsBox_success_remove_margin {
     margin-top: 0;
@@ -641,13 +929,37 @@
       padding-top: 0;
       margin-top: 4px;
     }
+    .accountContainer
+      .accountDetailsBox
+      .right_side_data
+      .fixed_deposit_wrapper
+      .fdContents
+      .fdDetails
+      .icic_label {
+      @include custom-font(12px, 600, 24px, 0.25px);
+    }
     .accountBox {
       .content_settled {
         @include custom-font(12px, 400, 16px, 0);
         margin-bottom: 16px;
       }
       .fdContents {
+        &.fdContents_only_post {
+          flex-wrap: initial;
+        }
         .fdDetails {
+          .strep_wrapper {
+            width: fit-content;
+            height: 24px;
+            padding: 0px 8px;
+            border-radius: 8px;
+            background-color: #e3e5ea;
+            margin-bottom: 12px;
+            .strep_content {
+              @include custom-font(10px, 400, 14px, 0);
+              color: #6b7280;
+            }
+          }
           &.fdDetails_value {
             margin-bottom: 16px;
           }
@@ -757,10 +1069,56 @@
     margin-bottom: 24px;
     margin-top: 3px;
   }
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .ruppe_container.second_check {
+    place-items: flex-start;
+  }
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents
+    .value
+    img {
+    filter: unset;
+  }
+  .brd-top-post {
+    border-top: 1px solid #e8e8e8;
+    padding-top: 12px;
+  }
   .buttonContainer_success {
     .themeRedBtn {
       &.button_success_home {
         height: 40px;
+      }
+    }
+  }
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents.fdContents_only_post {
+    display: flex;
+    justify-content: space-between;
+  }
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents
+    .fdDetails {
+    .strep_wrapper {
+      width: fit-content;
+      height: 24px;
+      padding: 5px 14px;
+      border-radius: 8px;
+      background-color: #e3e5ea;
+      margin-bottom: 12px;
+      .strep_content {
+        @include custom-font(10px, 400, 14px, 0);
+        color: #6b7280;
       }
     }
   }
@@ -898,7 +1256,6 @@
     }
   }
   .fixedDepositDetailsData {
-    // margin-top: 24px;
     .details_fixed_deposit {
       padding: 14px 16px;
       background-color: $color_white;
@@ -1030,6 +1387,13 @@
     position: relative;
     margin-top: 0;
   }
+  .icic_label {
+    margin-bottom: 12px;
+    @include custom-font(12px, 600, 24px, 0.25px);
+  }
+  .strep_wrapper {
+    margin-bottom: 12px;
+  }
   .cardContainer_mobile_screen {
     margin-top: 12px;
     .fdDetailsBox_mobile_screen {
@@ -1081,8 +1445,10 @@
           text-align: center;
         }
       }
-
       .fdContents {
+        &.fdContents_only_post {
+          flex-wrap: initial;
+        }
         &.fdContents_mob_screen {
           flex-wrap: wrap;
         }
@@ -1090,6 +1456,22 @@
         .fdDetails {
           width: 50%;
           margin-bottom: 12px;
+          .icic_label {
+            @include custom-font(20px, 600, 24px, 0.15px);
+            margin-bottom: 12px;
+          }
+          .strep_wrapper {
+            width: fit-content;
+            height: 24px;
+            padding: 0px 8px;
+            border-radius: 8px;
+            background-color: #e3e5ea;
+            margin-bottom: 12px;
+            .strep_content {
+              @include custom-font(10px, 400, 14px, 0);
+              color: #6b7280;
+            }
+          }
           .label {
             @include custom-font(12px, 500, 16px, 0.25px);
             text-align: left;
@@ -1344,6 +1726,48 @@
           align-items: center;
           place-items: center;
           margin-top: 16px;
+          &.second_check {
+            display: flex;
+            justify-content: space-between;
+            .finance_check {
+              display: flex;
+              .rupee_content_data {
+                display: flex;
+                flex-direction: column;
+                margin-left: 21px;
+                .loan_amount {
+                  @include custom-font(12px, 400, 16px, 0);
+                  color: #231f20;
+                }
+              }
+            }
+          }
+          .paid_wrapper {
+            display: flex;
+            width: fit-content;
+            height: 24px;
+            border-radius: 5px;
+            &.remaining_amount {
+              display: flex;
+              white-space: nowrap;
+              background: #fff0bc;
+              color: #bd9400;
+              @include custom-font(12px, 500, 16px, 0.4px);
+            }
+            padding: 4px 8px;
+            border-color: #22c55e;
+            background: linear-gradient(0deg, #bef4d2, #bef4d2),
+              linear-gradient(0deg, #22c55e, #22c55e);
+            color: #17823e;
+
+            @include custom-font(12px, 500, 16px, 0.4px);
+            span {
+              img {
+                margin-right: 4px;
+                vertical-align: baseline;
+              }
+            }
+          }
           .cardIcons_circle {
             @include custom-width-height(37px, 37px);
             background-color: $color_light_bg;
@@ -1417,6 +1841,15 @@
   }
   .buttonContainer {
     width: 100%;
+  }
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents {
+    &.fdContents_only_post {
+      flex-wrap: initial;
+    }
   }
   .fdContents {
     flex-wrap: wrap;
@@ -1512,7 +1945,7 @@
   /******Renewal-Summary-Mobile-view end*******************/
   /******Renewal-Summary-Review-Mobile-view end*******************/
   .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
-    .single_account_circle{
+    .single_account_circle {
       @include custom-width-height(60px, 60px);
       background-color: $color_light_bg;
       border-radius: 50%;
@@ -1587,6 +2020,10 @@
       margin-bottom: 16px;
     }
     .fdContents {
+      display: flex;
+      justify-content: space-between;
+      place-items: baseline;
+      flex-direction: row;
       .fdDetails {
         &.fdDetails_value {
           margin-bottom: 16px;
