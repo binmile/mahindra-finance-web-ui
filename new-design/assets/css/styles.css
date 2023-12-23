@@ -2350,6 +2350,13 @@ button.resend_otp.disabled {
   .no_desktop_view {
     display: none;
   }
+  .accountHolderDetails {
+    position: relative;
+  }
+  .verifyBtn.verifyBtn_joint_account {
+    position: absolute;
+    right: 0;
+  }
   .accountContainer .bottomLightText_success {
     border-top: 1px solid #D6D6D6;
     padding-top: 24px;
@@ -2687,7 +2694,13 @@ button.resend_otp.disabled {
   .accountContainer .accountDetailsBox .accountListContainer .accountList.accountList_review {
     padding-bottom: 32px;
   }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .single_account_circle {
+    position: absolute;
+    right: 0;
+    top: 10px;
     width: 88px;
     height: 88px;
     background-color: #F3F4F6;
@@ -2823,7 +2836,32 @@ button.resend_otp.disabled {
   }
   /*----------renewal-form-desktop-UI--- end------------------------*/
 }
+@media only screen and (min-width: 1367px) and (max-width: 1399px) {
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .themeRedBtn.themeRedBtn_joint_account {
+    position: absolute;
+    right: 0;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .single_account_circle {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .verifyBtn.verifyBtn_joint_account {
+    position: absolute;
+    right: 0;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .themeRedBtn.themeRedBtn_joint_account {
+    position: absolute;
+    right: 0;
+  }
   .no_desktop_view {
     display: none;
   }
@@ -3080,8 +3118,32 @@ button.resend_otp.disabled {
   /*----------renewal-form-mini-desktop-UI--- end------------------------*/
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .single_account_circle {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .verifyBtn.verifyBtn_joint_account {
+    position: absolute;
+    right: 0;
+  }
+  .accountDetails {
+    margin-bottom: 5px;
+  }
   .accountDetailsBox_post {
     padding-bottom: 24px;
+  }
+  .accountDetailsBox .accountListContainer {
+    min-height: 0;
+  }
+  .accountBox .fdContents.fdContents_success {
+    margin-bottom: 24px;
+  }
+  .listTable .listTableBody .listTabledata .tableData {
+    font-size: 14px;
   }
   .accountContainer .accountBox .fdContents.remove_margin {
     margin: 0;
@@ -3377,6 +3439,24 @@ button.resend_otp.disabled {
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
+    margin-bottom: 0;
+  }
+  .accountDetails {
+    margin-bottom: 5px;
+  }
+  .accountHolderDetails .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+  }
+  .accountHolderDetails .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .single_account_circle {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  .accountHolderDetails .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .verifyBtn.verifyBtn_joint_account {
+    position: absolute;
+    right: 0;
+  }
   .cardContainer_mobileView {
     margin-bottom: 24px;
     margin-top: 3px;
@@ -4487,7 +4567,31 @@ button.resend_otp.disabled {
   .cardContainerMobile .first_active_data::after {
     right: -32px;
   }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .single_account_circle {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .verifyBtn.verifyBtn_joint_account {
+    position: absolute;
+    right: 0;
+  }
   /*********** Responsive dashboard View End*************/
+}
+@media only screen and (min-width: 375px) and (max-width: 393px) {
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content .accountType {
+    font-size: 12px;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    position: relative;
+  }
+  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .verifyBtn.verifyBtn_joint_account {
+    position: absolute;
+    right: 0;
+  }
 }
 .boldHeading {
   font-size: 20px;
