@@ -7,12 +7,12 @@
   .accountHolderDetails{
     position: relative;
   }
-  .verifyBtn{
-    &.verifyBtn_joint_account{
-      position: absolute;
-      right: 0;
-    }
-  }
+  // .verifyBtn{
+  //   &.verifyBtn_joint_account{
+  //     position: absolute;
+  //     right: 0;
+  //   }
+  // }
   .accountContainer {
     .bottomLightText_success {
       border-top: 1px solid $color_light_border;
