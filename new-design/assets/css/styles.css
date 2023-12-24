@@ -6003,6 +6003,9 @@ button.resend_otp.disabled {
   .mobChangeWidth .customChangeWidth {
     min-width: 72%;
   }
+  .customBtn {
+    padding: 0 12px;
+  }
 }
 .textparent {
   position: relative;
