@@ -632,7 +632,7 @@ label.showMoreBtn {
   @include custom-font(20px, 600, 24px, 0.15px);
 }
 .fdDetailsBox {
-  padding: 24px 32px 36px 32px;
+  padding: 24px 32px 16px 32px;
   .fdHeader {
     @include setDisplayProperty(flex, space-between, center);
     .fdTenure {
@@ -760,6 +760,7 @@ label.showMoreBtn {
   position: relative;
   overflow: hidden;
   height: auto;
+  background: linear-gradient(180deg, #EFF6FF 0%, rgba(239, 246, 255, 0) 100%);
   .cardLabelHeading {
     @include custom-font(20px, 600, 24px, 0.15px);
     margin-bottom: 16px;
@@ -780,8 +781,8 @@ label.showMoreBtn {
   img.newFdImage {
     position: absolute;
     top: auto;
-    right: -30px;
-    bottom: -40px;
+    right: 0px;
+    bottom: 0px;
   }
 }
 
@@ -806,7 +807,8 @@ label.showMoreBtn {
 .customChangeWidth {
   width: 49%;
   margin-right: 20px;
-  @include setDisplayProperty(inline-flex, center, center);
+  cursor: pointer;
+  @include setDisplayProperty(inline-flex, center, flex-start);
   &:last-child {
     margin-right: 0px;
   }
@@ -835,7 +837,8 @@ label.showMoreBtn {
       border-bottom: 1px solid $color_border;
       padding: 12px 0px;
       .fDListContent {
-        @include allCenter;
+        @include setDisplayProperty(flex, flex-start, center);
+        flex-start
         label {
           @include custom-font(16px, 500, 24px, normal);
         }
@@ -1010,6 +1013,36 @@ label.showMoreBtn {
           right: -50px;
         }
       }
+    }
+  }
+}
+
+.fdDetailsLists{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .fdDetails{
+    width: max-content;
+    padding: 0 12px;
+    margin-bottom: 20px;
+    &:nth-child(5n){
+      border-right: 0px;
+      padding-right: 0px;
+      &:after{
+          display: none;
+        }
+    }
+    &:nth-child(6n){
+      padding-left: 0px;
+    }
+    &:first-child{
+      padding-left: 0px;
+    }
+    &:last-child{
+      border-right: 0px;
+    }
+    &::after{
+      right: 0px;
     }
   }
 }
@@ -1435,7 +1468,27 @@ animation-name: slideInRightAnimation;
 }
 
 /************************Interest Rate Modal End*********************************/
-
+.linedMarked{
+  position: relative;
+  color: #D1D5DB;
+  border: 1px solid #E8E8E8 !important;
+  .lienMarkLabel{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: #F3F4F6;
+    padding: 4px 8px;
+    border-radius: 4px;
+    @include custom-font(10px, 400, 16px, 0.25px);
+    color: #6B7280;
+  }
+  img{
+    opacity: 0.3;
+  }
+  &:hover{
+    border-color: 1px solid #E8E8E8 !important;
+  }
+}
 @import "./265_css";
 @import "./147_css";
 @import "./renewal_css_265";
