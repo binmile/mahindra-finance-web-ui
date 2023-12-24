@@ -655,7 +655,7 @@ label.showMoreBtn {
   .fdInvestment {
     @include setDisplayProperty(flex, flex-start, flex-start, column);
     .bigText {
-      @include custom-font(28px, 600, 40px, 0.25px);
+      @include custom-font(24px, 600, 40px, 0.25px);
     }
     .lightText {
       @include custom-font(14px, 400, 24px, 0.25px);
@@ -1489,6 +1489,14 @@ animation-name: slideInRightAnimation;
     border-color: 1px solid #E8E8E8 !important;
   }
 }
+
+.otherAccountDetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  place-items: flex-end;
+}
+
 @import "./265_css";
 @import "./147_css";
 @import "./renewal_css_265";

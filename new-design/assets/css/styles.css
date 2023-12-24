@@ -1067,7 +1067,7 @@ label.showMoreBtn img {
   flex-direction: column;
 }
 .fdMainContent .fdInvestment .bigText {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 40px;
   letter-spacing: 0.25px;
@@ -2088,6 +2088,13 @@ button.resend_otp.disabled {
   border-color: 1px solid #E8E8E8 !important;
 }
 
+.otherAccountDetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  place-items: flex-end;
+}
+
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
@@ -2790,10 +2797,10 @@ button.resend_otp.disabled {
   }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content .accountType {
-    margin-left: 3px;
+    margin-left: 8px;
   }
   .accountContainer .accountDetailsBox .bottomText_review {
     margin-top: 17px;
@@ -4626,18 +4633,6 @@ button.resend_otp.disabled {
   .cardContainerMobile .first_active_data::after {
     right: -32px;
   }
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
-    position: relative;
-  }
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .single_account_circle {
-    position: absolute;
-    right: 0;
-    top: 25px;
-  }
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .verifyBtn.verifyBtn_joint_account {
-    position: absolute;
-    right: 0;
-  }
   /*********** Responsive dashboard View End*************/
 }
 @media only screen and (min-width: 375px) and (max-width: 393px) {
@@ -5647,6 +5642,13 @@ button.resend_otp.disabled {
   .navbar-expand-md .navbar-collapse {
     display: none !important;
     flex-basis: auto;
+  }
+  .fdMainContent .fdTenure {
+    display: flex;
+    justify-content: center;
+  }
+  .fdMainContent .fdTenure img {
+    width: 65%;
   }
 }
 @media screen and (min-width: 992px) {
