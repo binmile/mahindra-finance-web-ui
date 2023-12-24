@@ -1198,3 +1198,45 @@
         }
     }
 }
+
+@media screen and (min-width: 1366px) and (max-width: 1400px) {
+    .quickActionBox {
+        .quickActionTabs {
+             label{
+                width: 47%;
+             }
+          }
+    }
+}
+
+@media screen and (max-width: 1270px){
+    .fdDetailsLists{
+        .fdDetails{
+            padding: 0px;
+        }
+      }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1270px){
+    .fdMainContent{
+        .fdTenure{
+            &:before {
+                top: 3px;
+            }
+            &:after {
+                top: -3px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1140px) {
+    .mobChangeWidth{
+        margin-top: 20px;
+        overflow-x: auto;
+        width: 100%;
+        .customChangeWidth {
+            min-width: 72%;
+        }
+    }
+}
