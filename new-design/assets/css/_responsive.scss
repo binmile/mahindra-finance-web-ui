@@ -848,6 +848,15 @@
         display: none !important;
         flex-basis: auto;
     }
+    .fdMainContent {
+        .fdTenure {
+            display: flex;
+            justify-content: center;
+            img{
+            width: 65%;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 992px) {

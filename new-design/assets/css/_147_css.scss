@@ -398,9 +398,9 @@
               }
               .accountDetails_content {
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 .accountType {
-                  margin-left: 3px;
+                  margin-left: 8px;
                 }
               }
             }
@@ -2214,20 +2214,20 @@
       right: -32px;
     }
   }
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
-    position: relative;
-    .single_account_circle {
-      position: absolute;
-      right: 0;
-      top: 25px;
-    }
-    .verifyBtn{
-      &.verifyBtn_joint_account{
-        position: absolute;
-        right: 0;
-      }
-    }
-  }
+  // .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+  //   position: relative;
+  //   .single_account_circle {
+  //     position: absolute;
+  //     right: 0;
+  //     top: 25px;
+  //   }
+  //   .verifyBtn{
+  //     &.verifyBtn_joint_account{
+  //       position: absolute;
+  //       right: 0;
+  //     }
+  //   }
+  // }
   /*********** Responsive dashboard View End*************/
 }
 
