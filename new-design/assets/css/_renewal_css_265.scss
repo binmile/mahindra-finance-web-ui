@@ -16,7 +16,7 @@
 .renewalQuickActionBox .quickActionTabs label {
   @include setDisplayProperty(flex, center, center, column);
   position: relative;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 .renewalboxRadioButton {
@@ -200,7 +200,7 @@
 }
 
 .renewalContentContainer{
-  padding-bottom: 60px;
+  padding-bottom: 44px;
   position: relative;
   &::after{
     position: absolute;

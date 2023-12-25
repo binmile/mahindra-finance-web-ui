@@ -4688,7 +4688,7 @@ button.resend_otp.disabled {
   place-items: center;
   flex-direction: column;
   position: relative;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 .renewalboxRadioButton {
@@ -4894,7 +4894,7 @@ button.resend_otp.disabled {
 }
 
 .renewalContentContainer {
-  padding-bottom: 60px;
+  padding-bottom: 44px;
   position: relative;
 }
 .renewalContentContainer::after {
@@ -5658,6 +5658,69 @@ button.resend_otp.disabled {
   .bottomText {
     margin-top: 20px;
   }
+  .colBorder {
+    border-right: 0px;
+  }
+  .renewalContentContainer {
+    padding-bottom: 28px;
+  }
+  .renewalContentContainer:after {
+    display: none;
+  }
+  .renewalContentContainer .renewalQuickActionBox {
+    margin-left: 0px !important;
+  }
+  .renewalContentContainer .renewalQuickActionBox .quickActionLabel {
+    font-size: 12px !important;
+  }
+  .renewalContentContainer .renewalHeadCount {
+    display: none;
+  }
+  .rightSideSubHeading {
+    margin-left: 0px !important;
+  }
+  .rightSideSubHeading .renewalInputBoxContainer {
+    width: 100%;
+    margin-right: 0px;
+    justify-content: space-between;
+  }
+  .rightSideSubHeading .renewalInputBoxContainer .renewalInputBox {
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+  }
+  .rightSideSubHeading .renewalInputBoxContainer .renewalInputBox input {
+    width: 90% !important;
+  }
+  .SelectOptionsMainContainer .subHeading2 {
+    margin-left: 0px;
+  }
+  .renewalAccountDetailsBox {
+    border-bottom: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .renewalAccountDetailsBox .fixed_deposit_wrapper {
+    margin-bottom: 0px !important;
+  }
+  .renewalAccountDetailsBox .fixed_deposit_wrapper .fdDetails {
+    margin-bottom: 16px;
+  }
+  .renewalAccountDetailsBox .fixed_deposit_wrapper .fdDetails .rightIcon {
+    font-size: 14px;
+  }
+  .renewalAccountDetailsBox .fixed_deposit_wrapper .fdDetails:last-child {
+    margin-bottom: 0px;
+  }
+  .renewalboxRadioButton {
+    padding: 0px 16px 0px 8px !important;
+    height: 40px !important;
+  }
+  .renewalboxRadioButton:last-child {
+    margin-right: 0px !important;
+  }
+  .renewalboxRadioButton .boxRadioButtonYellowBadge img {
+    margin: 0px 2px 0px 0px !important;
+  }
 }
 @media only screen and (max-width: 450px) {
   .owl-carousel .owl-item img.newFdImage {
@@ -6017,6 +6080,26 @@ button.resend_otp.disabled {
 @media screen and (max-width: 1270px) {
   .fdDetailsLists .fdDetails {
     padding: 0px;
+  }
+  .renewalContentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .renewalContentContainer .rightSideSubHeading {
+    margin-left: 42px;
+  }
+  .renewalAccountDetailsBox .fdContents {
+    flex-direction: column;
+  }
+  .renewalAccountDetailsBox .fdContents .fdDetails {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .renewalAccountDetailsBox .fdContents .fdDetails::after {
+    display: none;
+  }
+  .renewalAccountDetailsBox .fdContents .fdDetails:last-child {
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1270px) {
