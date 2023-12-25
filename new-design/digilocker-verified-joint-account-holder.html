@@ -216,7 +216,7 @@
                                     </div>
                                     <div class="otherAccountDetails">
                                         <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons" /> Not found</div>
-                                        <button class="themeRedBtn customBtn"> Fetch from digilocker
+                                        <button class="themeRedBtn customBtn"  onclick="handleClickModal('digilockerModal')"> Fetch from digilocker
                                             <img src="./assets/img/arrow-right.svg" alt="icons" />
                                         </button>
                                     </div>
@@ -312,6 +312,26 @@
     </div>
 </div>
 <!-- OTP Modal End-->
+
+<div class="modal fade" id="digilockerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+                </button>
+                <div class="info-heading-container">
+                    <div class="info-heading-image"><img
+                            src="./assets/img/icons/redirect.svg"
+                            alt="icon" /></div>
+                            <div class="info-heading">Redirection</div>
+                        </div>
+                <div class="info-content">Details of the secondary account holder is needed to proceed for pre close request please proceed to authenticate details. </div>
+                <div class="info-button"><button type="button" class="themeRedBtn">Proceed</button></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- TermsConditionModal Start -->
 <div class="modal fade" id="TermsConditionModal" tabindex="-1" aria-hidden="true">
