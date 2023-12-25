@@ -1182,6 +1182,16 @@
                     display: none;
                 }
     }
+
+    .renewalAccountDetailsBox{
+        bottom: none;
+        border-top: 0px !important;
+        border-bottom: 0px !important;
+        margin: 0px !important;
+    }
+    #renewalRightSideWrapper {
+        padding: 16px 16px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1270px) {
