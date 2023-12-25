@@ -841,7 +841,73 @@
       .bottomText{
         margin-top: 20px;
       }
-}
+
+      .colBorder {
+        border-right: 0px;
+    }
+      .renewalContentContainer{
+        padding-bottom: 28px;
+        &:after{
+            display: none;
+        }
+        .renewalQuickActionBox{
+            margin-left: 0px !important;
+            .quickActionLabel{
+                font-size: 12px !important;
+            }
+        }
+        .renewalHeadCount{
+            display: none;
+        }
+        }
+        .rightSideSubHeading{
+            margin-left: 0px !important;
+            .renewalInputBoxContainer{
+                width: 100%;
+                margin-right: 0px;
+                justify-content: space-between;
+                .renewalInputBox {
+                    justify-content: flex-start;
+                    width: 100%;
+                    text-align: left;
+                    input{
+                        width: 90% !important;
+                    }
+                }
+            }
+        }
+        .SelectOptionsMainContainer .subHeading2{
+            margin-left: 0px;
+        }
+        .renewalAccountDetailsBox{
+            border-bottom: 0px !important;
+            margin-bottom: 0px !important;
+            .fixed_deposit_wrapper{
+                margin-bottom: 0px !important;
+                .fdDetails{
+                    margin-bottom: 16px;
+                    .rightIcon{
+                        font-size: 14px;
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .renewalboxRadioButton {
+            padding: 0px 16px 0px 8px !important;
+            height: 40px !important;
+            &:last-child{
+                margin-right: 0px !important;
+            }
+            .boxRadioButtonYellowBadge{
+                img{
+                    margin: 0px 2px 0px 0px !important;
+                }
+            }
+        }
+    }
 
 @media only screen and (max-width: $miniMobile) {
     .owl-carousel{
@@ -1240,6 +1306,30 @@
             padding: 0px;
         }
       }
+      .renewalContentContainer {
+        display: flex;
+        flex-direction: column;
+        .rightSideSubHeading{
+            margin-left: 42px;
+        }
+    }
+
+    .renewalAccountDetailsBox{
+        .fdContents {
+            flex-direction: column;
+            .fdDetails{
+                width: 100%;
+                margin-bottom: 16px;
+                &::after{
+                    display: none;
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1270px){
