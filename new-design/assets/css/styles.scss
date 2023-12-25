@@ -1010,7 +1010,7 @@ label.showMoreBtn {
         }
         &:after {
           background-color: $color_light_border;
-          right: -50px;
+          right: -33px;
         }
       }
     }
@@ -1119,7 +1119,7 @@ label.showMoreBtn {
   padding: 0 24px;
 }
 .bottomText {
-  @include setDisplayProperty(flex, flex-start, center);
+  @include setDisplayProperty(flex, flex-start, flex-start);
   color: $color_light_text;
   @include custom-font(14px, 400, 24px, 0.25px);
   .roundBackgroundIcon {
@@ -1495,6 +1495,35 @@ animation-name: slideInRightAnimation;
   display: flex;
   justify-content: space-between;
   place-items: flex-end;
+}
+
+.bankAccountDetails{
+  justify-content: flex-start;
+  .fdDetails{
+    width: 50%;
+    margin-bottom: 30px;
+    .value{
+      justify-content: flex-start;
+    }
+    &::after{
+      right: 25px !important;
+    }
+  }
+}
+
+.applicationTenureDetails{
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .fdDetails{
+    width: 12%;
+    margin: 0 32px 20px 32px;
+   &:first-child{
+    margin-left: 0px;
+   }
+   .value{
+    white-space: nowrap;
+   }
+  }
 }
 
 @import "./265_css";

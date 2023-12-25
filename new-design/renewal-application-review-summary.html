@@ -182,7 +182,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="fd_content_min_height">
+                    <!-- <div class="fd_content_min_height">
                         <div class="fdContents fdContents_renewal fdContents_success fdContents_mobile_tab">
                             <div class="fdDetails fdetails_review">
                               <div class="label">Tenure</div>
@@ -233,8 +233,40 @@
                               </div>
                             </div>
                           </div>
-                    </div>
-                  
+                    </div> -->
+                    <div class="fd_content_min_height">
+                      <div class="fdContents fdContents_success">
+                          <div class="fdDetails">
+                              <div class="label">Investment date </div>
+                              <div class="value">
+                                  <div class="roundBackgroundIcon">
+                                      <img src="./assets/img/icons/calendar-red-icon.svg" alt="icon">
+                                  </div> 12 Sept 2023
+                              </div>
+                          </div>
+                          <div class="fdDetails">
+                              <div class="label">Interest rate </div>
+                              <div class="value">
+                                  <div class="roundBackgroundIcon">
+                                      <img src="./assets/img/icons/preclosure-flow/percent-red.svg" alt="icon">
+                                  </div> 5.75%</div>
+                          </div>
+                          <div class="fdDetails">
+                              <div class="label">Interest amount </div>
+                              <div class="value">
+                                  <div class="roundBackgroundIcon">
+                                      <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
+                                  </div> ₹ 2,569</div>
+                          </div>
+                          <div class="fdDetails">
+                              <div class="label">Pre closure </div>
+                              <div class="value">
+                                  <div class="roundBackgroundIcon">
+                                      <img src="./assets/img/icons/calendar-red-icon.svg" alt="icon">
+                                  </div> Today</div>
+                          </div>
+                      </div>
+                  </div>
                     <div class="bottomLightText">
                       <span class="interest_rate">Rate of interest :</span> The
                       interest on the date of maturity of the FD R2022009D will
@@ -247,58 +279,24 @@
                     <div class="boldHeader">
                       Joint account holder verification required
                     </div>
-                    <div class="accountListContainer fdContents_success">
-                      <div class="accountList accountList_review">
-                        <div class="accountHolderDetails accountHolderDetails_review accountHolderDetails_remove">
-                          <div class="accountDetails">
-                            <div class="accountDetails_content">
-                              <div class="accountHolderName smallName">
-                                Vikram Sahu
-                              </div>
-                              <div class="accountType">
-                                (Primary account holder)
-                              </div>
-                            </div>
-
-                            <div class="accountMobile">
-                              <img
-                                src="./assets/img/icons/smartphone.svg"
-                                alt="icons"
-                              />
-                              9283393221
-                            </div>
-                          </div>
-                          <div class="verifyBtn verifyBtn_renewal verifyBtn_joint_account">
-                            <img
-                              src="./assets/img/icons/green-tick-verify-btn.svg"
-                              alt="verify"
-                            />
-                            <label>Verified</label>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="accountListContainer">
                       <div class="accountList">
-                        <div
-                          class="accountHolderDetails accountHolderDetails_renewal accountHolderDetails_review"
-                        >
-                          <div class="accountDetails accountDetails_renewal">
-                            <div class="accountDetails_content">
-                              <div class="accountHolderName smallName">
-                                Raman Kumar Sahu
-                              </div>
-                              <div class="accountType">
-                                (Joint account holder)
-                              </div>
+                        <div class="accountHolderDetails">
+                            <div class="accountHolderName smallName">Vikram Sahu <span class="accountType"> (Primary account holder)</span></div>
+                        </div>
+                        <div class="otherAccountDetails">
+                            <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons" /> 9283393221</div>
+                            <div class="verifyBtn">
+                                <img src="./assets/img/icons/green-tick-verify-btn.svg" alt="verify" /> <label>Verified</label>
                             </div>
-
-                            <div class="accountMobile">
-                              <img
-                                src="./assets/img/icons/smartphone.svg"
-                                alt="icons"
-                              />
-                              9282329343
-                            </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="accountList">
+                      <div class="accountHolderDetails">
+                          <div class="accountHolderName smallName">Raman Kumar Sahu<span class="accountType"> (Joint account holder)</span></div>
+                      </div>
+                      <div class="otherAccountDetails">
+                          <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons" /> 9282329343</div>
                           <button
                             class="themeRedBtn customBtn themeRedBtn_joint_account"
                             onclick="handleClickModal('myOTPModal')"
@@ -309,8 +307,8 @@
                               alt="icons"
                             />
                           </button>
-                        </div>
                       </div>
+                  </div>
                     </div>
                     <div class="bottomText bottomText_review">
                       <div class="roundBackgroundIcon">

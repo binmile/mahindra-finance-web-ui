@@ -7,12 +7,6 @@
   .accountHolderDetails{
     position: relative;
   }
-  // .verifyBtn{
-  //   &.verifyBtn_joint_account{
-  //     position: absolute;
-  //     right: 0;
-  //   }
-  // }
   .accountContainer {
     .bottomLightText_success {
       border-top: 1px solid $color_light_border;
@@ -297,14 +291,9 @@
       }
     }
     .renewal_wrapper_container {
-      width: 50%;
-
       .fdContents {
         &.fdContents_renewal {
           margin-top: 32px;
-        }
-        .fdDetails::after {
-          right: -17px;
         }
       }
     }

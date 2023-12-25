@@ -831,6 +831,16 @@
               }
           }
     }
+
+    .applicationTenureDetails{
+        .fdDetails{
+          width: 50%;
+          margin: 0 0px 0px 0px;
+        }
+      }
+      .bottomText{
+        margin-top: 20px;
+      }
 }
 
 @media only screen and (max-width: $miniMobile) {
@@ -1251,4 +1261,10 @@
     .customBtn {
         padding: 0 12px;
     }
+    .applicationTenureDetails{
+        .fdDetails{
+          width: 18%;
+          margin: 0 24px 20px 24px;
+        }
+      }
 }
