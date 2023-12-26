@@ -316,3 +316,36 @@ function handleClickHideQuickAction(){
 }
 
 /*****************quick-actions BMT-147 ******************/
+
+
+
+function validateAmount1() {
+    var account_number = document.getElementById("amount_number1").value;
+    if (account_number < 5000) {
+        document.getElementById("amount_number1").style.border = "1px solid red";
+        document.getElementById("errorInfoFd1").style.color = "red"
+    } else{
+        document.getElementById("amount_number1").style.border = "1px solid #ced4da";
+        document.getElementById("errorInfoFd1").style.color = "#6B7280"
+    }
+}
+function validateAmount2() {
+    var account_number = document.getElementById("amount_number2").value;
+    if (account_number < 150000) {
+        document.getElementById("amount_number2").style.border = "1px solid red";
+        document.getElementById("errorInfoFd2").style.color = "red"
+    } else{
+        document.getElementById("amount_number2").style.border = "1px solid #ced4da";
+        document.getElementById("errorInfoFd2").style.color = "#6B7280"
+    }
+}
+function validateAmount3() {
+    var account_number = document.getElementById("amount_number3").value;
+    if (account_number < 26000) {
+        document.getElementById("amount_number3").style.border = "1px solid red";
+        document.getElementById("errorInfoFd3").style.color = "red"
+    } else{
+        document.getElementById("amount_number3").style.border = "1px solid #ced4da";
+        document.getElementById("errorInfoFd3").style.color = "#6B7280"
+    }
+}
