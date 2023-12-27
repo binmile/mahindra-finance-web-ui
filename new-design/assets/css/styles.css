@@ -6756,6 +6756,197 @@ p.notifiy {
     display: none;
   }
 }
+.br-1::after {
+  height: 83%;
+}
+
+.br-1::before {
+  bottom: 54px;
+}
+
+.fixed_loan {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.accountMobile img {
+  width: 20px;
+  height: 20px;
+  vertical-align: sub;
+}
+
+.boldHeader-bottom-margin p.small-text_lfd {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+.boldHeader-bottom-margin.boldHeader_lfd {
+  margin-bottom: 16px;
+}
+
+.roundBackgroundIcon.roundBackgroundIcon_lfd {
+  background-color: #F3F4F6;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-right: 13px;
+}
+.roundBackgroundIcon.roundBackgroundIcon_lfd img {
+  width: 20px;
+  height: 20px;
+}
+
+.termsConditionsContainer_lfd {
+  padding-top: 10px;
+}
+
+p.notify_lfd {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.roundBackgroundIcon_ {
+  margin-right: 8px;
+}
+.roundBackgroundIcon_ img {
+  width: 20px;
+  height: 20px;
+}
+
+.boldName {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.bold_name_not_found {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.light_text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #6B7280;
+}
+
+.accountType_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #6B7280;
+}
+
+.accountMobile_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #6B7280;
+}
+.accountMobile_text img {
+  opacity: 0.6;
+}
+
+.percentage_value {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  background-color: #BEF4D2;
+  border-radius: 8px;
+  padding: 3px 7px;
+  margin-left: 4px;
+  color: #17823E;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .no_mobile_view {
+    display: none;
+  }
+  .no_desktop_view {
+    display: block;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .otherAccountDetails_lfd {
+    display: initial;
+  }
+  .section-parent {
+    padding: 16px;
+  }
+  .margin_for_found {
+    margin: 8px 0 16px 0;
+  }
+  .percentage_value {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+  }
+  .section-parent .label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .value {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .fixed_loan {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .boldHeader-bottom-margin p.small-text_lfd {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .fdDetails_value {
+    margin-bottom: 16px;
+  }
+  .no_mobile_view {
+    display: none;
+  }
+  .accountContainer.accountContainer_lfd {
+    padding: 12px 16px 16px 16px;
+  }
+  .accountContainer .accountDetailsBox.no_margin {
+    margin: 8px 0;
+  }
+  .section-parent {
+    margin-bottom: 16px;
+  }
+  .section-parent p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+  }
+}
 #req_per_page {
   display: none;
 }/*# sourceMappingURL=styles.css.map */
