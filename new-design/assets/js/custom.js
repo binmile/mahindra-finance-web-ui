@@ -136,7 +136,7 @@ function checkboxTandC(){
 function openSucessToast(){
     var element = document.getElementById("sucessToastMessage");
     element.classList.add('show');
-    setTimeout(function(){ element.classList.remove('show'); }, 3000);
+    setTimeout(function(){ element.classList.remove('show'); }, 4000);
 }
 /*****************body toggle BMT-147 ******************/
  function toggle_data_dashboard(onclickId,elementId) {
