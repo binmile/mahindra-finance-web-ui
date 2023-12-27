@@ -3142,8 +3142,7 @@ button.resend_otp.disabled {
     font-size: 10px;
   }
   .accountContainer .accountBox .fdContents .fdDetails::after {
-    position: initial;
-    gap: 10px;
+    position: absolute;
   }
   /*----------renewal-form-mini-desktop-UI--- start------------------------*/
   .bankDetailsMainContainer .bottomContentBox.bottomContentBox_renewal_form {
@@ -6790,6 +6789,11 @@ p.notifiy {
   margin-bottom: 16px;
 }
 
+.boldHeaderFd {
+  display: flex;
+  align-items: center;
+}
+
 .roundBackgroundIcon.roundBackgroundIcon_lfd {
   background-color: #F3F4F6;
   width: 32px;
@@ -6877,6 +6881,31 @@ p.notify_lfd {
   color: #17823E;
 }
 
+.accordion-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #231f20;
+}
+
+.accordion-body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .fdDetails.fdDetails_porify::after {
+    right: 7px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .accountContainer .accountBox .fdContents .fdDetails::after {
+    right: -20px;
+  }
+}
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .no_mobile_view {
     display: none;
@@ -6888,6 +6917,9 @@ p.notify_lfd {
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .otherAccountDetails_lfd {
     display: initial;
+  }
+  .fdDetails_value.fdDetails_porify {
+    margin-bottom: 0;
   }
   .section-parent {
     padding: 16px;
