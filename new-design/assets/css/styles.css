@@ -1766,6 +1766,10 @@ button.resend_otp.disabled {
 }
 
 /********************Single Account Page End******************/
+.edit_img {
+  text-decoration: none;
+}
+
 /*********Pagination Start**********************/
 .customPagination {
   display: none;
@@ -5723,6 +5727,16 @@ button.resend_otp.disabled {
   }
   .modal-dialog {
     max-width: 100%;
+  }
+  .list_Disclaimer {
+    margin-top: 16px;
+  }
+  .list_Disclaimer ul {
+    margin-top: 8px;
+    padding-left: 18px;
+  }
+  .list_Disclaimer ul li {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 450px) {

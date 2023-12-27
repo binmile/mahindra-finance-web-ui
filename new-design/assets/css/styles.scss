@@ -1182,7 +1182,9 @@ button.resend_otp.disabled {
   margin-top: 12px;
 }
 /********************Single Account Page End******************/
-
+.edit_img{
+  text-decoration: none;
+}
 /*********Pagination Start**********************/
 .customPagination {
     @include setDisplayProperty(none, center, flex-end);
@@ -1217,21 +1219,6 @@ button.resend_otp.disabled {
       a.page_active{
         color: $color_red;
       }
-        // ul{
-        //     list-style: none;
-        //     padding: 0;
-        //     @include allCenter;
-        //     margin-bottom: 0;
-        //     li{
-        //         display: inline-block;
-        //         width: 40px;
-        //         cursor: pointer;
-        //         text-align: center;
-        //         &.active{
-        //             color: $color_red;
-        //         }
-        //     }
-        // }
     }
 }
 /*********Pagination End**********************/
