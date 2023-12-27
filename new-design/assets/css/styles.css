@@ -6820,6 +6820,10 @@ p.notify_lfd {
   letter-spacing: 0.25px;
 }
 
+.border-right-data {
+  border-right: 1px solid #D6D6D6;
+}
+
 .roundBackgroundIcon_ {
   margin-right: 8px;
 }
@@ -6901,14 +6905,55 @@ p.notify_lfd {
     right: 7px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  .br-1::before {
+    bottom: 86px;
+  }
+  .br-1::after {
+    height: 77%;
+  }
+  .section-parent {
+    padding: 16px;
+  }
+  .value.custvalue {
+    font-size: 14px;
+  }
+  .roundBackgroundIcon_ img {
+    width: 15px;
+    height: 15px;
+  }
+  .percentage_value {
+    font-size: 10px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .accountContainer .accountBox .fdContents .fdDetails::after {
     right: -20px;
+  }
+  .section-parent {
+    padding: 16px;
+  }
+  .value.custvalue {
+    font-size: 9px;
+  }
+  .roundBackgroundIcon_ img {
+    width: 15px;
+    height: 15px;
+  }
+  .percentage_value {
+    font-size: 8px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .no_mobile_view {
     display: none;
+  }
+  .accountDetailsBox.accountDetailsBox2.accountDetailsBox_lfd {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .fdContents.fdContents_lfd {
+    margin-bottom: 12px;
   }
   .no_desktop_view {
     display: block;
@@ -6918,8 +6963,45 @@ p.notify_lfd {
   .otherAccountDetails_lfd {
     display: initial;
   }
-  .fdDetails_value.fdDetails_porify {
+  .accountDetailsBox.accountDetailsBox2.accountDetailsBox_lfd {
+    border-bottom: none;
     margin-bottom: 0;
+  }
+  .fdDetails_value {
+    margin-bottom: 0px;
+  }
+  .boldHeader {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .boldHeaderFd {
+    margin-bottom: 12px !important;
+  }
+  .card-section {
+    padding: 12px 16px 16px 16px;
+  }
+  .card-section-2FD {
+    padding: 12px 18px 16px 18px !important;
+  }
+  .custHeader {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+  .accordion-button {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
+  .accordion-body {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
   }
   .section-parent {
     padding: 16px;
@@ -6956,9 +7038,6 @@ p.notify_lfd {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0;
-  }
-  .fdDetails_value {
-    margin-bottom: 16px;
   }
   .no_mobile_view {
     display: none;
