@@ -79,11 +79,11 @@ p {
 }
 .percentage_value {
     @include custom-font(14px, 500, 20px, 0);
-    background-color: #BEF4D2;
+    background-color: $color_light_green;
     border-radius: 8px;
     padding: 3px 7px;
     margin-left: 4px;
-    color: #17823E;
+    color: $color_green_dark;
   }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .no_mobile_view {
