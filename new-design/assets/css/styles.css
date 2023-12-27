@@ -927,6 +927,9 @@ label.showMoreBtn img {
   letter-spacing: 1.25px;
   padding: 0 50px;
 }
+.modal .modal-content .modal-body .info-button button.customPd {
+  padding: 0 26px;
+}
 
 /***************Modal End**************************/
 /********************Preclosure FD Start******************/
@@ -2192,10 +2195,14 @@ button.resend_otp.disabled {
   gap: 20px;
 }
 
-#themeWhiteButton {
-  border: 1px solid #E31837;
-  color: #E31837;
-  background-color: #FFFFFF;
+.themeWhiteButton {
+  border: 1px solid #E31837 !important;
+  color: #E31837 !important;
+  background-color: #FFFFFF !important;
+}
+.themeWhiteButton:hover {
+  color: #E31837 !important;
+  background-color: #F3F4F6 !important;
 }
 
 .bankDetailsMainContainer {
@@ -4761,6 +4768,7 @@ button.resend_otp.disabled {
 
 .rightSideSubHeading .subHeadingContainer {
   display: flex;
+  margin-bottom: 8px;
 }
 .rightSideSubHeading .subHeadingContainer .subHeading {
   font-size: 14px;

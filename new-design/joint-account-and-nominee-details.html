@@ -408,7 +408,9 @@
             </div>
             <div class="col col-md-12 animate__animated animate__fadeInUp">
                 <div class="buttonContainer">
-                    <button class="btn themeRedBtn" id="continueButton"> Continue
+                    <button class="btn themeRedBtn themeWhiteButton me-3"> Cancel
+                        <img src="./assets/img/icons/minus-circle.svg" alt="icons" /></button>
+                    <button class="btn themeRedBtn" id="continueButton" onclick="handleClickModal('isModifyNomineeModal')"> Modify
                         <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
                 </div>
             </div>
@@ -526,6 +528,51 @@
         </div>
     </div>
     <!--Modal End-->
+
+    <div class="modal fade" id="isModifyNomineeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+              </button>
+              <div class="info-heading-container">
+                <div class="info-heading-image">
+                  <img
+                    src="./assets/img/icons/info-button-icon.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info-heading">Are you sure ?</div>
+              </div>
+              <div class="info-content">
+                This action will close your existing renewal plan on this fixed deposit. Please confirm if you wish to proceed with cancelation.
+              </div>
+              <div class="info-button-container">
+                <div class="info-button w-100">
+                  <button
+                    type="button"
+                    class="btn themeRedBtn themeWhiteButton w-100 customPd"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No
+                  </button>
+                </div>
+                <div class="info-button w-100">
+                  <button type="button" class="themeRedBtn w-100 customPd">Yes, cancel renewal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>

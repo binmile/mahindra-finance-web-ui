@@ -9,11 +9,14 @@
   gap: 20px;
 }
 
-#themeWhiteButton {
-  border: 1px solid $color_red;
-  color: $color_red;
-  background-color: $color_white;
-
+.themeWhiteButton {
+  border: 1px solid $color_red !important;
+  color: $color_red !important;
+  background-color: $color_white !important;
+  &:hover{
+    color: $color_red !important;
+    background-color: $color_light_bg !important;
+  }
 }
 
 .bankDetailsMainContainer {
