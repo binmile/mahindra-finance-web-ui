@@ -99,13 +99,15 @@ ul.customeul {
 margin-bottom: 17px;}
 
 ul.custliststyle :before {
-    height: 8px;
-    width: 8px;
-    background: #231F20;
+    height: 6px;
+    width: 6px;
+    background: #6B7280;
     content: "";
     display: inline-block;
     transform: rotate(45deg);
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 12px;
+    margin-bottom: 3px;
 }
 ul.custliststyle{
   list-style: none;

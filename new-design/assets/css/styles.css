@@ -2128,6 +2128,55 @@ button.resend_otp.disabled {
   white-space: nowrap;
 }
 
+.roundWhiteBackgroundIcon {
+  background-color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.borderContainer {
+  border: 1px solid #D6D6D6;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.subHeading {
+  color: #231F20;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.accountContainer_success .heading_success {
+  margin-bottom: 12px !important;
+}
+.accountContainer_success .fdContents {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.topBorder {
+  border-top: 1px solid #D6D6D6;
+  padding-top: 20px;
+}
+
+.listItems ul {
+  margin-bottom: 0px;
+}
+.listItems ul li {
+  color: #6B7280;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
@@ -2769,6 +2818,8 @@ button.resend_otp.disabled {
   }
   .accountBox .heading_success {
     margin-bottom: 8px;
+    display: flex;
+    place-items: center;
   }
   .accountBox .content_settled {
     font-size: 14px;
@@ -5737,6 +5788,19 @@ button.resend_otp.disabled {
   .list_Disclaimer ul li {
     font-size: 13px;
   }
+  .accountContainer_success .heading_success {
+    display: flex;
+    place-items: center;
+  }
+  .listItems ul li {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 20px;
+  }
+  ul.custliststyle :before {
+    margin-left: -22px !important;
+    margin-bottom: 0px !important;
+  }
 }
 @media only screen and (max-width: 450px) {
   .owl-carousel .owl-item img.newFdImage {
@@ -6261,13 +6325,15 @@ ul.customeul {
 }
 
 ul.custliststyle :before {
-  height: 8px;
-  width: 8px;
-  background: #231F20;
+  height: 6px;
+  width: 6px;
+  background: #6B7280;
   content: "";
   display: inline-block;
   transform: rotate(45deg);
-  margin-right: 20px;
+  margin-left: 5px;
+  margin-right: 12px;
+  margin-bottom: 3px;
 }
 
 ul.custliststyle {
