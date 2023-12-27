@@ -6848,6 +6848,18 @@ p.notify_lfd {
   opacity: 0.6;
 }
 
+.percentage_value {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  background-color: #BEF4D2;
+  border-radius: 8px;
+  padding: 3px 7px;
+  margin-left: 4px;
+  color: #17823E;
+}
+
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .no_mobile_view {
     display: none;
@@ -6860,8 +6872,29 @@ p.notify_lfd {
   .otherAccountDetails_lfd {
     display: initial;
   }
+  .section-parent {
+    padding: 16px;
+  }
   .margin_for_found {
     margin: 8px 0 16px 0;
+  }
+  .percentage_value {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+  }
+  .section-parent .label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .value {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
   }
   .fixed_loan {
     font-size: 16px;

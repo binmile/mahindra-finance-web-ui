@@ -77,20 +77,40 @@ p {
     opacity: 0.6;
   }
 }
+.percentage_value {
+    @include custom-font(14px, 500, 20px, 0);
+    background-color: #BEF4D2;
+    border-radius: 8px;
+    padding: 3px 7px;
+    margin-left: 4px;
+    color: #17823E;
+  }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .no_mobile_view {
     display: none;
   }
- .no_desktop_view{
+  .no_desktop_view {
     display: block;
- }
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .otherAccountDetails_lfd {
     display: initial;
   }
+  .section-parent {
+    padding: 16px;
+  }
   .margin_for_found {
     margin: 8px 0 16px 0;
+  }
+  .percentage_value {
+    @include custom-font(9px, 400, 14px, 0);
+  }
+  .section-parent .label {
+    @include custom-font(12px, 500, 20px, 0.25px);
+  }
+  .value {
+    @include custom-font(10px, 500, 20px, 0.25px);
   }
   .fixed_loan {
     @include custom-font(16px, 600, 24px, 0.15px);
