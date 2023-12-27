@@ -334,6 +334,8 @@
     }
     .heading_success {
       margin-bottom: 8px;
+      display: flex;
+      place-items: center;
     }
     .content_settled {
       @include custom-font(14px, 400, 24px, 0.25px);
