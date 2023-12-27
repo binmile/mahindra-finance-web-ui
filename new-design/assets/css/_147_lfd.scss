@@ -147,25 +147,6 @@ p {
     font-size: 8px;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 991px) {
-  .no_mobile_view {
-    display: none;
-  }
-  .accountDetailsBox.accountDetailsBox2{
-    &.accountDetailsBox_lfd{
-      border-bottom: none;
-      margin-bottom: 0;
-    }
-  }
-  .fdContents {
-    &.fdContents_lfd {
-      margin-bottom: 12px;
-    }
-  }
-  .no_desktop_view {
-    display: block;
-  }
-}
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .otherAccountDetails_lfd {
     display: initial;
