@@ -550,6 +550,9 @@ label.showMoreBtn {
           @include custom-font(14px, 700, 16px, 1.25px);
           padding: 0 50px;
         }
+        button.customPd{
+          padding: 0 26px;
+        }
       }
     }
   }

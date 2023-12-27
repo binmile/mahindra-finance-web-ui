@@ -927,6 +927,9 @@ label.showMoreBtn img {
   letter-spacing: 1.25px;
   padding: 0 50px;
 }
+.modal .modal-content .modal-body .info-button button.customPd {
+  padding: 0 26px;
+}
 
 /***************Modal End**************************/
 /********************Preclosure FD Start******************/
