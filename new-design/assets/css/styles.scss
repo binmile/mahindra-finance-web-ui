@@ -1513,6 +1513,57 @@ animation-name: slideInRightAnimation;
   }
 }
 
+.roundWhiteBackgroundIcon {
+  background-color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 50%;
+  @include allCenter;
+}
+.borderContainer{
+  border: 1px solid #D6D6D6;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.subHeading{
+  color: #231F20;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.accountContainer_success{
+  .heading_success{
+    margin-bottom: 12px !important;
+  }
+  .fdContents{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+.topBorder{
+  border-top: 1px solid #D6D6D6;
+  padding-top: 20px;
+}
+
+.listItems{
+  ul{
+    margin-bottom: 0px;
+    li{
+      color: #6B7280;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+
 @import "./265_css";
 @import "./147_css";
 @import "./renewal_css_265";
