@@ -1,6 +1,9 @@
 .boldHeaderFd{
     margin-bottom: 16px !important;
 }
+.buttonContainerFD{
+    display: none !important;
+}
 .formControlFd{
     height: 44px;
 }
@@ -10,6 +13,8 @@
 }
 
 .card-section-2FD{
+    display: block;
+    background: linear-gradient(180deg, #EFF6FF 0%, rgba(239, 246, 255, 0) 100%) !important;
     padding: 24px 32px !important;
     position: relative;
 }
@@ -28,25 +33,45 @@
 .showMoreBtnFD{
     display: none;
 }
-.card-section-2 {
-    display: block;
-  }
+.accountMobileFD img{
+    height: 20px;
+    width: 20px;
+}
+.accountMobileFD{
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+}
+.boldHeaderHide{
+    display: none !important;
+}
+.custHeaderFD{
+    margin-top: 0 !important;
+}
+.card-sectionFD{
+    box-shadow: 0px 4px 10px 0px #0000000F !important;
+    box-shadow: 0px 2px 6px 0px #0000000F !important;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .smallNameFD {
+          font-size: 12px !important;
+    }
+    .buttonContainerFD{
+        display: block !important;
+    }
+    .accountDetailsBoxFD{
+        padding: 16px !important;
+    }
+    .accountHolderContainerFD{
+        flex-direction: row !important;
+    }
     .card-section-2FD{
         display: block !important;
     }
-    .card-section-2 {
-        display: block;
-      }
-    .boldHeaderHide{
+    .owl-carouselFD{
         display: none !important;
-    }
-    .owl-carousel{
-        display: none !important;
-    }
-    .custHeader{
-        margin-top: 0 !important;
     }
     .showLessBtnFD{
         display: none;

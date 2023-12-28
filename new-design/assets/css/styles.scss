@@ -359,9 +359,10 @@ nav {
       }
     }
   }
-  .showMoreBtn {
-    @include moreDataList(flex);
-  }
+}
+
+.showMoreBtn {
+  @include moreDataList(flex);
 }
 
 #expend {
@@ -550,6 +551,9 @@ label.showMoreBtn {
           @include custom-font(14px, 700, 16px, 1.25px);
           padding: 0 50px;
         }
+        button.customPd{
+          padding: 0 26px;
+        }
       }
     }
   }
@@ -632,7 +636,7 @@ label.showMoreBtn {
   @include custom-font(20px, 600, 24px, 0.15px);
 }
 .fdDetailsBox {
-  padding: 24px 32px 36px 32px;
+  padding: 24px 32px 16px 32px;
   .fdHeader {
     @include setDisplayProperty(flex, space-between, center);
     .fdTenure {
@@ -655,7 +659,7 @@ label.showMoreBtn {
   .fdInvestment {
     @include setDisplayProperty(flex, flex-start, flex-start, column);
     .bigText {
-      @include custom-font(28px, 600, 40px, 0.25px);
+      @include custom-font(24px, 600, 40px, 0.25px);
     }
     .lightText {
       @include custom-font(14px, 400, 24px, 0.25px);
@@ -760,6 +764,7 @@ label.showMoreBtn {
   position: relative;
   overflow: hidden;
   height: auto;
+  background: linear-gradient(180deg, #EFF6FF 0%, rgba(239, 246, 255, 0) 100%);
   .cardLabelHeading {
     @include custom-font(20px, 600, 24px, 0.15px);
     margin-bottom: 16px;
@@ -780,8 +785,8 @@ label.showMoreBtn {
   img.newFdImage {
     position: absolute;
     top: auto;
-    right: -30px;
-    bottom: -40px;
+    right: 0px;
+    bottom: 0px;
   }
 }
 
@@ -806,7 +811,8 @@ label.showMoreBtn {
 .customChangeWidth {
   width: 49%;
   margin-right: 20px;
-  @include setDisplayProperty(inline-flex, center, center);
+  cursor: pointer;
+  @include setDisplayProperty(inline-flex, center, flex-start);
   &:last-child {
     margin-right: 0px;
   }
@@ -835,7 +841,8 @@ label.showMoreBtn {
       border-bottom: 1px solid $color_border;
       padding: 12px 0px;
       .fDListContent {
-        @include allCenter;
+        @include setDisplayProperty(flex, flex-start, center);
+        flex-start
         label {
           @include custom-font(16px, 500, 24px, normal);
         }
@@ -1007,9 +1014,39 @@ label.showMoreBtn {
         }
         &:after {
           background-color: $color_light_border;
-          right: -50px;
+          right: -33px;
         }
       }
+    }
+  }
+}
+
+.fdDetailsLists{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .fdDetails{
+    width: max-content;
+    padding: 0 12px;
+    margin-bottom: 20px;
+    &:nth-child(5n){
+      border-right: 0px;
+      padding-right: 0px;
+      &:after{
+          display: none;
+        }
+    }
+    &:nth-child(6n){
+      padding-left: 0px;
+    }
+    &:first-child{
+      padding-left: 0px;
+    }
+    &:last-child{
+      border-right: 0px;
+    }
+    &::after{
+      right: 0px;
     }
   }
 }
@@ -1086,7 +1123,7 @@ label.showMoreBtn {
   padding: 0 24px;
 }
 .bottomText {
-  @include setDisplayProperty(flex, flex-start, center);
+  @include setDisplayProperty(flex, flex-start, flex-start);
   color: $color_light_text;
   @include custom-font(14px, 400, 24px, 0.25px);
   .roundBackgroundIcon {
@@ -1149,7 +1186,9 @@ button.resend_otp.disabled {
   margin-top: 12px;
 }
 /********************Single Account Page End******************/
-
+.edit_img{
+  text-decoration: none;
+}
 /*********Pagination Start**********************/
 .customPagination {
     @include setDisplayProperty(none, center, flex-end);
@@ -1184,21 +1223,6 @@ button.resend_otp.disabled {
       a.page_active{
         color: $color_red;
       }
-        // ul{
-        //     list-style: none;
-        //     padding: 0;
-        //     @include allCenter;
-        //     margin-bottom: 0;
-        //     li{
-        //         display: inline-block;
-        //         width: 40px;
-        //         cursor: pointer;
-        //         text-align: center;
-        //         &.active{
-        //             color: $color_red;
-        //         }
-        //     }
-        // }
     }
 }
 /*********Pagination End**********************/
@@ -1273,19 +1297,284 @@ button.resend_otp.disabled {
   animation-delay: 2s;
 }
 
-.slideInRight{
+.slideInRightAnimation{
 animation-duration: 2s;
-animation-name: slideInRight;
+animation-name: slideInRightAnimation;
 }
+
+.mobChangeWidth{
+  display: flex;
+}
+
+/***********************Interest Rate Modal start**********************************/
+#interestRateModal{
+  .modal-header{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #231F20;
+    text-align: center;
+    display: block;
+    position: relative;
+    .info-heading-container{
+      display: flex;
+      justify-content: center;
+      place-items: center;
+      color: #FFFFFF;
+      @include custom-font(20px, 600, 24px, 0.15px);
+      img{
+        margin-right: 8px;
+      }
+    }
+    button{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+  .modal-body{
+    background-color: #F3F4F6;
+    padding: 0px;
+    .info-heading-container{
+      padding: 12px;
+      .info-heading-image{
+        background-color: #FFFFFF;
+        width: 24px;
+        height: 24px;
+      }
+      .info-heading{
+        @include custom-font(16px, 700, 24px, normal);
+        color:#231F20;
+      }
+    }
+
+    .interestRateTable{
+      table{
+        border: 1px solid #D6D6D6;
+        td{
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+      }
+      .wd-150{
+        width: 150px;
+        border: none;
+        display: contents;
+        table{
+          border: 0px;
+        }
+      }
+      .custom-height-103{
+        height: 103px;
+      }
+      .wd-40{
+        width: 40%;
+      }
+      .wd-60{
+        width: 60%;
+      }
+      .border-right{
+        border-right: 1px solid #D6D6D6;
+      }
+      .border-left{
+        border-left: 1px solid #D6D6D6;
+      }
+      .border-bottom{
+        border-bottom: 1px solid #D6D6D6;
+      }
+      .border-top{
+        border-top: 1px solid #D6D6D6;
+      }
+      .table-text-bold{
+        @include custom-font(14px, 700, 20px, normal);
+      }
+      .table-text-medium{
+        @include custom-font(14px, 500, 20px, normal);
+      }
+      .border-none{
+        border: 0px;
+      }
+      .darkBackground{
+        background-color: #F3F4F6 !important;
+      }
+    }
+  }
+  .modal-footer{
+    padding: 0;
+    border-top: 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    .disclaimer{
+      @include custom-font(14px, 500, 20px, normal);
+      color: #6B7280;
+      text-align: center;
+      width: 100%;
+      padding: 16px;
+    }
+    .disclaimerfooter{
+      @include custom-font(14px, 500, 20px, normal);
+      color: #EF4444;
+      background-color: #F3F4F6;
+      text-align: center;
+      width: 100%;
+      padding: 16px;
+      margin: 0;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      span{
+        font-weight: 700;
+      }
+    }
+  }
+  .responsiveTable{
+    max-width: 800px;
+    overflow-x: auto;
+}
+  .interestRateTable{
+    position: relative;
+    overflow: auto;
+    white-space: nowrap;
+    .sticky-col {
+        position: -webkit-sticky;
+        position: sticky;
+        background-color: white !important;
+      }
+      .first-col {
+        width: 165px;
+        min-width: 165px;
+        max-width: 165px;
+        left: 0px;
+      }
+      .sec-col{
+        max-width: 380px;
+        min-width: 380px;
+      }
+      .thrd-col{
+        max-width: 475px;
+        min-width: 475px;
+      }
+  }
+}
+
+/************************Interest Rate Modal End*********************************/
+.linedMarked{
+  position: relative;
+  color: #D1D5DB;
+  border: 1px solid #E8E8E8 !important;
+  .lienMarkLabel{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: #F3F4F6;
+    padding: 4px 8px;
+    border-radius: 4px;
+    @include custom-font(10px, 400, 16px, 0.25px);
+    color: #6B7280;
+  }
+  img{
+    opacity: 0.3;
+  }
+  &:hover{
+    border-color: 1px solid #E8E8E8 !important;
+  }
+}
+
+.otherAccountDetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  place-items: flex-end;
+}
+
+.bankAccountDetails{
+  justify-content: flex-start;
+  .fdDetails{
+    width: 50%;
+    margin-bottom: 30px;
+    .value{
+      justify-content: flex-start;
+    }
+    &::after{
+      right: 25px !important;
+    }
+  }
+}
+
+.applicationTenureDetails{
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .fdDetails{
+    width: 12%;
+    margin: 0 32px 20px 32px;
+   &:first-child{
+    margin-left: 0px;
+   }
+   .value{
+    white-space: nowrap;
+   }
+  }
+}
+
+.roundWhiteBackgroundIcon {
+  background-color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 50%;
+  @include allCenter;
+}
+.borderContainer{
+  border: 1px solid #D6D6D6;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.subHeading{
+  color: #231F20;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.accountContainer_success{
+  .heading_success{
+    margin-bottom: 12px !important;
+  }
+  .fdContents{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+.topBorder{
+  border-top: 1px solid #D6D6D6;
+  padding-top: 20px;
+}
+
+.listItems{
+  ul{
+    margin-bottom: 0px;
+    li{
+      color: #6B7280;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
 
 @import "./265_css";
 @import "./147_css";
 @import "./renewal_css_265";
-
 @import "./responsive.scss";
-
-@import "./mobileresponsive.scss";
-
+@import "./mobileresponsive";
+@import "./fd_265_Css";
+@import "./147_lfd";
 #req_per_page{
   display: none;
 }

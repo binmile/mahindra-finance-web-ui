@@ -139,9 +139,9 @@
         <div class="col col-md-12 mt-20"><a href="#" class="commonBackBtn"><img src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
         <div class="col col-md-12 mt-20">
         <div class="cardContainer accountContainer">
-            <div class="container mob_p_0">
+            <div class="container p-0">
                 <div class="row">
-                    <div class="col col-md-7">
+                    <div class="col col-md-12 col-lg-7">
                         <div class="accountBox darkBg">
                             <div class="heading">Pre close FD : R2022009D </div>
                             <div class="fdMainContent">
@@ -191,37 +191,32 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="bottomLightText">*The final amount will be payable post deduction of TDS, as per the tax guidelines</div>
                         </div>
                     </div>
-                    <div class="col col-md-5">
+                    <div class="col col-md-12 col-lg-5">
                         <div class="accountDetailsBox">
                             <div class="boldHeader">OTP Verification </div>
                             <div class="accountListContainer">
                                 <div class="accountList">
-                                    <div class="accountHolderDetails accountHolderDetails_review">
-                                        <div class="accountDetails">
-                                            <div class="accountDetails_content">
-                                                <div class="accountHolderName smallName">Vikram Sahu</div>
-                                                <div class="accountType"> (Primary account holder)</div>
-                                            </div>
-                                           
-                                            <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons" /> 9283393221</div>
-                                        </div>
+                                    <div class="accountHolderDetails">
+                                        <div class="accountHolderName smallName">Vikram Sahu <span class="accountType"> (Primary account holder)</span></div>
+                                    </div>
+                                    <div class="otherAccountDetails">
+                                        <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons" /> 9283393221</div>
                                         <div class="verifyBtn">
                                             <img src="./assets/img/icons/green-tick-verify-btn.svg" alt="verify" /> <label>Verified</label>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="accountList">
-                                    <div class="accountHolderDetails accountHolderDetails_review">
-                                        <div class="accountDetails">
-                                            <div class="accountHolderName smallName">Raman Kumar Sahu</div>
-                                            <div class="accountType"> (Secondary account holder)</div>
-                                            <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons" /> Not found</div>
-                                        </div>
-                                        <button class="themeRedBtn customBtn"> Fetch from digilocker
+                                    <div class="accountHolderDetails">
+                                        <div class="accountHolderName smallName">Raman Kumar Sahu <span class="accountType"> (Secondary account holder)</span></div>
+                                    </div>
+                                    <div class="otherAccountDetails otherAccountDetails_lfd">
+                                        <div class="accountMobile margin_for_found"><img src="./assets/img/icons/smartphone.svg" alt="icons" /> Not found</div>
+                                        <button class="themeRedBtn customBtn"  onclick="handleClickModal('digilockerModal')"> Fetch from digilocker
                                             <img src="./assets/img/arrow-right.svg" alt="icons" />
                                         </button>
                                     </div>
@@ -317,6 +312,26 @@
     </div>
 </div>
 <!-- OTP Modal End-->
+
+<div class="modal fade" id="digilockerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+                </button>
+                <div class="info-heading-container">
+                    <div class="info-heading-image"><img
+                            src="./assets/img/icons/redirect.svg"
+                            alt="icon" /></div>
+                            <div class="info-heading">Redirection</div>
+                        </div>
+                <div class="info-content">Details of the secondary account holder is needed to proceed for pre close request please proceed to authenticate details. </div>
+                <div class="info-button"><button type="button" class="themeRedBtn">Proceed</button></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- TermsConditionModal Start -->
 <div class="modal fade" id="TermsConditionModal" tabindex="-1" aria-hidden="true">

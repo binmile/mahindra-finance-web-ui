@@ -142,45 +142,37 @@
         <div class="row">
             <div class="col col-md-12 mt-20"><a href="#" class="commonBackBtn"><img
                         src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
-            
-
                         <div class="col col-md-12 mt-20">
                             <div class="cardContainer accountContainer bgremove p-0">
                                 <div class="container p-0">
-                                    
-            
                                     </div>
                                     <div class="row ">
                                         <div class="col-md-12 col-lg-8 col-12">
-                                            <div class="card-section">
+                                            <div class="card-section card-sectionFD">
                                                 <div class="boldHeader boldHeaderFd">
-                                                    <span> <img src="./assets/img/icons/moneybag.svg" alt="icon"></span>
+                                                    <div class="roundBackgroundIcon roundBackgroundIcon_lfd">
+                                                        <img src="./assets/img/icons/rupee-loan.svg" alt="icon" />
+                                                      </div>
                                                     How much funds do you need ? 
                                                 </div>
                                                 <div class="row customealign">
                                                     <div class="col-lg-12 col-md-12 ">
                                                         <div class="textparent">
                                                             <label for="account_number" class="form-label formLabel">Enter amount</label>
-                                                            <input type="number" class="form-control formControl  formControlFd" id="account_number" maxlength="20" onchange="repaymentContinueButtonEnable()">
+                                                            <input type="text" class="form-control formControl  formControlFd"
+                                                            id="amount_number" maxlength="20" onchange="validateAmount(this.id, 'errorInfoFd1', 5000)">
                                                             <div class="textfildicons">
                                                                 <img src="./assets/img/icons/cash.svg" alt="icons" class="repayment-icons">
                                                             </div>
-                                                            <div class="infoText">Minimum amount of ₹5,000</div>
+                                                            <div class="infoText" id="errorInfoFd1">Minimum amount of ₹5,000</div>
                                                         </div>
-                                                      
-            
                                                     </div>
-                                                   
-                                                    
                                                 </div>
-            
                                             </div>
-                                          
-            
                                         </div>
             
                                         <div class="col-md-12 col-lg-4 col-12">
-                                            <div class="card-section-2 card-section-2FD">
+                                            <div class="card-section-2 card-section-2FD card-sectionFD">
             
                                             
                                             <div class="boldHeader">
@@ -230,8 +222,10 @@
                             </div>
                             <div class="row ">
                                 <div class="col-md-7 col-lg-7 col-12">
-                                    <div class="boldHeader boldHeader-bottom-margin">
-                                        <span> <img src="./assets/img/icons/money.svg" alt="icon" /></span>
+                                    <div class="boldHeader boldHeader-bottom-margin boldHeaderFd">
+                                        <div class="roundBackgroundIcon roundBackgroundIcon_lfd">
+                                            <img src="./assets/img/icons/apply-loan.svg" alt="icon" />
+                                          </div>
                                         Fixed deposits loan plan
                                     </div>
                                 </div>
@@ -254,7 +248,7 @@
 
                                     </div>
                                     <div class="col-lg-7 col-md-12 col-12">
-                                         <div class="fdContents custtbl">
+                                         <div class="fdContents custtbl fdContents_margin_bottom">
                                             <div class="fdDetails">
                                                 <div class="label">Investment amount </div>
                                                 <div class="value">
@@ -294,14 +288,14 @@
 
                                 </div>
                                 <div class="col-lg-4 col-md-12 col-12">
-                                    
                                     <div class="textparent">
-                                        <label for="account_number" class="form-label formLabel">Enter amount</label>
-                                        <input type="number" class="form-control formControl  " id="account_number" maxlength="20" onchange="repaymentContinueButtonEnable()">
+                                        <label for="amount_number2" class="form-label formLabel">Enter amount</label>
+                                        <input type="text" class="form-control formControl" id="amount_number2" maxlength="20" onchange="validateAmount(this.id, 'error_id_2', 150000)"
+                                        >
                                         <div class="textfildicons">
                                             <img src="./assets/img/icons/cash.svg" alt="icons" class="repayment-icons">
                                         </div>
-                                        <div class="infoText">Maximum loan eligibility of this FD is ₹ 15,0000</div>
+                                        <div class="infoText" id="error_id_2">Maximum loan eligibility of this FD is ₹ 15,0000</div>
                                     </div>
                                 </div>
                                  </div>
@@ -324,7 +318,7 @@
 
                                     </div>
                                     <div class="col-lg-7 col-md-12 col-12">
-                                         <div class="fdContents custtbl">
+                                         <div class="fdContents custtbl fdContents_margin_bottom">
                                             <div class="fdDetails">
                                                 <div class="label">Investment amount </div>
                                                 <div class="value">
@@ -366,12 +360,13 @@
                                 <div class="col-lg-4 col-md-12 col-12">
                                     
                                     <div class="textparent">
-                                        <label for="account_number" class="form-label formLabel">Enter amount</label>
-                                        <input type="number" class="form-control formControl  " id="account_number" maxlength="20" onchange="repaymentContinueButtonEnable()">
+                                        <label for="amount_number3" class="form-label formLabel">Enter amount</label>
+                                        <input type="text" class="form-control formControl  " id="amount_number3" maxlength="20" onchange="validateAmount(this.id, 'error_id_3', 26000)"
+                                        >
                                         <div class="textfildicons">
                                             <img src="./assets/img/icons/cash.svg" alt="icons" class="repayment-icons">
                                         </div>
-                                        <div class="infoText">Maximum loan eligibility of this FD is ₹ 26,000</div>
+                                        <div class="infoText" id="error_id_3">Maximum loan eligibility of this FD is ₹ 26,000</div>
                                     </div>
                                 </div>
                                  </div>
@@ -387,15 +382,15 @@
 
                              <div class="row">
                                 
-                                    <div class="accountDetailsBox accountDetailsBox2">
+                                    <div class="accountDetailsBox accountDetailsBox2 accountDetailsBoxFD accountDetailsBox_lfd">
                                         <div class="boldHeader customeboldHeader">OTP verification required from  </div>
-                                        <div class="row">
+                                        <div class="row accountHolderContainer accountHolderContainerFD">
                                             <div class="col-lg-3 col-lg-4 col-6">
-                                                <div class="accountHolderDetails">
+                                                <div class="accountHolderDetails border-right-data">
                                                     <div class="accountDetails">
-                                                        <div class="accountHolderName smallName">Vikram Sahu <span>(Primary account holder)</span></div>
+                                                        <div class="accountHolderName smallName smallNameFD">Vikram Sahu <span class="smallNameFD">(Primary account holder)</span></div>
                                                        
-                                                        <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons"> 9283393221</div>
+                                                        <div class="accountMobile accountMobileFD"><img src="./assets/img/icons/PhoneWhiteBg.svg" alt="icons"> 9283393221</div>
                                                     </div>
                                                    
                                                 </div>
@@ -405,9 +400,9 @@
                                             <div class="col-lg-3 col-lg-4 col-6">
                                                 <div class="accountHolderDetails">
                                                     <div class="accountDetails">
-                                                        <div class="accountHolderName smallName">Raman Kumar Sahu <span>(Joint account holder)</span></div>
+                                                        <div class="accountHolderName smallName smallNameFD">Raman Kumar Sahu <span class="smallNameFD">(Secondary account holder)</span></div>
                                                     
-                                                        <div class="accountMobile"><img src="./assets/img/icons/smartphone.svg" alt="icons"> 9282329343</div>
+                                                        <div class="accountMobile accountMobileFD"><img src="./assets/img/icons/PhoneWhiteBg.svg" alt="icons"> 9282329343</div>
                                                     </div>
                                                    
                                                 </div>

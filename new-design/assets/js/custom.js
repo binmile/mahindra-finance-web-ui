@@ -86,7 +86,6 @@ function repaymentContinueButtonEnable() {
     } else {
         element.disabled = true
     }
-
 }
 /*********************renewal-form-start-************/
 function renewalformContinueButtonEnable() {
@@ -137,7 +136,7 @@ function checkboxTandC(){
 function openSucessToast(){
     var element = document.getElementById("sucessToastMessage");
     element.classList.add('show');
-    setTimeout(function(){ element.classList.remove('show'); }, 3000);
+    setTimeout(function(){ element.classList.remove('show'); }, 4000);
 }
 /*****************body toggle BMT-147 ******************/
  function toggle_data_dashboard(onclickId,elementId) {
@@ -316,3 +315,14 @@ function handleClickHideQuickAction(){
 }
 
 /*****************quick-actions BMT-147 ******************/
+
+function validateAmount(id, error_id, limitAmount) {
+    var account_number = document.getElementById(id).value;
+    if (account_number < limitAmount) {
+        document.getElementById(id).style.border = "1px solid #E31837";
+        document.getElementById(error_id).style.color = "#E31837";
+    } else{
+        document.getElementById(id).style.border = "1px solid #ced4da";
+        document.getElementById(error_id).style.color = "#6B7280";
+    }
+}
