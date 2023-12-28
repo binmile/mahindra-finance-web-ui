@@ -332,6 +332,7 @@
         <div class="row animate__animated animate__fadeInUp" id="make_top">
             <div class="col col-md-12">
                 <div class="listTable">
+                    <div class="customScroll">
                     <div class="listTableHead">
                         <div class="wd-12">FD number</div>
                         <div class="wd-13">Investment date</div>
@@ -555,6 +556,9 @@
                                 </div>
                             </div> -->
                         </div>
+                        </div>
+                        </div>
+                        </div>
 
                         <div class="customPagination" id="customPagination">
                             <select id="req_per_page" onchange="filter_requests()">
@@ -571,20 +575,21 @@
                                 <img src="./assets/img/icons/arrow-left-red.svg" alt="before" />
                             </div> -->
                         </div>
-                            <label class="showMoreBtn" for="expend" id="homeShowBtn">
-                                Show more
-                                    <img
-                                        src="./assets/img/chevron-down-blue.svg"
-                                        alt="icon" />
-                            </label>
-                            <label class="showMoreBtn" for="expend" id="homeHideBtn">
-                                Show less
-                                    <img class="rotate"
-                                        src="./assets/img/chevron-down-blue.svg"
-                                        alt="icon" />
-                            </label>
-                    </div>
-                </div>
+                        <label class="showMoreBtn" for="expend" id="homeShowBtn">
+                            Show more
+                                <img
+                                    src="./assets/img/chevron-down-blue.svg"
+                                    alt="icon" />
+                        </label>
+                        <label class="showMoreBtn" for="expend" id="homeHideBtn">
+                            Show less
+                                <img class="rotate"
+                                    src="./assets/img/chevron-down-blue.svg"
+                                    alt="icon" />
+                        </label>
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
             </div>
         </div>
     </div>
@@ -962,7 +967,10 @@
     <div class="container pb-20 animate__animated animate__fadeInUp">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-7 mt-20">
-                <div class="cardContainer cardContainer_mobileView" id="chartContainer"></div>
+                <div class="cardContainer cardContainer_mobileView p-2">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                <!-- <div class="cardContainer cardContainer_mobileView" id="chartContainer"></div> -->
             </div>
             <div class="col-12 col-md-12 col-lg-5 mt-20">
                 <div class="dashboardDarkCard fdAvailBanner dashboardDarkCard_mob">
@@ -1015,7 +1023,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/owl.carousel.js"></script>
-    <script src="./assets/js/chart.min.js"></script>
+    <script src="./assets/js/chart.js"></script>
     <script src="./assets/js/graph.js"></script>
     <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/pagination.js"></script>
