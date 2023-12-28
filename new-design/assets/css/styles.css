@@ -670,7 +670,8 @@ nav .userAvatar img {
   justify-content: center;
   place-items: center;
 }
-.listTable .showMoreBtn {
+
+.showMoreBtn {
   display: flex;
   justify-content: center;
   place-items: center;
@@ -683,7 +684,7 @@ nav .userAvatar img {
   line-height: 24px;
   background-color: #FFFFFF;
 }
-.listTable .showMoreBtn a {
+.showMoreBtn a {
   color: #1084CB;
   text-decoration: none;
 }
@@ -6162,6 +6163,14 @@ button.resend_otp.disabled {
   .quickActionBox .quickActionTabs label {
     width: 100%;
     margin-right: 0px;
+  }
+  .listTable {
+    width: 100%;
+    overflow: auto;
+  }
+  .listTable .customScroll {
+    min-width: 1200px;
+    overflow: auto;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1135px) {
