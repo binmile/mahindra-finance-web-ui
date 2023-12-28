@@ -524,6 +524,13 @@ nav .userAvatar img {
 }
 
 /*********Header End****************/
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #231F20;
+}
+.owl-theme .owl-dots .owl-dot span {
+  margin: 5px 4px;
+}
+
 /************Button Start ***********************/
 .themeRedBtn {
   background-color: #E31837;
