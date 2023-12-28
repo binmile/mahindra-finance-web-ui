@@ -7027,6 +7027,9 @@ p.notify_lfd {
     border-bottom: none;
     margin-bottom: 0;
   }
+  .fdContents_margin_bottom {
+    margin-bottom: 14px;
+  }
   .fdContents.fdContents_lfd {
     margin-bottom: 12px;
   }
