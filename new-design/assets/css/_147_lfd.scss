@@ -10,6 +10,10 @@
   margin-bottom: 8px;
   @include custom-font(20px, 600, 24px, 0.15px);
 }
+.value_lfd{
+  display: flex;
+  place-items:baseline;
+}
 .accountMobile {
   img {
     width: 20px;
@@ -52,8 +56,8 @@ p {
     @include custom-font(14px, 400, 24px, 0.25px);
   }
 }
-.border-right-data{
- border-right:  1px solid $color_light_border;
+.border-right-data {
+  border-right: 1px solid $color_light_border;
 }
 .roundBackgroundIcon_ {
   margin-right: 8px;
@@ -97,8 +101,14 @@ p {
 .accordion-body {
   @include custom-font(14px, 400, 24px, 0.25px);
 }
-.no_desktop_view_lfd{
+.no_desktop_view_lfd {
   display: none;
+}
+.border-bottom-lfd {
+  border-bottom: 1px solid $color_light_border;
+}
+.accountDetailsBox_lfd {
+  padding-left: 10px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .fdDetails {
@@ -134,6 +144,9 @@ p {
   .accountContainer .accountBox .fdContents .fdDetails::after {
     right: -20px;
   }
+  .row.customealign .customRedBtn.themeRedBtn_mob {
+    width: 100%;
+  }
   .section-parent {
     padding: 16px;
   }
@@ -150,43 +163,135 @@ p {
     font-size: 8px;
   }
 }
- @media only screen and (min-width: 769px) and (max-width: 991px) {
-    .accountDetailsBox.accountDetailsBox2{
-      &.accountDetailsBox_lfd{
-        border-bottom: none;
-        margin-bottom: 0;
-      }
-    }
-    .fdContents_margin_bottom{
-      margin-bottom: 14px;
-    }
-    .fdContents {
-      &.fdContents_lfd {
-        margin-bottom: 12px;
-      }
-    }
-    .no_mobile_view_lfd{
-      display: none;
-
-    }
-    .no_desktop_view_lfd{
-      display: block;
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .customRedBtn.themeRedBtn_mob {
+    display: none;
+  }
+  .accountContainer .accountDetailsBox{
+    &.accountDetailsBox_lfd {
+      border-bottom: none;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
+  .border-bottom-lfd {
+    border-bottom: unset;
+  }
+  .accountContainer {
+    padding: 12px 16px;
+  }
+  .accountDetailsBoxFD {
+    padding: 16px !important;
+  }
+  .border-right-data {
+    border-right: unset;
+  }
+  .buttonContainerFD {
+    display: block !important;
+    justify-content: flex-end !important;
+  }
+  .owl-carouselFD {
+    display: none !important;
+  }
+  .card-section {
+    padding: 12px 16px 16px 16px;
+  }
+  .showMoreBtnFD {
+    display: block;
+    display: flex;
+    justify-content: center;
+    text-decoration: none !important;
+    color: #1084cb;
+  }
+  .showLessBtnFD {
+    display: none;
+    text-align: center !important;
+    text-decoration: none !important;
+    color: #1084cb;
+  }
+  .card-section-2FD {
+    padding: 12px 18px 16px 18px !important;
+  }
+  .fdContents_margin_bottom {
+    margin-bottom: 14px;
+  }
+  .fdContents {
+    &.fdContents_lfd {
+      margin-bottom: 12px;
+    }
+  }
+  .no_mobile_view_lfd {
+    display: none;
+  }
+  .no_desktop_view_lfd {
+    display: block;
+  }
+  .termsConditionsContainer_lfd{
+    padding-top: 0;
+  }
+ .accountList_margin-remove{
+      padding-bottom: 0 ;
+    }
+
+}
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .otherAccountDetails_lfd {
     display: initial;
   }
-  .no_desktop_view_lfd{
-    display: block;
+  .accountList_margin-remove{
+    padding-bottom: 0;
   }
-  .no_mobile_view_lfd{
+  .termsConditionsContainer_lfd{
+    padding-top: 0;
+  }
+  .border-bottom-lfd {
+    border-bottom: unset;
+  }
+  .tooltipdesign {
+    margin-bottom: 10px;
+  }
+  .border-right-data {
+    border-right: unset;
+  }
+  .accountHolderContainerFD {
+    flex-direction: row !important;
+  }
+  .accountDetailsBoxFD {
+    padding: 16px !important;
+  }
+  .owl-carouselFD {
+    display: none !important;
+  }
+  .buttonContainerFD {
+    display: block !important;
+  }
+  .showMoreBtnFD {
+    display: block;
+    display: flex;
+    justify-content: center;
+    text-decoration: none !important;
+    color: #1084cb;
+  }
+  .showLessBtnFD {
+    display: none;
+    text-align: center !important;
+    text-decoration: none !important;
+    color: #1084cb;
+  }
+  .customRedBtn.themeRedBtn_mob {
     display: none;
   }
-  .accountDetailsBox.accountDetailsBox2{
-    &.accountDetailsBox_lfd{
+  .no_desktop_view_lfd {
+    display: block;
+  }
+  .no_mobile_view_lfd {
+    display: none;
+  }
+  .accountContainer .accountDetailsBox{
+    &.accountDetailsBox_lfd {
       border-bottom: none;
       margin-bottom: 0;
+      margin-top: 0;
     }
   }
   .fdDetails_value {

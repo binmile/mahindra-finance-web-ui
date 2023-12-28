@@ -6739,10 +6739,6 @@ p.notifiy {
   height: 44px;
 }
 
-.customRedBtnFd {
-  padding: 14px 24px !important;
-}
-
 .card-section-2FD {
   display: block;
   background: linear-gradient(180deg, #EFF6FF 0%, rgba(239, 246, 255, 0) 100%) !important;
@@ -6845,6 +6841,11 @@ p.notifiy {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.15px;
+}
+
+.value_lfd {
+  display: flex;
+  place-items: baseline;
 }
 
 .accountMobile img {
@@ -6978,6 +6979,14 @@ p.notify_lfd {
   display: none;
 }
 
+.border-bottom-lfd {
+  border-bottom: 1px solid #D6D6D6;
+}
+
+.accountDetailsBox_lfd {
+  padding-left: 10px;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .fdDetails.fdDetails_porify::after {
     right: 7px;
@@ -7008,6 +7017,9 @@ p.notify_lfd {
   .accountContainer .accountBox .fdContents .fdDetails::after {
     right: -20px;
   }
+  .row.customealign .customRedBtn.themeRedBtn_mob {
+    width: 100%;
+  }
   .section-parent {
     padding: 16px;
   }
@@ -7023,9 +7035,51 @@ p.notify_lfd {
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
-  .accountDetailsBox.accountDetailsBox2.accountDetailsBox_lfd {
+  .customRedBtn.themeRedBtn_mob {
+    display: none;
+  }
+  .accountContainer .accountDetailsBox.accountDetailsBox_lfd {
     border-bottom: none;
     margin-bottom: 0;
+    margin-top: 0;
+  }
+  .border-bottom-lfd {
+    border-bottom: unset;
+  }
+  .accountContainer {
+    padding: 12px 16px;
+  }
+  .accountDetailsBoxFD {
+    padding: 16px !important;
+  }
+  .border-right-data {
+    border-right: unset;
+  }
+  .buttonContainerFD {
+    display: block !important;
+    justify-content: flex-end !important;
+  }
+  .owl-carouselFD {
+    display: none !important;
+  }
+  .card-section {
+    padding: 12px 16px 16px 16px;
+  }
+  .showMoreBtnFD {
+    display: block;
+    display: flex;
+    justify-content: center;
+    text-decoration: none !important;
+    color: #1084cb;
+  }
+  .showLessBtnFD {
+    display: none;
+    text-align: center !important;
+    text-decoration: none !important;
+    color: #1084cb;
+  }
+  .card-section-2FD {
+    padding: 12px 18px 16px 18px !important;
   }
   .fdContents_margin_bottom {
     margin-bottom: 14px;
@@ -7039,10 +7093,59 @@ p.notify_lfd {
   .no_desktop_view_lfd {
     display: block;
   }
+  .termsConditionsContainer_lfd {
+    padding-top: 0;
+  }
+  .accountList_margin-remove {
+    padding-bottom: 0;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .otherAccountDetails_lfd {
     display: initial;
+  }
+  .accountList_margin-remove {
+    padding-bottom: 0;
+  }
+  .termsConditionsContainer_lfd {
+    padding-top: 0;
+  }
+  .border-bottom-lfd {
+    border-bottom: unset;
+  }
+  .tooltipdesign {
+    margin-bottom: 10px;
+  }
+  .border-right-data {
+    border-right: unset;
+  }
+  .accountHolderContainerFD {
+    flex-direction: row !important;
+  }
+  .accountDetailsBoxFD {
+    padding: 16px !important;
+  }
+  .owl-carouselFD {
+    display: none !important;
+  }
+  .buttonContainerFD {
+    display: block !important;
+  }
+  .showMoreBtnFD {
+    display: block;
+    display: flex;
+    justify-content: center;
+    text-decoration: none !important;
+    color: #1084cb;
+  }
+  .showLessBtnFD {
+    display: none;
+    text-align: center !important;
+    text-decoration: none !important;
+    color: #1084cb;
+  }
+  .customRedBtn.themeRedBtn_mob {
+    display: none;
   }
   .no_desktop_view_lfd {
     display: block;
@@ -7050,9 +7153,10 @@ p.notify_lfd {
   .no_mobile_view_lfd {
     display: none;
   }
-  .accountDetailsBox.accountDetailsBox2.accountDetailsBox_lfd {
+  .accountContainer .accountDetailsBox.accountDetailsBox_lfd {
     border-bottom: none;
     margin-bottom: 0;
+    margin-top: 0;
   }
   .fdDetails_value {
     margin-bottom: 0px;
