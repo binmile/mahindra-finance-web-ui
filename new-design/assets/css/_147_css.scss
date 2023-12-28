@@ -724,8 +724,7 @@
           }
         }
         .fdDetails::after {
-          position: initial;
-          gap: 10px;
+          position: absolute;
         }
       }
     }

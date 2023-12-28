@@ -3200,8 +3200,7 @@ button.resend_otp.disabled {
     font-size: 10px;
   }
   .accountContainer .accountBox .fdContents .fdDetails::after {
-    position: initial;
-    gap: 10px;
+    position: absolute;
   }
   /*----------renewal-form-mini-desktop-UI--- start------------------------*/
   .bankDetailsMainContainer .bottomContentBox.bottomContentBox_renewal_form {
@@ -6864,6 +6863,11 @@ p.notifiy {
   margin-bottom: 16px;
 }
 
+.boldHeaderFd {
+  display: flex;
+  align-items: center;
+}
+
 .roundBackgroundIcon.roundBackgroundIcon_lfd {
   background-color: #F3F4F6;
   width: 32px;
@@ -6888,6 +6892,10 @@ p.notify_lfd {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.25px;
+}
+
+.border-right-data {
+  border-right: 1px solid #D6D6D6;
 }
 
 .roundBackgroundIcon_ {
@@ -6951,17 +6959,136 @@ p.notify_lfd {
   color: #17823E;
 }
 
+.accordion-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #231f20;
+}
+
+.accordion-body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.no_desktop_view_lfd {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .fdDetails.fdDetails_porify::after {
+    right: 7px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  .br-1::before {
+    bottom: 86px;
+  }
+  .br-1::after {
+    height: 77%;
+  }
+  .section-parent {
+    padding: 16px;
+  }
+  .value.custvalue {
+    font-size: 14px;
+  }
+  .roundBackgroundIcon_ img {
+    width: 15px;
+    height: 15px;
+  }
+  .percentage_value {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .accountContainer .accountBox .fdContents .fdDetails::after {
+    right: -20px;
+  }
+  .section-parent {
+    padding: 16px;
+  }
+  .value.custvalue {
+    font-size: 9px;
+  }
+  .roundBackgroundIcon_ img {
+    width: 15px;
+    height: 15px;
+  }
+  .percentage_value {
+    font-size: 8px;
+  }
+}
 @media only screen and (min-width: 769px) and (max-width: 991px) {
-  .no_mobile_view {
+  .accountDetailsBox.accountDetailsBox2.accountDetailsBox_lfd {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .fdContents_margin_bottom {
+    margin-bottom: 14px;
+  }
+  .fdContents.fdContents_lfd {
+    margin-bottom: 12px;
+  }
+  .no_mobile_view_lfd {
     display: none;
   }
-  .no_desktop_view {
+  .no_desktop_view_lfd {
     display: block;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .otherAccountDetails_lfd {
     display: initial;
+  }
+  .no_desktop_view_lfd {
+    display: block;
+  }
+  .no_mobile_view_lfd {
+    display: none;
+  }
+  .accountDetailsBox.accountDetailsBox2.accountDetailsBox_lfd {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .fdDetails_value {
+    margin-bottom: 0px;
+  }
+  .boldHeader {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  .boldHeaderFd {
+    margin-bottom: 12px !important;
+  }
+  .card-section {
+    padding: 12px 16px 16px 16px;
+  }
+  .card-section-2FD {
+    padding: 12px 18px 16px 18px !important;
+  }
+  .custHeader {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+  .accordion-button {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
+  .accordion-body {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
   }
   .section-parent {
     padding: 16px;
@@ -6998,9 +7125,6 @@ p.notify_lfd {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0;
-  }
-  .fdDetails_value {
-    margin-bottom: 16px;
   }
   .no_mobile_view {
     display: none;

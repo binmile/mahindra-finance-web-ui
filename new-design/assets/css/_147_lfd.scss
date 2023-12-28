@@ -27,7 +27,10 @@
     margin-bottom: 16px;
   }
 }
-
+.boldHeaderFd {
+  display: flex;
+  align-items: center;
+}
 .roundBackgroundIcon {
   &.roundBackgroundIcon_lfd {
     background-color: $color_light_bg;
@@ -49,7 +52,9 @@ p {
     @include custom-font(14px, 400, 24px, 0.25px);
   }
 }
-
+.border-right-data{
+ border-right:  1px solid $color_light_border;
+}
 .roundBackgroundIcon_ {
   margin-right: 8px;
   img {
@@ -78,24 +83,135 @@ p {
   }
 }
 .percentage_value {
-    @include custom-font(14px, 500, 20px, 0);
-    background-color: $color_light_green;
-    border-radius: 8px;
-    padding: 3px 7px;
-    margin-left: 4px;
-    color: $color_green_dark;
-  }
-@media only screen and (min-width: 769px) and (max-width: 991px) {
-  .no_mobile_view {
-    display: none;
-  }
-  .no_desktop_view {
-    display: block;
+  @include custom-font(14px, 500, 20px, 0);
+  background-color: $color_light_green;
+  border-radius: 8px;
+  padding: 3px 7px;
+  margin-left: 4px;
+  color: $color_green_dark;
+}
+.accordion-button {
+  @include custom-font(16px, 500, 24px, 0);
+  color: #231f20;
+}
+.accordion-body {
+  @include custom-font(14px, 400, 24px, 0.25px);
+}
+.no_desktop_view_lfd{
+  display: none;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .fdDetails {
+    &.fdDetails_porify::after {
+      right: 7px;
+    }
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  .br-1::before {
+    bottom: 86px;
+  }
+  .br-1::after {
+    height: 77%;
+  }
+  .section-parent {
+    padding: 16px;
+  }
+  .value.custvalue {
+    font-size: 14px;
+  }
+  .roundBackgroundIcon_ {
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .percentage_value {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .accountContainer .accountBox .fdContents .fdDetails::after {
+    right: -20px;
+  }
+  .section-parent {
+    padding: 16px;
+  }
+  .value.custvalue {
+    font-size: 9px;
+  }
+  .roundBackgroundIcon_ {
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .percentage_value {
+    font-size: 8px;
+  }
+}
+ @media only screen and (min-width: 769px) and (max-width: 991px) {
+    .accountDetailsBox.accountDetailsBox2{
+      &.accountDetailsBox_lfd{
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+    .fdContents_margin_bottom{
+      margin-bottom: 14px;
+    }
+    .fdContents {
+      &.fdContents_lfd {
+        margin-bottom: 12px;
+      }
+    }
+    .no_mobile_view_lfd{
+      display: none;
+
+    }
+    .no_desktop_view_lfd{
+      display: block;
+    }
+  }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .otherAccountDetails_lfd {
     display: initial;
+  }
+  .no_desktop_view_lfd{
+    display: block;
+  }
+  .no_mobile_view_lfd{
+    display: none;
+  }
+  .accountDetailsBox.accountDetailsBox2{
+    &.accountDetailsBox_lfd{
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+  }
+  .fdDetails_value {
+    margin-bottom: 0px;
+  }
+  .boldHeader {
+    @include custom-font(16px, 600, 24px, 0.15px);
+  }
+  .boldHeaderFd {
+    margin-bottom: 12px !important;
+  }
+  .card-section {
+    padding: 12px 16px 16px 16px;
+  }
+  .card-section-2FD {
+    padding: 12px 18px 16px 18px !important;
+  }
+  .custHeader {
+    @include custom-font(14px, 600, 24px, 0.25px);
+  }
+  .accordion-button {
+    @include custom-font(12px, 500, 16px, 0.25px);
+  }
+  .accordion-body {
+    @include custom-font(12px, 400, 16px, 0);
   }
   .section-parent {
     padding: 16px;
@@ -117,9 +233,6 @@ p {
   }
   .boldHeader-bottom-margin p.small-text_lfd {
     @include custom-font(12px, 400, 16px, 0);
-  }
-  .fdDetails_value {
-    margin-bottom: 16px;
   }
   .no_mobile_view {
     display: none;
