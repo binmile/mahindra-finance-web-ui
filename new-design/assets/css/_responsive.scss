@@ -1320,8 +1320,17 @@
             width: 100%;
             margin-right: 0px;
         }
-    } 
-} 
+    }
+}
+
+.listTable{
+    width: 100%;
+    overflow: auto;
+    .customScroll{
+        min-width: 1200px;
+        overflow: auto;
+    }
+}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1135px) {

@@ -359,9 +359,10 @@ nav {
       }
     }
   }
-  .showMoreBtn {
-    @include moreDataList(flex);
-  }
+}
+
+.showMoreBtn {
+  @include moreDataList(flex);
 }
 
 #expend {
