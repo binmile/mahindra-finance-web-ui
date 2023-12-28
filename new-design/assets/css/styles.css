@@ -7141,9 +7141,6 @@ p.notify_lfd {
   .accountDetailsBoxFD {
     padding: 16px !important;
   }
-  .owl-carouselFD {
-    display: none !important;
-  }
   .buttonContainerFD {
     display: block !important;
   }
