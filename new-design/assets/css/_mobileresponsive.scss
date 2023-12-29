@@ -314,6 +314,14 @@ border-bottom: 1px solid #ccc;}
     bottom: 50px;
     width: 98%;
 }
+.accountHolderName.smallName.smallNameFD {
+    font-size: 14px;
+    font-weight: 500;
+}
+p.reco {
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
 
 .custmalign-item{
     .customeul{
@@ -476,7 +484,12 @@ border-bottom: 1px solid #ccc;}
     }
 
 }
-
+@media screen and (max-width: 767px) { 
+.info-icon2.custom-tooltip .tooltip-text {
+    
+    left: -20px;
+}
+}
 @media screen and (min-width: 771px) { 
     .value.crousalvalue .roundBackgroundIcon {
         margin-bottom: 8px;
@@ -522,12 +535,12 @@ border-bottom: 1px solid #ccc;}
    
 }
 
-@media screen and (min-width: 767px) { 
+@media screen and (min-width: 768px) { 
     .info-icon2.custom-tooltip .tooltip-text::after {
         content: "";
         position: absolute;
         top: 100%;
-        left: 11%;
+        left: 27%;
         margin-left: 223px;
         border-width: 8px;
         border-style: solid;
@@ -547,7 +560,7 @@ border-bottom: 1px solid #ccc;}
         top: auto;
         bottom: 25px;
         /* left: -114%; */
-        left: -264px;
+        left: -242px;
         width: -moz-max-content;
         width: max-content;
         z-index: 99;
