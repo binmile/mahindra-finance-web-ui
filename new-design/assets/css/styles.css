@@ -6365,6 +6365,10 @@ ul.custliststyle {
   padding-left: 0px;
 }
 
+.card-section-2.card-section-2FD.card-sectionFD {
+  border: 1px solid #E3E5EA;
+}
+
 .bgimage {
   background-image: url(../img/ulbg.png);
   background-repeat: no-repeat;
@@ -6456,7 +6460,7 @@ ul.custliststyle {
   top: auto;
   bottom: 24px;
   /* left: -114%; */
-  left: -22vw;
+  left: -100px;
   width: -moz-max-content;
   width: max-content;
   z-index: 99;
@@ -6466,7 +6470,7 @@ ul.custliststyle {
   content: "";
   position: absolute;
   top: 100%;
-  left: 70%;
+  left: 11%;
   margin-left: 59px;
   border-width: 8px;
   border-style: solid;
@@ -6559,6 +6563,11 @@ p.notifiy {
   font-size: 14px;
   font-weight: 500;
   padding-top: 17px;
+}
+
+p.notifiy.notifiy2 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .br-1::after {
@@ -6666,9 +6675,6 @@ p.notifiy {
   .boldHeader.boldHeader-bottom-margin span {
     display: none;
   }
-  .fdDetails.customenone {
-    display: none;
-  }
   .customenone {
     display: none;
   }
@@ -6733,6 +6739,12 @@ p.notifiy {
   }
 }
 @media screen and (max-width: 991px) {
+  .accountContainer .accountBox .fdContents .fdDetails:after {
+    display: none;
+  }
+  .fdDetails.customenone {
+    display: none;
+  }
   .br-1::after {
     display: none;
   }
@@ -6741,6 +6753,61 @@ p.notifiy {
   }
   .section-parent {
     margin-right: 0px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .info-icon2.custom-tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 11%;
+    margin-left: 223px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #080707 transparent transparent transparent;
+  }
+  .info-icon2.custom-tooltip .tooltip-text {
+    background-color: #080707;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    padding: 16px;
+    display: none;
+    position: absolute;
+    top: auto;
+    bottom: 25px;
+    /* left: -114%; */
+    left: -264px;
+    width: -moz-max-content;
+    width: max-content;
+    z-index: 99;
+  }
+}
+@media screen and (max-width: 424px) {
+  .info-icon2.custom-tooltip:hover .tooltip-text, .custom-tooltip:hover .tooltip-textTableData {
+    display: block;
+    flex-wrap: wrap;
+    width: 260px;
+  }
+  .info-icon2.custom-tooltip .tooltip-text::after {
+    left: 16%;
+  }
+}
+.section-parent.section-parent2 {
+  margin-right: 0px;
+}
+
+.abc {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 991px) {
+  .custome-displaynone {
+    display: none;
   }
 }
 .boldHeaderFd {
