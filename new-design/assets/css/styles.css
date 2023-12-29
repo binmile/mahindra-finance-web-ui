@@ -6365,6 +6365,10 @@ ul.custliststyle {
   padding-left: 0px;
 }
 
+.card-section-2.card-section-2FD.card-sectionFD {
+  border: 1px solid #E3E5EA;
+}
+
 .bgimage {
   background-image: url(../img/ulbg.png);
   background-repeat: no-repeat;
