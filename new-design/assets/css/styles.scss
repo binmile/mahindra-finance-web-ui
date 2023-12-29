@@ -282,7 +282,7 @@ nav {
 /********************Dashboard Start*********************/
 .dashboardCard {
   padding: 16px;
-  min-height: 129px;
+  min-height: 134px;
   .cardIcons {
     @include custom-width-height(36px, 36px);
     background-color: $color_light_bg;
@@ -316,7 +316,7 @@ nav {
   border-radius: 8px;
   padding: 16px;
   overflow: hidden;
-  min-height: 129px;
+  min-height: 134px;
 
   .cardLabelHeading {
     @include custom-font(20px, 600, 26px, 0.15px);

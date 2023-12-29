@@ -1257,13 +1257,16 @@
       @include custom-font(16px, 600, 24px, 0.15px);
     }
   }
+  .lightBorderRight{
+      border-right: 1px solid #CCCCCC;
+  }
   .cardContainerMobile {
     padding: 8px 16px;
     background-color: $color_white;
     box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
       0px 10px 15px 0px rgba($color_black, 0.05);
     border-radius: 5.14px;
-    @include setDisplayProperty(flex, space-between, center);
+    // @include setDisplayProperty(flex, space-between, center);
     .custom-tooltip {
       &.custom_tooltip {
         img {
@@ -1292,20 +1295,25 @@
       }
     }
     .active_fds {
-      text-align: left;
+      text-align: center;
       color: $color_light_text;
+      place-items: center;
+      justify-content: center;
       @include custom-font(10px, 500, 14px, 0.4px);
-      &.investment_fds {
-        white-space: nowrap;
-      }
       .custom_tooltip {
         .tooltip-text {
+          width: 238px;
+          height: fit-content;
           &.tooltip_mobile {
-            left: -235px;
+            left: -250px;
+            top: -20px;
           }
         }
         .tooltip-text::after {
-          left: 80%;
+          right: -15px;
+          top: 18px;
+          left: auto;
+          transform: rotate(-90deg);
         }
       }
     }
@@ -1314,6 +1322,7 @@
       place-items: baseline;
       margin-top: 6px;
       gap: 6px;
+      justify-content: center;
 
       .detail_price {
         text-align: left;
@@ -2204,20 +2213,6 @@
       right: -32px;
     }
   }
-  // .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
-  //   position: relative;
-  //   .single_account_circle {
-  //     position: absolute;
-  //     right: 0;
-  //     top: 25px;
-  //   }
-  //   .verifyBtn{
-  //     &.verifyBtn_joint_account{
-  //       position: absolute;
-  //       right: 0;
-  //     }
-  //   }
-  // }
   /*********** Responsive dashboard View End*************/
 }
 
