@@ -416,9 +416,7 @@ p.notifiy {
     .boldHeader.boldHeader-bottom-margin span {
         display: none;
     }
-    .fdDetails.customenone {
-        display: none;
-    }
+   
     .customenone {
         display: none;
     }
@@ -494,6 +492,13 @@ p.notifiy {
 }
 
 @media screen and (max-width: 991px) { 
+    .accountContainer .accountBox .fdContents .fdDetails:after{
+        display: none;
+    }
+
+    .fdDetails.customenone {
+        display: none;
+    }
     .br-1::after {
      
         display: none;
