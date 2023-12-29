@@ -295,6 +295,10 @@ p.notifiy {
     font-weight: 500;
     padding-top: 17px;
 }
+p.notifiy.notifiy2 {
+padding-bottom: 1rem;
+border-bottom: 1px solid #ccc;}
+
 .br-1::after {
     content: "";
     position: absolute;
