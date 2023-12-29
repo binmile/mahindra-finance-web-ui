@@ -11,6 +11,11 @@
 
 @media only screen and (max-width: $tablet) {
 
+    #myChart{
+        height: auto !important;
+        width: 100% !important;
+    }
+
     /************Menu Start********************/
     button.navbar-toggler{
         border: none;
@@ -303,6 +308,9 @@
         }
       /************Modal End************/
 
+      .dashboardDarkCard {
+        min-height: 145px;
+    }
       .owl-carousel{
         .owl-stage-outer{
             overflow: hidden;
@@ -310,7 +318,7 @@
         }
         .owl-item{
             img.newFdImage {
-                width: 50%;
+                width: 32%;
             }
             .carousel-roundBtn{
                 position: absolute;
@@ -339,7 +347,7 @@
                     }
                 }
                 li{
-                    width: 60%;
+                    width: 70%;
                     font-size: 10px;
                     margin-bottom: 4px;
                     span{
@@ -347,8 +355,10 @@
                     }
                     .roundBackgroundIcon{
                         background-color: $color_light_border;
-                        height: 14px;
-                        width: 14px;
+                        min-height: 14px;
+                        min-width: 14px;
+                        max-height: 14px;
+                        max-width: 14px;
                         img{
                             width: 8px;
                             height: 8px;
@@ -947,9 +957,13 @@
     .owl-carousel{
         .owl-item {
             img.newFdImage {
-            width: 40%;
+            width: 38%;
             }
         }
+    }
+    .dashboardDarkCard .cardLabelHeading {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 

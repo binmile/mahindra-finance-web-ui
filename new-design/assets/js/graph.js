@@ -1,39 +1,8 @@
-/*****************Graph Start***************/
-// window.onload = function () {
-//     var chart = new CanvasJS.Chart("chartContainer", {
-//         animationEnabled: true,
-//         title: {
-//             text: "Growth chart"
-//         },
-//         axisY: {
-//             title: "",
-//             valueFormatString: "#0,,.",
-//             suffix: "k",
-//             prefix: "₹"
-//         },
-//         data: [{
-//             type: "splineArea",
-//             color: "rgba(34, 197, 94, 1)",
-//             markerSize: 5,
-//             xValueFormatString: "YYYY",
-//             yValueFormatString: "₹#,##0.##",
-//             dataPoints: [
-//                 { x: new Date(2000, 0), y: 55000 },
-//                 { x: new Date(2001, 0), y: 70000 },
-//                 { x: new Date(2002, 0), y: 73605 }
-//             ]
-//         }]
-//     });
-//     chart.render();
-// }
-/*****************Graph End***************/
-
-
 const ctx = document.getElementById('myChart').getContext('2d');
-const DISPLAY = true;
-const BORDER = true;
-const CHART_AREA = true;
-const TICKS = true;
+// const DISPLAY = true;
+// const BORDER = true;
+// const CHART_AREA = true;
+// const TICKS = true;
 /***********************tooltip Start*******************************/
 const getOrCreateTooltip = (chart) => {
   let tooltipEl = chart.canvas.parentNode.querySelector('div');
@@ -46,7 +15,7 @@ const getOrCreateTooltip = (chart) => {
     tooltipEl.style.opacity = 1;
     tooltipEl.style.pointerEvents = 'none';
     tooltipEl.style.position = 'absolute';
-    tooltipEl.style.transform = 'translate(-50%, 0)';
+    tooltipEl.style.transform = 'translate(-50%, -66px)';
     tooltipEl.style.transition = 'all .1s ease';
     tooltipEl.style.border = '1.28px solid #F9F9F9';
     tooltipEl.style.boxShadow = '0px 1px 2px 0px #0000000F, 0px 1px 3px 0px #0000001A';
@@ -64,7 +33,6 @@ const getOrCreateTooltip = (chart) => {
 const externalTooltipHandler = (context) => {
   const {chart, tooltip} = context;
   const tooltipEl = getOrCreateTooltip(chart);
-
   if (tooltip.opacity === 0) {
     tooltipEl.style.opacity = 0;
     return;
@@ -154,7 +122,7 @@ const externalTooltipHandler = (context) => {
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['At investment','', 'Today', '', 'On maturity'],
+        labels: [['At', 'investment'],'', 'Today', '', ['On', 'maturity']],
         datasets: [{
             data: [55, 57, 70, 68, 73],
             pointRadius: 4,
