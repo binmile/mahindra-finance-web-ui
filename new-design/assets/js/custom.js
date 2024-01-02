@@ -166,15 +166,25 @@ function validatePasswordInputs(passwordID, newPasswordID, reEnterPasswordID) {
 }
 
 function validateEmailInputs(emailID, newemailID) {
-    var email_data = document.getElementById(emailID);
-    var newEmail = document.getElementById(newemailID);
-    var continueButton = document.getElementById("continueButton");
-    var emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var email_data, newEmail, continueButton;
+    if (arguments.length === 1) {
+        email_data = document.getElementById(emailID);
+        continueButton = document.getElementById("continueButton");
+    } else if (arguments.length === 2) {
+        email_data = document.getElementById(emailID);
+        newEmail = document.getElementById(newemailID);
+        continueButton = document.getElementById("continueButton");
+    } else {
+        return;
+    }
 
-    if (email_data.value !== "" && newEmail.value !== "" && emailFormat.test(newEmail.value) && emailFormat.test(email_data.value)) {
+    var emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email_data.value !== "" && (!newEmail || (newEmail.value !== "" && emailFormat.test(newEmail.value))) && emailFormat.test(email_data.value)) {
         continueButton.disabled = false;
         email_data.style.border = "1px solid #ccc";
-        newEmail.style.border = "1px solid #ccc";
+        if (newEmail) {
+            newEmail.style.border = "1px solid #ccc";
+        }
     } else {
         continueButton.disabled = true;
         if (email_data.value !== "" && !emailFormat.test(email_data.value)) {
@@ -182,10 +192,12 @@ function validateEmailInputs(emailID, newemailID) {
         } else {
             email_data.style.border = "1px solid #ccc";
         }
-        if (newEmail.value !== "" && !emailFormat.test(newEmail.value)) {
-            newEmail.style.border = "1px solid #ff0000";
-        } else {
-            newEmail.style.border = "1px solid #ccc";
+        if (newEmail) {
+            if (newEmail.value !== "" && !emailFormat.test(newEmail.value)) {
+                newEmail.style.border = "1px solid #ff0000";
+            } else {
+                newEmail.style.border = "1px solid #ccc";
+            }
         }
     }
 }
