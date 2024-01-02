@@ -7439,6 +7439,10 @@ input[type=number] {
   color: #61b0e0;
 }
 
+.openEyesIcon_profile {
+  display: none;
+}
+
 .form-control.formControl_profile {
   border-radius: 8px !important;
 }

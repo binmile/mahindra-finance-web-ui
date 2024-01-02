@@ -1,28 +1,28 @@
 /*communication_wrapper-css-here-start*/
 .communication_wrapper {
-    background-color: $color_red;
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-  }
-  .live_tune_connect {
-    padding: 8px 12px;
-  }
-  input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-    input[type="number"] {
-      -moz-appearance: textfield;
-    }
-  .border-bottom-profile {
-    border-bottom: 1px solid $color_border;
-  }
-  /*communication_wrapper-css-here-end*/
+  background-color: $color_red;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.live_tune_connect {
+  padding: 8px 12px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.border-bottom-profile {
+  border-bottom: 1px solid $color_border;
+}
+/*communication_wrapper-css-here-end*/
 .bankDetailsMainContainer .textparent .textfildicons {
   &.textfildicons_icons {
     img {
@@ -30,36 +30,34 @@
     }
   }
 }
-.modal .modal-content .modal-body .info-heading-container .info-heading{
-&.info-heading_profile_contact{
+.modal .modal-content .modal-body .info-heading-container .info-heading {
+  &.info-heading_profile_contact {
     font-size: 21px;
+  }
 }
-}
 
-.roundBackgroundIcon.roundBackgroundIcon_lfd{
-    &.roundBackgroundIcon_profile{
-        margin-right: 8px;
-        @include custom-width-height(30px, 30px);
+.roundBackgroundIcon.roundBackgroundIcon_lfd {
+  &.roundBackgroundIcon_profile {
+    margin-right: 8px;
+    @include custom-width-height(30px, 30px);
 
-        img{
-            @include custom-width-height(16px, 16px);
-
-        }
-    
+    img {
+      @include custom-width-height(16px, 16px);
     }
+  }
 }
 
-.formLabel{
-    margin: 32px 0 8px 0;
+.formLabel {
+  margin: 32px 0 8px 0;
 }
-.boldTitle_profile{
-    display: flex;
-    place-items: center;
-    align-items: center;
+.boldTitle_profile {
+  display: flex;
+  place-items: center;
+  align-items: center;
 }
 
-.main-form.fd_content_min_height{
-    min-height: 480px;
+.main-form.fd_content_min_height {
+  min-height: 480px;
 }
 .textparent_content {
   display: flex;
@@ -72,19 +70,22 @@
     color: #61b0e0;
   }
 }
+.openEyesIcon_profile {
+  display: none;
+}
 .form-control {
-    &.formControl_profile {
-      border-radius: 8px !important;
-    }
-    &.formControl_profile:focus {
-      outline: none !important;
-      outline-width: 0 !important;
-      box-shadow: none;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      border: 1px solid $color_disabled_btn;
-    }
+  &.formControl_profile {
+    border-radius: 8px !important;
   }
+  &.formControl_profile:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid $color_disabled_btn;
+  }
+}
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
@@ -95,34 +96,32 @@
       margin-bottom: 0;
     }
   }
-  .modal .modal-content .modal-body .info-heading-container .info-heading{
-    &.info-heading_profile_contact{
-        font-size: 15px;
+  .modal .modal-content .modal-body .info-heading-container .info-heading {
+    &.info-heading_profile_contact {
+      font-size: 15px;
     }
-    }
-  .textparent label.form-label.formLabel{
+  }
+  .textparent label.form-label.formLabel {
     &.formLabel_profile {
-        @include custom-font(12px, 400, 16px, 0);
-      }
-  }
-  .bankDetailsMainContainer .boldTitle{
-    &.boldTitle_profile{
-        @include custom-font(14px, 600, 24px, 0.25px);
-      }
-  }
-  .roundBackgroundIcon.roundBackgroundIcon_lfd{
-    &.roundBackgroundIcon_profile{
-        @include custom-width-height(24px, 24px);
-        img{
-            @include custom-width-height(12px, 12px);
-
-        }
-    
+      @include custom-font(12px, 400, 16px, 0);
     }
-}
-.buttonContainer button.themeRedBtn{
-    &.themeRedBtn_profile{
-        height:40px;
+  }
+  .bankDetailsMainContainer .boldTitle {
+    &.boldTitle_profile {
+      @include custom-font(14px, 600, 24px, 0.25px);
     }
-}
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd {
+    &.roundBackgroundIcon_profile {
+      @include custom-width-height(24px, 24px);
+      img {
+        @include custom-width-height(12px, 12px);
+      }
+    }
+  }
+  .buttonContainer button.themeRedBtn {
+    &.themeRedBtn_profile {
+      height: 40px;
+    }
+  }
 }

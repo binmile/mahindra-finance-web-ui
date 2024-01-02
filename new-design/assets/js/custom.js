@@ -129,6 +129,39 @@ function validateMobileInputs(mobileId, newMobileId) {
   function isValidMobileNumber(number) {
     return number.length === 10;
   }
+function validatePasswordInputs(passwordID, newPasswordID, reEnterPasswordID) {
+    var passwordField = document.getElementById(passwordID);
+    var newPasswordField = document.getElementById(newPasswordID);
+    var reEnterPasswordField = document.getElementById(reEnterPasswordID);
+    var continueButton = document.getElementById('continueButton');
+    if (passwordField.value !== "" && newPasswordField.value !== "" && reEnterPasswordField.value !== "") {
+        if (newPasswordField.value === reEnterPasswordField.value) {
+            continueButton.disabled = false;
+            newPasswordField.style.border = '1px solid #ccc';
+            reEnterPasswordField.style.border = '1px solid #ccc';
+        } else {
+            continueButton.disabled = true;
+            newPasswordField.style.border = '1px solid #ccc';
+            reEnterPasswordField.style.border = '1px solid #ff0000';
+        }
+    } else {
+        continueButton.disabled = true;
+    }
+}
+  function togglePasswordVisibility(passwordId, closeEyesIconId, openEyesIconId) {
+    var passwordInput = document.getElementById(passwordId);
+    var closeEyesIcon = document.getElementById(closeEyesIconId);
+    var openEyesIcon = document.getElementById(openEyesIconId);
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      closeEyesIcon.style.display = 'none';
+      openEyesIcon.style.display = 'inline-block';
+    } else {
+      passwordInput.type = 'password';
+      closeEyesIcon.style.display = 'inline-block';
+      openEyesIcon.style.display = 'none';
+    }
+  }
 
 /***************profile-page-validation-end*******************/
 
