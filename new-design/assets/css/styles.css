@@ -7380,6 +7380,16 @@ p.notify_lfd {
   padding: 8px 12px;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .border-bottom-profile {
   border-bottom: 1px solid #E8E8E8;
 }
@@ -7388,6 +7398,10 @@ p.notify_lfd {
 .bankDetailsMainContainer .textparent .textfildicons.textfildicons_icons img {
   width: 16px;
   height: 16px;
+}
+
+.modal .modal-content .modal-body .info-heading-container .info-heading.info-heading_profile_contact {
+  font-size: 21px;
 }
 
 .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile {
@@ -7444,6 +7458,9 @@ p.notify_lfd {
   .bankDetailsMainContainer .bottomContentBox.bottomContentBox_profile {
     margin-top: 88px;
     margin-bottom: 0;
+  }
+  .modal .modal-content .modal-body .info-heading-container .info-heading.info-heading_profile_contact {
+    font-size: 15px;
   }
   .textparent label.form-label.formLabel.formLabel_profile {
     font-size: 12px;

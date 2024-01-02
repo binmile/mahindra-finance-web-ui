@@ -110,6 +110,28 @@ function toggleSecondColumn(elementId, targetValue, nomineevalue) {
   }
 /*********************renewal-form-end-************/
 
+/***************profile-page-validation-start-BMT-147*******************/
+
+function validateMobileInputs(mobileId, newMobileId) {
+    var mobileNumber = document.getElementById(mobileId).value;
+    var newMobileNumber = document.getElementById(newMobileId).value;
+    var continueButton = document.getElementById('continueButton');
+    mobileNumber = mobileNumber.slice(0, 10);
+    newMobileNumber = newMobileNumber.slice(0, 10);
+    document.getElementById(mobileId).value = mobileNumber;
+    document.getElementById(newMobileId).value = newMobileNumber;
+    if (isValidMobileNumber(mobileNumber) && isValidMobileNumber(newMobileNumber)) {
+      continueButton.disabled = false;
+    } else {
+      continueButton.disabled = true;
+    }
+  }
+  function isValidMobileNumber(number) {
+    return number.length === 10;
+  }
+
+/***************profile-page-validation-end*******************/
+
 /*****************radio button BMT-265 start******************/
 function radioButtonAction(id,element) {
     var checkbox = document.getElementById(id);

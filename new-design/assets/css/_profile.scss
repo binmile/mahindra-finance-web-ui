@@ -11,6 +11,14 @@
   .live_tune_connect {
     padding: 8px 12px;
   }
+  input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
   .border-bottom-profile {
     border-bottom: 1px solid $color_border;
   }
@@ -22,6 +30,12 @@
     }
   }
 }
+.modal .modal-content .modal-body .info-heading-container .info-heading{
+&.info-heading_profile_contact{
+    font-size: 21px;
+}
+}
+
 .roundBackgroundIcon.roundBackgroundIcon_lfd{
     &.roundBackgroundIcon_profile{
         margin-right: 8px;
@@ -81,6 +95,11 @@
       margin-bottom: 0;
     }
   }
+  .modal .modal-content .modal-body .info-heading-container .info-heading{
+    &.info-heading_profile_contact{
+        font-size: 15px;
+    }
+    }
   .textparent label.form-label.formLabel{
     &.formLabel_profile {
         @include custom-font(12px, 400, 16px, 0);
