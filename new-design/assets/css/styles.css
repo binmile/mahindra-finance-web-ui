@@ -7365,6 +7365,110 @@ p.notify_lfd {
     letter-spacing: 0.4px;
   }
 }
+/*communication_wrapper-css-here-start*/
+.communication_wrapper {
+  background-color: #E31837;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.live_tune_connect {
+  padding: 8px 12px;
+}
+
+.border-bottom-profile {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/*communication_wrapper-css-here-end*/
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_icons img {
+  width: 16px;
+  height: 16px;
+}
+
+.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile {
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+}
+.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile img {
+  width: 16px;
+  height: 16px;
+}
+
+.formLabel {
+  margin: 32px 0 8px 0;
+}
+
+.boldTitle_profile {
+  display: flex;
+  place-items: center;
+  align-items: center;
+}
+
+.main-form.fd_content_min_height {
+  min-height: 480px;
+}
+
+.textparent_content {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.formLabel a {
+  text-decoration: none;
+  color: #61b0e0;
+}
+
+.form-control.formControl_profile {
+  border-radius: 8px !important;
+}
+.form-control.formControl_profile:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 1px solid #DCDCDC;
+}
+
+@media only screen and (max-width: 767px) {
+  .communication_wrapper {
+    display: none;
+  }
+  .bankDetailsMainContainer .bottomContentBox.bottomContentBox_profile {
+    margin-top: 88px;
+    margin-bottom: 0;
+  }
+  .textparent label.form-label.formLabel.formLabel_profile {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .bankDetailsMainContainer .boldTitle.boldTitle_profile {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile {
+    width: 24px;
+    height: 24px;
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile img {
+    width: 12px;
+    height: 12px;
+  }
+  .buttonContainer button.themeRedBtn.themeRedBtn_profile {
+    height: 40px;
+  }
+}
 #req_per_page {
   display: none;
 }/*# sourceMappingURL=styles.css.map */
