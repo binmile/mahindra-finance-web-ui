@@ -293,16 +293,17 @@
                   <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
                     <div class="textparent">
                       <label
-                        for="account_number"
+                        for="email_value"
                         class="form-label formLabel formLabel_profile"
                         >Current email</label
                       >
                       <input
                         type="email"
                         class="form-control formControl formControl_profile"
-                        id="account_number"
+                        id="email_value"
                         maxlength="30"
-                        onchange="repaymentContinueButtonEnable()"
+                        oninput="validateEmailInputs('email_value', 'new_email')"
+                        autocomplete="off"
                       />
                       <div class="textfildicons textfildicons_icons">
                         <img
@@ -316,16 +317,17 @@
                   <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
                     <div class="textparent">
                       <label
-                        for="re_enter_account_number"
+                        for="new_email"
                         class="form-label formLabel formLabel_profile"
                         >Enter new email
                       </label>
                       <input
                         type="email"
                         class="form-control formControl formControl_profile"
-                        id="re_enter_account_number"
+                        id="new_email"
                         maxlength="30"
-                        onchange="repaymentContinueButtonEnable()"
+                        oninput="validateEmailInputs('email_value', 'new_email')"
+                        autocomplete="off"
                       />
                       <div class="textfildicons textfildicons_icons">
                         <img
@@ -393,30 +395,39 @@
               <div class="info-heading-container">
                 <div class="info-heading-image">
                   <img
-                    src="./assets/img/icons/info-button-icon.svg"
+                    src="./assets/img/icons/otp-icon.svg"
                     alt="icon"
                   />
                 </div>
-                <div class="info-heading">Are you sure ?</div>
+                <div class="info-heading info-heading_profile_contact">  Enter the OTP sent to your mobile number</div>
               </div>
-              <div class="info-content">
-                Please confirm that you want to proceed with the OTP
-                verification
-              </div>
+              <div class="info-content otpBox">
+                <div id="inputs" class="inputs otpInputContainer">
+                    <input class="input" type="text"
+                        inputmode="numeric" maxlength="1"  />
+                    <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                    <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                    <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                </div>
+                <div class="msg errorText">Incorrect OTP. Please try again!</div>
+
+                <div class="otp_msg" id="otp_msg">
+                    <div class="timer" id="timer">
+                        00:59
+                    </div>
+                    <button class="btn resend_otp disabled" disabled id="resend_otp">Resend OTP</button>
+                </div>
+            </div>
               <div class="info-button-container">
                 <div class="info-button">
-                  <button
-                    type="button"
-                    class="btn themeRedBtn themeWhiteButton"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    No
-                  </button>
-                </div>
-                <div class="info-button">
-                  <button type="button" class="themeRedBtn">Yes</button>
+                  <button type="button" class="themeRedBtn">Proceed</button>
                 </div>
               </div>
             </div>
