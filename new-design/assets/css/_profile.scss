@@ -10,6 +10,10 @@
 }
 .live_tune_connect {
   padding: 8px 12px;
+  border-bottom: 1px solid $color_border;
+}
+.live_tune_connect:last-child {
+  border-bottom: none;
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -19,14 +23,11 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-.border-bottom-profile_row{
-    border-bottom: 1px solid $color_border;
-padding-bottom: 24px;
-
-}
-.border-bottom-profile {
+.border-bottom-profile_row {
   border-bottom: 1px solid $color_border;
+  padding-bottom: 24px;
 }
+
 /*communication_wrapper-css-here-end*/
 .bankDetailsMainContainer .textparent .textfildicons {
   &.textfildicons_icons {

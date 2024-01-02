@@ -7378,6 +7378,11 @@ p.notify_lfd {
 
 .live_tune_connect {
   padding: 8px 12px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.live_tune_connect:last-child {
+  border-bottom: none;
 }
 
 input[type=number]::-webkit-outer-spin-button,
@@ -7393,10 +7398,6 @@ input[type=number] {
 .border-bottom-profile_row {
   border-bottom: 1px solid #E8E8E8;
   padding-bottom: 24px;
-}
-
-.border-bottom-profile {
-  border-bottom: 1px solid #E8E8E8;
 }
 
 /*communication_wrapper-css-here-end*/
