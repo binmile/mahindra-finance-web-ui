@@ -1582,7 +1582,38 @@ animation-name: slideInRightAnimation;
   }
 }
 
-
+/****************************Graph Blur Css**********************/
+.blur_data {
+  position: relative;
+  #myChart{
+    filter: blur(2px);
+    opacity: 0.7;
+  }
+}
+.chart_indivisual {
+  background: #231f2033;
+}
+.roundBackgroundIcon.roundBackgroundIcon_lfd{
+  &.roundBackgroundIcon_indivisual{
+    @include custom-width-height(36px, 36px);
+    margin-right: 8px;
+    img{
+      @include custom-width-height(20px, 20px);
+    }
+  }
+  }
+  
+.boldTitle_indivisual {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 12px 20px;
+  background: $color_white;
+  border-radius: 8px;
+  @include custom-font(16px, 400, 24px, 0.015px);
+}
+/****************************Graph Blur Css**********************/
 @import "./265_css";
 @import "./147_css";
 @import "./renewal_css_265";

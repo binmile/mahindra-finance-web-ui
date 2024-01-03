@@ -2188,6 +2188,44 @@ button.resend_otp.disabled {
   margin-bottom: 4px;
 }
 
+/****************************Graph Blur Css**********************/
+.blur_data {
+  position: relative;
+}
+.blur_data #myChart {
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+.chart_indivisual {
+  background: rgba(35, 31, 32, 0.2);
+}
+
+.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual img {
+  width: 20px;
+  height: 20px;
+}
+
+.boldTitle_indivisual {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 12px 20px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.015px;
+}
+
+/****************************Graph Blur Css**********************/
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
@@ -5014,6 +5052,23 @@ button.resend_otp.disabled {
     height: auto !important;
     width: 100% !important;
   }
+  /*****************graph-blur-start**********************/
+  .boldTitle_indivisual {
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual {
+    width: 24px;
+    height: 24px;
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual img {
+    width: 10px;
+    height: 10px;
+  }
+  /*****************graph-blur-end**********************/
   /************Menu Start********************/
   button.navbar-toggler {
     border: none;
@@ -7516,40 +7571,6 @@ input[type=number] {
   padding-bottom: 32px;
 }
 
-.charset_data {
-  position: relative;
-}
-
-.chart_indivisual {
-  background: rgba(35, 31, 32, 0.2);
-  opacity: 0.7;
-  filter: blur(2px);
-}
-
-.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual {
-  width: 36px;
-  height: 36px;
-  margin-right: 8px;
-}
-.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual img {
-  width: 20px;
-  height: 20px;
-}
-
-.boldTitle_indivisual {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  padding: 12px 20px;
-  background: #FFFFFF;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.015px;
-}
-
 /*communication_wrapper-css-here-end*/
 .bankDetailsMainContainer .textparent .textfildicons.textfildicons_icons img {
   width: 16px;
@@ -7610,21 +7631,6 @@ input[type=number] {
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
-  }
-  .boldTitle_indivisual {
-    padding: 8px;
-    font-size: 10px;
-    font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0;
-  }
-  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual {
-    width: 24px;
-    height: 24px;
-  }
-  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual img {
-    width: 10px;
-    height: 10px;
   }
   .bankDetailsMainContainer .bottomContentBox.bottomContentBox_profile {
     margin-top: 88px;
