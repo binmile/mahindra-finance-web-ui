@@ -7652,12 +7652,12 @@ input[type=number] {
     letter-spacing: 0.25px;
   }
   .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
   }
   .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile img {
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
   }
   .buttonContainer button.themeRedBtn.themeRedBtn_profile {
     height: 40px;

@@ -118,9 +118,9 @@ input[type="number"] {
   }
   .roundBackgroundIcon.roundBackgroundIcon_lfd {
     &.roundBackgroundIcon_profile {
-      @include custom-width-height(16px, 16px);
+      @include custom-width-height(24px, 24px);
       img {
-        @include custom-width-height(8px, 8px);
+        @include custom-width-height(12px, 12px);
       }
     }
   }
