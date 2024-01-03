@@ -27,7 +27,33 @@ input[type="number"] {
   border-bottom: 1px solid $color_border;
   padding-bottom: 32px;
 }
-
+.charset_data {
+  position: relative;
+}
+.chart_indivisual {
+  background: #231f2033;
+  opacity: 0.7;
+  filter: blur(2px);
+}
+.roundBackgroundIcon.roundBackgroundIcon_lfd{
+&.roundBackgroundIcon_indivisual{
+  @include custom-width-height(36px, 36px);
+  margin-right: 8px;
+  img{
+    @include custom-width-height(20px, 20px);
+  }
+}
+}
+.boldTitle_indivisual {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 12px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  @include custom-font(16px, 400, 24px, 0.015px);
+}
 /*communication_wrapper-css-here-end*/
 .bankDetailsMainContainer .textparent .textfildicons {
   &.textfildicons_icons {
@@ -93,6 +119,18 @@ input[type="number"] {
   .communication_wrapper {
     display: none;
   }
+  .boldTitle_indivisual {
+    padding: 10px 16px;
+    @include custom-font(10px, 400, 16px, 0);
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd{
+    &.roundBackgroundIcon_indivisual{
+      @include custom-width-height(24px, 24px);
+      img{
+        @include custom-width-height(10px, 10px);
+      }
+    }
+    }
   .bankDetailsMainContainer .bottomContentBox {
     &.bottomContentBox_profile {
       margin-top: 88px;

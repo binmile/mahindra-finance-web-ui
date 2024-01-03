@@ -7516,6 +7516,40 @@ input[type=number] {
   padding-bottom: 32px;
 }
 
+.charset_data {
+  position: relative;
+}
+
+.chart_indivisual {
+  background: rgba(35, 31, 32, 0.2);
+  opacity: 0.7;
+  filter: blur(2px);
+}
+
+.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual img {
+  width: 20px;
+  height: 20px;
+}
+
+.boldTitle_indivisual {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 12px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.015px;
+}
+
 /*communication_wrapper-css-here-end*/
 .bankDetailsMainContainer .textparent .textfildicons.textfildicons_icons img {
   width: 16px;
@@ -7576,6 +7610,21 @@ input[type=number] {
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .boldTitle_indivisual {
+    padding: 10px 16px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual {
+    width: 24px;
+    height: 24px;
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual img {
+    width: 10px;
+    height: 10px;
   }
   .bankDetailsMainContainer .bottomContentBox.bottomContentBox_profile {
     margin-top: 88px;
