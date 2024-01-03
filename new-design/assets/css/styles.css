@@ -7504,6 +7504,21 @@ p.notify_lfd {
   border-bottom: none;
 }
 
+.add_new_details_profile {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
+  top: 71.2px;
+}
+
+.bankDetailsMainContainer .textparent .formLabel.formLabel_profile_label {
+  margin: 8px 0 5px 0;
+}
+
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;

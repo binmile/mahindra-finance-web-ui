@@ -15,6 +15,20 @@
 .live_tune_connect:last-child {
   border-bottom: none;
 }
+.add_new_details_profile{
+@include custom-font(16px, 700, 24px, 0);
+
+}
+.bankDetailsMainContainer .textparent .textfildicons{
+    &.textfildicons_profile_data{
+        top:71.2px;
+    }
+}
+.bankDetailsMainContainer .textparent .formLabel{
+&.formLabel_profile_label{
+    margin: 8px 0 5px 0;
+}
+}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
