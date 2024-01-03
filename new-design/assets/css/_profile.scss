@@ -50,7 +50,7 @@ input[type="number"] {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   padding: 12px 20px;
-  background: #ffffff;
+  background: $color_white;
   border-radius: 8px;
   @include custom-font(16px, 400, 24px, 0.015px);
 }
