@@ -6843,6 +6843,125 @@ p.reco {
     display: none;
   }
 }
+.customealignitem {
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+}
+
+.logoutbtn {
+  text-align: end;
+}
+
+.profiel-bg {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 24px 32px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-dp {
+  height: 108px;
+  width: 108px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.editprofile {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.profilename p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.bg-white {
+  background-color: #fff !important;
+  padding: 24px 32px;
+  background-color: #FFFFFF !important;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.box-secont-text {
+  display: flex;
+  align-items: center;
+}
+
+.box-secont-text p {
+  margin-bottom: 0px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.box-first-text p {
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.boxsection {
+  border: 1px solid #E8E8E8;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.logoutbtn:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #1084CB;
+  width: 72px;
+  top: 50px;
+}
+
+.box-first-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.commonBackBtn.custborder {
+  border-bottom: 2px solid #1084CB;
+}
+
+.box-secont-text.customebox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button.editprofile {
+  border-radius: 50%;
+  border: 0px;
+}
+
+.modalbtndesign {
+  justify-content: center;
+  display: flex;
+}
+
+.modalbtndesign .box-first-text {
+  padding: 0px 10px 21px 10px;
+}
+
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
