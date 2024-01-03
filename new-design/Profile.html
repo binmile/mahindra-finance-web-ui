@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahindra Finance :: Preclosure</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/_265_css.scss" />
+  </head>
+  <body>
+    <!-- Top-navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div id="hamburgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item no_tablet_view">
+              <div class="mob_menu_user_profile">
+                <div class="userIconImage">
+                  <img src="./assets/img/avatar.png" alt="user icon" />
+                </div>
+                Vikram Kumar Sahu
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >FD renewal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preclosure.html">Preclosure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD repayment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Download</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_menu_download"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/Certificate.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    TDS certificate
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-plus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Form 15 G/H submission
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-text.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Non - cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/percent.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Interest paid / accrued details
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown userAvatar">
+              <img src="./assets/img/avatar.png" alt="user" class="no_view" />
+              <a
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Profile</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_sub_profile"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/user.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    My account
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/edit.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    CKYC update
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/check-circle.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Avail employee benefit
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Other fixed deposits
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item logoutLink" href="#">
+                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                    Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mob_menu_logout no_tablet_view">
+              <a href="#">
+                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                Log out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Top-navbar End -->
+    <div class="container mb-20">
+      <div class="animate__animated animate__fadeInUp topsection">
+        <div class="row customealignitem">
+          <div class=" col-lg-6 col-md-6 col-6">
+            <div id="commonHeading-repayment">My profile</div>
+          </div>
+          <div class=" col-lg-6 col-md-6 col-6 logoutbtn">
+              <a href="#" class="commonBackBtn"
+                ><img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                Logout</a>
+            </div>
+
+        </div>
+      <div class="row">
+        <div class="profiel-bg">
+          <div class="profile-dp">
+            <img src="./assets/img/profiledp.svg" alt="icon" />
+            <div class="">
+              <button class="editprofile" onclick="handleClickModal('Redirection')">
+                <img src="./assets/img/icons/edit3.svg" alt="icon" /></button>
+              </div>
+          </div>
+          <div class="profilename">
+            <p>
+              Vikram Kumar Sahu 
+            </p>
+
+          </div>
+         </div>
+
+      </div>
+      
+
+        <div class="row bg-white">
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text">
+                <p>DOB</p>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/calendar-red-icon.svg" alt="icon" />
+                <p>15 may 1990</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text ">
+                <p>Mobile number</p>
+                  <a href="#" class="commonBackBtn custborder"
+                  ><img src="./assets/img/icons/edit-2.svg" alt="icon" />
+                  Edit</a>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/PhoneWhiteBg.svg" alt="icon" />
+                <p>7XXXXX0365</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text ">
+                <p>Email address</p>
+                  <a href="#" class="commonBackBtn custborder"
+                  ><img src="./assets/img/icons/edit-2.svg" alt="icon" />
+                  Edit</a>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/red_mail_icon.svg" alt="icon" />
+                <p>vikram.sahu@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text">
+                <p>Pan</p>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/pan.svg" alt="icon" />
+                <p>AIXXXX780B</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text">
+                <p>Gender</p>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/Gender.svg" alt="icon" />
+                <p>Male</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text ">
+                <p>Nominee’s name</p>
+                  <a href="#" class="commonBackBtn custborder"
+                  ><img src="./assets/img/icons/edit-2.svg" alt="icon" />
+                  Edit</a>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/nominee.svg" alt="icon" />
+                <p>Ved Prakash Sahu</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text">
+                <p>Occupation</p>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/business.svg" alt="icon" />
+                <p>Business</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text">
+                <p>Marital status</p>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/marital-status.svg" alt="icon" />
+                <p>Single</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="boxsection">
+              <div class="box-first-text ">
+                <p>Address</p>
+                  <a href="#" class="commonBackBtn custborder"
+                  ><img src="./assets/img/icons/edit-2.svg" alt="icon" />
+                  Update via digilocker</a>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/map-pin.svg" alt="icon" />
+                <p>Ground floor, manekji wadia building, nanik motwane Marg, Mumbai - 400001</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text ">
+                <p>Change password</p>
+                  <a href="#" class="commonBackBtn custborder"
+                  ><img src="./assets/img/icons/edit-2.svg" alt="icon" />
+                  Edit</a>
+              </div>
+              <div class="box-secont-text">
+                <img src="./assets/img/icons/password.svg" alt="icon" />
+                <p>************</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="boxsection">
+              <div class="box-first-text ">
+                <p>Bank details</p>
+                  <a href="#" class="commonBackBtn custborder"
+                  ><img src="./assets/img/icons/edit-2.svg" alt="icon" />
+                 Manage</a>
+              </div>
+              <div class="box-secont-text customebox">
+               <div class="d-flex">
+                <img src="./assets/img/icons/bank.svg" alt="icon" />
+                <p>ICICI bank</p>
+               </div>
+                <div class="cust-add">
+                  <a href="#" class="commonBackBtn "
+                  ><img src="./assets/img/icons/pluse2.svg" alt="icon" />
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+      
+     
+     
+    
+    </div>
+    <div class="communication_wrapper">
+      <div class="border-bottom-profile  live_tune_connect">
+        <a href="#">
+          <img src="./assets/img/icons/call-tune.svg" alt="icon">
+        </a>
+      </div>
+      <div class="border-bottom-profile  live_tune_connect">  <a href="#">
+          <img src="./assets/img/icons/map.svg" alt="icon">
+        </a></div>
+      <div class="border-bottom-profile  live_tune_connect"> <a href="#">
+          <img src="./assets/img/icons/chat.svg" alt="icon">
+        </a></div>
+      <div class="live_tune_connect"> <a href="#">
+          <img src="./assets/img/icons/thumb.svg" alt="icon">
+        </a></div>
+    </div>
+
+    <div class="modal fade" id="Redirection" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="btn-close"
+                      data-bs-dismiss="modal" aria-label="Close">
+                      <img src="./assets/img/icons/close-icon.svg"
+                          alt="icon" />
+                  </button>
+                  <div class="info-heading-container">
+                      <div class="info-heading-image">
+                          <img src="./assets/img/icons/user-icon.svg" alt="icon" />
+                      </div>
+                      <div class="info-heading">
+                        Update Profile image
+                      </div>
+                  </div>
+                  <div class="info-content termsContent d-flex justify-content-center">
+                    <div class="profile-dp">
+                      <img src="./assets/img/profiledp.svg" alt="icon">
+                    </div> 
+                  </div>
+                  <div class="modalbtndesign">
+                    <div class="box-first-text ">
+                      <a href="#" class="commonBackBtn custborder"
+                      ><img src="./assets/img/icons/edit-2.svg" alt="icon" />
+                      Edit</a>
+                    </div>
+                    <div class="box-first-text ">
+                      <a href="#" class="commonBackBtn custborder"
+                      ><img src="./assets/img/icons/trash-2.svg" alt="icon" />
+                      Delete</a>
+                  </div>
+
+                  </div>
+                  <div class="info-button"><button type="button" data-bs-dismiss="modal" aria-label="Close"
+                          class="btn themeRedBtn">Proceed</button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/chart.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
