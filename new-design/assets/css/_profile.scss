@@ -121,7 +121,7 @@ input[type="number"] {
   }
   .boldTitle_indivisual {
     padding: 10px 16px;
-    @include custom-font(10px, 400, 16px, 0);
+    @include custom-font(10px, 600, 16px, 0);
   }
   .roundBackgroundIcon.roundBackgroundIcon_lfd{
     &.roundBackgroundIcon_indivisual{
@@ -154,9 +154,9 @@ input[type="number"] {
   }
   .roundBackgroundIcon.roundBackgroundIcon_lfd {
     &.roundBackgroundIcon_profile {
-      @include custom-width-height(24px, 24px);
+      @include custom-width-height(16px, 16px);
       img {
-        @include custom-width-height(12px, 12px);
+        @include custom-width-height(8px, 8px);
       }
     }
   }

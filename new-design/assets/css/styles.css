@@ -7614,7 +7614,7 @@ input[type=number] {
   .boldTitle_indivisual {
     padding: 10px 16px;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 16px;
     letter-spacing: 0;
   }
@@ -7646,12 +7646,12 @@ input[type=number] {
     letter-spacing: 0.25px;
   }
   .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
   }
   .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile img {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
   }
   .buttonContainer button.themeRedBtn.themeRedBtn_profile {
     height: 40px;
