@@ -164,6 +164,27 @@ function validatePasswordInputs(passwordID, newPasswordID, reEnterPasswordID) {
     continueButton.disabled = true;
   }
 }
+function validateForgotPassword( newPasswordID, reEnterPasswordID) {
+    var newPasswordField = document.getElementById(newPasswordID);
+    var reEnterPasswordField = document.getElementById(reEnterPasswordID);
+    var continueButton = document.getElementById("continueButton");
+    if (
+      newPasswordField.value !== "" &&
+      reEnterPasswordField.value !== ""
+    ) {
+      if (newPasswordField.value === reEnterPasswordField.value) {
+        continueButton.disabled = false;
+        newPasswordField.style.border = "1px solid #ccc";
+        reEnterPasswordField.style.border = "1px solid #ccc";
+      } else {
+        continueButton.disabled = true;
+        newPasswordField.style.border = "1px solid #ccc";
+        reEnterPasswordField.style.border = "1px solid #ff0000";
+      }
+    } else {
+      continueButton.disabled = true;
+    }
+  }
 
 function validateEmailInputs(emailID, newemailID) {
     var email_data, newEmail, continueButton;
