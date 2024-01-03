@@ -291,17 +291,11 @@
                   <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
                     <div class="textparent">
                       <label
-                        for="account_number"
+                        for="mobile_number"
                         class="form-label formLabel formLabel_profile"
                         >Current mobile number</label
                       >
-                      <input
-                        type="number"
-                        class="form-control formControl formControl_profile"
-                        id="account_number"
-                        maxlength="10"
-                        onchange="repaymentContinueButtonEnable()"
-                      />
+                      <input type="number" class="form-control formControl formControl_profile" id="mobile_number" pattern="[0-9]{10}" oninput="validateMobileInputs('mobile_number', 'new_mobile_number')" autocomplete="off"/>
                       <div class="textfildicons textfildicons_icons">
                         <img
                           src="./assets/img/icons/smartphone.svg"
@@ -314,17 +308,11 @@
                   <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
                     <div class="textparent">
                       <label
-                        for="re_enter_account_number"
+                        for="new_mobile_number"
                         class="form-label formLabel formLabel_profile"
                         >Enter new mobile number
                       </label>
-                      <input
-                        type="number"
-                        class="form-control formControl formControl_profile"
-                        id="re_enter_account_number"
-                        maxlength="10"
-                        onchange="repaymentContinueButtonEnable()"
-                      />
+                      <input type="number" class="form-control formControl formControl_profile" id="new_mobile_number" pattern="[0-9]{10}" oninput="validateMobileInputs('mobile_number', 'new_mobile_number')" autocomplete="off"/>
                       <div class="textfildicons textfildicons_icons">
                         <img
                           src="./assets/img/icons/smartphone.svg"
@@ -347,24 +335,24 @@
               disabled
               onclick="handleClickModal('myModal')"
             >
-              Submit
+            Verify
               <img src="./assets/img/arrow-right.svg" alt="icons" />
             </button>
           </div>
         </div>
       </div>
       <div class="communication_wrapper">
-        <div class="border-bottom-profile live_tune_connect">
+        <div class="live_tune_connect">
           <a href="#">
             <img src="./assets/img/icons/call-tune.svg" alt="icon" />
           </a>
         </div>
-        <div class="border-bottom-profile live_tune_connect">
+        <div class="live_tune_connect">
           <a href="#">
             <img src="./assets/img/icons/map.svg" alt="icon" />
           </a>
         </div>
-        <div class="border-bottom-profile live_tune_connect">
+        <div class="live_tune_connect">
           <a href="#">
             <img src="./assets/img/icons/chat.svg" alt="icon" />
           </a>
@@ -391,30 +379,39 @@
               <div class="info-heading-container">
                 <div class="info-heading-image">
                   <img
-                    src="./assets/img/icons/info-button-icon.svg"
+                    src="./assets/img/icons/otp-icon.svg"
                     alt="icon"
                   />
                 </div>
-                <div class="info-heading">Are you sure ?</div>
+                <div class="info-heading info-heading_profile_contact">  Enter the OTP sent to your mobile number</div>
               </div>
-              <div class="info-content">
-                Please confirm that you want to proceed with the OTP
-                verification
-              </div>
+              <div class="info-content otpBox">
+                <div id="inputs" class="inputs otpInputContainer">
+                    <input class="input" type="text"
+                        inputmode="numeric" maxlength="1"  />
+                    <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                    <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                    <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                        <input class="input" type="text"
+                        inputmode="numeric" maxlength="1" />
+                </div>
+                <div class="msg errorText">Incorrect OTP. Please try again!</div>
+
+                <div class="otp_msg" id="otp_msg">
+                    <div class="timer" id="timer">
+                        00:59
+                    </div>
+                    <button class="btn resend_otp disabled" disabled id="resend_otp">Resend OTP</button>
+                </div>
+            </div>
               <div class="info-button-container">
                 <div class="info-button">
-                  <button
-                    type="button"
-                    class="btn themeRedBtn themeWhiteButton"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    No
-                  </button>
-                </div>
-                <div class="info-button">
-                  <button type="button" class="themeRedBtn">Yes</button>
+                  <button type="button" class="themeRedBtn">Proceed</button>
                 </div>
               </div>
             </div>
