@@ -2196,6 +2196,13 @@ button.resend_otp.disabled {
   filter: blur(2px);
   opacity: 0.7;
 }
+.blur_data #myChart.myChart_pointer_none {
+  pointer-events: none;
+}
+
+.boldTitle_indivisual_opacity {
+  opacity: unset;
+}
 
 .chart_indivisual {
   background: rgba(35, 31, 32, 0.2);
