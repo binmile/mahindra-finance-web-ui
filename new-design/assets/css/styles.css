@@ -2553,6 +2553,36 @@ button.resend_otp.disabled {
   }
 }
 /*********** Responsive CSS Start Here*************/
+.accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+  min-height: 472px;
+}
+
+.fdContents .fdDetails .value img.renewal_partial_img {
+  filter: unset;
+}
+
+.Remaining_amount {
+  color: #6b7280;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.bankLocation.bankLocation_renewal {
+  margin-top: 8px;
+}
+
+.accountHolderDetails_partial_renewal {
+  padding-bottom: 0;
+}
+
+.custom_tooltip .tooltip_img {
+  width: 18px;
+  height: 18px;
+}
+
 @media only screen and (min-width: 769px) {
   /*********** Responsive dashboard View Start*************/
   .no_desktop_view {
@@ -3046,6 +3076,15 @@ button.resend_otp.disabled {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 501px;
+  }
+  .accountListrenewal_partial {
+    padding-bottom: 48px;
+  }
+  .accountContainer .accountBox .fdContents .fdDetails.fdDetails_partial_renewal::after {
+    right: -13px;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
     position: relative;
   }
@@ -3317,6 +3356,15 @@ button.resend_otp.disabled {
   /*----------renewal-form-mini-desktop-UI--- end------------------------*/
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 0;
+  }
+  .bottomText_partial_renewal {
+    display: none;
+  }
+  .bankAccountDetails .fdDetails.fdDetails_partial_renewal {
+    margin-bottom: 16px;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
     position: relative;
   }
@@ -3635,6 +3683,9 @@ button.resend_otp.disabled {
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 0;
+  }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
     margin-bottom: 0;
   }
@@ -3754,7 +3805,7 @@ button.resend_otp.disabled {
     letter-spacing: 0.15px;
   }
   .lightBorderRight {
-    border-right: 1px solid #CCCCCC;
+    border-right: 1px solid #cccccc;
   }
   .cardContainerMobile {
     padding: 8px 16px;
