@@ -7544,6 +7544,16 @@ input[type=number] {
   font-size: 21px;
 }
 
+.heading_nominee {
+  display: flex;
+  place-items: center;
+  align-items: center;
+}
+
+#commonHeading-repayment.commonHeading_repayment_profile {
+  margin-right: 4px;
+}
+
 .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile {
   margin-right: 8px;
   width: 30px;
@@ -7560,8 +7570,12 @@ input[type=number] {
   align-items: center;
 }
 
-.main-form.fd_content_min_height {
-  min-height: 480px;
+.min_height_profile_nominee {
+  min-height: 270px;
+}
+
+.listTable_profile {
+  margin: 16px 0 32px 0;
 }
 
 .textparent_content {
@@ -7591,9 +7605,58 @@ input[type=number] {
   border: 1px solid #DCDCDC;
 }
 
+.dropdown_menu_profile {
+  min-width: 12rem;
+}
+
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .min_height_profile_nominee {
+    min-height: 0;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content.Investment_details_content_profile {
+    flex-wrap: wrap;
+    justify-content: initial;
+    margin-bottom: 0;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content.Investment_details_content_profile .details_profile {
+    width: 50%;
+    margin-bottom: 16px;
+  }
+  .commonHeading_repayment_profile {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .percentage_text_profile {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #231F20;
+  }
+  .formControl_profile {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .add_new_details_profile {
+    margin: 14px 0 4px 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+  .themeRedBtn_profile {
+    padding: 0 8px 0 8px;
+    height: 21px;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
+    top: 54.2px;
   }
   .bankDetailsMainContainer .bottomContentBox.bottomContentBox_profile {
     margin-top: 88px;
