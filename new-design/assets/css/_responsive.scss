@@ -15,6 +15,20 @@
         height: auto !important;
         width: 100% !important;
     }
+/*****************graph-blur-start**********************/
+.boldTitle_indivisual {
+    padding: 8px;
+    @include custom-font(10px, 600, 16px, 0);
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd{
+    &.roundBackgroundIcon_indivisual{
+      @include custom-width-height(24px, 24px);
+      img{
+        @include custom-width-height(10px, 10px);
+      }
+    }
+    }
+    /*****************graph-blur-end**********************/
 
     /************Menu Start********************/
     button.navbar-toggler{
