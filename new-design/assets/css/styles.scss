@@ -1588,7 +1588,14 @@ animation-name: slideInRightAnimation;
   #myChart{
     filter: blur(2px);
     opacity: 0.7;
+    &.myChart_pointer_none{
+      pointer-events: none;
+    }
+   
   }
+}
+.boldTitle_indivisual_opacity {
+  opacity: unset;
 }
 .chart_indivisual {
   background: #231f2033;
