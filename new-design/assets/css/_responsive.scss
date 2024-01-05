@@ -10,7 +10,6 @@
 }
 
 @media only screen and (max-width: $tablet) {
-
     #myChart{
         height: auto !important;
         width: 100% !important;
@@ -1005,6 +1004,28 @@
 }
 
 @media screen and (max-width: 991px) {
+    /********************tooltip-mobile- start******************/
+.custom-tooltip .tooltip-text{
+    &.tooltip_Text_responsive{
+        left:-207px;
+    }
+    &.tooltip_Text_responsive::after{
+        left:81%;
+    }
+    &.tooltip_Text_expected{
+        left:-110px;
+    }
+    &.tooltip_Text_expected::after{
+        left:44%;
+    }
+    &.tooltip_Text_quick{
+        left:-243px;
+    }
+    &.tooltip_Text_quick::after{
+        left:95%;
+    }
+}
+/********************tooltip-mobile- End******************/
     /************Menu Start********************/
     .tablet_view{
         display: block;

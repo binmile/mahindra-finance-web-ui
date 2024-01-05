@@ -14,17 +14,27 @@
   margin-top: 8px;
   @include custom-font(14px, 400, 24px, 0.25px);
 }
-.bankLocation{
-  &.bankLocation_renewal{
+.bankLocation {
+  &.bankLocation_renewal {
     margin-top: 8px;
   }
 }
-.accountHolderDetails_partial_renewal{
+.accountHolderDetails_partial_renewal {
   padding-bottom: 0;
 }
-.custom_tooltip{
-  .tooltip_img{
+.custom_tooltip {
+  .tooltip_img {
     @include custom-width-height(18px, 18px);
+  }
+}
+.custom-tooltip .tooltip-text {
+  &.tooltip_renewal {
+  left: -202px;
+  }
+}
+.custom-tooltip .tooltip-text {
+  &.tooltip_renewal::after {
+    left: 79%;
   }
 }
 
@@ -539,14 +549,8 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
-  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal{
-    min-height: 501px;
-  }
-  .accountListrenewal_partial{
-    padding-bottom: 48px;
-  }
-  .accountContainer .accountBox .fdContents .fdDetails{
-    &.fdDetails_partial_renewal::after{
+  .accountContainer .accountBox .fdContents .fdDetails {
+    &.fdDetails_partial_renewal::after {
       right: -13px;
     }
   }
@@ -880,17 +884,33 @@
   }
   /*----------renewal-form-mini-desktop-UI--- end------------------------*/
 }
-
+@media only screen and (min-width: 992px) and (max-width: 1119px) {
+  .accountDetailsBox
+  .accountListContainer.accountListContainer_partial_renewal {
+  min-height: 501px;
+}
+.accountListrenewal_partial {
+  padding-bottom: 48px;
+}
+.accountDetailsBox .accountListContainer .accountList{
+&.accountList_renewal{
+padding: 32px 0 36px 0;
+}
+}
+.fdContents_partial_reneal{
+  margin-top:32px
+}
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal{
+  .accountDetailsBox
+    .accountListContainer.accountListContainer_partial_renewal {
     min-height: 0;
   }
-  .bottomText_partial_renewal{
+  .bottomText_partial_renewal {
     display: none;
-
   }
-  .bankAccountDetails .fdDetails{
-    &.fdDetails_partial_renewal{
+  .bankAccountDetails .fdDetails {
+    &.fdDetails_partial_renewal {
       margin-bottom: 16px;
     }
   }
@@ -1231,7 +1251,18 @@
 
 @media only screen and (max-width: $tablet) {
   /*********** Responsive dashboard View Start*************/
-  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal{
+  .custom-tooltip .tooltip-text {
+    &.tooltip_renewal {
+      left: auto;
+    }
+  }
+  .custom-tooltip .tooltip-text {
+    &.tooltip_renewal::after {
+      left: 91%;
+    }
+  }
+  .accountDetailsBox
+    .accountListContainer.accountListContainer_partial_renewal {
     min-height: 0;
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
@@ -2094,9 +2125,10 @@
   .edit_img {
     color: $color_light_blue;
     border-bottom: 1px solid $color_light_blue;
+    @include custom-font(12px, 500, 16px, 0.25px);
     img {
-      @include custom-width-height(14px, 14px);
-      vertical-align: initial;
+      @include custom-width-height(12px, 12px);
+      vertical-align: middle;
     }
   }
   .renewal-circle {
