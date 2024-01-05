@@ -2583,6 +2583,14 @@ button.resend_otp.disabled {
   height: 18px;
 }
 
+.custom-tooltip .tooltip-text.tooltip_renewal {
+  left: -202px;
+}
+
+.custom-tooltip .tooltip-text.tooltip_renewal::after {
+  left: 79%;
+}
+
 @media only screen and (min-width: 769px) {
   /*********** Responsive dashboard View Start*************/
   .no_desktop_view {
@@ -3076,12 +3084,6 @@ button.resend_otp.disabled {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
-  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
-    min-height: 501px;
-  }
-  .accountListrenewal_partial {
-    padding-bottom: 48px;
-  }
   .accountContainer .accountBox .fdContents .fdDetails.fdDetails_partial_renewal::after {
     right: -13px;
   }
@@ -3354,6 +3356,20 @@ button.resend_otp.disabled {
     color: #231F20;
   }
   /*----------renewal-form-mini-desktop-UI--- end------------------------*/
+}
+@media only screen and (min-width: 992px) and (max-width: 1119px) {
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 501px;
+  }
+  .accountListrenewal_partial {
+    padding-bottom: 48px;
+  }
+  .accountDetailsBox .accountListContainer .accountList.accountList_renewal {
+    padding: 32px 0 36px 0;
+  }
+  .fdContents_partial_reneal {
+    margin-top: 32px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
@@ -3683,6 +3699,12 @@ button.resend_otp.disabled {
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
+  .custom-tooltip .tooltip-text.tooltip_renewal {
+    left: auto;
+  }
+  .custom-tooltip .tooltip-text.tooltip_renewal::after {
+    left: 91%;
+  }
   .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
     min-height: 0;
   }
@@ -4598,11 +4620,15 @@ button.resend_otp.disabled {
   .edit_img {
     color: #1084CB;
     border-bottom: 1px solid #1084CB;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
   }
   .edit_img img {
-    width: 14px;
-    height: 14px;
-    vertical-align: initial;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
   }
   .renewal-circle {
     width: 46px;
