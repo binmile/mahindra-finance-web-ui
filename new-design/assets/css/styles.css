@@ -6000,6 +6000,26 @@ button.resend_otp.disabled {
   }
 }
 @media screen and (max-width: 991px) {
+  /********************tooltip-mobile- start******************/
+  .custom-tooltip .tooltip-text.tooltip_Text_responsive {
+    left: -207px;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_responsive::after {
+    left: 81%;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_expected {
+    left: -110px;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_expected::after {
+    left: 44%;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_quick {
+    left: -243px;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_quick::after {
+    left: 95%;
+  }
+  /********************tooltip-mobile- End******************/
   /************Menu Start********************/
   .tablet_view {
     display: block;
