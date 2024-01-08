@@ -2553,6 +2553,44 @@ button.resend_otp.disabled {
   }
 }
 /*********** Responsive CSS Start Here*************/
+.accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+  min-height: 472px;
+}
+
+.fdContents .fdDetails .value img.renewal_partial_img {
+  filter: unset;
+}
+
+.Remaining_amount {
+  color: #6b7280;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.bankLocation.bankLocation_renewal {
+  margin-top: 8px;
+}
+
+.accountHolderDetails_partial_renewal {
+  padding-bottom: 0;
+}
+
+.custom_tooltip .tooltip_img {
+  width: 18px;
+  height: 18px;
+}
+
+.custom-tooltip .tooltip-text.tooltip_renewal {
+  left: -202px;
+}
+
+.custom-tooltip .tooltip-text.tooltip_renewal::after {
+  left: 79%;
+}
+
 @media only screen and (min-width: 769px) {
   /*********** Responsive dashboard View Start*************/
   .no_desktop_view {
@@ -3046,6 +3084,9 @@ button.resend_otp.disabled {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
+  .accountContainer .accountBox .fdContents .fdDetails.fdDetails_partial_renewal::after {
+    right: -13px;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
     position: relative;
   }
@@ -3316,7 +3357,30 @@ button.resend_otp.disabled {
   }
   /*----------renewal-form-mini-desktop-UI--- end------------------------*/
 }
+@media only screen and (min-width: 992px) and (max-width: 1119px) {
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 501px;
+  }
+  .accountListrenewal_partial {
+    padding-bottom: 48px;
+  }
+  .accountDetailsBox .accountListContainer .accountList.accountList_renewal {
+    padding: 32px 0 36px 0;
+  }
+  .fdContents_partial_reneal {
+    margin-top: 32px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 0;
+  }
+  .bottomText_partial_renewal {
+    display: none;
+  }
+  .bankAccountDetails .fdDetails.fdDetails_partial_renewal {
+    margin-bottom: 16px;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
     position: relative;
   }
@@ -3635,6 +3699,15 @@ button.resend_otp.disabled {
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
+  .custom-tooltip .tooltip-text.tooltip_renewal {
+    left: auto;
+  }
+  .custom-tooltip .tooltip-text.tooltip_renewal::after {
+    left: 91%;
+  }
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 0;
+  }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
     margin-bottom: 0;
   }
@@ -3754,7 +3827,7 @@ button.resend_otp.disabled {
     letter-spacing: 0.15px;
   }
   .lightBorderRight {
-    border-right: 1px solid #CCCCCC;
+    border-right: 1px solid #cccccc;
   }
   .cardContainerMobile {
     padding: 8px 16px;
@@ -4547,11 +4620,15 @@ button.resend_otp.disabled {
   .edit_img {
     color: #1084CB;
     border-bottom: 1px solid #1084CB;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
   }
   .edit_img img {
-    width: 14px;
-    height: 14px;
-    vertical-align: initial;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
   }
   .renewal-circle {
     width: 46px;
@@ -5923,6 +6000,26 @@ button.resend_otp.disabled {
   }
 }
 @media screen and (max-width: 991px) {
+  /********************tooltip-mobile- start******************/
+  .custom-tooltip .tooltip-text.tooltip_Text_responsive {
+    left: -207px;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_responsive::after {
+    left: 81%;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_expected {
+    left: -110px;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_expected::after {
+    left: 44%;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_quick {
+    left: -243px;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_quick::after {
+    left: 95%;
+  }
+  /********************tooltip-mobile- End******************/
   /************Menu Start********************/
   .tablet_view {
     display: block;
