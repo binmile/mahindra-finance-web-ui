@@ -127,6 +127,9 @@ input[type="number"] {
 .listTable_profile {
   margin: 16px 0 32px 0;
 }
+.main-form.fd_content_min_height {
+  min-height: 480px;
+}
 
 .textparent_content {
   display: flex;
@@ -174,9 +177,7 @@ input[type="number"] {
 .col_wrapper_profile_bottom {
   margin-bottom: 12px;
 }
-.fd_content_min_height_profile{
-  min-height: 400px;
-}
+
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;

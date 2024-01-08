@@ -7834,6 +7834,10 @@ input[type=number] {
   margin: 16px 0 32px 0;
 }
 
+.main-form.fd_content_min_height {
+  min-height: 480px;
+}
+
 .textparent_content {
   display: flex;
   justify-content: space-between;
@@ -7878,10 +7882,6 @@ input[type=number] {
 }
 .col_wrapper_profile_bottom {
   margin-bottom: 12px;
-}
-
-.fd_content_min_height_profile {
-  min-height: 400px;
 }
 
 @media only screen and (max-width: 767px) {
