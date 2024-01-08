@@ -222,6 +222,19 @@ function validateEmailInputs(emailID, newemailID) {
         }
     }
 }
+function validatePanInputs(panNumberId) {
+  var panNumberId_res = document.getElementById(panNumberId);
+  continueButton = document.getElementById("continueButton");
+  const panNumberValue = panNumberId_res.value.trim();
+  const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
+  const panNumberIsValid = panNumberRegex.test(panNumberValue);
+  if (panNumberValue !== "" && panNumberIsValid) {
+    continueButton.disabled = false;
+  } else {
+    continueButton.disabled = true;
+  }
+  return panNumberIsValid
+}
 
 function togglePasswordVisibility(passwordId, closeEyesIconId, openEyesIconId) {
   var passwordInput = document.getElementById(passwordId);

@@ -7799,6 +7799,10 @@ input[type=number] {
   width: 16px;
   height: 16px;
 }
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_icons_cumulative img {
+  width: 20px;
+  height: 20px;
+}
 
 .modal .modal-content .modal-body .info-heading-container .info-heading.info-heading_profile_contact {
   font-size: 21px;
@@ -7869,6 +7873,11 @@ input[type=number] {
   min-width: 12rem;
 }
 
+.bankDetailsMainContainer .bottomContentBox.profile_cumulative {
+  margin-top: 295px;
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
     top: 63.2px;
@@ -7887,6 +7896,10 @@ input[type=number] {
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons.textfildicons_icons_cumulative img {
+    width: 16px;
+    height: 16px;
   }
   .boxsection_profile .box-first-text-profile p {
     font-size: 12px;

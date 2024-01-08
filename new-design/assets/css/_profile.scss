@@ -90,6 +90,12 @@ input[type="number"] {
       @include custom-width-height(16px, 16px);
     }
   }
+  &.textfildicons_icons_cumulative{
+    img{
+      @include custom-width-height(20px, 20px);
+    }
+  }
+
 }
 .modal .modal-content .modal-body .info-heading-container .info-heading {
   &.info-heading_profile_contact {
@@ -161,6 +167,12 @@ input[type="number"] {
 .dropdown_menu_profile {
   min-width: 12rem;
 }
+.bankDetailsMainContainer .bottomContentBox{
+  &.profile_cumulative{
+    margin-top: 295px;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer
     .textparent
@@ -181,6 +193,14 @@ input[type="number"] {
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons {
+    &.textfildicons_icons_cumulative{
+      img{
+        @include custom-width-height(16px, 16px);
+      }
+    }
+  
   }
   .boxsection_profile {
     .box-first-text-profile {
