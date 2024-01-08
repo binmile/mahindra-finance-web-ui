@@ -15,6 +15,56 @@
 .live_tune_connect:last-child {
   border-bottom: none;
 }
+.add_new_details_profile {
+  @include custom-font(16px, 700, 24px, 0);
+}
+
+.bankDetailsMainContainer .textparent .textfildicons {
+  &.textfildicons_profile_data {
+    top: 71.2px;
+  }
+}
+.bankDetailsMainContainer .textparent .formLabel {
+  &.formLabel_profile_label {
+    margin: 8px 0 5px 0;
+  }
+}
+.bankDetailsMainContainer_profile {
+  padding: 20px 32px 45px 32px;
+}
+.listTable_profile {
+  border: 1px solid $color_dull_gray;
+  border-radius: 8px;
+}
+
+.listTable .listTableBody .listTabledata {
+  &.listTabledata_profile {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+.boxsection_profile {
+  margin-bottom: 0;
+  .box-first-text-profile {
+    p {
+      margin-top: 0;
+      @include custom-font(14px, 500, 24px, 0.1px);
+      color: $color_light_text;
+    }
+  }
+  .box-secont-text {
+    img {
+      @include custom-width-height(20px, 20px);
+    }
+    p {
+      @include custom-font(16px, 500, 24px, 0);
+      color: $color_black_light;
+    }
+  }
+}
+.nominee_details {
+  margin-top: 24px;
+}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -28,11 +78,14 @@ input[type="number"] {
   padding-bottom: 32px;
 }
 
-
-
 /*communication_wrapper-css-here-end*/
 .bankDetailsMainContainer .textparent .textfildicons {
   &.textfildicons_icons {
+    img {
+      @include custom-width-height(16px, 16px);
+    }
+  }
+  &.textfildicons_profile_data {
     img {
       @include custom-width-height(16px, 16px);
     }
@@ -44,6 +97,16 @@ input[type="number"] {
   }
 }
 
+.heading_nominee {
+  display: flex;
+  place-items: center;
+  align-items: center;
+}
+#commonHeading-repayment {
+  &.commonHeading_repayment_profile {
+    margin-right: 4px;
+  }
+}
 .roundBackgroundIcon.roundBackgroundIcon_lfd {
   &.roundBackgroundIcon_profile {
     margin-right: 8px;
@@ -61,9 +124,13 @@ input[type="number"] {
   align-items: center;
 }
 
+.listTable_profile {
+  margin: 16px 0 32px 0;
+}
 .main-form.fd_content_min_height {
   min-height: 480px;
 }
+
 .textparent_content {
   display: flex;
   justify-content: space-between;
@@ -91,9 +158,99 @@ input[type="number"] {
     border: 1px solid $color_disabled_btn;
   }
 }
+.dropdown_menu_profile {
+  min-width: 12rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .bankDetailsMainContainer
+    .textparent
+    .textfildicons.textfildicons_profile_data {
+    top: 63.2px;
+  }
+  .col_wrapper_profile {
+    width: 100%;
+  }
+  .bankDetailsMainContainer_profile {
+    padding: 12px 16px;
+  }
+}
+.col_wrapper_profile_bottom {
+  margin-bottom: 12px;
+}
+
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .boxsection_profile {
+    .box-first-text-profile {
+      p {
+        @include custom-font(12px, 500, 16px, 0.25px);
+      }
+    }
+    .box-secont-text {
+      img {
+        @include custom-width-height(16px, 16px);
+      }
+      p {
+        @include custom-font(14px, 500, 20px, 0.25px);
+      }
+    }
+  }
+  .boxsection_profile_bottom {
+    margin-bottom: 12px;
+  }
+  .bankDetailsMainContainer_profile {
+    padding: 12px 16px;
+  }
+  .mob-wrapper
+    .fixedDepositeContainer
+    .fixedDepositDetailsData
+    .details_fixed_deposit
+    .second_details
+    .Investment_details_content {
+    &.Investment_details_content_profile {
+      flex-wrap: wrap;
+      justify-content: initial;
+      margin-bottom: 0;
+      .details_profile {
+        width: 50%;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .commonHeading_repayment_profile {
+    @include custom-font(12px, 600, 16px, 0);
+  }
+
+  .mob-wrapper
+    .fixedDepositeContainer
+    .fixedDepositDetailsData
+    .details_fixed_deposit
+    .second_details
+    .Investment_details_content
+    .img_detail {
+    .percentage_text_profile {
+      @include custom-font(14px, 500, 20px, 0.25px);
+      color: $color_black_light;
+    }
+  }
+  .formControl_profile {
+    @include custom-font(14px, 400, 20px, 0.25px);
+  }
+  .add_new_details_profile {
+    margin: 14px 0 4px 0;
+    @include custom-font(12px, 700, 16px, 0.4px);
+  }
+  .themeRedBtn_profile {
+    padding: 0 8px 0 8px;
+    height: 21px;
+  }
+
+  .bankDetailsMainContainer
+    .textparent
+    .textfildicons.textfildicons_profile_data {
+    top: 58.2px;
   }
   .bankDetailsMainContainer .bottomContentBox {
     &.bottomContentBox_profile {
