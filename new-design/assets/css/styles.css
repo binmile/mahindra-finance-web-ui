@@ -7734,6 +7734,47 @@ p.notify_lfd {
   margin: 8px 0 5px 0;
 }
 
+.bankDetailsMainContainer_profile {
+  padding: 20px 32px 45px 32px;
+}
+
+.listTable_profile {
+  border: 1px solid #ADADAD;
+  border-radius: 8px;
+}
+
+.listTable .listTableBody .listTabledata.listTabledata_profile {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.boxsection_profile {
+  margin-bottom: 0;
+}
+.boxsection_profile .box-first-text-profile p {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #6B7280;
+}
+.boxsection_profile .box-secont-text img {
+  width: 20px;
+  height: 20px;
+}
+.boxsection_profile .box-secont-text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #231F20;
+}
+
+.nominee_details {
+  margin-top: 24px;
+}
+
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -7751,6 +7792,10 @@ input[type=number] {
 
 /*communication_wrapper-css-here-end*/
 .bankDetailsMainContainer .textparent .textfildicons.textfildicons_icons img {
+  width: 16px;
+  height: 16px;
+}
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data img {
   width: 16px;
   height: 16px;
 }
@@ -7783,10 +7828,6 @@ input[type=number] {
   display: flex;
   place-items: center;
   align-items: center;
-}
-
-.min_height_profile_nominee {
-  min-height: 270px;
 }
 
 .listTable_profile {
@@ -7824,12 +7865,46 @@ input[type=number] {
   min-width: 12rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
+    top: 63.2px;
+  }
+  .col_wrapper_profile {
+    width: 100%;
+  }
+  .bankDetailsMainContainer_profile {
+    padding: 12px 16px;
+  }
+}
+.col_wrapper_profile_bottom {
+  margin-bottom: 12px;
+}
+
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
   }
-  .min_height_profile_nominee {
-    min-height: 0;
+  .boxsection_profile .box-first-text-profile p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
+  .boxsection_profile .box-secont-text img {
+    width: 16px;
+    height: 16px;
+  }
+  .boxsection_profile .box-secont-text p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .boxsection_profile_bottom {
+    margin-bottom: 12px;
+  }
+  .bankDetailsMainContainer_profile {
+    padding: 12px 16px;
   }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content.Investment_details_content_profile {
     flex-wrap: wrap;
@@ -7871,7 +7946,7 @@ input[type=number] {
     height: 21px;
   }
   .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
-    top: 54.2px;
+    top: 58.2px;
   }
   .bankDetailsMainContainer .bottomContentBox.bottomContentBox_profile {
     margin-top: 88px;
