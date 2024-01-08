@@ -5167,7 +5167,7 @@ button.resend_otp.disabled {
     top: 54px;
     left: 0;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 100%;
   }
   .navbar-collapse.collapsing {
@@ -5197,7 +5197,7 @@ button.resend_otp.disabled {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -5234,7 +5234,9 @@ button.resend_otp.disabled {
     border-bottom: 1px solid #E8E8E8;
     margin-left: 0px;
   }
-  nav .navbar-nav li.nav-item a.nav-link, nav .navbar-nav li.nav-item a.nav-link.active, nav .navbar-nav li.nav-item a.nav-link:hover {
+  nav .navbar-nav li.nav-item a.nav-link,
+  nav .navbar-nav li.nav-item a.nav-link.active,
+  nav .navbar-nav li.nav-item a.nav-link:hover {
     color: #231F20;
   }
   nav .navbar-nav li.nav-item a.nav-link {
@@ -5273,36 +5275,42 @@ button.resend_otp.disabled {
   nav .userAvatar a {
     width: 100%;
   }
-  nav ul.dropdown-menu.show, nav ul.dropdown-menu {
+  nav ul.dropdown-menu.show,
+  nav ul.dropdown-menu {
     width: 100% !important;
     display: flex !important;
     flex-wrap: wrap !important;
     border-radius: 0px !important;
     height: 0px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     box-shadow: none !important;
     overflow: hidden;
     transition: all linear 300ms;
   }
-  nav ul.dropdown-menu.show li, nav ul.dropdown-menu li {
+  nav ul.dropdown-menu.show li,
+  nav ul.dropdown-menu li {
     width: 50% !important;
-    border: 1px solid #D6D6D6;
+    border: 1px solid #d6d6d6;
     padding: 0px 16px !important;
   }
-  nav ul.dropdown-menu.show li a, nav ul.dropdown-menu li a {
+  nav ul.dropdown-menu.show li a,
+  nav ul.dropdown-menu li a {
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.25px;
     transition: all linear 300ms;
   }
-  nav ul.dropdown-menu.show li a img, nav ul.dropdown-menu li a img {
+  nav ul.dropdown-menu.show li a img,
+  nav ul.dropdown-menu li a img {
     display: none;
   }
-  nav ul.dropdown-menu.show li a img.plusIcon, nav ul.dropdown-menu li a img.plusIcon {
+  nav ul.dropdown-menu.show li a img.plusIcon,
+  nav ul.dropdown-menu li a img.plusIcon {
     display: block;
   }
-  nav ul.dropdown-menu.show li:last-child a, nav ul.dropdown-menu li:last-child a {
+  nav ul.dropdown-menu.show li:last-child a,
+  nav ul.dropdown-menu li:last-child a {
     border-bottom: none !important;
     margin-bottom: 0px !important;
   }
@@ -5352,7 +5360,8 @@ button.resend_otp.disabled {
   }
   /************Menu End********************/
   /************Modal Start************/
-  .modal, .quick_action_container {
+  .modal,
+  .quick_action_container {
     position: fixed;
     bottom: 0;
     top: auto;
@@ -5368,37 +5377,46 @@ button.resend_otp.disabled {
     height: -moz-fit-content;
     height: fit-content;
   }
-  .modal .modal-dialog, .quick_action_container .modal-dialog {
+  .modal .modal-dialog,
+  .quick_action_container .modal-dialog {
     margin: 0px;
   }
-  .modal .modal-dialog .modal-content, .quick_action_container .modal-dialog .modal-content {
+  .modal .modal-dialog .modal-content,
+  .quick_action_container .modal-dialog .modal-content {
     box-shadow: none;
     border-radius: 0px;
   }
-  .modal .modal-dialog .modal-content .modal-body, .quick_action_container .modal-dialog .modal-content .modal-body {
+  .modal .modal-dialog .modal-content .modal-body,
+  .quick_action_container .modal-dialog .modal-content .modal-body {
     padding: 24px 16px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container {
     margin-top: 4px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.15px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image {
     max-width: 28px;
     max-height: 28px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img {
     width: 16px;
     height: 16px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-button button, .quick_action_container .modal-dialog .modal-content .modal-body .info-button button {
+  .modal .modal-dialog .modal-content .modal-body .info-button button,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-button button {
     width: 100%;
   }
-  .modal.show, .quick_action_container.show {
+  .modal.show,
+  .quick_action_container.show {
     transform: translate(0, 0px) !important;
   }
   #overlay {
@@ -5503,8 +5521,8 @@ button.resend_otp.disabled {
   }
   .accountContainer .accountDetailsBox {
     padding: 24px 0px 8px 0;
-    border-top: 1px solid #E8E8E8;
-    border-bottom: 1px solid #E8E8E8;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
     margin: 24px 0px;
   }
   .accountContainer .accountBox {
@@ -5641,7 +5659,7 @@ button.resend_otp.disabled {
   .borrowFundContainer {
     margin-bottom: 0px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #E8E8E8;
+    border-bottom: 1px solid #e8e8e8;
   }
   .borrowFundContainer .borrowFundBox .borrowFundContent {
     font-size: 10px;
@@ -5652,7 +5670,7 @@ button.resend_otp.disabled {
   }
   .borrowFundFDContainer .borrowFDList {
     border: none;
-    border-bottom: 1px solid #E8E8E8;
+    border-bottom: 1px solid #e8e8e8;
     padding: 16px 0px 16px 0px;
     border-radius: 0px;
   }
@@ -5762,7 +5780,7 @@ button.resend_otp.disabled {
     background-image: url(../img/icons/Union_big.svg);
   }
   .brd-top {
-    border-top: 1px solid #E8E8E8;
+    border-top: 1px solid #e8e8e8;
     padding-top: 16px;
   }
   .quickActionBox {
@@ -5819,7 +5837,7 @@ button.resend_otp.disabled {
     padding: 10px;
   }
   #interestRateModal .modal-dialog .modal-body .info-heading-container .info-heading-image {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 16px;
     height: 16px;
   }
@@ -5993,6 +6011,18 @@ button.resend_otp.disabled {
     width: 65%;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1270px) {
+  .custom-tooltip .tooltip-text.pre-closure-tooltip {
+    bottom: auto;
+    left: -202px;
+    top: 31px;
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip::after {
+    transform: rotate(-180deg);
+    top: -17px;
+    left: 79%;
+  }
+}
 @media screen and (min-width: 992px) {
   /************Menu Start********************/
   .no_tablet_view {
@@ -6013,11 +6043,27 @@ button.resend_otp.disabled {
   .custom-tooltip .tooltip-text.tooltip_Text_expected::after {
     left: 44%;
   }
-  .custom-tooltip .tooltip-text.tooltip_Text_quick {
-    left: -243px;
+  .custom-tooltip .tooltip-text.tooltip-text-renewal {
+    height: -moz-fit-content;
+    height: fit-content;
+    left: -272px;
+    top: -20px;
   }
-  .custom-tooltip .tooltip-text.tooltip_Text_quick::after {
-    left: 95%;
+  .custom-tooltip .tooltip-text.tooltip-text-renewal::after {
+    right: -15px;
+    top: 18px;
+    left: auto;
+    transform: rotate(-90deg);
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip {
+    bottom: auto;
+    left: -202px;
+    top: 31px;
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip::after {
+    transform: rotate(-180deg);
+    top: -17px;
+    left: 79%;
   }
   /********************tooltip-mobile- End******************/
   /************Menu Start********************/
@@ -6040,7 +6086,7 @@ button.resend_otp.disabled {
     top: 52px;
     left: 0;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 100%;
   }
   .navbar-collapse.collapsing {
@@ -6071,7 +6117,7 @@ button.resend_otp.disabled {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -6108,7 +6154,9 @@ button.resend_otp.disabled {
     border-bottom: 1px solid #E8E8E8;
     margin-left: 0px;
   }
-  nav .navbar-nav li.nav-item a.nav-link, nav .navbar-nav li.nav-item a.nav-link.active, nav .navbar-nav li.nav-item a.nav-link:hover {
+  nav .navbar-nav li.nav-item a.nav-link,
+  nav .navbar-nav li.nav-item a.nav-link.active,
+  nav .navbar-nav li.nav-item a.nav-link:hover {
     color: #231F20;
   }
   nav .navbar-nav li.nav-item a.nav-link {
@@ -6147,36 +6195,42 @@ button.resend_otp.disabled {
   nav .userAvatar a {
     width: 100%;
   }
-  nav ul.dropdown-menu.show, nav ul.dropdown-menu {
+  nav ul.dropdown-menu.show,
+  nav ul.dropdown-menu {
     width: 100% !important;
     display: flex !important;
     flex-wrap: wrap !important;
     border-radius: 0px !important;
     height: 0px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     box-shadow: none !important;
     overflow: hidden;
     transition: all linear 300ms;
   }
-  nav ul.dropdown-menu.show li, nav ul.dropdown-menu li {
+  nav ul.dropdown-menu.show li,
+  nav ul.dropdown-menu li {
     width: 50% !important;
-    border: 1px solid #D6D6D6;
+    border: 1px solid #d6d6d6;
     padding: 0px 16px !important;
   }
-  nav ul.dropdown-menu.show li a, nav ul.dropdown-menu li a {
+  nav ul.dropdown-menu.show li a,
+  nav ul.dropdown-menu li a {
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.25px;
     transition: all linear 300ms;
   }
-  nav ul.dropdown-menu.show li a img, nav ul.dropdown-menu li a img {
+  nav ul.dropdown-menu.show li a img,
+  nav ul.dropdown-menu li a img {
     display: none;
   }
-  nav ul.dropdown-menu.show li a img.plusIcon, nav ul.dropdown-menu li a img.plusIcon {
+  nav ul.dropdown-menu.show li a img.plusIcon,
+  nav ul.dropdown-menu li a img.plusIcon {
     display: block;
   }
-  nav ul.dropdown-menu.show li:last-child a, nav ul.dropdown-menu li:last-child a {
+  nav ul.dropdown-menu.show li:last-child a,
+  nav ul.dropdown-menu li:last-child a {
     border-bottom: none !important;
     margin-bottom: 0px !important;
   }
@@ -6238,7 +6292,29 @@ button.resend_otp.disabled {
     padding: 16px 16px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1270px) {
+@media only screen and (min-width: 1271px) and (max-width: 1399px) {
+  /********************tooltip-mobile- start******************/
+  .custom-tooltip .tooltip-text.pre-closure-tooltip {
+    left: -130px;
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip::after {
+    left: 52%;
+  }
+  /********************tooltip-mobile-end******************/
+}
+@media only screen and (min-width: 769px) and (max-width: 1270px) {
+  /********************tooltip-mobile- start******************/
+  .custom-tooltip .tooltip-text.pre-closure-tooltip {
+    bottom: auto;
+    left: -202px;
+    top: 31px;
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip::after {
+    transform: rotate(-180deg);
+    top: -17px;
+    left: 79%;
+  }
+  /********************tooltip-mobile-end******************/
   .cardContainer_mobile_screen {
     margin-top: 12px;
   }
@@ -6398,23 +6474,6 @@ button.resend_otp.disabled {
   }
   .fdMainContent .fdTenure:after {
     top: -3px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1140px) {
-  .mobChangeWidth {
-    margin-top: 20px;
-    overflow-x: auto;
-    width: 100%;
-  }
-  .mobChangeWidth .customChangeWidth {
-    min-width: 72%;
-  }
-  .customBtn {
-    padding: 0 12px;
-  }
-  .applicationTenureDetails .fdDetails {
-    width: 18%;
-    margin: 0 24px 20px 24px;
   }
 }
 .textparent {
