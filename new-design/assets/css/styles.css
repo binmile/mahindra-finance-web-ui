@@ -7908,6 +7908,10 @@ input[type=number] {
   min-height: calc(60vh - 127px);
 }
 
+.fd_content_min_height_profile_bank {
+  min-height: calc(40vh - 127px);
+}
+
 .textparent_content {
   display: flex;
   justify-content: space-between;
@@ -7993,6 +7997,9 @@ input[type=number] {
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .fd_content_min_height_profile_bank {
+    min-height: 0;
   }
   .bottomContentBox_profile {
     background-color: #F3F4F6;

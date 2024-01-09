@@ -160,6 +160,9 @@ input[type="number"] {
 .main-form.fd_content_min_height_add_new {
   min-height: calc(60vh - 127px);
 }
+.fd_content_min_height_profile_bank{
+  min-height: calc(40vh - 127px);
+}
 
 .textparent_content {
   display: flex;
@@ -237,6 +240,9 @@ input[type="number"] {
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .fd_content_min_height_profile_bank{
+    min-height: 0;
   }
   .bottomContentBox_profile {
     background-color: $color_light_bg;
