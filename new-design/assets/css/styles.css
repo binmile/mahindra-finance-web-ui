@@ -2188,6 +2188,51 @@ button.resend_otp.disabled {
   margin-bottom: 4px;
 }
 
+/****************************Graph Blur Css**********************/
+.blur_data {
+  position: relative;
+}
+.blur_data #myChart {
+  filter: blur(2px);
+  opacity: 0.7;
+}
+.blur_data #myChart.myChart_pointer_none {
+  pointer-events: none;
+}
+
+.boldTitle_indivisual_opacity {
+  opacity: unset;
+}
+
+.chart_indivisual {
+  background: rgba(35, 31, 32, 0.2);
+}
+
+.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+.roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual img {
+  width: 20px;
+  height: 20px;
+}
+
+.boldTitle_indivisual {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 12px 20px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.015px;
+}
+
+/****************************Graph Blur Css**********************/
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
@@ -2508,6 +2553,44 @@ button.resend_otp.disabled {
   }
 }
 /*********** Responsive CSS Start Here*************/
+.accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+  min-height: 472px;
+}
+
+.fdContents .fdDetails .value img.renewal_partial_img {
+  filter: unset;
+}
+
+.Remaining_amount {
+  color: #6b7280;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.bankLocation.bankLocation_renewal {
+  margin-top: 8px;
+}
+
+.accountHolderDetails_partial_renewal {
+  padding-bottom: 0;
+}
+
+.custom_tooltip .tooltip_img {
+  width: 18px;
+  height: 18px;
+}
+
+.custom-tooltip .tooltip-text.tooltip_renewal {
+  left: -202px;
+}
+
+.custom-tooltip .tooltip-text.tooltip_renewal::after {
+  left: 79%;
+}
+
 @media only screen and (min-width: 769px) {
   /*********** Responsive dashboard View Start*************/
   .no_desktop_view {
@@ -3001,6 +3084,9 @@ button.resend_otp.disabled {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
+  .accountContainer .accountBox .fdContents .fdDetails.fdDetails_partial_renewal::after {
+    right: -13px;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
     position: relative;
   }
@@ -3271,7 +3357,30 @@ button.resend_otp.disabled {
   }
   /*----------renewal-form-mini-desktop-UI--- end------------------------*/
 }
+@media only screen and (min-width: 992px) and (max-width: 1119px) {
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 501px;
+  }
+  .accountListrenewal_partial {
+    padding-bottom: 48px;
+  }
+  .accountDetailsBox .accountListContainer .accountList.accountList_renewal {
+    padding: 32px 0 36px 0;
+  }
+  .fdContents_partial_reneal {
+    margin-top: 32px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 0;
+  }
+  .bottomText_partial_renewal {
+    display: none;
+  }
+  .bankAccountDetails .fdDetails.fdDetails_partial_renewal {
+    margin-bottom: 16px;
+  }
   .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
     position: relative;
   }
@@ -3521,9 +3630,6 @@ button.resend_otp.disabled {
   .accountContainer .accountBox .fdContents .fdDetails.fdetails_review::after {
     right: -44px;
   }
-  .modal-dialog {
-    max-width: unset;
-  }
   /*----------renewal-form-mini-mobile-UI--- start------------------------*/
   .bankDetailsMainContainer .boldTitle {
     font-size: 16px;
@@ -3593,6 +3699,15 @@ button.resend_otp.disabled {
 }
 @media only screen and (max-width: 768px) {
   /*********** Responsive dashboard View Start*************/
+  .custom-tooltip .tooltip-text.tooltip_renewal {
+    left: auto;
+  }
+  .custom-tooltip .tooltip-text.tooltip_renewal::after {
+    left: 91%;
+  }
+  .accountDetailsBox .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 0;
+  }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
     margin-bottom: 0;
   }
@@ -3712,7 +3827,7 @@ button.resend_otp.disabled {
     letter-spacing: 0.15px;
   }
   .lightBorderRight {
-    border-right: 1px solid #CCCCCC;
+    border-right: 1px solid #cccccc;
   }
   .cardContainerMobile {
     padding: 8px 16px;
@@ -4505,11 +4620,15 @@ button.resend_otp.disabled {
   .edit_img {
     color: #1084CB;
     border-bottom: 1px solid #1084CB;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
   }
   .edit_img img {
-    width: 14px;
-    height: 14px;
-    vertical-align: initial;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
   }
   .renewal-circle {
     width: 46px;
@@ -5017,6 +5136,23 @@ button.resend_otp.disabled {
     height: auto !important;
     width: 100% !important;
   }
+  /*****************graph-blur-start**********************/
+  .boldTitle_indivisual {
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual {
+    width: 24px;
+    height: 24px;
+  }
+  .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_indivisual img {
+    width: 10px;
+    height: 10px;
+  }
+  /*****************graph-blur-end**********************/
   /************Menu Start********************/
   button.navbar-toggler {
     border: none;
@@ -5031,7 +5167,7 @@ button.resend_otp.disabled {
     top: 54px;
     left: 0;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 100%;
   }
   .navbar-collapse.collapsing {
@@ -5061,7 +5197,7 @@ button.resend_otp.disabled {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -5098,7 +5234,9 @@ button.resend_otp.disabled {
     border-bottom: 1px solid #E8E8E8;
     margin-left: 0px;
   }
-  nav .navbar-nav li.nav-item a.nav-link, nav .navbar-nav li.nav-item a.nav-link.active, nav .navbar-nav li.nav-item a.nav-link:hover {
+  nav .navbar-nav li.nav-item a.nav-link,
+  nav .navbar-nav li.nav-item a.nav-link.active,
+  nav .navbar-nav li.nav-item a.nav-link:hover {
     color: #231F20;
   }
   nav .navbar-nav li.nav-item a.nav-link {
@@ -5137,36 +5275,42 @@ button.resend_otp.disabled {
   nav .userAvatar a {
     width: 100%;
   }
-  nav ul.dropdown-menu.show, nav ul.dropdown-menu {
+  nav ul.dropdown-menu.show,
+  nav ul.dropdown-menu {
     width: 100% !important;
     display: flex !important;
     flex-wrap: wrap !important;
     border-radius: 0px !important;
     height: 0px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     box-shadow: none !important;
     overflow: hidden;
     transition: all linear 300ms;
   }
-  nav ul.dropdown-menu.show li, nav ul.dropdown-menu li {
+  nav ul.dropdown-menu.show li,
+  nav ul.dropdown-menu li {
     width: 50% !important;
-    border: 1px solid #D6D6D6;
+    border: 1px solid #d6d6d6;
     padding: 0px 16px !important;
   }
-  nav ul.dropdown-menu.show li a, nav ul.dropdown-menu li a {
+  nav ul.dropdown-menu.show li a,
+  nav ul.dropdown-menu li a {
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.25px;
     transition: all linear 300ms;
   }
-  nav ul.dropdown-menu.show li a img, nav ul.dropdown-menu li a img {
+  nav ul.dropdown-menu.show li a img,
+  nav ul.dropdown-menu li a img {
     display: none;
   }
-  nav ul.dropdown-menu.show li a img.plusIcon, nav ul.dropdown-menu li a img.plusIcon {
+  nav ul.dropdown-menu.show li a img.plusIcon,
+  nav ul.dropdown-menu li a img.plusIcon {
     display: block;
   }
-  nav ul.dropdown-menu.show li:last-child a, nav ul.dropdown-menu li:last-child a {
+  nav ul.dropdown-menu.show li:last-child a,
+  nav ul.dropdown-menu li:last-child a {
     border-bottom: none !important;
     margin-bottom: 0px !important;
   }
@@ -5216,7 +5360,8 @@ button.resend_otp.disabled {
   }
   /************Menu End********************/
   /************Modal Start************/
-  .modal, .quick_action_container {
+  .modal,
+  .quick_action_container {
     position: fixed;
     bottom: 0;
     top: auto;
@@ -5232,37 +5377,46 @@ button.resend_otp.disabled {
     height: -moz-fit-content;
     height: fit-content;
   }
-  .modal .modal-dialog, .quick_action_container .modal-dialog {
+  .modal .modal-dialog,
+  .quick_action_container .modal-dialog {
     margin: 0px;
   }
-  .modal .modal-dialog .modal-content, .quick_action_container .modal-dialog .modal-content {
+  .modal .modal-dialog .modal-content,
+  .quick_action_container .modal-dialog .modal-content {
     box-shadow: none;
     border-radius: 0px;
   }
-  .modal .modal-dialog .modal-content .modal-body, .quick_action_container .modal-dialog .modal-content .modal-body {
+  .modal .modal-dialog .modal-content .modal-body,
+  .quick_action_container .modal-dialog .modal-content .modal-body {
     padding: 24px 16px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container {
     margin-top: 4px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.15px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image {
     max-width: 28px;
     max-height: 28px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img, .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img {
+  .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img {
     width: 16px;
     height: 16px;
   }
-  .modal .modal-dialog .modal-content .modal-body .info-button button, .quick_action_container .modal-dialog .modal-content .modal-body .info-button button {
+  .modal .modal-dialog .modal-content .modal-body .info-button button,
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-button button {
     width: 100%;
   }
-  .modal.show, .quick_action_container.show {
+  .modal.show,
+  .quick_action_container.show {
     transform: translate(0, 0px) !important;
   }
   #overlay {
@@ -5367,8 +5521,8 @@ button.resend_otp.disabled {
   }
   .accountContainer .accountDetailsBox {
     padding: 24px 0px 8px 0;
-    border-top: 1px solid #E8E8E8;
-    border-bottom: 1px solid #E8E8E8;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
     margin: 24px 0px;
   }
   .accountContainer .accountBox {
@@ -5505,7 +5659,7 @@ button.resend_otp.disabled {
   .borrowFundContainer {
     margin-bottom: 0px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #E8E8E8;
+    border-bottom: 1px solid #e8e8e8;
   }
   .borrowFundContainer .borrowFundBox .borrowFundContent {
     font-size: 10px;
@@ -5516,7 +5670,7 @@ button.resend_otp.disabled {
   }
   .borrowFundFDContainer .borrowFDList {
     border: none;
-    border-bottom: 1px solid #E8E8E8;
+    border-bottom: 1px solid #e8e8e8;
     padding: 16px 0px 16px 0px;
     border-radius: 0px;
   }
@@ -5626,7 +5780,7 @@ button.resend_otp.disabled {
     background-image: url(../img/icons/Union_big.svg);
   }
   .brd-top {
-    border-top: 1px solid #E8E8E8;
+    border-top: 1px solid #e8e8e8;
     padding-top: 16px;
   }
   .quickActionBox {
@@ -5683,7 +5837,7 @@ button.resend_otp.disabled {
     padding: 10px;
   }
   #interestRateModal .modal-dialog .modal-body .info-heading-container .info-heading-image {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 16px;
     height: 16px;
   }
@@ -5857,6 +6011,18 @@ button.resend_otp.disabled {
     width: 65%;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1270px) {
+  .custom-tooltip .tooltip-text.pre-closure-tooltip {
+    bottom: auto;
+    left: -202px;
+    top: 31px;
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip::after {
+    transform: rotate(-180deg);
+    top: -17px;
+    left: 79%;
+  }
+}
 @media screen and (min-width: 992px) {
   /************Menu Start********************/
   .no_tablet_view {
@@ -5864,6 +6030,42 @@ button.resend_otp.disabled {
   }
 }
 @media screen and (max-width: 991px) {
+  /********************tooltip-mobile- start******************/
+  .custom-tooltip .tooltip-text.tooltip_Text_responsive {
+    left: -207px;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_responsive::after {
+    left: 81%;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_expected {
+    left: -110px;
+  }
+  .custom-tooltip .tooltip-text.tooltip_Text_expected::after {
+    left: 44%;
+  }
+  .custom-tooltip .tooltip-text.tooltip-text-renewal {
+    height: -moz-fit-content;
+    height: fit-content;
+    left: -272px;
+    top: -20px;
+  }
+  .custom-tooltip .tooltip-text.tooltip-text-renewal::after {
+    right: -15px;
+    top: 18px;
+    left: auto;
+    transform: rotate(-90deg);
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip {
+    bottom: auto;
+    left: -202px;
+    top: 31px;
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip::after {
+    transform: rotate(-180deg);
+    top: -17px;
+    left: 79%;
+  }
+  /********************tooltip-mobile- End******************/
   /************Menu Start********************/
   .tablet_view {
     display: block;
@@ -5884,7 +6086,7 @@ button.resend_otp.disabled {
     top: 52px;
     left: 0;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 100%;
   }
   .navbar-collapse.collapsing {
@@ -5915,7 +6117,7 @@ button.resend_otp.disabled {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -5952,7 +6154,9 @@ button.resend_otp.disabled {
     border-bottom: 1px solid #E8E8E8;
     margin-left: 0px;
   }
-  nav .navbar-nav li.nav-item a.nav-link, nav .navbar-nav li.nav-item a.nav-link.active, nav .navbar-nav li.nav-item a.nav-link:hover {
+  nav .navbar-nav li.nav-item a.nav-link,
+  nav .navbar-nav li.nav-item a.nav-link.active,
+  nav .navbar-nav li.nav-item a.nav-link:hover {
     color: #231F20;
   }
   nav .navbar-nav li.nav-item a.nav-link {
@@ -5991,36 +6195,42 @@ button.resend_otp.disabled {
   nav .userAvatar a {
     width: 100%;
   }
-  nav ul.dropdown-menu.show, nav ul.dropdown-menu {
+  nav ul.dropdown-menu.show,
+  nav ul.dropdown-menu {
     width: 100% !important;
     display: flex !important;
     flex-wrap: wrap !important;
     border-radius: 0px !important;
     height: 0px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     box-shadow: none !important;
     overflow: hidden;
     transition: all linear 300ms;
   }
-  nav ul.dropdown-menu.show li, nav ul.dropdown-menu li {
+  nav ul.dropdown-menu.show li,
+  nav ul.dropdown-menu li {
     width: 50% !important;
-    border: 1px solid #D6D6D6;
+    border: 1px solid #d6d6d6;
     padding: 0px 16px !important;
   }
-  nav ul.dropdown-menu.show li a, nav ul.dropdown-menu li a {
+  nav ul.dropdown-menu.show li a,
+  nav ul.dropdown-menu li a {
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.25px;
     transition: all linear 300ms;
   }
-  nav ul.dropdown-menu.show li a img, nav ul.dropdown-menu li a img {
+  nav ul.dropdown-menu.show li a img,
+  nav ul.dropdown-menu li a img {
     display: none;
   }
-  nav ul.dropdown-menu.show li a img.plusIcon, nav ul.dropdown-menu li a img.plusIcon {
+  nav ul.dropdown-menu.show li a img.plusIcon,
+  nav ul.dropdown-menu li a img.plusIcon {
     display: block;
   }
-  nav ul.dropdown-menu.show li:last-child a, nav ul.dropdown-menu li:last-child a {
+  nav ul.dropdown-menu.show li:last-child a,
+  nav ul.dropdown-menu li:last-child a {
     border-bottom: none !important;
     margin-bottom: 0px !important;
   }
@@ -6082,7 +6292,29 @@ button.resend_otp.disabled {
     padding: 16px 16px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1270px) {
+@media only screen and (min-width: 1271px) and (max-width: 1399px) {
+  /********************tooltip-mobile- start******************/
+  .custom-tooltip .tooltip-text.pre-closure-tooltip {
+    left: -130px;
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip::after {
+    left: 52%;
+  }
+  /********************tooltip-mobile-end******************/
+}
+@media only screen and (min-width: 769px) and (max-width: 1270px) {
+  /********************tooltip-mobile- start******************/
+  .custom-tooltip .tooltip-text.pre-closure-tooltip {
+    bottom: auto;
+    left: -202px;
+    top: 31px;
+  }
+  .custom-tooltip .tooltip-text.pre-closure-tooltip::after {
+    transform: rotate(-180deg);
+    top: -17px;
+    left: 79%;
+  }
+  /********************tooltip-mobile-end******************/
   .cardContainer_mobile_screen {
     margin-top: 12px;
   }
@@ -6242,23 +6474,6 @@ button.resend_otp.disabled {
   }
   .fdMainContent .fdTenure:after {
     top: -3px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1140px) {
-  .mobChangeWidth {
-    margin-top: 20px;
-    overflow-x: auto;
-    width: 100%;
-  }
-  .mobChangeWidth .customChangeWidth {
-    min-width: 72%;
-  }
-  .customBtn {
-    padding: 0 12px;
-  }
-  .applicationTenureDetails .fdDetails {
-    width: 18%;
-    margin: 0 24px 20px 24px;
   }
 }
 .textparent {
@@ -7510,6 +7725,62 @@ p.notify_lfd {
   border-bottom: none;
 }
 
+.add_new_details_profile {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
+  top: 71.2px;
+}
+
+.bankDetailsMainContainer .textparent .formLabel.formLabel_profile_label {
+  margin: 8px 0 5px 0;
+}
+
+.bankDetailsMainContainer_profile {
+  padding: 20px 32px 45px 32px;
+}
+
+.listTable_profile {
+  border: 1px solid #ADADAD;
+  border-radius: 8px;
+}
+
+.listTable .listTableBody .listTabledata.listTabledata_profile {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.boxsection_profile {
+  margin-bottom: 0;
+}
+.boxsection_profile .box-first-text-profile p {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #6B7280;
+}
+.boxsection_profile .box-secont-text img {
+  width: 20px;
+  height: 20px;
+}
+.boxsection_profile .box-secont-text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #231F20;
+}
+
+.nominee_details {
+  margin-top: 24px;
+}
+
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -7530,9 +7801,23 @@ input[type=number] {
   width: 16px;
   height: 16px;
 }
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data img {
+  width: 16px;
+  height: 16px;
+}
 
 .modal .modal-content .modal-body .info-heading-container .info-heading.info-heading_profile_contact {
   font-size: 21px;
+}
+
+.heading_nominee {
+  display: flex;
+  place-items: center;
+  align-items: center;
+}
+
+#commonHeading-repayment.commonHeading_repayment_profile {
+  margin-right: 4px;
 }
 
 .roundBackgroundIcon.roundBackgroundIcon_lfd.roundBackgroundIcon_profile {
@@ -7549,6 +7834,10 @@ input[type=number] {
   display: flex;
   place-items: center;
   align-items: center;
+}
+
+.listTable_profile {
+  margin: 16px 0 32px 0;
 }
 
 .main-form.fd_content_min_height {
@@ -7582,9 +7871,92 @@ input[type=number] {
   border: 1px solid #DCDCDC;
 }
 
+.dropdown_menu_profile {
+  min-width: 12rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
+    top: 63.2px;
+  }
+  .col_wrapper_profile {
+    width: 100%;
+  }
+  .bankDetailsMainContainer_profile {
+    padding: 12px 16px;
+  }
+}
+.col_wrapper_profile_bottom {
+  margin-bottom: 12px;
+}
+
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .boxsection_profile .box-first-text-profile p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
+  .boxsection_profile .box-secont-text img {
+    width: 16px;
+    height: 16px;
+  }
+  .boxsection_profile .box-secont-text p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .boxsection_profile_bottom {
+    margin-bottom: 12px;
+  }
+  .bankDetailsMainContainer_profile {
+    padding: 12px 16px;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content.Investment_details_content_profile {
+    flex-wrap: wrap;
+    justify-content: initial;
+    margin-bottom: 0;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content.Investment_details_content_profile .details_profile {
+    width: 50%;
+    margin-bottom: 16px;
+  }
+  .commonHeading_repayment_profile {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content .img_detail .percentage_text_profile {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #231F20;
+  }
+  .formControl_profile {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+  .add_new_details_profile {
+    margin: 14px 0 4px 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+  .themeRedBtn_profile {
+    padding: 0 8px 0 8px;
+    height: 21px;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
+    top: 58.2px;
   }
   .bankDetailsMainContainer .bottomContentBox.bottomContentBox_profile {
     margin-top: 88px;

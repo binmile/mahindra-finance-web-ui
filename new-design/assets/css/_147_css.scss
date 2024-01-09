@@ -1,10 +1,49 @@
 /*********** Responsive CSS Start Here*************/
+.accountDetailsBox .accountListContainer {
+  &.accountListContainer_partial_renewal {
+    min-height: 472px;
+  }
+}
+.fdContents .fdDetails .value img {
+  &.renewal_partial_img {
+    filter: unset;
+  }
+}
+.Remaining_amount {
+  color: #6b7280;
+  margin-top: 8px;
+  @include custom-font(14px, 400, 24px, 0.25px);
+}
+.bankLocation {
+  &.bankLocation_renewal {
+    margin-top: 8px;
+  }
+}
+.accountHolderDetails_partial_renewal {
+  padding-bottom: 0;
+}
+.custom_tooltip {
+  .tooltip_img {
+    @include custom-width-height(18px, 18px);
+  }
+}
+.custom-tooltip .tooltip-text {
+  &.tooltip_renewal {
+  left: -202px;
+  }
+}
+.custom-tooltip .tooltip-text {
+  &.tooltip_renewal::after {
+    left: 79%;
+  }
+}
+
 @media only screen and (min-width: 769px) {
   /*********** Responsive dashboard View Start*************/
   .no_desktop_view {
     display: none;
   }
-  .accountHolderDetails{
+  .accountHolderDetails {
     position: relative;
   }
   .accountContainer {
@@ -146,11 +185,10 @@
           .fdContents {
             margin-top: 0;
             .value {
-              &.value_post{
+              &.value_post {
                 display: flex;
                 justify-content: flex-start;
                 place-items: flex-start;
-               
               }
               img {
                 margin-right: 8px;
@@ -168,13 +206,13 @@
                 border-radius: 8px;
                 background-color: #e3e5ea;
                 margin-bottom: 12px;
-                width:149px;
+                width: 149px;
                 .strep_content {
                   @include custom-font(14px, 400, 24px, 0.25px);
                   color: #6b7280;
                   white-space: nowrap;
                   overflow: hidden;
-                  text-overflow: ellipsis; 
+                  text-overflow: ellipsis;
                 }
               }
               &.fdDetails_mob_post::after {
@@ -182,7 +220,7 @@
               }
               &.fdDetails_mob_post_details::after {
                 top: 36px;
-                right:-79px;
+                right: -79px;
               }
             }
           }
@@ -359,8 +397,8 @@
             position: relative;
             .single_account_circle {
               position: absolute;
-              right:0;
-              top:10px;
+              right: 0;
+              top: 10px;
               @include custom-width-height(88px, 88px);
               background-color: $color_light_bg;
               border-radius: 50%;
@@ -489,16 +527,20 @@
       }
     }
   }
-  .accountDetailsBox_post{
+  .accountDetailsBox_post {
     padding-bottom: 0;
   }
   /*----------renewal-form-desktop-UI--- end------------------------*/
 }
 @media only screen and (min-width: 1367px) and (max-width: 1399px) {
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+  .accountContainer
+    .accountDetailsBox
+    .accountListContainer
+    .accountList
+    .accountHolderDetails {
     position: relative;
-    .themeRedBtn{
-      &.themeRedBtn_joint_account{
+    .themeRedBtn {
+      &.themeRedBtn_joint_account {
         position: absolute;
         right: 0;
       }
@@ -507,25 +549,34 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1236px) {
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+  .accountContainer .accountBox .fdContents .fdDetails {
+    &.fdDetails_partial_renewal::after {
+      right: -13px;
+    }
+  }
+  .accountContainer
+    .accountDetailsBox
+    .accountListContainer
+    .accountList
+    .accountHolderDetails {
     position: relative;
     .single_account_circle {
       position: absolute;
       right: 0;
       top: 30px;
     }
-    .verifyBtn{
-      &.verifyBtn_joint_account{
+    .verifyBtn {
+      &.verifyBtn_joint_account {
         position: absolute;
         right: 0;
       }
     }
-     .themeRedBtn{
-    &.themeRedBtn_joint_account{
-      position: absolute;
-      right: 0;
+    .themeRedBtn {
+      &.themeRedBtn_joint_account {
+        position: absolute;
+        right: 0;
+      }
     }
-  }
   }
   .no_desktop_view {
     display: none;
@@ -533,49 +584,93 @@
   .icic_label {
     margin-bottom: 12px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails .strep_wrapper{
-    width:133px;
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents
+    .fdDetails
+    .strep_wrapper {
+    width: 133px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .cardIcons_circle.cardIcons_circle_post_closure img{
-    width:25px;
-    height:25px;
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .ruppe_container
+    .cardIcons_circle.cardIcons_circle_post_closure
+    img {
+    width: 25px;
+    height: 25px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails .icic_label{
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents
+    .fdDetails
+    .icic_label {
     font-size: 14px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails .strep_wrapper .strep_content {
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents
+    .fdDetails
+    .strep_wrapper
+    .strep_content {
     font-size: 12px;
   }
-  .fdContents .fdDetails .value{
+  .fdContents .fdDetails .value {
     font-size: 12px;
   }
- 
+
   .fdContents .fdDetails .label {
     font-size: 14px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper{
+  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper {
     padding: 12px 16px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post::after {
-    right:-16px;
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents
+    .fdDetails.fdDetails_mob_post::after {
+    right: -16px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post_details::after{
-    right:-36px !important;
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents
+    .fdDetails.fdDetails_mob_post_details::after {
+    right: -36px !important;
   }
-  .accountContainer .accountDetailsBox .right_side_data .ruppe_container .rupee_content {
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .ruppe_container
+    .rupee_content {
     font-size: 16px;
   }
-  .accountContainer .accountDetailsBox .loan_content{
+  .accountContainer .accountDetailsBox .loan_content {
     margin-bottom: 16px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .ruppe_container.brd-top{
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .ruppe_container.brd-top {
     padding-top: 24px;
     margin-top: 24px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper.fixed_deposit_second_wrapper{
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper.fixed_deposit_second_wrapper {
     margin-top: 20px;
   }
-  .border_bottom_post_closure .list_Disclaimer{
+  .border_bottom_post_closure .list_Disclaimer {
     font-size: 16px;
   }
   .accountDetailsBox_success {
@@ -789,32 +884,64 @@
   }
   /*----------renewal-form-mini-desktop-UI--- end------------------------*/
 }
-
+@media only screen and (min-width: 992px) and (max-width: 1119px) {
+  .accountDetailsBox
+  .accountListContainer.accountListContainer_partial_renewal {
+  min-height: 501px;
+}
+.accountListrenewal_partial {
+  padding-bottom: 48px;
+}
+.accountDetailsBox .accountListContainer .accountList{
+&.accountList_renewal{
+padding: 32px 0 36px 0;
+}
+}
+.fdContents_partial_reneal{
+  margin-top:32px
+}
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+  .accountDetailsBox
+    .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 0;
+  }
+  .bottomText_partial_renewal {
+    display: none;
+  }
+  .bankAccountDetails .fdDetails {
+    &.fdDetails_partial_renewal {
+      margin-bottom: 16px;
+    }
+  }
+  .accountContainer
+    .accountDetailsBox
+    .accountListContainer
+    .accountList
+    .accountHolderDetails {
     position: relative;
     .single_account_circle {
       position: absolute;
       right: 0;
       top: 10px;
     }
-    .verifyBtn{
-      &.verifyBtn_joint_account{
+    .verifyBtn {
+      &.verifyBtn_joint_account {
         position: absolute;
         right: 0;
       }
     }
   }
-  .accountDetails{
+  .accountDetails {
     margin-bottom: 5px;
   }
-  .accountDetailsBox_post{
+  .accountDetailsBox_post {
     padding-bottom: 24px;
   }
-  .accountDetailsBox .accountListContainer{
+  .accountDetailsBox .accountListContainer {
     min-height: 0;
   }
-  .accountBox .fdContents.fdContents_success{
+  .accountBox .fdContents.fdContents_success {
     margin-bottom: 24px;
   }
   .listTable .listTableBody .listTabledata .tableData {
@@ -826,12 +953,16 @@
   .icic_label {
     margin-bottom: 12px;
   }
-  .accountContainer .accountDetailsBox .right_side_data .fixed_deposit_wrapper .fdContents .fdDetails.fdDetails_mob_post_details::after{
+  .accountContainer
+    .accountDetailsBox
+    .right_side_data
+    .fixed_deposit_wrapper
+    .fdContents
+    .fdDetails.fdDetails_mob_post_details::after {
     right: -141% !important;
   }
-  .loan_amount{
+  .loan_amount {
     @include custom-font(14px, 400, 16px, 0.4px);
-
   }
   .accountContainer
     .accountDetailsBox
@@ -882,16 +1013,14 @@
             display: flex;
             flex-direction: column;
             margin-left: 21px;
-            .loan_amount{
+            .loan_amount {
               @include custom-font(12px, 500, 16px, 0.4px);
-
             }
           }
         }
         &.second_check {
           display: flex;
           justify-content: space-between;
-         
         }
         .paid_wrapper {
           display: flex;
@@ -1055,9 +1184,7 @@
       }
     }
   }
-  .modal-dialog {
-    max-width: unset;
-  }
+
   /*----------renewal-form-mini-mobile-UI--- start------------------------*/
   .bankDetailsMainContainer {
     .boldTitle {
@@ -1124,22 +1251,40 @@
 
 @media only screen and (max-width: $tablet) {
   /*********** Responsive dashboard View Start*************/
-  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child{
+  .custom-tooltip .tooltip-text {
+    &.tooltip_renewal {
+      left: auto;
+    }
+  }
+  .custom-tooltip .tooltip-text {
+    &.tooltip_renewal::after {
+      left: 91%;
+    }
+  }
+  .accountDetailsBox
+    .accountListContainer.accountListContainer_partial_renewal {
+    min-height: 0;
+  }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
     margin-bottom: 0;
   }
-  .accountDetails{
+  .accountDetails {
     margin-bottom: 5px;
   }
   .accountHolderDetails
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+    .accountContainer
+    .accountDetailsBox
+    .accountListContainer
+    .accountList
+    .accountHolderDetails {
     position: relative;
     .single_account_circle {
       position: absolute;
       right: 0;
       top: 10px;
     }
-    .verifyBtn{
-      &.verifyBtn_joint_account{
+    .verifyBtn {
+      &.verifyBtn_joint_account {
         position: absolute;
         right: 0;
       }
@@ -1257,8 +1402,8 @@
       @include custom-font(16px, 600, 24px, 0.15px);
     }
   }
-  .lightBorderRight{
-      border-right: 1px solid #CCCCCC;
+  .lightBorderRight {
+    border-right: 1px solid #cccccc;
   }
   .cardContainerMobile {
     padding: 8px 16px;
@@ -1980,9 +2125,10 @@
   .edit_img {
     color: $color_light_blue;
     border-bottom: 1px solid $color_light_blue;
+    @include custom-font(12px, 500, 16px, 0.25px);
     img {
-      @include custom-width-height(14px, 14px);
-      vertical-align: initial;
+      @include custom-width-height(12px, 12px);
+      vertical-align: middle;
     }
   }
   .renewal-circle {
@@ -2217,17 +2363,27 @@
 }
 
 @media only screen and (min-width: 375px) and (max-width: 393px) {
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails .accountDetails .accountDetails_content .accountType{
+  .accountContainer
+    .accountDetailsBox
+    .accountListContainer
+    .accountList
+    .accountHolderDetails
+    .accountDetails
+    .accountDetails_content
+    .accountType {
     font-size: 12px;
   }
-  .accountContainer .accountDetailsBox .accountListContainer .accountList .accountHolderDetails {
+  .accountContainer
+    .accountDetailsBox
+    .accountListContainer
+    .accountList
+    .accountHolderDetails {
     position: relative;
-    .verifyBtn{
-      &.verifyBtn_joint_account{
+    .verifyBtn {
+      &.verifyBtn_joint_account {
         position: absolute;
         right: 0;
       }
     }
   }
-
 }

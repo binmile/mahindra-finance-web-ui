@@ -1,294 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahindra Finance :: Quick Actions</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Top-navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/img/logo.svg" alt="Logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <div id="hamburgerIcon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item no_tablet_view">
-                        <div class="mob_menu_user_profile">
-                            <div class="userIconImage">
-                                <img src="./assets/img/avatar.png" alt="user icon" />
-                            </div>
-                            Vikram Kumar Sahu
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">FD renewal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="preclosure.html">Preclosure</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Loan against FD repayment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Loan against FD</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>Download</span>
-                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
-                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
-                        </a>
-                        <ul class="dropdown-menu mob_menu_download" aria-labelledby="dropdown09">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/Certificate.svg" alt="icon" class="menuIcon" /> TDS certificate
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-plus.svg" alt="icon" class="menuIcon" /> Form 15 G/H submission
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-text.svg" alt="icon" class="menuIcon" /> Cumulative letter
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Non - cumulative letter
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/percent.svg" alt="icon" class="menuIcon" /> Interest paid / accrued details
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown userAvatar">
-                        <img src="./assets/img/avatar.png" alt="user" class="no_view" />
-                        <a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>Profile</span>
-                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
-                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
-                        </a>
-                        <ul class="dropdown-menu mob_sub_profile" aria-labelledby="dropdown09">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/user.svg" alt="icon" class="menuIcon" /> My account
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/edit.svg" alt="icon" class="menuIcon" /> CKYC update
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/check-circle.svg" alt="icon" class="menuIcon" /> Avail employee benefit <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Other fixed deposits <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item logoutLink" href="#">
-                                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log out
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mob_menu_logout no_tablet_view">
-                        <a href="#">
-                            <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
-                            Log out
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div id="hamburgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item no_tablet_view">
+              <div class="mob_menu_user_profile">
+                <div class="userIconImage">
+                  <img src="./assets/img/avatar.png" alt="user icon" />
+                </div>
+                Vikram Kumar Sahu
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >FD renewal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preclosure.html">Preclosure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD repayment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Download</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_menu_download"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/Certificate.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    TDS certificate
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-plus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Form 15 G/H submission
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-text.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Non - cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/percent.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Interest paid / accrued details
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown userAvatar">
+              <img src="./assets/img/avatar.png" alt="user" class="no_view" />
+              <a
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Profile</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_sub_profile"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/user.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    My account
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/edit.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    CKYC update
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/check-circle.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Avail employee benefit
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Other fixed deposits
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item logoutLink" href="#">
+                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                    Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mob_menu_logout no_tablet_view">
+              <a href="#">
+                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                Log out
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!--Top-navbar End -->
 
     <div class="container mb-20">
-        <div class="row">
-            <div class="col-12 col-md-12 mt-20"><a href="#" class="commonBackBtn"><img
-                        src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
-            <div class="col-sm-12 col-md-12 col-lg-7 mt-20 col_data_">
-                <div class="cardContainer cardContainer_mobile_screen ">
-                    <div class="fdDetailsBox fdDetailsBox_mobile_screen">
-                        <div class="fdHeader fdHeader_mobile_screen">
-                            <div class="boldTitle">FD - R2022009D</div>
-                            <div class="fdTenure fdTenure_mobile_screen"><img src="./assets/img/icons/calendar-icon.svg"
-                                    alt="icon" /> Remaining tenure : 2 years 3 months</div>
-                        </div>
-                        <div class="fdMainContent">
-                            <div class="fdInvestment fdInvestment_mobile_screen">
-                                <div class="bigText bigText_mob_screen">₹ 20,000</div>
-                                <div class="lightText lightText_mob_screen">Invested amount</div>
-                            </div>
-                            <div class="fdTenure fdTenure_years_text">Tenure : 5 years</div>
-
-
-                            <div class="fdInvestment align-items-end fdInvestment_sec_mobile_view">
-                                <div class="bigText darkGreenText darkGreenText_mob_screen">₹ 29,456</div>
-                                <div class="lightText lightText_mob_screen lightText_line_text_mob_screen d-flex">
-                                    <div class="lightText_mob_screen">
-                                        Maturity amount
-                                    </div>
-                                    <div class="info-icon custom-tooltip">
-                                        <img src="./assets/img/icons/info-icon-black.svg" alt="icon" />
-                                        <div class="tooltip-text">Total expected
-                                            balance at term end</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-<div class="fd_content_min_height">
-    <div class="fdContents fdContents_mob_screen fdContents_success fdDetailsLists">
-        <div class="fdDetails">
-            <div class="label">Investment date </div>
-            <div class="value"><img src="./assets/img/icons/calendar-icon.svg" alt="icon" />
-                18 Sept
-                2020</div>
+      <div class="row">
+        <div class="col-12 col-md-12 mt-20">
+          <a href="#" class="commonBackBtn"
+            ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
+            Back</a
+          >
         </div>
-        <div class="fdDetails">
-            <div class="label">Interest rate </div>
-            <div class="value"><img src="./assets/img/icons/percent.svg" alt="icon" /> 8.05%</div>
-        </div>
-        <div class="fdDetails">
-            <div class="label">Interest amount </div>
-            <div class="value"><img src="./assets/img/icons/cash.svg" alt="icon" /> ₹ 9,456</div>
-        </div>
-        <div class="fdDetails">
-            <div class="label">Interest payout </div>
-            <div class="value"><img src="./assets/img/icons/percent.svg" alt="icon" /> On maturity
-            </div>
-        </div>
-        <div class="fdDetails">
-            <div class="label">Maturity date </div>
-            <div class="value"><img src="./assets/img/icons/calendar-icon.svg" alt="icon" /> 18 Sept
-                2025</div>
-        </div>
-        <div class="fdDetails">
-            <div class="label">Secondary holder </div>
-            <div class="value"><img src="./assets/img/icons/calendar-icon.svg" alt="icon" /> Ved Prakash Sahu</div>
-        </div>
-        <div class="fdDetails">
-            <div class="label">Nominee name </div>
-            <div class="value"><img src="./assets/img/icons/calendar-icon.svg" alt="icon" /> Vikram Sahu</div>
-        </div>
-    </div>
-</div>
-                    </div>
+        <div class="col-sm-12 col-md-12 col-lg-7 mt-20 col_data_">
+          <div class="cardContainer cardContainer_mobile_screen">
+            <div class="fdDetailsBox fdDetailsBox_mobile_screen">
+              <div class="fdHeader fdHeader_mobile_screen">
+                <div class="boldTitle">FD - R2022009D</div>
+                <div class="fdTenure fdTenure_mobile_screen">
+                  <img src="./assets/img/icons/calendar-icon.svg" alt="icon" />
+                  Remaining tenure : 2 years 3 months
                 </div>
-                <div class="cardContainer cardContainer_mobileView p-2 mt-20">
-                    <canvas id="myChart"></canvas>
+              </div>
+              <div class="fdMainContent">
+                <div class="fdInvestment fdInvestment_mobile_screen">
+                  <div class="bigText bigText_mob_screen">₹ 20,000</div>
+                  <div class="lightText lightText_mob_screen">
+                    Invested amount
                   </div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-5 mt-20 third_col_data">
-                <div class="cardContainer quick_action_container" id="quick_action_container">
-                    <div class="quickActionBox">
-                        <div class="close_icon no_desktop_view" onclick="handleClickHideQuickAction()">
-                            <img src="./assets/img/icons/close-icon.svg" alt="icon" />
-                        </div>
-                        <div class="boldTitle mb-20">Quick actions</div>
-                        <div class="quickActionTabs quickActionTabs_mob_screen" data-toggle="buttons"
-                            id="quickActionElements">
-                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption1"
-                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
-                                <input type="radio" name="type" value="1" data-tenure="elementOption1"
-                                    autocomplete="off">
-                                <img src="./assets/img/icons/quick-actions/refresh-icon.svg" alt="icon" />
-                                <div class="quickActionLabel">Renew fixed deposit</div>
-                            </label>
-                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption2"
-                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
-                                <input type="radio" name="type" value="2" data-tenure="elementOption2"
-                                    autocomplete="off">
-                                <img src="./assets/img/icons/quick-actions/download-icon.svg" alt="icon" />
-                                <div class="quickActionLabel">Download E receipt</div>
-                            </label>
-                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption3"
-                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
-                                <input type="radio" name="type" value="3" data-tenure="elementOption3"
-                                    autocomplete="off">
-                                <img src="./assets/img/icons/quick-actions/round-rupees.svg" alt="icon" />
-                                <div class="quickActionLabel">Loan against fixed deposit</div>
-                            </label>
-                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption4"
-                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
-                                <input type="radio" name="type" value="4" data-tenure="elementOption4"
-                                    autocomplete="off">
-                                <img src="./assets/img/icons/quick-actions/preclose-icon.svg" alt="icon" />
-                                <div class="quickActionLabel">Pre close fixed deposit</div>
-                            </label>
-                            <label class="boxRadioButton boxRadioButton_mob" id="elementOption5"
-                                onmouseover="toggleButton(true)" onmouseout="toggleButton(false)">
-                                <input type="radio" name="type" value="5" data-tenure="elementOption5"
-                                    autocomplete="off">
-                                <img src="./assets/img/icons/quick-actions/edit-icon.svg" alt="icon" />
-                                <div class="quickActionLabel">Update Nominee Details</div>
-                            </label>
+                </div>
+                <div class="fdTenure fdTenure_years_text">Tenure : 5 years</div>
 
-                            <button class="themeRedBtn themeRedBtn_mob_Continue no_desktop_view " id="actionButton" disabled>
-                                Continue
-                                <img src="./assets/img/arrow-right.svg" alt="icons" />
-                            </button>
-                        </div>
+                <div
+                  class="fdInvestment align-items-end fdInvestment_sec_mobile_view"
+                >
+                  <div class="bigText darkGreenText darkGreenText_mob_screen">
+                    ₹ 29,456
+                  </div>
+                  <div
+                    class="lightText lightText_mob_screen lightText_line_text_mob_screen d-flex"
+                  >
+                    <div class="lightText_mob_screen">Maturity amount</div>
+                    <div class="info-icon custom-tooltip">
+                      <img
+                        src="./assets/img/icons/info-icon-black.svg"
+                        alt="icon"
+                      />
+                      <div class="tooltip-text tooltip-text-renewal">
+                        Total expected balance at term end
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-                <div class="cardContainer mt-20 fdAvailBanner quickActionBanner">
-                    <div class="cardLabelHeading">
-                        Benefits of Renewing Fixed Deposit
+              </div>
+              <div class="fd_content_min_height">
+                <div
+                  class="fdContents fdContents_mob_screen fdContents_success fdDetailsLists"
+                >
+                  <div class="fdDetails">
+                    <div class="label">Investment date</div>
+                    <div class="value">
+                      <img
+                        src="./assets/img/icons/calendar-icon.svg"
+                        alt="icon"
+                      />
+                      18 Sept 2020
                     </div>
-                    <div class="cardLabelList">
-                        <ul>
-                            <li>Reduces loss of interest income from FD</li>
-                            <li>Interest rates may rise by withdrawal time.</li>
-                            <li>Compounding your investments</li>
-                        </ul>
+                  </div>
+                  <div class="fdDetails">
+                    <div class="label">Interest rate</div>
+                    <div class="value">
+                      <img src="./assets/img/icons/percent.svg" alt="icon" />
+                      8.05%
                     </div>
-                    <div class="themeRedBtn themeRedBtn_mob">
-                        Renew
-                        <img src="./assets/img/arrow-right.svg" alt="icons" />
+                  </div>
+                  <div class="fdDetails">
+                    <div class="label">Interest amount</div>
+                    <div class="value">
+                      <img src="./assets/img/icons/cash.svg" alt="icon" /> ₹
+                      9,456
                     </div>
-                    <img src="./assets/img/icons/benefits-fixed-deposit.svg" alt="image"
-                        class="newFdImage circle_img" />
+                  </div>
+                  <div class="fdDetails">
+                    <div class="label">Interest payout</div>
+                    <div class="value">
+                      <img src="./assets/img/icons/percent.svg" alt="icon" /> On
+                      maturity
+                    </div>
+                  </div>
+                  <div class="fdDetails">
+                    <div class="label">Maturity date</div>
+                    <div class="value">
+                      <img
+                        src="./assets/img/icons/calendar-icon.svg"
+                        alt="icon"
+                      />
+                      18 Sept 2025
+                    </div>
+                  </div>
+                  <div class="fdDetails">
+                    <div class="label">Secondary holder</div>
+                    <div class="value">
+                      <img
+                        src="./assets/img/icons/calendar-icon.svg"
+                        alt="icon"
+                      />
+                      Ved Prakash Sahu
+                    </div>
+                  </div>
+                  <div class="fdDetails">
+                    <div class="label">Nominee name</div>
+                    <div class="value">
+                      <img
+                        src="./assets/img/icons/calendar-icon.svg"
+                        alt="icon"
+                      />
+                      Vikram Sahu
+                    </div>
+                  </div>
                 </div>
-                <div class="quick_actions_button_div">
-                    <button class="quick_actions_button no_desktop_view" onclick="handleClickShowQuickAction()">
-                        + Quick Actions
-                    </button>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="cardContainer cardContainer_mobileView chart_indivisual p-2 mt-20 blur_data">
+            <canvas id="myChart" class="myChart_pointer_none"></canvas>
+            <div class="boldTitle_profile boldTitle_indivisual boldTitle_indivisual_opacity">
+                <div class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_indivisual">
+                  <img src="./assets/img/icons/password.svg" alt="icon" />
+                </div>
+                Payment is due for the FD
+              </div>
+          </div>
         </div>
+        <div class="col-sm-12 col-md-12 col-lg-5 mt-20 third_col_data">
+          <div
+            class="cardContainer quick_action_container"
+            id="quick_action_container"
+          >
+            <div class="quickActionBox">
+              <div
+                class="close_icon no_desktop_view"
+                onclick="handleClickHideQuickAction()"
+              >
+                <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+              </div>
+              <div class="boldTitle mb-20">Quick actions</div>
+              <div
+                class="quickActionTabs quickActionTabs_mob_screen"
+                data-toggle="buttons"
+                id="quickActionElements"
+              >
+                <label
+                  class="boxRadioButton boxRadioButton_mob"
+                  id="elementOption1"
+                  onmouseover="toggleButton(true)"
+                  onmouseout="toggleButton(false)"
+                >
+                  <input
+                    type="radio"
+                    name="type"
+                    value="1"
+                    data-tenure="elementOption1"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="./assets/img/icons/quick-actions/refresh-icon.svg"
+                    alt="icon"
+                  />
+                  <div class="quickActionLabel">Renew fixed deposit</div>
+                </label>
+                <label
+                  class="boxRadioButton boxRadioButton_mob"
+                  id="elementOption2"
+                  onmouseover="toggleButton(true)"
+                  onmouseout="toggleButton(false)"
+                >
+                  <input
+                    type="radio"
+                    name="type"
+                    value="2"
+                    data-tenure="elementOption2"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="./assets/img/icons/quick-actions/download-icon.svg"
+                    alt="icon"
+                  />
+                  <div class="quickActionLabel">Download E receipt</div>
+                </label>
+                <label
+                  class="boxRadioButton boxRadioButton_mob"
+                  id="elementOption3"
+                  onmouseover="toggleButton(true)"
+                  onmouseout="toggleButton(false)"
+                >
+                  <input
+                    type="radio"
+                    name="type"
+                    value="3"
+                    data-tenure="elementOption3"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="./assets/img/icons/quick-actions/round-rupees.svg"
+                    alt="icon"
+                  />
+                  <div class="quickActionLabel">Loan against fixed deposit</div>
+                </label>
+                <label
+                  class="boxRadioButton boxRadioButton_mob"
+                  id="elementOption4"
+                  onmouseover="toggleButton(true)"
+                  onmouseout="toggleButton(false)"
+                >
+                  <input
+                    type="radio"
+                    name="type"
+                    value="4"
+                    data-tenure="elementOption4"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="./assets/img/icons/quick-actions/preclose-icon.svg"
+                    alt="icon"
+                  />
+                  <div class="quickActionLabel">Pre close fixed deposit</div>
+                </label>
+                <label
+                  class="boxRadioButton boxRadioButton_mob"
+                  id="elementOption5"
+                  onmouseover="toggleButton(true)"
+                  onmouseout="toggleButton(false)"
+                >
+                  <input
+                    type="radio"
+                    name="type"
+                    value="5"
+                    data-tenure="elementOption5"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="./assets/img/icons/quick-actions/edit-icon.svg"
+                    alt="icon"
+                  />
+                  <div class="quickActionLabel">Update Nominee Details</div>
+                </label>
+
+                <button
+                  class="themeRedBtn themeRedBtn_mob_Continue no_desktop_view"
+                  id="actionButton"
+                  disabled
+                >
+                  Continue
+                  <img src="./assets/img/arrow-right.svg" alt="icons" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardContainer mt-20 fdAvailBanner quickActionBanner">
+            <div class="cardLabelHeading">
+              Benefits of Renewing Fixed Deposit
+            </div>
+            <div class="cardLabelList">
+              <ul>
+                <li>Reduces loss of interest income from FD</li>
+                <li>Interest rates may rise by withdrawal time.</li>
+                <li>Compounding your investments</li>
+              </ul>
+            </div>
+            <div class="themeRedBtn themeRedBtn_mob">
+              Renew
+              <img src="./assets/img/arrow-right.svg" alt="icons" />
+            </div>
+            <img
+              src="./assets/img/icons/benefits-fixed-deposit.svg"
+              alt="image"
+              class="newFdImage circle_img"
+            />
+          </div>
+          <div class="quick_actions_button_div">
+            <button
+              class="quick_actions_button no_desktop_view"
+              onclick="handleClickShowQuickAction()"
+            >
+              + Quick Actions
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="overlay"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -296,6 +555,5 @@
     <script src="./assets/js/chart.js"></script>
     <script src="./assets/js/graph.js"></script>
     <script src="./assets/js/custom.js"></script>
-</body>
-
+  </body>
 </html>
