@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahindra Finance :: Preclosure</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/_265_css.scss" />
+  </head>
+
+  <body>
+    <!-- Top-navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div id="hamburgerIcon">
+            <span></span> <span></span> <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item no_tablet_view">
+              <div class="mob_menu_user_profile">
+                <div class="userIconImage">
+                  <img src="./assets/img/avatar.png" alt="user icon" />
+                </div>
+                Vikram Kumar Sahu
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >FD renewal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preclosure.html">Preclosure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD repayment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Download</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon">
+                  <img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                  />
+                </span>
+              </a>
+              <ul
+                class="dropdown-menu mob_menu_download"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/Certificate.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    TDS certificate
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-plus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Form 15 G/H submission
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-text.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Non - cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/percent.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Interest paid / accrued details
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown userAvatar">
+              <img src="./assets/img/avatar.png" alt="user" class="no_view" />
+              <a
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Profile</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon">
+                  <img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                  />
+                </span>
+              </a>
+              <ul
+                class="dropdown-menu mob_sub_profile"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/user.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    My account
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/edit.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    CKYC update
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/check-circle.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Avail employee benefit
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Other fixed deposits
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item logoutLink" href="#">
+                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                    Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mob_menu_logout no_tablet_view">
+              <a href="#">
+                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log
+                out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Top-navbar End -->
+    <div class="container mb-20">
+      <div class="row animate__animated animate__fadeInUp">
+        <div class="col-12 mt-20">
+          <a href="#" class="commonBackBtn">
+            <img src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back
+          </a>
+        </div>
+        <div class="col col-md-12">
+          <div class="heading_nominee">
+            <div
+              id="commonHeading-repayment"
+              class="commonHeading_repayment_profile"
+            >
+              Portfolio -
+            </div>
+            <div class="custom-dropdown" id="portfolio_btn">
+              <button
+                class="themeRedBtn dropdown-toggle themeRedBtn_profile"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                BA003931 - Amrita Baldewa
+                <img src="./assets/img/chevron-down.svg" alt="icons" />
+              </button>
+              <ul
+                class="dropdown-menu dropdown_menu_profile"
+                aria-labelledby="dropdownMenuButton1"
+                id="dropdownElement"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Vikram Kumar Sahu <span>221132</span></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Hariom Sahu <span>221130</span></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Vikram Sahu <span>221128</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div
+            class="bankDetailsMainContainer"
+          >
+            <div class="boldTitle boldTitle_profile">
+              <div
+                class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile"
+              >
+                <img
+                  src="./assets/img/icons/quick-actions/download-icon.svg"
+                  alt="icon"
+                />
+              </div>
+              Download TDS certificate
+            </div>
+            <div class="main-form form_wrapper">
+              <form>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
+                    <div class="textparent">
+                      <div class="add_new_details_profile add_new_details_profile_certificate">
+                        Message centre:
+                      </div>
+                      <label
+                        for="mobile_number"
+                        class="form-label formLabel formLabel_profile formLabel_profile_label"
+                        >Financial year*</label
+                      >
+                      <select
+                        id="nominee_value"
+                        class="form-control formControl formControl_profile"
+                        onchange="toggleSecondColumn('#secondColumn','add-new', '#nominee_value')"
+                      >
+                        <option
+                          value="disable-selected"
+                          disabled
+                          hidden
+                          selected
+                        >
+                          Select
+                        </option>
+                        <option value="add-new">2023-24</option>
+                        <option value="Sudhir Rana">2023-24</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tds-text">
+                TDS certificates
+            </div>
+            <div class="row" id="make_top">
+              <div class="col col-md-12 web-wrapper">
+                <div class="listTable listTable_profile listTable_profile_tds_certificate">
+                  <div class="listTableHead">
+                    <div class="wd-15">Financial year</div>
+                    <div class="wd-15">Quarter</div>
+                    <div class="wd-15">Pan</div>
+                    <div class="wd-15">Gross amount</div>
+                    <div class="wd-15">Invested amount</div>
+                    <div class="wd-15 all-center">Download</div>
+                  </div>
+                  <div class="listTableBody listTableBody_profile">
+                    <div
+                      class="listTabledata listTabledata_profile"
+                      onclick="selectRadio(event, 'listTabledata')"
+                    >
+                      <div class="tableData wd-15">2019-20</div>
+                      <div class="tableData wd-15">Q4</div>
+                      <div class="tableData wd-15">ADEPL3063B</div>
+                      <div class="tableData wd-15">34066</div>
+                      <div class="tableData wd-15 font-bolder">₹ 0</div>
+                      <div class="tableData wd-15 all-center">
+                          <img
+                            src="./assets/img/icons/download.svg"
+                            alt="icon"
+                          />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mob-wrapper">
+                <div class="fixedDepositeContainer">
+                  <div class="fixedDepositDetailsData">
+                    <div
+                      class="details_fixed_deposit"
+                      id="details_fixed_deposit1"
+                    >
+                      <div class="auto_renewal_details">
+                        <div class="FD_num">C19164407</div>
+                        <input
+                          class="radio-button radio-button-data mobRadioButton"
+                          onclick="radioButtonAction('radio1','details_fixed_deposit1')"
+                          type="radio"
+                          name="radio"
+                          value="male"
+                          id="radio1"
+                        />
+                      </div>
+                      <div class="second_details">
+                        <div
+                          class="Investment_details_content Investment_details_content_profile"
+                        >
+                          <div class="details_profile">
+                            <div class="text_content">Nominee name</div>
+                            <div class="img_detail">
+                              <div class="NA_text percentage_text_profile">
+                                N/A
+                              </div>
+                            </div>
+                          </div>
+                          <div class="details_profile">
+                            <div class="text_content">Nominee DOB</div>
+                            <div class="img_detail">
+                              <div class="percentage_text_profile">N/A</div>
+                            </div>
+                          </div>
+                          <div class="details_profile">
+                            <div class="text_content">Nominee Relationship</div>
+                            <div class="img_detail">
+                              <div class="NA_text percentage_text_profile">
+                                N/A
+                              </div>
+                            </div>
+                          </div>
+                          <div class="details_profile">
+                            <div class="text_content">Investment</div>
+                            <div class="img_detail">
+                              <div class="NA_text percentage_text_profile">
+                                ₹ 35,000
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="third_details">
+                        <div class="pending_details">
+                          <div>
+                            <div class="green-bg-label green_label_mob">
+                              <img
+                                src="./assets/img/icons/round-tick.svg"
+                                alt="icon"
+                              />
+                              Active
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-sm-12 col-md-12 bottomContentBox_profile bottomContentBox_profile_tds_certificate">
+              <div>
+                <img
+                src="./assets/img/icons/check-circle.svg"
+                alt="icon"
+              /> 
+              </div>
+              <div>
+                To validate the digital signature : <span>Kindly open the TDS certificate in PDF viewer for valid digital signature</span>
+              </div>
+                 
+              </div>
+          </div>
+        </div>
+        <div class="col col-md-12">
+          <div class="buttonContainer" id="repayment-buttonContainer">
+            <button
+              class="btn themeRedBtn themeRedBtn_profile"
+              id="continueButton"
+              disabled
+              onclick="handleClickModal('myModal')"
+            >
+              Submit <img src="./assets/img/arrow-right.svg" alt="icons" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="communication_wrapper">
+        <div class="live_tune_connect">
+          <a href="#">
+            <img src="./assets/img/icons/call-tune.svg" alt="icon" />
+          </a>
+        </div>
+        <div class="live_tune_connect">
+          <a href="#">
+            <img src="./assets/img/icons/map.svg" alt="icon" />
+          </a>
+        </div>
+        <!-- <div class="live_tune_connect">
+          <a href="#">
+            <img src="./assets/img/icons/chat.svg" alt="icon" />
+          </a>
+        </div> -->
+        <div class="live_tune_connect">
+          <a href="#">
+            <img src="./assets/img/icons/thumb.svg" alt="icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/chart.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
