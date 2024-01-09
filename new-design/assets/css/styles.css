@@ -7704,7 +7704,7 @@ p.notify_lfd {
   background-color: #E31837;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
@@ -7835,7 +7835,11 @@ input[type=number] {
 }
 
 .main-form.fd_content_min_height {
-  min-height: 480px;
+  min-height: calc(70vh - 127px);
+}
+
+.main-form.fd_content_min_height_add_new {
+  min-height: calc(60vh - 127px);
 }
 
 .textparent_content {
@@ -7869,6 +7873,20 @@ input[type=number] {
   min-width: 12rem;
 }
 
+.bottomContentBox_profile {
+  background-color: #F3F4F6;
+  border-radius: 4px;
+  color: #6B7280;
+  padding: 0px 8px 0px 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
     top: 63.2px;
@@ -7887,6 +7905,9 @@ input[type=number] {
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .bottomContentBox_profile {
+    margin-top: 88px;
   }
   .boxsection_profile .box-first-text-profile p {
     font-size: 12px;
@@ -7951,10 +7972,6 @@ input[type=number] {
   }
   .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
     top: 58.2px;
-  }
-  .bankDetailsMainContainer .bottomContentBox.bottomContentBox_profile {
-    margin-top: 88px;
-    margin-bottom: 0;
   }
   .modal .modal-content .modal-body .info-heading-container .info-heading.info-heading_profile_contact {
     font-size: 15px;
