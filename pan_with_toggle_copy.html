@@ -15,13 +15,135 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/pan_toggle.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/pan_toggle_copy.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/nav.css" />
 
     <title>Document</title>
 </head>
 
 <body class="panmobilefix">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./new-design/assets/img/logo.svg" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <div id="hamburgerIcon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item no_tablet_view">
+                        <div class="mob_menu_user_profile">
+                            <div class="userIconImage">
+                                <img src="./new-design/assets/img/avatar.png" alt="user icon" />
+                            </div>
+                            Vikram Kumar Sahu
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">FD renewal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preclosure.html">Preclosure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Loan against FD repayment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Loan against FD</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Download</span>
+                            <img src="./new-design/assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                            <span class="plus_icon"><img src="./new-design/assets/img/icons/plusIcon.svg" alt="icon" class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
+                        </a>
+                        <ul class="dropdown-menu mob_menu_download" aria-labelledby="dropdown09">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./new-design/assets/img/icons/Certificate.svg" alt="icon" class="menuIcon" /> TDS certificate
+                                    <img src="./new-design/assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./new-design/assets/img/icons/file-plus.svg" alt="icon" class="menuIcon" /> Form 15 G/H submission
+                                    <img src="./new-design/assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./new-design/assets/img/icons/file-text.svg" alt="icon" class="menuIcon" /> Cumulative letter
+                                    <img src="./new-design/assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./new-design/assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Non - cumulative letter
+                                    <img src="./new-design/assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./new-design/assets/img/icons/percent.svg" alt="icon" class="menuIcon" /> Interest paid / accrued details
+                                    <img src="./new-design/assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown userAvatar">
+                        <img src="./new-design/assets/img/avatar.png" alt="user" class="no_view" />
+                        <a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Profile</span>
+                            <img src="./new-design/assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                            <span class="plus_icon"><img src="./new-design/assets/img/icons/plusIcon.svg" alt="icon" class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
+                        </a>
+                        <ul class="dropdown-menu mob_sub_profile" aria-labelledby="dropdown09">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./new-design/assets/img/icons/user.svg" alt="icon" class="menuIcon" /> My account
+                                    <img src="./new-design/assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./new-design/assets/img/icons/edit.svg" alt="icon" class="menuIcon" /> CKYC update
+                                    <img src="./new-design/assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./new-design/assets/img/icons/check-circle.svg" alt="icon" class="menuIcon" /> Avail employee benefit <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./new-design/assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Other fixed deposits <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item logoutLink" href="#">
+                                    <img src="./new-design/assets/img/icons/logoutIcon.svg" alt="icon" /> Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mob_menu_logout no_tablet_view">
+                        <a href="#">
+                            <img src="./new-design/assets/img/icons/logoutIcon.svg" alt="icon" />
+                            Log out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- new update 29 Sep -->
-    <div class="container main-container-div">
+    <div class="container main-container-div mt-20">
         <div class="card">
             <div class="row">
                 <div class=" col-12 col-md-12 col-lg-5 col-sm-12 mobile_pan_Container">
@@ -346,6 +468,7 @@
             crossorigin="anonymous "></script>
         <script src="./pan_mobile.js ">
         </script>
+         <script src="./new-design/assets/js/custom.js "></script>
 </body>
 
 </html>

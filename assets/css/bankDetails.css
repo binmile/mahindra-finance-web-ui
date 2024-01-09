@@ -18,7 +18,7 @@ input[type='checkbox'] {
 }
 
 .bank-details-disabled-button{
-    font-weight: bold;
+    font-weight: 600;
 }
 .bank-details-disabled-button.disabled img {
     -webkit-filter: brightness(0.7) invert(0);
@@ -76,7 +76,7 @@ input[type='checkbox'] {
 
 .bank_detail_mainheading {
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .bank_detail_subheading {
@@ -135,7 +135,7 @@ input[type='checkbox'] {
 .reviewCardLargeContent {
     color: #221F20;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 10px;
     white-space: nowrap;
 }
@@ -143,7 +143,7 @@ input[type='checkbox'] {
 .reviewCardSmallContent {
     color: #221F20;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 10px;
     white-space: nowrap;
 }
@@ -166,7 +166,7 @@ input[type='checkbox'] {
     background-color: #E31837;
     color: #ffff;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     width: 46%;
     Padding: 10px 15px;
     border-radius: 4px;
@@ -282,7 +282,7 @@ input[type='checkbox'] {
     background-color: #E31837;
     color: #ffff;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     width: 253px;
     Padding: 10px 15px;
     border-radius: 4px;
@@ -406,7 +406,7 @@ input[type='checkbox'] {
 .green_box_data_head {
     color: #221F20;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .completed_img_container {
@@ -483,7 +483,7 @@ input[type='checkbox'] {
     border-color: #E31837;
     margin-bottom: 20px;
     margin-right: 15px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .back_img_tag{
