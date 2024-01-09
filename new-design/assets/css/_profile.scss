@@ -15,7 +15,23 @@
 .live_tune_connect:last-child {
   border-bottom: none;
 }
+.form_wrapper{
+  border-bottom: 1px solid $color_border;
+  padding-bottom: 32px;
+}
+.tds-text{
+  margin-top: 32px;
+@include custom-font(16px, 700, 24px, 0);
+}
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
+&.text_certificate {
+  top: 83.2px;
+}
+}
 .add_new_details_profile {
+  &.add_new_details_profile_certificate{
+    margin: 28px 0 12px 0;
+  }
   @include custom-font(16px, 700, 24px, 0);
 }
 
@@ -43,6 +59,12 @@
     border-bottom-right-radius: 8px;
   }
 }
+.listTable .listTableHead{
+&.listTableHead_tds_certificate{
+  justify-content: space-around;
+}
+}
+
 .boxsection_profile {
   margin-bottom: 0;
   .box-first-text-profile {
@@ -132,6 +154,9 @@ input[type="number"] {
 
 .listTable_profile {
   margin: 16px 0 32px 0;
+  &.listTable_profile_tds_certificate{
+    margin-bottom: 84px;
+  }
 }
   .main-form.fd_content_min_height {
     min-height:calc(70vh - 127px);
@@ -179,6 +204,21 @@ input[type="number"] {
   width: fit-content;
   margin-top: 10px;
   @include custom-font(14px, 400, 24px, 0.25px);
+  &.bottomContentBox_profile_tds_certificate{
+    background-color: #FFF0BC;
+width: 100%;
+    color: #231F20;
+    padding: 12px;
+    border-radius: 8px;
+    @include custom-font(14px, 500, 20px, 0.25px);
+    span{
+      @include custom-font(14px, 400, 24px, 0.25px);
+    }
+    img{
+      margin-right: 10px;
+    }
+   
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer

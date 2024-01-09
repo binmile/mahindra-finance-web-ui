@@ -7719,11 +7719,31 @@ p.notify_lfd {
   border-bottom: none;
 }
 
+.form_wrapper {
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 32px;
+}
+
+.tds-text {
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data.text_certificate {
+  top: 83.2px;
+}
+
 .add_new_details_profile {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0;
+}
+.add_new_details_profile.add_new_details_profile_certificate {
+  margin: 28px 0 12px 0;
 }
 
 .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
@@ -7746,6 +7766,10 @@ p.notify_lfd {
 .listTable .listTableBody .listTabledata.listTabledata_profile {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.listTable .listTableHead.listTableHead_tds_certificate {
+  justify-content: space-around;
 }
 
 .boxsection_profile {
@@ -7837,6 +7861,9 @@ input[type=number] {
 .listTable_profile {
   margin: 16px 0 32px 0;
 }
+.listTable_profile.listTable_profile_tds_certificate {
+  margin-bottom: 84px;
+}
 
 .main-form.fd_content_min_height {
   min-height: calc(70vh - 127px);
@@ -7889,6 +7916,26 @@ input[type=number] {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.25px;
+}
+.bottomContentBox_profile.bottomContentBox_profile_tds_certificate {
+  background-color: #FFF0BC;
+  width: 100%;
+  color: #231F20;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.bottomContentBox_profile.bottomContentBox_profile_tds_certificate span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+.bottomContentBox_profile.bottomContentBox_profile_tds_certificate img {
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
