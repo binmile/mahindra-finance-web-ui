@@ -1,4 +1,7 @@
-  .leftcard {
+
+ 
+ 
+ .leftcard {
       margin: auto;
       padding: 20px 30px 0px 20px;
   }
@@ -2234,11 +2237,11 @@
   }
 
 
-  @media only screen and (min-width: 992px) and (max-width: 1600px) {
+  /* @media only screen and (min-width: 992px) and (max-width: 1600px) {
       body {
           zoom: 90%;
       }
-  }
+  } */
 
   @media only screen and (min-width: 992px) and (max-width: 1255px) {
       #tenureEement {
@@ -2300,27 +2303,27 @@
     .footertext {
         margin-top: 0px;
     }
-    .container,
+    /* .container,
     .container-md,
     .container-sm {
         max-width: 100%;
         margin: 0px;
         padding-top: 0px;
         padding-bottom: 0px;
-    }
+    } */
 }
 
 
 @media only screen and (max-width: 768px) {
    
    
-    .container, .container-md, .container-sm {
+    /* .container, .container-md, .container-sm {
         max-width: 100%;
         margin: 0px;
         padding-top: 0px;
         padding: 0px;
         overflow-x: hidden;
-    }
+    } */
 }
 
 
@@ -2368,11 +2371,11 @@
 
 /* new update 29 Sep */
 
-.inner-scroll {
+/* .inner-scroll {
     overflow-x: hidden;
     overflow-y: auto;
     height: 84vh;
-}
+} */
 
 
 /* width */
@@ -2381,23 +2384,23 @@
   }
   
   /* Track */
-  .inner-scroll::-webkit-scrollbar-track {
+  /* .inner-scroll::-webkit-scrollbar-track {
       background: transparent;
-  }
+  } */
 
   /* Handle */
-  .inner-scroll::-webkit-scrollbar-thumb {
+  /* .inner-scroll::-webkit-scrollbar-thumb {
       background: transparent;
-  }
+  } */
 
   /* Handle on hover */
-  .inner-scroll::-webkit-scrollbar-thumb:hover {
+  /* .inner-scroll::-webkit-scrollbar-thumb:hover {
     background: #ccc; 
-  }
+  } */
 
-body {
+/* body {
     overflow: hidden;
-}
+} */
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
     .leftcard-contant h1 {
         font-size: 50px ;
@@ -2423,10 +2426,10 @@ body {
         padding: 10px 10px 5px 10px;
         line-height: 20px;
     }
-    .inner-scroll {
+    /* .inner-scroll {
         height: 75vh;
     }
-    
+     */
     .fixed_deposit_data {
         font-size: 50px;
         line-height: 40px;
@@ -2459,7 +2462,7 @@ body {
 @media only screen and (max-width: 991px) {
 
     /* new update 29 sep  */
-    .container {
+    /* .container {
         padding-top: 0px !important;
         padding-bottom: 0px !important;
         
@@ -2468,15 +2471,15 @@ body {
         left: unset !important;
         transform:unset!important;
         
-    }
-body {
+    } */
+/* body {
     overflow: auto;
-}
-.inner-scroll {
+} */
+/* .inner-scroll {
     overflow-x: unset;
     overflow-y: unset;
     height: unset;
-}
+} */
 }
 
 .newlogo {
@@ -2498,10 +2501,10 @@ body {
     /* padding-top: 30px; */
     /* padding-bottom: 0px; */
     /* position: relative; */
-    position: fixed;
+    /* position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     
 }
 

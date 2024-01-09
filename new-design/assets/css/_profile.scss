@@ -15,21 +15,23 @@
 .live_tune_connect:last-child {
   border-bottom: none;
 }
-.form_wrapper{
+.form_wrapper {
   border-bottom: 1px solid $color_border;
   padding-bottom: 32px;
 }
-.tds-text{
+.tds-text {
   margin-top: 32px;
-@include custom-font(16px, 700, 24px, 0);
+  @include custom-font(16px, 700, 24px, 0);
 }
-.bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
-&.text_certificate {
-  top: 83.2px;
-}
+.bankDetailsMainContainer
+  .textparent
+  .textfildicons.textfildicons_profile_data {
+  &.text_certificate {
+    top: 83.2px;
+  }
 }
 .add_new_details_profile {
-  &.add_new_details_profile_certificate{
+  &.add_new_details_profile_certificate {
     margin: 28px 0 12px 0;
   }
   @include custom-font(16px, 700, 24px, 0);
@@ -58,11 +60,6 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
-}
-.listTable .listTableHead{
-&.listTableHead_tds_certificate{
-  justify-content: space-around;
-}
 }
 
 .boxsection_profile {
@@ -112,12 +109,11 @@ input[type="number"] {
       @include custom-width-height(16px, 16px);
     }
   }
-  &.textfildicons_icons_cumulative{
-    img{
+  &.textfildicons_icons_cumulative {
+    img {
       @include custom-width-height(20px, 20px);
     }
   }
-
 }
 .modal .modal-content .modal-body .info-heading-container .info-heading {
   &.info-heading_profile_contact {
@@ -154,17 +150,17 @@ input[type="number"] {
 
 .listTable_profile {
   margin: 16px 0 32px 0;
-  &.listTable_profile_tds_certificate{
+  &.listTable_profile_tds_certificate {
     margin-bottom: 84px;
   }
 }
-  .main-form.fd_content_min_height {
-    min-height:calc(70vh - 127px);
-  }
-  .main-form.fd_content_min_height_add_new {
-    min-height:  calc(60vh - 127px);
-  }
- 
+.main-form.fd_content_min_height {
+  min-height: calc(70vh - 127px);
+}
+.main-form.fd_content_min_height_add_new {
+  min-height: calc(60vh - 127px);
+}
+
 .textparent_content {
   display: flex;
   justify-content: space-between;
@@ -195,7 +191,7 @@ input[type="number"] {
 .dropdown_menu_profile {
   min-width: 12rem;
 }
-.bottomContentBox_profile{
+.bottomContentBox_profile {
   background-color: $color_light_bg;
   border-radius: 4px;
   color: $color_light_text;
@@ -204,20 +200,21 @@ input[type="number"] {
   width: fit-content;
   margin-top: 10px;
   @include custom-font(14px, 400, 24px, 0.25px);
-  &.bottomContentBox_profile_tds_certificate{
-    background-color: #FFF0BC;
-width: 100%;
-    color: #231F20;
+  &.bottomContentBox_profile_tds_certificate {
+    display: flex;
+    align-items: center;
+    background-color: #fff0bc;
+    width: 100%;
+    color: #231f20;
     padding: 12px;
     border-radius: 8px;
     @include custom-font(14px, 500, 20px, 0.25px);
-    span{
+    span {
       @include custom-font(14px, 400, 24px, 0.25px);
     }
-    img{
+    img {
       margin-right: 10px;
     }
-   
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -241,13 +238,32 @@ width: 100%;
   .communication_wrapper {
     display: none;
   }
+  .bottomContentBox_profile {
+    background-color: $color_light_bg;
+    border-radius: 4px;
+    color: $color_light_text;
+    padding: 0px 8px 0px 8px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 10px;
+    @include custom-font(14px, 400, 24px, 0.25px);
+    &.bottomContentBox_profile_tds_certificate {
+    
+      @include custom-font(10px, 400, 14px, 0.25px);
+      span {
+        @include custom-font(10px, 400, 14px, 0.25px);
+      }
+    }
+  }
+  .tds-text {
+    @include custom-font(12px, 700, 16px, 0.4px);
+  }
   .bankDetailsMainContainer .textparent .textfildicons {
-    &.textfildicons_icons_cumulative{
-      img{
+    &.textfildicons_icons_cumulative {
+      img {
         @include custom-width-height(16px, 16px);
       }
     }
-  
   }
   .boxsection_profile {
     .box-first-text-profile {
@@ -320,7 +336,6 @@ width: 100%;
     top: 58.2px;
   }
 
- 
   .modal .modal-content .modal-body .info-heading-container .info-heading {
     &.info-heading_profile_contact {
       font-size: 15px;
