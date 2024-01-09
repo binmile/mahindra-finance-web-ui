@@ -3,7 +3,7 @@
   background-color: $color_red;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
@@ -133,10 +133,13 @@ input[type="number"] {
 .listTable_profile {
   margin: 16px 0 32px 0;
 }
-.main-form.fd_content_min_height {
-  min-height: 480px;
-}
-
+  .main-form.fd_content_min_height {
+    min-height:calc(70vh - 127px);
+  }
+  .main-form.fd_content_min_height_add_new {
+    min-height:  calc(60vh - 127px);
+  }
+ 
 .textparent_content {
   display: flex;
   justify-content: space-between;
@@ -167,11 +170,15 @@ input[type="number"] {
 .dropdown_menu_profile {
   min-width: 12rem;
 }
-.bankDetailsMainContainer .bottomContentBox{
-  &.profile_cumulative{
-    margin-top: 295px;
-    margin-bottom: 0;
-  }
+.bottomContentBox_profile{
+  background-color: $color_light_bg;
+  border-radius: 4px;
+  color: $color_light_text;
+  padding: 0px 8px 0px 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 10px;
+  @include custom-font(14px, 400, 24px, 0.25px);
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer
@@ -272,12 +279,8 @@ input[type="number"] {
     .textfildicons.textfildicons_profile_data {
     top: 58.2px;
   }
-  .bankDetailsMainContainer .bottomContentBox {
-    &.bottomContentBox_profile {
-      margin-top: 88px;
-      margin-bottom: 0;
-    }
-  }
+
+ 
   .modal .modal-content .modal-body .info-heading-container .info-heading {
     &.info-heading_profile_contact {
       font-size: 15px;
