@@ -426,6 +426,12 @@ p.reco {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .logoutbtn:before {
+        top: 36px !important;
+    }
+    .bg-white {
+        padding: 24px 4px !important;
+    }
     .boldHeader.boldHeaderFd span {
         display: none;
     }

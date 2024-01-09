@@ -48,10 +48,10 @@
            margin: auto;
            padding: 0px 30px 20px;
        }
-       .investmentParent.inner {
+       /* .investmentParent.inner {
         height: 70vh;
         overflow: auto;
-    }
+    } */
        .appliedContainer-hide{
         display: none !important;
        }
@@ -668,7 +668,7 @@
            .Investment_Heading {
                color: #221f20;
                font-size: 16px;
-               font-weight: 800;
+               font-weight: 600;
                line-height: 26px;
                margin-bottom: 8px;
            }
