@@ -7771,8 +7771,17 @@ p.notify_lfd {
   letter-spacing: 0;
 }
 
+#bank_details {
+  display: none;
+}
+
 .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data.text_certificate {
   top: 83.2px;
+}
+
+.details_profile_bank {
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 .add_new_details_profile {
@@ -7979,6 +7988,14 @@ input[type=number] {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1145px) {
+  .listTable .listTableBody .listTabledata .tableData.tableData_profile_data {
+    font-size: 10px;
+  }
+  .listTable .listTableHead.listTableHead_nominee {
+    font-size: 11px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
     top: 63.2px;

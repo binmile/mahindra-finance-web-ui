@@ -106,7 +106,7 @@
                       alt="icon"
                       class="menuIcon"
                     />
-                    Form 15 G/H submission
+                    Form 11 G/H submission
                     <img
                       src="./assets/img/icons/arrow-right-red-icon.svg"
                       alt="arrow icon"
@@ -300,12 +300,12 @@
               >
                 <li>
                   <a class="dropdown-item" href="#"
-                    >Vikram Kumar Sahu <span>221132</span></a
+                    >Vikram Kumar Sahu <span>221532</span></a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item" href="#"
-                    >Hariom Sahu <span>221130</span></a
+                    >Hariom Sahu <span>221530</span></a
                   >
                 </li>
                 <li>
@@ -326,115 +326,204 @@
                 class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile"
               >
                 <img
-                  src="./assets/img/icons/quick-actions/download-icon.svg"
+                  src="./assets/img/icons/bank.svg"
                   alt="icon"
                 />
               </div>
-              Download TDS certificate
+              Change deposit repayment bank
             </div>
             <div class="row" id="make_top">
                 <div class="col col-md-12 web-wrapper">
                   <div class="listTable listTable_profile">
-                    <div class="listTableHead">
-                      <div class="wd-15">Financial year</div>
-                      <div class="wd-15">Quarter</div>
-                      <div class="wd-15">Pan</div>
-                      <div class="wd-15">Gross amount</div>
-                      <div class="wd-15">Invested amount</div>
-                      <div class="wd-15 all-center">Download</div>
+                    <div class="listTableHead listTableHead_nominee">
+                        <div class="wd-11">Action</div>
+                        <div class="wd-13">FD number</div>
+                        <div class="wd-15">IFSC code</div>
+                        <div class="wd-14">Bank name</div>
+                        <div class="wd-15">Bank branch</div>
+                        <div class="wd-15">Account number</div>
+                        <div class="wd-14 all-center">Status</div>
                     </div>
                     <div class="listTableBody listTableBody_profile">
-                      <div
-                        class="listTabledata listTabledata_profile"
-                        onclick="selectRadio(event, 'listTabledata')"
-                      >
-                        <div class="tableData wd-15">2019-20</div>
-                        <div class="tableData wd-15">Q4</div>
-                        <div class="tableData wd-15">ADEPL3063B</div>
-                        <div class="tableData wd-15">34066</div>
-                        <div class="tableData wd-15 font-bolder">₹ 0</div>
-                        <div class="tableData wd-15 all-center">
-                            <img
-                              src="./assets/img/icons/download.svg"
-                              alt="icon"
-                            />
+                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+                            <div class="tableData wd-11">
+                                <input type="radio" name="preclosure">
+                            </div>
+                            <div class="tableData wd-13 tableData_profile_data">C19164407</div>
+                            <div class="tableData wd-15 tableData_profile_data">BARBOCHENBS</div>
+                            <div class="tableData wd-14 tableData_profile_data">Bank of baroda</div>
+                            <div class="tableData wd-15 tableData_profile_data">West Mambala branch</div>
+                            <div class="tableData wd-15 tableData_profile_data">28730100000319</div>
+                            <div class="tableData wd-14 all-center">
+                                <div class="green-bg-label">
+                                    <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                    Active
+                                </div>
+                            </div>
                         </div>
-                      </div>
+  
+                        <div class="listTabledata listTabledata_profile" onclick="selectRadio(event, 'listTabledata')">
+                            <div class="tableData wd-11">
+                                <input type="radio" name="preclosure">
+                            </div>
+                            <div class="tableData wd-13 tableData_profile_data">N22014171H</div>
+                            <div class="tableData wd-15 tableData_profile_data">BARBOCHENBS</div>
+                            <div class="tableData wd-14 tableData_profile_data">Bank of baroda</div>
+                            <div class="tableData wd-15 tableData_profile_data">West Mambala branch</div>
+                            <div class="tableData wd-15 tableData_profile_data">28730100000319</div>
+                            <div class="tableData wd-14 all-center">
+                                <div class="green-bg-label">
+                                    <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                    Active
+                                </div>
+                            </div>
+                        </div>
+  
                     </div>
-                  </div>
+                </div>
                 </div>
                 <div class="container mob-wrapper">
                   <div class="fixedDepositeContainer">
-                    <div class="fixedDepositDetailsData">
-                      <div
-                        class="details_fixed_deposit"
-                        id="details_fixed_deposit1"
-                      >
-                        <div class="auto_renewal_details">
-                          <div class="FD_num">C19164407</div>
-                          <input
-                            class="radio-button radio-button-data mobRadioButton"
-                            onclick="radioButtonAction('radio1','details_fixed_deposit1')"
-                            type="radio"
-                            name="radio"
-                            value="male"
-                            id="radio1"
-                          />
-                        </div>
-                        <div class="second_details">
-                          <div
-                            class="Investment_details_content Investment_details_content_profile"
-                          >
-                            <div class="details_profile">
-                              <div class="text_content">Nominee name</div>
-                              <div class="img_detail">
-                                <div class="NA_text percentage_text_profile">
-                                  N/A
-                                </div>
+                      <div class="fixedDepositDetailsData">
+                          <div class="details_fixed_deposit" id="details_fixed_deposit1">
+                              <div class="auto_renewal_details">
+                                  <div class="FD_num">
+                                    C19164407
+                                  </div>
+                                  <input class="radio-button radio-button-data mobRadioButton"
+                                      onclick="radioButtonAction('radio1','details_fixed_deposit1')" type="radio"
+                                      name="radio" value="male" id="radio1">
                               </div>
-                            </div>
-                            <div class="details_profile">
-                              <div class="text_content">Nominee DOB</div>
-                              <div class="img_detail">
-                                <div class="percentage_text_profile">N/A</div>
+                              <div class="second_details">
+                                  <div class="Investment_details_content Investment_details_content_profile">
+                                      <div class="details_profile_bank">
+                                          <div class="text_content">
+                                            Nominee name
+                                          </div>
+                                          <div class="img_detail">
+                                              <div class="NA_text percentage_text_profile">
+                                                N/A
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="details_profile_bank">
+                                          <div class="text_content">
+                                            Nominee DOB
+                                          </div>
+                                          <div class="img_detail">
+                                              <div class="percentage_text_profile">
+                                                N/A
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="details_profile_bank">
+                                          <div class="text_content">
+                                            Nominee Relationship
+                                          </div>
+                                          <div class="img_detail">
+                                              <div class="NA_text percentage_text_profile">
+                                                N/A
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="details_profile_bank">
+                                        <div class="text_content">
+                                          Investment
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="NA_text percentage_text_profile">
+                                              ₹ 35,000
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                  </div>
                               </div>
-                            </div>
-                            <div class="details_profile">
-                              <div class="text_content">Nominee Relationship</div>
-                              <div class="img_detail">
-                                <div class="NA_text percentage_text_profile">
-                                  N/A
-                                </div>
+                              <div class="third_details">
+                                  <div class="pending_details">
+                                      <div>
+                                          <div class="green-bg-label green_label_mob
+                                          ">
+                                          <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                          Active
+                                          </div>
+                                      </div>
+                                  </div>
                               </div>
-                            </div>
-                            <div class="details_profile">
-                              <div class="text_content">Investment</div>
-                              <div class="img_detail">
-                                <div class="NA_text percentage_text_profile">
-                                  ₹ 35,000
-                                </div>
-                              </div>
-                            </div>
                           </div>
-                        </div>
-                        <div class="third_details">
-                          <div class="pending_details">
-                            <div>
-                              <div class="green-bg-label green_label_mob">
-                                <img
-                                  src="./assets/img/icons/round-tick.svg"
-                                  alt="icon"
-                                />
-                                Active
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                       </div>
+                      <div class="fixedDepositDetailsData">
+                        <div class="details_fixed_deposit" id="details_fixed_deposit1">
+                            <div class="auto_renewal_details">
+                                <div class="FD_num">
+                                  N22015171H
+                                </div>
+                                <input class="radio-button radio-button-data mobRadioButton"
+                                    onclick="radioButtonAction('radio1','details_fixed_deposit1')" type="radio"
+                                    name="radio" value="male" id="radio1">
+                            </div>
+                            <div class="second_details">
+                                <div class="Investment_details_content Investment_details_content_profile">
+                                  <div class="details_profile_bank">
+                                        <div class="text_content">
+                                          Nominee name
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="NA_text percentage_text_profile">
+                                              N/A
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details_profile_bank">
+                                        <div class="text_content">
+                                          Nominee DOB
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="percentage_text_profile">
+                                              N/A
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                    <div class="details_profile_bank">
+                                        <div class="text_content">
+                                          Nominee Relationship
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="NA_text percentage_text_profile">
+                                              N/A
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details_profile_bank">
+                                      <div class="text_content">
+                                        Investment
+                                      </div>
+                                      <div class="img_detail">
+                                          <div class="NA_text percentage_text_profile">
+                                            ₹ 35,000
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="third_details">
+                                <div class="pending_details">
+                                    <div>
+                                        <div class="green-bg-label green_label_mob
+                                        ">
+                                        <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                        Active
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                   </div>
+                  </div>
                 </div>
-              </div>
             <div class="main-form fd_content_min_height_profile_bank">
               <form>
                 <div class="row">
@@ -449,9 +538,9 @@
                         >Select bank*</label
                       >
                       <select
-                        id="nominee_value"
+                        id="manage_bank_id"
                         class="form-control formControl formControl_profile"
-                        onchange="toggleSecondColumn('#secondColumn','add-new', '#nominee_value')"
+                        onchange="bank_toggle_bank('manage_bank_id')"
                       >
                         <option
                           value="disable-selected"
@@ -461,23 +550,75 @@
                         >
                         Select bank
                         </option>
-                        <option value="add-new">Add-new</option>
-                        <option value="Sudhir Rana">Bank of baroda</option>
+                        <option value="add-new-bank">Add-new</option>
+                        <option value="bank_value">Bank of baroda</option>
                       </select>
                     </div>
                   </div>
                 </div>
               </form>
+              <div class="nominee_details" id="bank_details">
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom">
+                    <div class="boxsection boxsection_profile boxsection_profile_bottom">
+                      <div class="box-first-text box-first-text-profile">
+                        <p>Bank name</p>
+                      </div>
+                      <div class="box-secont-text">
+                        <img src="./assets/img/icons/home-icon.svg" alt="icon">
+                        <p>Bank of baroda</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom">
+                    <div class="boxsection boxsection_profile boxsection_profile_bottom">
+                      <div class="box-first-text box-first-text-profile">
+                        <p>IFSC code</p>
+                         
+                      </div>
+                      <div class="box-secont-text">
+                        <img src="./assets/img/icons/minus.svg" alt="icon">
+                        <p>BARBOCHENBS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom">
+                    <div class="boxsection boxsection_profile">
+                      <div class="box-first-text box-first-text-profile">
+                        <p>Bank branch</p>
+                        
+                      </div>
+                      <div class="box-secont-text">
+                        <img src="./assets/img/icons/home-icon.svg" alt="icon">
+                        <p>West Mambala branch</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile">
+                    <div class="boxsection boxsection_profile">
+                      <div class="box-first-text box-first-text-profile">
+                        <p>Account number</p>
+                        
+                      </div>
+                      <div class="box-secont-text">
+                        <img src="./assets/img/icons/bank.svg" alt="icon">
+                        <p>28730100000319</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col col-md-12">
           <div class="buttonContainer" id="repayment-buttonContainer">
-            <button
+          <button
               class="btn themeRedBtn themeRedBtn_profile"
               id="continueButton"
               disabled
-              onclick="handleClickModal('myModal')"
+              onclick="navigateToDetailsPage()"
             >
               Submit <img src="./assets/img/arrow-right.svg" alt="icons" />
             </button>
