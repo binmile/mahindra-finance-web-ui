@@ -7909,16 +7909,30 @@ input[type=number] {
   margin-bottom: 84px;
 }
 
-.main-form.fd_content_min_height {
+.fd_content_min_height {
   min-height: calc(70vh - 127px);
 }
 
-.main-form.fd_content_min_height_add_new {
+.fd_content_min_height_add_new {
   min-height: calc(60vh - 127px);
 }
 
 .fd_content_min_height_profile_bank {
   min-height: calc(40vh - 127px);
+}
+
+.no_certificate_wrapper_min_height {
+  min-height: calc(40vh - 150px);
+}
+
+.no_certificate_wrapper {
+  display: flex;
+  place-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  margin-top: 15px;
 }
 
 .textparent_content {
@@ -8014,6 +8028,22 @@ input[type=number] {
 @media only screen and (max-width: 767px) {
   .communication_wrapper {
     display: none;
+  }
+  .no_certificate_wrapper {
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
+  .no_certificate_wrapper_min_height {
+    min-height: calc(40vh - 88px);
+  }
+  .add_new_details_profile.add_new_details_profile_certificate {
+    margin: 20px 0 0 0;
+  }
+  .tds-text {
+    margin-top: 24px;
   }
   .fd_content_min_height_profile_bank {
     min-height: 0;
