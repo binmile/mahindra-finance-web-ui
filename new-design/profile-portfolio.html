@@ -267,23 +267,46 @@
     </nav>
     <!--Top-navbar End -->
     <div class="container mb-20">
-      <div class="animate__animated animate__fadeInUp topsection">
-        <div class="row customealignitem">
-          <div class=" col-lg-12 col-md-12 col-12">
-            <div id="commonHeading-repayment">
-                <div class="mb-16">
-                    <a href="#" class="commonBackBtn"
+      <div class="row animate__animated animate__fadeInUp">
+        <div class="col-12 mt-20">
+          <a href="#" class="commonBackBtn"
             ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
-            Back</a></div>
-            <div class="custlevel">Portfolio - <span class="redlebel">BA003931 - Amrita Baldewa</span></div>
-             </div>
-            </div>
-         </div>
-
-         <div class="bankDetailsMainContainer">
-            <div class="boldTitle boldTitle_profile">
+            Back</a
+          >
+        </div>
+        <div class="col col-md-12">
+          <div class="heading_nominee">
+            <div id="commonHeading-repayment" class="commonHeading_repayment_profile">
+              Portfolio - 
+          </div>
+          <div class="custom-dropdown" id="portfolio_btn">
+            <button class="themeRedBtn dropdown-toggle themeRedBtn_profile" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                BA003931 - Amrita Baldewa
+                <img src="./assets/img/chevron-down.svg" alt="icons" />
+            </button>
+            <ul class="dropdown-menu dropdown_menu_profile" aria-labelledby="dropdownMenuButton1" id="dropdownElement">
+                <li><a class="dropdown-item" href="#">Vikram
+                        Kumar Sahu <span>221132</span></a></li>
+                <li><a class="dropdown-item" href="#">Hariom
+                        Sahu <span>221130</span></a></li>
+                <li><a class="dropdown-item" href="#">Vikram
+                        Sahu <span>221128</span></a></li>
+            </ul>
+        </div>
+          </div>
+          
+        </div>
+          </div>
+         
+          
+        <div class="col-12">
+            
+          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile">
+            <div class="boldTitle boldTitle_profile ">
               <div class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile">
-                <img src="./assets/img/icons/file-text.svg" alt="icon">
+                <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_mobile_view"/>
+                <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_desktop_view"/>
               </div>
               Form 15 G/H submission
             </div>
@@ -291,42 +314,38 @@
                 <form>
                   <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
-                        <div class="textparent">
-                            <div class="add_new_details_profile">
-                               Add nominee details
-                            </div>
-                         
-                            <label
-                              for="mobile_number"
-                              class="form-label formLabel formLabel_profile formLabel_profile_label"
-                              >Select nominee*</label
-                            >
-                            <select
-                            id="nominee_value"
-                            class="form-control formControl formControl_profile"
-                            onchange="toggleSecondColumn('#secondColumn','add-new', '#nominee_value')"
+                      <div class="textparent">
+                          <label
+                            for="mobile_number"
+                            class="form-label formLabel formLabel_profile formLabel_profile_label"
+                            >Financial year*</label
                           >
-                            <option
-                              value="disable-selected"
-                              disabled
-                              hidden
-                              selected
-                            >
-                            Select nominee
-                            </option>
-                            <option value="add-new">Shruthi Madhavan</option>
-                            <option value="Sudhir Rana">Vishal Sahu</option>
-                          </select>
-                           
-                          </div>
+                          <select
+                          id="nominee_value"
+                          class="form-control formControl formControl_profile"
+                          onchange="toggleSecondColumn('#secondColumn','add-new', '#nominee_value')"
+                        >
+                          <option
+                            value="disable-selected"
+                            disabled
+                            hidden
+                            selected
+                          >
+                          2023-24
+                          </option>
+                          <option value="add-new">2023-24</option>
+                          <option value="2022-23">2022-23</option>
+                        </select>
+                        
+                        </div>
                     </div>
                    
                   </div>
                 </form>
                 <div class="nominee_details">
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom">
-                      <div class="boxsection boxsection_profile boxsection_profile_bottom">
+                    <div class="col-lg-3 col-md-4 col-12  col_wrapper_profile_bottom">
+                      <div class="boxsection boxwithoutborder boxsection_profile boxsection_profile_bottom">
                         <div class="box-first-text box-first-text-profile">
                           <p>Nominee name</p>
                         </div>
@@ -336,8 +355,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom">
-                      <div class="boxsection boxsection_profile boxsection_profile_bottom">
+                    <div class="col-lg-3 col-md-4 col-12  col_wrapper_profile_bottom">
+                      <div class="boxsection boxwithoutborder boxsection_profile boxsection_profile_bottom">
                         <div class="box-first-text box-first-text-profile">
                           <p>DOB</p>
                            
@@ -348,8 +367,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile">
-                      <div class="boxsection boxsection_profile">
+                    <div class="col-lg-3 col-md-4 col-12 ">
+                      <div class="boxsection boxwithoutborder boxsection_profile">
                         <div class="box-first-text box-first-text-profile">
                           <p>Nominee relationship</p>
                           
@@ -360,79 +379,344 @@
                         </div>
                       </div>
                     </div>
+                    <div class="col-lg-3 col-md-4 col-12 ">
+                        <div class="boxsection boxwithoutborder boxsection_profile">
+                          <div class="box-first-text box-first-text-profile">
+                            <p>Nominee relationship</p>
+                            
+                          </div>
+                          <div class="box-secont-text">
+                            <img src="./assets/img/icons/duoUser.svg" alt="icon">
+                            <p>N/A</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-12 ">
+                        <div class="boxsection boxwithoutborder boxsection_profile">
+                          <div class="box-first-text box-first-text-profile">
+                            <p>Nominee relationship</p>
+                            
+                          </div>
+                          <div class="box-secont-text">
+                            <img src="./assets/img/icons/duoUser.svg" alt="icon">
+                            <p>N/A</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-12 ">
+                        <div class="boxsection boxwithoutborder boxsection_profile">
+                          <div class="box-first-text box-first-text-profile">
+                            <p>Nominee relationship</p>
+                            
+                          </div>
+                          <div class="box-secont-text">
+                            <img src="./assets/img/icons/duoUser.svg" alt="icon">
+                            <p>N/A</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-12 ">
+                        <div class="boxsection boxwithoutborder boxsection_profile">
+                          <div class="box-first-text box-first-text-profile">
+                            <p>Nominee relationship</p>
+                            
+                          </div>
+                          <div class="box-secont-text">
+                            <img src="./assets/img/icons/duoUser.svg" alt="icon">
+                            <p>N/A</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-12 ">
+                        <div class="boxsection boxwithoutborder boxsection_profile">
+                          <div class="box-first-text box-first-text-profile">
+                            <p>Address</p>
+                            
+                          </div>
+                          <div class="box-secont-text">
+                            <img src="./assets/img/icons/map-pin.svg" alt="icon">
+                            <p>Ground floor, manekji wadia building, nanik motwane Marg, Mumbai - 400001</p>
+                          </div>
+                        </div>
+                      </div>
     
                   </div>
                 </div>
                
                
               </div>
-          </div>
-     
-      
-          
-      
-     
-     
-    
-    </div>
-    <div class="communication_wrapper">
-      <div class="border-bottom-profile  live_tune_connect">
-        <a href="#">
-          <img src="./assets/img/icons/call-tune.svg" alt="icon">
-        </a>
-      </div>
-      <div class="border-bottom-profile  live_tune_connect">  <a href="#">
-          <img src="./assets/img/icons/map.svg" alt="icon">
-        </a></div>
-      <div class="border-bottom-profile  live_tune_connect"> <a href="#">
-          <img src="./assets/img/icons/chat.svg" alt="icon">
-        </a></div>
-      <div class="live_tune_connect"> <a href="#">
-          <img src="./assets/img/icons/thumb.svg" alt="icon">
-        </a></div>
-    </div>
-
-    <div class="modal fade" id="Redirection" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-body">
-                  <button type="button" class="btn-close"
-                      data-bs-dismiss="modal" aria-label="Close">
-                      <img src="./assets/img/icons/close-icon.svg"
-                          alt="icon" />
-                  </button>
-                  <div class="info-heading-container">
-                      <div class="info-heading-image">
-                          <img src="./assets/img/icons/user-icon.svg" alt="icon" />
+            <div class="row" id="make_top">
+              <div class="col col-md-12 web-wrapper">
+                <div class="listTable listTable_profile ">
+                  <div class="listTableHead justify-content-around">
+                      <div class="wd-13">Sr. No.</div>
+                      <div class="wd-13">FDR number</div>
+                      <div class="wd-13">Dep. date</div>
+                      <div class="wd-13">Interest amount</div>
+                      
+                  </div>
+                  <div class="listTableBody listTableBody_profile">
+                      <div class="listTabledata justify-content-around"" onclick="selectRadio(event, 'listTabledata')">
+                         
+                          <div class="tableData wd-13">01</div>
+                          <div class="tableData wd-13">C23022830</div>
+                          <div class="tableData wd-13">18 Aug 2023</div>
+                          <div class="tableData wd-13">₹ 20,896.00</div>
+                         
                       </div>
-                      <div class="info-heading">
-                        Update Profile image
-                      </div>
-                  </div>
-                  <div class="info-content termsContent d-flex justify-content-center">
-                    <div class="profile-dp">
-                      <img src="./assets/img/profiledp.svg" alt="icon">
-                    </div> 
-                  </div>
-                  <div class="modalbtndesign">
-                    <div class="box-first-text ">
-                      <a href="#" class="commonBackBtn custborder"
-                      ><img src="./assets/img/icons/edit-2.svg" alt="icon" />
-                      Edit</a>
-                    </div>
-                    <div class="box-first-text ">
-                      <a href="#" class="commonBackBtn custborder"
-                      ><img src="./assets/img/icons/trash-2.svg" alt="icon" />
-                      Delete</a>
-                  </div>
 
                   </div>
-                  <div class="info-button"><button type="button" data-bs-dismiss="modal" aria-label="Close"
-                          class="btn themeRedBtn">Proceed</button></div>
               </div>
+              </div>
+              <div class="container mob-wrapper">
+                <div class="fixedDepositeContainer">
+                    <div class="fixedDepositDetailsData">
+                        <div class="details_fixed_deposit" id="details_fixed_deposit1">
+                            <div class="auto_renewal_details">
+                                <div class="FD_num">
+                                  C19164407
+                                </div>
+                                <input class="radio-button radio-button-data mobRadioButton"
+                                    onclick="radioButtonAction('radio1','details_fixed_deposit1')" type="radio"
+                                    name="radio" value="male" id="radio1">
+                            </div>
+                            <div class="second_details">
+                                <div class="Investment_details_content Investment_details_content_profile">
+                                    <div class="details_profile">
+                                        <div class="text_content">
+                                          Nominee name
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="NA_text percentage_text_profile">
+                                              N/A
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details_profile">
+                                        <div class="text_content">
+                                          Nominee DOB
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="percentage_text_profile">
+                                              N/A
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details_profile">
+                                        <div class="text_content">
+                                          Nominee Relationship
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="NA_text percentage_text_profile">
+                                              N/A
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details_profile">
+                                      <div class="text_content">
+                                        Investment
+                                      </div>
+                                      <div class="img_detail">
+                                          <div class="NA_text percentage_text_profile">
+                                            ₹ 35,000
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="third_details">
+                                <div class="pending_details">
+                                    <div>
+                                        <div class="green-bg-label green_label_mob
+                                        ">
+                                        <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                        Active
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixedDepositDetailsData">
+                      <div class="details_fixed_deposit" id="details_fixed_deposit1">
+                          <div class="auto_renewal_details">
+                              <div class="FD_num">
+                                N22015171H
+                              </div>
+                              <input class="radio-button radio-button-data mobRadioButton"
+                                  onclick="radioButtonAction('radio1','details_fixed_deposit1')" type="radio"
+                                  name="radio" value="male" id="radio1">
+                          </div>
+                          <div class="second_details">
+                              <div class="Investment_details_content Investment_details_content_profile">
+                                <div class="details_profile">
+                                      <div class="text_content">
+                                        Nominee name
+                                      </div>
+                                      <div class="img_detail">
+                                          <div class="NA_text percentage_text_profile">
+                                            N/A
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="details_profile">
+                                      <div class="text_content">
+                                        Nominee DOB
+                                      </div>
+                                      <div class="img_detail">
+                                          <div class="percentage_text_profile">
+                                            N/A
+                                          </div>
+  
+                                      </div>
+  
+                                  </div>
+                                  <div class="details_profile">
+                                      <div class="text_content">
+                                        Nominee Relationship
+                                      </div>
+                                      <div class="img_detail">
+                                          <div class="NA_text percentage_text_profile">
+                                            N/A
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="details_profile">
+                                    <div class="text_content">
+                                      Investment
+                                    </div>
+                                    <div class="img_detail">
+                                        <div class="NA_text percentage_text_profile">
+                                          ₹ 35,000
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="third_details">
+                              <div class="pending_details">
+                                  <div>
+                                      <div class="green-bg-label green_label_mob
+                                      ">
+                                      <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                      Active
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+    
+            </div>
           </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12  col_wrapper_profile_bottom">
+              <div class="boxsection boxwithoutborder boxsection_profile boxsection_profile_bottom">
+                <div class="box-first-text box-first-text-profile">
+                  <p>Est. income for which this declaration is made</p>
+                </div>
+                <div class="box-secont-text">
+                  <img src="./assets/img/icons/cash_text.svg" alt="icon">
+                  <p>₹ 20,896.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12  col_wrapper_profile_bottom">
+              <div class="boxsection boxwithoutborder boxsection_profile boxsection_profile_bottom">
+                <div class="box-first-text box-first-text-profile">
+                  <p>Aggregate amount of income for which form No. 15G filed</p>
+                   
+                </div>
+                <div class="box-secont-text">
+                  <img src="./assets/img/icons/cash_text.svg" alt="icon">
+                  <p>₹ 0.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 ">
+              <div class="boxsection boxwithoutborder boxsection_profile">
+                <div class="box-first-text box-first-text-profile">
+                  <p>Est. total income of the financial year 2023 - 2024</p>
+                  
+                </div>
+                <div class="box-secont-text">
+                  <img src="./assets/img/icons/cash_text.svg" alt="icon">
+                  <p>₹ 20,896.00</p>
+                </div>
+              </div>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="boldTitle newboldTitle boldTitle_profile ">
+                <div class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile">
+                  <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_mobile_view">
+                  <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_desktop_view">
+                </div>
+                Whether assessed to tax under the Income-tax Act. 1961<span class="form-check form-switch"><input type="checkbox" class="form-check-input" checked="" id="N2003901F" onclick="updateKycModal(this.id)"></span>
+              </div>
+            </div>
+            <form>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
+                    <div class="textparent">
+                        <label for="mobile_number" class="form-label formLabel formLabel_profile formLabel_profile_label">Financial year*</label>
+                        <select id="nominee_value" class="form-control formControl formControl_profile" onchange="toggleSecondColumn('#secondColumn','add-new', '#nominee_value')">
+                        <option value="disable-selected" disabled="" hidden="" selected="">
+                        2023-24
+                        </option>
+                        <option value="add-new">2023-24</option>
+                        <option value="2022-23">2022-23</option>
+                      </select>
+                      
+                      </div>
+                  </div>
+                 
+                </div>
+              </form>
+         
+            
+          </div>
+        </div>
+        <div class="col col-md-12">
+          <div class="buttonContainer" id="repayment-buttonContainer">
+            <button
+              class="btn themeRedBtn themeRedBtn_profile"
+              id="continueButton"
+              disabled
+              onclick="handleClickModal('myModal')"
+            >
+            Submit
+              <img src="./assets/img/arrow-right.svg" alt="icons" />
+            </button>
+          </div>
+        </div>
       </div>
-  </div>
+      <div class="communication_wrapper">
+        <div class="live_tune_connect">
+          <a href="#">
+            <img src="./assets/img/icons/call-tune.svg" alt="icon" />
+          </a>
+        </div>
+        <div class="live_tune_connect">
+          <a href="#">
+            <img src="./assets/img/icons/map.svg" alt="icon" />
+          </a>
+        </div>
+        <!-- <div class="live_tune_connect">
+          <a href="#">
+            <img src="./assets/img/icons/chat.svg" alt="icon" />
+          </a>
+        </div> -->
+        <div class="live_tune_connect">
+          <a href="#">
+            <img src="./assets/img/icons/thumb.svg" alt="icon" />
+          </a>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/chart.min.js"></script>
