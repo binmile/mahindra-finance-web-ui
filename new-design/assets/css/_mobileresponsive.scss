@@ -430,7 +430,7 @@ p.reco {
         top: 36px !important;
     }
     .bg-white {
-        padding: 24px 4px !important;
+        padding: 0px 0px !important;
     }
     .boldHeader.boldHeaderFd span {
         display: none;
@@ -614,15 +614,16 @@ p.reco {
     text-align: end;
 }
 .profiel-bg {
-    background-color: #000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 24px 32px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
-    border-radius: 8px 8px 0px 0px;
     display: flex;
     align-items: center;
+    background: url("../img/profile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
 }
 .profile-dp {
     height: 108px;
@@ -644,10 +645,10 @@ p.reco {
     margin-bottom: 0px;
 }
 .bg-white {
-    background-color: #fff!important;
-    padding: 24px 32px;
-    background-color: #FFFFFF !important;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+    /* background-color: #fff !important; */
+    padding: 24px 0px;
+    /* background-color: #FFFFFF !important; */
+    /* box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05); */
     border-radius: 8px;
 }
 .box-secont-text {
@@ -711,20 +712,8 @@ button.editprofile {
 
 // profile portfolio page css//
 
-.mb-16 {
-    margin-bottom: 21px;
-}
-span.redlebel {
-    font-size: 12px;
-    color: #fff;
-    background: red;
-    padding: 0px 12px;
-    border-radius: 8px;
-    margin-left: 5px;
-}
-.custlevel {
-    display: flex;
-    align-items: center;
+.boxwithoutborder {
+    border: 0px;
 }
 
 select {
@@ -740,4 +729,80 @@ select {
     width: 100%;
     border-radius: 8px;
     border-color: #D6D6D6;
+}
+.boxsection.boxwithoutborder {
+    padding: 12px 0px;
+}
+
+.boldTitle.newboldTitle.boldTitle_profile {
+    color: #6B7280;
+    font-size: 14px;
+}
+.boldTitle.newboldTitle.boldTitle_profile span.form-check.form-switch {
+    padding: 0px 12px;
+}
+.boldTitle.newboldTitle.boldTitle_profile span.form-check.form-switch .form-check-input::after {
+    top: -3px;
+}
+.boldTitle.newboldTitle.boldTitle_profile span.form-check.form-switch .form-check-input::before {
+    top: -3px;
+}
+.bankDetailsMainContainer.cust {
+    border-radius: 0px 0px 8px 8px;
+}
+.profiel-bg {
+    border-radius: 8px 8px 0px 0px;
+}
+.logoutbtn.customelogout {
+    display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .profilename p {
+        font-size: 14px;
+    }
+    .box-secont-text p {
+        font-size: 14px;
+    }
+
+
+.boxsection.custboxsec {
+    border: 1px solid #E8E8E8;
+    padding-bottom: 12px;
+    margin-bottom: 0px;
+    border-radius: 0;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.logoutbtn.customelogout {
+    text-align: center;
+    margin-top: 16px;
+    display: block;
+}
+.logoutbtn {
+    display: none;
+}
+.imgsec img {
+    height: 40px;
+    width: 40px;
+}
+.profile-dp.custdp {
+    height: auto;
+    width: 40px;
+}
+.custimgebtn img {
+    width: 24px;
+    height: auto;
+}
+.editprofile {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
+.profile-dp {
+    border: 1px solid #fff;
+    background: #fff;
+}
 }
