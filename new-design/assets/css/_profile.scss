@@ -23,8 +23,41 @@
   margin-top: 32px;
   @include custom-font(16px, 700, 24px, 0);
 }
-#bank_details{
+#bank_details {
   display: none;
+}
+.accured_wrapper {
+  display: flex;
+  place-items: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+.themeRedBtn_profile_accured {
+  height: 37px;
+  border-radius: 8px;
+  padding: 9px 13px;
+  color: $color_white;
+  background: $color_black;
+  align-items: center;
+  box-shadow: 0px 4px 10px 0px #0000000F;
+  width: 152px;
+  &.themeRedBtn_profile_non_cumulative {
+    border: 1px solid $color_dull_gray;
+    color: $color_dull_gray;
+    background: $color_white;
+  }
+}
+.themeRedBtn_profile_accured:hover {
+  background: $color_black;
+  color: $color_white;
+}
+.no_record{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-items: center;
+  @include custom-font(16px, 500, 24px, 0);
+  color: $color_light_text;
 }
 
 .bankDetailsMainContainer
@@ -34,8 +67,8 @@
     top: 83.2px;
   }
 }
-.details_profile_bank{
-  width:100%;
+.details_profile_bank {
+  width: 100%;
   margin-bottom: 16px;
 }
 .add_new_details_profile {
@@ -161,24 +194,33 @@ input[type="number"] {
     margin-bottom: 84px;
   }
 }
-.fd_content_min_height {
-  min-height: calc(70vh - 127px);
+.listTableBody_data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.accured_min_height{
+
+}
+
 .fd_content_min_height_add_new {
   min-height: calc(60vh - 127px);
 }
-.fd_content_min_height_profile_bank{
+.fd_content_min_height_profile_bank {
   min-height: calc(40vh - 127px);
 }
-.no_certificate_wrapper_min_height{
+.fd_content_min_height_accured{
+  min-height: calc(50vh - 100px);
+}
+.no_certificate_wrapper_min_height {
   min-height: calc(40vh - 150px);
 }
-.no_certificate_wrapper{
+.no_certificate_wrapper {
   display: flex;
   place-items: center;
   @include custom-font(14px, 500, 20px, 0);
   margin-top: 15px;
-  }
+}
 .textparent_content {
   display: flex;
   justify-content: space-between;
@@ -236,17 +278,19 @@ input[type="number"] {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1145px) {
-  .listTable .listTableBody .listTabledata .tableData{
-    &.tableData_profile_data{
+  .listTable .listTableBody .listTabledata .tableData {
+    &.tableData_profile_data {
       font-size: 10px;
     }
   }
-  .listTable .listTableHead{
-    &.listTableHead_nominee{
+  .listTable .listTableHead {
+    &.listTableHead_nominee {
       font-size: 11px;
     }
   }
-  
+}
+.listTable_profile_accured{
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer
@@ -254,6 +298,7 @@ input[type="number"] {
     .textfildicons.textfildicons_profile_data {
     top: 63.2px;
   }
+
   .col_wrapper_profile {
     width: 100%;
   }
@@ -269,20 +314,25 @@ input[type="number"] {
   .communication_wrapper {
     display: none;
   }
-  .no_certificate_wrapper{
+  .no_record{
+    img{
+      @include custom-width-height(186px, 100px);
+    }
+  }
+  .no_certificate_wrapper {
     margin-top: 12px;
-  @include custom-font(12px, 500, 16px, 0.25px);
+    @include custom-font(12px, 500, 16px, 0.25px);
   }
   .no_certificate_wrapper_min_height {
     min-height: calc(40vh - 88px);
-}
-  .add_new_details_profile.add_new_details_profile_certificate{
+  }
+  .add_new_details_profile.add_new_details_profile_certificate {
     margin: 20px 0 0 0;
   }
-  .tds-text{
+  .tds-text {
     margin-top: 24px;
   }
-  .fd_content_min_height_profile_bank{
+  .fd_content_min_height_profile_bank {
     min-height: 0;
   }
   .bottomContentBox_profile {
@@ -295,7 +345,6 @@ input[type="number"] {
     margin-top: 10px;
     @include custom-font(14px, 400, 24px, 0.25px);
     &.bottomContentBox_profile_tds_certificate {
-    
       @include custom-font(10px, 400, 14px, 0.25px);
       span {
         @include custom-font(10px, 400, 14px, 0.25px);
