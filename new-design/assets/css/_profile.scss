@@ -199,6 +199,9 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
 }
+.fd_content_min_height {
+  min-height: calc(70vh - 127px);
+}
 .fd_content_min_height_add_new {
   min-height: calc(60vh - 127px);
 }
