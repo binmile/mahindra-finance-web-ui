@@ -33,23 +33,18 @@
   margin-top: 22px;
 }
 .themeRedBtn_profile_accured {
-  height: 37px;
   border-radius: 8px;
   padding: 9px 13px;
   color: $color_white;
   background: $color_black;
   align-items: center;
   box-shadow: 0px 4px 10px 0px #0000000F;
-  width: 152px;
-  &.themeRedBtn_profile_non_cumulative {
-    border: 1px solid $color_dull_gray;
-    color: $color_dull_gray;
-    background: $color_white;
-  }
-}
-.themeRedBtn_profile_accured:hover {
-  background: $color_black;
-  color: $color_white;
+  @include custom-width-height(152px, 37px);
+  border: 1px solid $color_dull_gray;
+  color: $color_dull_gray;
+  background: $color_white;
+    @include allCenter;
+    @include custom-font(14px, 500, 20px, 0);
 }
 .no_record{
   display: flex;
@@ -58,6 +53,11 @@
   place-items: center;
   @include custom-font(16px, 500, 24px, 0);
   color: $color_light_text;
+}
+
+.active_data {
+  background-color: $color_black;
+  color: $color_white;
 }
 
 .bankDetailsMainContainer
@@ -199,10 +199,6 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
 }
-.accured_min_height{
-
-}
-
 .fd_content_min_height_add_new {
   min-height: calc(60vh - 127px);
 }

@@ -7783,7 +7783,6 @@ p.notify_lfd {
 }
 
 .themeRedBtn_profile_accured {
-  height: 37px;
   border-radius: 8px;
   padding: 9px 13px;
   color: #FFFFFF;
@@ -7791,16 +7790,17 @@ p.notify_lfd {
   align-items: center;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0588235294);
   width: 152px;
-}
-.themeRedBtn_profile_accured.themeRedBtn_profile_non_cumulative {
+  height: 37px;
   border: 1px solid #ADADAD;
   color: #ADADAD;
   background: #FFFFFF;
-}
-
-.themeRedBtn_profile_accured:hover {
-  background: #000000;
-  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
 }
 
 .no_record {
@@ -7813,6 +7813,11 @@ p.notify_lfd {
   line-height: 24px;
   letter-spacing: 0;
   color: #6B7280;
+}
+
+.active_data {
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data.text_certificate {
