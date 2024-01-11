@@ -7824,11 +7824,40 @@ p.notify_lfd {
   border-bottom: none;
 }
 
+.form_wrapper {
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 32px;
+}
+
+.tds-text {
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+#bank_details {
+  display: none;
+}
+
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data.text_certificate {
+  top: 83.2px;
+}
+
+.details_profile_bank {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
 .add_new_details_profile {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0;
+}
+.add_new_details_profile.add_new_details_profile_certificate {
+  margin: 28px 0 12px 0;
 }
 
 .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
@@ -7904,6 +7933,10 @@ input[type=number] {
   width: 16px;
   height: 16px;
 }
+.bankDetailsMainContainer .textparent .textfildicons.textfildicons_icons_cumulative img {
+  width: 20px;
+  height: 20px;
+}
 
 .modal .modal-content .modal-body .info-heading-container .info-heading.info-heading_profile_contact {
   font-size: 21px;
@@ -7938,13 +7971,34 @@ input[type=number] {
 .listTable_profile {
   margin: 16px 0 32px 0;
 }
+.listTable_profile.listTable_profile_tds_certificate {
+  margin-bottom: 84px;
+}
 
-.main-form.fd_content_min_height {
+.fd_content_min_height {
   min-height: calc(70vh - 127px);
 }
 
-.main-form.fd_content_min_height_add_new {
+.fd_content_min_height_add_new {
   min-height: calc(60vh - 127px);
+}
+
+.fd_content_min_height_profile_bank {
+  min-height: calc(40vh - 127px);
+}
+
+.no_certificate_wrapper_min_height {
+  min-height: calc(40vh - 150px);
+}
+
+.no_certificate_wrapper {
+  display: flex;
+  place-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  margin-top: 15px;
 }
 
 .textparent_content {
@@ -7991,7 +8045,37 @@ input[type=number] {
   line-height: 24px;
   letter-spacing: 0.25px;
 }
+.bottomContentBox_profile.bottomContentBox_profile_tds_certificate {
+  display: flex;
+  align-items: center;
+  background-color: #fff0bc;
+  width: 100%;
+  color: #231f20;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.bottomContentBox_profile.bottomContentBox_profile_tds_certificate span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+.bottomContentBox_profile.bottomContentBox_profile_tds_certificate img {
+  margin-right: 10px;
+}
 
+@media screen and (min-width: 769px) and (max-width: 1145px) {
+  .listTable .listTableBody .listTabledata .tableData.tableData_profile_data {
+    font-size: 10px;
+  }
+  .listTable .listTableHead.listTableHead_nominee {
+    font-size: 11px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
     top: 63.2px;
@@ -8011,8 +8095,59 @@ input[type=number] {
   .communication_wrapper {
     display: none;
   }
+  .no_certificate_wrapper {
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+  }
+  .no_certificate_wrapper_min_height {
+    min-height: calc(40vh - 88px);
+  }
+  .add_new_details_profile.add_new_details_profile_certificate {
+    margin: 20px 0 0 0;
+  }
+  .tds-text {
+    margin-top: 24px;
+  }
+  .fd_content_min_height_profile_bank {
+    min-height: 0;
+  }
   .bottomContentBox_profile {
-    margin-top: 88px;
+    background-color: #F3F4F6;
+    border-radius: 4px;
+    color: #6B7280;
+    padding: 0px 8px 0px 8px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+  .bottomContentBox_profile.bottomContentBox_profile_tds_certificate {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.25px;
+  }
+  .bottomContentBox_profile.bottomContentBox_profile_tds_certificate span {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.25px;
+  }
+  .tds-text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons.textfildicons_icons_cumulative img {
+    width: 16px;
+    height: 16px;
   }
   .boxsection_profile .box-first-text-profile p {
     font-size: 12px;
