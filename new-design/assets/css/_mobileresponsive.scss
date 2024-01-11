@@ -756,6 +756,10 @@ select {
 .logoutbtn.customelogout {
     display: none;
 }
+.custrow{
+        flex-direction: row;
+    }
+
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .profilename p {
