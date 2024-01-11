@@ -164,63 +164,65 @@ function validatePasswordInputs(passwordID, newPasswordID, reEnterPasswordID) {
     continueButton.disabled = true;
   }
 }
-function validateForgotPassword( newPasswordID, reEnterPasswordID) {
-    var newPasswordField = document.getElementById(newPasswordID);
-    var reEnterPasswordField = document.getElementById(reEnterPasswordID);
-    var continueButton = document.getElementById("continueButton");
-    if (
-      newPasswordField.value !== "" &&
-      reEnterPasswordField.value !== ""
-    ) {
-      if (newPasswordField.value === reEnterPasswordField.value) {
-        continueButton.disabled = false;
-        newPasswordField.style.border = "1px solid #ccc";
-        reEnterPasswordField.style.border = "1px solid #ccc";
-      } else {
-        continueButton.disabled = true;
-        newPasswordField.style.border = "1px solid #ccc";
-        reEnterPasswordField.style.border = "1px solid #ff0000";
-      }
+function validateForgotPassword(newPasswordID, reEnterPasswordID) {
+  var newPasswordField = document.getElementById(newPasswordID);
+  var reEnterPasswordField = document.getElementById(reEnterPasswordID);
+  var continueButton = document.getElementById("continueButton");
+  if (newPasswordField.value !== "" && reEnterPasswordField.value !== "") {
+    if (newPasswordField.value === reEnterPasswordField.value) {
+      continueButton.disabled = false;
+      newPasswordField.style.border = "1px solid #ccc";
+      reEnterPasswordField.style.border = "1px solid #ccc";
     } else {
       continueButton.disabled = true;
+      newPasswordField.style.border = "1px solid #ccc";
+      reEnterPasswordField.style.border = "1px solid #ff0000";
     }
+  } else {
+    continueButton.disabled = true;
   }
+}
 
 function validateEmailInputs(emailID, newemailID) {
-    var email_data, newEmail, continueButton;
-    if (arguments.length === 1) {
-        email_data = document.getElementById(emailID);
-        continueButton = document.getElementById("continueButton");
-    } else if (arguments.length === 2) {
-        email_data = document.getElementById(emailID);
-        newEmail = document.getElementById(newemailID);
-        continueButton = document.getElementById("continueButton");
-    } else {
-        return;
-    }
+  var email_data, newEmail, continueButton;
+  if (arguments.length === 1) {
+    email_data = document.getElementById(emailID);
+    continueButton = document.getElementById("continueButton");
+  } else if (arguments.length === 2) {
+    email_data = document.getElementById(emailID);
+    newEmail = document.getElementById(newemailID);
+    continueButton = document.getElementById("continueButton");
+  } else {
+    return;
+  }
 
-    var emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email_data.value !== "" && (!newEmail || (newEmail.value !== "" && emailFormat.test(newEmail.value))) && emailFormat.test(email_data.value)) {
-        continueButton.disabled = false;
-        email_data.style.border = "1px solid #ccc";
-        if (newEmail) {
-            newEmail.style.border = "1px solid #ccc";
-        }
-    } else {
-        continueButton.disabled = true;
-        if (email_data.value !== "" && !emailFormat.test(email_data.value)) {
-            email_data.style.border = "1px solid #ff0000";
-        } else {
-            email_data.style.border = "1px solid #ccc";
-        }
-        if (newEmail) {
-            if (newEmail.value !== "" && !emailFormat.test(newEmail.value)) {
-                newEmail.style.border = "1px solid #ff0000";
-            } else {
-                newEmail.style.border = "1px solid #ccc";
-            }
-        }
+  var emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (
+    email_data.value !== "" &&
+    (!newEmail ||
+      (newEmail.value !== "" && emailFormat.test(newEmail.value))) &&
+    emailFormat.test(email_data.value)
+  ) {
+    continueButton.disabled = false;
+    email_data.style.border = "1px solid #ccc";
+    if (newEmail) {
+      newEmail.style.border = "1px solid #ccc";
     }
+  } else {
+    continueButton.disabled = true;
+    if (email_data.value !== "" && !emailFormat.test(email_data.value)) {
+      email_data.style.border = "1px solid #ff0000";
+    } else {
+      email_data.style.border = "1px solid #ccc";
+    }
+    if (newEmail) {
+      if (newEmail.value !== "" && !emailFormat.test(newEmail.value)) {
+        newEmail.style.border = "1px solid #ff0000";
+      } else {
+        newEmail.style.border = "1px solid #ccc";
+      }
+    }
+  }
 }
 function validatePanInputs(panNumberId) {
   var panNumberId_res = document.getElementById(panNumberId);
@@ -233,8 +235,58 @@ function validatePanInputs(panNumberId) {
   } else {
     continueButton.disabled = true;
   }
-  return panNumberIsValid
+  return panNumberIsValid;
 }
+/******manage-bank-toggle-start */
+function bank_toggle_bank(id) {
+  var bank_select = document.getElementById(id);
+  var continueButton = document.getElementById("continueButton");
+  var bank_details_data = document.getElementById("bank_details");
+  if (bank_select.value === "add-new-bank") {
+    continueButton.disabled = false;
+    bank_details_data.style.display = "none";
+  } else if (bank_select.value === "bank_value") {
+    continueButton.disabled = false;
+    bank_details_data.style.display = "block";
+  } else {
+    continueButton.disabled = true;
+    bank_details_data.style.display = "none";
+  }
+}
+/******manage-bank-toggle-end */
+
+/******manage-nominee-toggle-start */
+function bank_toggle_nominee(id) {
+  var bank_select = document.getElementById(id);
+  var continueButton = document.getElementById("continueButton_");
+  var bank_details_data = document.getElementById("bank_details");
+
+  if (bank_select.value === "add-new-nominee") {
+    continueButton.disabled = false;
+    bank_details_data.style.display = "none";
+  } else if (bank_select.value === "nominee_data") {
+    continueButton.disabled = false;
+    bank_details_data.style.display = "block";
+  } else {
+    continueButton.disabled = true;
+    bank_details_data.style.display = "none";
+  }
+}
+function navigateToDetailsPage() {
+  const continueButton_bank = document.getElementById("continueButton");
+  const continueButton = document.getElementById("continueButton_");
+  if (continueButton && !continueButton.disabled) {
+    console.log("Navigating to profile-add-new-bank-details.html");
+    window.location.href = "profile-add-new-bank-details.html";
+  } else if(continueButton_bank && !continueButton_bank.disabled){
+    window.location.href = "profile-add-new-bank-details.html";
+  }
+  else {
+    alert("Please enable the button to proceed.");
+  }
+}
+document.getElementById("continueButton_" , "continueButton").addEventListener("click", navigateToDetailsPage);
+/******manage-nominee-toggle-end */
 
 function togglePasswordVisibility(passwordId, closeEyesIconId, openEyesIconId) {
   var passwordInput = document.getElementById(passwordId);

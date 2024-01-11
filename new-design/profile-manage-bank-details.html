@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/_265_css.scss" />
   </head>
+
   <body>
     <!-- Top-navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
@@ -30,9 +31,7 @@
           aria-label="Toggle navigation"
         >
           <div id="hamburgerIcon">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span> <span></span> <span></span>
           </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -72,13 +71,14 @@
                   alt="icons"
                   class="toggle-icon"
                 />
-                <span class="plus_icon"
-                  ><img
+                <span class="plus_icon">
+                  <img
                     src="./assets/img/icons/plusIcon.svg"
                     alt="icon"
                     class="no_tablet_view plusIcon"
                     id="rotate_icon_profile"
-                /></span>
+                  />
+                </span>
               </a>
               <ul
                 class="dropdown-menu mob_menu_download"
@@ -106,7 +106,7 @@
                       alt="icon"
                       class="menuIcon"
                     />
-                    Form 15 G/H submission
+                    Form 11 G/H submission
                     <img
                       src="./assets/img/icons/arrow-right-red-icon.svg"
                       alt="arrow icon"
@@ -175,13 +175,14 @@
                   alt="icons"
                   class="toggle-icon"
                 />
-                <span class="plus_icon"
-                  ><img
+                <span class="plus_icon">
+                  <img
                     src="./assets/img/icons/plusIcon.svg"
                     alt="icon"
                     class="no_tablet_view plusIcon"
                     id="rotate_icon_profile"
-                /></span>
+                  />
+                </span>
               </a>
               <ul
                 class="dropdown-menu mob_sub_profile"
@@ -257,8 +258,8 @@
             </li>
             <li class="nav-item mob_menu_logout no_tablet_view">
               <a href="#">
-                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
-                Log out
+                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log
+                out
               </a>
             </li>
           </ul>
@@ -269,10 +270,9 @@
     <div class="container mb-20">
       <div class="row animate__animated animate__fadeInUp">
         <div class="col-12 mt-20">
-          <a href="#" class="commonBackBtn"
-            ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
-            Back</a
-          >
+          <a href="#" class="commonBackBtn">
+            <img src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back
+          </a>
         </div>
         <div class="col col-md-12">
           <div class="heading_nominee">
@@ -317,247 +317,230 @@
             </div>
           </div>
         </div>
-
         <div class="col-12">
           <div
-            class="bankDetailsMainContainer bankDetailsMainContainer_profile"
+            class="bankDetailsMainContainer"
           >
             <div class="boldTitle boldTitle_profile">
               <div
                 class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile"
               >
                 <img
-                  src="./assets/img/icons/home-icon.svg"
+                  src="./assets/img/icons/bank.svg"
                   alt="icon"
-                  class="no_mobile_view"
-                />
-                <img
-                  src="./assets/img/icons/quick-actions/download-icon.svg"
-                  alt="icon"
-                  class="no_desktop_view"
                 />
               </div>
-              Change nominee details
+              Change deposit repayment bank
             </div>
             <div class="row" id="make_top">
-              <div class="col col-md-12 web-wrapper">
-                <div class="listTable listTable_profile">
-                  <div class="listTableHead listTableHead_nominee">
-                    <div class="wd-13">Action</div>
-                    <div class="wd-13">FD number</div>
-                    <div class="wd-13">Nominee name</div>
-                    <div class="wd-13">Nominee DOB</div>
-                    <div class="wd-13">Nominee Relationship</div>
-                    <div class="wd-13">Invested amount</div>
-                    <div class="wd-13 all-center">Status</div>
+                <div class="col col-md-12 web-wrapper">
+                  <div class="listTable listTable_profile">
+                    <div class="listTableHead listTableHead_nominee">
+                        <div class="wd-11">Action</div>
+                        <div class="wd-13">FD number</div>
+                        <div class="wd-15">IFSC code</div>
+                        <div class="wd-14">Bank name</div>
+                        <div class="wd-15">Bank branch</div>
+                        <div class="wd-15">Account number</div>
+                        <div class="wd-14 all-center">Status</div>
+                    </div>
+                    <div class="listTableBody listTableBody_profile">
+                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+                            <div class="tableData wd-11">
+                                <input type="radio" name="preclosure">
+                            </div>
+                            <div class="tableData wd-13 tableData_profile_data">C19164407</div>
+                            <div class="tableData wd-15 tableData_profile_data">BARBOCHENBS</div>
+                            <div class="tableData wd-14 tableData_profile_data">Bank of baroda</div>
+                            <div class="tableData wd-15 tableData_profile_data">West Mambala branch</div>
+                            <div class="tableData wd-15 tableData_profile_data">28730100000319</div>
+                            <div class="tableData wd-14 all-center">
+                                <div class="green-bg-label">
+                                    <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                    Active
+                                </div>
+                            </div>
+                        </div>
+  
+                        <div class="listTabledata listTabledata_profile" onclick="selectRadio(event, 'listTabledata')">
+                            <div class="tableData wd-11">
+                                <input type="radio" name="preclosure">
+                            </div>
+                            <div class="tableData wd-13 tableData_profile_data">N22014171H</div>
+                            <div class="tableData wd-15 tableData_profile_data">BARBOCHENBS</div>
+                            <div class="tableData wd-14 tableData_profile_data">Bank of baroda</div>
+                            <div class="tableData wd-15 tableData_profile_data">West Mambala branch</div>
+                            <div class="tableData wd-15 tableData_profile_data">28730100000319</div>
+                            <div class="tableData wd-14 all-center">
+                                <div class="green-bg-label">
+                                    <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                    Active
+                                </div>
+                            </div>
+                        </div>
+  
+                    </div>
+                </div>
+                </div>
+                <div class="container mob-wrapper">
+                  <div class="fixedDepositeContainer">
+                      <div class="fixedDepositDetailsData">
+                          <div class="details_fixed_deposit" id="details_fixed_deposit1">
+                              <div class="auto_renewal_details">
+                                  <div class="FD_num">
+                                    C19164407
+                                  </div>
+                                  <input class="radio-button radio-button-data mobRadioButton"
+                                      onclick="radioButtonAction('radio1','details_fixed_deposit1')" type="radio"
+                                      name="radio" value="male" id="radio1">
+                              </div>
+                              <div class="second_details">
+                                  <div class="Investment_details_content Investment_details_content_profile">
+                                      <div class="details_profile_bank">
+                                          <div class="text_content">
+                                            Nominee name
+                                          </div>
+                                          <div class="img_detail">
+                                              <div class="NA_text percentage_text_profile">
+                                                N/A
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="details_profile_bank">
+                                          <div class="text_content">
+                                            Nominee DOB
+                                          </div>
+                                          <div class="img_detail">
+                                              <div class="percentage_text_profile">
+                                                N/A
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="details_profile_bank">
+                                          <div class="text_content">
+                                            Nominee Relationship
+                                          </div>
+                                          <div class="img_detail">
+                                              <div class="NA_text percentage_text_profile">
+                                                N/A
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="details_profile_bank">
+                                        <div class="text_content">
+                                          Investment
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="NA_text percentage_text_profile">
+                                              ₹ 35,000
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="third_details">
+                                  <div class="pending_details">
+                                      <div>
+                                          <div class="green-bg-label green_label_mob
+                                          ">
+                                          <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                          Active
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="fixedDepositDetailsData">
+                        <div class="details_fixed_deposit" id="details_fixed_deposit1">
+                            <div class="auto_renewal_details">
+                                <div class="FD_num">
+                                  N22015171H
+                                </div>
+                                <input class="radio-button radio-button-data mobRadioButton"
+                                    onclick="radioButtonAction('radio1','details_fixed_deposit1')" type="radio"
+                                    name="radio" value="male" id="radio1">
+                            </div>
+                            <div class="second_details">
+                                <div class="Investment_details_content Investment_details_content_profile">
+                                  <div class="details_profile_bank">
+                                        <div class="text_content">
+                                          Nominee name
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="NA_text percentage_text_profile">
+                                              N/A
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details_profile_bank">
+                                        <div class="text_content">
+                                          Nominee DOB
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="percentage_text_profile">
+                                              N/A
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                    <div class="details_profile_bank">
+                                        <div class="text_content">
+                                          Nominee Relationship
+                                        </div>
+                                        <div class="img_detail">
+                                            <div class="NA_text percentage_text_profile">
+                                              N/A
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details_profile_bank">
+                                      <div class="text_content">
+                                        Investment
+                                      </div>
+                                      <div class="img_detail">
+                                          <div class="NA_text percentage_text_profile">
+                                            ₹ 35,000
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="third_details">
+                                <div class="pending_details">
+                                    <div>
+                                        <div class="green-bg-label green_label_mob
+                                        ">
+                                        <img src="./assets/img/icons/round-tick.svg" alt="icon">
+                                        Active
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                   </div>
-                  <div class="listTableBody listTableBody_profile">
-                    <div
-                      class="listTabledata"
-                      onclick="selectRadio(event, 'listTabledata')"
-                    >
-                      <div class="tableData wd-13">
-                        <input type="radio" name="preclosure" />
-                      </div>
-                      <div class="tableData wd-13">C19164407</div>
-                      <div class="tableData wd-13">N/A</div>
-                      <div class="tableData wd-13">N/A</div>
-                      <div class="tableData wd-13">N/A</div>
-                      <div class="tableData wd-13 font-bolder">₹ 35,000</div>
-                      <div class="tableData wd-13 all-center">
-                        <div class="green-bg-label">
-                          <img
-                            src="./assets/img/icons/round-tick.svg"
-                            alt="icon"
-                          />
-                          Active
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="listTabledata listTabledata_profile"
-                      onclick="selectRadio(event, 'listTabledata')"
-                    >
-                      <div class="tableData wd-13">
-                        <input type="radio" name="preclosure" />
-                      </div>
-                      <div class="tableData wd-13">N22015171H</div>
-                      <div class="tableData wd-13">Shruthi Madhavan</div>
-                      <div class="tableData wd-13">N/A</div>
-                      <div class="tableData wd-13">N/A</div>
-                      <div class="tableData wd-13 font-bolder">₹ 25,000</div>
-                      <div class="tableData wd-13 all-center">
-                        <div class="green-bg-label">
-                          <img
-                            src="./assets/img/icons/round-tick.svg"
-                            alt="icon"
-                          />
-                          Active
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="container mob-wrapper">
-                <div class="fixedDepositeContainer">
-                  <div class="fixedDepositDetailsData">
-                    <div
-                      class="details_fixed_deposit"
-                      id="details_fixed_deposit1"
-                    >
-                      <div class="auto_renewal_details">
-                        <div class="FD_num">C19164407</div>
-                        <input
-                          class="radio-button radio-button-data mobRadioButton"
-                          onclick="radioButtonAction('radio1','details_fixed_deposit1')"
-                          type="radio"
-                          name="radio"
-                          value="male"
-                          id="radio1"
-                        />
-                      </div>
-                      <div class="second_details">
-                        <div
-                          class="Investment_details_content Investment_details_content_profile"
-                        >
-                          <div class="details_profile">
-                            <div class="text_content">Nominee name</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                N/A
-                              </div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Nominee DOB</div>
-                            <div class="img_detail">
-                              <div class="percentage_text_profile">N/A</div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Nominee Relationship</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                N/A
-                              </div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Investment</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                ₹ 35,000
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="third_details">
-                        <div class="pending_details">
-                          <div>
-                            <div class="green-bg-label green_label_mob">
-                              <img
-                                src="./assets/img/icons/round-tick.svg"
-                                alt="icon"
-                              />
-                              Active
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="fixedDepositDetailsData">
-                    <div
-                      class="details_fixed_deposit"
-                      id="details_fixed_deposit1"
-                    >
-                      <div class="auto_renewal_details">
-                        <div class="FD_num">N22015171H</div>
-                        <input
-                          class="radio-button radio-button-data mobRadioButton"
-                          onclick="radioButtonAction('radio1','details_fixed_deposit1')"
-                          type="radio"
-                          name="radio"
-                          value="male"
-                          id="radio1"
-                        />
-                      </div>
-                      <div class="second_details">
-                        <div
-                          class="Investment_details_content Investment_details_content_profile"
-                        >
-                          <div class="details_profile">
-                            <div class="text_content">Nominee name</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                N/A
-                              </div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Nominee DOB</div>
-                            <div class="img_detail">
-                              <div class="percentage_text_profile">N/A</div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Nominee Relationship</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                N/A
-                              </div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Investment</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                ₹ 35,000
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="third_details">
-                        <div class="pending_details">
-                          <div>
-                            <div class="green-bg-label green_label_mob">
-                              <img
-                                src="./assets/img/icons/round-tick.svg"
-                                alt="icon"
-                              />
-                              Active
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="main-form">
+            <div class="main-form fd_content_min_height_profile_bank">
               <form>
                 <div class="row">
                   <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
                     <div class="textparent">
                       <div class="add_new_details_profile">
-                        Add nominee details
+                        Change bank
                       </div>
-
                       <label
                         for="mobile_number"
                         class="form-label formLabel formLabel_profile formLabel_profile_label"
-                        >Select nominee*</label
+                        >Select bank*</label
                       >
                       <select
-                        id="nominee_value_id"
+                        id="manage_bank_id"
                         class="form-control formControl formControl_profile"
-                        onchange="bank_toggle_nominee('nominee_value_id')"
+                        onchange="bank_toggle_bank('manage_bank_id')"
                       >
                         <option
                           value="disable-selected"
@@ -565,10 +548,10 @@
                           hidden
                           selected
                         >
-                          Select nominee
+                        Select bank
                         </option>
-                        <option value="add-new-nominee">Add-new</option>
-                        <option value="nominee_data">Shruthi Madhavan</option>
+                        <option value="add-new-bank">Add-new</option>
+                        <option value="bank_value">Bank of baroda</option>
                       </select>
                     </div>
                   </div>
@@ -576,53 +559,54 @@
               </form>
               <div class="nominee_details" id="bank_details">
                 <div class="row">
-                  <div
-                    class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom"
-                  >
-                    <div
-                      class="boxsection boxsection_profile boxsection_profile_bottom"
-                    >
+                  <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom">
+                    <div class="boxsection boxsection_profile boxsection_profile_bottom">
                       <div class="box-first-text box-first-text-profile">
-                        <p>Nominee name</p>
+                        <p>Bank name</p>
                       </div>
                       <div class="box-secont-text">
-                        <img
-                          src="./assets/img/icons/singleUser.svg"
-                          alt="icon"
-                        />
-                        <p>Shruthi Madhavan</p>
+                        <img src="./assets/img/icons/home-icon.svg" alt="icon">
+                        <p>Bank of baroda</p>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom"
-                  >
-                    <div
-                      class="boxsection boxsection_profile boxsection_profile_bottom"
-                    >
+                  <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom">
+                    <div class="boxsection boxsection_profile boxsection_profile_bottom">
                       <div class="box-first-text box-first-text-profile">
-                        <p>DOB</p>
+                        <p>IFSC code</p>
+                         
                       </div>
                       <div class="box-secont-text">
-                        <img
-                          src="./assets/img/icons/calendar-red-icon.svg"
-                          alt="icon"
-                        />
-                        <p>15 May 2000</p>
+                        <img src="./assets/img/icons/minus.svg" alt="icon">
+                        <p>BARBOCHENBS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile col_wrapper_profile_bottom">
+                    <div class="boxsection boxsection_profile">
+                      <div class="box-first-text box-first-text-profile">
+                        <p>Bank branch</p>
+                        
+                      </div>
+                      <div class="box-secont-text">
+                        <img src="./assets/img/icons/home-icon.svg" alt="icon">
+                        <p>West Mambala branch</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-12 col_wrapper_profile">
                     <div class="boxsection boxsection_profile">
                       <div class="box-first-text box-first-text-profile">
-                        <p>Nominee relationship</p>
+                        <p>Account number</p>
+                        
                       </div>
                       <div class="box-secont-text">
-                        <img src="./assets/img/icons/duoUser.svg" alt="icon" />
-                        <p>N/A</p>
+                        <img src="./assets/img/icons/bank.svg" alt="icon">
+                        <p>28730100000319</p>
                       </div>
                     </div>
                   </div>
+  
                 </div>
               </div>
             </div>
@@ -630,14 +614,13 @@
         </div>
         <div class="col col-md-12">
           <div class="buttonContainer" id="repayment-buttonContainer">
-            <button
+          <button
               class="btn themeRedBtn themeRedBtn_profile"
-              id="continueButton_"
+              id="continueButton"
               disabled
               onclick="navigateToDetailsPage()"
             >
-              Submit
-              <img src="./assets/img/arrow-right.svg" alt="icons" />
+              Submit <img src="./assets/img/arrow-right.svg" alt="icons" />
             </button>
           </div>
         </div>
@@ -654,10 +637,10 @@
           </a>
         </div>
         <!-- <div class="live_tune_connect">
-        <a href="#">
-          <img src="./assets/img/icons/chat.svg" alt="icon" />
-        </a>
-      </div> -->
+          <a href="#">
+            <img src="./assets/img/icons/chat.svg" alt="icon" />
+          </a>
+        </div> -->
         <div class="live_tune_connect">
           <a href="#">
             <img src="./assets/img/icons/thumb.svg" alt="icon" />
