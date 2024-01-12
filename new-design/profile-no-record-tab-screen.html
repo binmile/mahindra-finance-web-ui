@@ -45,9 +45,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link active_data" aria-current="page" href="#"
-                >FD renewal</a
-              >
+              <a class="nav-link" aria-current="page" href="#">FD renewal</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="preclosure.html">Preclosure</a>
@@ -357,27 +355,241 @@
                 </li>
               </ul>
             </div>
-            <div class="row" id="make_top">
-              <div class="col col-md-12">
-                <div
-                  class="listTable listTable_profile listTable_profile_accured"
-                >
-                  <div class="listTableHead no_mobile_view">
-                    <div class="wd-15">Sr. no.</div>
-                    <div class="wd-15">FDR number</div>
-                    <div class="wd-15">FDR number</div>
-                    <div class="wd-15">FDR number</div>
-                    <div class="wd-15">Dep. Date</div>
-                    <div class="wd-15">Interest amount</div>
+            <div class="tab-content" id="ex1-content">
+              <div
+                class="tab-pane fade show active"
+                id="ex1-tabs-1"
+                role="tabpanel"
+                aria-labelledby="ex1-tab-1"
+              >
+                <div class="row" id="make_top">
+                  <div class="col col-md-12 web-wrapper">
+                    <div
+                      class="listTable listTable_profile listTable_profile_accured"
+                    >
+                      <div class="listTableHead no_mobile_view">
+                        <div class="wd-15">Sr. no.</div>
+                        <div class="wd-15">FDR number</div>
+                        <div class="wd-15">FDR number</div>
+                        <div class="wd-15">FDR number</div>
+                        <div class="wd-15">Dep. Date</div>
+                        <div class="wd-15">Interest amount</div>
+                      </div>
+                      <div class="listTableBody">
+                        <div
+                          class="listTabledata"
+                          onclick="selectRadio(event, 'listTabledata')"
+                        >
+                          <div class="tableData wd-15">
+                            <input type="radio" name="preclosure" />
+                          </div>
+                          <div class="tableData wd-15">N2003901F</div>
+                          <div class="tableData wd-15">N2003901F</div>
+                          <div class="tableData wd-15">N2003901F</div>
+                          <div class="tableData wd-15">28 Sept 2021</div>
+                          <div class="tableData wd-15">6</div>
+                        </div>
+                        <div
+                          class="listTabledata listTabledata_profile"
+                          onclick="selectRadio(event, 'listTabledata')"
+                        >
+                          <div class="tableData wd-15">
+                            <input type="radio" name="preclosure" />
+                          </div>
+                          <div class="tableData wd-15">C2032231F</div>
+                          <div class="tableData wd-15">N2003901F</div>
+                          <div class="tableData wd-15">N2003901F</div>
+                          <div class="tableData wd-15">28 Sept 2021</div>
+                          <div class="tableData wd-15">6</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="listTableBody listTableBody_data">
-                    <div class="no_record">
-                      <div class="img_record fd_content_min_height_accured">
-                        <img
-                          src="./assets/img/Illustration-no-records.svg"
-                          alt="icon"
-                        />
-                        No Records
+                  <div class="container mob-wrapper">
+                    <div class="fixedDepositeContainer">
+                      <div class="fixedDepositDetailsData">
+                        <div
+                          class="details_fixed_deposit"
+                          id="details_fixed_deposit1"
+                        >
+                          <div class="auto_renewal_details">
+                            <div class="FD_num">C19164407</div>
+                            <input
+                              class="radio-button radio-button-data mobRadioButton"
+                              onclick="radioButtonAction('radio1','details_fixed_deposit1')"
+                              type="radio"
+                              name="radio"
+                              value="male"
+                              id="radio1"
+                            />
+                          </div>
+                          <div class="second_details">
+                            <div
+                              class="Investment_details_content Investment_details_content_profile"
+                            >
+                              <div class="details_profile_bank">
+                                <div class="text_content">FDR number</div>
+                                <div class="img_detail">
+                                  <div class="NA_text percentage_text_profile">
+                                    C2032231F
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="details_profile_bank">
+                                <div class="text_content">FDR number</div>
+                                <div class="img_detail">
+                                  <div class="percentage_text_profile">N2003901F</div>
+                                </div>
+                              </div>
+                              <div class="details_profile_bank">
+                                <div class="text_content">FDR number</div>
+                                <div class="img_detail">
+                                  <div class="percentage_text_profile">N2003901F</div>
+                                </div>
+                              </div>
+                              <div class="details_profile_bank">
+                                <div class="text_content">
+                                     Dep. Date
+                                </div>
+                                <div class="img_detail">
+                                  <div class="NA_text percentage_text_profile">
+                                    28 Sept 2021
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="details_profile_bank">
+                                <div class="text_content">Investment</div>
+                                <div class="img_detail">
+                                  <div class="NA_text percentage_text_profile">
+                                    ₹ 35,000
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="third_details">
+                            <div class="pending_details">
+                              <div>
+                                <div class="green-bg-label green_label_mob">
+                                  <img
+                                    src="./assets/img/icons/round-tick.svg"
+                                    alt="icon"
+                                  />
+                                  Active
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fixedDepositDetailsData">
+                        <div
+                          class="details_fixed_deposit"
+                          id="details_fixed_deposit1"
+                        >
+                          <div class="auto_renewal_details">
+                            <div class="FD_num">C19164407</div>
+                            <input
+                              class="radio-button radio-button-data mobRadioButton"
+                              onclick="radioButtonAction('radio1','details_fixed_deposit1')"
+                              type="radio"
+                              name="radio"
+                              value="male"
+                              id="radio1"
+                            />
+                          </div>
+                          <div class="second_details">
+                            <div
+                              class="Investment_details_content Investment_details_content_profile"
+                            >
+                              <div class="details_profile_bank">
+                                <div class="text_content">FDR number</div>
+                                <div class="img_detail">
+                                  <div class="NA_text percentage_text_profile">
+                                    C2032231F
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="details_profile_bank">
+                                <div class="text_content">FDR number</div>
+                                <div class="img_detail">
+                                  <div class="percentage_text_profile">N2003901F</div>
+                                </div>
+                              </div>
+                              <div class="details_profile_bank">
+                                <div class="text_content">FDR number</div>
+                                <div class="img_detail">
+                                  <div class="percentage_text_profile">N2003901F</div>
+                                </div>
+                              </div>
+                              <div class="details_profile_bank">
+                                <div class="text_content">
+                                     Dep. Date
+                                </div>
+                                <div class="img_detail">
+                                  <div class="NA_text percentage_text_profile">
+                                    28 Sept 2021
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="details_profile_bank">
+                                <div class="text_content">Investment</div>
+                                <div class="img_detail">
+                                  <div class="NA_text percentage_text_profile">
+                                    ₹ 35,000
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="third_details">
+                            <div class="pending_details">
+                              <div>
+                                <div class="green-bg-label green_label_mob">
+                                  <img
+                                    src="./assets/img/icons/round-tick.svg"
+                                    alt="icon"
+                                  />
+                                  Active
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="ex1-tabs-2"
+                role="tabpanel"
+                aria-labelledby="ex1-tab-2"
+              >
+                <div class="row" id="make_top">
+                  <div class="col col-md-12">
+                    <div
+                      class="listTable listTable_profile listTable_profile_accured"
+                    >
+                      <div class="listTableHead no_mobile_view">
+                        <div class="wd-15">Sr. no.</div>
+                        <div class="wd-15">FDR number</div>
+                        <div class="wd-15">FDR number</div>
+                        <div class="wd-15">FDR number</div>
+                        <div class="wd-15">Dep. Date</div>
+                        <div class="wd-15">Interest amount</div>
+                      </div>
+                      <div class="listTableBody">
+                        <div class="no_record">
+                          <div class="img_record fd_content_min_height_accured">
+                            <img
+                              src="./assets/img/Illustration-no-records.svg"
+                              alt="icon"
+                            />
+                            No Records
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -385,41 +597,41 @@
               </div>
             </div>
           </div>
-          <div class="col col-md-12">
-            <div class="buttonContainer" id="repayment-buttonContainer">
-              <button
-                class="btn themeRedBtn themeRedBtn_profile"
-                id="continueButton"
-                disabled
-                active
-              >
-                Submit <img src="./assets/img/arrow-right.svg" alt="icons" />
-              </button>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="communication_wrapper">
-        <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/call-tune.svg" alt="icon" />
-          </a>
+      <div class="col col-md-12">
+        <div class="buttonContainer" id="repayment-buttonContainer">
+          <button
+            class="btn themeRedBtn themeRedBtn_profile"
+            id="continueButton"
+            disabled
+            active
+          >
+            Submit <img src="./assets/img/arrow-right.svg" alt="icons" />
+          </button>
         </div>
-        <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/map.svg" alt="icon" />
-          </a>
-        </div>
-        <!-- <div class="live_tune_connect">
+      </div>
+    </div>
+    <div class="communication_wrapper">
+      <div class="live_tune_connect">
+        <a href="#">
+          <img src="./assets/img/icons/call-tune.svg" alt="icon" />
+        </a>
+      </div>
+      <div class="live_tune_connect">
+        <a href="#">
+          <img src="./assets/img/icons/map.svg" alt="icon" />
+        </a>
+      </div>
+      <!-- <div class="live_tune_connect">
           <a href="#">
             <img src="./assets/img/icons/chat.svg" alt="icon" />
           </a>
         </div> -->
-        <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/thumb.svg" alt="icon" />
-          </a>
-        </div>
+      <div class="live_tune_connect">
+        <a href="#">
+          <img src="./assets/img/icons/thumb.svg" alt="icon" />
+        </a>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

@@ -304,22 +304,6 @@ function togglePasswordVisibility(passwordId, closeEyesIconId, openEyesIconId) {
 }
 
 /***************profile-page-validation-end*******************/
-
-/******no-record-tab-start*****/
-document.addEventListener("DOMContentLoaded", function() {
-  const defaultActiveButton = document.querySelector('.themeRedBtn_profile_accured');
-  changeTab(defaultActiveButton);
-});
-function changeTab(clickedButton) {
-  const buttons = document.querySelectorAll('.themeRedBtn_profile_accured');
-  buttons.forEach(button => {
-    button.classList.remove('active_data');
-  });
-  clickedButton.classList.add('active_data');
-}
-   
-/******no-record-tab-end*****/
-
 /*****************radio button BMT-265 start******************/
 function radioButtonAction(id, element) {
   var checkbox = document.getElementById(id);

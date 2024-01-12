@@ -7848,6 +7848,10 @@ p.notify_lfd {
   margin-top: 22px;
 }
 
+.nav-tabs {
+  border-bottom: unset;
+}
+
 .themeRedBtn_profile_accured {
   border-radius: 8px;
   padding: 9px 13px;
@@ -7879,15 +7883,27 @@ p.notify_lfd {
   line-height: 24px;
   letter-spacing: 0;
   color: #6B7280;
-}
-
-.active_data {
-  background-color: #000000;
-  color: #FFFFFF;
+  justify-content: center;
 }
 
 .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data.text_certificate {
   top: 83.2px;
+}
+
+.tab-wrapper {
+  gap: 8px;
+}
+
+.nav-item.nav-item-tab.nav-item-tab .active {
+  background-color: black;
+  color: white;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+.nav-item a:hover {
+  color: unset;
 }
 
 .details_profile_bank {
@@ -7925,6 +7941,13 @@ p.notify_lfd {
 .listTable .listTableBody .listTabledata.listTabledata_profile {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.img_record {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .boxsection_profile {
