@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/_265_css.scss" />
   </head>
-
   <body>
     <!-- Top-navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
@@ -31,7 +30,9 @@
           aria-label="Toggle navigation"
         >
           <div id="hamburgerIcon">
-            <span></span> <span></span> <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -71,14 +72,13 @@
                   alt="icons"
                   class="toggle-icon"
                 />
-                <span class="plus_icon">
-                  <img
+                <span class="plus_icon"
+                  ><img
                     src="./assets/img/icons/plusIcon.svg"
                     alt="icon"
                     class="no_tablet_view plusIcon"
                     id="rotate_icon_profile"
-                  />
-                </span>
+                /></span>
               </a>
               <ul
                 class="dropdown-menu mob_menu_download"
@@ -175,14 +175,13 @@
                   alt="icons"
                   class="toggle-icon"
                 />
-                <span class="plus_icon">
-                  <img
+                <span class="plus_icon"
+                  ><img
                     src="./assets/img/icons/plusIcon.svg"
                     alt="icon"
                     class="no_tablet_view plusIcon"
                     id="rotate_icon_profile"
-                  />
-                </span>
+                /></span>
               </a>
               <ul
                 class="dropdown-menu mob_sub_profile"
@@ -258,8 +257,8 @@
             </li>
             <li class="nav-item mob_menu_logout no_tablet_view">
               <a href="#">
-                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log
-                out
+                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                Log out
               </a>
             </li>
           </ul>
@@ -269,244 +268,123 @@
     <!--Top-navbar End -->
     <div class="container mb-20">
       <div class="row animate__animated animate__fadeInUp">
-        <div class="col-12 mt-20">
-          <a href="#" class="commonBackBtn">
-            <img src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back
-          </a>
+        <div class="col-12 mt-20 m-b16">
+          <a href="#" class="commonBackBtn"
+            ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
+            Back</a>
         </div>
-        <div class="col col-md-12">
-          <div class="heading_nominee">
-            <div
-              id="commonHeading-repayment"
-              class="commonHeading_repayment_profile"
-            >
-              Portfolio -
+       </div>
+
+       <div class="row">
+        <div class="col-12 col-lg-8 col-md-8">
+            
+          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile">
+            <div class="boldTitle boldTitle_profile ">
+              <div class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile">
+                <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_mobile_view"/>
+                <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_desktop_view"/>
+              </div>
+              Loan against FD - F2001101F
             </div>
-            <div class="custom-dropdown" id="portfolio_btn">
-              <button
-                class="themeRedBtn dropdown-toggle themeRedBtn_profile"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                BA003931 - Amrita Baldewa
-                <img src="./assets/img/chevron-down.svg" alt="icons" />
-              </button>
-              <ul
-                class="dropdown-menu dropdown_menu_profile"
-                aria-labelledby="dropdownMenuButton1"
-                id="dropdownElement"
-              >
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Vikram Kumar Sahu <span>221132</span></a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Hariom Sahu <span>221130</span></a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Vikram Sahu <span>221128</span></a
-                  >
-                </li>
-              </ul>
+            <div class="section-parent removeborder">
+             
+              <div class="row flex-row">
+                  <div class="col-md-3 col-lg-3 col-6 custpostion">
+                      <div class="fdDetails customefdDetails fdDetails_value">
+                          <div class="label">Loan amount </div>
+                          <div class="value custvalue">
+                              <div class="roundBackgroundIcon_">
+                                  <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
+                              </div> ₹ 15,000
+                             
+                          </div>
+                      </div>
+
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-6 custpostion">
+                      <div class="fdDetails customefdDetails fdDetails_value">
+                          <div class="label">Tenure </div>
+                          <div class="value custvalue">
+                              <div class="roundBackgroundIcon_ ">
+                                  <img src="./assets/img/icons/clock.svg" alt="icon">
+                              </div> 630 days
+                          </div>
+                      </div>
+                  </div>
+                
+                  <div class="col-md-3 col-lg-3 col-6 custpostion">
+                      <div class="fdDetails customefdDetails fdDetails_value">
+                          <div class="label">Against FD </div>
+                          <div class="value custvalue">
+                              <div class="roundBackgroundIcon_">
+                                  <img src="./assets/img/icons/tick_left.svg" alt="icon">
+                              </div>R2022009D 
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-6 ">
+                    <div class="fdDetails">
+                        <div class="label">Against FD </div>
+                        <div class="value custvalue">
+                            <div class="roundBackgroundIcon_">
+                                <img src="./assets/img/icons/tick_left.svg" alt="icon">
+                            </div>R2022009D 
+                        </div>
+                    </div>
+                </div>
+                  
+             </div>
             </div>
           </div>
         </div>
-        <div class="col-12">
-          <div
-            class="bankDetailsMainContainer"
-          >
-            <div class="boldTitle boldTitle_profile">
-              <div
-                class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile"
-              >
-                <img
-                  src="./assets/img/icons/quick-actions/download-icon.svg"
-                  alt="icon"
-                />
-              </div>
-              Download TDS certificate
+        <div class="col-12 col-lg-4 col-md-4">
+            
+          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile">
+            <div class="boldTitle boldTitle_profile ">
+             
+              Select a payment method
             </div>
-            <div class="main-form form_wrapper">
-              <form>
-                <div class="row">
-                  <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
-                    <div class="textparent">
-                      <div class="add_new_details_profile add_new_details_profile_certificate">
-                        Message centre:
-                      </div>
-                      <label
-                        for="mobile_number"
-                        class="form-label formLabel formLabel_profile formLabel_profile_label"
-                        >Financial year*</label
-                      >
-                      <select
-                        id="nominee_value"
-                        class="form-control formControl formControl_profile"
-                        onchange="toggleSecondColumn('#secondColumn','add-new', '#nominee_value')"
-                      >
-                        <option
-                          value="disable-selected"
-                          disabled
-                          hidden
-                          selected
-                        >
-                          Select
-                        </option>
-                        <option value="add-new">2023-24</option>
-                        <option value="Sudhir Rana">2023-24</option>
-                      </select>
+            <div class="parent">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="payment-box">
+                    <div class="paymentimg"> 
+                      <img src="./assets/img/icons/email.svg" alt="icon">
+                     </div>
+                    <div class="payment-text">
+                      <p>UPI</p>
                     </div>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="tds-text">
-                TDS certificates
-            </div>
-            <div class="row" id="make_top">
-              <div class="col col-md-12 web-wrapper">
-                <div class="listTable listTable_profile listTable_profile_tds_certificate">
-                  <div class="listTableHead">
-                    <div class="wd-15">Financial year</div>
-                    <div class="wd-15">Quarter</div>
-                    <div class="wd-15">Pan</div>
-                    <div class="wd-15">Gross amount</div>
-                    <div class="wd-15">Invested amount</div>
-                    <div class="wd-15 all-center">Download</div>
-                  </div>
-                  <div class="listTableBody listTableBody_profile">
-                    <div
-                      class="listTabledata listTabledata_profile"
-                      onclick="selectRadio(event, 'listTabledata')"
-                    >
-                      <div class="tableData wd-15">2019-20</div>
-                      <div class="tableData wd-15">Q4</div>
-                      <div class="tableData wd-15">ADEPL3063B</div>
-                      <div class="tableData wd-15">34066</div>
-                      <div class="tableData wd-15 font-bolder">₹ 0</div>
-                      <div class="tableData wd-15 all-center">
-                          <img
-                            src="./assets/img/icons/download.svg"
-                            alt="icon"
-                          />
-                      </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="payment-box">
+                    <div class="paymentimg"> 
+                      <img src="./assets/img/icons/email.svg" alt="icon">
+                     </div>
+                    <div class="payment-text">
+                      <p>UPI</p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="container mob-wrapper">
-                <div class="fixedDepositeContainer">
-                  <div class="fixedDepositDetailsData">
-                    <div
-                      class="details_fixed_deposit"
-                      id="details_fixed_deposit1"
-                    >
-                      <div class="auto_renewal_details">
-                        <div class="FD_num">C19164407</div>
-                        <input
-                          class="radio-button radio-button-data mobRadioButton"
-                          onclick="radioButtonAction('radio1','details_fixed_deposit1')"
-                          type="radio"
-                          name="radio"
-                          value="male"
-                          id="radio1"
-                        />
-                      </div>
-                      <div class="second_details">
-                        <div
-                          class="Investment_details_content Investment_details_content_profile"
-                        >
-                          <div class="details_profile">
-                            <div class="text_content">Financial year
-                            </div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                2019-20
-                              </div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Quarter</div>
-                            <div class="img_detail">
-                              <div class="percentage_text_profile">Q4</div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Pan</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                ADEPL3063B
-                              </div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Gross amount</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                34066
-                              </div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Invested amount</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                ₹ 0
-                              </div>
-                            </div>
-                          </div>
-                          <div class="details_profile">
-                            <div class="text_content">Download</div>
-                            <div class="img_detail">
-                              <div class="NA_text percentage_text_profile">
-                                <img
-                                src="./assets/img/icons/download.svg"
-                                alt="icon"
-                              />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="third_details">
-                        <div class="pending_details">
-                          <div>
-                            <div class="green-bg-label green_label_mob">
-                              <img
-                                src="./assets/img/icons/round-tick.svg"
-                                alt="icon"
-                              />
-                              Active
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="payment-box">
+                    <div class="paymentimg"> 
+                      <img src="./assets/img/icons/email.svg" alt="icon">
+                     </div>
+                    <div class="payment-text">
+                      <p>UPI</p>
                     </div>
                   </div>
                 </div>
-              </div>
+
+                
+             </div>
             </div>
-            <div class="col-lg-12 col-sm-12 col-md-12 bottomContentBox_profile bottomContentBox_profile_tds_certificate">
-              <div>
-                <img
-                src="./assets/img/icons/check-circle.svg"
-                alt="icon"
-              /> 
-              </div>
-              <div>
-                To validate the digital signature : <span>Kindly open the TDS certificate in PDF viewer for valid digital signature</span>
-              </div>
-                 
-              </div>
           </div>
         </div>
-        <div class="col col-md-12">
+
+       </div>
+        <div class="col col-md-12 col-lg-12">
           <div class="buttonContainer" id="repayment-buttonContainer">
             <button
               class="btn themeRedBtn themeRedBtn_profile"
@@ -514,7 +392,8 @@
               disabled
               onclick="handleClickModal('myModal')"
             >
-              Submit <img src="./assets/img/arrow-right.svg" alt="icons" />
+            Submit
+              <img src="./assets/img/arrow-right.svg" alt="icons" />
             </button>
           </div>
         </div>
@@ -541,6 +420,7 @@
           </a>
         </div>
       </div>
+    </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>

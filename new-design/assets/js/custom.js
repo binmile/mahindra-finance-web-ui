@@ -276,16 +276,16 @@ function navigateToDetailsPage() {
   const continueButton_bank = document.getElementById("continueButton");
   const continueButton = document.getElementById("continueButton_");
   if (continueButton && !continueButton.disabled) {
-    console.log("Navigating to profile-add-new-bank-details.html");
-    window.location.href = "profile-add-new-bank-details.html";
+    window.location.href = "renewal-form.html";
   } else if(continueButton_bank && !continueButton_bank.disabled){
+ 
     window.location.href = "profile-add-new-bank-details.html";
+
   }
   else {
     alert("Please enable the button to proceed.");
   }
 }
-document.getElementById("continueButton_" , "continueButton").addEventListener("click", navigateToDetailsPage);
 /******manage-nominee-toggle-end */
 
 function togglePasswordVisibility(passwordId, closeEyesIconId, openEyesIconId) {
@@ -304,7 +304,6 @@ function togglePasswordVisibility(passwordId, closeEyesIconId, openEyesIconId) {
 }
 
 /***************profile-page-validation-end*******************/
-
 /*****************radio button BMT-265 start******************/
 function radioButtonAction(id, element) {
   var checkbox = document.getElementById(id);
