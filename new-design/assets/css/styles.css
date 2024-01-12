@@ -8049,7 +8049,7 @@ input[type=number] {
   align-items: center;
 }
 
-.fd_content_min_height {
+.fd_content_min_height_profile {
   min-height: calc(70vh - 127px);
 }
 
@@ -8067,6 +8067,10 @@ input[type=number] {
 
 .no_certificate_wrapper_min_height {
   min-height: calc(40vh - 150px);
+}
+
+.quick_min_height {
+  min-height: calc(40vh - 300px);
 }
 
 .no_certificate_wrapper {
@@ -8324,6 +8328,89 @@ input[type=number] {
   }
   .buttonContainer button.themeRedBtn.themeRedBtn_profile {
     height: 40px;
+  }
+}
+.first-content {
+  display: flex;
+  place-items: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.subHeading-repayment {
+  margin-bottom: 0;
+}
+
+.bottomLightText_repayment_success {
+  padding-top: 28px;
+  border-top: 1px solid #D6D6D6;
+}
+
+.fdContents.fdContents-repayment {
+  margin: 20px 0 28px 0;
+}
+
+.email-repayment {
+  border-bottom: 1px solid #231f20;
+}
+
+.heading-repayment {
+  margin-bottom: 24px;
+  display: flex;
+  place-items: center;
+  align-items: center;
+}
+
+.status_wrapper {
+  padding: 4px 8px;
+  display: flex;
+  place-items: center;
+  align-items: center;
+  background: linear-gradient(0deg, #bef4d2, #bef4d2);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #17823e;
+}
+.status_wrapper.status_wrapper_refresh {
+  color: #bd9400;
+  background: linear-gradient(0deg, #fff0bc, #fff0bc);
+}
+.status_wrapper .status-img {
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .first-content {
+    margin-bottom: 16px;
+  }
+  .bottomLightText_repayment_success {
+    padding-top: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .accountContainer-repayment {
+    padding: 16px;
+  }
+  .subHeading-repayment {
+    margin-bottom: 8px;
+  }
+  .first-content {
+    margin-bottom: 16px;
+  }
+  .heading-repayment {
+    margin-bottom: 12px;
+  }
+  .remove-bottom {
+    margin-bottom: 0 !important;
+  }
+  .bottomLightText_repayment_success {
+    padding-top: 16px;
+  }
+  .no_certificate_wrapper_min_height.min-height-mob {
+    min-height: 0;
   }
 }
 #req_per_page {

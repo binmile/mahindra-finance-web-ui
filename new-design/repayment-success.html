@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahindra Finance :: Preclosure</title>
+    <title>Mahindra Finance :: Single Account Holder</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <link
       rel="stylesheet"
@@ -11,7 +11,6 @@
     />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/_265_css.scss" />
   </head>
   <body>
     <!-- Top-navbar Start -->
@@ -266,179 +265,204 @@
       </div>
     </nav>
     <!--Top-navbar End -->
+
     <div class="container mb-20">
-      <div class="row animate__animated animate__fadeInUp">
-        <div class="col-12 mt-20">
+      <div class="row">
+        <div class="col col-md-12 mt-20">
           <a href="#" class="commonBackBtn"
             ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
             Back</a
           >
         </div>
-        <div class="col col-md-12">
-          <div id="commonHeading-repayment"></div>
-        </div>
-        <div class="col-12">
-          <div class="bankDetailsMainContainer">
-            <div class="boldTitle boldTitle_profile">
-              <div
-                class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile"
-              >
-                <img src="./assets/img/icons/lock.svg" alt="icon" />
-              </div>
-              Change password
-            </div>
-            <div class="main-form fd_content_min_height_profile">
-              <form>
-                <div class="row flex-row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <div class="textparent">
-                          <label
-                            for="new_password"
-                            class="form-label formLabel formLabel_profile"
-                            >Enter new password
-                          </label>
-                          <input
-                            type="password"
-                            class="form-control formControl formControl_profile"
-                            id="new_password"
-                            maxlength="30"
-                            oninput="validateForgotPassword( 'new_password', 're_enter_new_password')"
-                            autocomplete="off"
+        <div class="col col-md-12 mt-20 animate__animated animate__fadeInUp">
+          <div class="cardContainer accountContainer accountContainer-repayment">
+            <div class="container p-0">
+              <div class="row">
+                <div class="col col-md-12 col-sm-12 col-lg-6 allCentered">
+                  <div class="accountDetailsBox_success text-center">
+                    <div class="success_img">
+                      <img src="./assets/img/success.svg" alt="icon" />
+                    </div>
+                    <div class="all_done">Success!</div>
+                    <div class="email-content text-center">
+                      You will receive the loan against FD repayment details on
+                      your email: <span class="email-repayment">vikram.sahu@gmail.com</span>
+                    </div>
+                    <div
+                      class="buttonContainer_success no_mobile_view customHomeBtn"
+                    >
+                      <button class="btn themeRedBtn button_success_home">
+                        Home
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-md-12 col-sm-12 col-lg-6">
+                  <div class="accountBox darkBg">
+                    <div class="heading heading-repayment">
+                      <div class="roundWhiteBackgroundIcon">
+                        <img
+                          src="./assets/img/icons/apply-loan.svg"
+                          alt="icon"
+                        />
+                      </div>
+                      Loan repayment details
+                    </div>
+                    <div class="row flex-row">
+                      <div class="first-content">
+                        <div class="subHeading subHeading-repayment">
+                          Loan - GH42009D
+                        </div>
+                        <div class="status_wrapper">
+                          <img
+                            src="./assets/img/icons/round-tick.svg"
+                            alt="icon"
+                            class="status-img"
                           />
-                          <div class="textfildicons textfildicons_icons">
-                            <img
-                              src="./assets/img/icons/eyes_cross.svg"
-                              alt="icons"
-                              class="repayment-icons"
-                              id="closesecEyesIcon"
-                              onclick="togglePasswordVisibility('new_password', 'closesecEyesIcon', 'opensecEyesIcon')"
-                            />
-                            <img
-                              src="./assets/img/icons/eye_show.svg"
-                              alt="icons"
-                              class="repayment-icons openEyesIcon_profile"
-                              id="opensecEyesIcon"
-                              onclick="togglePasswordVisibility('new_password', 'closesecEyesIcon', 'opensecEyesIcon')"
-                            />
+                          Loan status: settled
+                        </div>
+                        <!-- <div class="status_wrapper status_wrapper_refresh">
+                          <img
+                            src="./assets/img/icons/refresh-yellow.svg"
+                            alt="icon"
+                            class="status-img"
+                          />
+                          Loan status: active
+                        </div> -->
+                      </div>
+                      <div class="col-md-6 col-6">
+                        <div
+                          class="fdContents fdContents-repayment fdContents_success with-border remove_margin"
+                        >
+                          <div
+                            class="fdDetails fdContents_width fdetails_data_success fdDetails_value"
+                          >
+                            <div class="label label_success">
+                              Settled loan amount
+                            </div>
+                            <div class="value value_success">
+                              <div class="roundBackgroundIcon">
+                                <img
+                                  src="./assets/img/icons/minus.svg"
+                                  alt="icon"
+                                />
+                              </div>
+                              ₹41,000
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <div class="textparent">
-                          <label
-                            for="re_enter_new_password"
-                            class="form-label formLabel formLabel_profile"
-                            >Re-enter new password
-                          </label>
-                          <input
-                            type="password"
-                            class="form-control formControl formControl_profile"
-                            id="re_enter_new_password"
-                            maxlength="30"
-                            oninput="validateForgotPassword( 'new_password', 're_enter_new_password')"
-                            autocomplete="off"
-                          />
-                          <div class="textfildicons textfildicons_icons">
-                            <img
-                              src="./assets/img/icons/eyes_cross.svg"
-                              alt="icons"
-                              class="repayment-icons"
-                              id="closethirdEyesIcon"
-                              onclick="togglePasswordVisibility('re_enter_new_password', 'closethirdEyesIcon', 'openthirdEyesIcon')"
-                            />
-                            <img
-                              src="./assets/img/icons/eye_show.svg"
-                              alt="icons"
-                              class="repayment-icons openEyesIcon_profile"
-                              id="openthirdEyesIcon"
-                              onclick="togglePasswordVisibility('re_enter_new_password', 'closethirdEyesIcon', 'openthirdEyesIcon')"
-                            />
+                      <div class="col-md-6 col-6">
+                        <div
+                          class="fdContents fdContents-repayment fdContents_success remove_margin"
+                        >
+                          <div
+                            class="fdDetails fdContents_width fdDetails_value"
+                          >
+                            <div class="label label_success">
+                              Rate of interest
+                            </div>
+                            <div class="value value_success">
+                              <div class="roundBackgroundIcon">
+                                <img
+                                  src="./assets/img/icons/preclosure-flow/percent-red.svg"
+                                  alt="icon"
+                                />
+                              </div>
+                              10.05%
+                            </div>
                           </div>
                         </div>
                       </div>
+                    </div>
+
+                    <div class="row flex-row">
+                      <div class="col-md-6 col-6">
+                        <div
+                          class="fdContents fdContents-repayment fdContents_success fdContents_remove_margin remove_margin"
+                        >
+                          <div
+                            class="fdDetails fdContents_width fdDetails_value"
+                          >
+                            <div class="label label_success">
+                              Against FD no.
+                            </div>
+                            <div class="value value_success">
+                              <div class="roundBackgroundIcon">
+                                <img
+                                src="./assets/img/icons/money-red-icon.svg"
+                                alt="icon"
+                              />
+                              </div>
+                              R2022009D
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottomLightText_repayment_success no_certificate_wrapper_min_height min-height-mob">
+                      <div class="row flex-row">
+                        <div class="col-12">
+                          <div class="subHeading subHeading-repayment">
+                            Bank details
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-6">
+                          <div
+                            class="fdContents fdContents-repayment fdContents_success with-border remove_margin"
+                          >
+                            <div
+                              class="fdDetails fdContents_width remove-bottom"
+                            >
+                              <div class="label label_success">
+                                Bank and branch name
+                              </div>
+                              <div class="value value_success">
+                                <div class="roundBackgroundIcon">
+                                  <img
+                                    src="./assets/img/icons/home-icon.svg"
+                                    alt="icon"
+                                  />
+                                </div>
+                                Axis bank, Mumbai branch
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-6">
+                          <div
+                            class="fdContents fdContents-repayment fdContents_success remove_margin"
+                          >
+                            <div
+                              class="fdDetails fdContents_width remove-bottom"
+                            >
+                              <div class="label label_success">
+                                Account number
+                              </div>
+                              <div class="value value_success">
+                                <div class="roundBackgroundIcon">
+                                  <img
+                                    src="./assets/img/icons/home-icon.svg"
+                                    alt="icon"
+                                  />
+                                </div>
+                                400211002
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-md-12">
-          <div class="buttonContainer" id="repayment-buttonContainer">
-            <button
-              class="btn themeRedBtn themeRedBtn_profile"
-              id="continueButton"
-              disabled
-              onclick="handleClickModal('myModal')"
-            >
-              Update
-              <img src="./assets/img/arrow-right.svg" alt="icons" />
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="communication_wrapper">
-        <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/call-tune.svg" alt="icon" />
-          </a>
-        </div>
-        <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/map.svg" alt="icon" />
-          </a>
-        </div>
-        <!-- <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/chat.svg" alt="icon" />
-          </a>
-        </div> -->
-        <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/thumb.svg" alt="icon" />
-          </a>
-        </div>
-      </div>
-      <!-- Confrmation Modal Start -->
-      <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              >
-                <img src="./assets/img/icons/close-icon.svg" alt="icon" />
-              </button>
-              <div class="info-heading-container">
-                <div class="info-heading-image">
-                  <img
-                    src="./assets/img/icons/info-button-icon.svg"
-                    alt="icon"
-                  />
-                </div>
-                <div class="info-heading">Are you sure ?</div>
-              </div>
-              <div class="info-content">
-                Please confirm that you want to proceed with the OTP
-                verification
-              </div>
-              <div class="info-button-container">
-                <div class="info-button">
-                  <button
-                    type="button"
-                    class="btn themeRedBtn themeWhiteButton"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    No
-                  </button>
-                </div>
-                <div class="info-button">
-                  <button type="button" class="themeRedBtn">Yes</button>
-                </div>
-              </div>
+          <div
+            class="col col-md-12 col-12 col-sm-12 col-xs-12 no_desktop_view no_desktop_ipad"
+          >
+            <div class="buttonContainer buttonContainer_success">
+              <button class="btn themeRedBtn button_success_home">Home</button>
             </div>
           </div>
         </div>

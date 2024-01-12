@@ -221,7 +221,7 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
 }
-.fd_content_min_height {
+.fd_content_min_height_profile {
   min-height: calc(70vh - 127px);
 }
 .fd_content_min_height_add_new {
@@ -236,6 +236,10 @@ input[type="number"] {
 .no_certificate_wrapper_min_height {
   min-height: calc(40vh - 150px);
 }
+.quick_min_height{
+  min-height: calc(40vh - 300px);
+}
+
 .no_certificate_wrapper {
   display: flex;
   place-items: center;
@@ -335,6 +339,7 @@ input[type="number"] {
   .communication_wrapper {
     display: none;
   }
+ 
   .no_record{
     img{
       @include custom-width-height(186px, 100px);
