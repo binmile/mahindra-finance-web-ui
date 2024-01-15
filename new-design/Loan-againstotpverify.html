@@ -248,7 +248,8 @@
 
                      <div class="termsConditionsContainer no_mobile_view_lfd">
                         <label class="checkbox-container">
-                            <input type="checkbox" name="preclosure-flow">
+                            <input type="checkbox" name="preclosure-flow" id="acceptRadio"
+                            onclick="checkboxTandC('acceptRadio')">
                             <span class="checkmark"></span>
                         </label>
                         <label class="ml-25">I agree with the <a href="javascript:;" onclick="handleClickModal('TermsConditionModal')">terms & conditions</a></label>
@@ -293,7 +294,8 @@
                     class="termsConditionsContainer termsConditionsContainer_lfd no_desktop_view_lfd"
                   >
                     <label class="checkbox-container">
-                      <input type="checkbox" name="preclosure-flow" />
+                      <input type="checkbox" name="preclosure-flow" id="acceptRadio"
+                      onclick="checkboxTandC('acceptRadio')"/>
                       <span class="checkmark"></span>
                     </label>
                     <label class="ml-25"
@@ -311,7 +313,7 @@
     </div>
     <div class="col col-md-12">
         <div class="buttonContainer">
-            <button class="btn themeRedBtn" disabled> Continue
+            <button class="btn themeRedBtn" disabled id="continueButton" onclick="handleClickModal('myOTPModal')"> Continue
             <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
         </div>
     </div>
@@ -359,7 +361,89 @@
     </div>
 </div>
 <!-- TermsConditionModal End-->
+  <!-- OTP Modal Start -->
+  <div class="modal fade" id="myOTPModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+          </button>
+          <div class="info-heading-container">
+            <div class="info-heading-image">
+              <img src="./assets/img/icons/otp-icon.svg" alt="icon" />
+            </div>
+            <div class="info-heading">
+              Enter the OTP to Verify your Number
+            </div>
+          </div>
+          <div class="info-content otpBox">
+            <div id="inputs" class="inputs otpInputContainer">
+              <input
+                class="input"
+                type="text"
+                inputmode="numeric"
+                maxlength="1"
+              />
+              <input
+                class="input"
+                type="text"
+                inputmode="numeric"
+                maxlength="1"
+              />
+              <input
+                class="input"
+                type="text"
+                inputmode="numeric"
+                maxlength="1"
+              />
+              <input
+                class="input"
+                type="text"
+                inputmode="numeric"
+                maxlength="1"
+              />
+              <input
+                class="input"
+                type="text"
+                inputmode="numeric"
+                maxlength="1"
+              />
+              <input
+                class="input"
+                type="text"
+                inputmode="numeric"
+                maxlength="1"
+              />
+            </div>
+            <div class="msg errorText">Incorrect OTP. Please try again!</div>
 
+            <div class="otp_msg" id="otp_msg">
+              <div class="timer" id="timer">00:59</div>
+              <button
+                class="btn resend_otp disabled"
+                disabled
+                id="resend_otp"
+              >
+                Resend OTP
+              </button>
+            </div>
+          </div>
+          <div class="info-button">
+            <button type="button" class="btn themeRedBtn" disabled>
+              Proceed
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OTP Modal End-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/chart.min.js"></script>
