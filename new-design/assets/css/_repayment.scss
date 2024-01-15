@@ -83,6 +83,11 @@
     }
   }
 }
+.fdContents .fdDetails .value{
+  &.value-repayment{
+    justify-content: left;
+  }
+}
 .SelectOptionsMainContainer .subHeadingContainer .subHeading {
   &.subHeading_repayemnet {
     @include custom-font(16px, 700, 24px, 0px);
@@ -123,6 +128,9 @@
   .first-content {
     margin-bottom: 16px;
   }
+  .fdDetails.fdDetails-repayment{
+    width: 100%;
+  }
   .bottomLightText_repayment_success {
     padding-top: 16px;
   }
@@ -150,6 +158,9 @@
 
       @include custom-font(10px, 500, 14px, 0.4px);
     }
+  }
+  .fdDetails.fdDetails-repayment{
+    width: 100%;
   }
   
   .renewalContentContainer .renewalHeadCount {

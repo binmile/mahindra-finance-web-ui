@@ -8648,6 +8648,10 @@ input[type=number] {
   letter-spacing: 0.35px;
 }
 
+.fdContents .fdDetails .value.value-repayment {
+  justify-content: left;
+}
+
 .SelectOptionsMainContainer .subHeadingContainer .subHeading.subHeading_repayemnet {
   font-size: 16px;
   font-weight: 700;
@@ -8697,6 +8701,9 @@ input[type=number] {
   .first-content {
     margin-bottom: 16px;
   }
+  .fdDetails.fdDetails-repayment {
+    width: 100%;
+  }
   .bottomLightText_repayment_success {
     padding-top: 16px;
   }
@@ -8716,6 +8723,9 @@ input[type=number] {
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 0.4px;
+  }
+  .fdDetails.fdDetails-repayment {
+    width: 100%;
   }
   .renewalContentContainer .renewalHeadCount.renewalHeadCount_repayment {
     display: block;
