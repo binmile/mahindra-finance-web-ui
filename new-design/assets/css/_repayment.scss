@@ -40,6 +40,85 @@
     margin-right: 4px;
   }
 }
+.account-details-repayment {
+  border-radius: 8px;
+  padding: 16px;
+  background: #f3f4f6;
+  margin: 24px 0 28px 0;
+}
+.home-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 28px;
+}
+.repayment_circle {
+  background-color: $color_light_bg;
+  @include custom-width-height(65px, 65px);
+  border-radius: 50%;
+  @include allCenter;
+  img {
+    @include custom-width-height(33px, 31px);
+  }
+}
+.repayment-content {
+  margin-top: 12px;
+  @include custom-font(16px, 500, 24px, 0);
+  text-align: center;
+}
+.repayment-wrapper {
+  padding: 4px 12px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  @include custom-font(14px, 700, 24px, 0.35px);
+  color: #6b7280;
+
+  span {
+    &.your_apply {
+      @include custom-font(14px, 400, 24px, 0.35px);
+    }
+  }
+}
+.SelectOptionsMainContainer .subHeadingContainer .subHeading {
+  &.subHeading_repayemnet {
+    @include custom-font(16px, 700, 24px, 0px);
+    color: #231f20;
+    span {
+      @include custom-font(16px, 500, 24px, 0px);
+    }
+  }
+}
+
+.content-details-repayment{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+}
+.setp_wrapper_repayment {
+  margin: 28px 0 60px 0;
+}
+.fdContents .fdDetails .value {
+  .roundBackgroundIcon.roundBackgroundIcon-repayment {
+    @include custom-width-height(24px, 24px);
+    background-color: #ffffff;
+    img {
+      @include custom-width-height(14px, 14px);
+      filter: unset;
+      margin-right: 0;
+    }
+  }
+}
+.renewalContentContainer_repayment {
+  padding-bottom: 30px;
+}
+.repayment_no_bottom {
+  padding-bottom: 0;
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .first-content {
     margin-bottom: 16px;
@@ -47,10 +126,73 @@
   .bottomLightText_repayment_success {
     padding-top: 16px;
   }
+  .renewalContentContainer .renewalHeadCount {
+    &.renewalHeadCount_repayment {
+      display: block;
+    }
+  }
+  .SelectOptionsMainContainer .subHeadingContainer .subHeading {
+    &.subHeading_repayemnet {
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+      }
+    }
+  }
 }
+
 @media only screen and (max-width: 767px) {
+  .content-details-repayment{
+    .add_data{
+     
+
+      @include custom-font(10px, 500, 14px, 0.4px);
+    }
+  }
+  
+  .renewalContentContainer .renewalHeadCount {
+    &.renewalHeadCount_repayment {
+      display: block;
+    }
+  }
+  
+  .renewalContentContainer {
+    &.renewalContentContainer_repayment::after{
+      display: block;
+  }
+  }
+  
+  .setp_wrapper_repayment{
+    margin: 0 0 40px 0;
+  }
+  .account-details-repayment{
+    margin-bottom: 20px;
+  }
+  .home-details{
+    margin-bottom: 16px;
+
+  }
+  .fdContents_repayment{
+    margin-top: 0;
+  }
+  .SelectOptionsMainContainer .subHeadingContainer .subHeading {
+    &.subHeading_repayemnet {
+      @include custom-font(12px, 700, 12.58px, 0px);
+      color: #231f20;
+      span {
+        @include custom-font(12px, 500, 14px, 0.4px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+      }
+    }
+  }
   .accountContainer-repayment {
     padding: 16px;
+
   }
   .subHeading-repayment {
     margin-bottom: 8px;
