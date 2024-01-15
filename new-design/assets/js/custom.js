@@ -322,9 +322,14 @@ function radioButtonAction(id, element) {
 /*****************radio button BMT-265 end******************/
 
 /*****************terms and condition checkbbox BMT-265 ******************/
-function checkboxTandC() {
+function checkboxTandC(id) {
+  var radio = document.getElementById(id);
   var element = document.getElementById("continueButton");
-  element.disabled = false;
+  if (radio.checked) {
+    element.disabled = false;
+  } else {
+    element.disabled = true;
+  }
 }
 /*****************open sucess toast BMT-265 ******************/
 function openSucessToast() {
