@@ -7556,6 +7556,43 @@ select {
   vertical-align: sub;
 }
 
+.accountDetailsBox .accountListContainer.accountListContainer_lfd_data {
+  min-height: 400px;
+}
+
+.modal .modal-content .modal-body.modal-body-loan {
+  padding: 40px 32px;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading.heading-lfd {
+  margin-left: 52px;
+  text-align: left;
+}
+.modal .modal-content .modal-body .info-heading-container.lfd-circle {
+  position: relative;
+  display: initial !important;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading-image.lfd-img {
+  position: absolute;
+  left: 0;
+  margin-right: 0;
+}
+
+.otpBox.percent-loan {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #231f20;
+  margin: 35px 0 40px 0;
+}
+
+.radio_div {
+  margin-right: 10px;
+}
+
 .boldHeader-bottom-margin p.small-text_lfd {
   font-size: 14px;
   font-weight: 400;
@@ -7740,6 +7777,9 @@ p.notify_lfd {
   .customRedBtn.themeRedBtn_mob {
     display: none;
   }
+  .accountDetailsBox .accountListContainer.accountListContainer_lfd_data {
+    min-height: 0;
+  }
   .accountContainer .accountDetailsBox.accountDetailsBox_lfd {
     border-bottom: none;
     margin-bottom: 0;
@@ -7803,6 +7843,30 @@ p.notify_lfd {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .radio_div.first-check-box {
+    margin-bottom: 12px;
+  }
+  .accountDetailsBox .accountListContainer.accountListContainer_lfd_data {
+    min-height: 0;
+  }
+  .otpBox.percent-loan {
+    display: block;
+    justify-content: left;
+    place-items: left !important;
+    align-items: left !important;
+    margin: 12px 0 24px 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    flex-direction: column;
+  }
+  .modal .modal-content .modal-body.modal-body-loan {
+    padding: 32px;
+  }
+  .modal .modal-content .modal-body .info-heading-container .info-heading.heading-lfd {
+    margin-left: 40px;
+  }
   .otherAccountDetails_lfd {
     display: initial;
   }
@@ -8193,7 +8257,7 @@ input[type=number] {
   align-items: center;
 }
 
-.fd_content_min_height {
+.fd_content_min_height_profile {
   min-height: calc(70vh - 127px);
 }
 
@@ -8211,6 +8275,10 @@ input[type=number] {
 
 .no_certificate_wrapper_min_height {
   min-height: calc(40vh - 150px);
+}
+
+.quick_min_height {
+  min-height: calc(40vh - 300px);
 }
 
 .no_certificate_wrapper {
@@ -8468,6 +8536,89 @@ input[type=number] {
   }
   .buttonContainer button.themeRedBtn.themeRedBtn_profile {
     height: 40px;
+  }
+}
+.first-content {
+  display: flex;
+  place-items: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.subHeading-repayment {
+  margin-bottom: 0;
+}
+
+.bottomLightText_repayment_success {
+  padding-top: 28px;
+  border-top: 1px solid #D6D6D6;
+}
+
+.fdContents.fdContents-repayment {
+  margin: 20px 0 28px 0;
+}
+
+.email-repayment {
+  border-bottom: 1px solid #231f20;
+}
+
+.heading-repayment {
+  margin-bottom: 24px;
+  display: flex;
+  place-items: center;
+  align-items: center;
+}
+
+.status_wrapper {
+  padding: 4px 8px;
+  display: flex;
+  place-items: center;
+  align-items: center;
+  background: linear-gradient(0deg, #bef4d2, #bef4d2);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #17823e;
+}
+.status_wrapper.status_wrapper_refresh {
+  color: #bd9400;
+  background: linear-gradient(0deg, #fff0bc, #fff0bc);
+}
+.status_wrapper .status-img {
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .first-content {
+    margin-bottom: 16px;
+  }
+  .bottomLightText_repayment_success {
+    padding-top: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .accountContainer-repayment {
+    padding: 16px;
+  }
+  .subHeading-repayment {
+    margin-bottom: 8px;
+  }
+  .first-content {
+    margin-bottom: 16px;
+  }
+  .heading-repayment {
+    margin-bottom: 12px;
+  }
+  .remove-bottom {
+    margin-bottom: 0 !important;
+  }
+  .bottomLightText_repayment_success {
+    padding-top: 16px;
+  }
+  .no_certificate_wrapper_min_height.min-height-mob {
+    min-height: 0;
   }
 }
 #req_per_page {
