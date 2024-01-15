@@ -276,7 +276,7 @@
        </div>
 
        <div class="row">
-        <div class="col-12 col-lg-8 col-md-8">
+        <div class="col-12 col-lg-8 col-md-12">
             
           <div class="bankDetailsMainContainer bankDetailsMainContainer_profile">
             <div class="boldTitle boldTitle_profile ">
@@ -289,7 +289,7 @@
             <div class="section-parent removeborder">
              
               <div class="row flex-row">
-                  <div class="col-md-3 col-lg-3 col-6 custpostion">
+                  <div class="col-md-4 col-lg-3 col-6 custpostion">
                       <div class="fdDetails customefdDetails fdDetails_value">
                           <div class="label">Loan amount </div>
                           <div class="value custvalue">
@@ -301,7 +301,7 @@
                       </div>
 
                   </div>
-                  <div class="col-md-3 col-lg-3 col-6 custpostion">
+                  <div class="col-md-4 col-lg-3 col-6 custpostion">
                       <div class="fdDetails customefdDetails fdDetails_value">
                           <div class="label">Tenure </div>
                           <div class="value custvalue">
@@ -312,7 +312,7 @@
                       </div>
                   </div>
                 
-                  <div class="col-md-3 col-lg-3 col-6 custpostion">
+                  <div class="col-md-4 col-lg-3 col-6 custpostion">
                       <div class="fdDetails customefdDetails fdDetails_value">
                           <div class="label">Against FD </div>
                           <div class="value custvalue">
@@ -322,7 +322,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-3 col-lg-3 col-6 ">
+                  <div class="col-md-4 col-lg-3 col-6 ">
                     <div class="fdDetails">
                         <div class="label">Against FD </div>
                         <div class="value custvalue">
@@ -334,69 +334,148 @@
                 </div>
                   
              </div>
+             <hr>
+             <div class="row flex-row">
+              <div class="col-md-4 col-lg-3 col-6 custpostion">
+                  <div class="fdDetails customefdDetails fdDetails_value">
+                      <div class="label">Loan amount </div>
+                      <div class="value custvalue">
+                          <div class="roundBackgroundIcon_">
+                              <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
+                          </div> ₹ 15,000
+                         
+                      </div>
+                  </div>
+
+              </div>
+              <div class="col-md-4 col-lg-3 col-6 custpostion">
+                  <div class="fdDetails customefdDetails fdDetails_value">
+                      <div class="label">Tenure </div>
+                      <div class="value custvalue">
+                          <div class="roundBackgroundIcon_ ">
+                              <img src="./assets/img/icons/clock.svg" alt="icon">
+                          </div> 630 days
+                      </div>
+                  </div>
+              </div>
+            
+              <div class="col-md-4 col-lg-3 col-6 ">
+                  <div class="fdDetails customefdDetails fdDetails_value">
+                      <div class="label">Against FD </div>
+                      <div class="value custvalue">
+                          <div class="roundBackgroundIcon_">
+                              <img src="./assets/img/icons/tick_left.svg" alt="icon">
+                          </div>R2022009D 
+                      </div>
+                  </div>
+              </div>
+              
+         </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 col-md-4">
+        <div class="col-12 col-lg-4 col-md-12 cutomemt-20">
             
-          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile">
+          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile custminhight">
+            <div class="paybg">
+              <img src="./assets/img/icons/paymentbg.svg" alt="icon">
+
+            </div>
             <div class="boldTitle boldTitle_profile ">
              
               Select a payment method
             </div>
             <div class="parent">
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-12">
-                  <div class="payment-box">
+              <div class="row flex-row">
+                <div class="col-lg-4 col-md-4 col-4">
+
+                  
+                    <div class="payment-box showSingle"  target="1">
+                      <div class="paymentimg"> 
+                        <img src="./assets/img/icons/upi.svg" alt="icon">
+                       </div>
+                      <div class="payment-text">
+                        <p>UPI</p>
+                      </div>
+                    </div>
+                  </div>
+               
+                <div class="col-lg-4 col-md-4 col-4">
+                  <div class="payment-box showSingle"  target="2">
                     <div class="paymentimg"> 
-                      <img src="./assets/img/icons/email.svg" alt="icon">
+                      <img src="./assets/img/icons/netbank.svg" alt="icon">
                      </div>
                     <div class="payment-text">
-                      <p>UPI</p>
+                      <p>Net-banking</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                  <div class="payment-box">
+                <div class="col-lg-4 col-md-4 col-4">
+                  <div class="payment-box showSingle"  target="3">
                     <div class="paymentimg"> 
-                      <img src="./assets/img/icons/email.svg" alt="icon">
+                      <img src="./assets/img/icons/bankblue.svg" alt="icon">
                      </div>
                     <div class="payment-text">
-                      <p>UPI</p>
+                      <p>RTGS/NEFT</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                  <div class="payment-box">
-                    <div class="paymentimg"> 
-                      <img src="./assets/img/icons/email.svg" alt="icon">
-                     </div>
-                    <div class="payment-text">
-                      <p>UPI</p>
+                
+                  <div class="textparent customepayment custupi " id="div1">
+                      <label for="amount_number2" class="form-label formLabel">Enter your UPI ID</label>
+                      <input type="text" placeholder="UPI ID" class="form-control formControl">
+                    </div>
+               
+                  <div class="customepayment custnet" id="div2">
+                    <div class="paymentnote">
+                      <p><b>Note</b> - Check your bank for maximum limit</p>
                     </div>
                   </div>
-                </div>
+               
+                  <div class="customepayment custnft" id="div3">
+                    <div class="paymentnote">
+                      <p><b>Note</b>- Proceed further to find out the next steps</p>
+                    </div>
+                  </div>
+               
 
                 
              </div>
             </div>
           </div>
         </div>
+        <div class="col-12 col-lg-12 col-md-12 mt-20">
 
-       </div>
-        <div class="col col-md-12 col-lg-12">
-          <div class="buttonContainer" id="repayment-buttonContainer">
-            <button
-              class="btn themeRedBtn themeRedBtn_profile"
-              id="continueButton"
-              disabled
-              onclick="handleClickModal('myModal')"
-            >
-            Submit
-              <img src="./assets/img/arrow-right.svg" alt="icons" />
-            </button>
+          
+            
+          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile">
+            <div class="boldTitle boldTitle_profile ">
+              Disclaimer
+            </div>
+            <div class="section-parent removeborder">
+             
+              <div class="row flex-row">
+
+                <div class="disclaimer">
+                  <p>By clicking this button you will be redirected to payment gateway. kindly check below instructions before proceeding to payments. <br>
+                    A. Kindly check your daily withdrawal limit of your internet banking/debit card transactions. <br>
+                    B. Kindly enter correct debit card number and review expiry of your debit card. <br>
+                    C. Kindly use alternative bank details incase your bank is not register with our payment gateway.<br>
+                    <span id="dots"></span><span id="more">
+                      D. Do not refresh the page<br>
+                    E. Do not leave your transaction for long time 
+                    </span></p>
+                    <div class="text-center">
+                      <button class="custdesignbtn" onclick="myFunction()" id="myBtn">Show more </button>
+                    </div>
+  
+                </div>
+               </div>
+            </div>
           </div>
         </div>
+
+       </div>
       </div>
       <div class="communication_wrapper">
         <div class="live_tune_connect">
@@ -426,5 +505,33 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/chart.min.js"></script>
     <script src="./assets/js/custom.js"></script>
+    
+
+   <script>
+    $('.showSingle').click(function () {
+    $('.customepayment').hide();
+    $('.showSingle').removeClass('greenactive');
+    $(this).addClass("greenactive")
+    $('#div' + $(this).attr('target')).show();
+});
+   </script>
+   <script>
+    function myFunction() {
+      
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Show more  "; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Show less "; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
   </body>
 </html>
+
