@@ -810,3 +810,125 @@ select {
     background: #fff;
 }
 }
+
+
+// ////////// repayment/////////
+.m-b16 {
+    margin-bottom: 16px;
+}
+.section-parent.removeborder {
+    border: 0px;
+}
+.payment-text p {
+    margin-bottom: 0px;
+}
+.parent .col-lg-4.col-md-4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.payment-box {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    min-width: 120px;
+}
+.payment-text p {
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+.payment-box:hover {
+    background: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.payment-box:hover .payment-text p {
+    background: #000;
+    color: #fff;
+}
+.payment-box:hover .paymentimg img {
+    background: #fff;
+   
+}
+.paymentimg img {
+    background: #ccc;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    padding: 8px;
+}
+.paymentnote p {
+    color: #6B7280;
+    margin-bottom: 0px;
+    padding:6px 12px;
+    background: #F3F4F6;
+    border-radius: 8px;
+}
+.custnft{
+    display: none;
+
+}
+.custnet{
+    display: none;
+
+}
+.custupi{
+    display: none;
+
+}
+.payment-box.greenactive {
+    background: #000;
+}
+.payment-box.greenactive .payment-text p {
+    color: #fff;
+}
+.payment-box.greenactive .paymentimg img {
+    background: #fff;
+}
+.custminhight{
+    min-height: 314px;
+}
+.custminhight {
+    min-height: 314px;
+    position: relative;
+}
+.paybg {
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+}
+.paybg img {
+    width: 90%;
+}
+.paymentnote {
+    margin-top: 24px;
+}
+#more {display: none;}
+.disclaimer p {
+    background: unset;
+    color: #333333;
+}
+.custdesignbtn {
+    border: 0px;
+    background: 0px;
+    color: #1084CB;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+.cutomemt-20{
+    margin-top: 12px;
+}
+}
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+    .payment-box {
+        min-width: 100px;
+    }
+    .payment-box {
+        padding: 12px 0px;
+        min-width: 90px;
+    }
+
+}
