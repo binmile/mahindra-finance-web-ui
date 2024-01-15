@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahindra Finance :: Preclosure</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/_265_css.scss" />
+  </head>
+
+  <body>
+    <!-- Top-navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div id="hamburgerIcon">
+            <span></span> <span></span> <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item no_tablet_view">
+              <div class="mob_menu_user_profile">
+                <div class="userIconImage">
+                  <img src="./assets/img/avatar.png" alt="user icon" />
+                </div>
+                Vikram Kumar Sahu
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >FD renewal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preclosure.html">Preclosure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD repayment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Download</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon">
+                  <img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                  />
+                </span>
+              </a>
+              <ul
+                class="dropdown-menu mob_menu_download"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/Certificate.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    TDS certificate
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-plus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Form 11 G/H submission
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-text.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Non - cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/percent.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Interest paid / accrued details
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown userAvatar">
+              <img src="./assets/img/avatar.png" alt="user" class="no_view" />
+              <a
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Profile</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon">
+                  <img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                  />
+                </span>
+              </a>
+              <ul
+                class="dropdown-menu mob_sub_profile"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/user.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    My account
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/edit.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    CKYC update
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/check-circle.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Avail employee benefit
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Other fixed deposits
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item logoutLink" href="#">
+                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                    Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mob_menu_logout no_tablet_view">
+              <a href="#">
+                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log
+                out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Top-navbar End -->
+    <div class="container mb-20">
+      <div class="row animate__animated animate__fadeInUp">
+        <div class="col-12 mt-20 mb-20">
+          <a href="#" class="commonBackBtn">
+            <img src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back
+          </a>
+        </div>
+        <div class="col-12">
+          <div class="bankDetailsMainContainer">
+            <div class="boldTitle boldTitle_profile">
+              Complete the transfer in 3 easy steps
+            </div>
+            <div class="row" id="make_top">
+              <div class="col-lg-12 col-sm-12 col-md-12">
+                <div class="account-details-repayment">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                      <div class="home-details">
+                        <div class="repayment_circle">
+                          <img src="./assets/img/icons/group_home.svg" alt="icon" />
+                        </div>
+                        <div class="repayment-content">
+                          Mahindra finance account details
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10">
+                      <div class="row flex-row">
+                        <div class="col-md-4 col-lg-4">
+                          <div class="fdContents fdContents_repayment">
+                            <div
+                              class="fdDetails fdContents_width fdDetails_value"
+                            >
+                              <div class="label label_success">
+                                Benificiary name
+                              </div>
+                              <div class="value value_success">
+                                <div
+                                  class="roundBackgroundIcon roundBackgroundIcon-repayment"
+                                >
+                                  <img
+                                    src="./assets/img/icons/user-sign.svg"
+                                    alt="icon"
+                                  />
+                                </div>
+                                MMFSL Fixed deposit account
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                          <div class="fdContents fdContents_repayment">
+                            <div
+                              class="fdDetails fdContents_width fdDetails_value"
+                            >
+                              <div class="label label_success">
+                                Account number
+                              </div>
+                              <div class="value value_success">
+                                <div
+                                  class="roundBackgroundIcon roundBackgroundIcon-repayment"
+                                >
+                                  <img
+                                    src="./assets/img/icons/bank.svg"
+                                    alt="icon"
+                                  />
+                                </div>
+                                912020040597254
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row flex-row">
+                        <div class="col-md-4 col-lg-4">
+                          <div class="fdContents fdContents_repayment">
+                            <div
+                              class="fdDetails fdContents_width fdDetails_value"
+                            >
+                              <div class="label label_success">Bank name</div>
+                              <div class="value value_success">
+                                <div
+                                  class="roundBackgroundIcon roundBackgroundIcon-repayment"
+                                >
+                                  <img
+                                    src="./assets/img/icons/bank.svg"
+                                    alt="icon"
+                                  />
+                                </div>
+                                Axis bank, Mumbai branch
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                          <div class="fdContents fdContents_repayment">
+                            <div
+                              class="fdDetails fdContents_width fdDetails_value"
+                            >
+                              <div class="label label_success">IFSC code</div>
+                              <div class="value value_success">
+                                <div
+                                  class="roundBackgroundIcon roundBackgroundIcon-repayment"
+                                >
+                                  <img
+                                    src="./assets/img/icons/minus.svg"
+                                    alt="icon"
+                                  />
+                                </div>
+                                UTIB0000004
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-sm-12 col-md-12">
+              <div class="setp_wrapper_repayment">
+                <div class="row">
+                  <div class="renewalContentContainer renewalContentContainer_repayment">
+                    <div class="SelectOptionsMainContainer">
+                      <div class="subHeadingContainer">
+                        <div class="subHeading subHeading_repayemnet">
+                          <span class="renewalHeadCount renewalHeadCount_repayment">
+                            <img src="./assets/img/icons/minus.svg" alt="icon"
+                          /></span>
+                          <div class="content-details-repayment">
+                          <div>
+                            Step 1 -&nbsp;
+                          </div>
+                          <div class="add_data">
+                            <span> Use the above details to </span> add
+                            MMFSL as a beneficiary
+                          </div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="renewalContentContainer renewalContentContainer_repayment">
+                    <div class="SelectOptionsMainContainer">
+                      <div class="subHeadingContainer">
+                        <div class="subHeading subHeading_repayemnet">
+                          <span class="renewalHeadCount renewalHeadCount_repayment">
+                            <img
+                              src="./assets/img/icons/pencil-red.svg"
+                              alt="icon" /></span
+                          >
+                          <div class="content-details-repayment">
+                          <div>
+                            Step 2 -&nbsp;
+
+                          </div>
+                          <div class="add_data">
+                            <span> Make single transfer of investment amount of </span>
+
+                            ₹10,000
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="renewalContentContainer noLine repayment_no_bottom">
+                    <div class="SelectOptionsMainContainer">
+                      <div class="subHeadingContainer">
+                        <div class="subHeading subHeading_repayemnet">
+                          <span class="renewalHeadCount renewalHeadCount_repayment">
+                            <img
+                              src="./assets/img/icons/arrow-red.svg"
+                              alt="icon" /></span
+                          >
+                          <div class="content-details-repayment">
+                            <div>
+                                Step 3 -&nbsp;
+                              </div>
+                              <div class="add_data">
+                                <span> Mention the application number </span>
+                                FMEMFS23D353A15  <span class="remark"> in the remarks. </span>
+                            </div>
+                             
+                          </div>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-sm-12 col-md-12">
+              <div class="repayment-wrapper">
+                Note -
+                <span class="your_apply"> Your application no. </span>
+                FMEMFS23D353A15
+                <span class="your_apply">
+                  will be sent to your email ID and mobile via SMS
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-12">
+          <div class="buttonContainer" id="repayment-buttonContainer">
+            <button
+              class="btn themeRedBtn themeRedBtn_profile"
+              id="continueButton"
+              onclick="navigateToDetailsPage()"
+            >
+              Submit <img src="./assets/img/arrow-right.svg" alt="icons" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/chart.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>

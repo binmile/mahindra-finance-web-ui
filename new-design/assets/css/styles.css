@@ -8590,6 +8590,109 @@ input[type=number] {
   margin-right: 4px;
 }
 
+.account-details-repayment {
+  border-radius: 8px;
+  padding: 16px;
+  background: #f3f4f6;
+  margin: 24px 0 28px 0;
+}
+
+.home-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.repayment_circle {
+  background-color: #F3F4F6;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.repayment_circle img {
+  width: 33px;
+  height: 31px;
+}
+
+.repayment-content {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.repayment-wrapper {
+  padding: 4px 12px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  color: #6b7280;
+}
+.repayment-wrapper span.your_apply {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+.SelectOptionsMainContainer .subHeadingContainer .subHeading.subHeading_repayemnet {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #231f20;
+}
+.SelectOptionsMainContainer .subHeadingContainer .subHeading.subHeading_repayemnet span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.content-details-repayment {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+}
+
+.setp_wrapper_repayment {
+  margin: 28px 0 60px 0;
+}
+
+.fdContents .fdDetails .value .roundBackgroundIcon.roundBackgroundIcon-repayment {
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+}
+.fdContents .fdDetails .value .roundBackgroundIcon.roundBackgroundIcon-repayment img {
+  width: 14px;
+  height: 14px;
+  filter: unset;
+  margin-right: 0;
+}
+
+.renewalContentContainer_repayment {
+  padding-bottom: 30px;
+}
+
+.repayment_no_bottom {
+  padding-bottom: 0;
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .first-content {
     margin-bottom: 16px;
@@ -8597,8 +8700,58 @@ input[type=number] {
   .bottomLightText_repayment_success {
     padding-top: 16px;
   }
+  .renewalContentContainer .renewalHeadCount.renewalHeadCount_repayment {
+    display: block;
+  }
+  .SelectOptionsMainContainer .subHeadingContainer .subHeading.subHeading_repayemnet span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+  }
 }
 @media only screen and (max-width: 767px) {
+  .content-details-repayment .add_data {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+  }
+  .renewalContentContainer .renewalHeadCount.renewalHeadCount_repayment {
+    display: block;
+  }
+  .renewalContentContainer.renewalContentContainer_repayment::after {
+    display: block;
+  }
+  .setp_wrapper_repayment {
+    margin: 0 0 40px 0;
+  }
+  .account-details-repayment {
+    margin-bottom: 20px;
+  }
+  .home-details {
+    margin-bottom: 16px;
+  }
+  .fdContents_repayment {
+    margin-top: 0;
+  }
+  .SelectOptionsMainContainer .subHeadingContainer .subHeading.subHeading_repayemnet {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12.58px;
+    letter-spacing: 0px;
+    color: #231f20;
+  }
+  .SelectOptionsMainContainer .subHeadingContainer .subHeading.subHeading_repayemnet span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+  }
   .accountContainer-repayment {
     padding: 16px;
   }
