@@ -331,6 +331,11 @@ function checkboxTandC(id) {
     element.disabled = true;
   }
 }
+
+function enableButton() {
+  document.getElementById("myButton").disabled = false;
+}
+
 /*****************open sucess toast BMT-265 ******************/
 function openSucessToast() {
   var element = document.getElementById("sucessToastMessage");

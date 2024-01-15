@@ -7416,6 +7416,43 @@ select {
   vertical-align: sub;
 }
 
+.accountDetailsBox .accountListContainer.accountListContainer_lfd_data {
+  min-height: 400px;
+}
+
+.modal .modal-content .modal-body.modal-body-loan {
+  padding: 40px 32px;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading.heading-lfd {
+  margin-left: 52px;
+  text-align: left;
+}
+.modal .modal-content .modal-body .info-heading-container.lfd-circle {
+  position: relative;
+  display: initial !important;
+}
+.modal .modal-content .modal-body .info-heading-container .info-heading-image.lfd-img {
+  position: absolute;
+  left: 0;
+  margin-right: 0;
+}
+
+.otpBox.percent-loan {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #231f20;
+  margin: 35px 0 40px 0;
+}
+
+.radio_div {
+  margin-right: 10px;
+}
+
 .boldHeader-bottom-margin p.small-text_lfd {
   font-size: 14px;
   font-weight: 400;
@@ -7600,6 +7637,9 @@ p.notify_lfd {
   .customRedBtn.themeRedBtn_mob {
     display: none;
   }
+  .accountDetailsBox .accountListContainer.accountListContainer_lfd_data {
+    min-height: 0;
+  }
   .accountContainer .accountDetailsBox.accountDetailsBox_lfd {
     border-bottom: none;
     margin-bottom: 0;
@@ -7663,6 +7703,30 @@ p.notify_lfd {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .radio_div.first-check-box {
+    margin-bottom: 12px;
+  }
+  .accountDetailsBox .accountListContainer.accountListContainer_lfd_data {
+    min-height: 0;
+  }
+  .otpBox.percent-loan {
+    display: block;
+    justify-content: left;
+    place-items: left !important;
+    align-items: left !important;
+    margin: 12px 0 24px 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    flex-direction: column;
+  }
+  .modal .modal-content .modal-body.modal-body-loan {
+    padding: 32px;
+  }
+  .modal .modal-content .modal-body .info-heading-container .info-heading.heading-lfd {
+    margin-left: 40px;
+  }
   .otherAccountDetails_lfd {
     display: initial;
   }
