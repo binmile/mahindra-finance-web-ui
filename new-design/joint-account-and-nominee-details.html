@@ -1,583 +1,1000 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahindra Finance :: Single Account Holder</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Top-navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/img/logo.svg" alt="Logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <div id="hamburgerIcon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item no_tablet_view">
-                        <div class="mob_menu_user_profile">
-                            <div class="userIconImage">
-                                <img src="./assets/img/avatar.png" alt="user icon" />
-                            </div>
-                            Vikram Kumar Sahu
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">FD renewal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="preclosure.html">Preclosure</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Loan against FD repayment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Loan against FD</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>Download</span>
-                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
-                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
-                        </a>
-                        <ul class="dropdown-menu mob_menu_download" aria-labelledby="dropdown09">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/Certificate.svg" alt="icon" class="menuIcon" /> TDS certificate
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-plus.svg" alt="icon" class="menuIcon" /> Form 15 G/H submission
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-text.svg" alt="icon" class="menuIcon" /> Cumulative letter
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Non - cumulative letter
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/percent.svg" alt="icon" class="menuIcon" /> Interest paid / accrued details
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown userAvatar">
-                        <img src="./assets/img/avatar.png" alt="user" class="no_view" />
-                        <a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>Profile</span>
-                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
-                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
-                        </a>
-                        <ul class="dropdown-menu mob_sub_profile" aria-labelledby="dropdown09">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/user.svg" alt="icon" class="menuIcon" /> My account
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/edit.svg" alt="icon" class="menuIcon" /> CKYC update
-                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/check-circle.svg" alt="icon" class="menuIcon" /> Avail employee benefit <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Other fixed deposits <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item logoutLink" href="#">
-                                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log out
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mob_menu_logout no_tablet_view">
-                        <a href="#">
-                            <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
-                            Log out
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div id="hamburgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item no_tablet_view">
+              <div class="mob_menu_user_profile">
+                <div class="userIconImage">
+                  <img src="./assets/img/avatar.png" alt="user icon" />
+                </div>
+                Vikram Kumar Sahu
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >FD renewal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preclosure.html">Preclosure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD repayment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Download</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_menu_download"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/Certificate.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    TDS certificate
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-plus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Form 15 G/H submission
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-text.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Non - cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/percent.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Interest paid / accrued details
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown userAvatar">
+              <img src="./assets/img/avatar.png" alt="user" class="no_view" />
+              <a
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Profile</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_sub_profile"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/user.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    My account
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/edit.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    CKYC update
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/check-circle.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Avail employee benefit
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Other fixed deposits
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item logoutLink" href="#">
+                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                    Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mob_menu_logout no_tablet_view">
+              <a href="#">
+                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                Log out
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!--Top-navbar End -->
 
     <div class="container mb-20">
-        <div class="row animate__animated animate__fadeInUp">
-            <div class="col col-md-12 mt-20"><a href="#" class="commonBackBtn"><img
-                        src="./assets/img/icons/chevron-left.svg" alt="icon" /> Back</a></div>
-            <div class="col col-md-12 mt-20">
-                <div class="cardContainer accountContainer">
-                    <div class="container p-0">
-                        <div class="row">
-                            <div class="col col-md-7">
-                                <div class="boldHeading">
-                                    Customise your renewal plan
+      <div class="row animate__animated animate__fadeInUp">
+        <div class="col col-md-12 mt-20">
+          <a href="#" class="commonBackBtn"
+            ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
+            Back</a
+          >
+        </div>
+        <div class="col col-md-12 mt-20">
+          <div class="cardContainer accountContainer">
+            <div class="container p-0">
+              <div class="row">
+                <div class="col col-md-7">
+                  <div class="boldHeading">Customise your renewal plan</div>
+                  <div>
+                    <div class="row colBorder">
+                      <div class="renewalContentContainer">
+                        <div class="SelectOptionsMainContainer">
+                          <div class="subHeadingContainer">
+                            <div class="subHeading">
+                              <span class="renewalHeadCount"> 01</span>
+                              Select from the options for renewal
+                              <div class="info-icon custom-tooltip">
+                                <img
+                                  src="./assets/img/icons/info-icon-black.svg"
+                                  alt="icon"
+                                />
+                                <div
+                                  class="tooltip-text tooltip_mobile tooltip_Text_responsive"
+                                >
+                                  Total expected balance at term end
                                 </div>
-                                <div>
-                                    <div class="row colBorder">
-                                        <div class="renewalContentContainer">
-                                            <div class="SelectOptionsMainContainer">
-                                                <div class="subHeadingContainer">
-                                                    <div class="subHeading">
-                                                        <span class="renewalHeadCount"> 01</span>
-                                                        Select from the options for renewal
-                                                    <div class="info-icon custom-tooltip">
-                                                        <img src="./assets/img/icons/info-icon-black.svg" alt="icon" />
-                                                        <div class="tooltip-text tooltip_mobile tooltip_Text_responsive">Total expected
-                                                            balance at term end</div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                                <div class="quickActionBox renewalQuickActionBox">
-                                                    <div class="quickActionTabs quickActionTabs_mob_screen"
-                                                        data-toggle="buttons" id="quickActionElements">
-                                                        <label
-                                                            class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                            id="elementOption1">
-                                                            <input type="radio" name="type" value="1"
-                                                                data-tenure="elementOption1" autocomplete="off">
-                                                            <div class="quickActionLabel">Principal</div>
-                                                        </label>
-                                                        <label
-                                                            class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                            id="elementOption2">
-                                                            <input type="radio" name="type" value="2"
-                                                                data-tenure="elementOption2" autocomplete="off">
-                                                            <div class="quickActionLabel">Principal + Interest </div>
-                                                        </label>
-                                                        <label
-                                                            class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                            id="elementOption3">
-                                                            <input type="radio" name="type" value="3"
-                                                                data-tenure="elementOption3" autocomplete="off">
-                                                            <div class="quickActionLabel">Partial renewal</div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rightSideSubHeading">
-                                                <div class="subHeadingContainer">
-                                                    <div class="subHeading">
-                                                        Renewal amount
-                                                    <div class="info-icon custom-tooltip">
-                                                        <img src="./assets/img/icons/info-icon-black.svg" alt="icon" />
-                                                        <div class="tooltip-text tooltip_mobile tooltip_Text_expected">Total expected
-                                                            balance at term end</div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                                <div class="renewalInputBoxContainer">
-                                                    <div class="renewalInputBox">
-                                                        <img src="./assets/img/icons/rupeeIcon_black.svg"
-                                                            class="renewalInputBoxYellowImg" alt="icons" />
-                                                        <input type="text" name="type" value="20,000"
-                                                            autocomplete="off">
-                                                    </div>
-                                                    <div class="renewalInputBoxImg">
-                                                        <img src="./assets/img/icons/cash.svg" alt="icons" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="renewalContentContainer">
-                                        <div class="SelectOptionsMainContainer">
-                                            <div class="subHeadingContainer">
-                                                <div class="subHeading">
-                                                    <span class="renewalHeadCount"> 02</span>Select tenure (months)
-                                                </div>
-                                            </div>
-                                            <div class="quickActionBox renewalQuickActionBox">
-                                                <div class="quickActionTabs quickActionTabs_mob_screen"
-                                                    data-toggle="buttons" id="quickActionElements1">
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOption5">
-                                                        <input type="radio" name="type" value="1"
-                                                            data-tenure="elementOption5" autocomplete="off">
-                                                        <div class="quickActionLabel">12</div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOption6">
-                                                        <input type="radio" name="type" value="2"
-                                                            data-tenure="elementOption6" autocomplete="off">
-                                                        <div class="quickActionLabel">15</div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOption7">
-                                                        <input type="radio" name="type" value="3"
-                                                            data-tenure="elementOption7" autocomplete="off">
-                                                        <div class="quickActionLabel">24</div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOption10">
-                                                        <input type="radio" name="type" value="3"
-                                                            data-tenure="elementOption10" autocomplete="off">
-                                                        <div class="quickActionLabel">36</div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOptionA">
-                                                        <input type="radio" name="type" value="3"
-                                                            data-tenure="elementOptionA" autocomplete="off">
-                                                        <div class="quickActionLabel">42</div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOptionB">
-                                                        <input type="radio" name="type" value="3"
-                                                            data-tenure="elementOptionB" autocomplete="off">
-                                                        <div class="quickActionLabel">48</div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOptionC">
-                                                        <input type="radio" name="type" value="3"
-                                                            data-tenure="elementOptionC" autocomplete="off">
-                                                        <div class="quickActionLabel">60</div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <div class="renewalContentContainer noLine">
-                                        <div class="SelectOptionsMainContainer">
-                                            <div class="subHeadingContainer">
-                                                <div class="subHeading">
-                                                    <span class="renewalHeadCount"> 03</span>Select when you wish to
-                                                    receive interest
-                                                    <div class="info-icon custom-tooltip">
-                                                        <img src="./assets/img/icons/info-icon-black.svg" alt="icon" />
-                                                        <div class="tooltip-text tooltip_mobile tooltip_Text_responsive">Total expected
-                                                            balance at term end</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="quickActionBox renewalQuickActionBox">
-                                                <div class="quickActionTabs quickActionTabs_mob_screen"
-                                                    data-toggle="buttons" id="quickActionElements2">
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOption8">
-                                                        <input type="radio" name="type" value="1"
-                                                            data-tenure="elementOption8" autocomplete="off">
-                                                        <div class="quickActionLabel">On maturity
-                                                            <span class="boxRadioButtonYellowBadge">
-                                                                <img src="./assets/img/icons/yellow_badge.svg"
-                                                                    alt="icons" />
-                                                            </span>
-                                                        </div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOptionJ">
-                                                        <input type="radio" name="type" value="2"
-                                                            data-tenure="elementOptionJ" autocomplete="off">
-                                                        <div class="quickActionLabel">Yearly
-                                                        </div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOptionK">
-                                                        <input type="radio" name="type" value="3"
-                                                            data-tenure="elementOptionK" autocomplete="off">
-                                                        <div class="quickActionLabel">Half yearly
-                                                        </div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOptionL">
-                                                        <input type="radio" name="type" value="3"
-                                                            data-tenure="elementOptionL" autocomplete="off">
-                                                        <div class="quickActionLabel">Quarterly
-                                                        </div>
-                                                    </label>
-                                                    <label
-                                                        class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
-                                                        id="elementOptionM">
-                                                        <input type="radio" name="type" value="3"
-                                                            data-tenure="elementOptionM" autocomplete="off">
-                                                        <div class="quickActionLabel">Monthly
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="subHeading2"> <span class="subHeadingIcons2">
-                                                    <img src="./assets/img/icons/yellow_badge.svg" alt="icons" /></span>
-                                                Interest rates are best when payout is on maturity </div>
-                                        </div>
-                                    </div>
-                                        <div class="noteContent no-border-top">
-                                            <span class="noteText">Note: </span>The interest will be applicable on the
-                                            renewal day, to check the current rates <a href="javascript:;" onclick="handleClickModal('interestRateModal')">click
-                                                here</a>
-                                        </div>
-                                    </div>
-                                </div>
+                              </div>
                             </div>
-                            <div class="col col-md-5">
-                                <div class="accountDetailsBox renewalAccountDetailsBox">
-                                    <div class="right_side_data">
-                                        <div class="fixed_deposit_wrapper" id="renewalRightSideWrapper">
-                                            <div class="renewalBoldTitle">Joint account holder details (OTP required)
-                                            </div>
-                                            <div class="fdContents fdContents_post_closure ">
-                                                <div class="fdDetails fdDetails_mob_post renewal_fdDetails">
-                                                    <div class="label">Name</div>
-                                                    <div class="rightIcon"><img src="./assets/img/icons/singleUser.svg"
-                                                            alt="icon" />Vikram Kumar Sahu</div>
-                                                </div>
-                                                <div class="fdDetails">
-                                                    <div class="label">Mobile number </div>
-                                                    <div class="rightIcon"><img
-                                                            src="./assets/img/icons/PhoneWhiteBg.svg" alt="icon" />
-                                                        9282930391</div>
-                                                </div>
-                                            </div>
-                                            <div class="noteContent">
-                                                <span class="noteText">Note </span> - The interest will be applicable on
-                                                the renewal day, to check the current rates
-                                            </div>
-                                        </div>
-                                        <div class="fixed_deposit_wrapper" id="renewalRightSideWrapperTwo">
-                                            <div class="renewalBoldTitle">Nominee details <span class="updateLink"><a
-                                                        href="renewal-form.html">
-                                                        <img src="./assets/img/icons/edit-2.svg" alt="icon" />
-                                                        update</a></span></div>
-                                            <div class="fdContents fdContents_post_closure ">
-                                                <div class="fdDetails fdDetails_mob_post renewal_fdDetails">
-                                                    <div class="label">Nominee’s name</div>
-                                                    <div class="rightIcon"><img src="./assets/img/icons/singleUser.svg"
-                                                            alt="icon" />Raman Kumar Sahu </div>
-                                                </div>
-                                                <div class="fdDetails">
-                                                    <div class="label">Nominee’s relation </div>
-                                                    <div class="rightIcon"><img src="./assets/img/icons/duoUser.svg"
-                                                            alt="icon" />
-                                                        Father</div>
-                                                </div>
-                                            </div>
-                                            <div class="noteContent">
-                                                <span class="noteText">Note </span> - You can add or edit a nominee's
-                                                details.
-                                            </div>
-                                        </div>
-                                    </div>
+                          </div>
+                          <div class="quickActionBox renewalQuickActionBox">
+                            <div
+                              class="quickActionTabs quickActionTabs_mob_screen"
+                              data-toggle="buttons"
+                              id="quickActionElements"
+                            >
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOption1"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="1"
+                                  data-tenure="elementOption1"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">Principal</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOption2"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="2"
+                                  data-tenure="elementOption2"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">
+                                  Principal + Interest
                                 </div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOption3"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="3"
+                                  data-tenure="elementOption3"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">
+                                  Partial renewal
+                                </div>
+                              </label>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-md-12 animate__animated animate__fadeInUp">
-                <div class="buttonContainer">
-                    <button class="btn themeRedBtn themeWhiteButton me-3"> Cancel
-                        <img src="./assets/img/icons/minus-circle.svg" alt="icons" /></button>
-                    <button class="btn themeRedBtn" id="continueButton" onclick="handleClickModal('isModifyNomineeModal')"> Modify
-                        <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Start -->
-    <div class="modal fade" id="interestRateModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="info-heading-container">
-                        <div class="info-heading-image"><img
-                                src="./assets/img/icons/file-text-white.svg"
-                                alt="icon" /></div>
-                                <div class="info-heading">Samruddhi scheme application for deposits upto ₹ 5 crore</div>
+                        <div class="rightSideSubHeading">
+                          <div class="subHeadingContainer">
+                            <div class="subHeading">
+                              Renewal amount
+                              <div class="info-icon custom-tooltip">
+                                <img
+                                  src="./assets/img/icons/info-icon-black.svg"
+                                  alt="icon"
+                                />
+                                <div
+                                  class="tooltip-text tooltip_mobile tooltip_Text_expected"
+                                >
+                                  Total expected balance at term end
+                                </div>
+                              </div>
                             </div>
-                            <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="./assets/img/icons/close-icon-white.svg" alt="icon" />
-                            </button>
-                </div>
-                <div class="modal-body">
-                    <div class="info-heading-container">
-                    <div class="info-heading-image"><img
-                        src="./assets/img/icons/preclosure-flow/percent-red.svg"
-                        alt="icon" /></div>
-                        <div class="info-heading">Interest rates for public</div>
+                          </div>
+                          <div class="renewalInputBoxContainer">
+                            <div class="renewalInputBox">
+                              <img
+                                src="./assets/img/icons/rupeeIcon_black.svg"
+                                class="renewalInputBoxYellowImg"
+                                alt="icons"
+                              />
+                              <input
+                                type="text"
+                                name="type"
+                                value="20,000"
+                                autocomplete="off"
+                              />
+                            </div>
+                            <div class="renewalInputBoxImg">
+                              <img
+                                src="./assets/img/icons/cash.svg"
+                                alt="icons"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="renewalContentContainer">
+                        <div class="SelectOptionsMainContainer">
+                          <div class="subHeadingContainer">
+                            <div class="subHeading">
+                              <span class="renewalHeadCount"> 02</span>Select
+                              tenure (months)
+                            </div>
+                          </div>
+                          <div class="quickActionBox renewalQuickActionBox">
+                            <div
+                              class="quickActionTabs quickActionTabs_mob_screen"
+                              data-toggle="buttons"
+                              id="quickActionElements1"
+                            >
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOption5"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="1"
+                                  data-tenure="elementOption5"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">12</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOption6"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="2"
+                                  data-tenure="elementOption6"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">15</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOption7"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="3"
+                                  data-tenure="elementOption7"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">24</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOption10"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="3"
+                                  data-tenure="elementOption10"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">36</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOptionA"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="3"
+                                  data-tenure="elementOptionA"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">42</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOptionB"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="3"
+                                  data-tenure="elementOptionB"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">48</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOptionC"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="3"
+                                  data-tenure="elementOptionC"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">60</div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="renewalContentContainer noLine">
+                        <div class="SelectOptionsMainContainer">
+                          <div class="subHeadingContainer">
+                            <div class="subHeading">
+                              <span class="renewalHeadCount"> 03</span>Select
+                              when you wish to receive interest
+                              <div class="info-icon custom-tooltip">
+                                <img
+                                  src="./assets/img/icons/info-icon-black.svg"
+                                  alt="icon"
+                                />
+                                <div
+                                  class="tooltip-text tooltip_mobile tooltip_Text_responsive"
+                                >
+                                  Total expected balance at term end
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="quickActionBox renewalQuickActionBox">
+                            <div
+                              class="quickActionTabs quickActionTabs_mob_screen"
+                              data-toggle="buttons"
+                              id="quickActionElements2"
+                            >
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOption8"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="1"
+                                  data-tenure="elementOption8"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">
+                                  On maturity
+                                  <span class="boxRadioButtonYellowBadge">
+                                    <img
+                                      src="./assets/img/icons/yellow_badge.svg"
+                                      alt="icons"
+                                    />
+                                  </span>
+                                </div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOptionJ"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="2"
+                                  data-tenure="elementOptionJ"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">Yearly</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOptionK"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="3"
+                                  data-tenure="elementOptionK"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">Half yearly</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOptionL"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="3"
+                                  data-tenure="elementOptionL"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">Quarterly</div>
+                              </label>
+                              <label
+                                class="boxRadioButton boxRadioButton_mob renewalboxRadioButton"
+                                id="elementOptionM"
+                              >
+                                <input
+                                  type="radio"
+                                  name="type"
+                                  value="3"
+                                  data-tenure="elementOptionM"
+                                  autocomplete="off"
+                                />
+                                <div class="quickActionLabel">Monthly</div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="subHeading2">
+                            <span class="subHeadingIcons2">
+                              <img
+                                src="./assets/img/icons/yellow_badge.svg"
+                                alt="icons"
+                            /></span>
+                            Interest rates are best when payout is on maturity
+                          </div>
+                        </div>
+                      </div>
+                      <div class="noteContent no-border-top">
+                        <span class="noteText">Note: </span>The interest will be
+                        applicable on the renewal day, to check the current
+                        rates
+                        <a
+                          href="javascript:;"
+                          onclick="handleClickModal('interestRateModal')"
+                          >click here</a
+                        >
+                      </div>
                     </div>
-                    <div class="interestRateTable">
-                        <table border="0" class="w-100 border-none text-center">
-                            <tr rowspan="2">
-                                <td class="table-text-bold text-center border-right border-top sticky-col first-col darkBackground">&nbsp;</td>
-                                <td colspan="3" class="table-text-bold text-center border-right border-bottom border-top wd-40 sec-col">Cumulative scheme</td>
-                                <td colspan="4" class="table-text-bold text-center border-bottom wd-60 border-top thrd-col">Non - cumulative scheme</td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">Tenure</td>
-                                <td class="table-text-medium">Amount<br>Payable</td>
-                                <td class="table-text-medium">Interest<br>p.a.</td>
-                                <td class="border-right table-text-medium">Effective<br>Yield p.a.</td>
-                                <td class="table-text-medium">Interest p.a.*<br>(monthly)</td>
-                                <td class="border-right">Interest p.a.*<br>(quarterly)</td>
-                                <td class="table-text-medium">Interest p.a.*<br>(half yearly)</td>
-                                <td class="table-text-medium">Interest p.a.*<br>(yearly)</td>
-                            </tr>
-                            <tr class="border-bottom bg-white">
-                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">12 months</td>
-                                <td class="table-text-bold">5380</td>
-                                <td class="table-text-bold">7.60%</td>
-                                <td class="table-text-bold border-right">7.60%</td>
-                                <td class="table-text-bold">7.20%</td>
-                                <td class="table-text-bold border-right">7.25%</td>
-                                <td class="table-text-bold">7.35%</td>
-                                <td class="table-text-bold">7.60%</td>
-                            </tr>
-                            <tr class="border-bottom bg-white">
-                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">24 months</td>
-                                <td class="table-text-bold">5805</td>
-                                <td class="table-text-bold">7.75%</td>
-                                <td class="table-text-bold border-right">8.05%</td>
-                                <td class="table-text-bold">7.25%</td>
-                                <td class="table-text-bold border-right">7.35%</td>
-                                <td class="table-text-bold">7.50%</td>
-                                <td class="table-text-bold">7.75%</td>
-                            </tr>
-                            <tr class="border-bottom bg-white">
-                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">36 months</td>
-                                <td class="table-text-bold">6307</td>
-                                <td class="table-text-bold">8.05%</td>
-                                <td class="table-text-bold border-right">8.72%</td>
-                                <td class="table-text-bold">7.50%</td>
-                                <td class="table-text-bold border-right">7.60%</td>
-                                <td class="table-text-bold">7.80%</td>
-                                <td class="table-text-bold">8.05%</td>
-                            </tr>
-                            <tr class="border-bottom bg-white">
-                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">48 months</td>
-                                <td class="table-text-bold">6815</td>
-                                <td class="table-text-bold">8.05%</td>
-                                <td class="table-text-bold border-right">9.08%</td>
-                                <td class="table-text-bold">7.50%</td>
-                                <td class="table-text-bold border-right">7.60%</td>
-                                <td class="table-text-bold">7.80%</td>
-                                <td class="table-text-bold">8.05%</td>
-                            </tr>
-                            <tr class="border-bottom bg-white">
-                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">60 months</td>
-                                <td class="table-text-bold">7364</td>
-                                <td class="table-text-bold">8.05%</td>
-                                <td class="table-text-bold border-right">9.45%</td>
-                                <td class="table-text-bold">7.50%</td>
-                                <td class="table-text-bold border-right">7.60%</td>
-                                <td class="table-text-bold">7.80%</td>
-                                <td class="table-text-bold">8.05%</td>
-                            </tr>
-                            <tr class="border-bottom bg-white">
-                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground">Minimum amount</td>
-                                <td colspan="3" class="table-text-bold text-center border-right border-top">5000+</td>
-                                <td colspan="2" class="table-text-bold text-center border-right border-top">50000+</td>
-                                <td colspan="2" class="table-text-bold text-center border-top">25000+</td>
-                            </tr>
-                            <tr class="bg-white">
-                                <td class="table-text-bold text-center border-right border-bottom sticky-col first-col border-bottom darkBackground">&nbsp;</td>
-                                <td colspan="3" class="table-text-bold border-top text-center border-right border-left border-bottom">*Compounded annually</td>
-                                <td colspan="4" class="table-text-bold border-top text-center border-bottom">+Additional amount for fresh deposit in multiple of Rs. 1000</td>
-                            </tr>
-                        </table>
+                  </div>
+                </div>
+                <div class="col col-md-5">
+                  <div class="accountDetailsBox renewalAccountDetailsBox">
+                    <div class="right_side_data">
+                      <div
+                        class="fixed_deposit_wrapper"
+                        id="renewalRightSideWrapper"
+                      >
+                        <div class="renewalBoldTitle">
+                          Joint account holder details (OTP required)
+                        </div>
+                        <div class="fdContents fdContents_post_closure">
+                          <div
+                            class="fdDetails fdDetails_mob_post renewal_fdDetails"
+                          >
+                            <div class="label">Name</div>
+                            <div class="rightIcon">
+                              <img
+                                src="./assets/img/icons/singleUser.svg"
+                                alt="icon"
+                              />Vikram Kumar Sahu
+                            </div>
+                          </div>
+                          <div class="fdDetails">
+                            <div class="label">Mobile number</div>
+                            <div class="rightIcon">
+                              <img
+                                src="./assets/img/icons/PhoneWhiteBg.svg"
+                                alt="icon"
+                              />
+                              9282930391
+                            </div>
+                          </div>
+                        </div>
+                        <div class="noteContent">
+                          <span class="noteText">Note </span> - The interest
+                          will be applicable on the renewal day, to check the
+                          current rates
+                        </div>
+                      </div>
+                      <div
+                        class="fixed_deposit_wrapper"
+                        id="renewalRightSideWrapperTwo"
+                      >
+                        <div class="renewalBoldTitle">
+                          Nominee details
+                          <span class="updateLink"
+                            ><a href="renewal-form.html">
+                              <img
+                                src="./assets/img/icons/edit-2.svg"
+                                alt="icon"
+                              />
+                              update</a
+                            ></span
+                          >
+                        </div>
+                        <div class="fdContents fdContents_post_closure">
+                          <div
+                            class="fdDetails fdDetails_mob_post renewal_fdDetails"
+                          >
+                            <div class="label">Nominee’s name</div>
+                            <div class="rightIcon">
+                              <img
+                                src="./assets/img/icons/singleUser.svg"
+                                alt="icon"
+                              />Raman Kumar Sahu
+                            </div>
+                          </div>
+                          <div class="fdDetails">
+                            <div class="label">Nominee’s relation</div>
+                            <div class="rightIcon">
+                              <img
+                                src="./assets/img/icons/duoUser.svg"
+                                alt="icon"
+                              />
+                              Father
+                            </div>
+                          </div>
+                        </div>
+                        <div class="noteContent">
+                          <span class="noteText">Note </span> - You can add or
+                          edit a nominee's details.
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="disclaimer">**Senior citizen’s shall earn 0.25% additional rates. Employees, employee relatives, retired employees shall earn 0.35% additional rates.</div>
-                    <div class="disclaimerfooter"><span>Important</span> : Interest rate of renewed FD will depend on the applicable rate as on the day of renewal</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Modal End-->
-
-    <div class="modal fade" id="isModifyNomineeModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              >
-                <img src="./assets/img/icons/close-icon.svg" alt="icon" />
-              </button>
-              <div class="info-heading-container">
-                <div class="info-heading-image">
-                  <img
-                    src="./assets/img/icons/info-button-icon.svg"
-                    alt="icon"
-                  />
-                </div>
-                <div class="info-heading">Are you sure ?</div>
-              </div>
-              <div class="info-content">
-                This action will close your existing renewal plan on this fixed deposit. Please confirm if you wish to proceed with cancelation.
-              </div>
-              <div class="info-button-container">
-                <div class="info-button w-100">
-                  <button
-                    type="button"
-                    class="btn themeRedBtn themeWhiteButton w-100 customPd"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    No
-                  </button>
-                </div>
-                <div class="info-button w-100">
-                  <button type="button" class="themeRedBtn w-100 customPd">Yes, cancel renewal</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="col col-md-12 animate__animated animate__fadeInUp">
+          <div class="buttonContainer">
+            <button class="btn themeRedBtn themeWhiteButton me-3">
+              Cancel
+              <img src="./assets/img/icons/minus-circle.svg" alt="icons" />
+            </button>
+            <button
+              class="btn themeRedBtn"
+              id="continueButton"
+              onclick="handleClickModal('isModifyNomineeModal')"
+            >
+              Modify <img src="./assets/img/arrow-right.svg" alt="icons" />
+            </button>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- Modal Start -->
+    <div
+      class="modal fade"
+      id="interestRateModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="info-heading-container">
+              <div class="info-heading-image">
+                <img src="./assets/img/icons/file-text-white.svg" alt="icon" />
+              </div>
+              <div class="info-heading">
+                Samruddhi scheme application for deposits upto ₹ 5 crore
+              </div>
+            </div>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <img src="./assets/img/icons/close-icon-white.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="info-heading-container">
+              <div class="info-heading-image">
+                <img
+                  src="./assets/img/icons/preclosure-flow/percent-red.svg"
+                  alt="icon"
+                />
+              </div>
+              <div class="info-heading">Interest rates for public</div>
+            </div>
+            <div class="interestRateTable">
+              <table border="0" class="w-100 border-none text-center">
+                <tr rowspan="2">
+                  <td
+                    class="table-text-bold text-center border-right border-top sticky-col first-col darkBackground"
+                  >
+                    &nbsp;
+                  </td>
+                  <td
+                    colspan="3"
+                    class="table-text-bold text-center border-right border-bottom border-top wd-40 sec-col"
+                  >
+                    Cumulative scheme
+                  </td>
+                  <td
+                    colspan="4"
+                    class="table-text-bold text-center border-bottom wd-60 border-top thrd-col"
+                  >
+                    Non - cumulative scheme
+                  </td>
+                </tr>
+                <tr class="border-bottom">
+                  <td
+                    class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground"
+                  >
+                    Tenure
+                  </td>
+                  <td class="table-text-medium">Amount<br />Payable</td>
+                  <td class="table-text-medium">Interest<br />p.a.</td>
+                  <td class="border-right table-text-medium">
+                    Effective<br />Yield p.a.
+                  </td>
+                  <td class="table-text-medium">
+                    Interest p.a.*<br />(monthly)
+                  </td>
+                  <td class="border-right">Interest p.a.*<br />(quarterly)</td>
+                  <td class="table-text-medium">
+                    Interest p.a.*<br />(half yearly)
+                  </td>
+                  <td class="table-text-medium">
+                    Interest p.a.*<br />(yearly)
+                  </td>
+                </tr>
+                <tr class="border-bottom bg-white">
+                  <td
+                    class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground"
+                  >
+                    12 months
+                  </td>
+                  <td class="table-text-bold">5380</td>
+                  <td class="table-text-bold">7.60%</td>
+                  <td class="table-text-bold border-right">7.60%</td>
+                  <td class="table-text-bold">7.20%</td>
+                  <td class="table-text-bold border-right">7.25%</td>
+                  <td class="table-text-bold">7.35%</td>
+                  <td class="table-text-bold">7.60%</td>
+                </tr>
+                <tr class="border-bottom bg-white">
+                  <td
+                    class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground"
+                  >
+                    24 months
+                  </td>
+                  <td class="table-text-bold">5805</td>
+                  <td class="table-text-bold">7.75%</td>
+                  <td class="table-text-bold border-right">8.05%</td>
+                  <td class="table-text-bold">7.25%</td>
+                  <td class="table-text-bold border-right">7.35%</td>
+                  <td class="table-text-bold">7.50%</td>
+                  <td class="table-text-bold">7.75%</td>
+                </tr>
+                <tr class="border-bottom bg-white">
+                  <td
+                    class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground"
+                  >
+                    36 months
+                  </td>
+                  <td class="table-text-bold">6307</td>
+                  <td class="table-text-bold">8.05%</td>
+                  <td class="table-text-bold border-right">8.72%</td>
+                  <td class="table-text-bold">7.50%</td>
+                  <td class="table-text-bold border-right">7.60%</td>
+                  <td class="table-text-bold">7.80%</td>
+                  <td class="table-text-bold">8.05%</td>
+                </tr>
+                <tr class="border-bottom bg-white">
+                  <td
+                    class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground"
+                  >
+                    48 months
+                  </td>
+                  <td class="table-text-bold">6815</td>
+                  <td class="table-text-bold">8.05%</td>
+                  <td class="table-text-bold border-right">9.08%</td>
+                  <td class="table-text-bold">7.50%</td>
+                  <td class="table-text-bold border-right">7.60%</td>
+                  <td class="table-text-bold">7.80%</td>
+                  <td class="table-text-bold">8.05%</td>
+                </tr>
+                <tr class="border-bottom bg-white">
+                  <td
+                    class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground"
+                  >
+                    60 months
+                  </td>
+                  <td class="table-text-bold">7364</td>
+                  <td class="table-text-bold">8.05%</td>
+                  <td class="table-text-bold border-right">9.45%</td>
+                  <td class="table-text-bold">7.50%</td>
+                  <td class="table-text-bold border-right">7.60%</td>
+                  <td class="table-text-bold">7.80%</td>
+                  <td class="table-text-bold">8.05%</td>
+                </tr>
+                <tr class="border-bottom bg-white">
+                  <td
+                    class="table-text-bold text-center border-right border-bottom sticky-col first-col darkBackground"
+                  >
+                    Minimum amount
+                  </td>
+                  <td
+                    colspan="3"
+                    class="table-text-bold text-center border-right border-top"
+                  >
+                    5000+
+                  </td>
+                  <td
+                    colspan="2"
+                    class="table-text-bold text-center border-right border-top"
+                  >
+                    50000+
+                  </td>
+                  <td
+                    colspan="2"
+                    class="table-text-bold text-center border-top"
+                  >
+                    25000+
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td
+                    class="table-text-bold text-center border-right border-bottom sticky-col first-col border-bottom darkBackground"
+                  >
+                    &nbsp;
+                  </td>
+                  <td
+                    colspan="3"
+                    class="table-text-bold border-top text-center border-right border-left border-bottom"
+                  >
+                    *Compounded annually
+                  </td>
+                  <td
+                    colspan="4"
+                    class="table-text-bold border-top text-center border-bottom"
+                  >
+                    +Additional amount for fresh deposit in multiple of Rs. 1000
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="disclaimer">
+              **Senior citizen’s shall earn 0.25% additional rates. Employees,
+              employee relatives, retired employees shall earn 0.35% additional
+              rates.
+            </div>
+            <div class="disclaimerfooter">
+              <span>Important</span> : Interest rate of renewed FD will depend
+              on the applicable rate as on the day of renewal
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal End-->
+
+    <div
+      class="modal fade"
+      id="isModifyNomineeModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+            </button>
+            <div class="info-heading-container">
+              <div class="info-heading-image">
+                <img src="./assets/img/icons/info-button-icon.svg" alt="icon" />
+              </div>
+              <div class="info-heading">Are you sure ?</div>
+            </div>
+            <div class="info-content">
+              This action will close your existing renewal plan on this fixed
+              deposit. Please confirm if you wish to proceed with cancelation.
+            </div>
+            <div class="info-button-container">
+              <div class="info-button w-100">
+                <button
+                  type="button"
+                  class="btn themeRedBtn themeWhiteButton w-100 customPd"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  No
+                </button>
+              </div>
+              <div class="info-button w-100">
+                <button type="button" class="themeRedBtn w-100 customPd">
+                  Yes, cancel renewal
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/chart.min.js"></script>
     <script src="./assets/js/custom.js"></script>
-</body>
-
+  </body>
 </html>

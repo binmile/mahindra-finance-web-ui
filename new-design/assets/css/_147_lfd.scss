@@ -10,9 +10,9 @@
   margin-bottom: 8px;
   @include custom-font(20px, 600, 24px, 0.15px);
 }
-.value_lfd{
+.value_lfd {
   display: flex;
-  place-items:baseline;
+  place-items: baseline;
 }
 .accountMobile {
   img {
@@ -21,6 +21,50 @@
     vertical-align: sub;
   }
 }
+
+.accountDetailsBox .accountListContainer{
+  &.accountListContainer_lfd_data{
+    min-height: 400px;
+  }
+}
+.modal .modal-content .modal-body {
+  &.modal-body-loan {
+    padding: 40px 32px;
+  }
+  .info-heading-container {
+    .info-heading {
+      &.heading-lfd {
+        margin-left: 52px;
+        text-align: left;
+      }
+    }
+    &.lfd-circle {
+      position: relative;
+      display: initial !important;
+    }
+    .info-heading-image {
+      &.lfd-img {
+        position: absolute;
+        left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+.otpBox {
+  &.percent-loan {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @include custom-font(16px, 400, 24px, 0.5px);
+    color: #231f20;
+    margin: 35px 0 40px 0;
+  }
+}
+.radio_div {
+  margin-right: 10px;
+}
+
 .boldHeader-bottom-margin {
   p {
     &.small-text_lfd {
@@ -167,7 +211,13 @@ p {
   .customRedBtn.themeRedBtn_mob {
     display: none;
   }
-  .accountContainer .accountDetailsBox{
+  .accountDetailsBox .accountListContainer{
+    &.accountListContainer_lfd_data{
+      min-height: 0;
+    }
+  }
+ 
+  .accountContainer .accountDetailsBox {
     &.accountDetailsBox_lfd {
       border-bottom: none;
       margin-bottom: 0;
@@ -226,22 +276,52 @@ p {
   .no_desktop_view_lfd {
     display: block;
   }
-  .termsConditionsContainer_lfd{
+  .termsConditionsContainer_lfd {
     padding-top: 0;
   }
- .accountList_margin-remove{
-      padding-bottom: 0 ;
-    }
-
+  .accountList_margin-remove {
+    padding-bottom: 0;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .radio_div {
+    &.first-check-box{
+      margin-bottom: 12px;
+    }
+  }
+  .accountDetailsBox .accountListContainer{
+    &.accountListContainer_lfd_data{
+      min-height: 0;
+    }
+  }
+  .otpBox.percent-loan{
+    display: block;
+    justify-content: left;
+    place-items: left !important;
+    align-items: left !important;
+    margin: 12px 0 24px 0;
+    @include custom-font(12px, 400, 16px, 0);
+    flex-direction: column;
+    }
+  .modal .modal-content .modal-body {
+    &.modal-body-loan {
+      padding: 32px;
+    }
+    .info-heading-container {
+      .info-heading {
+        &.heading-lfd {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
   .otherAccountDetails_lfd {
     display: initial;
   }
-  .accountList_margin-remove{
+  .accountList_margin-remove {
     padding-bottom: 0;
   }
-  .termsConditionsContainer_lfd{
+  .termsConditionsContainer_lfd {
     padding-top: 0;
   }
   .border-bottom-lfd {
@@ -284,7 +364,7 @@ p {
   .no_mobile_view_lfd {
     display: none;
   }
-  .accountContainer .accountDetailsBox{
+  .accountContainer .accountDetailsBox {
     &.accountDetailsBox_lfd {
       border-bottom: none;
       margin-bottom: 0;
