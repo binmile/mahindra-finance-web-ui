@@ -8698,6 +8698,11 @@ input[type=number] {
 .renewalHeadCount_repayment {
   padding: 3px;
   background-color: #F3F4F6;
+  min-width: 26px;
+}
+
+.step-repayment {
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
