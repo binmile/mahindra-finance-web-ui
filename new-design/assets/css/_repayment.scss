@@ -100,9 +100,8 @@
 
 .content-details-repayment{
   display: flex;
-  justify-content: center;
   place-items: center;
-  align-items: center;
+  
 }
 .setp_wrapper_repayment {
   margin: 28px 0 60px 0;
@@ -124,6 +123,10 @@
 .repayment_no_bottom {
   padding-bottom: 0;
 }
+.renewalHeadCount_repayment{
+  padding: 3px;
+  background-color: #F3F4F6;
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .first-content {
     margin-bottom: 16px;
@@ -139,13 +142,14 @@
       display: block;
     }
   }
+  .content-details-repayment{
+    place-items: initial;
+
+  }
   .SelectOptionsMainContainer .subHeadingContainer .subHeading {
     &.subHeading_repayemnet {
       span {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        place-items: center;
       }
     }
   }
@@ -166,6 +170,7 @@
   .renewalContentContainer .renewalHeadCount {
     &.renewalHeadCount_repayment {
       display: block;
+      margin-right: 6px;
     }
   }
   

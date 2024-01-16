@@ -8668,9 +8668,7 @@ input[type=number] {
 
 .content-details-repayment {
   display: flex;
-  justify-content: center;
   place-items: center;
-  align-items: center;
 }
 
 .setp_wrapper_repayment {
@@ -8697,6 +8695,11 @@ input[type=number] {
   padding-bottom: 0;
 }
 
+.renewalHeadCount_repayment {
+  padding: 3px;
+  background-color: #F3F4F6;
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .first-content {
     margin-bottom: 16px;
@@ -8710,11 +8713,11 @@ input[type=number] {
   .renewalContentContainer .renewalHeadCount.renewalHeadCount_repayment {
     display: block;
   }
+  .content-details-repayment {
+    place-items: initial;
+  }
   .SelectOptionsMainContainer .subHeadingContainer .subHeading.subHeading_repayemnet span {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    place-items: center;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -8729,6 +8732,7 @@ input[type=number] {
   }
   .renewalContentContainer .renewalHeadCount.renewalHeadCount_repayment {
     display: block;
+    margin-right: 6px;
   }
   .renewalContentContainer.renewalContentContainer_repayment::after {
     display: block;
