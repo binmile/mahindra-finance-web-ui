@@ -338,6 +338,7 @@
               Disclaimer
             </div>
   
+            
             <div id="section" >
               <div class="article mb-20">
                 <p>By clicking this button you will be redirected to payment gateway. kindly check below instructions
@@ -346,24 +347,16 @@
                   B. Kindly enter correct debit card number and review expiry of your debit card. <br>
                   C. Kindly use alternative bank details incase your bank is not register with our payment gateway.<br>
   
-                <p class="customPagination  justify-content-start" id="customPagination">
+                <p class="moretext ">
                   D. Do not refresh the page<br>
                   E. Do not leave your transaction for long time
                 </p>
               </div>
-              <!-- <div class="row mx-auto text-center">
+              <div class="row mx-auto text-center">
                   <a class="moreless-button">Show more</a>
                   
-                </div> -->
-              <label class="showMoreBtn" for="expend" id="homeShowBtn">
-                Show more
-                <img src="./assets/img/chevron-down-blue.svg" alt="icon" />
-              </label>
-              <label class="showMoreBtn" for="expend" id="homeHideBtn">
-                Show less
-                <img class="rotate" src="./assets/img/chevron-down-blue.svg" alt="icon" />
-              </label>
-  
+                </div>
+             
             </div>
           </div>
         </div>
@@ -389,12 +382,14 @@
 
 
   <script>
-    $('.showSingle').click(function () {
-      $('.customepayment').hide();
-      $('.showSingle').removeClass('greenactive');
-      $(this).addClass("greenactive")
-      $('#div' + $(this).attr('target')).show();
-    });
+   $('.moreless-button').click(function() {
+  $('.moretext').slideToggle();
+  if ($('.moreless-button').text() == "Read more") {
+    $(this).text("Read less")
+  } else {
+    $(this).text("Read more")
+  }
+});
   </script>
 
 </body>
