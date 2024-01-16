@@ -448,32 +448,37 @@
 
           
             
-          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile">
+          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile customeallpadding">
             <div class="boldTitle boldTitle_profile ">
               Disclaimer
             </div>
-            <div class="section-parent removeborder">
-             
-              <div class="row flex-row">
 
-                <div class="disclaimer">
-                  <p>By clicking this button you will be redirected to payment gateway. kindly check below instructions before proceeding to payments. <br>
-                    A. Kindly check your daily withdrawal limit of your internet banking/debit card transactions. <br>
-                    B. Kindly enter correct debit card number and review expiry of your debit card. <br>
-                    C. Kindly use alternative bank details incase your bank is not register with our payment gateway.<br>
-                    <span id="dots"></span><span id="more">
-                      D. Do not refresh the page<br>
-                    E. Do not leave your transaction for long time 
-                    </span></p>
-                    <div class="text-center">
-                      <button class="custdesignbtn" onclick="myFunction()" id="myBtn">Show more </button>
-                    </div>
-  
-                </div>
-               </div>
+            <div id="section">
+              <div class="article">
+                <p>By clicking this button you will be redirected to payment gateway. kindly check below instructions before proceeding to payments. <br>
+                  A. Kindly check your daily withdrawal limit of your internet banking/debit card transactions. <br>
+                  B. Kindly enter correct debit card number and review expiry of your debit card. <br>
+                  C. Kindly use alternative bank details incase your bank is not register with our payment gateway.<br>
+                 
+                <p class="moretext" id="moretext">
+                  D. Do not refresh the page<br>
+                  E. Do not leave your transaction for long time   
+                </p>
+              </div>
+              <div class="row mx-auto text-center">
+                <a class="moreless-button">Show more</a>
+                
+              </div>
+             
             </div>
           </div>
         </div>
+        <div class="col col-md-12">
+          <div class="buttonContainer">
+              <button class="btn themeRedBtn"> Continue
+              <img src="./assets/img/arrow-right.svg" alt="icons"></button>
+          </div>
+      </div>
 
        </div>
       </div>
@@ -516,21 +521,16 @@
 });
    </script>
    <script>
-    function myFunction() {
-      
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
-    
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Show more  "; 
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Show less "; 
-        moreText.style.display = "inline";
-      }
-    }
+   $('.moreless-button').click(function() {
+  $('.moretext').slideToggle();
+  if ($('.moreless-button').text() == "Show more") {
+    $(this).text("Show less")
+  } else {
+    $(this).text("Show more")
+  }
+});
+
+
     </script>
   </body>
 </html>
