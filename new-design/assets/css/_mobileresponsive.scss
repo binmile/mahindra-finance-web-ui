@@ -917,9 +917,17 @@ select {
     color: #1084CB;
 }
 
+.bankDetailsMainContainer.bankDetailsMainContainer_profile.customeallpadding {
+    padding: 20px 32px 20px 32px;
+}
 @media only screen and (min-width: 320px) and (max-width: 991px) {
 .cutomemt-20{
     margin-top: 12px;
+   
+}
+.payment-box {
+    padding: 12px 0px;
+    min-width: 100px;
 }
 }
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
@@ -932,3 +940,42 @@ select {
     }
 
 }
+
+// .customepayment{
+//   -webkit-transition:  height 0.5s ease;
+//   -moz-transition: height 0.5s ease;
+//   -ms-transition: height 0.5s ease;
+//   -o-transition: height 0.5s ease;
+//   transition: height 0.5s ease;
+//   transition-delay:0.2s;}
+
+
+
+.showSingle{
+
+    opacity: 1;
+    -webkit-transition:  height 0.8s ease;
+    -moz-transition: height 0.5s ease;
+    -ms-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+    transition-delay:0.5s;}
+
+    #section {
+        width: 100%;
+        word-wrap: break-word;
+      }
+      
+      .moretext {
+        display: none;
+      }
+      .article p {
+        margin-bottom: 0px;
+        color: #4D4D4F;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.25px;
+    }
+      a.moreless-button {
+        text-decoration: none;
+    }
