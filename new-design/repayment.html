@@ -1,537 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahindra Finance :: Preclosure</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/_265_css.scss" />
-  </head>
-  <body>
-    <!-- Top-navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/logo.svg" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <div id="hamburgerIcon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item no_tablet_view">
-              <div class="mob_menu_user_profile">
-                <div class="userIconImage">
-                  <img src="./assets/img/avatar.png" alt="user icon" />
-                </div>
-                Vikram Kumar Sahu
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >FD renewal</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="preclosure.html">Preclosure</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Loan against FD repayment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Loan against FD</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span>Download</span>
-                <img
-                  src="./assets/img/chevron-down.svg"
-                  alt="icons"
-                  class="toggle-icon"
-                />
-                <span class="plus_icon"
-                  ><img
-                    src="./assets/img/icons/plusIcon.svg"
-                    alt="icon"
-                    class="no_tablet_view plusIcon"
-                    id="rotate_icon_profile"
-                /></span>
-              </a>
-              <ul
-                class="dropdown-menu mob_menu_download"
-                aria-labelledby="dropdown09"
-              >
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/img/icons/Certificate.svg"
-                      alt="icon"
-                      class="menuIcon"
-                    />
-                    TDS certificate
-                    <img
-                      src="./assets/img/icons/arrow-right-red-icon.svg"
-                      alt="arrow icon"
-                      class="menu_hover_icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/img/icons/file-plus.svg"
-                      alt="icon"
-                      class="menuIcon"
-                    />
-                    Form 15 G/H submission
-                    <img
-                      src="./assets/img/icons/arrow-right-red-icon.svg"
-                      alt="arrow icon"
-                      class="menu_hover_icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/img/icons/file-text.svg"
-                      alt="icon"
-                      class="menuIcon"
-                    />
-                    Cumulative letter
-                    <img
-                      src="./assets/img/icons/arrow-right-red-icon.svg"
-                      alt="arrow icon"
-                      class="menu_hover_icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/img/icons/file-minus.svg"
-                      alt="icon"
-                      class="menuIcon"
-                    />
-                    Non - cumulative letter
-                    <img
-                      src="./assets/img/icons/arrow-right-red-icon.svg"
-                      alt="arrow icon"
-                      class="menu_hover_icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/img/icons/percent.svg"
-                      alt="icon"
-                      class="menuIcon"
-                    />
-                    Interest paid / accrued details
-                    <img
-                      src="./assets/img/icons/arrow-right-red-icon.svg"
-                      alt="arrow icon"
-                      class="menu_hover_icon"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown userAvatar">
-              <img src="./assets/img/avatar.png" alt="user" class="no_view" />
-              <a
-                class="nav-link dropdown-toggle"
-                href="javascript:;"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span>Profile</span>
-                <img
-                  src="./assets/img/chevron-down.svg"
-                  alt="icons"
-                  class="toggle-icon"
-                />
-                <span class="plus_icon"
-                  ><img
-                    src="./assets/img/icons/plusIcon.svg"
-                    alt="icon"
-                    class="no_tablet_view plusIcon"
-                    id="rotate_icon_profile"
-                /></span>
-              </a>
-              <ul
-                class="dropdown-menu mob_sub_profile"
-                aria-labelledby="dropdown09"
-              >
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/img/icons/user.svg"
-                      alt="icon"
-                      class="menuIcon"
-                    />
-                    My account
-                    <img
-                      src="./assets/img/icons/arrow-right-red-icon.svg"
-                      alt="arrow icon"
-                      class="menu_hover_icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/img/icons/edit.svg"
-                      alt="icon"
-                      class="menuIcon"
-                    />
-                    CKYC update
-                    <img
-                      src="./assets/img/icons/arrow-right-red-icon.svg"
-                      alt="arrow icon"
-                      class="menu_hover_icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/img/icons/check-circle.svg"
-                      alt="icon"
-                      class="menuIcon"
-                    />
-                    Avail employee benefit
-                    <img
-                      src="./assets/img/icons/arrow-right-red-icon.svg"
-                      alt="arrow icon"
-                      class="menu_hover_icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/img/icons/file-minus.svg"
-                      alt="icon"
-                      class="menuIcon"
-                    />
-                    Other fixed deposits
-                    <img
-                      src="./assets/img/icons/arrow-right-red-icon.svg"
-                      alt="arrow icon"
-                      class="menu_hover_icon"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item logoutLink" href="#">
-                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
-                    Log out
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item mob_menu_logout no_tablet_view">
-              <a href="#">
-                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
-                Log out
-              </a>
-            </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahindra Finance :: Preclosure</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/_265_css.scss" />
+
+</head>
+
+<body>
+  <!-- Top-navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/img/logo.svg" alt="Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <div id="hamburgerIcon">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item no_tablet_view">
+            <div class="mob_menu_user_profile">
+              <div class="userIconImage">
+                <img src="./assets/img/avatar.png" alt="user icon" />
+              </div>
+              Vikram Kumar Sahu
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">FD renewal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="preclosure.html">Preclosure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Loan against FD repayment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Loan against FD</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Download</span>
+              <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+              <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon"
+                  class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
+            </a>
+            <ul class="dropdown-menu mob_menu_download" aria-labelledby="dropdown09">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="./assets/img/icons/Certificate.svg" alt="icon" class="menuIcon" />
+                  TDS certificate
+                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="./assets/img/icons/file-plus.svg" alt="icon" class="menuIcon" />
+                  Form 15 G/H submission
+                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="./assets/img/icons/file-text.svg" alt="icon" class="menuIcon" />
+                  Cumulative letter
+                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" />
+                  Non - cumulative letter
+                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="./assets/img/icons/percent.svg" alt="icon" class="menuIcon" />
+                  Interest paid / accrued details
+                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown userAvatar">
+            <img src="./assets/img/avatar.png" alt="user" class="no_view" />
+            <a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Profile</span>
+              <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+              <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon"
+                  class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
+            </a>
+            <ul class="dropdown-menu mob_sub_profile" aria-labelledby="dropdown09">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="./assets/img/icons/user.svg" alt="icon" class="menuIcon" />
+                  My account
+                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="./assets/img/icons/edit.svg" alt="icon" class="menuIcon" />
+                  CKYC update
+                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="./assets/img/icons/check-circle.svg" alt="icon" class="menuIcon" />
+                  Avail employee benefit
+                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" />
+                  Other fixed deposits
+                  <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item logoutLink" href="#">
+                  <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                  Log out
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item mob_menu_logout no_tablet_view">
+            <a href="#">
+              <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+              Log out
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!--Top-navbar End -->
-    <div class="container mb-20">
-      <div class="row animate__animated animate__fadeInUp">
+    </div>
+  </nav>
+  <!--Top-navbar End -->
+  <div class="container mb-20">
+    <div class=" animate__animated animate__fadeInUp">
+      <div class="row  ">
         <div class="col-12 mt-20 m-b16">
-          <a href="#" class="commonBackBtn"
-            ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
+          <a href="#" class="commonBackBtn"><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
             Back</a>
         </div>
-       </div>
-
-       <div class="row">
+      </div>
+  
+      <div class="row">
         <div class="col-12 col-lg-8 col-md-12">
-            
+  
           <div class="bankDetailsMainContainer bankDetailsMainContainer_profile">
-            <div class="boldTitle boldTitle_profile ">
+            <div class="boldTitle boldTitle_profile mb-20">
               <div class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile">
-                <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_mobile_view"/>
-                <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_desktop_view"/>
+                <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_mobile_view" />
+                <img src="./assets/img/icons/file-text.svg" alt="icon" class="no_desktop_view" />
               </div>
               Loan against FD - F2001101F
             </div>
             <div class="section-parent removeborder">
-             
+  
               <div class="row flex-row">
-                  <div class="col-md-4 col-lg-3 col-6 custpostion">
-                      <div class="fdDetails customefdDetails fdDetails_value">
-                          <div class="label">Loan amount </div>
-                          <div class="value custvalue">
-                              <div class="roundBackgroundIcon_">
-                                  <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
-                              </div> ₹ 15,000
-                             
-                          </div>
-                      </div>
-
-                  </div>
-                  <div class="col-md-4 col-lg-3 col-6 custpostion">
-                      <div class="fdDetails customefdDetails fdDetails_value">
-                          <div class="label">Tenure </div>
-                          <div class="value custvalue">
-                              <div class="roundBackgroundIcon_ ">
-                                  <img src="./assets/img/icons/clock.svg" alt="icon">
-                              </div> 630 days
-                          </div>
-                      </div>
-                  </div>
-                
-                  <div class="col-md-4 col-lg-3 col-6 custpostion">
-                      <div class="fdDetails customefdDetails fdDetails_value">
-                          <div class="label">Against FD </div>
-                          <div class="value custvalue">
-                              <div class="roundBackgroundIcon_">
-                                  <img src="./assets/img/icons/tick_left.svg" alt="icon">
-                              </div>R2022009D 
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-lg-3 col-6 ">
-                    <div class="fdDetails">
-                        <div class="label">Against FD </div>
-                        <div class="value custvalue">
-                            <div class="roundBackgroundIcon_">
-                                <img src="./assets/img/icons/tick_left.svg" alt="icon">
-                            </div>R2022009D 
-                        </div>
+                <div class="col-md-4 col-lg-3 col-6 custpostion">
+                  <div class="fdDetails customefdDetails  fdDetails_value">
+                    <div class="label">Loan amount </div>
+                    <div class="value custvalue">
+                      <div class="roundBackgroundIcon_">
+                        <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
+                      </div> ₹ 41,000
+  
                     </div>
+                  </div>
+  
                 </div>
-                  
-             </div>
-             <hr>
-             <div class="row flex-row">
-              <div class="col-md-4 col-lg-3 col-6 custpostion">
+                <div class="col-md-4 col-lg-3 col-6 custpostion">
                   <div class="fdDetails customefdDetails fdDetails_value">
-                      <div class="label">Loan amount </div>
-                      <div class="value custvalue">
-                          <div class="roundBackgroundIcon_">
-                              <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
-                          </div> ₹ 15,000
-                         
-                      </div>
+                    <div class="label">Interest rate  </div>
+                    <div class="value custvalue">
+                      <div class="roundBackgroundIcon_ ">
+                        <img src="./assets/img/icons/persentage.svg" alt="icon">
+                      </div> 8.05%
+                    </div>
                   </div>
-
+                </div>
+  
+                <div class="col-md-4 col-lg-3 col-6 custpostion">
+                  <div class="fdDetails customefdDetails  fdDetails_value">
+                    <div class="label">Interest amount </div>
+                    <div class="value custvalue ">
+                      <div class="roundBackgroundIcon_">
+                        <img src="./assets/img/icons/cash_text.svg" alt="icon">
+                      </div>₹ 9,456
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-6 ">
+                  <div class="fdDetails">
+                    <div class="label">Closure amount </div>
+                    <div class="value custvalue">
+                      <div class="roundBackgroundIcon_">
+                        <img src="./assets/img/icons/cash_text.svg" alt="icon">
+                      </div>₹ 9,456
+                    </div>
+                  </div>
+                </div>
+  
               </div>
-              <div class="col-md-4 col-lg-3 col-6 custpostion">
+              <hr>
+              <div class="row flex-row">
+                <div class="col-md-4 col-lg-3 col-6 custpostion">
                   <div class="fdDetails customefdDetails fdDetails_value">
-                      <div class="label">Tenure </div>
-                      <div class="value custvalue">
-                          <div class="roundBackgroundIcon_ ">
-                              <img src="./assets/img/icons/clock.svg" alt="icon">
-                          </div> 630 days
-                      </div>
+                    <div class="label">Application date  </div>
+                    <div class="value custvalue">
+                      <div class="roundBackgroundIcon_">
+                        <img src="./assets/img/icons/calendar-red-icon.svg" alt="icon">
+                      </div> 12 May 2022
+  
+                    </div>
                   </div>
-              </div>
-            
-              <div class="col-md-4 col-lg-3 col-6 ">
+  
+                </div>
+                <div class="col-md-4 col-lg-3 col-6 custpostion">
                   <div class="fdDetails customefdDetails fdDetails_value">
-                      <div class="label">Against FD </div>
-                      <div class="value custvalue">
-                          <div class="roundBackgroundIcon_">
-                              <img src="./assets/img/icons/tick_left.svg" alt="icon">
-                          </div>R2022009D 
-                      </div>
+                    <div class="label">Disbursement date </div>
+                    <div class="value custvalue">
+                      <div class="roundBackgroundIcon_ ">
+                        <img src="./assets/img/icons/calendar-red-icon.svg" alt="icon">
+                      </div> 31 Sept 2023
+                    </div>
                   </div>
+                </div>
+  
+                <div class="col-md-4 col-lg-3 col-6 ">
+                  <div class="fdDetails  fdDetails_value">
+                    <div class="label">Tenure </div>
+                    <div class="value custvalue">
+                      <div class="roundBackgroundIcon_">
+                        <img src="./assets/img/icons/clockwise.svg" alt="icon">
+                      </div>273 days
+                    </div>
+                  </div>
+                </div>
+  
               </div>
-              
-         </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-md-12 cutomemt-20">
-            
-          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile custminhight">
+  
+          <div class="bankDetailsMainContainer bankDetailsMainContainer_profile custminhight custminhight2">
             <div class="paybg">
               <img src="./assets/img/icons/paymentbg.svg" alt="icon">
-
+  
             </div>
             <div class="boldTitle boldTitle_profile ">
-             
+  
               Select a payment method
             </div>
             <div class="parent">
               <div class="row flex-row">
                 <div class="col-lg-4 col-md-4 col-4">
-
-                  
-                    <div class="payment-box showSingle"  target="1">
-                      <div class="paymentimg"> 
-                        <img src="./assets/img/icons/upi.svg" alt="icon">
-                       </div>
-                      <div class="payment-text">
-                        <p>UPI</p>
-                      </div>
+  
+  
+                  <div class="payment-box showSingle" target="1">
+                    <div class="paymentimg">
+                      <img src="./assets/img/icons/upi.svg" alt="icon">
+                    </div>
+                    <div class="payment-text">
+                      <p>UPI</p>
                     </div>
                   </div>
-               
+                </div>
+  
                 <div class="col-lg-4 col-md-4 col-4">
-                  <div class="payment-box showSingle"  target="2">
-                    <div class="paymentimg"> 
+                  <div class="payment-box showSingle" target="2">
+                    <div class="paymentimg">
                       <img src="./assets/img/icons/netbank.svg" alt="icon">
-                     </div>
+                    </div>
                     <div class="payment-text">
                       <p>Net-banking</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-4">
-                  <div class="payment-box showSingle"  target="3">
-                    <div class="paymentimg"> 
+                  <div class="payment-box showSingle" target="3">
+                    <div class="paymentimg">
                       <img src="./assets/img/icons/bankblue.svg" alt="icon">
-                     </div>
+                    </div>
                     <div class="payment-text">
                       <p>RTGS/NEFT</p>
                     </div>
                   </div>
                 </div>
-                
-                  <div class="textparent customepayment custupi " id="div1">
-                      <label for="amount_number2" class="form-label formLabel">Enter your UPI ID</label>
-                      <input type="text" placeholder="UPI ID" class="form-control formControl">
-                    </div>
-               
-                  <div class="customepayment custnet" id="div2">
-                    <div class="paymentnote">
-                      <p><b>Note</b> - Check your bank for maximum limit</p>
-                    </div>
+  
+                <div class="textparent customepayment custupi " id="div1">
+                  <label for="amount_number2" class="form-label formLabel">Enter your UPI ID</label>
+                  <input type="text" placeholder="UPI ID" class="form-control formControl">
+                </div>
+  
+                <div class="customepayment custnet" id="div2">
+                  <div class="paymentnote">
+                    <p><b>Note</b> - Check your bank for maximum limit</p>
                   </div>
-               
-                  <div class="customepayment custnft" id="div3">
-                    <div class="paymentnote">
-                      <p><b>Note</b>- Proceed further to find out the next steps</p>
-                    </div>
+                </div>
+  
+                <div class="customepayment custnft" id="div3">
+                  <div class="paymentnote">
+                    <p><b>Note</b>- Proceed further to find out the next steps</p>
                   </div>
-               
-
-                
-             </div>
+                </div>
+  
+  
+  
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-12 col-md-12 mt-20">
-
-          
-            
+  
+  
+  
           <div class="bankDetailsMainContainer bankDetailsMainContainer_profile customeallpadding">
-            <div class="boldTitle boldTitle_profile ">
+            <div class="boldTitle boldTitle_profile mb-20">
               Disclaimer
             </div>
-
-            <div id="section">
-              <div class="article">
-                <p>By clicking this button you will be redirected to payment gateway. kindly check below instructions before proceeding to payments. <br>
+  
+            <div id="section" >
+              <div class="article mb-20">
+                <p>By clicking this button you will be redirected to payment gateway. kindly check below instructions
+                  before proceeding to payments. <br>
                   A. Kindly check your daily withdrawal limit of your internet banking/debit card transactions. <br>
                   B. Kindly enter correct debit card number and review expiry of your debit card. <br>
                   C. Kindly use alternative bank details incase your bank is not register with our payment gateway.<br>
-                 
-                <p class="moretext" id="moretext">
+  
+                <p class="customPagination  justify-content-start" id="customPagination">
                   D. Do not refresh the page<br>
-                  E. Do not leave your transaction for long time   
+                  E. Do not leave your transaction for long time
                 </p>
               </div>
-              <div class="row mx-auto text-center">
-                <a class="moreless-button">Show more</a>
-                
-              </div>
-             
+              <!-- <div class="row mx-auto text-center">
+                  <a class="moreless-button">Show more</a>
+                  
+                </div> -->
+              <label class="showMoreBtn" for="expend" id="homeShowBtn">
+                Show more
+                <img src="./assets/img/chevron-down-blue.svg" alt="icon" />
+              </label>
+              <label class="showMoreBtn" for="expend" id="homeHideBtn">
+                Show less
+                <img class="rotate" src="./assets/img/chevron-down-blue.svg" alt="icon" />
+              </label>
+  
             </div>
           </div>
         </div>
         <div class="col col-md-12">
           <div class="buttonContainer">
-              <button class="btn themeRedBtn"> Continue
+            <button class="btn themeRedBtn"> Continue
               <img src="./assets/img/arrow-right.svg" alt="icons"></button>
           </div>
+        </div>
+  
       </div>
 
-       </div>
-      </div>
-      <div class="communication_wrapper">
-        <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/call-tune.svg" alt="icon" />
-          </a>
-        </div>
-        <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/map.svg" alt="icon" />
-          </a>
-        </div>
-        <!-- <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/chat.svg" alt="icon" />
-          </a>
-        </div> -->
-        <div class="live_tune_connect">
-          <a href="#">
-            <img src="./assets/img/icons/thumb.svg" alt="icon" />
-          </a>
-        </div>
-      </div>
     </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/chart.min.js"></script>
-    <script src="./assets/js/custom.js"></script>
-    
+  
+  </div>
+ 
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/chart.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
 
-   <script>
+
+  <script>
     $('.showSingle').click(function () {
-    $('.customepayment').hide();
-    $('.showSingle').removeClass('greenactive');
-    $(this).addClass("greenactive")
-    $('#div' + $(this).attr('target')).show();
-});
-   </script>
-   <script>
-   $('.moreless-button').click(function() {
-  $('.moretext').slideToggle();
-  if ($('.moreless-button').text() == "Show more") {
-    $(this).text("Show less")
-  } else {
-    $(this).text("Show more")
-  }
-});
+      $('.customepayment').hide();
+      $('.showSingle').removeClass('greenactive');
+      $(this).addClass("greenactive")
+      $('#div' + $(this).attr('target')).show();
+    });
+  </script>
 
+</body>
 
-    </script>
-  </body>
 </html>
-
