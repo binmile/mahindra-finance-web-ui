@@ -83,6 +83,11 @@
     }
   }
 }
+.fdContents .fdDetails .value{
+  &.value-repayment{
+    justify-content: left;
+  }
+}
 .SelectOptionsMainContainer .subHeadingContainer .subHeading {
   &.subHeading_repayemnet {
     @include custom-font(16px, 700, 24px, 0px);
@@ -95,9 +100,8 @@
 
 .content-details-repayment{
   display: flex;
-  justify-content: center;
   place-items: center;
-  align-items: center;
+  
 }
 .setp_wrapper_repayment {
   margin: 28px 0 60px 0;
@@ -119,9 +123,20 @@
 .repayment_no_bottom {
   padding-bottom: 0;
 }
+.renewalHeadCount_repayment{
+  padding: 3px;
+  background-color: #F3F4F6;
+  min-width: 26px;
+}
+.step-repayment{
+  white-space:nowrap;
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .first-content {
     margin-bottom: 16px;
+  }
+  .fdDetails.fdDetails-repayment{
+    width: 100%;
   }
   .bottomLightText_repayment_success {
     padding-top: 16px;
@@ -131,13 +146,14 @@
       display: block;
     }
   }
+  .content-details-repayment{
+    place-items: initial;
+
+  }
   .SelectOptionsMainContainer .subHeadingContainer .subHeading {
     &.subHeading_repayemnet {
       span {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        place-items: center;
       }
     }
   }
@@ -151,10 +167,14 @@
       @include custom-font(10px, 500, 14px, 0.4px);
     }
   }
+  .fdDetails.fdDetails-repayment{
+    width: 100%;
+  }
   
   .renewalContentContainer .renewalHeadCount {
     &.renewalHeadCount_repayment {
       display: block;
+      margin-right: 6px;
     }
   }
   
@@ -184,8 +204,6 @@
       span {
         @include custom-font(12px, 500, 14px, 0.4px);
         display: flex;
-        justify-content: center;
-        align-items: center;
         place-items: center;
       }
     }
