@@ -925,6 +925,7 @@ select {
     margin-top: 12px;
    
 }
+
 .payment-box {
     padding: 12px 0px;
     min-width: 100px;
@@ -938,6 +939,10 @@ select {
         padding: 12px 0px;
         min-width: 90px;
     }
+    .custminhight.custminhight2 {
+        min-height: 312px;
+    }
+   
 
 }
 
@@ -979,3 +984,10 @@ select {
       a.moreless-button {
         text-decoration: none;
     }
+    @media screen and (min-width: 992px) { 
+    .custminhight.custminhight2 {
+        min-height: 334px;
+        position: relative;
+    }
+}
+

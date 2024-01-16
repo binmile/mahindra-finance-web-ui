@@ -7436,6 +7436,9 @@ select {
     padding: 12px 0px;
     min-width: 90px;
   }
+  .custminhight.custminhight2 {
+    min-height: 312px;
+  }
 }
 .showSingle {
   opacity: 1;
@@ -7464,6 +7467,12 @@ a.moreless-button {
   text-decoration: none;
 }
 
+@media screen and (min-width: 992px) {
+  .custminhight.custminhight2 {
+    min-height: 334px;
+    position: relative;
+  }
+}
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
