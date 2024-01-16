@@ -446,12 +446,15 @@
                       <div class="col-lg-3 col-md-12 col-sm-12">
                         <label for="pan" class="label-add">Date of birth</label>
                         <input
-                          type="text"
+                          type="date"
                           class="form-control formControl formControl_add"
-                          id="pan"
+                          id="dob"
+                          placeholder="DD/MM/YYYY"
                           maxlength="10"
                           autocomplete="off"
                         />
+
+                       
                       </div>
                       <div class="col-lg-3 col-md-12 col-sm-12">
                         <label for="joint" class="label-add"
@@ -476,7 +479,7 @@
                     </div>
                   </div>
 
-                  <div class="noteContent no-border-top noteContent-add">
+                  <div class="noteContent no-border-top noteContent-add" id="content_add_">
                     <span class="noteText">Note - </span> We strongly advice to
                     have a nominee for single holder
                   </div>

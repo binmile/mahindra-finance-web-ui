@@ -277,12 +277,9 @@ function navigateToDetailsPage() {
   const continueButton = document.getElementById("continueButton_");
   if (continueButton && !continueButton.disabled) {
     window.location.href = "renewal-form.html";
-  } else if(continueButton_bank && !continueButton_bank.disabled){
- 
+  } else if (continueButton_bank && !continueButton_bank.disabled) {
     window.location.href = "profile-add-new-bank-details.html";
-
-  }
-  else {
+  } else {
     alert("Please enable the button to proceed.");
   }
 }
@@ -337,17 +334,27 @@ function enableButton() {
 }
 /*****************additional-js-start ******************/
 
-function showContentAdd(clickedBtn,yesBtn,noBtn,content_div ) {
+function showContentAdd(clickedBtn, yesBtn, noBtn, content_div) {
   var yesBtnId = document.getElementById(yesBtn);
   var noBtn = document.getElementById(noBtn);
   var otherContentDiv = document.getElementById(content_div);
-  yesBtnId.style.backgroundColor = '';
-  yesBtnId.style.color = '#adadad';
-  noBtn.style.backgroundColor = '';
-  noBtn.style.color = '#adadad';
-  clickedBtn.style.backgroundColor = '#000';
-  clickedBtn.style.color = '#fff';
-  otherContentDiv.style.display = (clickedBtn.id===yesBtn) ? 'block' : 'none';
+  var otherContentDiv_second = document.getElementById("content_add_");
+
+  yesBtnId.style.backgroundColor = "";
+  yesBtnId.style.color = "#adadad";
+  noBtn.style.backgroundColor = "";
+  noBtn.style.color = "#adadad";
+  clickedBtn.style.backgroundColor = "#000";
+  clickedBtn.style.color = "#fff";
+  if (clickedBtn.id === "yesBtn") {
+    otherContentDiv.style.display = "block";
+  } else if (clickedBtn.id === "nomineeyes") {
+    otherContentDiv.style.display = "block";
+    otherContentDiv_second.style.display = "none";
+  } else {
+    otherContentDiv.style.display = "none";
+    otherContentDiv_second.style.display = "block";
+  }
 }
 
 /*****************additional-js-end ******************/
