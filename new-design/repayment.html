@@ -353,10 +353,8 @@
                 </p>
               </div>
               <div class="row mx-auto text-center">
-                  <a class="moreless-button">Show more</a>
-                  
+                <a class="moreless-button"><span>Show more</span><img src="./assets/img/chevron-down-blue.svg" alt="Arrow" class="arrow-img"></a>
                 </div>
-             
             </div>
           </div>
         </div>
@@ -380,16 +378,21 @@
   <script src="./assets/js/chart.min.js"></script>
   <script src="./assets/js/custom.js"></script>
 
-
   <script>
-   $('.moreless-button').click(function() {
-  $('.moretext').slideToggle();
-  if ($('.moreless-button').text() == "Read more") {
-    $(this).text("Read less")
-  } else {
-    $(this).text("Read more")
-  }
-});
+    $('.moreless-button').click(function() {
+    var button = $(this);
+    var arrowImg = button.find('.arrow-img');
+    
+    $('.moretext').slideToggle();
+    
+    if (button.text() == "Show more") {
+      button.find('span').text("Show less");
+      arrowImg.css('transform', 'rotate(180deg)');
+    } else {
+      button.find('span').text("Show more");
+      arrowImg.css('transform', 'rotate(0deg)');
+    }
+  });
   </script>
 
 </body>
