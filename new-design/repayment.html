@@ -394,6 +394,14 @@
     }
   });
   </script>
+   <script>
+    $('.showSingle').click(function () {
+      $('.customepayment').hide();
+      $('.showSingle').removeClass('greenactive');
+      $(this).addClass("greenactive")
+      $('#div' + $(this).attr('target')).show();
+    });
+  </script>
 
 </body>
 
