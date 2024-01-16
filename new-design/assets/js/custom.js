@@ -335,6 +335,22 @@ function checkboxTandC(id) {
 function enableButton() {
   document.getElementById("myButton").disabled = false;
 }
+/*****************additional-js-start ******************/
+
+function showContentAdd(clickedBtn,yesBtn,noBtn,content_div ) {
+  var yesBtnId = document.getElementById(yesBtn);
+  var noBtn = document.getElementById(noBtn);
+  var otherContentDiv = document.getElementById(content_div);
+  yesBtnId.style.backgroundColor = '';
+  yesBtnId.style.color = '#adadad';
+  noBtn.style.backgroundColor = '';
+  noBtn.style.color = '#adadad';
+  clickedBtn.style.backgroundColor = '#000';
+  clickedBtn.style.color = '#fff';
+  otherContentDiv.style.display = (clickedBtn.id===yesBtn) ? 'block' : 'none';
+}
+
+/*****************additional-js-end ******************/
 
 /*****************open sucess toast BMT-265 ******************/
 function openSucessToast() {
