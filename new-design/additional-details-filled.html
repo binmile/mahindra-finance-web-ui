@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahindra Finance :: Preclosure</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/_265_css.scss" />
+  </head>
+  <body>
+    <!-- Top-navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div id="hamburgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item no_tablet_view">
+              <div class="mob_menu_user_profile">
+                <div class="userIconImage">
+                  <img src="./assets/img/avatar.png" alt="user icon" />
+                </div>
+                Vikram Kumar Sahu
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >FD renewal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preclosure.html">Preclosure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD repayment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Loan against FD</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Download</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_menu_download"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/Certificate.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    TDS certificate
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-plus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Form 15 G/H submission
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-text.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Non - cumulative letter
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/percent.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Interest paid / accrued details
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown userAvatar">
+              <img src="./assets/img/avatar.png" alt="user" class="no_view" />
+              <a
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Profile</span>
+                <img
+                  src="./assets/img/chevron-down.svg"
+                  alt="icons"
+                  class="toggle-icon"
+                />
+                <span class="plus_icon"
+                  ><img
+                    src="./assets/img/icons/plusIcon.svg"
+                    alt="icon"
+                    class="no_tablet_view plusIcon"
+                    id="rotate_icon_profile"
+                /></span>
+              </a>
+              <ul
+                class="dropdown-menu mob_sub_profile"
+                aria-labelledby="dropdown09"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/user.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    My account
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/edit.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    CKYC update
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/check-circle.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Avail employee benefit
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img
+                      src="./assets/img/icons/file-minus.svg"
+                      alt="icon"
+                      class="menuIcon"
+                    />
+                    Other fixed deposits
+                    <img
+                      src="./assets/img/icons/arrow-right-red-icon.svg"
+                      alt="arrow icon"
+                      class="menu_hover_icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item logoutLink" href="#">
+                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                    Log out
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mob_menu_logout no_tablet_view">
+              <a href="#">
+                <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                Log out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Top-navbar End -->
+    <div class="container mb-20">
+      <div class="row animate__animated animate__fadeInUp">
+        <div class="col-12 mt-20">
+          <a href="#" class="commonBackBtn"
+            ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
+            Back</a
+          >
+        </div>
+        <div class="col col-md-12">
+          <div id="commonHeading-repayment"></div>
+        </div>
+        <div class="col-12">
+          <div class="bankDetailsMainContainer">
+            <div class="boldTitle">
+              Additional details <span class="additional_text"> (1/4) </span>
+            </div>
+            <div class="main-wrapper-div">
+              <div class="account-holder-detail border-bottom-add">
+                <div class="joint_account_text">Joint account holder</div>
+                <div class="main-form">
+                  <label for="account_number" class="form-label label_text"
+                    >Would you like to add a joint account holder?</label
+                  >
+                  <div class="row flex-row">
+                    <div class="col-lg-2 col-md-6 col-6">
+                      <div
+                        id="repayment-buttonContainer repayment-buttonContainer-add"
+                      >
+                        <button
+                          class="themeRedBtn button-addition"
+                          id="yesBtn"
+                          onclick="showContentAdd( this,'yesBtn', 'noBtn', 'joint_wrapper_div_' )"
+                        >
+                          Yes
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                      <div
+                        id="repayment-buttonContainer repayment-buttonContainer-add"
+                      >
+                        <button
+                          class="themeRedBtn button-addition"
+                          id="noBtn"
+                          onclick="showContentAdd(this,'yesBtn', 'noBtn','joint_wrapper_div_' )"
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="joint-wrapper-div" id="joint_wrapper_div_">
+                    <div class="row mt-20">
+                        
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row flex-row align-items-end">
+                          <div
+                            class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3"
+                          >
+                            <label for="joint" class="label-add"
+                              >Select joint account holder
+                            </label>
+                            <select
+                              id="joint-account"
+                              class="form-control formControl formControl_add"
+                            >
+                              <option
+                                value="disable-selected"
+                                disabled
+                                hidden
+                                selected
+                              >
+                                Vishal Sahu
+                              </option>
+                              <option value="add-new-nominee">
+                                Vishnu Sahu
+                              </option>
+                              <option value="nominee_data">Vishnu</option>
+                            </select>
+                          </div>
+                          <div
+                            class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3"
+                          >
+                            <label for="mobile_number" class="label-add"
+                              >Enter joint account holder’s mobile</label
+                            >
+                            <input
+                              type="number"
+                              class="form-control formControl formControl_add"
+                              id="mobile"
+                              pattern="[0-9]{10}"
+                              autocomplete="off"
+                            />
+                          </div>
+                          <div
+                            class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3"
+                          >
+                            <label for="pan" class="label-add"
+                              >Enter joint account holder’s PAN</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control formControl formControl_add"
+                              id="pan"
+                              maxlength="10"
+                              autocomplete="off"
+                            />
+                          </div>
+                          <div
+                            class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3"
+                          >
+                            <button class="themeRedBtn customBtn customBtn_add">
+                              Generate OTP
+                              <img
+                                src="./assets/img/arrow-right.svg"
+                                alt="icons"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nominee-detail add-min-height">
+                <div class="joint_account_text">Nominee</div>
+                <div class="main-form">
+                  <label for="account_number" class="form-label label_text"
+                    >Would you like to add nominee?</label
+                  >
+                  <div class="row flex-row">
+                    <div class="col-lg-2 col-md-6 col-6">
+                      <div
+                        id="repayment-buttonContainer repayment-buttonContainer-add"
+                      >
+                        <button
+                          class="themeRedBtn button-addition"
+                          id="nomineeyes"
+                          onclick="showContentAdd( this,'nomineeyes', 'nomineeno', 'nominee_wrapper_div_' )"
+                        >
+                          Yes
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                      <div
+                        id="repayment-buttonContainer repayment-buttonContainer-add"
+                      >
+                        <button
+                          class="themeRedBtn button-addition"
+                          id="nomineeno"
+                          onclick="showContentAdd( this,'nomineeyes', 'nomineeno', 'nominee_wrapper_div_' )"
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nominee-wrapper-div" id="nominee_wrapper_div_">
+                    <div class="row align-items-end mt-20">
+                      <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
+                        <label for="joint" class="label-add"
+                          >Select nominee
+                        </label>
+                        <select
+                          id="joint-account"
+                          class="form-control formControl formControl_add"
+                        >
+                          <option
+                            value="disable-selected"
+                            disabled
+                            hidden
+                            selected
+                          >
+                            Add New
+                          </option>
+                          <option value="add-new-nominee">Vishnu Sahu</option>
+                          <option value="nominee_data">Vishnu</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
+                        <label for="mobile_number" class="label-add"
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control formControl formControl_add"
+                          id="name-text"
+                          autocomplete="off"
+                        />
+                      </div>
+                      <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
+                        <label for="pan" class="label-add">Date of birth</label>
+                        <input
+                          type="date"
+                          class="form-control formControl formControl_add"
+                          id="dob"
+                          placeholder="DD/MM/YYYY"
+                          maxlength="10"
+                          autocomplete="off"
+                        />
+                      </div>
+                      <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
+                        <label for="joint" class="label-add"
+                          >Nominee’s relation with you
+                        </label>
+                        <select
+                          id="joint-account"
+                          class="form-control formControl formControl_add"
+                        >
+                          <option
+                            value="disable-selected"
+                            disabled
+                            hidden
+                            selected
+                          >
+                            Select
+                          </option>
+                          <option value="add-new-nominee">Vishnu Sahu</option>
+                          <option value="nominee_data">Vishnu</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="noteContent no-border-top noteContent-add"
+                    id="content_add_"
+                  >
+                    <span class="noteText">Note - </span> We strongly advice to
+                    have a nominee for single holder
+                  </div>
+                </div>
+              </div>
+              <div class="termsConditionsContainer terms_label">
+                <label class="checkbox-container checkbox_add">
+                  <input type="checkbox" name="preclosure-flow" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="ml-25"
+                  >By proceeding you consent to MMFSL to use your KYC details
+                  from the CKYC registry/Digilocker to book a FD.
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-12">
+          <div class="buttonContainer" id="repayment-buttonContainer">
+            <button
+              class="btn themeRedBtn themeRedBtn_profile"
+              id="continueButton"
+              disabled
+              onclick="handleClickModal('myModal')"
+            >
+              Proceed
+              <img src="./assets/img/arrow-right.svg" alt="icons" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Confrmation Modal Start -->
+      <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+              </button>
+              <div class="info-heading-container">
+                <div class="info-heading-image">
+                  <img
+                    src="./assets/img/icons/info-button-icon.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info-heading">Are you sure ?</div>
+              </div>
+              <div class="info-content">
+                Please confirm that you want to proceed with the OTP
+                verification
+              </div>
+              <div class="info-button-container">
+                <div class="info-button">
+                  <button
+                    type="button"
+                    class="btn themeRedBtn themeWhiteButton"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No
+                  </button>
+                </div>
+                <div class="info-button">
+                  <button type="button" class="themeRedBtn">Yes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/chart.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
