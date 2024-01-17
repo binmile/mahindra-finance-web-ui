@@ -992,3 +992,102 @@ select {
     }
 }
 
+
+
+// additional-fix-depositcss//
+// .monthsection p {
+//     font-size: 16px;
+//     color: #ADADAD;
+//     font-weight: 500;
+//     line-height: 24px;
+// }
+// .monthsection p {
+//     font-size: 16px;
+//     color: #ADADAD;
+//     font-weight: 500;
+//     line-height: 24px;
+//     padding: 10px 26px;
+//     border: 1px solid;
+//     border-radius: 8px;
+//     margin-right: 12px;
+// }
+// .monthbox ul {
+//     display: flex;
+//     align-items: center;
+//     align-content: space-around;
+// }
+// .monthbox ul li {
+//     list-style: none;
+// }
+
+// .quickActionBox .quickActionTabs.custquickAction label {
+   
+//     display: flex;
+//     border: 1px solid #E8E8E8;
+//     margin-bottom: 16px;
+//     border-radius: 8px;
+//     padding: 10px 26px;
+//     cursor: pointer;
+//     transition: all linear 0.2s;
+//     width: unset;
+// }
+
+
+.opinion-scale {
+    margin-bottom: 1em;
+  }
+  .opinion-scale ul {
+    list-style: none;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 0.5em;
+    padding-left: 0px;
+  }
+  .opinion-scale li {
+    display: contents;
+    width: 2%;
+    word-break: break-word;
+  }
+  .opinion-scale li input[type=radio] {
+    display: none;
+  }
+  .opinion-scale li input[type=radio]:checked + label {
+    background-color: #000;
+    color: whitesmoke;
+    border-color: #000;
+  }
+  .opinion-scale li label {
+    background-color: white;
+    color: #adadad;
+    border: 1px solid #D6D6D6;
+    text-align: center;
+    line-height: 2em;
+    padding: 10px 26px;
+    border-radius: 8px;
+    margin-right: 12px;
+    margin-top: 3px;
+}
+  .opinion-scale .opinion-labels {
+    margin-bottom: 0;
+  }
+  .opinion-scale .opinion-label label {
+    color: #363636;
+  }
+  .opinion-scale .opinion-label.min {
+    text-align: left;
+  }
+  .opinion-scale .opinion-label.mid {
+    text-align: center;
+  }
+  .opinion-scale .opinion-label.max {
+    text-align: right;
+  }
+  label.label.is-large p {
+    margin-bottom: 0px;
+}
+.opinion-scale.custopinion-scale li label {
+  
+    width: 107px;
+    padding: 10px;
+}
