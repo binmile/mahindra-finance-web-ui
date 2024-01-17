@@ -289,9 +289,11 @@
                   <label for="account_number" class="form-label label_text"
                     >Would you like to add a joint account holder?</label
                   >
-                  <div class="row">
-                    <div class="col-lg-2 col-md-2">
-                      <div id="repayment-buttonContainer">
+                  <div class="row flex-row">
+                    <div class="col-lg-2 col-md-6 col-6">
+                      <div
+                        id="repayment-buttonContainer repayment-buttonContainer-add"
+                      >
                         <button
                           class="themeRedBtn button-addition"
                           id="yesBtn"
@@ -301,8 +303,10 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-lg-2 col-md-2">
-                      <div id="repayment-buttonContainer">
+                    <div class="col-lg-2 col-md-6 col-6">
+                      <div
+                        id="repayment-buttonContainer repayment-buttonContainer-add"
+                      >
                         <button
                           class="themeRedBtn button-addition"
                           id="noBtn"
@@ -314,10 +318,13 @@
                     </div>
                   </div>
                   <div class="joint-wrapper-div" id="joint_wrapper_div_">
-                    <div class="row align-items-end mt-20">
-                      <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
-                        <div class="row">
-                          <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="row mt-20">
+                        
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row flex-row align-items-end">
+                          <div
+                            class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3"
+                          >
                             <label for="joint" class="label-add"
                               >Select joint account holder
                             </label>
@@ -339,8 +346,9 @@
                               <option value="nominee_data">Vishnu</option>
                             </select>
                           </div>
-
-                          <div class="col-lg-4 col-md-12 col-sm-12">
+                          <div
+                            class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3"
+                          >
                             <label for="mobile_number" class="label-add"
                               >Enter joint account holder’s mobile</label
                             >
@@ -352,7 +360,9 @@
                               autocomplete="off"
                             />
                           </div>
-                          <div class="col-lg-4 col-md-12 col-sm-12">
+                          <div
+                            class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3"
+                          >
                             <label for="pan" class="label-add"
                               >Enter joint account holder’s PAN</label
                             >
@@ -364,16 +374,18 @@
                               autocomplete="off"
                             />
                           </div>
+                          <div
+                            class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3"
+                          >
+                            <button class="themeRedBtn customBtn customBtn_add">
+                              Generate OTP
+                              <img
+                                src="./assets/img/arrow-right.svg"
+                                alt="icons"
+                              />
+                            </button>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                        <button
-                          class="themeRedBtn customBtn customBtn_add"
-                          onclick="handleClickModal('myOTPModal')"
-                        >
-                          Generate OTP
-                          <img src="./assets/img/arrow-right.svg" alt="icons" />
-                        </button>
                       </div>
                     </div>
                   </div>
@@ -386,9 +398,11 @@
                   <label for="account_number" class="form-label label_text"
                     >Would you like to add nominee?</label
                   >
-                  <div class="row">
-                    <div class="col-lg-2 col-md-2">
-                      <div id="repayment-buttonContainer">
+                  <div class="row flex-row">
+                    <div class="col-lg-2 col-md-6 col-6">
+                      <div
+                        id="repayment-buttonContainer repayment-buttonContainer-add"
+                      >
                         <button
                           class="themeRedBtn button-addition"
                           id="nomineeyes"
@@ -398,8 +412,10 @@
                         </button>
                       </div>
                     </div>
-                    <div class="col-lg-2 col-md-2">
-                      <div id="repayment-buttonContainer">
+                    <div class="col-lg-2 col-md-6 col-6">
+                      <div
+                        id="repayment-buttonContainer repayment-buttonContainer-add"
+                      >
                         <button
                           class="themeRedBtn button-addition"
                           id="nomineeno"
@@ -412,7 +428,7 @@
                   </div>
                   <div class="nominee-wrapper-div" id="nominee_wrapper_div_">
                     <div class="row align-items-end mt-20">
-                      <div class="col-lg-3 col-md-12 col-sm-12">
+                      <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
                         <label for="joint" class="label-add"
                           >Select nominee
                         </label>
@@ -432,7 +448,7 @@
                           <option value="nominee_data">Vishnu</option>
                         </select>
                       </div>
-                      <div class="col-lg-3 col-md-12 col-sm-12">
+                      <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
                         <label for="mobile_number" class="label-add"
                           >Name</label
                         >
@@ -443,7 +459,7 @@
                           autocomplete="off"
                         />
                       </div>
-                      <div class="col-lg-3 col-md-12 col-sm-12">
+                      <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
                         <label for="pan" class="label-add">Date of birth</label>
                         <input
                           type="date"
@@ -454,7 +470,7 @@
                           autocomplete="off"
                         />
                       </div>
-                      <div class="col-lg-3 col-md-12 col-sm-12">
+                      <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
                         <label for="joint" class="label-add"
                           >Nominee’s relation with you
                         </label>
@@ -486,8 +502,8 @@
                   </div>
                 </div>
               </div>
-              <div class="termsConditionsContainer">
-                <label class="checkbox-container">
+              <div class="termsConditionsContainer terms_label">
+                <label class="checkbox-container checkbox_add">
                   <input type="checkbox" name="preclosure-flow" />
                   <span class="checkmark"></span>
                 </label>
@@ -507,7 +523,7 @@
               disabled
               onclick="handleClickModal('myModal')"
             >
-              Submit
+              Proceed
               <img src="./assets/img/arrow-right.svg" alt="icons" />
             </button>
           </div>
