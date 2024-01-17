@@ -61,3 +61,13 @@
 .nominee-wrapper-div{
     display: none;
 }
+.check_btn_add{
+    background-color: $color_black !important;
+    color:$color_white !important
+}
+
+@media only screen and (max-width: 767px) {
+    .noteContent-add{
+        width:auto;
+    }
+}

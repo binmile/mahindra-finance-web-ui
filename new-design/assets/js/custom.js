@@ -340,17 +340,17 @@ function showContentAdd(clickedBtn, yesBtn, noBtn, content_div) {
   var otherContentDiv = document.getElementById(content_div);
   var otherContentDiv_second = document.getElementById("content_add_");
 
-  yesBtnId.style.backgroundColor = "";
-  yesBtnId.style.color = "#adadad";
-  noBtn.style.backgroundColor = "";
-  noBtn.style.color = "#adadad";
-  clickedBtn.style.backgroundColor = "#000";
-  clickedBtn.style.color = "#fff";
+  yesBtnId.classList.remove("check_btn_add");
+  noBtn.classList.remove("check_btn_add");
+
+  clickedBtn.classList.add("check_btn_add");
   if (clickedBtn.id === "yesBtn") {
     otherContentDiv.style.display = "block";
+
   } else if (clickedBtn.id === "nomineeyes") {
     otherContentDiv.style.display = "block";
     otherContentDiv_second.style.display = "none";
+
   } else {
     otherContentDiv.style.display = "none";
     otherContentDiv_second.style.display = "block";

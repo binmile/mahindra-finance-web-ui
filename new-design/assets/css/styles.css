@@ -8921,6 +8921,16 @@ input[type=number] {
   display: none;
 }
 
+.check_btn_add {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .noteContent-add {
+    width: auto;
+  }
+}
 #req_per_page {
   display: none;
 }
