@@ -9063,6 +9063,10 @@ input[type=number] {
   letter-spacing: 0;
 }
 
+.col-border-add {
+  border-right: 1px solid #d9d9d9;
+}
+
 .customCardContainer {
   padding: 24px 32px;
   background-color: #FFFFFF;
@@ -9076,6 +9080,9 @@ input[type=number] {
   }
   .fdContents .fdDetails .value.value_add {
     justify-content: flex-start;
+  }
+  .col-border-add {
+    border-right: unset;
   }
   .add-min-height {
     min-height: 0;
