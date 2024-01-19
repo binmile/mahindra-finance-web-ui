@@ -1,0 +1,60 @@
+html,
+.main_body_error_wrapper {
+  height: 100%;
+  margin: 0;
+}
+.main_body_error_wrapper {
+  align-items: center;
+  @include allCenter;
+}
+.text_error_data {
+  margin-top: 20px;
+  @include custom-font(60px, 400, 72px, -0.5px);
+}
+.accountDetailsBox_error {
+  @include setDisplayProperty(flex, center, center, column);
+
+  padding: 0 230px 0 230px;
+}
+
+.somthing_text {
+  @include custom-font(24px, 400, 32px, -0.18px);
+  margin: 16px 0 32px 0;
+}
+
+.button_success_error {
+  @include custom-width-height(153px, 40px);
+}
+
+.error_occured_text {
+  margin: 12px 0;
+  @include custom-font(24px, 600, 32px, -0.1px);
+}
+.text_executive {
+  @include custom-font(16px, 400, 24px, 0.01px);
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 991px) {
+  .accountDetailsBox_error {
+    padding: 0 40px 0 40px;
+  }
+  .text_error_data {
+    @include custom-font(24px, 700, 30px, 0);
+  }
+  .somthing_text {
+    @include custom-font(12px, 400, 16px, 0);
+  }
+  .error_occured_text {
+    @include custom-font(14px, 500, 16px, 0);
+  }
+  .text_executive {
+    @include custom-font(12px, 400, 24px, 0);
+    
+  }
+  .error_img_tag{
+    img{
+        @include custom-width-height(250px, 250px);
+    }
+}
+}

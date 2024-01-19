@@ -20,6 +20,9 @@
     color: $color_dull_gray;
   }
 }
+.boldTitle_add {
+  margin-bottom: 35px;
+}
 .label-add {
   @include custom-font(14px, 400, 24px, 0.25px);
   color: $color_light_text;
@@ -50,7 +53,7 @@
 }
 .customBtn_add {
   height: 46px;
-  width:100%;
+  width: 100%;
 }
 .joint-wrapper-div {
   display: none;
@@ -62,7 +65,156 @@
   background-color: $color_black !important;
   color: $color_white !important;
 }
+
+.fdContents_review {
+  margin-top: 0;
+}
+.review-details-wrapper {
+  padding: 28px 32px;
+  background: #f3f4f6;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.edit_wrap_add {
+  width: fit-content;
+  a {
+    text-decoration: none;
+  }
+  img {
+    vertical-align: baseline;
+  }
+}
+.edit_img_add {
+  color: #0094ff;
+  border-bottom: 1px solid #0094ff;
+  width: fit-content;
+  text-decoration: none;
+}
+.nominee_span {
+  margin-left: 10px;
+}
+.details_section {
+  margin-top: 32px;
+  border-top: 1px solid#d9d9d9;
+  padding: 32px 0;
+  border-bottom: 1px solid#d9d9d9;
+}
+.contact_section {
+  margin-top: 32px;
+}
+
+.subHeading_add {
+  @include custom-font(20px, 600, 24px, 0.15px);
+  span {
+    @include custom-font(14px, 500, 24px, 0);
+  }
+}
+
+.fdContents .fdDetails {
+  .value {
+    &.value_add {
+      place-items: flex-start;
+      justify-content: flex-start;
+
+      img {
+        @include custom-width-height(18px, 18px);
+        margin-right: 10px;
+      }
+    }
+    &.value_add_text {
+      @include custom-font(20px, 500, 20px, 0);
+      color: #221f20;
+      margin-top: 8px;
+    }
+    &.value_text_data {
+      line-height: 19px;
+    }
+  }
+  .label {
+    &.add_label {
+      font-weight: 400;
+    }
+    &.approved_amount {
+      @include custom-font(14px, 400, 24px, 0);
+      color: #4b4c4d;
+    }
+    &.review_approved_amount {
+      @include custom-font(14px, 400, 24px, 0);
+
+      color: #221f20;
+      .value {
+        @include custom-font(16px, 500, 19px, 0);
+      }
+    }
+  }
+}
+.email_data_add {
+  margin-top: 10px;
+}
+.email_text {
+  @include custom-font(14px, 400, 24px, 0);
+
+  margin-bottom: 2px;
+}
+.email_details_add {
+  @include custom-font(16px, 500, 30px, 0);
+
+  margin-bottom: 12px;
+  span {
+    img {
+      margin-right: 8px;
+    }
+  }
+}
+.email_content_add {
+  @include custom-font(14px, 400, 24px, 0);
+}
+.col-border-add {
+  border-right: 1px solid #d9d9d9;
+}
+.customCardContainer {
+  padding: 24px 32px;
+  background-color: $color_white;
+  box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
+    0px 10px 15px 0px rgba($color_black, 0.05);
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
 @media only screen and (max-width: 991px) {
+  .no_mobile_screen {
+    display: none;
+  }
+  .boldTitle_add {
+    margin-bottom: 8px;
+  }
+  .secondary_margin {
+    margin-top: 16px;
+  }
+
+  .review-details-wrapper {
+    padding: 0;
+    background: unset;
+    border-radius: unset;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 24px;
+  }
+
+  .fdContents {
+    &.add_fdContents {
+      margin-top: 0;
+    }
+    .fdDetails {
+      &.add_fdDetails {
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 16px;
+      }
+    }
+  }
+  .col-border-add {
+    border-right: unset;
+  }
   .add-min-height {
     min-height: 0;
   }
@@ -95,5 +247,93 @@
   }
   .additional_text {
     margin-left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .customCardContainer {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 16px;
+    margin-top: 0;
+  }
+  .boldTitle_add {
+    @include custom-font(14px, 600, 24px, 0);
+  }
+  .subHeading_add {
+    @include custom-font(14px, 600, 24px, 0);
+  }
+  .email_details_add {
+    @include custom-font(14px, 600, 24px, 0);
+    margin-bottom: 8px;
+  }
+  .email_text {
+    @include custom-font(12px, 400, 24px, 0);
+  }
+  .email_content_add {
+    @include custom-font(12px, 400, 16px, 0);
+  }
+  .add_btn_revew {
+    margin: 0 18px 0 18px;
+  }
+  .add_commonBackBtn {
+    margin-left: 15px;
+  }
+  .fdContents {
+    .fdDetails {
+      .value {
+        &.value_add {
+          justify-content: flex-start;
+        }
+        &.value_add_text {
+          @include custom-font(14px, 500, 19px, 0);
+          color: #221f20;
+          
+        }
+      }
+
+      &.value_text_data {
+        line-height: 18px;
+      }
+      .label {
+        &.add_label {
+          font-weight: 400;
+          color: #4b4c4d;
+        }
+        &.approved_amount {
+          @include custom-font(12px, 400, 24px, 0);
+          color: #4b4c4d;
+        }
+        &.review_approved_amount {
+          @include custom-font(12px, 400, 24px, 0);
+          color: #4b4c4d;
+
+          .value {
+            @include custom-font(16px, 500, 19px, 0);
+          }
+        }
+      }
+    }
+  }
+  .mobCustomCardContainer {
+    padding: 16px;
+    background-color: $color_white;
+    box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
+      0px 10px 15px 0px rgba($color_black, 0.05);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .details_section {
+    margin-top: 0px;
+    border-top: unset;
+    border-bottom: unset;
+    padding: 11px;
+  }
+  .mobCustomCardContainer_contact {
+    padding: 16px;
+    background-color: $color_white;
+    box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
+      0px 10px 15px 0px rgba($color_black, 0.05);
+    border-radius: 8px;
+    margin-top: 0;
   }
 }
