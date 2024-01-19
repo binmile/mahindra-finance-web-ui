@@ -9231,7 +9231,6 @@ input[type=number] {
   .details_section {
     margin-top: 0px;
     border-top: unset;
-    padding: 0;
     border-bottom: unset;
     padding: 11px;
   }
@@ -9250,9 +9249,10 @@ html,
 }
 
 .main_body_error_wrapper {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
+  place-items: center;
 }
 
 .text_error_data {
@@ -9280,8 +9280,8 @@ html,
 }
 
 .button_success_error {
-  height: 40px;
   width: 153px;
+  height: 40px;
 }
 
 @media only screen and (max-width: 991px) {
