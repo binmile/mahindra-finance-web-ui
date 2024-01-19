@@ -269,13 +269,11 @@
     <div class="container mb-20">
       <div class="row animate__animated animate__fadeInUp">
         <div class="col-12 mt-20">
-          <a href="#" class="commonBackBtn"
+          <a href="#" class="commonBackBtn add_commonBackBtn"
             ><img src="./assets/img/icons/chevron-left.svg" alt="icon" />
             Back</a
           >
-        </div>
-        <div class="col col-md-12">
-          <div id="commonHeading-repayment"></div>
+          </a>
         </div>
         <div class="col-12">
           <div class="customCardContainer">
@@ -284,15 +282,20 @@
                 <div class="mobCustomCardContainer">
                   <div class="boldTitle boldTitle_add">
                     Review your FD application
-                    <span class="additional_text"> (3/4)</span>
+                    <span class="additional_text"> (3/4) <span class="edit_wrap_add nominee_span no_tablet_view">
+                      <a href="#" class="edit_img_add">
+                        <img
+                          src="./assets/img/icons/edit_pencil.svg"
+                          alt="icons"
+                        />
+                        Edit
+                      </a>
+                    </span> </span>
+                   
                   </div>
 
                   <div class="row flex-row">
                     <div class="col-lg-2 col-md-3 col-5">
-                      <!-- <div class="approved_amount">
-                        Approved amount
-                        <p>₹15,000</p>
-                      </div> -->
                       <div class="fdContents fdContents_review">
                         <div class="fdDetails add_fdDetails">
                           <div class="label approved_amount">
@@ -454,7 +457,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-lg-1">
+                          <div class="col-lg-1 no_mobile_screen">
                             <a href="#" class="edit_img_add">
                               <img
                                 src="./assets/img/icons/edit_pencil.svg"
@@ -532,7 +535,7 @@
                       </div>
                     </div>
 
-                    <div class="col-lg-6 mobCustomCardContainer">
+                    <div class="col-lg-6 mobCustomCardContainer secondary_margin">
                       <div class="row flex-row">
                         <div class="subHeading_add">
                           Secondary account holder
@@ -621,7 +624,7 @@
         <div class="col col-md-12">
           <div class="buttonContainer" id="repayment-buttonContainer">
             <button
-              class="btn themeRedBtn themeRedBtn_profile"
+              class="btn themeRedBtn themeRedBtn_profile add_btn_revew"
               id="continueButton"
               onclick="handleClickModal('myModal')"
             >

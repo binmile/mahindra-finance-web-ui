@@ -95,9 +95,9 @@
 }
 .details_section {
   margin-top: 32px;
-  border-top: 1px solid#8C989F;
+  border-top: 1px solid#d9d9d9;
   padding: 32px 0;
-  border-bottom: 1px solid#8C989F;
+  border-bottom: 1px solid#d9d9d9;
 }
 .contact_section {
   margin-top: 32px;
@@ -178,14 +178,38 @@
   box-shadow: 0px 4px 8px 0px rgba($color_black, 0.05),
     0px 10px 15px 0px rgba($color_black, 0.05);
   border-radius: 8px;
+  margin-top: 16px;
 }
+
 @media only screen and (max-width: 991px) {
-  .fdContents .fdDetails {
-    &.add_fdDetails {
-      width: 100%;
+  .no_mobile_screen {
+    display: none;
+  }
+  .boldTitle_add {
+    margin-bottom: 8px;
+  }
+  .secondary_margin {
+    margin-top: 16px;
+  }
+
+  .review-details-wrapper {
+    padding: 0;
+    background: unset;
+    border-radius: unset;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 24px;
+  }
+
+  .fdContents {
+    &.add_fdContents {
+      margin-top: 0;
     }
-    .value.value_add {
-      justify-content: flex-start;
+    .fdDetails {
+      &.add_fdDetails {
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 16px;
+      }
     }
   }
   .col-border-add {
@@ -230,20 +254,64 @@
     background-color: transparent;
     box-shadow: none;
     padding: 16px;
+    margin-top: 0;
   }
   .boldTitle_add {
-    margin-bottom: 25x;
+    @include custom-font(14px, 600, 24px, 0);
   }
-  .review-details-wrapper {
-    padding: 24px 0 0 0;
-    background: unset;
-    border-radius: unset;
-    border-top: 1px solid #d9d9d9;
+  .subHeading_add {
+    @include custom-font(14px, 600, 24px, 0);
   }
-  .approved_amount {
+  .email_details_add {
+    @include custom-font(14px, 600, 24px, 0);
+    margin-bottom: 8px;
+  }
+  .email_text {
     @include custom-font(12px, 400, 24px, 0);
-    p {
-      @include custom-font(14px, 500, 24px, 0);
+  }
+  .email_content_add {
+    @include custom-font(12px, 400, 16px, 0);
+  }
+  .add_btn_revew {
+    margin: 0 18px 0 18px;
+  }
+  .add_commonBackBtn {
+    margin-left: 15px;
+  }
+  .fdContents {
+    .fdDetails {
+      .value {
+        &.value_add {
+          justify-content: flex-start;
+        }
+        &.value_add_text {
+          @include custom-font(14px, 500, 19px, 0);
+          color: #221f20;
+          
+        }
+      }
+
+      &.value_text_data {
+        line-height: 18px;
+      }
+      .label {
+        &.add_label {
+          font-weight: 400;
+          color: #4b4c4d;
+        }
+        &.approved_amount {
+          @include custom-font(12px, 400, 24px, 0);
+          color: #4b4c4d;
+        }
+        &.review_approved_amount {
+          @include custom-font(12px, 400, 24px, 0);
+          color: #4b4c4d;
+
+          .value {
+            @include custom-font(16px, 500, 19px, 0);
+          }
+        }
+      }
     }
   }
   .mobCustomCardContainer {

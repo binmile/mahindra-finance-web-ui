@@ -8967,9 +8967,9 @@ input[type=number] {
 
 .details_section {
   margin-top: 32px;
-  border-top: 1px solid #8C989F;
+  border-top: 1px solid #d9d9d9;
   padding: 32px 0;
-  border-bottom: 1px solid #8C989F;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .contact_section {
@@ -9072,14 +9072,33 @@ input[type=number] {
   background-color: #FFFFFF;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+  margin-top: 16px;
 }
 
 @media only screen and (max-width: 991px) {
+  .no_mobile_screen {
+    display: none;
+  }
+  .boldTitle_add {
+    margin-bottom: 8px;
+  }
+  .secondary_margin {
+    margin-top: 16px;
+  }
+  .review-details-wrapper {
+    padding: 0;
+    background: unset;
+    border-radius: unset;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 24px;
+  }
+  .fdContents.add_fdContents {
+    margin-top: 0;
+  }
   .fdContents .fdDetails.add_fdDetails {
     width: 100%;
-  }
-  .fdContents .fdDetails .value.value_add {
-    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-top: 16px;
   }
   .col-border-add {
     border-right: unset;
@@ -9126,26 +9145,80 @@ input[type=number] {
     background-color: transparent;
     box-shadow: none;
     padding: 16px;
+    margin-top: 0;
   }
   .boldTitle_add {
-    margin-bottom: 25x;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
   }
-  .review-details-wrapper {
-    padding: 24px 0 0 0;
-    background: unset;
-    border-radius: unset;
-    border-top: 1px solid #d9d9d9;
+  .subHeading_add {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
   }
-  .approved_amount {
+  .email_details_add {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+  }
+  .email_text {
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0;
   }
-  .approved_amount p {
+  .email_content_add {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .add_btn_revew {
+    margin: 0 18px 0 18px;
+  }
+  .add_commonBackBtn {
+    margin-left: 15px;
+  }
+  .fdContents .fdDetails .value.value_add {
+    justify-content: flex-start;
+  }
+  .fdContents .fdDetails .value.value_add_text {
     font-size: 14px;
     font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0;
+    color: #221f20;
+  }
+  .fdContents .fdDetails.value_text_data {
+    line-height: 18px;
+  }
+  .fdContents .fdDetails .label.add_label {
+    font-weight: 400;
+    color: #4b4c4d;
+  }
+  .fdContents .fdDetails .label.approved_amount {
+    font-size: 12px;
+    font-weight: 400;
     line-height: 24px;
+    letter-spacing: 0;
+    color: #4b4c4d;
+  }
+  .fdContents .fdDetails .label.review_approved_amount {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #4b4c4d;
+  }
+  .fdContents .fdDetails .label.review_approved_amount .value {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
     letter-spacing: 0;
   }
   .mobCustomCardContainer {
