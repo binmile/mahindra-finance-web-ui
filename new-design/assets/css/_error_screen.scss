@@ -26,6 +26,15 @@ html,
   @include custom-width-height(153px, 40px);
 }
 
+.error_occured_text {
+  margin: 12px 0;
+  @include custom-font(24px, 600, 32px, -0.1px);
+}
+.text_executive {
+  @include custom-font(16px, 400, 24px, 0.01px);
+  margin-bottom: 24px;
+}
+
 @media only screen and (max-width: 991px) {
   .accountDetailsBox_error {
     padding: 0 40px 0 40px;
@@ -36,4 +45,16 @@ html,
   .somthing_text {
     @include custom-font(12px, 400, 16px, 0);
   }
+  .error_occured_text {
+    @include custom-font(14px, 500, 16px, 0);
+  }
+  .text_executive {
+    @include custom-font(12px, 400, 24px, 0);
+    
+  }
+  .error_img_tag{
+    img{
+        @include custom-width-height(250px, 250px);
+    }
+}
 }
