@@ -238,6 +238,7 @@
 .payment_box_add {
   align-items: center;
   @include setDisplayProperty(flex, center, center, column);
+  min-width: auto;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ICICI_bank {
