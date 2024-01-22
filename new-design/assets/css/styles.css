@@ -9103,6 +9103,7 @@ input[type=number] {
   color: #6b7280;
   background: #f3f4f6;
   border-radius: 8px;
+  display: flex;
 }
 
 .fdContents .fdDetails.add_fd_details::after {
@@ -9144,13 +9145,18 @@ input[type=number] {
 }
 
 .payment_box_add {
+  align-items: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   place-items: center;
-  align-items: center;
+  flex-direction: column;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ICICI_bank {
+    font-size: 18px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1014px) {
   .fdContents .fdDetails.add_fd_details::after {
     right: -24px;
