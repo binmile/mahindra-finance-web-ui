@@ -358,7 +358,14 @@ function showContentAdd(clickedBtn, yesBtn, noBtn, content_div) {
 }
 
 /*****************additional-js-end ******************/
-
+/******repayment-js-start------------------- */
+$('.showSingle').click(function () {
+  $('.customepayment').hide();
+  $('.showSingle').removeClass('greenactive');
+  $(this).addClass("greenactive")
+  $('#div' + $(this).attr('target')).show();
+});
+/********repayment-js-end-here************** */
 /*****************open sucess toast BMT-265 ******************/
 function openSucessToast() {
   var element = document.getElementById("sucessToastMessage");
