@@ -253,6 +253,16 @@ function bank_toggle_bank(id) {
     bank_details_data.style.display = "none";
   }
 }
+function bank_toggle_add(id, data){
+  var bank_select = document.getElementById(id);
+  var data_id = document.getElementById(data);
+  if (bank_select.value === "ICICI_bank") {
+    data_id.style.display="block"
+  }
+  else{
+    data_id.style.display="none"
+  }
+}
 /******manage-bank-toggle-end */
 
 /******manage-nominee-toggle-start */

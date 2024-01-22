@@ -298,9 +298,9 @@
                             >Select/add bank details</label
                           >
                           <select
-                            id="nominee_value_id"
+                            id="bank_id_name"
                             class="form-control formControl formControl_profile"
-                            onchange="bank_toggle_nominee('nominee_value_id')"
+                            onchange="bank_toggle_add('bank_id_name','add_bank_details_')"
                           >
                             <option
                               value="disable-selected"
@@ -311,7 +311,7 @@
                               Select
                             </option>
                             <option value="add-new-nominee">Add-new</option>
-                            <option value="nominee_data">ICICI Bank</option>
+                            <option value="ICICI_bank">ICICI Bank</option>
                           </select>
                           <p class="credit_details">
                             We will credit ₹ 1 to your account to verify your
@@ -405,7 +405,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-12 col-12">
+                  <div class="col-lg-4 col-md-12 col-12" id="add_bank_details_">
                     <div class="add_bank_details">
                       <div class="add_bank_name">
                         <div class="ICICI_bank">ICICI Bank</div>
