@@ -196,6 +196,18 @@
 .ICICI_bank {
   @include custom-font(34px, 600, 40px, 0.25px);
 }
+.custom_border{
+  position: relative
+}
+.col_border::after{
+  content: "";
+  position: absolute;
+  left: 53.8%;
+  top: 0;
+  height: 95%;
+  border-right: 1px solid $color_border;
+
+}
 .banglore_name {
   @include custom-font(14px, 400, 24px, 0.25px);
   padding: 4px 8px;
@@ -335,8 +347,17 @@
   .fdContents .fdDetails.add_fd_details::after {
     right: -31px;
   }
+  .personal_details {
+    margin: 20px 0;
+}
 }
 @media only screen and (max-width: 991px) {
+  .col_border::after {
+    
+    position: unset;
+    border-right: unset;
+   
+}
   .upi_details {
     min-height: 0;
   }
