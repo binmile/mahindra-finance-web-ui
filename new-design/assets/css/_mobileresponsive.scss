@@ -1141,7 +1141,16 @@ span.ml-2 {
 .mainsec .web-wrapper {
     display: block !important;
 }
+label.label.is-large p {
+    display: none;
+}
 .mainsec {
     margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 992px) { 
+.mainsec {
+    display: none;
 }
 }
