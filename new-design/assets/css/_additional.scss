@@ -279,7 +279,7 @@
 .parent_div {
   display: flex;
   justify-content: space-between;
-  place-items:center;
+  place-items: center;
   gap: 26px;
 }
 .kyc_details_purchase {
@@ -345,6 +345,32 @@
 .categories_data {
   margin-top: 16px;
 }
+.second_wrapper_data {
+  display: flex;
+  justify-content: space-between;
+  place-items: end;
+}
+.ved_text_name {
+  @include custom-font(20px, 600, 24px, 0.15px);
+  color: #221f20;
+}
+.button_kyc_data {
+  width: 159px;
+  height: 44px;
+}
+.pan_text_name {
+  margin-top: 10px;
+
+  @include custom-font(14px, 400, 24px, 0);
+  color: #4b4c4d;
+  p {
+    @include custom-font(16px, 700, 24px, 0);
+
+    color: #221f20;
+    margin: 0;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
   .payment_box_add {
     padding: 12px 0;
@@ -373,16 +399,38 @@
   }
 }
 @media only screen and (max-width: 991px) {
+  .second_wrapper_data {
+    flex-direction: column;
+    place-items: flex-start;
+  }
+  .ved_text_name {
+    @include custom-font(15px, 600, 24px, 0);
+    margin-bottom: 5px;
+  }
+  .button_kyc_data {
+    width: 100%;
+    height: 40px;
+  }
+  .pan_text_name {
+    margin-top: 3px;
+    @include custom-font(12px, 400, 16px, 0);
+
+    p {
+      @include custom-font(14px, 600, 16px, 0);
+
+      margin: 8px 0;
+    }
+  }
   .notesection_add {
     margin-top: 10px;
   }
   .content_details_data {
     padding-bottom: 10px;
   }
-  .kyc_details_purchase{
+  .kyc_details_purchase {
     margin-top: 10px;
   }
-  .bankDetailsMainContainer .textparent .formLabel.add-label{
+  .bankDetailsMainContainer .textparent .formLabel.add-label {
     margin-top: 16px;
   }
   .first_primary_detail {
@@ -402,23 +450,24 @@
   }
   .personal_details {
     margin: 10px 0;
-    border-top:1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
     padding-top: 10px;
   }
-  .personal_details_second{
+  .personal_details_second {
     margin: 10px 0;
   }
+
   .family_details {
     margin-bottom: 20px;
-    border-top:1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
     padding-top: 10px;
   }
-  .second_primary_detail{
-    border-top:1px solid #d9d9d9;
+  .second_primary_detail {
+    border-top: 1px solid #d9d9d9;
     padding-top: 10px;
   }
-  .personal_details_second{
-    border-top:1px solid #d9d9d9;
+  .personal_details_second {
+    border-top: 1px solid #d9d9d9;
     padding-top: 10px;
   }
   .bankDetailsMainContainer .textparent .textfildicons {
@@ -512,21 +561,17 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .name_data_add{
+  .name_data_add {
     @include custom-font(16px, 500, 26px, 0);
-
   }
-  .first_child{
+  .first_child {
     @include custom-font(12px, 400, 24px, 0);
-
   }
-  .second_child{
+  .second_child {
     @include custom-font(12px, 500, 24px, 0);
-
   }
-  .categories_data{
+  .categories_data {
     margin-top: 4px;
-
   }
   .customCardContainer {
     background-color: transparent;
