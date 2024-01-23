@@ -1134,6 +1134,13 @@ span.ml-2 {
 .customeline {
     border-right: 1px solid #E8E8E8;
 }
+.newbtn {
+    border: 0px;
+    background: no-repeat;
+    color: #0094FF;
+    text-decoration: underline;
+    display: none;
+}
 
 .mainsec .green-bg-label {
     width: auto;
@@ -1179,6 +1186,8 @@ label.label.is-large p {
         background-color: #FFFFFF;
         position: absolute;
     }
+    .newbtn {display: block;
+    }
 .customeline {
     display: none;
 }
@@ -1195,8 +1204,4 @@ label.label.is-large p {
 .info-icon2.custom-tooltip.custom-tooltip2 .tooltip-text::after {
     margin-left: 192px;
 }
-}
-
-@media screen and (max-width: 992px) { 
-    
 }

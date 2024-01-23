@@ -7595,6 +7595,14 @@ span.ml-2 {
   border-right: 1px solid #E8E8E8;
 }
 
+.newbtn {
+  border: 0px;
+  background: no-repeat;
+  color: #0094FF;
+  text-decoration: underline;
+  display: none;
+}
+
 .mainsec .green-bg-label {
   width: auto;
   color: #fff;
@@ -7632,6 +7640,9 @@ span.ml-2 {
   .interestRate {
     background-color: #FFFFFF;
     position: absolute;
+  }
+  .newbtn {
+    display: block;
   }
   .customeline {
     display: none;
