@@ -201,6 +201,12 @@
                                     <label for="account_number" class="form-label formLabel">Select tenure
                                         (months)</label>
 
+                                        <button
+                            onclick="handleClickShowInterestRates()"
+                        >
+              + show Interest
+            </button>
+
                                     <section class="section">
 
                                         <div name="opinion">
@@ -356,7 +362,6 @@
                                                     <div class="row flex-row align-items-end">
                                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
                                                             <div class="section-parent custbg-dark">
-                                                               
                                                                 <div class="row flex-row">
                                                                   <div class="col-md-3 col-lg-3 col-12 custpostion">
                                                                     <div class="fdDetails  fdDetails_value fdDetails_porify">
@@ -426,8 +431,7 @@
                     </div>
                     
                     <div class="col-12 col-lg-4 col-md-12">
-
-                       <div class="mainsec">
+                      <div class="mainsec interestRate" id="interestRate">
                         <div class="boldTitle boldTitle_profile mb-20">
                             <div class=" roundBackgroundIcon_lfd roundBackgroundIcon_profile">
                             </div>
@@ -561,7 +565,6 @@
                         </div>
 
                        </div>
-                        
 
                     </div>
 
@@ -587,6 +590,7 @@
 
     </div>
     </div>
+    <div id="overlay"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/chart.min.js"></script>

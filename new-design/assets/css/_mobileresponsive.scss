@@ -1175,9 +1175,10 @@ label.label.is-large p {
 }
 
 @media screen and (max-width: 992px) { 
-.mainsec {
-    display: none;
-}
+    .interestRate {
+        background-color: #FFFFFF;
+        position: absolute;
+    }
 .customeline {
     display: none;
 }

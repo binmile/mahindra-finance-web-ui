@@ -5361,7 +5361,7 @@ button.resend_otp.disabled {
   /************Menu End********************/
   /************Modal Start************/
   .modal,
-  .quick_action_container {
+  .quick_action_container, .interestRate {
     position: fixed;
     bottom: 0;
     top: auto;
@@ -5378,45 +5378,45 @@ button.resend_otp.disabled {
     height: fit-content;
   }
   .modal .modal-dialog,
-  .quick_action_container .modal-dialog {
+  .quick_action_container .modal-dialog, .interestRate .modal-dialog {
     margin: 0px;
   }
   .modal .modal-dialog .modal-content,
-  .quick_action_container .modal-dialog .modal-content {
+  .quick_action_container .modal-dialog .modal-content, .interestRate .modal-dialog .modal-content {
     box-shadow: none;
     border-radius: 0px;
   }
   .modal .modal-dialog .modal-content .modal-body,
-  .quick_action_container .modal-dialog .modal-content .modal-body {
+  .quick_action_container .modal-dialog .modal-content .modal-body, .interestRate .modal-dialog .modal-content .modal-body {
     padding: 24px 16px;
   }
   .modal .modal-dialog .modal-content .modal-body .info-heading-container,
-  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container {
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container, .interestRate .modal-dialog .modal-content .modal-body .info-heading-container {
     margin-top: 4px;
   }
   .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading,
-  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading {
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading, .interestRate .modal-dialog .modal-content .modal-body .info-heading-container .info-heading {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.15px;
   }
   .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image,
-  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image {
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image, .interestRate .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image {
     max-width: 28px;
     max-height: 28px;
   }
   .modal .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img,
-  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img {
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img, .interestRate .modal-dialog .modal-content .modal-body .info-heading-container .info-heading-image img {
     width: 16px;
     height: 16px;
   }
   .modal .modal-dialog .modal-content .modal-body .info-button button,
-  .quick_action_container .modal-dialog .modal-content .modal-body .info-button button {
+  .quick_action_container .modal-dialog .modal-content .modal-body .info-button button, .interestRate .modal-dialog .modal-content .modal-body .info-button button {
     width: 100%;
   }
   .modal.show,
-  .quick_action_container.show {
+  .quick_action_container.show, .interestRate.show {
     transform: translate(0, 0px) !important;
   }
   #overlay {
@@ -7629,8 +7629,9 @@ span.ml-2 {
   }
 }
 @media screen and (max-width: 992px) {
-  .mainsec {
-    display: none;
+  .interestRate {
+    background-color: #FFFFFF;
+    position: absolute;
   }
   .customeline {
     display: none;
