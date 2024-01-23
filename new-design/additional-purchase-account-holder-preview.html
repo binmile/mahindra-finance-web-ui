@@ -276,64 +276,353 @@
         </div>
         <div class="col-12">
           <div class="bankDetailsMainContainer">
-            <div class="boldTitle boldTitle_add">
+            <div class="boldTitle">
               Primary account holder
-              <span class="additional_text">
-                (2/4)
-                <span class="edit_wrap_add nominee_span no_tablet_view">
-                  <a href="#" class="edit_img_add">
-                    <img src="./assets/img/icons/edit_pencil.svg" alt="icons" />
-                    Edit
-                  </a>
-                </span>
-              </span>
             </div>
-            <div class="row">
-              <div class="col-lg-8 col-md-12 col-12">
+            <div class="row mt-20">
+              <div class="col-lg-7 col-md-12 col-12">
                 <div class="row">
-                  <div class="col-lg-7">
+                  <div class="col-lg-10">
                     <div class="first_primary_detail">
                       <div class="content_details_data">
                         <div class="first_primary_detail_content">
                           <div class="name_data_add">Vikram Kumar Sahu</div>
-                          <div class="categories_add">
-                            <div class="dob_margin categories_value">
-                              <div>
-                                Date of Birth
-                                <p class="categories_para">Gender</p>
-                              </div>
+                          <div class="parent_div">
+                            <div class="child_div">
+                              Date of Birth
+                              <p class="categories_para">15 May 1990</p>
                             </div>
 
-                            <div class="dob_data">
-                              <div>
-                                15 May 1990
-                                <p class="categories_para">Male</p>
-                              </div>
+                            <div class="child_div">
+                              Gender
+                              <p class="categories_para">Male</p>
+                            </div>
+
+                            <div class="child_div">
+                              Father
+                              <p class="categories_para">V. D. Sahu</p>
                             </div>
                           </div>
                         </div>
-                        <div class="second_primary_detail_content">
+                        <div class="second_primary_detail_content first_image">
                           <img src="./assets/img/person1_img.svg" alt="icons" />
                         </div>
                       </div>
-                      <div class="notesection">
-                        <p> <b>Communication address - </b>
-                            Ground Floor, Manekji Wadia Building, Nanik Motwane Marg, Mumbai - 400001</p>
-                        </div>
+                      <div class="repayment-wrapper notesection_add">
+                        Communication address -
 
-                       </div>
+                        <span class="your_apply">
+                          Ground Floor, Manekji Wadia Building, Nanik Motwane
+                          Marg, Mumbai - 400001
+                        </span>
+                      </div>
+                    </div>
+                    <div class="personal_details">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="boldTitle">Personal details</div>
+                        </div>
+                      </div>
+                      <div class="form_details">
+                        <div class="row flex-row">
+                          <div class="col-lg-6 col-md-6 col-12">
+                            <div class="textparent">
+                              <label
+                                for="mobile_number"
+                                class="form-label formLabel formLabel_profile add-label"
+                                >Occupation
+                              </label>
+                              <select
+                                id="manage_bank_id"
+                                class="form-control formControl formControl_profile"
+                                onchange="bank_toggle_bank('manage_bank_id')"
+                              >
+                                <option
+                                  value="disable-selected"
+                                  disabled
+                                  hidden
+                                  selected
+                                >
+                                  Select
+                                </option>
+                                <option value="add-new-bank">
+                                  Engineering
+                                </option>
+                                <option value="bank_value">B-Pharma</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-12">
+                            <div class="textparent">
+                              <label
+                                for="mobile_number"
+                                class="form-label formLabel formLabel_profile add-label"
+                                >Sub Occupation
+                              </label>
+                              <select
+                                id="manage_bank_id"
+                                class="form-control formControl formControl_profile"
+                                onchange="bank_toggle_bank('manage_bank_id')"
+                              >
+                                <option
+                                  value="disable-selected"
+                                  disabled
+                                  hidden
+                                  selected
+                                >
+                                  Select
+                                </option>
+                                <option value="add-new-bank">Business</option>
+                                <option value="bank_value">Service</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-12">
+                            <div class="textparent">
+                              <label
+                                for="mobile_number"
+                                class="form-label formLabel formLabel_profile add-label"
+                                >Annual income</label
+                              >
+                              <select
+                                id="manage_bank_id"
+                                class="form-control formControl formControl_profile"
+                                onchange="bank_toggle_bank('manage_bank_id')"
+                              >
+                                <option
+                                  value="disable-selected"
+                                  disabled
+                                  hidden
+                                  selected
+                                >
+                                  Select
+                                </option>
+                                <option value="add-new-bank">1,00,000</option>
+                                <option value="bank_value">2,00,000</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-12">
+                            <div class="textparent">
+                              <label
+                                for="mobile_number"
+                                class="form-label formLabel formLabel_profile add-label"
+                                >Marital status
+                              </label>
+                              <select
+                                id="manage_bank_id"
+                                class="form-control formControl formControl_profile"
+                                onchange="bank_toggle_bank('manage_bank_id')"
+                              >
+                                <option
+                                  value="disable-selected"
+                                  disabled
+                                  hidden
+                                  selected
+                                >
+                                  Select
+                                </option>
+                                <option value="add-new-bank">Married</option>
+                                <option value="bank_value">Un-Married</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-md-6 col-12">
+                            <div class="textparent">
+                              <label
+                                for="email_value"
+                                class="form-label formLabel formLabel_profile add-label"
+                              >
+                                Email</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control formControl formControl_profile"
+                                id="email_value"
+                                maxlength="30"
+                                autocomplete="off"
+                              />
+                              <div
+                                class="textfildicons textfildicons_icons add_text_field_icon"
+                              >
+                                <img
+                                  src="./assets/img/icons/mail.svg"
+                                  alt="icons"
+                                  class="repayment-icons"
+                                />
+                              </div>
+                              <p class="fd_receipt">
+                                Your FD receipt will be sent to this email
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="family_details">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="boldTitle">Family details</div>
+                        </div>
+                      </div>
+                      <div class="form_details">
+                        <div class="row flex-row">
+                          <div class="col-lg-6 col-md-6 col-12">
+                            <div class="textparent">
+                              <label
+                                for="mobile_number"
+                                class="form-label formLabel formLabel_profile add-label"
+                                >Relationship
+                              </label>
+                              <select
+                                id="manage_bank_id"
+                                class="form-control formControl formControl_profile"
+                                onchange="bank_toggle_bank('manage_bank_id')"
+                              >
+                                <option
+                                  value="disable-selected"
+                                  disabled
+                                  hidden
+                                  selected
+                                >
+                                  Select
+                                </option>
+                                <option value="add-new-bank">Brother</option>
+                                <option value="bank_value">Sister</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-12">
+                            <div class="textparent">
+                              <label
+                                for="email_value"
+                                class="form-label formLabel formLabel_profile add-label"
+                              >
+                                Full name</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control formControl formControl_profile"
+                                id="name_value"
+                                maxlength="30"
+                                autocomplete="off"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-12 col-12"></div>
+              <div class="col-lg-5 col-md-12 col-12">
+                <div class="first_primary_detail">
+                  <div class="content_details_data">
+                    <div class="first_primary_detail_content">
+                      <div class="name_data_add">Secondary account holder</div>
+                      <div class="second_primary_detail_content second_images">
+                        <img src="./assets/img/profile_second.svg" alt="icons" />
+                      </div>
+                      <div class="name_data_add second_name">Vikram Kumar Sahu</div>
+                      <div class="parent_div">
+                       
+                        <div class="child_div">
+                          Date of Birth
+                          <p class="categories_para">15 May 1990</p>
+                        </div>
+
+                        <div class="child_div">
+                          Gender
+                          <p class="categories_para">Male</p>
+                        </div>
+
+                        <div class="child_div">
+                          Father
+                          <p class="categories_para">V. D. Sahu</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="repayment-wrapper notesection_add">
+                    Communication address -
+
+                    <span class="your_apply">
+                      Ground Floor, Manekji Wadia Building, Nanik Motwane Marg, Mumbai - 400001 Nanik Motwane Marg, Mumbai - 400001
+                    </span>
+                  </div>
+
+                  <div class="form_details fd_min_height">
+                    <div class="row flex-row">
+                      <div class="col-lg-12 col-md-6 col-12">
+                        <div class="textparent">
+                          <label
+                            for="mobile_number"
+                            class="form-label formLabel formLabel_profile add-label"
+                            >Occupation 
+                          </label>
+                          <select
+                            id="manage_bank_id"
+                            class="form-control formControl formControl_profile"
+                            onchange="bank_toggle_bank('manage_bank_id')"
+                          >
+                            <option
+                              value="disable-selected"
+                              disabled
+                              hidden
+                              selected
+                            >
+                              Select
+                            </option>
+                            <option value="add-new-bank">
+                                Business
+                            </option>
+                            <option value="bank_value">Service</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-md-6 col-12">
+                        <div class="textparent">
+                            <label
+                              for="email_value"
+                              class="form-label formLabel formLabel_profile add-label"
+                            >
+                            Annual income</label
+                            >
+                            <select
+                            id="manage_bank_id"
+                            class="form-control formControl formControl_profile"
+                            onchange="bank_toggle_bank('manage_bank_id')"
+                          >
+                            <option
+                              value="disable-selected"
+                              disabled
+                              hidden
+                              selected
+                            >
+                              Select
+                            </option>
+                            <option value="add-new-bank">
+                                32,00,000
+                            </option>
+                            <option value="bank_value">62,00,000</option>
+                          </select>
+                           
+                          
+                          </div>
+                      </div>
+                     
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col col-md-12">
           <div class="buttonContainer">
             <button
-              class="btn themeRedBtn themeRedBtn_profile add_btn_revew"
+              class="btn themeRedBtn themeRedBtn_profile"
               id="continueButton"
             >
               Proceed
