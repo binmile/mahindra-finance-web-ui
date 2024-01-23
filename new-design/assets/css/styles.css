@@ -9075,7 +9075,257 @@ input[type=number] {
   margin-top: 16px;
 }
 
+.add_bank_details {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  padding: 20px 21px;
+}
+
+#add_bank_details_ {
+  display: none;
+}
+
+.add_bank_name {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.ICICI_bank {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+}
+
+.custom_border {
+  position: relative;
+}
+
+.col_border::after {
+  content: "";
+  position: absolute;
+  left: 53.8%;
+  top: 0;
+  height: 95%;
+  border-right: 1px solid #E8E8E8;
+}
+
+.banglore_name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  padding: 4px 8px;
+  color: #6b7280;
+  background: #f3f4f6;
+  border-radius: 8px;
+  display: flex;
+}
+
+.fdContents .fdDetails.add_fd_details::after {
+  right: -46px;
+}
+
+.fdContents .fdDetails .value.value_add_filter img {
+  filter: initial;
+}
+
+.add_form_label {
+  margin: 15px 0 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.add_bank_name {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 24px;
+}
+
+.credit_details {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #6b7280;
+  margin: 5px 0 32px 0;
+}
+
+.add_parent {
+  margin: 13px 0 24px 0;
+}
+
+.upi_details {
+  min-height: calc(50vh - 127px);
+}
+
+.fd_min_height {
+  min-height: 345px;
+}
+
+.name_data_add.second_name {
+  margin-bottom: 10px;
+}
+
+.payment_box_add {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+  padding: 26px 51px;
+}
+
+.first_primary_detail {
+  padding: 24px;
+  background: #f3f4f6;
+  border-radius: 6px;
+}
+
+.content_details_data {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 19px;
+}
+
+.name_data_add {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin-bottom: 22px;
+}
+
+.second_images {
+  margin-bottom: 20px;
+}
+
+.parent_div {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.child_div {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #4b4c4d;
+}
+.child_div p {
+  margin: 4px 0 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #231f20;
+}
+
+.fd_receipt {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #626567;
+}
+
+.personal_details {
+  margin: 40px 0;
+}
+
+.family_details {
+  margin-bottom: 40px;
+}
+
+.bankDetailsMainContainer .textparent .formLabel.add-label {
+  margin-top: 18px;
+}
+
+.bankDetailsMainContainer .textparent .textfildicons.add_text_field_icon {
+  top: 57.5px;
+}
+
+.second_primary_detail_content img {
+  border-radius: 5px;
+}
+
+.notesection_add {
+  margin-top: 19px;
+  background: unset;
+  padding: unset;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+  .payment_box_add {
+    padding: 12px 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ICICI_bank {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1014px) {
+  .fdContents .fdDetails.add_fd_details::after {
+    right: -24px;
+  }
+  .personal_details {
+    margin: 20px 0;
+  }
+}
+@media only screen and (min-width: 1008px) and (max-width: 1074px) {
+  .fdContents .fdDetails.add_fd_details::after {
+    right: -31px;
+  }
+  .personal_details {
+    margin: 20px 0;
+  }
+}
 @media only screen and (max-width: 991px) {
+  .col_border::after {
+    position: unset;
+    border-right: unset;
+  }
+  .upi_details {
+    min-height: 0;
+  }
+  .fd_min_height {
+    min-height: 0;
+  }
+  .name_data_add {
+    margin-bottom: 10px;
+  }
+  .personal_details {
+    margin: 20px 0;
+  }
+  .family_details {
+    margin-bottom: 20px;
+  }
+  .first_image {
+    margin-bottom: 20px;
+  }
+  .content_details_data {
+    flex-direction: column-reverse;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons.add_text_field_icon {
+    top: 57px;
+  }
+  .payment_box_add {
+    padding: 12px 0px;
+    min-width: auto;
+  }
+  .add_form_label {
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+  .fdContents .fdDetails.add_fd_details::after {
+    position: initial;
+  }
   .no_mobile_screen {
     display: none;
   }
@@ -9139,6 +9389,15 @@ input[type=number] {
   .additional_text {
     margin-left: 0;
   }
+  .ICICI_bank {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+  }
+  .credit_details {
+    font-size: 13px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .customCardContainer {
@@ -9146,6 +9405,13 @@ input[type=number] {
     box-shadow: none;
     padding: 16px;
     margin-top: 0;
+  }
+  .bankDetailsMainContainer .textparent .textfildicons.add_text_field_icon {
+    top: 46px;
+  }
+  .parent_div {
+    flex-direction: column;
+    gap: 15px;
   }
   .boldTitle_add {
     font-size: 14px;

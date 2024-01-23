@@ -253,6 +253,16 @@ function bank_toggle_bank(id) {
     bank_details_data.style.display = "none";
   }
 }
+function bank_toggle_add(id, data){
+  var bank_select = document.getElementById(id);
+  var data_id = document.getElementById(data);
+  if (bank_select.value === "ICICI_bank") {
+    data_id.style.display="block"
+  }
+  else{
+    data_id.style.display="none"
+  }
+}
 /******manage-bank-toggle-end */
 
 /******manage-nominee-toggle-start */
@@ -358,7 +368,14 @@ function showContentAdd(clickedBtn, yesBtn, noBtn, content_div) {
 }
 
 /*****************additional-js-end ******************/
-
+/******repayment-js-start------------------- */
+$('.showSingle').click(function () {
+  $('.customepayment').hide();
+  $('.showSingle').removeClass('greenactive');
+  $(this).addClass("greenactive")
+  $('#div' + $(this).attr('target')).show();
+});
+/********repayment-js-end-here************** */
 /*****************open sucess toast BMT-265 ******************/
 function openSucessToast() {
   var element = document.getElementById("sucessToastMessage");
