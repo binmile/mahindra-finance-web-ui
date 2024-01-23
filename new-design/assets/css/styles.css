@@ -7513,6 +7513,7 @@ a.moreless-button {
   border-radius: 8px;
   margin-right: 12px;
   margin-top: 3px;
+  cursor: pointer;
 }
 
 .opinion-scale .opinion-labels {
@@ -7596,6 +7597,13 @@ span.ml-2 {
 
 .mainsec .green-bg-label {
   width: auto;
+  color: #fff;
+  background: #17823e;
+  padding: 9px;
+}
+
+.mainsec .green-bg-label {
+  width: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -7608,10 +7616,37 @@ span.ml-2 {
   .mainsec {
     margin-top: 20px;
   }
+  .section-parent.custbg-dark .fdDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .opinion-scale li label {
+    margin-top: 16px;
+  }
+  .tag {
+    top: 43px;
+  }
 }
 @media screen and (max-width: 992px) {
   .mainsec {
     display: none;
+  }
+  .customeline {
+    display: none;
+  }
+}
+.info-icon2.custom-tooltip.custom-tooltip2 .tooltip-text {
+  left: 18px;
+}
+
+.info-icon2.custom-tooltip.custom-tooltip2 .tooltip-text::after {
+  margin-left: 132px;
+}
+
+@media screen and (max-width: 425px) {
+  .info-icon2.custom-tooltip.custom-tooltip2 .tooltip-text::after {
+    margin-left: 192px;
   }
 }
 .boldHeaderFd {
