@@ -9154,9 +9154,68 @@ input[type=number] {
   justify-content: center;
   place-items: center;
   flex-direction: column;
-  min-width: auto;
+  padding: 26px 51px;
 }
 
+.first_primary_detail {
+  padding: 24px;
+  background: #f3f4f6;
+  border-radius: 6px;
+}
+
+.content_details_data {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 19px;
+}
+
+.name_data_add {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin-bottom: 12px;
+}
+
+.categories_add {
+  display: flex;
+  justify-content: flex-start;
+  place-items: center;
+}
+
+.dob_margin {
+  margin-right: 26px;
+}
+
+.categories_value {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #4b4c4d;
+}
+
+.dob_data {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.categories_para {
+  margin: 14px 0 0 0;
+}
+
+.second_primary_detail_content img {
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+  .payment_box_add {
+    padding: 12px 0;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ICICI_bank {
     font-size: 18px;
@@ -9175,6 +9234,10 @@ input[type=number] {
 @media only screen and (max-width: 991px) {
   .upi_details {
     min-height: 0;
+  }
+  .payment_box_add {
+    padding: 12px 0px;
+    min-width: auto;
   }
   .add_form_label {
     margin-bottom: 14px;
