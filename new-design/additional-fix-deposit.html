@@ -173,402 +173,421 @@
             <div class="">
 
                 <div class="bankDetailsMainContainer bankDetailsMainContainer_profile d-flex">
-                   <div class="row">
-                    <div class="col-12 col-lg-7 col-md-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-7 col-md-12">
 
-                        <div class="boldTitle boldTitle_profile mb-20">
-                            <div class=" roundBackgroundIcon_lfd roundBackgroundIcon_profile">
-                            </div>
-                            Customise your fixed deposit (1/4)
-                        </div>
-                        <div class="row customealign">
-                            <div class="col-lg-12 col-md-12 ">
-                                <div class="textparent">
-                                    <label for="account_number" class="form-label formLabel">Enter amount to be
-                                        invested</label>
-                                    <input type="text" class="form-control formControl  formControlFd"
-                                        id="amount_number" maxlength="20"
-                                        onchange="validateAmount(this.id, 'errorInfoFd1', 5000)">
-                                    <div class="textfildicons">
-                                        <img src="./assets/img/icons/cash.svg" alt="icons" class="repayment-icons">
-                                    </div>
-                                    <div class="infoText" id="errorInfoFd1"> Min. deposit of ₹ 10,000 and max deposit of
-                                        ₹ 2 crores</div>
+                            <div class="boldTitle boldTitle_profile mb-20">
+                                <div class=" roundBackgroundIcon_lfd roundBackgroundIcon_profile">
                                 </div>
+                                Customise your fixed deposit (1/4)
                             </div>
-                            <div class="col-lg-12 col-md-12 ">
-                                <div class="textparent">
-                                    <label for="account_number" class="form-label formLabel">Select tenure
-                                        (months)</label>
+                            <div class="row customealign">
+                                <div class="col-lg-12 col-md-12 ">
+                                    <div class="textparent">
+                                        <label for="account_number" class="form-label formLabel">Enter amount to be
+                                            invested</label>
+                                        <input type="text" class="form-control formControl  formControlFd"
+                                            id="amount_number" maxlength="20"
+                                            onchange="validateAmount(this.id, 'errorInfoFd1', 5000)">
+                                        <div class="textfildicons">
+                                            <img src="./assets/img/icons/cash.svg" alt="icons" class="repayment-icons">
+                                        </div>
+                                        <div class="infoText" id="errorInfoFd1"> Min. deposit of ₹ 10,000 and max
+                                            deposit of
+                                            ₹ 2 crores</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 ">
+                                    <div class="textparent">
+                                        <label for="account_number" class="form-label formLabel">Select tenure
+                                            (months)</label>
 
-                                        <button
-                            onclick="handleClickShowInterestRates()"
-                        >
-              + show Interest
-            </button>
+                                        <button class="newbtn" onclick="handleClickShowInterestRates()">
+                                            % See interest rates
+                                        </button>
 
-                                    <section class="section">
+                                        <section class="section">
 
-                                        <div name="opinion">
-                                            <div class="field opinion-scale">
-                                                <ul>
-                                                    <li>
-                                                        <input type="radio" id="opinion-0" name="opinion-scale"
-                                                            value="0">
-                                                        <label class="label is-large" for="opinion-0">12</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-1" name="opinion-scale"
-                                                            value="1">
-                                                        <label class="label is-large" for="opinion-1">15</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-2" name="opinion-scale"
-                                                            value="2">
-                                                        <label class="label is-large" for="opinion-2">24</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-3" name="opinion-scale"
-                                                            value="3">
-                                                        <label class="label is-large" for="opinion-3">36</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-4" name="opinion-scale"
-                                                            value="4">
-                                                        <label class="label is-large" for="opinion-4">42</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-5" name="opinion-scale"
-                                                            value="5">
-                                                        <label class="label is-large" for="opinion-5">48</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-6" name="opinion-scale"
-                                                            value="6">
-                                                        <label class="label is-large" for="opinion-6">60</label>
-                                                    </li>
+                                            <div name="opinion">
+                                                <div class="field opinion-scale">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="radio" id="opinion-0" name="opinion-scale"
+                                                                value="0">
+                                                            <label class="label is-large" for="opinion-0">12</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-1" name="opinion-scale"
+                                                                value="1">
+                                                            <label class="label is-large" for="opinion-1">15</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-2" name="opinion-scale"
+                                                                value="2">
+                                                            <label class="label is-large" for="opinion-2">24</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-3" name="opinion-scale"
+                                                                value="3">
+                                                            <label class="label is-large" for="opinion-3">36</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-4" name="opinion-scale"
+                                                                value="4">
+                                                            <label class="label is-large" for="opinion-4">42</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-5" name="opinion-scale"
+                                                                value="5">
+                                                            <label class="label is-large" for="opinion-5">48</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-6" name="opinion-scale"
+                                                                value="6">
+                                                            <label class="label is-large" for="opinion-6">60</label>
+                                                        </li>
 
 
-                                                </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 ">
+                                    <div class="textparent">
+
+                                        <div class="tooltipdesign custtooltipdesign">
+
+                                            <div class="info-icon info-icon2 custom-tooltip custom-tooltip2">
+                                                <p class="reco">Select when you wish to receive interest</p><img
+                                                    src="./assets/img/icons/infocolor.svg" alt="icon">
+                                                <div class="tooltip-text tooltip_lfd_mobile">Recommended basis loan
+                                                    rates and remaining tenure</div>
                                             </div>
                                         </div>
-                                    </section>
+                                        <!-- <label for="account_number" class="form-label formLabel">Select when you wish to receive interest</label> -->
 
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 ">
-                                <div class="textparent">
+                                        <section class="section">
 
-                                    <div class="tooltipdesign custtooltipdesign">
-                                           
-                                        <div class="info-icon info-icon2 custom-tooltip custom-tooltip2">
-                                         <p class="reco">Select when you wish to receive interest</p><img src="./assets/img/icons/infocolor.svg" alt="icon">
-                                         <div class="tooltip-text tooltip_lfd_mobile">Recommended basis loan rates and remaining tenure</div>
-                                     </div>
-                                     </div>
-                                    <!-- <label for="account_number" class="form-label formLabel">Select when you wish to receive interest</label> -->
+                                            <div name="opinion">
+                                                <div class="field opinion-scale custopinion-scale">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="tag">
+                                                                <img src="./assets/img/icons/tag.svg" alt="icon">
 
-                                    <section class="section">
+                                                            </div>
+                                                            <input type="radio" id="opinion-7" name="opinion-scale"
+                                                                value="7">
+                                                            <label class="label is-large" for="opinion-7">On maturity
+                                                                <p>
+                                                                    8.30%</p>
 
-                                        <div name="opinion">
-                                            <div class="field opinion-scale custopinion-scale">
-                                                <ul>
-                                                    <li>
-                                                        <div class="tag">
-                                                            <img src="./assets/img/icons/tag.svg" alt="icon">
-
-                                                        </div>
-                                                        <input type="radio" id="opinion-7" name="opinion-scale"
-                                                            value="7">
-                                                        <label class="label is-large" for="opinion-7">On maturity <p>
-                                                                8.30%</p>
-                                                            
                                                             </label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-8" name="opinion-scale"
-                                                            value="8">
-                                                        <label class="label is-large" for="opinion-8">Yearly <p>8.00%
-                                                            </p></label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-9" name="opinion-scale"
-                                                            value="9">
-                                                        <label class="label is-large" for="opinion-9">Half yearly<p>
-                                                                7.75%</p></label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-10" name="opinion-scale"
-                                                            value="10">
-                                                        <label class="label is-large" for="opinion-10">Quarterly<p>7.60%
-                                                            </p></label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" id="opinion-11" name="opinion-scale"
-                                                            value="11">
-                                                        <label class="label is-large" for="opinion-11">Monthly <p>7.50%
-                                                            </p></label>
-                                                    </li>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-8" name="opinion-scale"
+                                                                value="8">
+                                                            <label class="label is-large" for="opinion-8">Yearly <p>
+                                                                    8.00%
+                                                                </p></label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-9" name="opinion-scale"
+                                                                value="9">
+                                                            <label class="label is-large" for="opinion-9">Half yearly<p>
+                                                                    7.75%</p></label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-10" name="opinion-scale"
+                                                                value="10">
+                                                            <label class="label is-large" for="opinion-10">Quarterly<p>
+                                                                    7.60%
+                                                                </p></label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="radio" id="opinion-11" name="opinion-scale"
+                                                                value="11">
+                                                            <label class="label is-large" for="opinion-11">Monthly <p>
+                                                                    7.50%
+                                                                </p></label>
+                                                        </li>
 
 
 
-                                                </ul>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                        </section>
+                                        <div class="customelvl">
+                                            <label for="account_number" class="form-label label_text"><img
+                                                    src="./assets/img/icons/tag.svg" alt="icon"><span
+                                                    class="ml-2">Interest rates are best when payout is on
+                                                    maturity</span></label>
+
                                         </div>
-                                    </section>
-                                    <div class="customelvl">
-                                        <label for="account_number" class="form-label label_text"><img src="./assets/img/icons/tag.svg" alt="icon"><span class="ml-2">Interest rates are best when payout is on maturity</span></label>
+                                        <label for="account_number" class="form-label formLabel">Select tenure
+                                            (months)</label>
 
-                                    </div>
-                                    <label for="account_number" class="form-label formLabel">Select tenure
-                                        (months)</label>
+                                        <div class="main-form">
+                                            <label for="account_number" class="form-label label_text">Would you like to
+                                                add
+                                                a joint account holder?</label>
+                                            <div class="row flex-row">
+                                                <div class="col-lg-4 col-md-4 col-6">
+                                                    <div id="repayment-buttonContainer repayment-buttonContainer-add">
+                                                        <button class="themeRedBtn button-addition" id="yesBtn"
+                                                            onclick="showContentAdd( this,'yesBtn', 'noBtn', 'joint_wrapper_div_' )">
+                                                            Principal
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-6">
+                                                    <div id="repayment-buttonContainer repayment-buttonContainer-add">
+                                                        <button class="themeRedBtn button-addition" id="noBtn"
+                                                            onclick="showContentAdd(this,'yesBtn', 'noBtn','joint_wrapper_div_' )">
+                                                            Principal + Interest
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-12">
+                                                    <div class="termsConditionsContainer">
+                                                        <label class="checkbox-container">
+                                                            <input type="checkbox" name="preclosure-flow">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="ml-25">I/We hereby declare that KYC documents and
+                                                            address provided initially at the time of placing the
+                                                            investment linked to my folio number has not changed and is
+                                                            same.
 
-                                    <div class="main-form">
-                                        <label for="account_number" class="form-label label_text">Would you like to add
-                                            a joint account holder?</label>
-                                        <div class="row flex-row">
-                                            <div class="col-lg-4 col-md-4 col-6">
-                                                <div id="repayment-buttonContainer repayment-buttonContainer-add">
-                                                    <button class="themeRedBtn button-addition" id="yesBtn"
-                                                        onclick="showContentAdd( this,'yesBtn', 'noBtn', 'joint_wrapper_div_' )">
-                                                        Principal
-                                                    </button>
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-4 col-6">
-                                                <div id="repayment-buttonContainer repayment-buttonContainer-add">
-                                                    <button class="themeRedBtn button-addition" id="noBtn"
-                                                        onclick="showContentAdd(this,'yesBtn', 'noBtn','joint_wrapper_div_' )">
-                                                        Principal + Interest
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="col col-md-12">
-                                                <div class="termsConditionsContainer">
-                                                    <label class="checkbox-container">
-                                                        <input type="checkbox" name="preclosure-flow">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                    <label class="ml-25">I/We hereby declare that KYC documents and address provided initially at the time of placing the investment linked to my folio number has not changed and is same. 
+                                            <div class="joint-wrapper-div" id="joint_wrapper_div_">
+                                                <div class="row mt-20">
 
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="joint-wrapper-div" id="joint_wrapper_div_">
-                                            <div class="row mt-20">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row flex-row align-items-end">
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                                                                <div class="section-parent custbg-dark">
+                                                                    <div class="row flex-row">
+                                                                        <div
+                                                                            class="col-md-3 col-lg-3 col-12 custpostion">
+                                                                            <div
+                                                                                class="fdDetails  fdDetails_value fdDetails_porify">
+                                                                                <div class="label"> Interest rate </div>
+                                                                                <div class="value custvalue">
 
-                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                    <div class="row flex-row align-items-end">
-                                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
-                                                            <div class="section-parent custbg-dark">
-                                                                <div class="row flex-row">
-                                                                  <div class="col-md-3 col-lg-3 col-12 custpostion">
-                                                                    <div class="fdDetails  fdDetails_value fdDetails_porify">
-                                                                      <div class="label"> Interest rate </div>
-                                                                      <div class="value custvalue">
-                                                                        
-                                                                        <!-- <div class="roundBackgroundIcon">
+                                                                                    <!-- <div class="roundBackgroundIcon">
                                                                           <img src="./assets/img/icons/preclosure-flow/percent-red.svg" alt="icon">
                                                                         </div> -->
-                                                                        8.30%
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="col-md-3 col-lg-3 col-12 custpostion">
-                                                                    <div class="fdDetails  fdDetails_value fdDetails_porify">
-                                                                      <div class="label">Interest amount </div>
-                                                                      <div class="value custvalue">
-                                                                        <!-- <div class="roundBackgroundIcon">
+                                                                                    8.30%
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-md-3 col-lg-3 col-12 custpostion">
+                                                                            <div
+                                                                                class="fdDetails  fdDetails_value fdDetails_porify">
+                                                                                <div class="label">Interest amount
+                                                                                </div>
+                                                                                <div class="value custvalue">
+                                                                                    <!-- <div class="roundBackgroundIcon">
                                                                           <img src="./assets/img/icons/money-red-icon.svg" alt="icon">
                                                                         </div> -->
-                                                                        ₹ 8,928
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                            
-                                                                  <div class="col-md-3 col-lg-3 col-12">
-                                                                    <div class="fdDetails">
-                                                                      <div class="label">Maturity amount </div>
-                                                                      <div class="value custvalue">
-                                                                        <!-- <div class="roundBackgroundIcon">
-                                                                          <img src="./assets/img/icons/clock.svg" alt="icon">
-                                                                        </div> -->
-                                                                        ₹ 58,928
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="col-md-3 col-lg-3 col-12">
-                                                                    <div class="fdDetails">
-                                                                      <div class="label">Maturity date</div>
-                                                                      <div class="value custvalue">
-                                                                        <!-- <div class="roundBackgroundIcon">
-                                                                          <img src="./assets/img/icons/clock.svg" alt="icon">
-                                                                        </div> -->
-                                                                        10 Aug 2025
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
+                                                                                    ₹ 8,928
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
 
+                                                                        <div class="col-md-3 col-lg-3 col-12">
+                                                                            <div class="fdDetails">
+                                                                                <div class="label">Maturity amount
+                                                                                </div>
+                                                                                <div class="value custvalue">
+                                                                                    <!-- <div class="roundBackgroundIcon">
+                                                                          <img src="./assets/img/icons/clock.svg" alt="icon">
+                                                                        </div> -->
+                                                                                    ₹ 58,928
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3 col-lg-3 col-12">
+                                                                            <div class="fdDetails">
+                                                                                <div class="label">Maturity date</div>
+                                                                                <div class="value custvalue">
+                                                                                    <!-- <div class="roundBackgroundIcon">
+                                                                          <img src="./assets/img/icons/clock.svg" alt="icon">
+                                                                        </div> -->
+                                                                                    10 Aug 2025
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-1 col-lg-1  customeline">
+
+
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-12">
+                            <div id="overlay"></div>
+                            <div class="mainsec interestRate" id="interestRate">
+                                <div class="boldTitle boldTitle_profile mb-20">
+                                    <div class=" roundBackgroundIcon_lfd roundBackgroundIcon_profile">
+                                    </div>
+                                    Fixed deposit schemes
+                                </div>
+                                <div class=" web-wrapper custweb">
+                                    <div class="listTable">
+                                        <div class="listTableHead">
+
+                                            <div class="wd-13 custwd-13">Tenure</div>
+                                            <div class="wd-13 custwd-13">Interest rates </div>
+
+
+
+                                            <div class="wd-12 text-center"></div>
+                                        </div>
+                                        <div class="listTableBody tableBodyWithHeight">
+                                            <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                                <div class="tableData wd-13 custwd-13">12 Month</div>
+                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
+
+
+                                                <div class="tableData wd-12 all-center">
+                                                    <div class="green-bg-label">
+
+                                                        POPULAR
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="listTableBody tableBodyWithHeight">
+                                            <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                                <div class="tableData wd-13 custwd-13">15 Month</div>
+                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
+
+
+                                                <div class="tableData wd-12 all-center">
+                                                    <div class="green-bg-label">
+
+                                                        POPULAR
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="listTableBody tableBodyWithHeight">
+                                            <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                                <div class="tableData wd-13 custwd-13">24 Month</div>
+                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
+
+
+                                                <div class="tableData wd-12 all-center">
+                                                    <div class="green-bg-label">
+
+                                                        POPULAR
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="listTableBody tableBodyWithHeight">
+                                            <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                                <div class="tableData wd-13 custwd-13">30 Month</div>
+                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
+
+
+                                                <div class="tableData wd-12 all-center">
+                                                    <div class="green-bg-label">
+
+                                                        POPULAR
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="listTableBody tableBodyWithHeight">
+                                            <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                                <div class="tableData wd-13 custwd-13">42 Month</div>
+                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
+
+
+                                                <div class="tableData wd-12 all-center">
+                                                    <div class="green-bg-label">
+
+                                                        POPULAR
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="listTableBody tableBodyWithHeight">
+                                            <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                                <div class="tableData wd-13 custwd-13">48 Month</div>
+                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
+
+
+                                                <div class="tableData wd-12 all-center">
+                                                    <div class="green-bg-label">
+
+                                                        POPULAR
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="listTableBody tableBodyWithHeight">
+                                            <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                                <div class="tableData wd-13 custwd-13">60 Month</div>
+                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
+
+
+                                                <div class="tableData wd-12 all-center">
+                                                    <div class="green-bg-label">
+
+                                                        POPULAR
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
-                    <div class="col-md-1 col-lg-1  customeline">
-                        
-
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 col-md-12">
-                      <div class="mainsec interestRate" id="interestRate">
-                        <div class="boldTitle boldTitle_profile mb-20">
-                            <div class=" roundBackgroundIcon_lfd roundBackgroundIcon_profile">
-                            </div>
-                            Fixed deposit schemes 
-                        </div>
-                        <div class=" web-wrapper custweb">
-                            <div class="listTable">
-                                <div class="listTableHead">
-                                    
-                                    <div class="wd-13 custwd-13">Tenure</div>
-                                    <div class="wd-13 custwd-13">Interest rates </div>
-                                    
-                                   
-                                    
-                                    <div class="wd-12 text-center"></div>
-                                </div>
-                                <div class="listTableBody tableBodyWithHeight">
-                                    <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
-                                        
-                                        <div class="tableData wd-13 custwd-13">12 Month</div>
-                                        <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-                                        
-                                        
-                                        <div class="tableData wd-12 all-center">
-                                            <div class="green-bg-label">
-                                                
-                                            POPULAR
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                </div>
-                                <div class="listTableBody tableBodyWithHeight">
-                                    <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
-                                        
-                                        <div class="tableData wd-13 custwd-13">15 Month</div>
-                                        <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-                                        
-                                        
-                                        <div class="tableData wd-12 all-center">
-                                            <div class="green-bg-label">
-                                                
-                                            POPULAR
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                </div>
-                                <div class="listTableBody tableBodyWithHeight">
-                                    <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
-                                        
-                                        <div class="tableData wd-13 custwd-13">24 Month</div>
-                                        <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-                                        
-                                        
-                                        <div class="tableData wd-12 all-center">
-                                            <div class="green-bg-label">
-                                                
-                                            POPULAR
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                </div>
-                                <div class="listTableBody tableBodyWithHeight">
-                                    <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
-                                        
-                                        <div class="tableData wd-13 custwd-13">30 Month</div>
-                                        <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-                                        
-                                        
-                                        <div class="tableData wd-12 all-center">
-                                            <div class="green-bg-label">
-                                                
-                                            POPULAR
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                </div>
-                                <div class="listTableBody tableBodyWithHeight">
-                                    <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
-                                        
-                                        <div class="tableData wd-13 custwd-13">42 Month</div>
-                                        <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-                                        
-                                        
-                                        <div class="tableData wd-12 all-center">
-                                            <div class="green-bg-label">
-                                                
-                                            POPULAR
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                </div>
-                                <div class="listTableBody tableBodyWithHeight">
-                                    <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
-                                        
-                                        <div class="tableData wd-13 custwd-13">48 Month</div>
-                                        <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-                                        
-                                        
-                                        <div class="tableData wd-12 all-center">
-                                            <div class="green-bg-label">
-                                                
-                                            POPULAR
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                </div>
-                                <div class="listTableBody tableBodyWithHeight">
-                                    <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
-                                        
-                                        <div class="tableData wd-13 custwd-13">60 Month</div>
-                                        <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-                                        
-                                        
-                                        <div class="tableData wd-12 all-center">
-                                            <div class="green-bg-label">
-                                                
-                                            POPULAR
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                </div>
-                                
-                            </div>
-                        </div>
-
-                       </div>
-
-                    </div>
-
-                   </div>
 
 
 
@@ -584,13 +603,13 @@
             </div>
 
         </div>
-        
+
 
     </div>
 
     </div>
     </div>
-    <div id="overlay"></div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/chart.min.js"></script>
