@@ -555,6 +555,13 @@ function handleClickShowQuickAction() {
   overlay.classList.add("show");
 }
 
+function handleClickShowInterestRates(){
+  var showBox = document.getElementById("interestRate");
+  var overlay = document.getElementById("overlay");
+  showBox.classList.add("show");
+  overlay.classList.add("show");
+}
+
 function handleClickHideQuickAction() {
   var showBox = document.getElementById("quick_action_container");
   var overlay = document.getElementById("overlay");

@@ -260,7 +260,7 @@
   /************Menu End********************/
   /************Modal Start************/
   .modal,
-  .quick_action_container {
+  .quick_action_container, .interestRate {
     position: fixed;
     bottom: 0;
     top: auto;
@@ -307,7 +307,7 @@
   }
 
   .modal.show,
-  .quick_action_container.show {
+  .quick_action_container.show, .interestRate.show {
     transform: translate(0, 0px) !important;
   }
 
