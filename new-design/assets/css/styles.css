@@ -9247,7 +9247,7 @@ input[type=number] {
   position: absolute;
   left: 53.8%;
   top: 0;
-  height: 95%;
+  height: 100%;
   border-right: 1px solid #E8E8E8;
 }
 
@@ -9301,10 +9301,6 @@ input[type=number] {
   min-height: calc(50vh - 127px);
 }
 
-.fd_min_height {
-  min-height: 345px;
-}
-
 .name_data_add.second_name {
   margin-bottom: 10px;
 }
@@ -9346,23 +9342,36 @@ input[type=number] {
 .parent_div {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  place-items: center;
+  gap: 26px;
 }
 
-.child_div {
+.kyc_details_purchase {
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 28px;
   letter-spacing: 0;
-  color: #4b4c4d;
+  color: #221f20;
+  margin-top: 19px;
 }
-.child_div p {
-  margin: 4px 0 0 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+.kyc_details_purchase span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
   letter-spacing: 0;
-  color: #231f20;
+  color: #e31837;
+}
+
+.bankDetailsMainContainer .textparent .formLabel.add-label-second {
+  margin-top: 16px;
+}
+
+.personal_details_second {
+  margin: 23px 0;
+}
+
+.second_primary_detail {
+  padding: 24px 20px;
 }
 
 .fd_receipt {
@@ -9400,6 +9409,62 @@ input[type=number] {
   padding: unset;
 }
 
+.first_child {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #4b4c4d;
+}
+
+.second_child {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #231f20;
+}
+
+.categories_data {
+  margin-top: 16px;
+}
+
+.second_wrapper_data {
+  display: flex;
+  justify-content: space-between;
+  place-items: end;
+}
+
+.ved_text_name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #221f20;
+}
+
+.button_kyc_data {
+  width: 159px;
+  height: 44px;
+}
+
+.pan_text_name {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #4b4c4d;
+}
+.pan_text_name p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #221f20;
+  margin: 0;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
   .payment_box_add {
     padding: 12px 0;
@@ -9427,6 +9492,52 @@ input[type=number] {
   }
 }
 @media only screen and (max-width: 991px) {
+  .second_wrapper_data {
+    flex-direction: column;
+    place-items: flex-start;
+  }
+  .ved_text_name {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+  }
+  .button_kyc_data {
+    width: 100%;
+    height: 40px;
+  }
+  .pan_text_name {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .pan_text_name p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin: 8px 0;
+  }
+  .notesection_add {
+    margin-top: 10px;
+  }
+  .content_details_data {
+    padding-bottom: 10px;
+  }
+  .kyc_details_purchase {
+    margin-top: 10px;
+  }
+  .bankDetailsMainContainer .textparent .formLabel.add-label {
+    margin-top: 16px;
+  }
+  .first_primary_detail {
+    padding: 0;
+    background: unset;
+    border-radius: none;
+  }
   .col_border::after {
     position: unset;
     border-right: unset;
@@ -9434,23 +9545,29 @@ input[type=number] {
   .upi_details {
     min-height: 0;
   }
-  .fd_min_height {
-    min-height: 0;
-  }
   .name_data_add {
     margin-bottom: 10px;
   }
   .personal_details {
-    margin: 20px 0;
+    margin: 10px 0;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 10px;
+  }
+  .personal_details_second {
+    margin: 10px 0;
   }
   .family_details {
     margin-bottom: 20px;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 10px;
   }
-  .first_image {
-    margin-bottom: 20px;
+  .second_primary_detail {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 10px;
   }
-  .content_details_data {
-    flex-direction: column-reverse;
+  .personal_details_second {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 10px;
   }
   .bankDetailsMainContainer .textparent .textfildicons.add_text_field_icon {
     top: 57px;
@@ -9540,6 +9657,27 @@ input[type=number] {
   }
 }
 @media only screen and (max-width: 767px) {
+  .name_data_add {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0;
+  }
+  .first_child {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .second_child {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .categories_data {
+    margin-top: 4px;
+  }
   .customCardContainer {
     background-color: transparent;
     box-shadow: none;
@@ -9550,7 +9688,6 @@ input[type=number] {
     top: 46px;
   }
   .parent_div {
-    flex-direction: column;
     gap: 15px;
   }
   .boldTitle_add {
