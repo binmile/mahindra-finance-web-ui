@@ -7474,6 +7474,146 @@ a.moreless-button {
     position: relative;
   }
 }
+.opinion-scale {
+  margin-bottom: 1em;
+}
+
+.opinion-scale ul {
+  list-style: none;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 0.5em;
+  padding-left: 0px;
+}
+
+.opinion-scale li {
+  display: contents;
+  width: 2%;
+  word-break: break-word;
+}
+
+.opinion-scale li input[type=radio] {
+  display: none;
+}
+
+.opinion-scale li input[type=radio]:checked + label {
+  background-color: #000;
+  color: whitesmoke;
+  border-color: #000;
+}
+
+.opinion-scale li label {
+  background-color: white;
+  color: #adadad;
+  border: 1px solid #D6D6D6;
+  text-align: center;
+  line-height: 2em;
+  padding: 10px 26px;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-top: 3px;
+}
+
+.opinion-scale .opinion-labels {
+  margin-bottom: 0;
+}
+
+.opinion-scale .opinion-label label {
+  color: #363636;
+}
+
+.opinion-scale .opinion-label.min {
+  text-align: left;
+}
+
+.opinion-scale .opinion-label.mid {
+  text-align: center;
+}
+
+.opinion-scale .opinion-label.max {
+  text-align: right;
+}
+
+label.label.is-large p {
+  margin-bottom: 0px;
+}
+
+.opinion-scale.custopinion-scale li label {
+  width: 107px;
+  padding: 10px;
+}
+
+.section-parent.custbg-dark {
+  background: #231F20;
+}
+
+.section-parent.custbg-dark .label {
+  color: #fff;
+}
+
+.section-parent.custbg-dark .value.custvalue {
+  color: #fff;
+}
+
+.tag {
+  position: absolute;
+  left: 85px;
+  top: 30px;
+}
+
+span.ml-2 {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.tooltipdesign.custtooltipdesign {
+  line-height: 24px;
+  background: unset;
+  color: #6B7280;
+  font-size: 14px;
+  padding: 0px;
+  margin-bottom: 8px;
+}
+
+.web-wrapper.custweb .wd-13 {
+  width: 40%;
+}
+
+.mainsec {
+  background: #F3F4F6;
+  padding: 24px 11px;
+  border-radius: 8px;
+}
+
+.mainsec .tableBodyWithHeight {
+  min-height: unset;
+}
+
+.customeline {
+  border-right: 1px solid #E8E8E8;
+}
+
+.mainsec .green-bg-label {
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .mainsec .web-wrapper {
+    display: block !important;
+  }
+  label.label.is-large p {
+    display: none;
+  }
+  .mainsec {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mainsec {
+    display: none;
+  }
+}
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
