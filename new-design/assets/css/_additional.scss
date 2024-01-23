@@ -196,17 +196,16 @@
 .ICICI_bank {
   @include custom-font(34px, 600, 40px, 0.25px);
 }
-.custom_border{
-  position: relative
+.custom_border {
+  position: relative;
 }
-.col_border::after{
+.col_border::after {
   content: "";
   position: absolute;
   left: 53.8%;
   top: 0;
-  height: 95%;
+  height: 100%;
   border-right: 1px solid $color_border;
-
 }
 .banglore_name {
   @include custom-font(14px, 400, 24px, 0.25px);
@@ -247,9 +246,7 @@
 .upi_details {
   min-height: calc(50vh - 127px);
 }
-.fd_min_height {
-  min-height: 345px;
-}
+
 .name_data_add {
   &.second_name {
     margin-bottom: 10px;
@@ -282,16 +279,29 @@
 .parent_div {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  place-items:center;
+  gap: 26px;
 }
-.child_div {
-  @include custom-font(14px, 400, 24px, 0);
-  color: #4b4c4d;
-  p {
-    margin: 4px 0 0 0;
-    @include custom-font(16px, 500, 24px, 0);
-    color: #231f20;
+.kyc_details_purchase {
+  @include custom-font(14px, 400, 28px, 0);
+  color: #221f20;
+  margin-top: 19px;
+  span {
+    @include custom-font(14px, 600, 28px, 0);
+    color: #e31837;
   }
+}
+.bankDetailsMainContainer .textparent .formLabel {
+  &.add-label-second {
+    margin-top: 16px;
+  }
+}
+
+.personal_details_second {
+  margin: 23px 0;
+}
+.second_primary_detail {
+  padding: 24px 20px;
 }
 .fd_receipt {
   margin: 5px 0 0 0;
@@ -324,6 +334,17 @@
   background: unset;
   padding: unset;
 }
+.first_child {
+  @include custom-font(14px, 400, 24px, 0);
+  color: #4b4c4d;
+}
+.second_child {
+  @include custom-font(16px, 500, 24px, 0);
+  color: #231f20;
+}
+.categories_data {
+  margin-top: 16px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
   .payment_box_add {
     padding: 12px 0;
@@ -340,7 +361,7 @@
   }
   .personal_details {
     margin: 20px 0;
-}
+  }
 }
 
 @media only screen and (min-width: 1008px) and (max-width: 1074px) {
@@ -349,35 +370,56 @@
   }
   .personal_details {
     margin: 20px 0;
-}
+  }
 }
 @media only screen and (max-width: 991px) {
+  .notesection_add {
+    margin-top: 10px;
+  }
+  .content_details_data {
+    padding-bottom: 10px;
+  }
+  .kyc_details_purchase{
+    margin-top: 10px;
+  }
+  .bankDetailsMainContainer .textparent .formLabel.add-label{
+    margin-top: 16px;
+  }
+  .first_primary_detail {
+    padding: 0;
+    background: unset;
+    border-radius: none;
+  }
   .col_border::after {
-    
     position: unset;
     border-right: unset;
-   
-}
-  .upi_details {
-    min-height: 0;
   }
-  .fd_min_height {
+  .upi_details {
     min-height: 0;
   }
   .name_data_add {
     margin-bottom: 10px;
   }
   .personal_details {
-    margin: 20px 0;
+    margin: 10px 0;
+    border-top:1px solid #d9d9d9;
+    padding-top: 10px;
+  }
+  .personal_details_second{
+    margin: 10px 0;
   }
   .family_details {
     margin-bottom: 20px;
+    border-top:1px solid #d9d9d9;
+    padding-top: 10px;
   }
-  .first_image {
-    margin-bottom: 20px;
+  .second_primary_detail{
+    border-top:1px solid #d9d9d9;
+    padding-top: 10px;
   }
-  .content_details_data {
-    flex-direction: column-reverse;
+  .personal_details_second{
+    border-top:1px solid #d9d9d9;
+    padding-top: 10px;
   }
   .bankDetailsMainContainer .textparent .textfildicons {
     &.add_text_field_icon {
@@ -470,6 +512,22 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .name_data_add{
+    @include custom-font(16px, 500, 26px, 0);
+
+  }
+  .first_child{
+    @include custom-font(12px, 400, 24px, 0);
+
+  }
+  .second_child{
+    @include custom-font(12px, 500, 24px, 0);
+
+  }
+  .categories_data{
+    margin-top: 4px;
+
+  }
   .customCardContainer {
     background-color: transparent;
     box-shadow: none;
@@ -482,7 +540,6 @@
     }
   }
   .parent_div {
-    flex-direction: column;
     gap: 15px;
   }
 
