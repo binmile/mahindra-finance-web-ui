@@ -1621,6 +1621,37 @@ animation-name: slideInRightAnimation;
   @include custom-font(16px, 400, 24px, 0.015px);
 }
 /****************************Graph Blur Css**********************/
+.interestRateWeb{
+  .listTable{
+    .listTableBody{
+      .listTabledata{
+        .tableData{
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
+.wd-35{
+  width: 35%;
+}
+.wd-55{
+  width: 55%;
+}
+.customPopularStar{
+  img{
+    width: 14px;
+    height: auto;
+    margin-bottom: 3px;
+  }
+}
+
+.whiteBG{
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  background-color: #FFFFFF !important;
+}
+
 @import "./265_css";
 @import "./147_css";
 @import "./renewal_css_265";

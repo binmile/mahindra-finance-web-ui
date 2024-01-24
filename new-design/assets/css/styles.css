@@ -2233,6 +2233,30 @@ button.resend_otp.disabled {
 }
 
 /****************************Graph Blur Css**********************/
+.interestRateWeb .listTable .listTableBody .listTabledata .tableData {
+  font-size: 14px !important;
+}
+
+.wd-35 {
+  width: 35%;
+}
+
+.wd-55 {
+  width: 55%;
+}
+
+.customPopularStar img {
+  width: 14px;
+  height: auto;
+  margin-bottom: 3px;
+}
+
+.whiteBG {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  background-color: #FFFFFF !important;
+}
+
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
@@ -7578,13 +7602,19 @@ span.ml-2 {
 }
 
 .web-wrapper.custweb .wd-13 {
-  width: 40%;
+  width: 35%;
 }
 
 .mainsec {
   background: #F3F4F6;
   padding: 24px 11px;
   border-radius: 8px;
+}
+
+.btnmobsec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mainsec .tableBodyWithHeight {
@@ -7603,15 +7633,27 @@ span.ml-2 {
   display: none;
 }
 
+p.reco.info {
+  background: unset;
+}
+
+.listTableBody.tableBodyWithHeight.zoom:hover {
+  transform: scale(1.1);
+}
+
 .mainsec .green-bg-label {
   width: auto;
   color: #fff;
   background: #17823e;
   padding: 9px;
+  border-radius: 50px;
 }
 
 .mainsec .green-bg-label {
-  width: auto;
+  display: inline;
+  margin-left: 16px;
+  padding: 5px 9px;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -7637,6 +7679,12 @@ span.ml-2 {
   }
 }
 @media screen and (max-width: 992px) {
+  .mainsec.mainsec2 {
+    display: none;
+  }
+  .mainsec {
+    display: block;
+  }
   .interestRate {
     background-color: #FFFFFF;
     position: absolute;
@@ -9956,9 +10004,34 @@ html,
   min-height: calc(60vh - 127px);
 }
 
+.boldTitle_submission {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+ul.tds_instruct :before {
+  height: 6px;
+  width: 6px;
+  background: #6B7280;
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  margin-left: 5px;
+  margin-right: 12px;
+  margin-bottom: 3px;
+}
+
 .listItems ul.custliststyle_instruction {
   list-style-type: decimal;
   padding-left: 1rem;
+}
+.listItems ul.custliststyle_instruction.tds_instruct {
+  padding-left: 0;
+  list-style-type: unset;
+  list-style: none;
+  margin-top: 8px;
 }
 .listItems ul.custliststyle_instruction :last-child {
   margin-bottom: 0;
@@ -9998,6 +10071,9 @@ html,
   background-color: #f3f4f6;
   border-radius: 8px;
 }
+.descriptionBox_second.margin_less {
+  margin-top: 32px;
+}
 
 .descriptionImage img {
   width: 72px;
@@ -10016,10 +10092,21 @@ html,
   justify-content: center;
 }
 
+@media only screen and (max-width: 991px) {
+  .descriptionImage {
+    display: flex;
+  }
+}
 @media only screen and (max-width: 768px) {
   .instruction_details {
     padding: 16px;
     margin-top: 20px;
+  }
+  .boldTitle_submission {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0;
   }
   .form_div {
     margin-top: 0;
