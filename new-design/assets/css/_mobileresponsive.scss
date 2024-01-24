@@ -1160,7 +1160,10 @@ p.reco.info {
     border-radius: 50px;
 }
 .mainsec .green-bg-label{
-    width: auto;
+    display: inline;
+    margin-left: 16px;
+    padding: 5px 9px;
+    white-space: nowrap;
 }
 @media screen and (max-width: 768px) { 
 .mainsec .web-wrapper {
@@ -1192,7 +1195,7 @@ label.label.is-large p {
 
 }
 
-@media screen and (max-width: 992px) { 
+@media screen and (max-width: 992px) {
 
     .mainsec.mainsec2{
         display: none;
@@ -1203,7 +1206,6 @@ label.label.is-large p {
     .interestRate {
         background-color: #FFFFFF;
         position: absolute;
-       
     }
     .newbtn {display: block;
     }
