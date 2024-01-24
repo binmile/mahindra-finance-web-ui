@@ -1120,12 +1120,17 @@ span.ml-2 {
     margin-bottom: 8px;
 }
 .web-wrapper.custweb .wd-13 {
-    width: 40% ;
+    width: 35% ;
 }
 .mainsec {
     background: #F3F4F6;
     padding: 24px 11px;
     border-radius: 8px;
+}
+.btnmobsec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .mainsec .tableBodyWithHeight{
     min-height: unset;
@@ -1141,12 +1146,18 @@ span.ml-2 {
     text-decoration: underline;
     display: none;
 }
-
+p.reco.info {
+    background: unset;
+}
+.listTableBody.tableBodyWithHeight.zoom:hover {
+    transform: scale(1.1);
+}
 .mainsec .green-bg-label {
     width: auto;
     color: #fff;
     background: #17823e;
     padding: 9px;
+    border-radius: 50px;
 }
 .mainsec .green-bg-label{
     width: auto;
@@ -1182,9 +1193,17 @@ label.label.is-large p {
 }
 
 @media screen and (max-width: 992px) { 
+
+    .mainsec.mainsec2{
+        display: none;
+    }
+    .mainsec{
+        display: block;
+    }
     .interestRate {
         background-color: #FFFFFF;
         position: absolute;
+       
     }
     .newbtn {display: block;
     }
@@ -1205,3 +1224,13 @@ label.label.is-large p {
     margin-left: 192px;
 }
 }
+
+// @media screen and (min-width: 993px) { 
+
+//     .mainsec.mainsec2{
+//         display: none;
+//     }
+//     .mainsec{
+//         display: block;
+//     }
+// }
