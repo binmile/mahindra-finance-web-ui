@@ -2233,6 +2233,30 @@ button.resend_otp.disabled {
 }
 
 /****************************Graph Blur Css**********************/
+.interestRateWeb .listTable .listTableBody .listTabledata .tableData {
+  font-size: 14px !important;
+}
+
+.wd-35 {
+  width: 35%;
+}
+
+.wd-55 {
+  width: 55%;
+}
+
+.customPopularStar img {
+  width: 14px;
+  height: auto;
+  margin-bottom: 3px;
+}
+
+.whiteBG {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  background-color: #FFFFFF !important;
+}
+
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
@@ -7578,13 +7602,19 @@ span.ml-2 {
 }
 
 .web-wrapper.custweb .wd-13 {
-  width: 40%;
+  width: 35%;
 }
 
 .mainsec {
   background: #F3F4F6;
   padding: 24px 11px;
   border-radius: 8px;
+}
+
+.btnmobsec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mainsec .tableBodyWithHeight {
@@ -7603,15 +7633,27 @@ span.ml-2 {
   display: none;
 }
 
+p.reco.info {
+  background: unset;
+}
+
+.listTableBody.tableBodyWithHeight.zoom:hover {
+  transform: scale(1.1);
+}
+
 .mainsec .green-bg-label {
   width: auto;
   color: #fff;
   background: #17823e;
   padding: 9px;
+  border-radius: 50px;
 }
 
 .mainsec .green-bg-label {
-  width: auto;
+  display: inline;
+  margin-left: 16px;
+  padding: 5px 9px;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -7637,6 +7679,12 @@ span.ml-2 {
   }
 }
 @media screen and (max-width: 992px) {
+  .mainsec.mainsec2 {
+    display: none;
+  }
+  .mainsec {
+    display: block;
+  }
   .interestRate {
     background-color: #FFFFFF;
     position: absolute;

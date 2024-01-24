@@ -199,12 +199,16 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12 ">
                                     <div class="textparent">
-                                        <label for="account_number" class="form-label formLabel">Select tenure
-                                            (months)</label>
+                                        <div class="btnmobsec">
+                                            <label for="account_number" class="form-label formLabel">Select tenure
+                                                (months)</label>
 
-                                        <button class="newbtn" onclick="handleClickShowInterestRates()">
-                                            % See interest rates
-                                        </button>
+                                            <button class="newbtn" onclick="handleClickModal('TermsConditionModal')">
+                                                % See interest rates
+                                            </button>
+                                           
+
+                                        </div>
 
                                         <section class="section">
 
@@ -427,6 +431,23 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        
+                                                                            <div class="termsConditionsContainer">
+                                                                                <label class="checkbox-container">
+                                                                                    <input type="checkbox" name="preclosure-flow">
+                                                                                    <span class="checkmark"></span>
+                                                                                </label>
+                                                                                <label class="ml-25"> </label>
+                                                                                <div class="tooltipdesign custtooltipdesign">
+
+                                                                                    <div class="info-icon info-icon2 custom-tooltip custom-tooltip2">
+                                                                                        <p class="reco info">Auto renewal</p><img
+                                                                                            src="./assets/img/icons/infocolor.svg" alt="icon">
+                                                                                        <div class="tooltip-text tooltip_lfd_mobile">Auto renewal</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        
                                                                     </div>
                                                                 </div>
 
@@ -449,14 +470,14 @@
                         </div>
 
                         <div class="col-12 col-lg-4 col-md-12">
-                            <div id="overlay"></div>
-                            <div class="mainsec interestRate" id="interestRate">
+
+                            <div class="mainsec mainsec2">
                                 <div class="boldTitle boldTitle_profile mb-20">
                                     <div class=" roundBackgroundIcon_lfd roundBackgroundIcon_profile">
                                     </div>
                                     Fixed deposit schemes
                                 </div>
-                                <div class=" web-wrapper custweb">
+                                <div class=" web-wrapper custweb interestRateWeb">
                                     <div class="listTable">
                                         <div class="listTableHead">
 
@@ -467,115 +488,75 @@
 
                                             <div class="wd-12 text-center"></div>
                                         </div>
-                                        <div class="listTableBody tableBodyWithHeight">
+                                        <div class="listTableBody tableBodyWithHeight zoom">
                                             <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
 
-                                                <div class="tableData wd-13 custwd-13">12 Month</div>
-                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
+                                                <div class="tableData wd-35"><strong>12 Month</strong></div>
+                                                <div class="tableData wd-55">Upto <strong>7.60%</strong>
 
-
-                                                <div class="tableData wd-12 all-center">
-                                                    <div class="green-bg-label">
-
+                                                    <div class="green-bg-label customPopularStar">
+                                                        <img src="./assets/img/icons/star.svg" alt="icon" />
                                                         POPULAR
                                                     </div>
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="listTableBody tableBodyWithHeight">
+                                        <div class="listTableBody tableBodyWithHeight zoom">
                                             <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
 
-                                                <div class="tableData wd-13 custwd-13">15 Month</div>
-                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-
-
-                                                <div class="tableData wd-12 all-center">
-                                                    <div class="green-bg-label">
-
+                                                <div class="tableData wd-35"><strong>15 Month</strong></div>
+                                                <div class="tableData wd-55">Upto <strong>7.60%</strong>
+                                                    <div class="green-bg-label customPopularStar">
+                                                        <img src="./assets/img/icons/star.svg" alt="icon" />
                                                         POPULAR
                                                     </div>
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="listTableBody tableBodyWithHeight">
+                                        <div class="listTableBody tableBodyWithHeight zoom">
                                             <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
 
-                                                <div class="tableData wd-13 custwd-13">24 Month</div>
-                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-
-
-                                                <div class="tableData wd-12 all-center">
-                                                    <div class="green-bg-label">
-
+                                                <div class="tableData wd-35"><strong>24 Month</strong></div>
+                                                <div class="tableData wd-55">Upto <strong>7.60%</strong>
+                                                    <div class="green-bg-label customPopularStar">
+                                                        <img src="./assets/img/icons/star.svg" alt="icon" />
                                                         POPULAR
                                                     </div>
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="listTableBody tableBodyWithHeight">
+                                        <div class="listTableBody tableBodyWithHeight zoom">
                                             <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
 
-                                                <div class="tableData wd-13 custwd-13">30 Month</div>
-                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-
-
-                                                <div class="tableData wd-12 all-center">
-                                                    <div class="green-bg-label">
-
-                                                        POPULAR
-                                                    </div>
-                                                </div>
+                                                <div class="tableData wd-35"><strong>30 Month</strong></div>
+                                                <div class="tableData wd-55">Upto <strong>7.60%</strong></div>
                                             </div>
 
                                         </div>
-                                        <div class="listTableBody tableBodyWithHeight">
+                                        <div class="listTableBody tableBodyWithHeight zoom">
                                             <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
 
-                                                <div class="tableData wd-13 custwd-13">42 Month</div>
-                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-
-
-                                                <div class="tableData wd-12 all-center">
-                                                    <div class="green-bg-label">
-
-                                                        POPULAR
-                                                    </div>
-                                                </div>
+                                                <div class="tableData wd-35"><strong>42 Month</strong></div>
+                                                <div class="tableData wd-55">Upto <strong>7.60%</strong></div>
                                             </div>
 
                                         </div>
-                                        <div class="listTableBody tableBodyWithHeight">
+                                        <div class="listTableBody tableBodyWithHeight zoom">
                                             <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
 
-                                                <div class="tableData wd-13 custwd-13">48 Month</div>
-                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-
-
-                                                <div class="tableData wd-12 all-center">
-                                                    <div class="green-bg-label">
-
-                                                        POPULAR
-                                                    </div>
-                                                </div>
+                                                <div class="tableData wd-35"><strong>48 Month</strong></div>
+                                                <div class="tableData wd-55">Upto <strong>7.60%</strong></div>
                                             </div>
 
                                         </div>
-                                        <div class="listTableBody tableBodyWithHeight">
+                                        <div class="listTableBody tableBodyWithHeight zoom">
                                             <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
 
-                                                <div class="tableData wd-13 custwd-13">60 Month</div>
-                                                <div class="tableData wd-13 custwd-13">Upto 7.60%</div>
-
-
-                                                <div class="tableData wd-12 all-center">
-                                                    <div class="green-bg-label">
-
-                                                        POPULAR
-                                                    </div>
-                                                </div>
+                                                <div class="tableData wd-35"><strong>60 Month</strong></div>
+                                                <div class="tableData wd-55">Upto <strong>7.60%</strong></div>
                                             </div>
 
                                         </div>
@@ -586,13 +567,9 @@
                             </div>
 
                         </div>
-
-                    </div>
-
-
-
-
+                     </div>
                 </div>
+              
                 <div class="col col-md-12">
                     <div class="buttonContainer">
                         <button class="btn themeRedBtn"> Continue
@@ -609,7 +586,115 @@
 
     </div>
     </div>
+    <div class="modal fade" id="TermsConditionModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="./assets/img/icons/close-icon.svg" alt="icon" />
+                    </button>
+                  
+                    <div class="info-content termsContent">
+                        
+                        <div class="mainsec whiteBG">
+                            <div class="boldTitle boldTitle_profile mb-20">
+                                <div class=" roundBackgroundIcon_lfd roundBackgroundIcon_profile">
+                                </div>
+                                Fixed deposit schemes
+                            </div>
+                            <div class=" web-wrapper custweb interestRateWeb">
+                                <div class="listTable">
+                                    <div class="listTableHead">
 
+                                        <div class="wd-13 custwd-13">Tenure</div>
+                                        <div class="wd-13 custwd-13">Interest rates </div>
+
+
+
+                                        <div class="wd-12 text-center"></div>
+                                    </div>
+                                    <div class="listTableBody tableBodyWithHeight zoom">
+                                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                            <div class="tableData wd-35"><strong>12 Month</strong></div>
+                                            <div class="tableData wd-55">Upto <strong>7.60%</strong>
+
+                                                <div class="green-bg-label customPopularStar">
+                                                    <img src="./assets/img/icons/star.svg" alt="icon" />
+                                                    POPULAR
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="listTableBody tableBodyWithHeight zoom">
+                                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                            <div class="tableData wd-35"><strong>15 Month</strong></div>
+                                            <div class="tableData wd-55">Upto <strong>7.60%</strong>
+                                                <div class="green-bg-label customPopularStar">
+                                                    <img src="./assets/img/icons/star.svg" alt="icon" />
+                                                    POPULAR
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="listTableBody tableBodyWithHeight zoom">
+                                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                            <div class="tableData wd-35"><strong>24 Month</strong></div>
+                                            <div class="tableData wd-55">Upto <strong>7.60%</strong>
+                                                <div class="green-bg-label customPopularStar">
+                                                    <img src="./assets/img/icons/star.svg" alt="icon" />
+                                                    POPULAR
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="listTableBody tableBodyWithHeight zoom">
+                                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                            <div class="tableData wd-35"><strong>30 Month</strong></div>
+                                            <div class="tableData wd-55">Upto <strong>7.60%</strong></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="listTableBody tableBodyWithHeight zoom">
+                                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                            <div class="tableData wd-35"><strong>42 Month</strong></div>
+                                            <div class="tableData wd-55">Upto <strong>7.60%</strong></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="listTableBody tableBodyWithHeight zoom">
+                                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                            <div class="tableData wd-35"><strong>48 Month</strong></div>
+                                            <div class="tableData wd-55">Upto <strong>7.60%</strong></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="listTableBody tableBodyWithHeight zoom">
+                                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+
+                                            <div class="tableData wd-35"><strong>60 Month</strong></div>
+                                            <div class="tableData wd-55">Upto <strong>7.60%</strong></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/chart.min.js"></script>
