@@ -2233,6 +2233,30 @@ button.resend_otp.disabled {
 }
 
 /****************************Graph Blur Css**********************/
+.interestRateWeb .listTable .listTableBody .listTabledata .tableData {
+  font-size: 14px !important;
+}
+
+.wd-35 {
+  width: 35%;
+}
+
+.wd-55 {
+  width: 55%;
+}
+
+.customPopularStar img {
+  width: 14px;
+  height: auto;
+  margin-bottom: 3px;
+}
+
+.whiteBG {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  background-color: #FFFFFF !important;
+}
+
 #commonHeading-repayment {
   font-size: 24px;
   font-weight: 600;
@@ -7626,7 +7650,10 @@ p.reco.info {
 }
 
 .mainsec .green-bg-label {
-  width: auto;
+  display: inline;
+  margin-left: 16px;
+  padding: 5px 9px;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 768px) {
