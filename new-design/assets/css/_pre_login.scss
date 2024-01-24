@@ -1,0 +1,123 @@
+.instruction_details {
+  padding: 24px 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+.custliststyle_instruction > :not(:last-child) {
+  margin-bottom: 18px;
+}
+.fd_min_hight_get_user {
+  min-height: calc(60vh - 127px);
+}
+.boldTitle_submission{
+    @include custom-font(16px, 500, 24px, 0.15px);
+
+}
+ul.tds_instruct :before {
+    height: 6px;
+    width: 6px;
+    background: #6B7280;
+    content: "";
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-left: 5px;
+    margin-right: 12px;
+    margin-bottom: 3px;
+}
+
+.listItems ul {
+  &.custliststyle_instruction {
+    list-style-type: decimal;
+    padding-left: 1rem;
+    &.tds_instruct{
+        padding-left: 0;
+        list-style-type: unset;
+        list-style: none;
+        margin-top: 8px;
+
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
+    li {
+      @include custom-font(14px, 400, 20px, 0.15px);
+      color: #6b7280;
+      span {
+        color: #407bff;
+        @include custom-font(14px, 500, 20px, 0.15px);
+      }
+    }
+  }
+}
+.form_div {
+  margin-top: 8px;
+}
+.instruction_details_second {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  align-items: center;
+}
+.descriptionBox_second {
+  background-image: url(../img/abstract-blue-geometric-shapes-background.svg);
+  background-repeat: no-repeat;
+  padding: 16px 30px;
+  background-size: cover;
+  background-position: center;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  &.margin_less{
+    margin-top: 32px;
+}
+}
+.descriptionImage {
+  img {
+    width: 72px;
+    height: auto;
+  }
+}
+
+.listItems ul.custliststyle_instruction {
+  &.add_instruction {
+    li {
+      margin-bottom: 2px;
+      line-height: 22px;
+    }
+  }
+}
+.apply_loan_img {
+  display: flex;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width:991px) {
+    .descriptionImage{
+        display: flex;
+      }
+}
+@media only screen and (max-width: 768px) {
+  .instruction_details {
+    padding: 16px;
+    margin-top: 20px;
+  }
+  .boldTitle_submission{
+    @include custom-font(14px, 500, 18px, 0);
+
+}
+
+  .form_div {
+    margin-top: 0;
+  }
+  .remove_bottom {
+    margin-bottom: 10px;
+  }
+  .listItems ul {
+    &.custliststyle_instruction {
+      li {
+        padding-left: 2px;
+      }
+    }
+  }
+  
+}
