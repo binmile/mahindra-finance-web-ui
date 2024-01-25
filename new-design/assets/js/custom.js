@@ -242,6 +242,43 @@ function validatePanInputs(panNumberId) {
   }
   return panNumberIsValid;
 }
+function getUserSecond(panNumberId, dob_id_add) {
+  var panNumberId_res = document.getElementById(panNumberId);
+  var dob_id_add_res = document.getElementById(dob_id_add);
+  continueButton = document.getElementById("continueButton");
+  const panNumberValue = panNumberId_res.value.trim();
+  const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
+  const panNumberIsValid = panNumberRegex.test(panNumberValue);
+  
+  // Corrected condition to check if date input has a non-empty value
+  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid) {
+    continueButton.disabled = false;
+  } else {
+    continueButton.disabled = true;
+  }
+  return panNumberIsValid;
+}
+
+function resetPassword(panNumberId, dob_id_add, phnnumber) {
+  var panNumberId_res = document.getElementById(panNumberId);
+  var dob_id_add_res = document.getElementById(dob_id_add);
+  var phnnumber = document.getElementById(dob_id_add);
+  continueButton = document.getElementById("continueButton");
+  const panNumberValue = panNumberId_res.value.trim();
+  const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
+  const panNumberIsValid = panNumberRegex.test(panNumberValue);
+  
+  // Corrected condition to check if date input has a non-empty value
+  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid) {
+    continueButton.disabled = false;
+  } else {
+    continueButton.disabled = true;
+  }
+  return panNumberIsValid;
+}
+
+
+
 /******manage-bank-toggle-start */
 function bank_toggle_bank(id) {
   var bank_select = document.getElementById(id);

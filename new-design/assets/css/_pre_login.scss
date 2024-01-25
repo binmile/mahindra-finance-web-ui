@@ -29,6 +29,13 @@ ul.tds_instruct :before {
   &.custliststyle_instruction {
     list-style-type: decimal;
     padding-left: 1rem;
+    &.cust_second{
+        li{
+            @include custom-font(14px, 400, 22px, 0.15px);
+            color: #6b7280;
+        }
+       
+    }
     &.tds_instruct{
         padding-left: 0;
         list-style-type: unset;
@@ -40,7 +47,7 @@ ul.tds_instruct :before {
       margin-bottom: 0;
     }
     li {
-      @include custom-font(14px, 400, 20px, 0.15px);
+      @include custom-font(16px, 500, 24px, 0.15px);
       color: #6b7280;
       span {
         color: #407bff;
@@ -81,7 +88,6 @@ ul.tds_instruct :before {
   &.add_instruction {
     li {
       margin-bottom: 2px;
-      line-height: 22px;
     }
   }
 }

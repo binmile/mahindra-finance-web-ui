@@ -282,82 +282,89 @@
             <div class="boldTitle boldTitle_profile">
               <div
                 class="roundBackgroundIcon_lfd roundBackgroundIcon_profile"
-              >
-              </div>
-              Reset password 
+              ></div>
+              Form 15 G/H submission
             </div>
-            <div class="main-form fd_min_hight_get_user form_div">
+            <div class="main-form form_div">
               <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
+                <div class="col-lg-6 col-md-12 col-12">
                   <form>
                     <div class="row flex-row">
-                      <div class="col-lg-6 col-md-12 col-12">
+                      <div class="col-lg-11">
                         <div class="row">
                           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="textparent">
-                                <label
-                                  for="mobile_number"
-                                  class="form-label formLabel formLabel_profile"
-                                  >PAN number</label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control formControl formControl_profile"
-                                  id="pan_number"
-                                  maxlength="10"
-                                  oninput="validatePanInputs('pan_number')"
-                                  autocomplete="off"
+                              <label
+                                for="mobile_number"
+                                class="form-label formLabel formLabel_profile"
+                                >PAN number (OTP will be sent to mobile linked
+                                with this PAN)</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control formControl formControl_profile"
+                                id="pan_number"
+                                maxlength="10"
+                                oninput="validatePanInputs('pan_number')"
+                                autocomplete="off"
+                              />
+                              <div class="textfildicons textfildicons_icons">
+                                <img
+                                  src="./assets/img/pan_img.svg"
+                                  alt="icons"
+                                  class="repayment-icons"
                                 />
-                                <div
-                                  class="textfildicons textfildicons_icons"
-                                >
-                                  <img
-                                    src="./assets/img/pan_img.svg"
-                                    alt="icons"
-                                    class="repayment-icons"
-                                  />
-                                </div>
                               </div>
+                            </div>
                           </div>
                           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="textparent">
-                                <label for="" class="form-label formLabel formLabel_profile"
-                                  >Date of birth</label
-                                >
-                                <input
-                                  type="date"
-                                  placeholder="DD/MM/YYYY"
-                                  class="form-control formControl formControl_profile"
-                                  id="nominee_DOB"
-                                  required
-                                  onchange="renewalformContinueButtonEnable()"
-        
-                                />
-                              </div>
-                          </div>
-                          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <div class="textparent">
-                                <label
-                                  for="new_mobile_number"
-                                  class="form-label formLabel formLabel_profile"
-                                  >Mobile number 
-                                </label>
-                                <input type="number" class="form-control formControl formControl_profile" pattern="[0-9]{10}" id="new_mobile_number" pattern="[0-9]{10}" oninput="validateMobileInputs('mobile_number', 'new_mobile_number')" autocomplete="off"/>
-                                <div class="textfildicons textfildicons_icons">
-                                  <img
-                                    src="./assets/img/icons/smartphone.svg"
-                                    alt="icons"
-                                    class="repayment-icons"
-                                  />
-                                </div>
-                              </div>
+                              <label
+                                for=""
+                                class="form-label formLabel formLabel_profile"
+                                >Date of birth</label
+                              >
+                              <input
+                                type="date"
+                                placeholder="DD/MM/YYYY"
+                                class="form-control formControl formControl_profile"
+                                id="nominee_DOB"
+                                required
+                                onchange="renewalformContinueButtonEnable()"
+                              />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </form>
                 </div>
-               
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div
+                    class="instruction_details darkBg descriptionBox_second margin_less"
+                  >
+                    <div class="boldTitle_submission">Form 15 G/H submission</div>
+                    <div class="listItems">
+                      <ul
+                        class="custliststyle_instruction tds_instruct add_instruction"
+                      >
+                        <li>
+                            Please enter the PAN details and date of birth for which the 15 G/H submission is required 
+                        </li>
+                        <li>
+                            Verify the OTP sent on the mobile number linked to the PAN filled here 
+                        </li>
+                        <li>
+                            Please complete the additional information for KYC compliance 
+                        </li>
+                        <li>
+                            You can download the 15 G/H Form after completing above steps  
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -368,9 +375,8 @@
               class="btn themeRedBtn themeRedBtn_profile"
               id="continueButton"
               disabled
-              onclick="handleClickModal('myModal')"
             >
-            Generate OTP
+              Generate OTP
               <img src="./assets/img/arrow-right.svg" alt="icons" />
             </button>
           </div>

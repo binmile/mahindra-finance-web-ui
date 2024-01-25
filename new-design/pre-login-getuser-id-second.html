@@ -296,47 +296,46 @@
                         <div class="row">
                           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="textparent">
-                                <label
-                                  for="mobile_number"
-                                  class="form-label formLabel formLabel_profile"
-                                  >PAN number (OTP will be sent to mobile linked with this PAN)</label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control formControl formControl_profile"
-                                  id="pan_number"
-                                  maxlength="10"
-                                  oninput="validatePanInputs('pan_number')"
-                                  autocomplete="off"
+                              <label
+                                for="mobile_number"
+                                class="form-label formLabel formLabel_profile"
+                                >PAN number (OTP will be sent to mobile linked
+                                with this PAN)</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control formControl formControl_profile"
+                                id="pan_number_id"
+                                maxlength="10"
+                                oninput="getUserSecond('pan_number_id','dob_id_add')"
+                                autocomplete="off"
+                              />
+                              <div class="textfildicons textfildicons_icons">
+                                <img
+                                  src="./assets/img/pan_img.svg"
+                                  alt="icons"
+                                  class="repayment-icons"
                                 />
-                                <div
-                                  class="textfildicons textfildicons_icons"
-                                >
-                                  <img
-                                    src="./assets/img/pan_img.svg"
-                                    alt="icons"
-                                    class="repayment-icons"
-                                  />
-                                </div>
                               </div>
+                            </div>
                           </div>
                           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="textparent">
-                                <label for="" class="form-label formLabel formLabel_profile"
-                                  >Date of birth</label
-                                >
-                                <input
-                                  type="date"
-                                  placeholder="DD/MM/YYYY"
-                                  class="form-control formControl formControl_profile"
-                                  id="nominee_DOB"
-                                  required
-                                  onchange="renewalformContinueButtonEnable()"
-        
-                                />
-                              </div>
+                              <label
+                                for=""
+                                class="form-label formLabel formLabel_profile"
+                                >Date of birth</label
+                              >
+                              <input
+                                type="date"
+                                placeholder="DD/MM/YYYY"
+                                class="form-control formControl formControl_profile"
+                                id="dob_id_add"
+                                required
+                                oninput="getUserSecond('pan_number_id','dob_id_add')"
+                              />
+                            </div>
                           </div>
-                          
                         </div>
                       </div>
                     </div>
@@ -355,7 +354,7 @@
                       </div>
                       <div class="col-lg-11">
                         <div class="listItems">
-                          <ul class="custliststyle_instruction add_instruction">
+                          <ul class="custliststyle_instruction add_instruction cust_second">
                             <li>
                               Please keep your mobile accessible in order to
                               check the OTP.
@@ -400,9 +399,8 @@
               class="btn themeRedBtn themeRedBtn_profile"
               id="continueButton"
               disabled
-             
             >
-            Generate OTP
+              Generate OTP
               <img src="./assets/img/arrow-right.svg" alt="icons" />
             </button>
           </div>
