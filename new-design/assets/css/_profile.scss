@@ -18,6 +18,15 @@
  border: 1px solid #ff0000 !important;
 }
 
+.pre-error-border {
+  border: 1px solid red !important;
+}
+
+.pre-error-message {
+  color: red;
+  @include custom-font(14px, 400, 24px, 0);
+
+}
 .live_tune_connect {
   padding: 8px 12px;
   border-bottom: 1px solid $color_border;
