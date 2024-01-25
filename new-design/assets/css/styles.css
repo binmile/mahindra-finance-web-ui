@@ -7709,6 +7709,25 @@ p.reco.info {
     margin-left: 192px;
   }
 }
+label.form-label.formLabel.formLabel_profile.newmargin {
+  margin-top: 5px;
+}
+
+label.uploadbtndesign {
+  color: #E31837;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  border: 1px solid #E31837;
+  border-radius: 7px;
+  padding: 14px 48px;
+  cursor: pointer;
+}
+
+label.uploadbtndesign img {
+  margin-right: 8px;
+}
+
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
