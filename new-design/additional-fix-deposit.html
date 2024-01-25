@@ -394,7 +394,8 @@
                                                                     </div>
 
                                                                     <div class="interestTableContainer_CheckBox">
-                                                                        <input type="checkbox" value="" id="reviewFlexCheckDefault" onclick="checkBox_renewal()" checked="">
+                                                                        <input type="checkbox" class="active" value="" id="acceptRadio"
+                                                                        onclick="checkboxTandC_('acceptRadio')">
                                                                         <!-- <label for="">
                                                                             <span class="autorenewal_text">
                                                                                 Auto
@@ -425,7 +426,7 @@
                                         
                                         <div class="tooltipdesign custtooltipdesign">
 
-                                            <div class="info-icon info-icon2 custom-tooltip custom-tooltip2">
+                                            <div class="info-icon info-icon2 info-icon4 custom-tooltip custom-tooltip2">
                                                 <p class="reco">Select from the options for renewal</p><img
                                                     src="./assets/img/icons/infocolor.svg" alt="icon">
                                                 <div class="tooltip-text tooltip_lfd_mobile">Recommended basis loan
@@ -434,10 +435,10 @@
                                         </div>
                                         <!-- <label for="account_number" class="form-label formLabel"></label> -->
 
-                                        <div class="main-form">
+                                        <div class="main-form ">
                                             
-                                            <div class="row flex-row">
-                                                <div class="col-lg-4 col-md-4 col-6">
+                                            <div class="row flex-row" id="custome_hidebtn">
+                                                <div class="col-lg-4 col-md-4 col-6" >
                                                     <div id="repayment-buttonContainer repayment-buttonContainer-add">
                                                         <button class="themeRedBtn button-addition" id="yesBtn"
                                                             onclick="showContentAdd( this,'yesBtn', 'noBtn', 'joint_wrapper_div_' )">
@@ -445,7 +446,7 @@
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4 col-md-4 col-6">
+                                                <div class="col-lg-4 col-md-4 col-6" >
                                                     <div id="repayment-buttonContainer repayment-buttonContainer-add">
                                                         <button class="themeRedBtn button-addition" id="noBtn"
                                                             onclick="showContentAdd(this,'yesBtn', 'noBtn','joint_wrapper_div_' )">
@@ -453,19 +454,20 @@
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col col-md-12">
-                                                    <div class="termsConditionsContainer">
-                                                        <label class="checkbox-container">
-                                                            <input type="checkbox" name="preclosure-flow">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <label class="ml-25">I/We hereby declare that KYC documents and
-                                                            address provided initially at the time of placing the
-                                                            investment linked to my folio number has not changed and is
-                                                            same.
+                                              
+                                            </div>
+                                            <div class="col col-md-12">
+                                                <div class="termsConditionsContainer">
+                                                    <label class="checkbox-container">
+                                                        <input type="checkbox" name="preclosure-flow">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="ml-25">I/We hereby declare that KYC documents and
+                                                        address provided initially at the time of placing the
+                                                        investment linked to my folio number has not changed and is
+                                                        same.
 
-                                                        </label>
-                                                    </div>
+                                                    </label>
                                                 </div>
                                             </div>
                                             
