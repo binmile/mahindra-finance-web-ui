@@ -141,6 +141,44 @@ function validateMobileInputs(mobileId, newMobileId) {
 function isValidMobileNumber(number) {
   return number.length === 10;
 }
+
+function resetPassword(panNumberId, phnnumber, dob_id_add) {
+  var panNumberId_res = document.getElementById(panNumberId);
+  var dob_id_add_res = document.getElementById(dob_id_add);
+  var phnnumber_res = document.getElementById(phnnumber);
+  var mobileNumber = phnnumber_res.value.slice(0, 10); 
+  phnnumber_res.value = mobileNumber;
+  var continueButton = document.getElementById("continueButton");
+  const panNumberValue = panNumberId_res.value.trim();
+  const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
+  const panNumberIsValid = panNumberRegex.test(panNumberValue);
+
+  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid && isValidMobileNumber(mobileNumber)) {
+    continueButton.disabled = false;
+  } else {
+    continueButton.disabled = true;
+  }
+  return panNumberIsValid;
+}
+
+
+function resetPasswordMobile(panNumberId, dob_id_add) {
+  var panNumberId_res = document.getElementById(panNumberId);
+  var dob_id_add_res = document.getElementById(dob_id_add);
+  var continueButton = document.getElementById("continueButton");
+  const panNumberValue = panNumberId_res.value.trim();
+  const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
+  const panNumberIsValid = panNumberRegex.test(panNumberValue);
+
+  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid) {
+    continueButton.disabled = false;
+  } else {
+    continueButton.disabled = true;
+  }
+  return panNumberIsValid;
+}
+
+
 function validatePasswordInputs(passwordID, newPasswordID, reEnterPasswordID) {
   var passwordField = document.getElementById(passwordID);
   var newPasswordField = document.getElementById(newPasswordID);
@@ -259,23 +297,7 @@ function getUserSecond(panNumberId, dob_id_add) {
   return panNumberIsValid;
 }
 
-function resetPassword(panNumberId, dob_id_add, phnnumber) {
-  var panNumberId_res = document.getElementById(panNumberId);
-  var dob_id_add_res = document.getElementById(dob_id_add);
-  var phnnumber = document.getElementById(dob_id_add);
-  continueButton = document.getElementById("continueButton");
-  const panNumberValue = panNumberId_res.value.trim();
-  const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
-  const panNumberIsValid = panNumberRegex.test(panNumberValue);
-  
-  // Corrected condition to check if date input has a non-empty value
-  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid) {
-    continueButton.disabled = false;
-  } else {
-    continueButton.disabled = true;
-  }
-  return panNumberIsValid;
-}
+
 
 
 
