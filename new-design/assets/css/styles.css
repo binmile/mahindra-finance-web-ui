@@ -8421,6 +8421,18 @@ p.notify_lfd {
   border: 1px solid #ff0000 !important;
 }
 
+.pre-error-border {
+  border: 1px solid red !important;
+}
+
+.pre-error-message {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
 .live_tune_connect {
   padding: 8px 12px;
   border-bottom: 1px solid #E8E8E8;
