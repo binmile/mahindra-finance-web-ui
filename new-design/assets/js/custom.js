@@ -294,38 +294,6 @@ function getUserSecond(panNumberId, dob_id_add) {
   }
   return panNumberIsValid;
 }
-
-// function validatePasswordChange(old_pass, new_pass, confirm_pass) {
-//   var currPassword = document.getElementById(old_pass).value;
-//   var newPassword = document.getElementById(new_pass).value;
-//   var confirmPassword = document.getElementById(confirm_pass).value;
-//   var newPasswordError = document.getElementById("newPasswordError");
-//   var confirmPasswordError = document.getElementById("confirmPasswordError");
-//   var continueButton = document.getElementById("continueButton");
-//   if (
-//     currPassword !== "" &&
-//     newPassword !== "" &&
-//     confirmPassword !== ""
-//   ) {
-//     var regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^\&*_=+-]).{8,20}$/;
-//     if (regex.test(newPassword)) {
-//       newPasswordError.textContent = "";
-
-//       if (confirmPassword === newPassword) {
-//         confirmPasswordError.textContent = "";
-//         continueButton.disabled = false;
-//       } else {
-//         confirmPasswordError.textContent = "Passwords do not match";
-//         continueButton.disabled = true;
-//       }
-//     } else {
-//       newPasswordError.textContent = "Invalid password format";
-//       continueButton.disabled = true;
-//     }
-//   } else {
-//     continueButton.disabled = true;
-//   }
-// }
 function validatePasswordChange(old_pass, new_pass, confirm_pass) {
   var currPasswordField = document.getElementById(old_pass);
   var newPasswordField = document.getElementById(new_pass);
@@ -362,7 +330,6 @@ function validatePasswordChange(old_pass, new_pass, confirm_pass) {
     continueButton.disabled = true;
   }
 }
-
 
 /******manage-bank-toggle-start */
 function bank_toggle_bank(id) {
