@@ -303,9 +303,9 @@
                                 <input
                                   type="text"
                                   class="form-control formControl formControl_profile"
-                                  id="pan_number"
+                                  id="pan_number_value"
                                   maxlength="10"
-                                  oninput="validatePanInputs('pan_number')"
+                                  oninput="resetPassword('pan_number_value','mobile_number_value', 'dob_value')"
                                   autocomplete="off"
                                 />
                                 <div
@@ -328,9 +328,9 @@
                                   type="date"
                                   placeholder="DD/MM/YYYY"
                                   class="form-control formControl formControl_profile"
-                                  id="nominee_DOB"
+                                  id="dob_value"
                                   required
-                                  onchange="renewalformContinueButtonEnable()"
+                                  oninput="resetPassword('pan_number_value','mobile_number_value', 'dob_value')"
         
                                 />
                               </div>
@@ -342,7 +342,7 @@
                                   class="form-label formLabel formLabel_profile"
                                   >Mobile number 
                                 </label>
-                                <input type="number" class="form-control formControl formControl_profile" id="new_mobile_number" pattern="[0-9]{10}" oninput="validateMobileInputs('mobile_number', 'new_mobile_number')" autocomplete="off"/>
+                                <input type="number" class="form-control formControl formControl_profile" pattern="[0-9]{10}" id="mobile_number_value" pattern="[0-9]{10}" oninput="resetPassword('pan_number_value','mobile_number_value', 'dob_value')" autocomplete="off"/>
                                 <div class="textfildicons textfildicons_icons">
                                   <img
                                     src="./assets/img/icons/smartphone.svg"

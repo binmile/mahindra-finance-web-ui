@@ -141,11 +141,50 @@ function validateMobileInputs(mobileId, newMobileId) {
 function isValidMobileNumber(number) {
   return number.length === 10;
 }
+
+function resetPassword(panNumberId, phnnumber, dob_id_add) {
+  var panNumberId_res = document.getElementById(panNumberId);
+  var dob_id_add_res = document.getElementById(dob_id_add);
+  var phnnumber_res = document.getElementById(phnnumber);
+  var mobileNumber = phnnumber_res.value.slice(0, 10); 
+  phnnumber_res.value = mobileNumber;
+  var continueButton = document.getElementById("continueButton");
+  const panNumberValue = panNumberId_res.value.trim();
+  const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
+  const panNumberIsValid = panNumberRegex.test(panNumberValue);
+
+  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid && isValidMobileNumber(mobileNumber)) {
+    continueButton.disabled = false;
+  } else {
+    continueButton.disabled = true;
+  }
+  return panNumberIsValid;
+}
+
+
+function resetPasswordMobile(panNumberId, dob_id_add) {
+  var panNumberId_res = document.getElementById(panNumberId);
+  var dob_id_add_res = document.getElementById(dob_id_add);
+  var continueButton = document.getElementById("continueButton");
+  const panNumberValue = panNumberId_res.value.trim();
+  const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
+  const panNumberIsValid = panNumberRegex.test(panNumberValue);
+
+  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid) {
+    continueButton.disabled = false;
+  } else {
+    continueButton.disabled = true;
+  }
+  return panNumberIsValid;
+}
+
+
 function validatePasswordInputs(passwordID, newPasswordID, reEnterPasswordID) {
   var passwordField = document.getElementById(passwordID);
   var newPasswordField = document.getElementById(newPasswordID);
   var reEnterPasswordField = document.getElementById(reEnterPasswordID);
   var continueButton = document.getElementById("continueButton");
+  reEnterPasswordField.classList.remove("reEnterPassword_else");
   if (
     passwordField.value !== "" &&
     newPasswordField.value !== "" &&
@@ -153,12 +192,13 @@ function validatePasswordInputs(passwordID, newPasswordID, reEnterPasswordID) {
   ) {
     if (newPasswordField.value === reEnterPasswordField.value) {
       continueButton.disabled = false;
-      newPasswordField.style.border = "1px solid #ccc";
-      reEnterPasswordField.style.border = "1px solid #ccc";
+      newPasswordField.classList.add("newPassword");
+      reEnterPasswordField.classList.add("reEnterPassword");
     } else {
       continueButton.disabled = true;
-      newPasswordField.style.border = "1px solid #ccc";
-      reEnterPasswordField.style.border = "1px solid #ff0000";
+      newPasswordField.classList.add("newPassword");
+      reEnterPasswordField.classList.remove("reEnterPassword");
+      reEnterPasswordField.classList.add("reEnterPassword_else");
     }
   } else {
     continueButton.disabled = true;
@@ -167,16 +207,19 @@ function validatePasswordInputs(passwordID, newPasswordID, reEnterPasswordID) {
 function validateForgotPassword(newPasswordID, reEnterPasswordID) {
   var newPasswordField = document.getElementById(newPasswordID);
   var reEnterPasswordField = document.getElementById(reEnterPasswordID);
+
   var continueButton = document.getElementById("continueButton");
+  reEnterPasswordField.classList.remove("reEnterPassword_else");
   if (newPasswordField.value !== "" && reEnterPasswordField.value !== "") {
     if (newPasswordField.value === reEnterPasswordField.value) {
       continueButton.disabled = false;
-      newPasswordField.style.border = "1px solid #ccc";
-      reEnterPasswordField.style.border = "1px solid #ccc";
+      newPasswordField.classList.add("newPassword");
+      reEnterPasswordField.classList.add("reEnterPassword");
     } else {
       continueButton.disabled = true;
-      newPasswordField.style.border = "1px solid #ccc";
-      reEnterPasswordField.style.border = "1px solid #ff0000";
+      newPasswordField.classList.add("newPassword");
+      reEnterPasswordField.classList.remove("reEnterPassword");
+      reEnterPasswordField.classList.add("reEnterPassword_else");
     }
   } else {
     continueButton.disabled = true;
@@ -237,6 +280,27 @@ function validatePanInputs(panNumberId) {
   }
   return panNumberIsValid;
 }
+function getUserSecond(panNumberId, dob_id_add) {
+  var panNumberId_res = document.getElementById(panNumberId);
+  var dob_id_add_res = document.getElementById(dob_id_add);
+  continueButton = document.getElementById("continueButton");
+  const panNumberValue = panNumberId_res.value.trim();
+  const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
+  const panNumberIsValid = panNumberRegex.test(panNumberValue);
+  
+  // Corrected condition to check if date input has a non-empty value
+  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid) {
+    continueButton.disabled = false;
+  } else {
+    continueButton.disabled = true;
+  }
+  return panNumberIsValid;
+}
+
+
+
+
+
 /******manage-bank-toggle-start */
 function bank_toggle_bank(id) {
   var bank_select = document.getElementById(id);
@@ -253,14 +317,13 @@ function bank_toggle_bank(id) {
     bank_details_data.style.display = "none";
   }
 }
-function bank_toggle_add(id, data){
+function bank_toggle_add(id, data) {
   var bank_select = document.getElementById(id);
   var data_id = document.getElementById(data);
   if (bank_select.value === "ICICI_bank") {
-    data_id.style.display="block"
-  }
-  else{
-    data_id.style.display="none"
+    data_id.style.display = "block";
+  } else {
+    data_id.style.display = "none";
   }
 }
 /******manage-bank-toggle-end */
@@ -367,11 +430,9 @@ function showContentAdd(clickedBtn, yesBtn, noBtn, content_div) {
   clickedBtn.classList.add("check_btn_add");
   if (clickedBtn.id === "yesBtn") {
     otherContentDiv.style.display = "block";
-
   } else if (clickedBtn.id === "nomineeyes") {
     otherContentDiv.style.display = "block";
     otherContentDiv_second.style.display = "none";
-
   } else {
     otherContentDiv.style.display = "none";
     otherContentDiv_second.style.display = "block";
@@ -380,11 +441,11 @@ function showContentAdd(clickedBtn, yesBtn, noBtn, content_div) {
 
 /*****************additional-js-end ******************/
 /******repayment-js-start------------------- */
-$('.showSingle').click(function () {
-  $('.customepayment').hide();
-  $('.showSingle').removeClass('greenactive');
-  $(this).addClass("greenactive")
-  $('#div' + $(this).attr('target')).show();
+$(".showSingle").click(function () {
+  $(".customepayment").hide();
+  $(".showSingle").removeClass("greenactive");
+  $(this).addClass("greenactive");
+  $("#div" + $(this).attr("target")).show();
 });
 /********repayment-js-end-here************** */
 /*****************open sucess toast BMT-265 ******************/
@@ -566,7 +627,7 @@ function handleClickShowQuickAction() {
   overlay.classList.add("show");
 }
 
-function handleClickShowInterestRates(){
+function handleClickShowInterestRates() {
   var showBox = document.getElementById("interestRate");
   var overlay = document.getElementById("overlay");
   showBox.classList.add("show");

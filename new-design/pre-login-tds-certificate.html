@@ -303,9 +303,9 @@
                               <input
                                 type="text"
                                 class="form-control formControl formControl_profile"
-                                id="pan_number"
+                                id="pan_number_value"
                                 maxlength="10"
-                                oninput="validatePanInputs('pan_number')"
+                                oninput="resetPasswordMobile('pan_number_value', 'dob_value')"
                                 autocomplete="off"
                               />
                               <div class="textfildicons textfildicons_icons">
@@ -328,9 +328,11 @@
                                 type="date"
                                 placeholder="DD/MM/YYYY"
                                 class="form-control formControl formControl_profile"
-                                id="nominee_DOB"
+                                id="dob_value"
                                 required
-                                onchange="renewalformContinueButtonEnable()"
+                                oninput="resetPasswordMobile('pan_number_value', 'dob_value')"
+
+                                
                               />
                             </div>
                           </div>
@@ -375,6 +377,7 @@
               class="btn themeRedBtn themeRedBtn_profile"
               id="continueButton"
               disabled
+              onclick="handleClickModal('myModal')"
             >
               Generate OTP
               <img src="./assets/img/arrow-right.svg" alt="icons" />

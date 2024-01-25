@@ -8,6 +8,16 @@
   transform: translateY(-50%);
   right: 0;
 }
+.newPassword{
+ border: 1px solid #ccc !important;
+}
+.reEnterPassword{
+ border: 1px solid #ccc !important;
+}
+.reEnterPassword_else{
+ border: 1px solid #ff0000 !important;
+}
+
 .live_tune_connect {
   padding: 8px 12px;
   border-bottom: 1px solid $color_border;

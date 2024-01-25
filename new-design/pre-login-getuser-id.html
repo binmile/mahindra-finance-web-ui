@@ -306,8 +306,10 @@
                                 class="form-control formControl formControl_profile"
                                 id="old_password"
                                 maxlength="30"
-                                oninput="validateForgotPassword('old_password', 're_enter_new_password')"
+                                oninput="validatePasswordInputs('old_password', 'new_password', 'confirm_new_password')"
                                 autocomplete="off"
+                                autocomplete="off"
+                                pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" 
                               />
                               <div class="textfildicons textfildicons_icons">
                                 <img
@@ -339,9 +341,12 @@
                                 class="form-control formControl formControl_profile"
                                 id="new_password_pre"
                                 maxlength="30"
-                                oninput="validateForgotPassword( 'new_password_pre', 're_enter_new_password')"
+                                oninput="validatePasswordInputs('old_password', 'new_password_pre', 'confirm_new_password')"
+                                pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" 
                                 autocomplete="off"
                               />
+                            
+
                               <div class="textfildicons textfildicons_icons">
                                 <img
                                   src="./assets/img/icons/eyes_cross.svg"
@@ -372,7 +377,8 @@
                                 class="form-control formControl formControl_profile"
                                 id="confirm_new_password"
                                 maxlength="30"
-                                oninput="validateForgotPassword( 'confirm_new_password', 're_enter_new_password')"
+                                pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" 
+                                oninput="validatePasswordInputs('old_password', 'new_password_pre', 'confirm_new_password')"
                                 autocomplete="off"
                               />
                               <div class="textfildicons textfildicons_icons">
@@ -399,22 +405,35 @@
                   </form>
                 </div>
                 <div class="col-lg-6 col-md-12 col-12">
-                    <div class="instruction_details darkBg ">
-                      <div class="boldTitle remove_bottom mb-20">
-                        Instructions 
-                      </div>
-                        <div class="listItems">
-                          <ul class="custliststyle_instruction">
-                            <li>
-                                Password must be alphanumeric with minimum 8 characters and maximum 20 characters it should be a combination of at-least 1 special character, upper case letter, lower case letter and a numeric value. 
-                            </li>
-                            <li>
-                                If you have forgotten the password please <span><a href="./pre-login-reset.html"> click here</a></span> to initiate the password recovery process. Follow the prompts to reset your password and regain access to your account. If you need further assistance, contact your support team at (mfinfd@mahindra.com) or (1800 266 9266) between 10:00 AM to 05:00 PM (Monday to Saturday).   
-                            </li>
-                           
-                          </ul>
-                        </div>
-                      </div>
+                  <div class="instruction_details darkBg">
+                    <div class="boldTitle remove_bottom mb-20">
+                      Instructions
+                    </div>
+                    <div class="listItems">
+                      <ul class="custliststyle_instruction">
+                        <li>
+                          Password must be alphanumeric with minimum 8
+                          characters and maximum 20 characters it should be a
+                          combination of at-least 1 special character, upper
+                          case letter, lower case letter and a numeric value.
+                        </li>
+                        <li>
+                          If you have forgotten the password please
+                          <span
+                            ><a href="./pre-login-reset.html">
+                              click here</a
+                            ></span
+                          >
+                          to initiate the password recovery process. Follow the
+                          prompts to reset your password and regain access to
+                          your account. If you need further assistance, contact
+                          your support team at (mfinfd@mahindra.com) or (1800
+                          266 9266) between 10:00 AM to 05:00 PM (Monday to
+                          Saturday).
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -426,6 +445,7 @@
               class="btn themeRedBtn themeRedBtn_profile"
               id="continueButton"
               disabled
+              onclick="handleClickModal('myModal')"
             >
               Update
               <img src="./assets/img/arrow-right.svg" alt="icons" />
