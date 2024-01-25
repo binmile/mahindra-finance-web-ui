@@ -1120,7 +1120,10 @@ span.ml-2 {
     margin-bottom: 8px;
 }
 .web-wrapper.custweb .wd-13 {
-    width: 35% ;
+    width: 40% ;
+}
+.web-wrapper.custweb .wd-55 {
+    width: 60% ;
 }
 .mainsec {
     background: #F3F4F6;
@@ -1250,3 +1253,59 @@ label.uploadbtndesign {
     margin-right: 8px;
 }
 
+
+
+.interestTableContainer_CheckBox {
+    padding: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] {
+    background-color: #f4f7fa;
+}
+input[type='checkbox'] {
+    accent-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px !important;
+}
+.autorenewal_text {
+    color: white;
+    margin-left: 10px;
+    border: none !important;
+}
+.tooltipContainer {
+    position: relative;
+    z-index: 999;
+}
+.tooltipContainer .tooltipMain {
+    cursor: pointer;
+}
+
+
+.tooltipdesign.custtooltipdesign.cut2 {
+    margin-bottom: 0px;
+}
+.info-icon2.info-icon3.custom-tooltip .tooltip-text {
+    background-color: #fff;
+    color: #000;
+}
+.info-icon2.info-icon3.custom-tooltip .tooltip-text::after {
+    
+    border-color: #ffffff transparent transparent transparent;
+}
+.info-icon2.info-icon3.custom-tooltip.custom-tooltip2 .tooltip-text::after {
+    margin-left: -18px;
+}
+
+.listTable.custlisttable {
+    width: 100vw;
+    overflow: auto;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1350px){
+.listTable .customScroll.customScroll2 {
+    min-width: 330px;
+    overflow: auto;
+}}
