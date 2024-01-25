@@ -338,6 +338,17 @@ function checkboxTandC(id) {
     element.disabled = true;
   }
 }
+function checkboxTandC_(id) {
+  var radio = document.getElementById(id);
+  var element = document.getElementById("custome_hidebtn");
+
+  if (radio.checked) {
+    element.style.display="flex"
+  } else {
+    element.style.display="none"
+
+  }
+}
 
 function enableButton() {
   document.getElementById("myButton").disabled = false;

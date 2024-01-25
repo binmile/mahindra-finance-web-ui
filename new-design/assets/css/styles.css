@@ -7787,12 +7787,34 @@ input[type=checkbox] {
   overflow: auto;
 }
 
+.info-icon2.info-icon4.custom-tooltip.custom-tooltip2 .tooltip-text {
+  left: -10px;
+}
+
 @media screen and (min-width: 769px) and (max-width: 1350px) {
   .listTable .customScroll.customScroll2 {
     min-width: 330px;
     overflow: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .info-icon2.info-icon3.custom-tooltip.custom-tooltip2 .tooltip-text::after {
+    margin-left: 66px;
+  }
+  .info-icon2.custom-tooltip.custom-tooltip2 .tooltip-text {
+    left: -22px;
+  }
+  .info-icon2.info-icon4.custom-tooltip.custom-tooltip2 .tooltip-text {
+    left: 10px;
+  }
+  .info-icon2.info-icon4.custom-tooltip.custom-tooltip2 .tooltip-text::after {
+    margin-left: 171px;
+  }
+}
+#custome_hidebtn {
+  display: none;
+}
+
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
