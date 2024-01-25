@@ -281,11 +281,9 @@
           <div class="bankDetailsMainContainer">
             <div class="boldTitle boldTitle_profile">
               <div
-                class="roundBackgroundIcon roundBackgroundIcon_lfd roundBackgroundIcon_profile"
-              >
-                <img src="./assets/img/icons/lock.svg" alt="icon" />
-              </div>
-              Get your user ID
+                class="roundBackgroundIcon_lfd roundBackgroundIcon_profile"
+              ></div>
+              Form 15 G/H submission
             </div>
             <div class="main-form form_div">
               <div class="row">
@@ -305,9 +303,9 @@
                               <input
                                 type="text"
                                 class="form-control formControl formControl_profile"
-                                id="pan_number_id"
+                                id="pan_number_value"
                                 maxlength="10"
-                                oninput="getUserSecond('pan_number_id','dob_id_add')"
+                                oninput="resetPasswordMobile('pan_number_value', 'dob_value')"
                                 autocomplete="off"
                               />
                               <div class="textfildicons textfildicons_icons">
@@ -330,9 +328,9 @@
                                 type="date"
                                 placeholder="DD/MM/YYYY"
                                 class="form-control formControl formControl_profile"
-                                id="dob_id_add"
+                                id="dob_value"
                                 required
-                                oninput="getUserSecond('pan_number_id','dob_id_add')"
+                                oninput="resetPasswordMobile('pan_number_value', 'dob_value')"
                               />
                             </div>
                           </div>
@@ -342,50 +340,28 @@
                   </form>
                 </div>
                 <div class="col-lg-12 col-md-12 col-12">
-                  <div class="instruction_details darkBg descriptionBox_second">
-                    <div class="row align-items-center">
-                      <div class="col-lg-1">
-                        <div class="descriptionImage text-center">
-                          <img
-                            src="./assets/img/icons/apply-loan.svg"
-                            alt="icon"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-lg-11">
-                        <div class="listItems">
-                          <ul class="custliststyle_instruction add_instruction cust_second">
-                            <li>
-                              Please keep your mobile accessible in order to
-                              check the OTP.
-                            </li>
-                            <li>
-                              Please ensure that your mobile number is updated
-                              with us to be able to receive your OTP and
-                              transact online
-                            </li>
-                            <li>
-                              OTP’s will not be valid beyond 15 minutes of
-                              issuance
-                            </li>
-                            <li>
-                              System shall invade both codes if any code of them
-                              is wrongly submitted
-                            </li>
-                            <li>
-                              Only valid KYC details will be processed. Three
-                              filed attempts for the day shall block the
-                              combination of KYC to send any request to the
-                              system
-                            </li>
-                            <li>
-                              System shall reject the request even if any one of
-                              the KYC does not match and the dynamic system
-                              security does not match
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                  <div
+                    class="instruction_details darkBg descriptionBox_second margin_less"
+                  >
+                    <div class="boldTitle_submission">Form 15 G/H submission</div>
+                    <div class="listItems">
+                      <ul
+                        class="custliststyle_instruction tds_instruct add_instruction"
+                      >
+                        <li>
+                            Please enter the PAN details and date of birth for which the 15 G/H submission is required 
+                        </li>
+                        <li>
+                            Verify the OTP sent on the mobile number linked to the PAN filled here 
+                        </li>
+                        <li>
+                            Please complete the additional information for KYC compliance 
+                        </li>
+                        <li>
+                            You can download the 15 G/H Form after completing above steps  
+                        </li>
+                        
+                      </ul>
                     </div>
                   </div>
                 </div>

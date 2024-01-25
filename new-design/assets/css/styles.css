@@ -8387,6 +8387,18 @@ p.notify_lfd {
   right: 0;
 }
 
+.newPassword {
+  border: 1px solid #ccc !important;
+}
+
+.reEnterPassword {
+  border: 1px solid #ccc !important;
+}
+
+.reEnterPassword_else {
+  border: 1px solid #ff0000 !important;
+}
+
 .live_tune_connect {
   padding: 8px 12px;
   border-bottom: 1px solid #E8E8E8;
@@ -10092,6 +10104,13 @@ ul.tds_instruct :before {
   list-style-type: decimal;
   padding-left: 1rem;
 }
+.listItems ul.custliststyle_instruction.cust_second li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #6b7280;
+}
 .listItems ul.custliststyle_instruction.tds_instruct {
   padding-left: 0;
   list-style-type: unset;
@@ -10102,9 +10121,9 @@ ul.tds_instruct :before {
   margin-bottom: 0;
 }
 .listItems ul.custliststyle_instruction li {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
   letter-spacing: 0.15px;
   color: #6b7280;
 }
@@ -10147,7 +10166,6 @@ ul.tds_instruct :before {
 
 .listItems ul.custliststyle_instruction.add_instruction li {
   margin-bottom: 2px;
-  line-height: 22px;
 }
 
 .apply_loan_img {
