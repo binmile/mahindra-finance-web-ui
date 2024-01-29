@@ -7815,6 +7815,22 @@ input[type=checkbox] {
   display: none;
 }
 
+.listTable.customeHead .wd-13 {
+  width: 17%;
+}
+
+.listTable.customeHead .wd-11 {
+  width: 17%;
+}
+
+.textparent.textparenttable {
+  margin: 7px 15px 7px 0px;
+}
+
+.listTable.customeHead2 .wd-13 {
+  width: 20%;
+}
+
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
