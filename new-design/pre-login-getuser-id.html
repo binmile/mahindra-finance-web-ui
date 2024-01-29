@@ -305,11 +305,10 @@
                                 type="password"
                                 class="form-control formControl formControl_profile"
                                 id="old_password"
-                                maxlength="30"
-                                oninput="validatePasswordInputs('old_password', 'new_password', 'confirm_new_password')"
+                                maxlength="20"
+                                oninput="validatePasswordChange('old_password','new_password_pre', 'confirm_new_password')"
                                 autocomplete="off"
-                                autocomplete="off"
-                                pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" 
+                                pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"
                               />
                               <div class="textfildicons textfildicons_icons">
                                 <img
@@ -340,12 +339,15 @@
                                 type="password"
                                 class="form-control formControl formControl_profile"
                                 id="new_password_pre"
-                                maxlength="30"
-                                oninput="validatePasswordInputs('old_password', 'new_password_pre', 'confirm_new_password')"
-                                pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" 
+                                maxlength="20"
+                                oninput="validatePasswordChange('old_password','new_password_pre', 'confirm_new_password')"
+                                pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"
                                 autocomplete="off"
                               />
-                            
+                              <div
+                                id="newPasswordError"
+                                class="pre-error-message"
+                              ></div>
 
                               <div class="textfildicons textfildicons_icons">
                                 <img
@@ -376,11 +378,16 @@
                                 type="password"
                                 class="form-control formControl formControl_profile"
                                 id="confirm_new_password"
-                                maxlength="30"
-                                pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" 
-                                oninput="validatePasswordInputs('old_password', 'new_password_pre', 'confirm_new_password')"
+                                maxlength="20"
+                                oninput="validatePasswordChange('old_password','new_password_pre', 'confirm_new_password')"
+                                pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"
                                 autocomplete="off"
                               />
+                              <div
+                                id="confirmPasswordError"
+                                class="pre-error-message"
+                              ></div>
+
                               <div class="textfildicons textfildicons_icons">
                                 <img
                                   src="./assets/img/icons/eyes_cross.svg"
