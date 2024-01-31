@@ -8518,6 +8518,42 @@ p.notify_lfd {
   color: #6B7280;
 }
 
+.modal .modal-content .modal-body.dash-popup .info-heading-image {
+  background-color: unset;
+}
+.modal .modal-content .modal-body.dash-popup .info-heading-image img {
+  width: 37px;
+  height: 37px;
+}
+.modal .modal-content .modal-body.dash-popup .info-content {
+  padding: 0 36px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #231f20;
+  margin: 12px 0;
+}
+.modal .modal-content .modal-body.dash-popup .info-button button {
+  padding: 0 66px;
+}
+.modal .modal-content .modal-body.dash-popup .list_data_div {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.modal .modal-content .modal-body.dash-popup .list_data_div .custliststyle_instruction {
+  margin-bottom: 25px;
+}
+.modal .modal-content .modal-body.dash-popup .list_data_div .custliststyle_instruction li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  color: #4d4d4f;
+}
+
 /*--new-changes-added-31jan-end--*/
 .newPassword {
   border: 1px solid #ccc !important;
@@ -8913,6 +8949,25 @@ input[type=number] {
   /*--new-changes-added-start--31jan-*/
   .fd_content_min_height_profile_pass {
     min-height: 0;
+  }
+  .modal .modal-content .modal-body.dash-popup .info-content {
+    padding: 0 14px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  .modal .modal-content .modal-body.dash-popup .info-button button {
+    padding: 0 66px;
+  }
+  .modal .modal-content .modal-body.dash-popup .list_data_div .custliststyle_instruction {
+    margin-bottom: 15px;
+  }
+  .modal .modal-content .modal-body.dash-popup .list_data_div .custliststyle_instruction li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
   }
   .descriptionContainer.des_change .descriptionBox {
     flex-direction: column;

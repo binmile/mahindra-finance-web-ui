@@ -15,7 +15,7 @@
     .descriptionBox {
       width: 100% !important;
       img {
-       @include custom-width-height(37px, 37px);
+        @include custom-width-height(37px, 37px);
         margin-right: 8px;
       }
       .descriptionContent {
@@ -25,6 +25,42 @@
             @include custom-font(16px, 600, 24px, 0.15px);
             color: $color_light_text;
           }
+        }
+      }
+    }
+  }
+}
+.modal .modal-content .modal-body {
+  &.dash-popup {
+    .info-heading-image {
+      background-color: unset;
+      img {
+        @include custom-width-height(37px, 37px);
+      }
+    }
+
+    .info-content {
+      padding: 0 36px;
+      @include custom-font(16px, 400, 24px, 0.5px);
+      color: #231f20;
+      margin: 12px 0;
+    }
+    .info-button {
+      button {
+        padding: 0 66px;
+      }
+    }
+    .list_data_div {
+      display: flex;
+      justify-content: center;
+      place-items: center;
+      .custliststyle_instruction {
+        margin-bottom: 25px;
+        li {
+          @include custom-font(16px, 400, 20px, 0.5px);
+
+          margin-bottom: 0;
+          color: #4d4d4f;
         }
       }
     }
@@ -386,6 +422,29 @@ input[type="number"] {
   .fd_content_min_height_profile_pass {
     min-height: 0;
   }
+  .modal .modal-content .modal-body {
+    &.dash-popup {
+      .info-content {
+        padding: 0 14px;
+        @include custom-font(12px, 400, 24px, 0.5px);
+      }
+      .info-button {
+        button {
+          padding: 0 66px;
+        }
+      }
+
+      .list_data_div {
+        .custliststyle_instruction {
+          margin-bottom: 15px;
+          li {
+            @include custom-font(14px, 400, 20px, 0.5px);
+          }
+        }
+      }
+    }
+  }
+
   .descriptionContainer {
     &.des_change {
       .descriptionBox {
