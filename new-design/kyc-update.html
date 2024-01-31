@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahindra Finance :: Kyc</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/_265_css.scss" />
+</head>
+
+<body>
+    <!-- Top-navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logo.svg" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <div id="hamburgerIcon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item no_tablet_view">
+                        <div class="mob_menu_user_profile">
+                            <div class="userIconImage">
+                                <img src="./assets/img/avatar.png" alt="user icon" />
+                            </div>
+                            Vikram Kumar Sahu
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">FD renewal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preclosure.html">Preclosure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Loan against FD repayment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Loan against FD</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Download</span>
+                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
+                        </a>
+                        <ul class="dropdown-menu mob_menu_download" aria-labelledby="dropdown09">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/Certificate.svg" alt="icon" class="menuIcon" /> TDS certificate
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/file-plus.svg" alt="icon" class="menuIcon" /> Form 15 G/H submission
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/file-text.svg" alt="icon" class="menuIcon" /> Cumulative letter
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Non - cumulative letter
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/percent.svg" alt="icon" class="menuIcon" /> Interest paid / accrued details
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown userAvatar">
+                        <img src="./assets/img/avatar.png" alt="user" class="no_view" />
+                        <a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Profile</span>
+                            <img src="./assets/img/chevron-down.svg" alt="icons" class="toggle-icon" />
+                            <span class="plus_icon"><img src="./assets/img/icons/plusIcon.svg" alt="icon" class="no_tablet_view plusIcon" id="rotate_icon_profile" /></span>
+                        </a>
+                        <ul class="dropdown-menu mob_sub_profile" aria-labelledby="dropdown09">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/user.svg" alt="icon" class="menuIcon" /> My account
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/edit.svg" alt="icon" class="menuIcon" /> CKYC update
+                                    <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/check-circle.svg" alt="icon" class="menuIcon" /> Avail employee benefit <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./assets/img/icons/file-minus.svg" alt="icon" class="menuIcon" /> Other fixed deposits <img src="./assets/img/icons/arrow-right-red-icon.svg" alt="arrow icon" class="menu_hover_icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item logoutLink" href="#">
+                                    <img src="./assets/img/icons/logoutIcon.svg" alt="icon" /> Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mob_menu_logout no_tablet_view">
+                        <a href="#">
+                            <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
+                            Log out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Top-navbar End -->
+    <div class="container mb-20">
+        <div class="row animate__animated animate__fadeInUp">
+            <div class="col col-md-12 mt-20"><a href="#" class="commonBackBtn"><img src="./assets/img/icons/chevron-left.svg"
+                        alt="icon" /> Back</a></div>
+            <div class="col col-md-12">
+                <div class="commonHeading">CKYC update</div>
+            </div>
+            <div class="col col-md-12 web-wrapper">
+                <div class="listTable customeHead2">
+                    <div class="listTableHead ">
+                        
+                        <div class="wd-13">Name</div>
+                        <div class="wd-13"> Date of birth</div>
+                        <div class="wd-13">Occupation type  </div>
+                        <div class="wd-11">Occupation subtype </div>
+                        <div class="wd-13">Annual income </div>
+                       
+                        
+                    </div>
+                    <div class="listTableBody tableBodyWithHeight">
+                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+                           
+                            <div class="tableData wd-13">Vikram Kumar Sahu</div>
+                            <div class="tableData wd-13">22 Aug 1966</div>
+                            <div class="tableData wd-13">
+                                <div class="textparent textparenttable">
+                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                        Salaried
+                                      </option>
+                                      <option value="add-new-bank">Add-new</option>
+                                      <option value="bank_value">Bank of baroda</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="tableData wd-11">
+                                <div class="textparent textparenttable">
+                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                        Select
+                                      </option>
+                                      <option value="add-new-bank">Add-new</option>
+                                      <option value="bank_value">Bank of baroda</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="tableData wd-13">
+                                <div class="textparent textparenttable">
+                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                        ₹ 2,00,000 - ₹ 5,00,000
+                                      </option>
+                                      <option value="add-new-bank">Add-new</option>
+                                      <option value="bank_value">Bank of baroda</option>
+                                    </select>
+                                  </div>
+                            </div>
+                          
+                           
+                        </div>
+
+                        <div class="listTabledata" onclick="selectRadio(event, 'listTabledata')">
+                           
+                            <div class="tableData wd-13">Vikram Kumar Sahu</div>
+                            <div class="tableData wd-13">22 Aug 1966</div>
+                            <div class="tableData wd-13">
+                                <div class="textparent textparenttable">
+                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                        Salaried
+                                      </option>
+                                      <option value="add-new-bank">Add-new</option>
+                                      <option value="bank_value">Bank of baroda</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="tableData wd-11">
+                                <div class="textparent textparenttable">
+                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                        Select
+                                      </option>
+                                      <option value="add-new-bank">Add-new</option>
+                                      <option value="bank_value">Bank of baroda</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="tableData wd-13">
+                                <div class="textparent textparenttable">
+                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                        Select
+                                      </option>
+                                      <option value="add-new-bank">Add-new</option>
+                                      <option value="bank_value">Bank of baroda</option>
+                                    </select>
+                                  </div>
+                            </div>
+                           
+                        </div>
+
+                    </div>
+                    <div class="descriptionContainer">
+                        <div class="descriptionBox">
+                                    <div class="descriptionContent">
+                                        <p>
+                                            Keep your information up-to-date for a smooth and secure financial experience. Updating ensures you get important 
+                                            alerts, added security. Stay compliant with regulations, ensure safe investments, build trust. 
+                                        </p>
+                                        
+                                    </div>
+                                  
+
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mob-wrapper">
+                <div class="fixedDepositeContainer">
+                    <div class="fixedDepositDetailsData">
+                        <div class="details_fixed_deposit" id="details_fixed_deposit1">
+                            <div class="auto_renewal_details">
+                                <div class="FD_num">
+                                    
+                                </div>
+                                <input class="radio-button radio-button-data mobRadioButton"
+                                    onclick="radioButtonAction('radio1','details_fixed_deposit1')" type="radio"
+                                    name="radio" value="male" id="radio1">
+                            </div>
+                            <div class="second_details">
+                                <div class="Investment_details_content">
+                                    <div>
+                                        <div class="text_content">
+                                            Name 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="NA_text">
+                                                Vikram Kumar Sahu
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="text_content">
+                                            Date of birth 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="percentage_text">
+                                                22 Aug 1966
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="text_content">
+                                            Occupation type 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/percent.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="NA_text">
+                                                <div class="textparent textparenttable">
+                                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                                        Salaried
+                                                      </option>
+                                                      <option value="add-new-bank">Add-new</option>
+                                                      <option value="bank_value">Bank of baroda</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second_details">
+                                <div class="Investment_details_content">
+                                    <div>
+                                        <div class="text_content">
+                                            Occupation subtype 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="NA_text">
+                                                <div class="textparent textparenttable">
+                                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                                        Select
+                                                      </option>
+                                                      <option value="add-new-bank">Add-new</option>
+                                                      <option value="bank_value">Bank of baroda</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="text_content">
+                                            Annual income 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/percent.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="NA_text">
+                                                <div class="textparent textparenttable">
+                                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                                        ₹ 2,00,000 - ₹ 5,00,000
+                                                      </option>
+                                                      <option value="add-new-bank">Add-new</option>
+                                                      <option value="bank_value">Bank of baroda</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                  
+                                  
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  
+                </div>
+                 <div class="fixedDepositeContainer">
+                    <div class="fixedDepositDetailsData">
+                        <div class="details_fixed_deposit" id="details_fixed_deposit1">
+                            <div class="auto_renewal_details">
+                                <div class="FD_num">
+                                    
+                                </div>
+                                <input class="radio-button radio-button-data mobRadioButton"
+                                    onclick="radioButtonAction('radio1','details_fixed_deposit1')" type="radio"
+                                    name="radio" value="male" id="radio1">
+                            </div>
+                            <div class="second_details">
+                                <div class="Investment_details_content">
+                                    <div>
+                                        <div class="text_content">
+                                            Name 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="NA_text">
+                                                Vikram Kumar Sahu
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="text_content">
+                                            Date of birth 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="percentage_text">
+                                                22 Aug 1966
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="text_content">
+                                            Occupation type 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/percent.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="NA_text">
+                                                <div class="textparent textparenttable">
+                                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                                        Salaried
+                                                      </option>
+                                                      <option value="add-new-bank">Add-new</option>
+                                                      <option value="bank_value">Bank of baroda</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second_details">
+                                <div class="Investment_details_content">
+                                    <div>
+                                        <div class="text_content">
+                                            Occupation subtype 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/cash.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="NA_text">
+                                                <div class="textparent textparenttable">
+                                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                                        Select
+                                                      </option>
+                                                      <option value="add-new-bank">Add-new</option>
+                                                      <option value="bank_value">Bank of baroda</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="text_content">
+                                            Annual income 
+                                        </div>
+                                        <div class="img_detail">
+                                            <!-- <div>
+                                                <img src="./assets/img/icons/percent.svg" alt="Logo" />
+                                            </div> -->
+                                            <div class="NA_text">
+                                                <div class="textparent textparenttable">
+                                                    <select id="manage_bank_id" class="form-control formControl formControl_profile" onchange="bank_toggle_bank('manage_bank_id')">
+                                                      <option value="disable-selected" disabled="" hidden="" selected="">
+                                                       Select
+                                                      </option>
+                                                      <option value="add-new-bank">Add-new</option>
+                                                      <option value="bank_value">Bank of baroda</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                  
+                                  
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                  
+                </div>
+               
+
+            </div>
+            <div class="col col-md-12">
+                <div class="buttonContainer">
+                    <button class="themeRedBtn">Continue
+                        <img src="./assets/img/arrow-right.svg" alt="icons" /></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/chart.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
