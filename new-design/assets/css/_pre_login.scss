@@ -3,6 +3,34 @@
   border-radius: 8px;
   margin-top: 40px;
 }
+/*--new-changes-added-31jan-start--*/
+
+.bankDetailsMainContainer .textparent {
+  &.text_parent_changes {
+    .formLabel {
+      margin-top: 8px;
+    }
+    .textfildicons {
+      top: 48.5px;
+    }
+  }
+}
+
+.forgot_text {
+  text-align: right;
+  @include custom-font(14px, 400, 20px, 0.0015px);
+  color: $color_light_text;
+  margin: 8px 0 0 0;
+  span {
+    font-weight: 500;
+    color: #407bff;
+  }
+}
+.listItems_sec{
+  margin: 16px 0 25px 0;
+}
+/*--new-changes-added-31jan-end--*/
+
 .custliststyle_instruction > :not(:last-child) {
   margin-bottom: 18px;
 }
@@ -97,12 +125,11 @@ ul.tds_instruct :before {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width:991px) {
-    .descriptionImage{
-        display: flex;
-      }
-}
 @media only screen and (max-width: 768px) {
+  .bankDetailsMainContainer .textparent {
+    &.text_parent_changes .textfildicons {
+      top: 36.5px;
+    }}
   .instruction_details {
     padding: 16px;
     margin-top: 20px;
