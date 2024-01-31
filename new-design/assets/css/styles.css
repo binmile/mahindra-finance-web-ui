@@ -8409,6 +8409,30 @@ p.notify_lfd {
   right: 0;
 }
 
+/*--new-changes-added-start--31jan-*/
+.descriptionContainer.des_change {
+  padding-bottom: 0;
+}
+.descriptionContainer.des_change .descriptionBox {
+  width: 100% !important;
+}
+.descriptionContainer.des_change .descriptionBox img {
+  width: 37px;
+  height: 37px;
+  margin-right: 8px;
+}
+.descriptionContainer.des_change .descriptionBox .descriptionContent {
+  width: 71%;
+}
+.descriptionContainer.des_change .descriptionBox .descriptionContent p span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #6B7280;
+}
+
+/*--new-changes-added-31jan-end--*/
 .newPassword {
   border: 1px solid #ccc !important;
 }
@@ -8667,6 +8691,10 @@ input[type=number] {
   align-items: center;
 }
 
+.fd_content_min_height_profile_pass {
+  min-height: calc(50vh - 127px);
+}
+
 .fd_content_min_height_profile {
   min-height: calc(70vh - 127px);
 }
@@ -8796,6 +8824,18 @@ input[type=number] {
 }
 
 @media only screen and (max-width: 767px) {
+  /*--new-changes-added-start--31jan-*/
+  .fd_content_min_height_profile_pass {
+    min-height: 0;
+  }
+  .descriptionContainer.des_change .descriptionBox {
+    flex-direction: column;
+  }
+  .descriptionContainer.des_change .descriptionBox .descriptionContent {
+    width: 100%;
+    margin-top: 10px;
+  }
+  /*--new-changes-added-end--31jan-*/
   .communication_wrapper {
     display: none;
   }
@@ -10107,6 +10147,33 @@ html,
   margin-top: 40px;
 }
 
+/*--new-changes-added-31jan-start--*/
+.bankDetailsMainContainer .textparent.text_parent_changes .formLabel {
+  margin-top: 8px;
+}
+.bankDetailsMainContainer .textparent.text_parent_changes .textfildicons {
+  top: 48.5px;
+}
+
+.forgot_text {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.0015px;
+  color: #6B7280;
+  margin: 8px 0 0 0;
+}
+.forgot_text span {
+  font-weight: 500;
+  color: #407bff;
+}
+
+.listItems_sec {
+  margin: 16px 0 25px 0;
+}
+
+/*--new-changes-added-31jan-end--*/
 .custliststyle_instruction > :not(:last-child) {
   margin-bottom: 18px;
 }
@@ -10209,12 +10276,10 @@ ul.tds_instruct :before {
   justify-content: center;
 }
 
-@media only screen and (max-width: 991px) {
-  .descriptionImage {
-    display: flex;
-  }
-}
 @media only screen and (max-width: 768px) {
+  .bankDetailsMainContainer .textparent.text_parent_changes .textfildicons {
+    top: 36.5px;
+  }
   .instruction_details {
     padding: 16px;
     margin-top: 20px;
