@@ -8,14 +8,39 @@
   transform: translateY(-50%);
   right: 0;
 }
-.newPassword{
- border: 1px solid #ccc !important;
+/*--new-changes-added-start--31jan-*/
+.descriptionContainer {
+  &.des_change {
+    padding-bottom: 0;
+    .descriptionBox {
+      width: 100% !important;
+      img {
+       @include custom-width-height(37px, 37px);
+        margin-right: 8px;
+      }
+      .descriptionContent {
+        width: 71%;
+        p {
+          span {
+            @include custom-font(16px, 600, 24px, 0.15px);
+            color: $color_light_text;
+          }
+        }
+      }
+    }
+  }
 }
-.reEnterPassword{
- border: 1px solid #ccc !important;
+
+/*--new-changes-added-31jan-end--*/
+
+.newPassword {
+  border: 1px solid #ccc !important;
 }
-.reEnterPassword_else{
- border: 1px solid #ff0000 !important;
+.reEnterPassword {
+  border: 1px solid #ccc !important;
+}
+.reEnterPassword_else {
+  border: 1px solid #ff0000 !important;
 }
 
 .pre-error-border {
@@ -25,7 +50,6 @@
 .pre-error-message {
   color: red;
   @include custom-font(14px, 400, 24px, 0);
-
 }
 .live_tune_connect {
   padding: 8px 12px;
@@ -60,15 +84,15 @@
   color: $color_white;
   background: $color_black;
   align-items: center;
-  box-shadow: 0px 4px 10px 0px #0000000F;
+  box-shadow: 0px 4px 10px 0px #0000000f;
   @include custom-width-height(152px, 37px);
   border: 1px solid $color_dull_gray;
   color: $color_dull_gray;
   background: $color_white;
-    @include allCenter;
-    @include custom-font(14px, 500, 20px, 0);
+  @include allCenter;
+  @include custom-font(14px, 500, 20px, 0);
 }
-.no_record{
+.no_record {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,21 +108,21 @@
     top: 83.2px;
   }
 }
-.tab-wrapper{
-  gap:8px;
+.tab-wrapper {
+  gap: 8px;
 }
 
 .nav-item.nav-item-tab.nav-item-tab {
-    .active{
-      background-color: black;
-      color: white;
-    }
+  .active {
+    background-color: black;
+    color: white;
+  }
 }
-.nav-item{
-  a{
+.nav-item {
+  a {
     text-decoration: none;
-    &:hover{
-      color:unset;
+    &:hover {
+      color: unset;
     }
   }
 }
@@ -138,7 +162,7 @@
     border-bottom-right-radius: 8px;
   }
 }
-.img_record{
+.img_record {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,10 +259,13 @@ input[type="number"] {
     margin-bottom: 84px;
   }
 }
-.listTableBody_data{
+.listTableBody_data {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fd_content_min_height_profile_pass {
+  min-height: calc(50vh - 127px);
 }
 .fd_content_min_height_profile {
   min-height: calc(70vh - 127px);
@@ -249,13 +276,13 @@ input[type="number"] {
 .fd_content_min_height_profile_bank {
   min-height: calc(40vh - 127px);
 }
-.fd_content_min_height_accured{
+.fd_content_min_height_accured {
   min-height: calc(50vh - 100px);
 }
 .no_certificate_wrapper_min_height {
   min-height: calc(40vh - 150px);
 }
-.quick_min_height{
+.quick_min_height {
   min-height: calc(40vh - 300px);
 }
 
@@ -333,7 +360,7 @@ input[type="number"] {
     }
   }
 }
-.listTable_profile_accured{
+.listTable_profile_accured {
   margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -355,12 +382,28 @@ input[type="number"] {
 }
 
 @media only screen and (max-width: 767px) {
+  /*--new-changes-added-start--31jan-*/
+  .fd_content_min_height_profile_pass {
+    min-height: 0;
+  }
+  .descriptionContainer {
+    &.des_change {
+      .descriptionBox {
+        flex-direction: column;
+        .descriptionContent {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  /*--new-changes-added-end--31jan-*/
   .communication_wrapper {
     display: none;
   }
- 
-  .no_record{
-    img{
+
+  .no_record {
+    img {
       @include custom-width-height(186px, 100px);
     }
   }
@@ -380,7 +423,7 @@ input[type="number"] {
   .fd_content_min_height_profile_bank {
     min-height: 0;
   }
-  
+
   .bottomContentBox_profile {
     background-color: $color_light_bg;
     border-radius: 4px;
@@ -400,10 +443,12 @@ input[type="number"] {
   .tds-text {
     @include custom-font(12px, 700, 16px, 0.4px);
   }
-  .bankDetailsMainContainer .textparent .textfildicons {
-    &.textfildicons_icons_cumulative {
-      img {
-        @include custom-width-height(16px, 16px);
+  .bankDetailsMainContainer .textparent {
+    .textfildicons {
+      &.textfildicons_icons_cumulative {
+        img {
+          @include custom-width-height(16px, 16px);
+        }
       }
     }
   }
