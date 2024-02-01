@@ -458,7 +458,7 @@ input[type="number"] {
     &.dash-popup {
       .info-content {
         padding: 0 14px;
-        @include custom-font(12px, 400, 24px, 0.5px);
+        @include custom-font(14px, 400, 24px, 0.5px);
       }
       .info-button {
         button {
