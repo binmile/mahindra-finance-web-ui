@@ -435,11 +435,11 @@
                   <div class="quickActionLabel">Renew fixed deposit</div>
                 </label>
                 <label
-                  class="boxRadioButton boxRadioButton_mob"
+                  class="boxRadioButton boxRadioButton_mob custom-tooltip ul_custom"
                   id="elementOption2"
                   onmouseover="toggleButton(true)"
                   onmouseout="toggleButton(false)"
-                  onclick="handleClickModal('myModal')"
+                  onclick="handleClickModal_Popup('eReceiptModal')"
                 >
                   <input
                     type="radio"
@@ -453,6 +453,17 @@
                     alt="icon"
                   />
                   <div class="quickActionLabel">Download E receipt</div>
+
+                  <div class="tooltip-text">
+                    To open E-Receipt a password of 8 characters required
+
+                    <ul>
+                      <li>First 4 letters: Your name (lowercase).</li>
+                      <li>Last 4 digits: Postal PIN Code (0000 format).</li>
+                      <li>Case sensitive – use only lowercase.</li>
+                      <li>Exclude special characters and spaces.</li>
+                    </ul>
+                  </div>
                 </label>
                 <label
                   class="boxRadioButton boxRadioButton_mob"
@@ -557,8 +568,9 @@
       </div>
     </div>
     <div id="overlay"></div>
+
     <!-- Confrmation Modal Start -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="eReceiptModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body dash-popup">

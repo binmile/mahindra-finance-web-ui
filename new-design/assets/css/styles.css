@@ -8522,6 +8522,32 @@ p.notify_lfd {
   color: #6B7280;
 }
 
+.custom-tooltip.ul_custom .tooltip-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  left: -151px;
+  bottom: -135px;
+}
+.custom-tooltip.ul_custom .tooltip-text ul {
+  margin-top: 15px;
+  margin-bottom: 0;
+  list-style-type: decimal;
+  padding-left: 1.2rem;
+}
+.custom-tooltip.ul_custom .tooltip-text ul li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+.custom-tooltip.ul_custom .tooltip-text::after {
+  top: -13%;
+  transform: rotate(-182deg);
+  left: 85%;
+}
+
 .modal .modal-content .modal-body.dash-popup .info-heading-image {
   background-color: unset;
 }
@@ -8951,6 +8977,9 @@ input[type=number] {
 
 @media only screen and (max-width: 767px) {
   /*--new-changes-added-start--31jan-*/
+  .custom-tooltip.ul_custom:hover .tooltip-text {
+    display: none;
+  }
   .fd_content_min_height_profile_pass {
     min-height: 0;
   }

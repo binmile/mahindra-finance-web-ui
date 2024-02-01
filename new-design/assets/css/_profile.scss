@@ -30,6 +30,30 @@
     }
   }
 }
+.custom-tooltip {
+  &.ul_custom {
+    .tooltip-text {
+      @include custom-font(12px, 400, 16px, 0.4px);
+      left: -151px;
+      bottom: -135px;
+      ul {
+        margin-top: 15px;
+        margin-bottom: 0;
+        list-style-type: decimal;
+        padding-left: 1.2rem;
+        li {
+          @include custom-font(12px, 400, 16px, 0.4px);
+        }
+      }
+    }
+    .tooltip-text::after {
+      top: -13%;
+      transform: rotate(-182deg);
+      left: 85%;
+    }
+  }
+}
+
 .modal .modal-content .modal-body {
   &.dash-popup {
     .info-heading-image {
@@ -419,6 +443,13 @@ input[type="number"] {
 
 @media only screen and (max-width: 767px) {
   /*--new-changes-added-start--31jan-*/
+  .custom-tooltip {
+    &.ul_custom:hover {
+      .tooltip-text {
+        display: none;
+      }
+    }
+  }
   .fd_content_min_height_profile_pass {
     min-height: 0;
   }
