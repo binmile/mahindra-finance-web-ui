@@ -8960,6 +8960,11 @@ input[type=number] {
   margin-bottom: 0px;
 }
 
+@media only screen and (max-width: 991px) {
+  .custom-tooltip.ul_custom:hover .tooltip-text {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
     top: 63.2px;
@@ -8977,9 +8982,6 @@ input[type=number] {
 
 @media only screen and (max-width: 767px) {
   /*--new-changes-added-start--31jan-*/
-  .custom-tooltip.ul_custom:hover .tooltip-text {
-    display: none;
-  }
   .fd_content_min_height_profile_pass {
     min-height: 0;
   }
