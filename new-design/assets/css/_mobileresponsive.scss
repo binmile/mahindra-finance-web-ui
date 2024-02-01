@@ -1501,6 +1501,7 @@ input[type='checkbox'] {
 }
 .bg-gradiant {
     background-image: linear-gradient(#eff6ff, white);
+    display: flex;
 }
 
 .mainleft h3 {
@@ -1546,4 +1547,82 @@ input[type='checkbox'] {
     position: absolute;
     left: 0px;
     top: 160px;
+}
+.topcenterbox span {
+    color: #E31837;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.topcenterbox {
+    display: flex;
+    border: 1px solid #E31837;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    margin: 73px 0px 0px 0px;
+}
+
+.topcenterbox p {
+    color: #E31837;
+    padding: 22px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+p.brright:after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #E31837;
+    height: 43px;
+    top: 14px;
+    left: 50%;
+}
+span.sp2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.stemlogo {
+    margin-top: 73px;
+    margin-bottom: 64px;
+}
+.buttonContainer3 {
+    justify-content: center;
+    padding: 0px;
+}
+.secondtopsection ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+.secondtopsection ul li .smalltext.customesmalltext.text-center p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.secondtopsection {
+    margin-top: 39px;
+    
+}
+// .backborder::before {
+//     content: "";
+//     position: absolute;
+//     width: 73%;
+//     border-bottom: 2px solid #E31837;
+//     top: 20px;
+// }
+.custpossition{
+    position: relative;
+}
+.backborder::before {
+    content: "";
+    position: absolute;
+    width: 73%;
+    border-bottom: 2px solid #E31837;
+    bottom: 108px;
+    left: 77px;
+}
+.secondtopsection ul li{
+    z-index: 9999;
 }
