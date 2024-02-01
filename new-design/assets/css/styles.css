@@ -8735,6 +8735,68 @@ p.notify_lfd {
   color: #6B7280;
 }
 
+.custom-tooltip.ul_custom .tooltip-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  left: -151px;
+  bottom: -135px;
+}
+.custom-tooltip.ul_custom .tooltip-text ul {
+  margin-top: 15px;
+  margin-bottom: 0;
+  list-style-type: decimal;
+  padding-left: 1.2rem;
+}
+.custom-tooltip.ul_custom .tooltip-text ul li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+.custom-tooltip.ul_custom .tooltip-text::after {
+  top: -13%;
+  transform: rotate(-182deg);
+  left: 85%;
+}
+
+.modal .modal-content .modal-body.dash-popup .info-heading-image {
+  background-color: unset;
+}
+.modal .modal-content .modal-body.dash-popup .info-heading-image img {
+  width: 37px;
+  height: 37px;
+}
+.modal .modal-content .modal-body.dash-popup .info-content {
+  padding: 0 36px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #231f20;
+  margin: 12px 0;
+}
+.modal .modal-content .modal-body.dash-popup .info-button button {
+  padding: 0 66px;
+}
+.modal .modal-content .modal-body.dash-popup .list_data_div {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.modal .modal-content .modal-body.dash-popup .list_data_div .custliststyle_instruction {
+  margin-bottom: 25px;
+}
+.modal .modal-content .modal-body.dash-popup .list_data_div .custliststyle_instruction li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  color: #4d4d4f;
+}
+
 /*--new-changes-added-31jan-end--*/
 .newPassword {
   border: 1px solid #ccc !important;
@@ -9111,6 +9173,11 @@ input[type=number] {
   margin-bottom: 0px;
 }
 
+@media only screen and (max-width: 991px) {
+  .custom-tooltip.ul_custom:hover .tooltip-text {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer .textparent .textfildicons.textfildicons_profile_data {
     top: 63.2px;
@@ -9130,6 +9197,25 @@ input[type=number] {
   /*--new-changes-added-start--31jan-*/
   .fd_content_min_height_profile_pass {
     min-height: 0;
+  }
+  .modal .modal-content .modal-body.dash-popup .info-content {
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  .modal .modal-content .modal-body.dash-popup .info-button button {
+    padding: 0 66px;
+  }
+  .modal .modal-content .modal-body.dash-popup .list_data_div .custliststyle_instruction {
+    margin-bottom: 15px;
+  }
+  .modal .modal-content .modal-body.dash-popup .list_data_div .custliststyle_instruction li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
   }
   .descriptionContainer.des_change .descriptionBox {
     flex-direction: column;
@@ -10450,6 +10536,57 @@ html,
   margin-top: 40px;
 }
 
+/*------rating-css-start-here----------*/
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 39px;
+  justify-content: space-between;
+  text-align: center;
+  width: 215px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #e6e7e9;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  place-items: center;
+}
+
+.star-rating :checked ~ label {
+  color: #ffc700;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffc700;
+}
+
+.experience_text {
+  margin: 8px 0 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #6b7280;
+}
+
+.feedback_label {
+  color: #221f20;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+/*--rating-css-end-here--*/
 /*--new-changes-added-31jan-start--*/
 .bankDetailsMainContainer .textparent.text_parent_changes .formLabel {
   margin-top: 8px;
@@ -10495,7 +10632,7 @@ html,
 ul.tds_instruct :before {
   height: 6px;
   width: 6px;
-  background: #6B7280;
+  background: #6b7280;
   content: "";
   display: inline-block;
   transform: rotate(45deg);

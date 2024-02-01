@@ -146,21 +146,25 @@ function resetPassword(panNumberId, phnnumber, dob_id_add) {
   var panNumberId_res = document.getElementById(panNumberId);
   var dob_id_add_res = document.getElementById(dob_id_add);
   var phnnumber_res = document.getElementById(phnnumber);
-  var mobileNumber = phnnumber_res.value.slice(0, 10); 
+  var mobileNumber = phnnumber_res.value.slice(0, 10);
   phnnumber_res.value = mobileNumber;
   var continueButton = document.getElementById("continueButton");
   const panNumberValue = panNumberId_res.value.trim();
   const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
   const panNumberIsValid = panNumberRegex.test(panNumberValue);
 
-  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid && isValidMobileNumber(mobileNumber)) {
+  if (
+    panNumberValue !== "" &&
+    dob_id_add_res.value !== "" &&
+    panNumberIsValid &&
+    isValidMobileNumber(mobileNumber)
+  ) {
     continueButton.disabled = false;
   } else {
     continueButton.disabled = true;
   }
   return panNumberIsValid;
 }
-
 
 function resetPasswordMobile(panNumberId, dob_id_add) {
   var panNumberId_res = document.getElementById(panNumberId);
@@ -170,14 +174,17 @@ function resetPasswordMobile(panNumberId, dob_id_add) {
   const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
   const panNumberIsValid = panNumberRegex.test(panNumberValue);
 
-  if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid) {
+  if (
+    panNumberValue !== "" &&
+    dob_id_add_res.value !== "" &&
+    panNumberIsValid
+  ) {
     continueButton.disabled = false;
   } else {
     continueButton.disabled = true;
   }
   return panNumberIsValid;
 }
-
 
 function validatePasswordInputs(passwordID, newPasswordID, reEnterPasswordID) {
   var passwordField = document.getElementById(passwordID);
@@ -287,7 +294,11 @@ function getUserSecond(panNumberId, dob_id_add) {
   const panNumberValue = panNumberId_res.value.trim();
   const panNumberRegex = /^[A-Z]{5}\d{4}[A-Z]$/;
   const panNumberIsValid = panNumberRegex.test(panNumberValue);
-    if (panNumberValue !== "" && dob_id_add_res.value !== "" && panNumberIsValid) {
+  if (
+    panNumberValue !== "" &&
+    dob_id_add_res.value !== "" &&
+    panNumberIsValid
+  ) {
     continueButton.disabled = false;
   } else {
     continueButton.disabled = true;
@@ -301,14 +312,14 @@ function validatePasswordChange(old_pass, new_pass, confirm_pass) {
   var newPasswordError = document.getElementById("newPasswordError");
   var confirmPasswordError = document.getElementById("confirmPasswordError");
   var continueButton = document.getElementById("continueButton");
-  
+
   if (
     currPasswordField.value !== "" &&
     newPasswordField.value !== "" &&
     confirmPasswordField.value !== ""
   ) {
     var regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^\&*_=+-]).{8,20}$/;
-    
+
     if (regex.test(newPasswordField.value)) {
       newPasswordError.textContent = "";
       newPasswordField.classList.remove("pre-error-border");
@@ -436,10 +447,9 @@ function checkboxTandC_(id) {
   var element = document.getElementById("custome_hidebtn");
 
   if (radio.checked) {
-    element.style.display="flex"
+    element.style.display = "flex";
   } else {
-    element.style.display="none"
-
+    element.style.display = "none";
   }
 }
 
@@ -558,6 +568,15 @@ function handleClickRadio(ele1, ele2) {
 function handleClickModal(modalId) {
   var myModal = new bootstrap.Modal(document.getElementById(modalId));
   myModal.show();
+ 
+}
+function handleClickModal_Popup(modalIds) {
+  var overlay = document.getElementById("overlay");
+  overlay.classList.remove("show");
+  var showBox = document.getElementById("quick_action_container");
+  showBox.classList.remove("show"); 
+  var myModals = new bootstrap.Modal(document.getElementById(modalIds));
+  myModals.show();
 }
 
 const inputs = document.getElementById("inputs");
