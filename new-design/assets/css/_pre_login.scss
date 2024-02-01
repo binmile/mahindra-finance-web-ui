@@ -3,6 +3,50 @@
   border-radius: 8px;
   margin-top: 40px;
 }
+/*------rating-css-start-here----------*/
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 39px;
+  justify-content: space-between;
+  text-align: center;
+  width: 215px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #e6e7e9;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  place-items: center;
+}
+
+.star-rating :checked ~ label {
+  color: #ffc700;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffc700;
+}
+
+.experience_text {
+  margin: 8px 0 16px 0;
+  @include custom-font(16px, 500, 24px, 0);
+  color: #6b7280;
+}
+.feedback_label {
+  color: #221f20;
+  margin-top: 18px;
+  @include custom-font(16px, 400, 26px, 0);
+}
+/*--rating-css-end-here--*/
+
 /*--new-changes-added-31jan-start--*/
 
 .bankDetailsMainContainer .textparent {
@@ -26,7 +70,7 @@
     color: #407bff;
   }
 }
-.listItems_sec{
+.listItems_sec {
   margin: 16px 0 25px 0;
 }
 /*--new-changes-added-31jan-end--*/
@@ -37,39 +81,36 @@
 .fd_min_hight_get_user {
   min-height: calc(60vh - 127px);
 }
-.boldTitle_submission{
-    @include custom-font(16px, 500, 24px, 0.15px);
-
+.boldTitle_submission {
+  @include custom-font(16px, 500, 24px, 0.15px);
 }
 ul.tds_instruct :before {
-    height: 6px;
-    width: 6px;
-    background: #6B7280;
-    content: "";
-    display: inline-block;
-    transform: rotate(45deg);
-    margin-left: 5px;
-    margin-right: 12px;
-    margin-bottom: 3px;
+  height: 6px;
+  width: 6px;
+  background: #6b7280;
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  margin-left: 5px;
+  margin-right: 12px;
+  margin-bottom: 3px;
 }
 
 .listItems ul {
   &.custliststyle_instruction {
     list-style-type: decimal;
     padding-left: 1rem;
-    &.cust_second{
-        li{
-            @include custom-font(14px, 400, 22px, 0.15px);
-            color: #6b7280;
-        }
-       
+    &.cust_second {
+      li {
+        @include custom-font(14px, 400, 22px, 0.15px);
+        color: #6b7280;
+      }
     }
-    &.tds_instruct{
-        padding-left: 0;
-        list-style-type: unset;
-        list-style: none;
-        margin-top: 8px;
-
+    &.tds_instruct {
+      padding-left: 0;
+      list-style-type: unset;
+      list-style: none;
+      margin-top: 8px;
     }
     :last-child {
       margin-bottom: 0;
@@ -101,9 +142,9 @@ ul.tds_instruct :before {
   background-position: center;
   background-color: #f3f4f6;
   border-radius: 8px;
-  &.margin_less{
+  &.margin_less {
     margin-top: 32px;
-}
+  }
 }
 .descriptionImage {
   img {
@@ -129,15 +170,15 @@ ul.tds_instruct :before {
   .bankDetailsMainContainer .textparent {
     &.text_parent_changes .textfildicons {
       top: 36.5px;
-    }}
+    }
+  }
   .instruction_details {
     padding: 16px;
     margin-top: 20px;
   }
-  .boldTitle_submission{
+  .boldTitle_submission {
     @include custom-font(14px, 500, 18px, 0);
-
-}
+  }
 
   .form_div {
     margin-top: 0;
@@ -152,5 +193,4 @@ ul.tds_instruct :before {
       }
     }
   }
-  
 }

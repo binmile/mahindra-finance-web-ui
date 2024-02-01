@@ -15,7 +15,7 @@
     .descriptionBox {
       width: 100% !important;
       img {
-       @include custom-width-height(37px, 37px);
+        @include custom-width-height(37px, 37px);
         margin-right: 8px;
       }
       .descriptionContent {
@@ -25,6 +25,66 @@
             @include custom-font(16px, 600, 24px, 0.15px);
             color: $color_light_text;
           }
+        }
+      }
+    }
+  }
+}
+.custom-tooltip {
+  &.ul_custom {
+    .tooltip-text {
+      @include custom-font(12px, 400, 16px, 0.4px);
+      left: -151px;
+      bottom: -135px;
+      ul {
+        margin-top: 15px;
+        margin-bottom: 0;
+        list-style-type: decimal;
+        padding-left: 1.2rem;
+        li {
+          @include custom-font(12px, 400, 16px, 0.4px);
+        }
+      }
+    }
+    .tooltip-text::after {
+      top: -13%;
+      transform: rotate(-182deg);
+      left: 85%;
+    }
+  }
+}
+
+.modal .modal-content .modal-body {
+  &.dash-popup {
+    .info-heading-image {
+      background-color: unset;
+      img {
+        @include custom-width-height(37px, 37px);
+      }
+    }
+
+    .info-content {
+      padding: 0 36px;
+      @include custom-font(16px, 400, 24px, 0.5px);
+      color: #231f20;
+      margin: 12px 0;
+    }
+    .info-button {
+      button {
+        padding: 0 66px;
+      }
+    }
+    .list_data_div {
+      display: flex;
+      justify-content: center;
+      place-items: center;
+      .custliststyle_instruction {
+        margin-bottom: 25px;
+        li {
+          @include custom-font(16px, 400, 20px, 0.5px);
+
+          margin-bottom: 0;
+          color: #4d4d4f;
         }
       }
     }
@@ -363,6 +423,14 @@ input[type="number"] {
 .listTable_profile_accured {
   margin-bottom: 0px;
 }
+@media only screen and (max-width: 991px) {
+.custom-tooltip {
+  &.ul_custom:hover {
+    .tooltip-text {
+      display: none;
+    }
+  }
+}}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .bankDetailsMainContainer
     .textparent
@@ -386,6 +454,29 @@ input[type="number"] {
   .fd_content_min_height_profile_pass {
     min-height: 0;
   }
+  .modal .modal-content .modal-body {
+    &.dash-popup {
+      .info-content {
+        padding: 0 14px;
+        @include custom-font(14px, 400, 24px, 0.5px);
+      }
+      .info-button {
+        button {
+          padding: 0 66px;
+        }
+      }
+
+      .list_data_div {
+        .custliststyle_instruction {
+          margin-bottom: 15px;
+          li {
+            @include custom-font(14px, 400, 20px, 0.5px);
+          }
+        }
+      }
+    }
+  }
+
   .descriptionContainer {
     &.des_change {
       .descriptionBox {
