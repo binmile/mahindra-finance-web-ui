@@ -568,16 +568,17 @@ function handleClickRadio(ele1, ele2) {
 function handleClickModal(modalId) {
   var myModal = new bootstrap.Modal(document.getElementById(modalId));
   myModal.show();
- 
 }
-function handleClickModal_Popup(modalIds) {
+
+document.getElementById('elementOption2').addEventListener('click', function(event) {
+  event.preventDefault();
   var overlay = document.getElementById("overlay");
   overlay.classList.remove("show");
   var showBox = document.getElementById("quick_action_container");
-  showBox.classList.remove("show"); 
-  var myModals = new bootstrap.Modal(document.getElementById(modalIds));
+  showBox.classList.remove("show");
+  var myModals = new bootstrap.Modal(document.getElementById('eReceiptModal'));
   myModals.show();
-}
+});
 
 const inputs = document.getElementById("inputs");
 inputs.addEventListener("input", function (e) {
