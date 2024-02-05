@@ -1806,7 +1806,18 @@ span.sp2 {
     background-size: auto;
 }
 .accordion-item {
-    border-top: 1px rgba(0,0,0,.125);
-    border-right: 1px rgba(0,0,0,.125);
-    border-left: 1px rgba(0,0,0,.125);
+   border: 0px ;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: #231F20;
+    background-color: unset;
+    box-shadow: unset;
+}
+.card-section.card-sectionFD .accordion-item:first-of-type {
+    border: 1px solid rgba(0,0,0,.125);
+}
+.card-section.card-sectionFD .accordion-item:not(:first-of-type){
+    border: 1px solid rgba(0,0,0,.125);
 }
