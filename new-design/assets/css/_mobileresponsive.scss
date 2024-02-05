@@ -764,6 +764,9 @@ select {
 
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .fdDetails.customeborder {
+        width: 100%;
+    }
     .profilename p {
         font-size: 14px;
     }
@@ -1816,8 +1819,60 @@ span.sp2 {
     box-shadow: unset;
 }
 .card-section.card-sectionFD .accordion-item:first-of-type {
-    border: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0,0,0,.125);
 }
-.card-section.card-sectionFD .accordion-item:not(:first-of-type){
-    border: 1px solid rgba(0,0,0,.125);
+// .card-section.card-sectionFD .accordion-item:not(:first-of-type){
+//     border-bottom: 1px solid rgba(0,0,0,.125);
+// }
+
+
+.customeborder:after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #ccc;
+    height: 50px;
+    right: 35px;
+    top: 15px;
 }
+
+.tableData {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-section.card-sectionFD .accordion-body {
+    padding: 1rem 0rem;
+}
+.accordion-button {
+    padding: 12px 0px;
+}
+.custome-fdDetails .fdDetails {
+    min-width: 164px;
+    
+}
+
+.fdContents.custome-fdDetails .fdDetails .value {
+    justify-content: flex-start;
+}
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip2 .tooltipcusttext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip2:hover .tooltipcusttext {
+    visibility: visible;
+  }
