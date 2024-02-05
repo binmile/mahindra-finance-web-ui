@@ -124,8 +124,8 @@ const myChart = new Chart(ctx, {
     data: {
         labels: [['At', 'investment'],'', 'Today', '', ['On', 'maturity']],
         datasets: [{
-            data: [55, 57, 70, 68, 73],
-            pointRadius: 4,
+            data: [100000, 200000, 170000, 140000, 220000],
+            pointRadius: 3,
             backgroundColor: (context) => {
               const bgColor = [
                 'rgba(0, 255, 26, 0.6)',
@@ -148,7 +148,7 @@ const myChart = new Chart(ctx, {
                 'rgba(34, 197, 94, 1)',
                 'rgba(34, 197, 94, 1)'
             ],
-            borderWidth: 4,
+            borderWidth: 3,
             fill: true
         }]
     },
@@ -198,9 +198,9 @@ const myChart = new Chart(ctx, {
                   },
                 },
                 ticks: {
-                    stepSize: 30,
+                    stepSize: 150000,
                     callback: function(value, index, ticks) {
-                        return '₹ ' + value + 'K';
+                        return '₹ ' + value;
                     }
                 }
               }
