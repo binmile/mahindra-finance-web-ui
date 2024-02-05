@@ -1702,3 +1702,42 @@ animation-name: slideInRightAnimation;
 }
 
 /*****************Loader End ***********************/
+
+
+@media screen and (min-width: 992px) {
+  #myChart {
+    height: 285px !important;
+    width: 100% !important;
+  }
+
+  .chartBox{
+    padding: 10px 25px !important;
+  }
+
+  .loanFdCardContainer{
+    height: 305px;
+    .cardLabelHeading{
+      margin-bottom: 22px;
+    }
+    .cardLabelList{
+      ul{
+        li {
+          margin-bottom: 10px;
+          font-size: 15px;
+          &:last-child{
+            margin-bottom: 55px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dashboardDarkCard.dashboardDarkCard_mob{
+    .newFdImage_mob {
+      width: auto;
+      height: 85px;
+    }
+  }
+}
