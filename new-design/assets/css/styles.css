@@ -8385,6 +8385,10 @@ span.sp2 {
   margin-right: 16px;
 }
 
+.desable-text {
+  color: #ADADAD;
+}
+
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
