@@ -8363,6 +8363,32 @@ span.sp2 {
     bottom: 28%;
   }
 }
+.red-bg-label.black-bg-label {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  height: 24px !important;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+  border-radius: 5px;
+  color: #303031;
+  background-color: #DFDFDF;
+}
+
+.descriptionContent.newcustomedescription {
+  display: flex;
+  align-items: center;
+}
+
+.descriptionContent.newcustomedescription img {
+  margin-right: 16px;
+}
+
+.desable-text {
+  color: #ADADAD;
+}
+
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
