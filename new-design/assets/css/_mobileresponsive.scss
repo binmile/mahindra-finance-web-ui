@@ -764,6 +764,9 @@ select {
 
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .fdDetails.customeborder {
+        width: 100%;
+    }
     .profilename p {
         font-size: 14px;
     }
@@ -1555,18 +1558,35 @@ input[type='checkbox'] {
     line-height: 24px;
 }
 
+// span.sp2:after {
+//     content: "";
+//     position: absolute;
+//     height: 32px;
+//     border-right: 1px solid #E31837;
+//     left: 41%;
+//     top: 22px;
+// }
+.parentdiv-box p {
+    padding: 22px;
+}
 .topcenterbox {
-    display: flex;
     border: 1px solid #E31837;
-    justify-content: center;
     border-radius: 8px;
     position: relative;
     margin: 73px 0px 0px 0px;
 }
-
+.parentdiv-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vl {
+    border-left: 1px solid #E31837;
+    height: 22px;
+  }
 .topcenterbox p {
     color: #E31837;
-    padding: 22px;
+    // padding: 22px;
     margin-bottom: 0px;
     text-align: center;
 }
@@ -1786,7 +1806,7 @@ span.sp2 {
         left: 61px;
     }
     .topcenterbox p {
-        padding: 15px;
+        padding: 8px;
     }
     .mainleft h3 {
         font-size: 24px;
@@ -1795,7 +1815,7 @@ span.sp2 {
         margin-left: 36px;
     }
     .backborder::before {
-        bottom: 123px;
+        bottom: 136px;
     }
 }
 
@@ -1816,8 +1836,52 @@ span.sp2 {
     box-shadow: unset;
 }
 .card-section.card-sectionFD .accordion-item:first-of-type {
-    border: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0,0,0,.125);
 }
-.card-section.card-sectionFD .accordion-item:not(:first-of-type){
-    border: 1px solid rgba(0,0,0,.125);
+// .card-section.card-sectionFD .accordion-item:not(:first-of-type){
+//     border-bottom: 1px solid rgba(0,0,0,.125);
+// }
+
+
+.customeborder:after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #ccc;
+    height: 50px;
+    right: 35px;
+    top: 15px;
+}
+
+.tableData {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-section.card-sectionFD .accordion-body {
+    padding: 1rem 0rem;
+}
+.accordion-button {
+    padding: 12px 0px;
+}
+.custome-fdDetails .fdDetails {
+    min-width: 164px;
+    
+}
+
+.fdContents.custome-fdDetails .fdDetails .value {
+    justify-content: flex-start;
+}
+
+@media only screen and (min-width: 1057px) and (max-width: 1292px) {
+    .backborder::before {
+        bottom: 92px;
+        left: 54px;
+    }
+}
+@media only screen and (min-width: 1367px) and (max-width: 1399px) {
+    .backborder::before {
+        bottom: 28%;
+    }
+    
 }
