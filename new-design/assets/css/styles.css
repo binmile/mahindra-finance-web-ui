@@ -7990,6 +7990,7 @@ input[type=checkbox] {
 .bg-gradiant {
   background-image: linear-gradient(#eff6ff, white);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mainleft h3 {
@@ -8387,6 +8388,49 @@ span.sp2 {
 
 .desable-text {
   color: #ADADAD;
+}
+
+.mainleft.mainleft2 h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-left: 0px;
+  color: #333333;
+  margin-bottom: 0px;
+}
+
+span.customecolor {
+  color: #E31837;
+}
+
+.pt-86 {
+  margin-top: 86px;
+}
+
+.bottomtext {
+  margin-left: 48px;
+}
+
+.parentbottomtextimg {
+  position: absolute;
+  right: 15px;
+  bottom: 0px;
+}
+
+.parentbottomtext {
+  position: relative;
+}
+
+.mainleft.mainleft2.mainleft3 {
+  padding: 104px 0px 54px 46px;
+  position: relative;
+}
+
+.customebotomhero {
+  margin: auto;
+  width: 98%;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.0509803922);
+  border-radius: 8px;
 }
 
 .boldHeaderFd {
