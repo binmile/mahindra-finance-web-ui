@@ -8048,18 +8048,30 @@ input[type=checkbox] {
   line-height: 24px;
 }
 
+.parentdiv-box p {
+  padding: 22px;
+}
+
 .topcenterbox {
-  display: flex;
   border: 1px solid #E31837;
-  justify-content: center;
   border-radius: 8px;
   position: relative;
   margin: 73px 0px 0px 0px;
 }
 
+.parentdiv-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vl {
+  border-left: 1px solid #E31837;
+  height: 22px;
+}
+
 .topcenterbox p {
   color: #E31837;
-  padding: 22px;
   margin-bottom: 0px;
   text-align: center;
 }
@@ -8276,7 +8288,7 @@ span.sp2 {
     left: 61px;
   }
   .topcenterbox p {
-    padding: 15px;
+    padding: 8px;
   }
   .mainleft h3 {
     font-size: 24px;
@@ -8285,7 +8297,7 @@ span.sp2 {
     margin-left: 36px;
   }
   .backborder::before {
-    bottom: 123px;
+    bottom: 136px;
   }
 }
 .desktoprelativ {
@@ -8340,28 +8352,17 @@ span.sp2 {
   justify-content: flex-start;
 }
 
-.tooltip2 {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+@media only screen and (min-width: 1057px) and (max-width: 1292px) {
+  .backborder::before {
+    bottom: 92px;
+    left: 54px;
+  }
 }
-
-.tooltip2 .tooltipcusttext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
+@media only screen and (min-width: 1367px) and (max-width: 1399px) {
+  .backborder::before {
+    bottom: 28%;
+  }
 }
-
-.tooltip2:hover .tooltipcusttext {
-  visibility: visible;
-}
-
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
