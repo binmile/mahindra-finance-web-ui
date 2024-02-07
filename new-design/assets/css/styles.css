@@ -2352,7 +2352,7 @@ button.resend_otp.disabled {
   place-items: center !important;
 }
 .accountHolderDetails .accountDetails .bankName {
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 40px;
   letter-spacing: 0.25px;
@@ -8415,6 +8415,7 @@ span.customecolor {
   position: absolute;
   right: 15px;
   bottom: 0px;
+  display: block;
 }
 
 .parentbottomtext {
@@ -8433,6 +8434,66 @@ span.customecolor {
   border-radius: 8px;
 }
 
+.tableBodyWithHeight.tableBodyWithHeight2 {
+  min-height: calc(100vh - 700px);
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .secondtopsection.newcustome ul li img {
+    width: 36px;
+    height: auto;
+  }
+  .secondtopsection.newcustome ul li .smalltext.customesmalltext.text-center p {
+    text-align: left;
+  }
+  .bottomtext {
+    margin-left: 11px;
+  }
+  .bottomtext p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .customebotomhero.bghro .onlymovshow {
+    display: block !important;
+  }
+  .parentbottomtextimg {
+    display: none;
+  }
+  .mainleft.mainleft2.mainleft3 {
+    padding: 27px 0px 0px 17px;
+    position: relative;
+  }
+  .mainleft.mainleft2.mainleft3 .stemlogo {
+    display: none !important;
+  }
+  .pt-86 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.customebotomhero.bghro .onlymovshow {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .second_details .Investment_details_content {
+    display: block;
+  }
+  .customebloc {
+    color: #6B7280;
+    background: #DFDFDF;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
