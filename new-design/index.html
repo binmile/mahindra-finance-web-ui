@@ -89,6 +89,7 @@
                             </li>
                         </ul>
                     </li>
+                    
                     <li class="nav-item dropdown userAvatar">
                         <img src="./assets/img/avatar.png" alt="user" class="no_view" />
                         <a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" aria-expanded="false">
@@ -126,6 +127,18 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link onlymovshow" href="#">Call us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link onlymovshow" href="#">Write to us  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link onlymovshow" href="#">Branch locator   </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link onlymovshow" href="#">Give feedback</a>
+                    </li>
                     <li class="nav-item mob_menu_logout no_tablet_view">
                         <a href="#">
                             <img src="./assets/img/icons/logoutIcon.svg" alt="icon" />
@@ -139,10 +152,10 @@
 
     <!--Top-navbar End -->
     <div class="container">
-        <div class="row slideInRightAnimation">
+        <div class="row animate">
             <div class="col col-md-6 col-lg-4 col-xl-2 mt-20  no_mobile_view">
                 <div class="cardContainer dashboardCard  no_mobile_view">
-                    <div class="cardIcons">
+                    <div class="cardIcons cardIconsanimation   ">
                         <img src="./assets/img/icons/user-icon.svg" alt="icon" />
                     </div>
                     <div class="cardUserName">
@@ -168,40 +181,51 @@
             </div>
             <div class="col col-md-6 col-lg-4 col-xl-2  mt-20  no_mobile_view">
                 <div class="cardContainer dashboardCard  no_mobile_view">
-                    <div class="cardIcons">
+                    <div class="cardIcons cardIconsanimation">
                         <img src="./assets/img/icons/home-icon.svg" alt="icon" />
                     </div>
                     <div class="cardLabel">
                         Active FDs
                     </div>
                     <div class="cardLabelValue">
-                        02
+                        <div class="counter"  data-target="02">
+
+                        </div>
+                        
                     </div>
                 </div>
             </div>
             <div class="col col-md-6 col-lg-4 col-xl-2 mt-20  no_mobile_view">
                 <div class="cardContainer dashboardCard  no_mobile_view">
-                    <div class="cardIcons">
+                    <div class="cardIcons cardIconsanimation">
                         <img src="./assets/img/icons/rupee-icon.svg" alt="icon" />
                     </div>
                     <div class="cardLabel">
                         Investment amount
                     </div>
-                    <div class="cardLabelValue">
-                        ₹ 55,000
+                    <div class="cardLabelValue  d-flex">
+                        ₹
+                        <div class="counter"  data-target="55000">
+
+                        </div>
+                        
                     </div>
                 </div>
             </div>
             <div class="col col-md-6 col-lg-4 col-xl-2 mt-20  no_mobile_view">
                 <div class="cardContainer dashboardCard">
-                    <div class="cardIcons">
+                    <div class="cardIcons cardIconsanimation">
                         <img src="./assets/img/icons/maturity-icon.svg" alt="icon" />
                     </div>
                     <div class="cardLabel">
                         Maturity amount
                     </div>
-                    <div class="cardLabelValue">
-                        ₹ 73,605
+                    <div class="cardLabelValue  d-flex">
+                        ₹
+                        <div class="counter"  data-target="73605">
+
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -378,7 +402,7 @@
         </div>
     </div>
     <div class="container mt-20 no_mobile_view" >
-        <div class="row animate__animated animate__fadeInUp" id="make_top">
+        <div class="row animate" id="make_top">
             <div class="col col-md-12">
                 <div class="listTable">
                     <div class="customScroll">
@@ -643,7 +667,7 @@
         </div>
     </div>
 
-    <div class="container no_desktop_view animate__animated animate__fadeInUp">
+    <div class="container no_desktop_view animate">
         <div class="fixedDepositDetailsData">
             <div class="fixed_deposit_summary mt-0">
                 Fixed deposit list
@@ -1013,7 +1037,7 @@
         <div class="border_top_line">
         </div>
     </div>
-    <div class="container pb-20 animate__animated animate__fadeInUp">
+    <div class="container pb-20 animate">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-7 mt-20">
                 <div class="cardContainer cardContainer_mobileView chartBox">
@@ -1124,6 +1148,24 @@
             }
           })
         })
+      </script>
+      <script>
+        const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
+
       </script>
 </body>
 

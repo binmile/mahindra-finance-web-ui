@@ -1281,7 +1281,7 @@ input[type='checkbox'] {
     accent-color: #ffffff;
     width: 20px;
     height: 20px;
-    border-radius: 4px !important;
+    // border-radius: 4px !important;
 }
 .autorenewal_text {
     color: white;
@@ -1983,6 +1983,7 @@ span.customecolor {
 
 }
 @media screen and (max-width: 991px) {
+   
     .customebotomhero.bghro .onlymovshow {
         display: block !important;
     }
@@ -2025,4 +2026,61 @@ span.customecolor {
 //     width: 100%;
 //     padding: 0px 10px;
 // }
+}
+
+
+
+// animation////
+
+
+.animate {
+    animation-name: text;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes text {
+    from {
+        margin-top: 100px;
+    }
+
+    to {
+        margin-top: 0px;
+    }
+}
+
+.cardIconsanimation {
+    animation-name: cardIconstext;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+
+}
+
+.cardIconsanimation{
+	
+	display: inline-flex;
+	width: 16%;
+	animation: anim .8s ease-in-out 1;
+	transform:  translateY(-120%) rotate(0deg);
+   
+		transform: translateY(0px) rotate(0deg);
+
+}
+@keyframes anim{
+	0%{
+		transform:  translateY(-150%) rotate(0deg);
+	}
+	50%{
+		transform: translateY(10px) rotate(0deg);
+	}
+    100%{
+		transform: translateY(0px) rotate(0deg);
+	}
+}
+
+@media screen and (min-width: 992px) {
+.mr-right {
+    border-right: 1px solid #ccc !important;
+    margin-bottom: 10px;
+}
 }
