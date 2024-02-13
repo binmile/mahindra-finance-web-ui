@@ -1292,7 +1292,7 @@ padding: 32px 0 36px 0;
     }
   }
   .cardContainer_mobileView {
-    margin-bottom: 24px;
+    margin-bottom: 0px;
     margin-top: 3px;
   }
   .accountContainer
@@ -1441,10 +1441,10 @@ padding: 32px 0 36px 0;
       }
     }
     .active_fds {
-      text-align: center;
+      text-align: left;
       color: $color_light_text;
       place-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       @include custom-font(10px, 500, 14px, 0.4px);
       .custom_tooltip {
         .tooltip-text {
@@ -1468,7 +1468,7 @@ padding: 32px 0 36px 0;
       place-items: baseline;
       margin-top: 6px;
       gap: 6px;
-      justify-content: center;
+      // justify-content: center;
 
       .detail_price {
         text-align: left;
@@ -1562,7 +1562,7 @@ padding: 32px 0 36px 0;
           @include custom-width-height(20px, 20px);
           @include allCenter;
           border-radius: 50%;
-          background-color: $color_black;
+          background-color: $color_red;
           img {
             @include custom-width-height(12.5px, 12.5px);
           }
