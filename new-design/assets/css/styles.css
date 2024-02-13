@@ -3751,7 +3751,7 @@ button.resend_otp.disabled {
     right: 0;
   }
   .cardContainer_mobileView {
-    margin-bottom: 24px;
+    margin-bottom: 0px;
     margin-top: 3px;
   }
   .accountContainer .accountDetailsBox .right_side_data .ruppe_container.second_check {
@@ -3880,10 +3880,10 @@ button.resend_otp.disabled {
     display: none;
   }
   .cardContainerMobile .active_fds {
-    text-align: center;
+    text-align: left;
     color: #6B7280;
     place-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 10px;
     font-weight: 500;
     line-height: 14px;
@@ -3909,7 +3909,6 @@ button.resend_otp.disabled {
     place-items: baseline;
     margin-top: 6px;
     gap: 6px;
-    justify-content: center;
   }
   .cardContainerMobile .circle_div_mobile .detail_price {
     text-align: left;
@@ -4037,7 +4036,7 @@ button.resend_otp.disabled {
     justify-content: center;
     place-items: center;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #E31837;
   }
   .fixedDepositDetailsData .details_fixed_deposit .third_details .circle_arrow img {
     width: 12.5px;
@@ -5505,7 +5504,7 @@ button.resend_otp.disabled {
     font-size: 12px;
   }
   .owl-carousel .owl-item .cardLabelList li .roundBackgroundIcon {
-    background-color: #D6D6D6;
+    background-color: #e8e8e8;
     min-height: 14px;
     min-width: 14px;
     max-height: 14px;
@@ -8538,6 +8537,11 @@ span.customecolor {
     margin-bottom: 10px;
   }
 }
+.owl-theme .owl-dots .owl-dot span {
+  width: 5px;
+  height: 5px;
+}
+
 .boldHeaderFd {
   margin-bottom: 16px !important;
 }
