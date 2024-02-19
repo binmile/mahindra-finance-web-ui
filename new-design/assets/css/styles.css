@@ -2560,6 +2560,9 @@ button.resend_otp.disabled {
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit .third_details .pending_details .green_label_mob {
     padding: 6px;
   }
+  .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData .details_fixed_deposit.active {
+    border: 1px solid #000000;
+  }
   .mob-wrapper .fixedDepositeContainer .fixedDepositDetailsData:last-child {
     margin-bottom: 75px;
   }
