@@ -416,20 +416,20 @@ function togglePasswordVisibility(passwordId, closeEyesIconId, openEyesIconId) {
 
 /***************profile-page-validation-end*******************/
 /*****************radio button BMT-265 start******************/
-function radioButtonAction(id, element) {
-  var checkbox = document.getElementById(id);
-  var radioButton = document.getElementById(element);
-  radioButton.style.border = checkbox.checked ? "1px solid black" : " ";
-  checkbox.addEventListener("change", function () {
-    radioButton.style.border = checkbox.checked ? "1px solid black" : " ";
-  });
-  var radioButton1 = document.getElementById("details_fixed_deposit1");
-  var radioButton3 = document.getElementById("details_fixed_deposit3");
-  var radioButton2 = document.getElementById("details_fixed_deposit2");
-  radioButton1.style.border = "1px solid white";
-  radioButton3.style.border = "1px solid white";
-  radioButton2.style.border = "1px solid white";
-}
+// function radioButtonAction(id, element) {
+//   var checkbox = document.getElementById(id);
+//   var radioButton = document.getElementById(element);
+//   radioButton.style.border = checkbox.checked ? "1px solid black" : " ";
+//   checkbox.addEventListener("change", function () {
+//     radioButton.style.border = checkbox.checked ? "1px solid black" : " ";
+//   });
+//   var radioButton1 = document.getElementById("details_fixed_deposit1");
+//   var radioButton3 = document.getElementById("details_fixed_deposit3");
+//   var radioButton2 = document.getElementById("details_fixed_deposit2");
+//   radioButton1.style.border = "1px solid white";
+//   radioButton3.style.border = "1px solid white";
+//   radioButton2.style.border = "1px solid white";
+// }
 /*****************radio button BMT-265 end******************/
 
 /*****************terms and condition checkbbox BMT-265 ******************/
@@ -702,4 +702,16 @@ function validateAmount(id, error_id, limitAmount) {
     document.getElementById(id).style.border = "1px solid #ced4da";
     document.getElementById(error_id).style.color = "#6B7280";
   }
+}
+
+function toggleFdRadio(div) {
+    var divs = document.querySelectorAll('.details_fixed_deposit');
+    divs.forEach(function(divElement) {
+        var radio = divElement.querySelector('input[type="radio"]');
+        divElement.classList.remove('active');
+        radio.checked = false;
+    });
+    var radio = div.querySelector('input[type="radio"]');
+    div.classList.add('active');
+    radio.checked = true;
 }
