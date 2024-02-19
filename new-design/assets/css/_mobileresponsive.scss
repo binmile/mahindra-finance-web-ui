@@ -2091,3 +2091,21 @@ span.customecolor {
     width: 5px;
     height: 5px; 
 }
+
+.drawer {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 4px;
+  }
+  
+  .drawer.active {
+    border: 3px solid red;
+    margin: 1px;
+  }
+
+  @media screen and (max-width: 767px) {
+  .mb-80{
+    margin-bottom: 80px;
+  }
+}
