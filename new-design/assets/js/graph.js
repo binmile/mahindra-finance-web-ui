@@ -124,7 +124,7 @@ const myChart = new Chart(ctx, {
     data: {
         labels: [['At', 'investment'],'Today', ['On', 'maturity']],
         datasets: [{
-            data: [100000, 170000, 220000],
+            data: [100000/1000, 170000/1000, 220000/1000],
             pointRadius: 3,
             backgroundColor: (context) => {
               const bgColor = [
@@ -204,7 +204,7 @@ const myChart = new Chart(ctx, {
                 ticks: {
                     stepSize: 100000,
                     callback: function(value, index, ticks) {
-                        return '₹ ' + value;
+                        return '₹ ' + value + 'k';
                     }
                 }
               }
