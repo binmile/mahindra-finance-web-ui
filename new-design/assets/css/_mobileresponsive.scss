@@ -2105,7 +2105,25 @@ span.customecolor {
   }
 
   @media screen and (max-width: 767px) {
+
+    .chartsection {
+        padding: 20px;
+    }
   .mb-80{
     margin-bottom: 80px;
   }
+  .buttombottom {
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    width: 100%;
+}
+}
+
+.chartsection {
+    padding: 0px 0px 0px 0px;
+}
+.removebuttombottom{
+    display: none;
+    
 }

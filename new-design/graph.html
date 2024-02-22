@@ -4,18 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahindra Finance :: Dashboard</title>
+    <title>Mahindra Finance :: Kyc</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/_265_css.scss" />
+   
+    <style>
+       figure {
+  width: 800px;
+}
+figcaption {
+  text-align: center;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.heading {
+  font-size: 2.4rem;
+}
+.info {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.cite {
+  font-size: 1rem;
+}
+canvas {
+  border: 1px solid #d9d9d9;
+}
+
+    </style>
 </head>
 
 <body>
-    <!-- Top-navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+     <!-- Top-navbar Start -->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="./assets/img/logo.svg" alt="Logo" />
@@ -1041,10 +1065,10 @@
         <div class="row">
             <div class="col-12 col-md-12 col-lg-7 mt-20">
                 <div class="cardContainer cardContainer_mobileView chartBox">
-                    <div class="chartsection">
-                        <canvas id="myChart" style="height: auto; width: 500px;"></canvas>
-
-                    </div>
+                    <figure>
+                        <canvas id="myChart" width="800 !important" height="500 !important"></canvas>
+                       
+                      </figure>
                   </div>
                 <!-- <div class="cardContainer cardContainer_mobileView" id="chartContainer"></div> -->
             </div>
@@ -1127,49 +1151,67 @@
     </div> -->
     <!------------------Loader End--------------------->
 
+  
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/owl.carousel.js"></script>
-    <script src="./assets/js/chart.js"></script>
-    <script src="./assets/js/graph.js"></script>
-    <script src="./assets/js/custom.js"></script>
-    <script src="./assets/js/pagination.js"></script>
+    <!-- <script src="./assets/js/chart.min.js"></script> -->
+    <!-- <script src="./assets/js/custom.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.0/Chart.min.js"></script>
+    
+    
     <script>
-        $(document).ready(function() {
-          $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            responsive: {
-              0: {
-                items: 1.4,
-                nav: false,
-                dots: true
-              }
-            }
-          })
-        })
-      </script>
-      <script>
-        const counters = document.querySelectorAll(".counter");
-
-counters.forEach((counter) => {
-  counter.innerText = "0";
-  const updateCounter = () => {
-    const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
-    const increment = target / 200;
-    if (count < target) {
-      counter.innerText = `${Math.ceil(count + increment)}`;
-      setTimeout(updateCounter, 1);
-    } else counter.innerText = target;
-  };
-  updateCounter();
-});
-
-      </script>
+    var data = {
+        labels: [
+          "At Investment",
+          "",
+          "Today",
+          "",
+          "On meturty"
+        ],
+        datasets: [
+        //   {
+        //     label: "Average Monthly Temperature",
+        //     fillColor: "rgba(220,220,220,0.2)",
+        //     strokeColor: "rgba(220,220,220,1)",
+        //     pointColor: "rgba(220,220,220,1)",
+        //     pointStrokeColor: "#fff",
+        //     pointHighlightFill: "#fff",
+        //     pointHighlightStroke: "rgba(220,220,220,1)",
+        //     data: [51, 52, 53, 55, 57, 60, 62, 62, 61, 60, 57, 51]
+        //   },
+        //   {
+        //     label: "Temp. Max",
+        //     fillColor: "rgba(151,187,205,0.2)",
+        //     strokeColor: "rgba(151,187,205,1)",
+        //     pointColor: "rgba(151,187,205,1)",
+        //     pointStrokeColor: "#fff",
+        //     pointHighlightFill: "#fff",
+        //     pointHighlightStroke: "rgba(151,187,205,1)",
+        //     data: [88, 87, 94, 98, 93, 110, 90, 104, 96, 96, 96, 81]
+        //   },
+          {
+            label: "Temp. Min",
+            fillColor: "rgba(187,205,151,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [100000, 200000, 170000, 140000, 220000]
+          }
+        ]
+      };
+      Chart.defaults.global.responsive = false;
+      var ctx = $("#myChart").get(0).getContext("2d");
+      // This will get the first returned node in the jQuery collection.
+      var myLineChart = new Chart(ctx).Line(data);
+      
+    </script>
+    
 </body>
 
 </html>

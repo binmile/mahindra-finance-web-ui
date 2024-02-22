@@ -122,9 +122,9 @@ const externalTooltipHandler = (context) => {
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: [['At', 'investment'],'', 'Today', '', ['On', 'maturity']],
+        labels: [['At', 'investment'],'Today', ['On', 'maturity']],
         datasets: [{
-            data: [100000, 200000, 170000, 140000, 220000],
+            data: [100000, 170000, 220000],
             pointRadius: 3,
             backgroundColor: (context) => {
               const bgColor = [
@@ -183,6 +183,10 @@ const myChart = new Chart(ctx, {
                     border: {
                         dash: [2,4],
                     },
+                    font: {
+                          size: 30,
+                          weight: 'bold'
+                      },
                 },
               y: {
                 beginAtZero: true,
@@ -198,7 +202,7 @@ const myChart = new Chart(ctx, {
                   },
                 },
                 ticks: {
-                    stepSize: 150000,
+                    stepSize: 100000,
                     callback: function(value, index, ticks) {
                         return '₹ ' + value;
                     }
