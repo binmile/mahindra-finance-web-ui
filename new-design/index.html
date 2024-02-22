@@ -188,10 +188,10 @@
                         Active FDs
                     </div>
                     <div class="cardLabelValue">
-                        <div class="counter"  data-target="02">
+                        <!-- <div class="counter"  data-target="02">
 
-                        </div>
-                        
+                        </div> -->
+                        <div class="counter"><span class="count">02</span></div>
                     </div>
                 </div>
             </div>
@@ -205,9 +205,10 @@
                     </div>
                     <div class="cardLabelValue  d-flex">
                         ₹
-                        <div class="counter"  data-target="55000">
+                        <!-- <div class="counter"  data-target="55000">
 
-                        </div>
+                        </div> -->
+                        <div class="counter"><span class="count">55000</span></div>
                         
                     </div>
                 </div>
@@ -222,9 +223,10 @@
                     </div>
                     <div class="cardLabelValue  d-flex">
                         ₹
-                        <div class="counter"  data-target="73605">
+                        <!-- <div class="counter"  data-target="73605">
 
-                        </div>
+                        </div> -->
+                        <div class="counter"><span class="count">7360556</span></div>
                         
                     </div>
                 </div>
@@ -1153,22 +1155,33 @@
         })
       </script>
       <script>
-        const counters = document.querySelectorAll(".counter");
+//         const counters = document.querySelectorAll(".counter");
 
-counters.forEach((counter) => {
-  counter.innerText = "0";
-  const updateCounter = () => {
-    const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
-    const increment = target / 200;
-    if (count < target) {
-      counter.innerText = `${Math.ceil(count + increment)}`;
-      setTimeout(updateCounter, 1);
-    } else counter.innerText = target;
-  };
-  updateCounter();
+// counters.forEach((counter) => {
+//   counter.innerText = "0";
+//   const updateCounter = () => {
+//     const target = +counter.getAttribute("data-target");
+//     const count = +counter.innerText;
+//     const increment = target / 200;
+//     if (count < target) {
+//       counter.innerText = `${Math.ceil(count + increment)}`;
+//       setTimeout(updateCounter, 1);
+//     } else counter.innerText = target;
+//   };
+//   updateCounter();
+// });
+
+$('.count').each(function () {
+    $(this).prop('Counter',10).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function (now) {
+           $(this).text(Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+        }
+    });
 });
-
       </script>
 </body>
 
