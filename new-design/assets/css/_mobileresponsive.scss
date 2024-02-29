@@ -2113,7 +2113,7 @@ span.customecolor {
     margin-bottom: 80px;
   }
   .buttombottom {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     display: block;
     width: 100%;
@@ -2121,7 +2121,7 @@ span.customecolor {
 }
 
 .chartsection {
-    padding: 0px 0px 0px 0px;
+    padding: 20px 10px 10px 10px;
 }
 .removebuttombottom{
     display: none;
