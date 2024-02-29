@@ -986,6 +986,26 @@
   }
 }
 
+@media (max-width: 768px) {
+  .fixedButtonAtBottom {
+    position: fixed !important;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    top: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .mob-wrapper{
+    .fixedDepositeContainer {
+      &:last-child {
+        margin-bottom: 90px;
+      }
+    }
+  }
+
+}
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-collapse {
     display: none !important;
